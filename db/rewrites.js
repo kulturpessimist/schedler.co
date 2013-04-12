@@ -1,7 +1,7 @@
 exports.rewrites = [
 	{
 		"from": "",
-		"to": "frontend/index.html"
+		"to": "frontend/coming-soon.html"
 	},
 	{
 		"from":		"assets/*",
