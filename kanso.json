@@ -1,0 +1,16 @@
+{
+	"name": "website-schedler-co",
+	"version": "0.0.1",
+	"description": "Personal website",
+	"attachments": ["frontend"],
+	"modules": ["db"],
+	"load": "db/design",
+	"shell": [],
+	"dependencies": {
+		"attachments": null,
+		"modules": null,
+		"properties": null,
+		"git-info": null,
+		"multi-shell": null
+	}
+}
