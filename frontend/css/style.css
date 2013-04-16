@@ -21,16 +21,24 @@ body {
 .fallback-message {
 	font-family: sans-serif;
 	line-height: 1.3;
-	width: 780px;
+	width: 80%;
 	padding: 10px 10px 0;
 	margin: 20px auto;
 	border: 1px solid #E4C652;
 	border-radius: 10px;
 	background: #EEDC94;
+	color: #111;
 }
 .fallback-message p { margin-bottom: 10px; }
 .impress-supported .fallback-message { display: none; }
-
+.impress-not-supported .controller{ display: none; }
+.impress-not-supported{ color: #111 !important;}
+.impress-not-supported a{ color: #111 !important;}
+@media print {
+	#experience-1{ page-break-before: always; }
+	#education-1{ page-break-before: always; }
+	#personal{ page-break-before: always; }
+}
 h1{ font-size: 72px; }
 h2{ font-size: 54px; }
 p, h3, div{
@@ -53,10 +61,7 @@ a, a:hover, a:visited, a:active{ color:#fff; text-decoration:none; }
 	z-index: 9999999;
 }
 @media screen and (max-width:1024px) {
-	.controller{
-		bottom: -15px;
-		right: 0px;
-	}
+	.controller{ bottom: -15px; right: 0px; }
 }
 .controller a{ color: #fff; text-decoration:none; }
 .controller div{ float: left; margin:5px;}
