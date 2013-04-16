@@ -31,12 +31,8 @@ body {
 .fallback-message p { margin-bottom: 10px; }
 .impress-supported .fallback-message { display: none; }
 
-h1{
-	font-size: 72px;
-}
-h2{
-	font-size: 54px;
-}
+h1{ font-size: 72px; }
+h2{ font-size: 54px; }
 p, h3, div{
 	font-size: 24px;
 	line-height: 1.5;
@@ -44,6 +40,7 @@ p, h3, div{
 h1, h2, h3{
 	font-weight: 400;
 }
+a, a:hover, a:visited, a:active{ color:#fff; text-decoration:none; }
 /* controller */
 .controller{
 	width: 260px;;
@@ -121,7 +118,7 @@ h1, h2, h3{
 	color: #fff;
 }
 .impress-on-contact{
-	background: #2b2f36;
+	background: #03918E;
 	color: #fff;
 }
 .impress-on-experience-1{
@@ -145,6 +142,10 @@ h1, h2, h3{
 	color: #fff;
 }
 .impress-on-personal{
-	background: #2b2f36;
+	background: #494973;
+	color: #fff;
+}
+.impress-on-one-more-thing{
+	background: #ef4841;
 	color: #fff;
 }

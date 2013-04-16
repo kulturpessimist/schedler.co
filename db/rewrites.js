@@ -1,13 +1,8 @@
 exports.rewrites = [
 	{
-		"from": "",
-		"to": "frontend/coming-soon.html"
+		"from":		"",
+		"to":		"frontend/index.html"
 	},
-	{
-		"from":		"assets/*",
-		"to":		"frontend/*"
-	},
-
 	{
 		"from":		"css/*",
 		"to":		"frontend/css/*"
