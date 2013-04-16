@@ -73,12 +73,13 @@ a, a:hover, a:visited, a:active{ color:#fff; text-decoration:none; }
 	margin-top: 0px;
 	position: relative;
 	top:-10px;
+	left: -10px;
 }
 .next, .prev{ cursor: pointer; }
 @media screen and (max-width:1024px) {
 	.controller{ bottom: -20px; right: -10px; width:220px; line-height:1; }
 	.controller div, .controller .status{ font-size:18px; }
-	.controller .status{ top: -16px; left: -10px; }
+	.controller .status{ top: -16px;  }
 }
 /* Contents */
 .row{
