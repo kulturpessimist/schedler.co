@@ -15,7 +15,7 @@
 	<div class="fallback-message">
 		<p>
 			Your browser <b>doesn't support the features required.</b>,
-			but <b>dont be worried</b> you can also <a href="https://copy.com/UY9hiOrOt6xCDoxT" target="_blank"><b>take a look on my CV</b> as PDF.</a>
+			but <b>dont be worried</b> you can also <a href="https://copy.com/UY9hiOrOt6xCDoxT" id="copy" target="_blank"><b>take a look on my CV</b> as PDF.</a>
 		</p>
 		<p>
 			For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.
@@ -24,7 +24,7 @@
 
 	<div class="controller">
 		<div class="prev"><i class="icon-circle-arrow-left"></i> prev</div>
-		<div class="download"><a href="https://copy.com/UY9hiOrOt6xCDoxT" target="_blank"><i class="icon-print"></i><i class="icon-cloud-download"></i></a></div>
+		<div class="download"><a href="https://copy.com/UY9hiOrOt6xCDoxT" id="copy" target="_blank"><i class="icon-print"></i><i class="icon-cloud-download"></i></a></div>
 		<div class="next">next <i class="icon-circle-arrow-right"></i></div>
 		<div class="status">1 / 10</div>
 	</div>
@@ -34,11 +34,14 @@
 		You can call me at +49 176 475 940 04 or write me via Email at alex@schedler.co
 		I hope to hear from you soon.
 	-->
-	<div id="impress">
+	<div id="impress" itemscope itemtype="http://data-vocabulary.org/Person">
 		<!-- title -->
 		<div id="title" class="step" data-x="0" data-y="0" data-scale="150">
-			<h1>Alexander Schedler</h1>
-			<p>Frankfurt am Main, Germany<p>
+			<h1><span itemprop="name">Alexander Schedler</span> </h1>
+			<p><span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+				<span itemprop="locality">Frankfurt am Main</span>, <span itemprop="country-name">Germany</span>
+				</span>
+			<p>
 			<p>&nbsp;</p>
 			
 			<div class="row">
@@ -67,11 +70,11 @@
 			</div>
 			<div class="row">
 				<div class="col-span-2"><i class="icon-twitter"></i></div>
-				<div class="col-span-9"><a href="https://twitter.com/kulturpessimist/" target="_blank">@kulturpessimist</a></div>
+				<div class="col-span-9"><a href="https://twitter.com/kulturpessimist/" target="_blank" itemprop="url">@kulturpessimist</a></div>
 			</div>
 			<div class="row">
 				<div class="col-span-2"><i class="icon-github"></i></div>
-				<div class="col-span-9"><a href="https://github.com/kulturpessimist/" target="_blank">github.com/kulturpessimist</a></div>
+				<div class="col-span-9"><a href="https://github.com/kulturpessimist/" target="_blank" itemprop="url">github.com/kulturpessimist</a></div>
 			</div>
 		</div>
 		<!-- experience -->
@@ -83,17 +86,17 @@
 			<div class="row">
 				<div class="col-span-3"><span class="label label-inverse">Position held</span></div>
 				<div class="col-span-9">
-					Head of software development<br/>
+					<span itemprop="title">Head of software development</span><br/>
 					Co-founder
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-span-3"><span class="label label-inverse">Main activities</span></div>
 				<div class="col-span-9">
-					Software development and application engineering<br/>
+					<span itemprop="role">Software development and application engineering<br/>
 					Requirements engineering<br/>
 					User interface design and usability<br/>
-					Business strategy development
+					Business strategy development</span>
 				</div>
 			</div>
 			<div class="row">
@@ -291,6 +294,7 @@
 				//auto();
 				var current = slides.indexOf(e.target.id)+1;
 				$('.status').text(current+' / '+slides.length);
+				ga('send', 'pageview', '#/'+e.target.id);
 			});
 			auto = function(){
 				clearTimeout(autoid);
@@ -304,6 +308,9 @@
 				});
 				$('.next').click(function(){
 					impress().next();
+				});
+				$('#copy').click(function(){
+					ga('send', 'pageview', '#/Download');
 				});
 				//auto();
 			}, 500);

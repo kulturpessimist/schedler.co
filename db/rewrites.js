@@ -24,6 +24,15 @@ exports.rewrites = [
 		"from":		"font/*",
 		"to":		"frontend/font/*"
 	},
+	/* tech stuff...*/
+	{
+		"from":		"google7f311b514ca2b68b.html",
+		"to":		"frontend/google7f311b514ca2b68b.html"
+	},
+	{
+		"from":		"robots.txt",
+		"to":		"frontend/robots.txt"
+	},
 	/* keeping relative urls sane */
 	{
 		"from":		"/*",

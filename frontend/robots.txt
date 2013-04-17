@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /_utils
+Disallow: /_uuids
+Disallow: /_session
+Disallow: /_oauth
+Disallow: /_users
+Disallow: /_browserid
+Disallow: /_fb
+Disallow: /_fb_resp
