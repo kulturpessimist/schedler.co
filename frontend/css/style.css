@@ -154,6 +154,18 @@ a, a:hover, a:visited, a:active{ color:#fff; text-decoration:none; }
 	background: #494973;
 	color: #fff;
 }
+.impress-on-technologies{
+	background: #a80000;
+	color: #fff;
+}
+#technologies .row div{
+	font-size: 20px;
+	text-align: left;
+}
+#technologies .row>div:first-child{
+	text-align: right;
+}
+
 .impress-on-one-more-thing{
 	background: #ef4841;
 	color: #fff;
