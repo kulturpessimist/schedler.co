@@ -123,11 +123,11 @@ a, a:hover, a:visited, a:active{ color:#fff; text-decoration:none; }
 .impress-enabled .step.active { opacity: 1 }
 /* Slides */
 .impress-on-title{
-	background: #2b2f36;
+	background: #2c3e50;
 	color: #fff;
 }
 .impress-on-contact{
-	background: #03918E;
+	background: #1abc9c;
 	color: #fff;
 }
 .impress-on-experience-1{
@@ -139,7 +139,7 @@ a, a:hover, a:visited, a:active{ color:#fff; text-decoration:none; }
 	color: #fff;
 }
 .impress-on-experience-3{
-	background: #fc9150;
+	background: #e67e22;
 	color: #fff;
 }
 .impress-on-education-1{
@@ -151,11 +151,11 @@ a, a:hover, a:visited, a:active{ color:#fff; text-decoration:none; }
 	color: #fff;
 }
 .impress-on-personal{
-	background: #494973;
+	background: #8e44ad;
 	color: #fff;
 }
 .impress-on-technologies{
-	background: #a80000;
+	background: #c0392b;
 	color: #fff;
 }
 #technologies .row div{
