@@ -64,6 +64,11 @@ a, a:hover, a:visited, a:active{ color:#fff; text-decoration:none; }
 .controller a{ color: #fff; text-decoration:none; }
 .controller div{ float: left; margin:5px;}
 .controller div i{ margin:5px;}
+.hireme{
+	position:absolute;
+	right:6px;
+	top:6px;
+}
 .status{
 	width: 100%;
 	clear: both;
