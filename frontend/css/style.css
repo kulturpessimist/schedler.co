@@ -52,7 +52,7 @@ h1, h2, h3{
 a, a:hover, a:visited, a:active{ color:#fff; text-decoration:none; }
 /* controller */
 .controller{
-	width: 200px;
+	width: 260px;
 	font-size: 32px;
 	text-align: center;
 	
@@ -64,12 +64,11 @@ a, a:hover, a:visited, a:active{ color:#fff; text-decoration:none; }
 .controller a{ color: #fff; text-decoration:none; }
 .controller div{ float: left; margin:5px;}
 .controller div i{ margin:5px;}
-.controller .download{ display: none; }
+.controller .download{ }
 .hireme{
 	position:absolute;
 	right:6px;
 	top:6px;
-	display: none;
 }
 .status{
 	width: 100%;
