@@ -1,6 +1,6 @@
 {
 	"name": "website-schedler-co",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "Personal website",
 	"attachments": ["frontend"],
 	"modules": ["db"],
