@@ -24,6 +24,10 @@ exports.rewrites = [
 		"from":		"font/*",
 		"to":		"frontend/font/*"
 	},
+	{
+		"from":		"assets/*",
+		"to":		"frontend/assets/*"
+	},
 	/* tech stuff...*/
 	{
 		"from":		"google7f311b514ca2b68b.html",
