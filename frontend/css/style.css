@@ -52,7 +52,7 @@ h1, h2, h3{
 a, a:hover, a:visited, a:active{ color:#fff; text-decoration:none; }
 /* controller */
 .controller{
-	width: 260px;
+	width: 200px;
 	font-size: 32px;
 	text-align: center;
 	
@@ -64,11 +64,12 @@ a, a:hover, a:visited, a:active{ color:#fff; text-decoration:none; }
 .controller a{ color: #fff; text-decoration:none; }
 .controller div{ float: left; margin:5px;}
 .controller div i{ margin:5px;}
-.controller .download{ }
+.controller .download{ display: none; }
 .hireme{
 	position:absolute;
 	right:6px;
 	top:6px;
+	display: none;
 }
 .status{
 	width: 100%;
@@ -79,14 +80,15 @@ a, a:hover, a:visited, a:active{ color:#fff; text-decoration:none; }
 	margin-top: 0px;
 	position: relative;
 	top:-10px;
-	left: -15px;
+	left: -10px;
 }
 .next, .prev{ cursor: pointer; }
 @media screen and (max-width:1024px) {
-	.controller{ bottom: -20px; right: -10px; width:220px; line-height:1; }
-	.controller div, .controller .status{ font-size:18px; }
-	.controller .status{ top: -16px;  }
+	.controller{ bottom: -10px; right: -40px; line-height:1; }
+	.controller div{ font-size:18px; }
+	.controller .status{ top: -16px; font-size:14px; width:170px; }
 }
+.label-inverse{ color: #fff; }
 /* Contents */
 .row{
 	margin-bottom: 10px;
@@ -137,38 +139,51 @@ a, a:hover, a:visited, a:active{ color:#fff; text-decoration:none; }
 	color: #fff;
 }
 .impress-on-experience-4{
-	background: #e0024a;
+	background: #ff6604;
 	color: #fff;
 }
+.label-on-experience-4{ color: #ff6604; }
 
-.impress-on-experience-1{
+.impress-on-experience-3{
 	background: #67a462;
 	color: #fff;
 }
+.label-on-experience-3{ color: #67a462; }
+
 .impress-on-experience-2{
 	background: #2081d5;
 	color: #fff;
 }
-.impress-on-experience-3{
+.label-on-experience-2{ color: #2081d5; }
+
+.impress-on-experience-1{
 	background: #e67e22;
+	color: #fff;
+}
+.label-on-experience-1{ color: #e67e22; }
+
+.impress-on-education-2{
+	background: #072f5b;
 	color: #fff;
 }
 .impress-on-education-1{
 	background: #072f5b;
 	color: #fff;
 }
-.impress-on-education-2{
-	background: #072f5b;
-	color: #fff;
-}
+.label-on-education{ color: #072f5b; }
+
 .impress-on-personal{
 	background: #8e44ad;
 	color: #fff;
 }
+.label-on-personal{ color: #8e44ad; }
+
 .impress-on-technologies{
 	background: #222222;
 	color: #fff;
 }
+.label-on-technologies{ color: #222222; }
+
 #technologies .row div{
 	font-size: 20px;
 	text-align: left;
