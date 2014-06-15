@@ -1,3 +1,4 @@
-/.kansorc
-/packages/
-/frontend/assets/*
+.couchapprc
+node_modules
+build
+_Material

@@ -3,10 +3,15 @@ schedler.co
 
 website and contents of schedler.co
 
-Last update 23.04.2014
+Last update 15.06.2014
 
 Changelog
 =========
+
+15.06.2014
+
+* Minor updates
+* Migration from kanso to Grunt
 
 23.04.2014
 
