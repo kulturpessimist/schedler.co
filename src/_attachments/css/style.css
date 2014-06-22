@@ -30,6 +30,7 @@ body {
 	color: #111;
 	z-index: 9999998;
 }
+
 .fallback-message p { margin-bottom: 10px; }
 .impress-supported .fallback-message { display: none; }
 .impress-not-supported .controller{ display: none; }
