@@ -8,6 +8,13 @@ Last update 15.06.2014
 Changelog
 =========
 
+18.11.2014 
+
+* Minor improvements for code quality.
+* using <em> instead of <i>
+* using <strong> instead of <b>
+* removed broken <i> tags
+
 15.06.2014
 
 * Minor updates
