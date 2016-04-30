@@ -72,6 +72,14 @@ a, a:hover, a:visited, a:active{ color:#fff; text-decoration:none; }
 	top:6px;
 	display: none;
 }
+.hirepurr{
+	position:absolute;
+	right:10px;
+	top:10px;
+	display: block;
+	transform: rotate(17deg);
+	z-index: 9999998;
+}
 .status{
 	width: 100%;
 	clear: both;

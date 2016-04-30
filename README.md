@@ -3,10 +3,15 @@ schedler.co
 
 website and contents of schedler.co
 
-Last update 15.06.2014
+Last update 30.04.2016 
 
 Changelog
 =========
+
+30.04.2016 
+
+* first teaser for PURR
+* some minor updates 
 
 18.11.2014 
 
