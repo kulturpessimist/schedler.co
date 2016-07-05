@@ -3,10 +3,15 @@ schedler.co
 
 website and contents of schedler.co
 
-Last update 30.04.2016 
+Last update 05.07.2016 
 
 Changelog
 =========
+
+05.07.2016 
+
+* PURR is open for business
+* PURR sections added to CV
 
 30.04.2016 
 
@@ -16,9 +21,9 @@ Changelog
 18.11.2014 
 
 * Minor improvements for code quality.
-* using <em> instead of <i>
-* using <strong> instead of <b>
-* removed broken <i> tags
+* using `<em>` instead of `<i>`
+* using `<strong>` instead of `<b>`
+* removed broken `<i>` tags
 
 15.06.2014
 
