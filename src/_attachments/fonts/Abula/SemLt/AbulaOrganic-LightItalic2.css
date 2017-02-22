@@ -1,0 +1,12 @@
+/* Webfont: AbulaOrganic-LightItalic2 */@font-face {
+    font-family: 'AbulaOrganicSemLt';
+    src: url('AbulaOrganic-LightItalic2.eot'); /* IE9 Compat Modes */
+    src: url('AbulaOrganic-LightItalic2.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('AbulaOrganic-LightItalic2.woff') format('woff'), /* Modern Browsers */
+         url('AbulaOrganic-LightItalic2.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('AbulaOrganic-LightItalic2.svg#AbulaOrganic-LightItalic2') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

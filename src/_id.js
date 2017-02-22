@@ -1,1 +1,1 @@
-_design/website-schedler-co
+_design/website-schedler-pro

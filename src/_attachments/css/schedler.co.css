@@ -1,0 +1,297 @@
+body {
+    background-color: #F9F8F4;
+}
+
+section h1,
+section h2 {
+    font-family: 'Fira Mono';
+    font-weight: 600;
+    font-style: normal;
+    color: #1BF9D8;
+}
+
+h3,
+h4,
+h5,
+h6{
+    font-family: 'AbulaOrganicSemLt';
+    font-style: normal;
+    font-weight: normal;
+    color: #1BF9D8;
+}
+
+
+a, h6 {
+    color: #333;
+}
+
+a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+.subline {
+    margin-top: -0.4em;
+    margin-bottom: 1em;
+    font-family: 'AbulaOrganicLight';
+    font-style: normal;
+    font-weight: bold;
+
+}
+
+section div,
+section p,
+section span,
+.abula {
+    font-family: 'AbulaOrganicLight';
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.5em !important;
+}
+
+.light {
+    opacity: 0.66;
+}
+.left{
+    text-align: left;
+}
+
+.flexblock.gallery li {}
+
+@media (min-width:1024px) {
+    .flexblock.gallery li {
+        width: 14%;
+    }
+}
+
+footer {
+    position: fixed;
+    top: auto;
+    bottom: -10px;
+    left: 0;
+}
+
+footer a {
+    margin-right: 0px;
+    color: #1BF9D8;
+}
+.hamburgler-menu .button, .hamburgler-menu .button:hover{
+    background-color: #F9F8F4;
+    border: 1px solid #333;
+    color: #333 !important;
+    text-shadow: none;
+
+    font-family: 'AbulaOrganicSemLt';
+    font-style: normal;
+    font-weight: normal;
+}
+.hamburgler-menu a, .hamburgler-menu a:hover{
+    color: #333;
+}
+
+.ThinxNet h1, 
+.ThinxNet h2,
+.ThinxNet h4{
+    color: #ff6600;
+}
+.natureOffice h1, 
+.natureOffice h4, 
+.natureOffice h2{
+    color: #5F9E64;
+}
+.Dynomedia h1,
+.Dynomedia h4,
+.Dynomedia h2{
+    color: #00AEEF;
+}
+.KIGG h1, 
+.KIGG h4, 
+.KIGG h2{
+    color: #D00027;
+}
+
+.flexblock.clients li div{
+    margin:30px;
+    margin-top:25px;
+}
+.bg-inverted {
+    background-color: #1BF9D8;
+}
+
+.frontend h1,
+.frontend h2,
+.frontend h4,
+.bg-inverted h1,
+.bg-inverted h2,
+.bg-inverted h4{
+    color: #333;
+}
+
+.bg-pattern{
+    background-color: #F9F8F4;
+    background-image: url(/images/pattern3.png);
+    background-repeat: repeat-x;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom right
+}
+.bg-pattern a{
+    color: #333;
+}
+.bg-pattern a:hover,
+.bg-pattern a:active{
+    color: #1BF9D8;
+}
+.center-court{
+    text-align: left; min-width: 66%;
+}
+.center-court p{
+    margin-left:20px;
+}
+.center-court svg{
+    margin-right: 15px;
+}
+
+
+.text-med {
+    font-size: 100%;line-height: 2.4rem;
+}
+
+
+.description{
+    margin-top: 3.2rem;
+    margin-bottom: 3.2rem;
+}
+
+/*
+HAMBURGLAR
+*/
+.hamburgler-icon-wrapper {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    height: 26px;
+    width: 26px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.hamburgler-icon,
+.hamburgler-icon:before,
+.hamburgler-icon:after {
+    content: '';
+    position: absolute;
+    border-radius: 1em;
+    height: 2px;
+    width: 26px;
+    background: #333;
+    transition: all 0.2s ease
+}
+
+.hamburgler-icon {
+    top: 0.75em
+}
+
+.hamburgler-icon:before {
+    top: -0.55em
+}
+
+.hamburgler-icon:after {
+    top: 0.55em
+}
+
+.hamburgler-active .hamburgler-icon {
+    background: transparent;
+    transform: rotate(-135deg)
+}
+
+.hamburgler-active .hamburgler-icon:before,
+.hamburgler-active .hamburgler-icon:after {
+    top: 0
+}
+
+.hamburgler-active .hamburgler-icon:before {
+    transform: rotate(90deg)
+}
+
+.hamburgler-active .hamburgler-icon,
+.hamburgler-active .hamburgler-icon:before,
+.hamburgler-active .hamburgler-icon:after {
+    background: white
+}
+
+.hamburgler-menu {
+    transition: all 0.4s ease;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(15, 15, 15, 0.9);
+    /*background-color: rgba(27, 249, 216, 0.9);*/
+    text-align: center;
+    z-index: 999;
+}
+
+.hamburgler-active .hamburgler-menu {
+    opacity: 1;
+    pointer-events: initial;
+}
+
+.hamburgler-menu-list {
+    display: block;
+    transition: all 0.4s ease;
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2)
+}
+
+.hamburgler-active .hamburgler-menu-list {
+    transform: translate(-50%, -50%) scale(1)
+}
+
+.hamburgler-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hamburgler-menu a{
+    color: white;
+    margin:5px;
+}
+.hamburgler-menu p,
+.hamburgler-menu h4{
+    text-align: left
+}
+.hamburgler-menu h1,
+.hamburgler-menu h2,
+.hamburgler-menu h3,
+.hamburgler-menu h4,
+.hamburgler-menu h5,
+.hamburgler-menu h6{
+    color: #333;
+}
+.hamburgler-menu figure h1,
+.hamburgler-menu figure h2,
+.hamburgler-menu figure h3,
+.hamburgler-menu figure h4,
+.hamburgler-menu figure h5,
+.hamburgler-menu figure h6{
+    color: white;
+}
+.hamburgler-menu figure{
+    padding: 20px;
+    background-color: #1BF9D8 !important;
+    color: white;
+}
+.hamburgler-menu figure div{
+    margin:24px;
+}
+.hamburgler-menu .flex-content div{
+    max-height:50vh; overflow:scroll; text-align: left;
+}
