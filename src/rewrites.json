@@ -4,8 +4,13 @@
 		"to":		"index.html"
 	},
 	{
+		"from":		"images/*",
+		"to":		"dist/images/*"
+	},
+
+	{
 		"from":		"favicon.ico",
-		"to":		"images/favicons/favicon.ico"
+		"to":		"dist/images/favicon.ico"
 	},
 
 	{

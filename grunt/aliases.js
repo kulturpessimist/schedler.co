@@ -7,18 +7,17 @@ module.exports = {
   	'preflight': [
 		'concat:css',
 		'concat:js',
-		'concat:html'
+		'concat:html',
+		'cssmin',
+		'uglify'
   	],
   	'compile': [
   		'preflight',
+		'imagemin',
   		'couch-compile',
-  		//'clean-couch-compile'
+  		'clean-couch-compile'
   	],
-  	'deploy:staging': [
-  		'compile',
-  		'couch-push:staging'
-  	],
-  	'deploy:production': [
+  	'deploy': [
   		'compile',
   		'couch-push:production'
   	]

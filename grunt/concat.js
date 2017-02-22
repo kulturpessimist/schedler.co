@@ -9,7 +9,7 @@ module.exports = {
 			'src/_attachments/css/svg-icons.css',
 			'src/_attachments/css/schedler.co.css'
 		],
-		dest: 'src/_attachments/resources/main.css',
+		dest: 'src/_attachments/dist/main.css',
 	},
 	js:{
 		options: {
@@ -21,7 +21,7 @@ module.exports = {
 			'src/_attachments/js/webslides.js',
 			'src/_attachments/js/main.js'
 		],
-		dest: 'src/_attachments/resources/main.js',
+		dest: 'src/_attachments/dist/main.js',
 	},
 	html:{
 		options: {

@@ -2,7 +2,7 @@ module.exports = {
 	src: {
 		files: [
 			'src/_attachments/**/*', 
-			'!src/_attachments/resources/**/*',
+			'!src/_attachments/dist/**/*',
 			'!src/_attachments/index.html'
 		],
 		tasks: ['preflight'],
@@ -19,7 +19,7 @@ module.exports = {
 		},
 		files: [
 			'src/_attachments/**/*', 
-			'!src/_attachments/resources/**/*',
+			'!src/_attachments/dist/**/*',
 			'!src/_attachments/index.html'
 		]
 	}

@@ -6,7 +6,7 @@ module.exports = {
 	},
 	default: {
 		files:{
-			'src/_attachments/resources/PURR.min.js': 'src/_attachments/resources/PURR.js'
+			'src/_attachments/dist/main.min.js': 'src/_attachments/dist/main.js'
 		}
 	}
 };

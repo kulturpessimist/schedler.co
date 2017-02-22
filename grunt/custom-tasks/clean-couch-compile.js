@@ -6,7 +6,11 @@ module.exports = function (grunt) {
 		var killList = [
 		 	"css/",
 		 	"js/",
-		 	"partials/"
+		 	"partials/",
+			"images/",
+			"fonts/Abula/ExtLt/",
+			"dist/main.js",
+			"dist/main.css"
 		];
 		
 		if (!grunt.file.exists(build)) {
