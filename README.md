@@ -1,12 +1,17 @@
 schedler.co
 ===========
 
-website and contents of schedler.co
+website and contents of schedler.co / schedler.pro
 
-Last update 05.07.2016 
+Last update 22.02.2017
 
 Changelog
 =========
+
+22.02.2017 
+
+* Version 2.0 
+* Relaunch with webslides
 
 05.07.2016 
 
