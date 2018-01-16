@@ -2,6 +2,7 @@
 node_modules
 build
 _Material
-/_mat
+_mat
 .DS_Store
-/src/_attachments/dist
+src/_attachments/dist/**/*
+src/_attachments/dist/*

@@ -4,7 +4,7 @@ module.exports = {
 			separator: '',
 		},
 		src: [
-			'src/_attachments/css/base.css',
+			'src/_attachments/css/webslides.css',
 			'src/_attachments/css/colors.css',
 			'src/_attachments/css/svg-icons.css',
 			'src/_attachments/css/schedler.co.css'
@@ -16,7 +16,6 @@ module.exports = {
 			separator: ';',
 		},
 		src: [
-			'src/_attachments/js/jquery-3.1.1.min.js',
 			'src/_attachments/js/svg-icons.js',
 			'src/_attachments/js/webslides.js',
 			'src/_attachments/js/main.js'

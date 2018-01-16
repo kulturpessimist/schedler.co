@@ -1,6 +1,7 @@
 
 body {
     background-color: #F9F8F4;
+    zoom: 100%;
 }
 
 section h1,
@@ -61,10 +62,16 @@ section span,
 
 @media (min-width:1024px) {
     .flexblock.gallery li {
-        width: 20%;
-        margin-right: 5%;
-        margin-left: 5%;
+        width: 22%;
+        margin-right: 4%;
+        margin-left: 4%;
     }
+}
+
+.flexblock.gallery li:nth-child(n+4){
+    -webkit-box-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
 }
 
 footer {
@@ -92,9 +99,9 @@ footer a {
     color: #333;
 }
 
-.iob h1,
-.iob h2,
-.iob h4{
+.IoB h1,
+.IoB h2,
+.IoB h4{
     color: #6653FF; 
 }
 
