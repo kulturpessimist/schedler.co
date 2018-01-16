@@ -12,7 +12,7 @@
 							If you like my CV you can download a copy as PDF by clicking the link below. Perfectly suited to print it out and show it
 							to your friends and colleges.
 						</p>
-						<a href="/assets/CV-Alexander-Schedler-EN-2016-07-05.pdf" download="CV-Alexander-Schedler.pdf" class="button">Download CV as PDF</a>
+						<a href="/assets/CV Alexander Schedler EN 2018-01-16.pdf" download="CV-Alexander-Schedler.pdf" class="button">Download CV as PDF</a>
 					</div>
 				</figure>
 
@@ -88,6 +88,40 @@
 		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 		ga('create', 'UA-39968606-1', 'auto');
 		ga('send', 'pageview');
+	</script>
+    <script>
+		console.time('loading');
+		document.onreadystatechange = function () {
+		  	switch (document.readyState) {
+		    	case "loading":
+		  			break;
+		    	case "interactive":
+					console.timeEnd('loading');
+					console.time('boot');
+					window._emojis = [
+						"😄", "😜", "😸", 
+						"🤘", "👍", "✌️", 
+						"☝️", "👔", "🦄" , 
+						"🤪", "👨‍💻"
+					];
+					window._loader = setInterval(function(){
+						document.querySelector('body > div span').innerText = window._emojis[~~(Math.random() * window._emojis.length)]
+					}, 750);
+		  			break;
+		    	case "complete":
+		  			console.timeEnd('boot');
+					setTimeout(function(){
+		  				var loader = document.querySelector('body > div')
+		  				loader.style.opacity = 0;
+		  				clearInterval(window._loader);
+						setTimeout(function(){
+		  					document.body.className=="loading"?document.body.className='ready':'';
+		  					document.body.removeChild(this);
+		  				}.bind(loader), 760);
+		  			}, 1000);
+		  			break;
+		  	}
+		}
 	</script>
 
 </body>

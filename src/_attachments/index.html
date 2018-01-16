@@ -7,7 +7,7 @@
 		<title>Schedler.co | Alexander Schedler, Internet application engineering and development</title>
 		<meta name="description" content="Curriculum vitae (CV), Alexander Schedler, Key areas: Internet application engineering and development, Key skills: Javascript (Frontend and Backend), AngularJS, Polymer, Node.js, CouchDB, HTML, grunt, kanso, Ruby">
 		<meta name="author" content="Alexander Schedler">
-		<link rel="canonical" href="https://www.schedler.co/">
+		<link rel="canonical" href="https://www.schedler.pro/">
 		<meta name="mobile-web-app-capable" content="yes">
 		<meta name="theme-color" content="#EEEEEE">
 		<!-- FONTS -->
@@ -19,16 +19,16 @@
 		<!-- FACEBOOK et. TWITTER -->
 		<meta property="og:url" content="https://www.schedler.co">
 		<meta property="og:type" content="website">
-		<meta property="og:title" content="Schedler.co | Alexander Schedler, Internet application engineering and development">
-		<meta property="og:description" content="Curriculum vitae (CV), Alexander Schedler, Key areas: Internet application engineering and development, Key skills: Javascript (Frontend and Backend), AngularJS, Polymer, Node.js, CouchDB, HTML, grunt">
+		<meta property="og:title" content="Schedler.pro | Alexander Schedler, Internet application engineering and development">
+		<meta property="og:description" content="Curriculum vitae (CV), Alexander Schedler, Key areas: Internet application engineering and development, Key skills: Javascript (Frontend and Backend), AngularJS, Polymer, Vue, Node.js, CouchDB, HTML">
 		<meta property="og:updated_time" content="2017-01-20T12:00:00">
-		<meta property="og:image" content="https://www.schedler.co/images/social-card.png">
+		<meta property="og:image" content="https://www.schedler.pro/images/social-card.png">
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@kulturpessimist">
 		<meta name="twitter:creator" content="@kulturpessimist">
 		<meta name="twitter:title" content="Schedler.co | Alexander Schedler, Internet application engineering and development">
-		<meta name="twitter:description" content="Curriculum vitae (CV), Alexander Schedler, Key areas: Internet application engineering and development, Key skills: Javascript (Frontend and Backend), AngularJS, Polymer, Node.js, CouchDB, HTML, grunt">
-		<meta name="twitter:image" content="https://www.schedler.co/images/social-card.png">
+		<meta name="twitter:description" content="Curriculum vitae (CV), Alexander Schedler, Key areas: Internet application engineering and development, Key skills: Javascript (Frontend and Backend), AngularJS, Polymer, Vue, Node.js, CouchDB, HTML">
+		<meta name="twitter:image" content="https://www.schedler.pro/images/social-card.png">
 		<!-- FAVICONS -->
 		<link rel="shortcut icon" sizes="16x16" href="images/icon.16.png">
 		<link rel="shortcut icon" sizes="32x32" href="images/icon.32.png">
@@ -37,6 +37,48 @@
 		<link rel="apple-touch-icon icon" sizes="152x152" href="images/icon.152.png">
 		<link rel="apple-touch-icon icon" sizes="180x180" href="images/icon.180.png">
 		<link rel="apple-touch-icon icon" sizes="192x192" href="images/icon.192.png">
+		<style>
+			.loading{ overflow: hidden; }
+			body.loading > div{
+				width: 100vw; height: 100vh; position: absolute; top:0; left:0;
+				background-color: #eee;
+				
+				text-align: center; font-size: 120px; line-height: 100vh;
+
+				background-position: center center; background-repeat: no-repeat; background-size: 33%; 
+				z-index: 999999; 
+				-webkit-transition: all 0.75s linear;
+						transition: all 0.75s linear;
+			}
+			body.loading > div div{
+				width: 0vw; height: 4px;
+				background-color: #F9F8F4; color: #4a4a4a;
+				text-align: left;
+				font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto",
+					"Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+				font-size: 10px; line-height: 24px; text-indent: 4px;
+				-ms-animation: animation 3000ms linear infinite;
+					animation: animation 3000ms linear infinite;
+			}
+			@-ms-keyframes animation{
+				0%  { width:0vw;	background-color: #1BF9D8; }
+				33% { width:100vw;	background-color: #1BF9D8; }
+				34% { width:0vw; 	background-color: #0D7969; }
+				66% { width:100vw;	background-color: #0D7969; }
+				67% { width:0vw; 	background-color: #063A32; }
+				100%{ width:100vw;	background-color: #063A32; }
+			}
+			@keyframes animation{
+				0%  { width:0vw;	background-color: #1BF9D8; }
+				33% { width:100vw;	background-color: #1BF9D8; }
+				34% { width:0vw; 	background-color: #0D7969; }
+				66% { width:100vw;	background-color: #0D7969; }
+				67% { width:0vw; 	background-color: #063A32; }
+				100%{ width:100vw;	background-color: #063A32; }
+			}
+			body.loading #hamburgler{ display: none; }
+		</style>
+
 	</head>
 	<!--
 	Hello highly esteemed Visitor!
@@ -44,7 +86,13 @@
 	You can call me at +49 171 4 123 929 or write me via Email at alex@schedler.co
 	I am looking forward to hear from you. :-)
     -->
-	<body>
+	<body class="loading">
+
+		<div>
+			<div>Loading...</div>
+			<span>😱</span>
+		</div>
+
 		<main role="main">
 			<article id="webslides">
 
@@ -55,8 +103,12 @@
 				<h1>Alexander Schedler</h1>
 				<h4 class="subline">Munich, Germany</h4>
 				<p class="text-intro fadeInUp">
-					Javascript (Frontend and Backend),
-					<br> HTML, CSS, Node, CouchDB
+					Application and product management, <br/>
+					engineering and development
+				</p>
+				<p class="text-intro fadeInUp">
+					Javascript (Frontend and Backend), <br/> 
+					HTML, CSS, Node, CouchDB
 				</p>
 			</div>
 		</div>
@@ -93,7 +145,7 @@
 					<svg class="fa-github" viewBox="0 0 512 512">
 						<use xlink:href="#fa-github"></use>
 					</svg>
-					github.com/kulturpessimist
+					/kulturpessimist
 				</a>
 				<br>
 				<a href="https://www.linkedin.com/in/alexanderschedler" title="LinkedIn" target="_blank">
@@ -119,7 +171,17 @@
 						<h4 class="subline">Curriculum Vitae</h4>
 						<ul class="flexblock gallery">
 							<li class="fadeInUp">
-								<a href="#" title="PURR">
+								<a href="#slide=4" title="Internet of Blah">
+									<figure>
+										<img alt="Internet of Blah Logo" src="images/IOB.png">
+										<figcaption>
+											<h3>Internet of Blah</h3>
+										</figcaption>
+									</figure>
+								</a>
+							</li>
+							<li class="fadeInUp">
+								<a href="#slide=5" title="PURR">
 									<figure>
 										<img alt="PURR Logo" src="images/PURR.png">
 										<figcaption>
@@ -129,7 +191,7 @@
 								</a>
 							</li>
 							<li class="fadeInUp">
-								<a href="#" title="ThinxNet">
+								<a href="#slide=6" title="ThinxNet">
 									<figure>
 										<img alt="ThinxNet Logo" src="images/ThinxNet.png">
 										<figcaption>
@@ -139,7 +201,7 @@
 								</a>
 							</li>
 							<li class="fadeInUp">
-								<a href="#" title="natureOffice">
+								<a href="#slide=7" title="natureOffice">
 									<figure>
 										<img alt="natureOffice Logo" src="images/natureOffice.png">
 										<figcaption>
@@ -149,7 +211,7 @@
 								</a>
 							</li>
 							<li class="fadeInUp">
-								<a href="#" title="DYNOMEDIA">
+								<a href="#slide=8" title="DYNOMEDIA">
 									<figure>
 										<img alt="DYNOMEDIA Logo" src="images/Dynomedia.png">
 										<figcaption>
@@ -159,7 +221,7 @@
 								</a>
 							</li>
 							<li class="fadeInUp">
-								<a href="#" title="KIGG">
+								<a href="#slide=9" title="KIGG">
 									<figure>
 										<img alt="KIGG Logo" src="images/KIGG.png">
 										<figcaption>
@@ -171,30 +233,29 @@
 						</ul>
 					</div>
 				</section>
-<section class="fullscreen">
+<section class="fullscreen iob">
     <div class="card-50">
         <figure>
-            <img src="images/this-is-PURR.png" alt="iWatch">
+            <img src="images/Internet-of-Blah.png" alt="Internet of Blah">
             <figcaption>
-                <a href="https://purr.is/awesome" title="PURR">
+                <a href="https://www.internet-of-blah.com/" title="Internet of Blah" target="_blank">
                     <svg class="ffa-external-link">
                         <use xlink:href="#fa-external-link"></use>
                     </svg>
-                    PURR.is
+                    Internet of Blah
                 </a>
             </figcaption>
         </figure>
         <div class="flex-content">
-            <h2>PURR / Schedler, Knothe &amp; Partner mbB</h2>
+            <h2>Internet of Blah</h2>
             <ul class="description">
                 <li>
                     <strong class="text-label">Role:</strong> Frontend / Design / CEO
                 </li>
-                <li><strong class="text-label">Dates:</strong> June 2016 – onwards</li>
+                <li><strong class="text-label">Dates:</strong> September 2017 – onwards</li>
             </ul>
             <h6>Main activities</h6>
             <p>
-                Everything customer facing<br/>
                 User interface design and usability<br/> 
                 User Experience and interaction design<br/> 
                 Cross platform software development and application engineering
@@ -208,12 +269,42 @@
         </div>
     </div>
 </section>
+<section class="fullscreen">
+    <div class="card-50">
+        <figure>
+            <img src="images/this-is-PURR.png" alt="iWatch">
+            <figcaption>
+                <a href="https://purr.is/awesome" title="PURR" target="_blank">
+                    <svg class="ffa-external-link">
+                        <use xlink:href="#fa-external-link"></use>
+                    </svg>
+                    PURR.is
+                </a>
+            </figcaption>
+        </figure>
+        <div class="flex-content">
+            <h2>PURR / Schedler, Knothe &amp; Partner</h2>
+            <ul class="description">
+                <li>
+                    <strong class="text-label">Role:</strong> Frontend / Design / CEO
+                </li>
+                <li><strong class="text-label">Dates:</strong> June 2016 – onwards</li>
+            </ul>
+            <h6>Main activities</h6>
+            <p>
+                Cross platform software development and application engineering<br/>
+                Web application and architectural consulting<br/> 
+            </p>
+
+        </div>
+    </div>
+</section>
 <section class="fullscreen ThinxNet">
     <div class="card-50">
         <figure>
             <img src="images/ThinxNetStreets.jpg" alt="ThinxNet GmbH">
             <figcaption>
-                <a href="https://www.thinxnet.com" title="ThinxNet GmbH">
+                <a href="https://www.thinxnet.com" title="ThinxNet GmbH" target="_blank">
                     <svg class="ffa-external-link">
                         <use xlink:href="#fa-external-link"></use>
                     </svg>
@@ -257,7 +348,7 @@
         <figure>
             <img src="images/natureOfficeCut.jpg" alt="natureOffice GmbH">
             <figcaption>
-                <a href="https://www.natureOffice.com" title="natureOffice GmbH">
+                <a href="https://www.natureOffice.com" title="natureOffice GmbH" target="_blank">
                     <svg class="ffa-external-link">
                         <use xlink:href="#fa-external-link"></use>
                     </svg>
@@ -295,7 +386,7 @@
         <figure>
             <img src="images/DynomediaDark.png" alt="Dynomedia GmbH">
             <figcaption>
-                <a href="http://web.archive.org/web/20070424015302/http://www.dynomedia.com/de/index.php" title="DYNOmedia GmbH">
+                <a href="http://web.archive.org/web/20070424015302/http://www.dynomedia.com/de/index.php" title="DYNOmedia GmbH" target="_blank">
                     <svg class="ffa-external-link">
                         <use xlink:href="#fa-external-link"></use>
                     </svg>
@@ -328,7 +419,7 @@
         <figure>
             <img src="images/KiggFlyer2.jpg" alt="KIGG GmbH">
             <figcaption>
-                <a href="http://www.kigg.de" title="KIGG GmbH">
+                <a href="http://www.kigg.de" title="KIGG GmbH" target="_blank">
                     <svg class="ffa-external-link">
                         <use xlink:href="#fa-external-link"></use>
                     </svg>
@@ -435,98 +526,95 @@
         </ul>
     </div>
 </section>
-<section class="frontend">
+<section>
     <div class="wrap">
         <h2>Technologies Overview</h2>
-        <h4 class="subline">Experience and Expertise Frontend Technologies</h4>
-        <table class="fadeIn">
-            <thead>
-                <tr>
-                    <th>Technology</th>
-                    <th>Expertise</th>
-                    <th>Period of application</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>HTML</td>
-                    <td>expert</td>
-                    <td>10+ years</td>
-                </tr>
-                <tr>
-                    <td>CSS</td>
-                    <td>expert</td>
-                    <td>10+ years</td>
-                </tr>
-                <tr>
-                    <td>Javascript</td>
-                    <td>expert</td>
-                    <td>10+ years</td>
-                </tr>
-                <tr>
-                    <td>WebComponents / Polymer</td>
-                    <td>experienced</td>
-                    <td>3 years</td>
-                </tr>
-                <tr>
-                    <td>Riotjs</td>
-                    <td>experienced</td>
-                    <td>2 years</td>
-                </tr>
-                <tr>
-                    <td>graphics design and editing</td>
-                    <td>expert</td>
-                    <td>10+ years</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</section>
-<section class="bg-inverted">
-    <div class="wrap">
-        <h2>Technologies Overview</h2>
-        <h4 class="subline">Experience and Expertise Backend Technologies</h4>
-        <table class="fadeIn">
-            <thead>
-                <tr>
-                    <th>Technology</th>
-                    <th>Expertise</th>
-                    <th>Period of application</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Javascript</td>
-                    <td>expert</td>
-                    <td>10+ years</td>
-                </tr>
-                <tr>
-                    <td>NodeJS</td>
-                    <td>expert</td>
-                    <td>6 years</td>
-                </tr>
-                <tr>
-                    <td>CouchDB/CouchApps</td>
-                    <td>expert</td>
-                    <td>9 years</td>
-                </tr>
-                <tr>
-                    <td>Docker</td>
-                    <td>experienced</td>
-                    <td>4 years</td>
-                </tr>
-                <tr>
-                    <td>PaaS / AWS / Heroku, etc </td>
-                    <td>experienced</td>
-                    <td>8 years</td>
-                </tr>
-                <tr>
-                    <td>Ruby</td>
-                    <td>experienced</td>
-                    <td>7 years</td>
-                </tr>
-            </tbody>
-        </table>
+        <h4 class="subline">Experience and Expertise (extract)</h4>
+        <ul class="flexblock features">
+            <li>
+                <div>
+                    <h2>
+                        <img src="images/html.svg" /> HTML / CSS
+                    </h2>
+                    Expert with over 10 years of application.
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h2>
+                        <img src="images/js.svg" />
+                        Javascript
+                    </h2>
+                    Expert with over 10 years of application.
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h2>
+                        <img src="images/couchdb.svg" />
+                        CouchDB/CouchApps	
+                    </h2>
+                    Expert with about 9 years of application.
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h2>
+                        <img src="images/polymer.svg" />
+                        WebComponents / Polymer	
+                    </h2>
+                    Experienced with about 3 years of application.
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h2>
+                        <img src="images/riot.svg" />
+                        Riot	
+                    </h2>
+                    Experienced with about 2 years of application.
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h2>
+                        <img src="images/vue.svg" />
+                        Vue
+                    </h2>
+                    Intermediate with about 1 years of application.
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h2>
+                        <img src="images/angular.svg" />
+                        Angular
+                    </h2>
+                    Expert with about 6 years of application.
+                </div>
+            </li>
+
+
+            <li>
+                <div>
+                    <h2>
+                        <img src="images/nodejs.svg" />
+                        NodeJS
+                    </h2>
+                    Experienced with about 6 years of application.
+                </div>
+            </li>
+             <li>
+                <div>
+                    <h2>
+                        <img src="images/ruby.svg" />
+                        Ruby
+                    </h2>
+                    Experienced with about 7 years of application.
+                </div>
+            </li>
+           
+        </ul>
     </div>
 </section>
 		</article>
@@ -543,7 +631,7 @@
 							If you like my CV you can download a copy as PDF by clicking the link below. Perfectly suited to print it out and show it
 							to your friends and colleges.
 						</p>
-						<a href="/assets/CV-Alexander-Schedler-EN-2016-07-05.pdf" download="CV-Alexander-Schedler.pdf" class="button">Download CV as PDF</a>
+						<a href="/assets/CV Alexander Schedler EN 2018-01-16.pdf" download="CV-Alexander-Schedler.pdf" class="button">Download CV as PDF</a>
 					</div>
 				</figure>
 
@@ -616,9 +704,44 @@
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		ga('create', 'UA-39968606-1', 'schedler.co');
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-39968606-1', 'auto');
 		ga('send', 'pageview');
 	</script>
+    <script>
+		console.time('loading');
+		document.onreadystatechange = function () {
+		  	switch (document.readyState) {
+		    	case "loading":
+		  			break;
+		    	case "interactive":
+					console.timeEnd('loading');
+					console.time('boot');
+					window._emojis = [
+						"😄", "😜", "😸", 
+						"🤘", "👍", "✌️", 
+						"☝️", "👔", "🦄" , 
+						"🤪", "👨‍💻"
+					];
+					window._loader = setInterval(function(){
+						document.querySelector('body > div span').innerText = window._emojis[~~(Math.random() * window._emojis.length)]
+					}, 750);
+		  			break;
+		    	case "complete":
+		  			console.timeEnd('boot');
+					setTimeout(function(){
+		  				var loader = document.querySelector('body > div')
+		  				loader.style.opacity = 0;
+		  				clearInterval(window._loader);
+						setTimeout(function(){
+		  					document.body.className=="loading"?document.body.className='ready':'';
+		  					document.body.removeChild(this);
+		  				}.bind(loader), 760);
+		  			}, 1000);
+		  			break;
+		  	}
+		}
+	</script>
+
 </body>
 </html>

@@ -29,11 +29,13 @@ module.exports = {
 		},
 		src: [
 			'src/_attachments/partials/_header.html',
+			//'src/_attachments/partials/0-loading.html',
 			'src/_attachments/partials/1-home.html',
 			'src/_attachments/partials/2-contact.html',
 			'src/_attachments/partials/3-overview.html',
 
-			'src/_attachments/partials/4-PURR.html',
+			'src/_attachments/partials/4a-IOB.html',
+			'src/_attachments/partials/4b-PURR.html',
 			'src/_attachments/partials/5-Thinxnet.html',
 			'src/_attachments/partials/6-natureOffice.html',
 			'src/_attachments/partials/7-Dynomedia.html',
@@ -41,9 +43,10 @@ module.exports = {
 
 			'src/_attachments/partials/9-Education.html',
 			'src/_attachments/partials/10-Personal.html',
-			'src/_attachments/partials/11-Frontend.html',
-			'src/_attachments/partials/12-Backend.html',
-
+			//'src/_attachments/partials/11-Frontend.html',
+			//'src/_attachments/partials/12-Backend.html',
+			'src/_attachments/partials/11a-Technology.html',
+			
 			'src/_attachments/partials/_footer.html'
 		],
 		dest: 'src/_attachments/index.html',

@@ -7,7 +7,7 @@
 		<title>Schedler.co | Alexander Schedler, Internet application engineering and development</title>
 		<meta name="description" content="Curriculum vitae (CV), Alexander Schedler, Key areas: Internet application engineering and development, Key skills: Javascript (Frontend and Backend), AngularJS, Polymer, Node.js, CouchDB, HTML, grunt, kanso, Ruby">
 		<meta name="author" content="Alexander Schedler">
-		<link rel="canonical" href="https://www.schedler.co/">
+		<link rel="canonical" href="https://www.schedler.pro/">
 		<meta name="mobile-web-app-capable" content="yes">
 		<meta name="theme-color" content="#EEEEEE">
 		<!-- FONTS -->
@@ -19,16 +19,16 @@
 		<!-- FACEBOOK et. TWITTER -->
 		<meta property="og:url" content="https://www.schedler.co">
 		<meta property="og:type" content="website">
-		<meta property="og:title" content="Schedler.co | Alexander Schedler, Internet application engineering and development">
-		<meta property="og:description" content="Curriculum vitae (CV), Alexander Schedler, Key areas: Internet application engineering and development, Key skills: Javascript (Frontend and Backend), AngularJS, Polymer, Node.js, CouchDB, HTML, grunt">
+		<meta property="og:title" content="Schedler.pro | Alexander Schedler, Internet application engineering and development">
+		<meta property="og:description" content="Curriculum vitae (CV), Alexander Schedler, Key areas: Internet application engineering and development, Key skills: Javascript (Frontend and Backend), AngularJS, Polymer, Vue, Node.js, CouchDB, HTML">
 		<meta property="og:updated_time" content="2017-01-20T12:00:00">
-		<meta property="og:image" content="https://www.schedler.co/images/social-card.png">
+		<meta property="og:image" content="https://www.schedler.pro/images/social-card.png">
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@kulturpessimist">
 		<meta name="twitter:creator" content="@kulturpessimist">
 		<meta name="twitter:title" content="Schedler.co | Alexander Schedler, Internet application engineering and development">
-		<meta name="twitter:description" content="Curriculum vitae (CV), Alexander Schedler, Key areas: Internet application engineering and development, Key skills: Javascript (Frontend and Backend), AngularJS, Polymer, Node.js, CouchDB, HTML, grunt">
-		<meta name="twitter:image" content="https://www.schedler.co/images/social-card.png">
+		<meta name="twitter:description" content="Curriculum vitae (CV), Alexander Schedler, Key areas: Internet application engineering and development, Key skills: Javascript (Frontend and Backend), AngularJS, Polymer, Vue, Node.js, CouchDB, HTML">
+		<meta name="twitter:image" content="https://www.schedler.pro/images/social-card.png">
 		<!-- FAVICONS -->
 		<link rel="shortcut icon" sizes="16x16" href="images/icon.16.png">
 		<link rel="shortcut icon" sizes="32x32" href="images/icon.32.png">
@@ -37,6 +37,48 @@
 		<link rel="apple-touch-icon icon" sizes="152x152" href="images/icon.152.png">
 		<link rel="apple-touch-icon icon" sizes="180x180" href="images/icon.180.png">
 		<link rel="apple-touch-icon icon" sizes="192x192" href="images/icon.192.png">
+		<style>
+			.loading{ overflow: hidden; }
+			body.loading > div{
+				width: 100vw; height: 100vh; position: absolute; top:0; left:0;
+				background-color: #eee;
+				
+				text-align: center; font-size: 120px; line-height: 100vh;
+
+				background-position: center center; background-repeat: no-repeat; background-size: 33%; 
+				z-index: 999999; 
+				-webkit-transition: all 0.75s linear;
+						transition: all 0.75s linear;
+			}
+			body.loading > div div{
+				width: 0vw; height: 4px;
+				background-color: #F9F8F4; color: #4a4a4a;
+				text-align: left;
+				font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto",
+					"Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+				font-size: 10px; line-height: 24px; text-indent: 4px;
+				-ms-animation: animation 3000ms linear infinite;
+					animation: animation 3000ms linear infinite;
+			}
+			@-ms-keyframes animation{
+				0%  { width:0vw;	background-color: #1BF9D8; }
+				33% { width:100vw;	background-color: #1BF9D8; }
+				34% { width:0vw; 	background-color: #0D7969; }
+				66% { width:100vw;	background-color: #0D7969; }
+				67% { width:0vw; 	background-color: #063A32; }
+				100%{ width:100vw;	background-color: #063A32; }
+			}
+			@keyframes animation{
+				0%  { width:0vw;	background-color: #1BF9D8; }
+				33% { width:100vw;	background-color: #1BF9D8; }
+				34% { width:0vw; 	background-color: #0D7969; }
+				66% { width:100vw;	background-color: #0D7969; }
+				67% { width:0vw; 	background-color: #063A32; }
+				100%{ width:100vw;	background-color: #063A32; }
+			}
+			body.loading #hamburgler{ display: none; }
+		</style>
+
 	</head>
 	<!--
 	Hello highly esteemed Visitor!
@@ -44,7 +86,13 @@
 	You can call me at +49 171 4 123 929 or write me via Email at alex@schedler.co
 	I am looking forward to hear from you. :-)
     -->
-	<body>
+	<body class="loading">
+
+		<div>
+			<div>Loading...</div>
+			<span>😱</span>
+		</div>
+
 		<main role="main">
 			<article id="webslides">
 

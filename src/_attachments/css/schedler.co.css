@@ -1,7 +1,4 @@
-::selection {
-    color: white:
-    background: #1BF9D8;
-}
+
 body {
     background-color: #F9F8F4;
 }
@@ -64,7 +61,9 @@ section span,
 
 @media (min-width:1024px) {
     .flexblock.gallery li {
-        width: 14%;
+        width: 20%;
+        margin-right: 5%;
+        margin-left: 5%;
     }
 }
 
@@ -93,6 +92,12 @@ footer a {
     color: #333;
 }
 
+.iob h1,
+.iob h2,
+.iob h4{
+    color: #6653FF; 
+}
+
 .ThinxNet h1, 
 .ThinxNet h2,
 .ThinxNet h4{
@@ -113,7 +118,10 @@ footer a {
 .KIGG h2{
     color: #D00027;
 }
-
+figcaption{
+    width: 100%;
+    text-align: left;
+}
 .flexblock.clients li div{
     margin:30px;
     margin-top:25px;
@@ -167,6 +175,11 @@ footer a {
     margin-bottom: 3.2rem;
 }
 
+.features li img{
+    vertical-align: top;
+    float: left;
+    margin-right: 10px;
+}
 /*
 HAMBURGLAR
 */
@@ -298,4 +311,16 @@ HAMBURGLAR
 }
 .hamburgler-menu .flex-content div{
     max-height:50vh; overflow:scroll; text-align: left;
+}
+
+
+
+
+::selection {
+    color: white !important;
+    background-color: #1BF9D8 !important;
+}
+::-moz-selection {
+    color: white;
+    background-color: #1BF9D8;
 }
