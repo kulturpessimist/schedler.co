@@ -33,8 +33,8 @@ module.exports = {
 			'src/_attachments/partials/2-contact.html',
 			'src/_attachments/partials/3-overview.html',
 
-			'src/_attachments/partials/4a-IOB.html',
-			'src/_attachments/partials/4b-PURR.html',
+			'src/_attachments/partials/4-IOB.html',
+			//'src/_attachments/partials/4b-PURR.html',
 			'src/_attachments/partials/5-Thinxnet.html',
 			'src/_attachments/partials/6-natureOffice.html',
 			'src/_attachments/partials/7-Dynomedia.html',

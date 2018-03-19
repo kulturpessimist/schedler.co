@@ -62,9 +62,9 @@ section span,
 
 @media (min-width:1024px) {
     .flexblock.gallery li {
-        width: 22%;
-        margin-right: 4%;
-        margin-left: 4%;
+        width: 14%;
+        margin-right: 2%;
+        margin-left: 2%;
     }
 }
 
