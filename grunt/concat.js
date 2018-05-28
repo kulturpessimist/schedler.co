@@ -33,18 +33,16 @@ module.exports = {
 			'src/_attachments/partials/2-contact.html',
 			'src/_attachments/partials/3-overview.html',
 
-			'src/_attachments/partials/4-IOB.html',
-			//'src/_attachments/partials/4b-PURR.html',
-			'src/_attachments/partials/5-Thinxnet.html',
-			'src/_attachments/partials/6-natureOffice.html',
-			'src/_attachments/partials/7-Dynomedia.html',
-			'src/_attachments/partials/8-KIGG.html',
+			'src/_attachments/partials/jobs/6-MAN.html',
+			'src/_attachments/partials/jobs/5-IOB.html',
+			'src/_attachments/partials/jobs/4-Thinxnet.html',
+			'src/_attachments/partials/jobs/3-natureOffice.html',
+			'src/_attachments/partials/jobs/2-Dynomedia.html',
+			'src/_attachments/partials/jobs/1-KIGG.html',
 
-			'src/_attachments/partials/9-Education.html',
-			'src/_attachments/partials/10-Personal.html',
-			//'src/_attachments/partials/11-Frontend.html',
-			//'src/_attachments/partials/12-Backend.html',
-			'src/_attachments/partials/11a-Technology.html',
+			'src/_attachments/partials/4-Education.html',
+			'src/_attachments/partials/5-Personal.html',
+			'src/_attachments/partials/6-Technology.html',
 			
 			'src/_attachments/partials/_footer.html'
 		],

@@ -62,7 +62,7 @@ section span,
 
 @media (min-width:1024px) {
     .flexblock.gallery li {
-        width: 14%;
+        width: 25%;
         margin-right: 2%;
         margin-left: 2%;
     }
@@ -99,10 +99,27 @@ footer a {
     color: #333;
 }
 
+.MAN h1,
+.MAN h2,
+.MAN h4{
+    color: #D91D4B; 
+}
+.MAN h2{
+    font-size: 4.2rem;
+}
+.MAN figure img{
+    object-position: 100% 100%;
+}
+
+
+
 .IoB h1,
 .IoB h2,
 .IoB h4{
     color: #6653FF; 
+}
+.IoB h2{
+    font-size: 4.0rem;
 }
 
 .ThinxNet h1, 
