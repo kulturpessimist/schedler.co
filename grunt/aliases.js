@@ -4,21 +4,28 @@ module.exports = {
 		'connect',
 		'watch'
 	],
-  	'preflight': [
+	'preflight': [
 		'concat:css',
 		'concat:js',
 		'concat:html',
 		'cssmin',
 		'uglify'
-  	],
-  	'compile': [
-  		'preflight',
+	],
+	'compile': [
+		'preflight',
 		'imagemin',
-  		'couch-compile',
-  		'clean-couch-compile'
-  	],
-  	'deploy': [
-  		'compile',
-  		'couch-push:production'
-  	]
+		'couch-compile',
+		'clean-couch-compile'
+	],
+	'deploy': [
+		'compile',
+		'couch-push:production'
+	],
+	'publish:surge': [
+		'preflight',
+		'clean:surge',
+		'imagemin', 
+		'copy', 
+		'surge'
+	]
 };
