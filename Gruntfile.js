@@ -4,8 +4,8 @@ module.exports = function(grunt) {
 	require('load-grunt-config')(grunt, {
 		init: true,
 		data: {
-			pkg: grunt.file.readJSON('package.json'),
-			cfg: grunt.file.readJSON('.couchapprc'),
+			pkg: grunt.file.readJSON('package.json')
+			//, cfg: grunt.file.readJSON('.couchapprc'),
 		},
 		jitGrunt: {
 			staticMappings: {

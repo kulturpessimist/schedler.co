@@ -1,31 +1,26 @@
 module.exports = {
 	'default': [
 		'preflight',
+		'copy:images',
 		'connect',
 		'watch'
 	],
 	'preflight': [
+		'clean:surge',
 		'concat:css',
 		'concat:js',
 		'concat:html',
 		'cssmin',
-		'uglify'
+		'uglify',
+		'clean:post',
+		'copy:default'
 	],
 	'compile': [
 		'preflight',
-		'imagemin',
-		'couch-compile',
-		'clean-couch-compile'
+		'imagemin'
 	],
 	'deploy': [
 		'compile',
-		'couch-push:production'
-	],
-	'publish:surge': [
-		'preflight',
-		'clean:surge',
-		'imagemin', 
-		'copy', 
 		'surge'
 	]
 };

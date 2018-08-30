@@ -1,21 +1,20 @@
 module.exports = {
     default: {
         expand: true,
-        cwd: 'src/_attachments/',
+        cwd: 'src/',
         src: [
-            'fonts',
+            'fonts/**',
             'index.html',
+            'robots.txt',
             'google7f311b514ca2b68b.html'
         ],
         dest: 'surge/'
     },
-    dist: {
+    images: {
         expand: true,
-        cwd: 'src/_attachments/dist',
+        cwd: 'src/',
         src: [
-            'images/*',
-            'main.min.css',
-            'main.min.js'
+            'images/*'
         ],
         dest: 'surge/'
     }

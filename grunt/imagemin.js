@@ -5,9 +5,9 @@ module.exports = {
         },
         files: [{
             expand: true, 
-            cwd: 'src/_attachments/images',
+            cwd: 'src/images',
             src: ['**/*.{png,jpg,svg}'], 
-            dest: 'src/_attachments/dist/images'
+            dest: 'surge/images'
         }]
     }
 }

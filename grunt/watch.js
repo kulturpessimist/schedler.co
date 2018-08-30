@@ -1,9 +1,9 @@
 module.exports = {
 	src: {
 		files: [
-			'src/_attachments/**/*', 
-			'!src/_attachments/dist/**/*',
-			'!src/_attachments/index.html'
+			'src/**/*', 
+			'!src/dist/**/*',
+			'!src/index.html'
 		],
 		tasks: ['preflight'],
 		options: {
@@ -18,9 +18,9 @@ module.exports = {
 			livereload: true
 		},
 		files: [
-			'src/_attachments/**/*', 
-			'!src/_attachments/dist/**/*',
-			'!src/_attachments/index.html'
+			'src/**/*', 
+			'!src/dist/**/*',
+			'!src/index.html'
 		]
 	}
 };
