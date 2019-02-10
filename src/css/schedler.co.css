@@ -1,4 +1,3 @@
-
 body {
     background-color: #F9F8F4;
     zoom: 100%;
@@ -15,15 +14,20 @@ section h2 {
 h3,
 h4,
 h5,
-h6{
+h6 {
     font-family: 'AbulaOrganicSemLt';
     font-style: normal;
     font-weight: normal;
     color: #1BF9D8;
 }
 
+.fa {
+    min-width: 24px;
+    text-align: center;
+}
 
-a, h6 {
+a,
+h6 {
     color: #333;
 }
 
@@ -54,7 +58,8 @@ section span,
 .light {
     opacity: 0.66;
 }
-.left{
+
+.left {
     text-align: left;
 }
 
@@ -68,7 +73,7 @@ section span,
     }
 }
 
-.flexblock.gallery li:nth-child(n+4){
+.flexblock.gallery li:nth-child(n+4) {
     -webkit-box-flex: auto;
     -ms-flex: auto;
     flex: auto;
@@ -85,7 +90,9 @@ footer a {
     margin-right: 0px;
     color: #1BF9D8;
 }
-.hamburgler-menu .button, .hamburgler-menu .button:hover{
+
+.hamburgler-menu .button,
+.hamburgler-menu .button:hover {
     background-color: #F9F8F4;
     border: 1px solid #333;
     color: #333 !important;
@@ -95,19 +102,23 @@ footer a {
     font-style: normal;
     font-weight: normal;
 }
-.hamburgler-menu a, .hamburgler-menu a:hover{
+
+.hamburgler-menu a,
+.hamburgler-menu a:hover {
     color: #333;
 }
 
 .MAN h1,
 .MAN h2,
-.MAN h4{
-    color: #D91D4B; 
+.MAN h4 {
+    color: #D91D4B;
 }
-.MAN h2{
+
+.MAN h2 {
     font-size: 4.2rem;
 }
-.MAN figure img{
+
+.MAN figure img {
     object-position: 100% 100%;
 }
 
@@ -115,41 +126,48 @@ footer a {
 
 .IoB h1,
 .IoB h2,
-.IoB h4{
-    color: #6653FF; 
+.IoB h4 {
+    color: #6653FF;
 }
-.IoB h2{
+
+.IoB h2 {
     font-size: 4.0rem;
 }
 
-.ThinxNet h1, 
+.ThinxNet h1,
 .ThinxNet h2,
-.ThinxNet h4{
+.ThinxNet h4 {
     color: #ff6600;
 }
-.natureOffice h1, 
-.natureOffice h4, 
-.natureOffice h2{
+
+.natureOffice h1,
+.natureOffice h4,
+.natureOffice h2 {
     color: #5F9E64;
 }
+
 .Dynomedia h1,
 .Dynomedia h4,
-.Dynomedia h2{
+.Dynomedia h2 {
     color: #00AEEF;
 }
-.KIGG h1, 
-.KIGG h4, 
-.KIGG h2{
+
+.KIGG h1,
+.KIGG h4,
+.KIGG h2 {
     color: #D00027;
 }
-figcaption{
+
+figcaption {
     width: 100%;
     text-align: left;
 }
-.flexblock.clients li div{
-    margin:30px;
-    margin-top:25px;
+
+.flexblock.clients li div {
+    margin: 30px;
+    margin-top: 25px;
 }
+
 .bg-inverted {
     background-color: #1BF9D8;
 }
@@ -159,11 +177,11 @@ figcaption{
 .frontend h4,
 .bg-inverted h1,
 .bg-inverted h2,
-.bg-inverted h4{
+.bg-inverted h4 {
     color: #333;
 }
 
-.bg-pattern{
+.bg-pattern {
     background-color: #F9F8F4;
     background-image: url(/images/pattern3.png);
     background-repeat: repeat-x;
@@ -171,39 +189,47 @@ figcaption{
     background-size: 100%;
     background-position: bottom right
 }
-.bg-pattern a{
+
+.bg-pattern a {
     color: #333;
 }
+
 .bg-pattern a:hover,
-.bg-pattern a:active{
+.bg-pattern a:active {
     color: #1BF9D8;
 }
-.center-court{
-    text-align: left; min-width: 66%;
+
+.center-court {
+    text-align: left;
+    min-width: 66%;
 }
-.center-court p{
-    margin-left:20px;
+
+.center-court p {
+    margin-left: 20px;
 }
-.center-court svg{
+
+.center-court svg {
     margin-right: 15px;
 }
 
 
 .text-med {
-    font-size: 100%;line-height: 2.4rem;
+    font-size: 100%;
+    line-height: 2.4rem;
 }
 
 
-.description{
+.description {
     margin-top: 3.2rem;
     margin-bottom: 3.2rem;
 }
 
-.features li img{
+.features li img {
     vertical-align: top;
     float: left;
     margin-right: 10px;
 }
+
 /*
 HAMBURGLAR
 */
@@ -296,45 +322,54 @@ HAMBURGLAR
     transform: translate(-50%, -50%) scale(1)
 }
 
-.hamburgler-menu{
+.hamburgler-menu {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.hamburgler-menu a{
+
+.hamburgler-menu a {
     color: white;
-    margin:5px;
+    margin: 5px;
 }
+
 .hamburgler-menu p,
-.hamburgler-menu h4{
+.hamburgler-menu h4 {
     text-align: left
 }
+
 .hamburgler-menu h1,
 .hamburgler-menu h2,
 .hamburgler-menu h3,
 .hamburgler-menu h4,
 .hamburgler-menu h5,
-.hamburgler-menu h6{
+.hamburgler-menu h6 {
     color: #333;
 }
+
 .hamburgler-menu figure h1,
 .hamburgler-menu figure h2,
 .hamburgler-menu figure h3,
 .hamburgler-menu figure h4,
 .hamburgler-menu figure h5,
-.hamburgler-menu figure h6{
+.hamburgler-menu figure h6 {
     color: white;
 }
-.hamburgler-menu figure{
+
+.hamburgler-menu figure {
     padding: 20px;
     background-color: #1BF9D8 !important;
     color: white;
 }
-.hamburgler-menu figure div{
-    margin:24px;
+
+.hamburgler-menu figure div {
+    margin: 24px;
 }
-.hamburgler-menu .flex-content div{
-    max-height:50vh; overflow:scroll; text-align: left;
+
+.hamburgler-menu .flex-content div {
+    max-height: 50vh;
+    overflow: scroll;
+    text-align: left;
 }
 
 
@@ -344,6 +379,7 @@ HAMBURGLAR
     color: white !important;
     background-color: #1BF9D8 !important;
 }
+
 ::-moz-selection {
     color: white;
     background-color: #1BF9D8;

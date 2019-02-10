@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Schedler.pro | Alexander Schedler, Internet application engineering and development</title>
-		<meta name="description" content="Curriculum vitae (CV), Alexander Schedler, Key areas: Internet application engineering and development, Key skills: Javascript (Frontend and Backend), AngularJS, Polymer, Node.js, CouchDB, HTML, grunt, kanso, Ruby">
+		<meta name="description" content="Curriculum vitae (CV), Alexander Schedler, Key areas: Internet application engineering and development, Key skills: Javascript (Frontend and Backend), HTML, CSS, Angular, Web Components, Vue, Node.js, CouchDB">
 		<meta name="author" content="Alexander Schedler">
 		<link rel="canonical" href="https://www.schedler.pro/">
 		<meta name="referrer" content="no-referrer">
@@ -16,20 +16,22 @@
 		<link rel="stylesheet" type="text/css" media="all" href="fonts/Fira/fira.css">
 		<link rel="stylesheet" type="text/css" media="all" href="fonts/Abula/Light/AbulaOrganic-Light.css">
 		<link rel="stylesheet" type="text/css" media="all" href="fonts/Abula/SemLt/AbulaOrganic-SemiLight.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+		 crossorigin="anonymous">
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" media="all" href="main.min.css">
 		<!-- FACEBOOK et. TWITTER -->
 		<meta property="og:url" content="https://www.schedler.pro">
 		<meta property="og:type" content="website">
 		<meta property="og:title" content="Schedler.pro | Alexander Schedler, Internet application engineering and development">
-		<meta property="og:description" content="Curriculum vitae (CV), Alexander Schedler, Key areas: Internet application engineering and development, Key skills: Javascript (Frontend and Backend), AngularJS, Polymer, Vue, Node.js, CouchDB, HTML">
-		<meta property="og:updated_time" content="2018-08-29T12:00:00">
+		<meta property="og:description" content="Curriculum vitae (CV), Alexander Schedler, Key areas: Internet application engineering and development, Key skills: Javascript (Frontend and Backend), HTML, CSS, Angular, Web Components, Vue, Node.js, CouchDB">
+		<meta property="og:updated_time" content="2019-02-10T12:00:00">
 		<meta property="og:image" content="https://www.schedler.pro/images/social-card.png">
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@kulturpessimist">
 		<meta name="twitter:creator" content="@kulturpessimist">
-		<meta name="twitter:title" content="Schedler.co | Alexander Schedler, Internet application engineering and development">
-		<meta name="twitter:description" content="Curriculum vitae (CV), Alexander Schedler, Key areas: Internet application engineering and development, Key skills: Javascript (Frontend and Backend), AngularJS, Polymer, Vue, Node.js, CouchDB, HTML">
+		<meta name="twitter:title" content="Schedler.pro | Alexander Schedler, Internet application engineering and development">
+		<meta name="twitter:description" content="Curriculum vitae (CV), Alexander Schedler, Key areas: Internet application engineering and development, Key skills: Javascript (Frontend and Backend), HTML, CSS, Angular, Web Components, Vue, Node.js, CouchDB">
 		<meta name="twitter:image" content="https://www.schedler.pro/images/social-card.png">
 		<!-- FAVICONS -->
 		<link rel="shortcut icon" sizes="16x16" href="images/icon.16.png">
@@ -40,45 +42,113 @@
 		<link rel="apple-touch-icon icon" sizes="180x180" href="images/icon.180.png">
 		<link rel="apple-touch-icon icon" sizes="192x192" href="images/icon.192.png">
 		<style>
-			.loading{ overflow: hidden; }
-			body.loading > div{
-				width: 100vw; height: 100vh; position: absolute; top:0; left:0;
-				background-color: #eee;
-				
-				text-align: center; font-size: 120px; line-height: 100vh;
-
-				background-position: center center; background-repeat: no-repeat; background-size: 33%; 
-				z-index: 999999; 
-				-webkit-transition: all 0.75s linear;
-						transition: all 0.75s linear;
+			.loading {
+				overflow: hidden;
 			}
-			body.loading > div div{
-				width: 0vw; height: 4px;
-				background-color: #F9F8F4; color: #4a4a4a;
+
+			body.loading>div {
+				width: 100vw;
+				height: 100vh;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-color: #eee;
+
+				text-align: center;
+				font-size: 120px;
+				line-height: 100vh;
+
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: 33%;
+				z-index: 999999;
+				-webkit-transition: all 0.75s linear;
+				transition: all 0.75s linear;
+			}
+
+			body.loading>div div {
+				width: 0vw;
+				height: 4px;
+				background-color: #F9F8F4;
+				color: #4a4a4a;
 				text-align: left;
 				font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto",
 					"Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-				font-size: 10px; line-height: 24px; text-indent: 4px;
+				font-size: 10px;
+				line-height: 24px;
+				text-indent: 4px;
 				-ms-animation: animation 3000ms linear infinite;
-					animation: animation 3000ms linear infinite;
+				animation: animation 3000ms linear infinite;
 			}
-			@-ms-keyframes animation{
-				0%  { width:0vw;	background-color: #1BF9D8; }
-				33% { width:100vw;	background-color: #1BF9D8; }
-				34% { width:0vw; 	background-color: #0D7969; }
-				66% { width:100vw;	background-color: #0D7969; }
-				67% { width:0vw; 	background-color: #063A32; }
-				100%{ width:100vw;	background-color: #063A32; }
+
+			@-ms-keyframes animation {
+				0% {
+					width: 0vw;
+					background-color: #1BF9D8;
+				}
+
+				33% {
+					width: 100vw;
+					background-color: #1BF9D8;
+				}
+
+				34% {
+					width: 0vw;
+					background-color: #0D7969;
+				}
+
+				66% {
+					width: 100vw;
+					background-color: #0D7969;
+				}
+
+				67% {
+					width: 0vw;
+					background-color: #063A32;
+				}
+
+				100% {
+					width: 100vw;
+					background-color: #063A32;
+				}
 			}
-			@keyframes animation{
-				0%  { width:0vw;	background-color: #1BF9D8; }
-				33% { width:100vw;	background-color: #1BF9D8; }
-				34% { width:0vw; 	background-color: #0D7969; }
-				66% { width:100vw;	background-color: #0D7969; }
-				67% { width:0vw; 	background-color: #063A32; }
-				100%{ width:100vw;	background-color: #063A32; }
+
+			@keyframes animation {
+				0% {
+					width: 0vw;
+					background-color: #1BF9D8;
+				}
+
+				33% {
+					width: 100vw;
+					background-color: #1BF9D8;
+				}
+
+				34% {
+					width: 0vw;
+					background-color: #0D7969;
+				}
+
+				66% {
+					width: 100vw;
+					background-color: #0D7969;
+				}
+
+				67% {
+					width: 0vw;
+					background-color: #063A32;
+				}
+
+				100% {
+					width: 100vw;
+					background-color: #063A32;
+				}
 			}
-			body.loading #hamburgler{ display: none; }
+
+			body.loading #hamburgler {
+				display: none;
+			}
+
 		</style>
 
 	</head>
@@ -88,6 +158,7 @@
 	You can call me at +49 171 4 123 929 or write me via Email at alex@schedler.co
 	I am looking forward to hear from you. :-)
     -->
+
 	<body class="loading">
 
 		<div>
@@ -97,4 +168,3 @@
 
 		<main role="main">
 			<article id="webslides">
-

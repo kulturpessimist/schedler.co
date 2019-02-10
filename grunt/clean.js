@@ -1,4 +1,4 @@
 module.exports = {
-    surge: 'surge/',
+    surge: 'build/',
     post: ['src/main.css', 'src/main.js']
 }

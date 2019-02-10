@@ -1,13 +1,13 @@
 module.exports = {
     default: {
-        options: { 
+        options: {
             optimizationLevel: 5,
         },
         files: [{
-            expand: true, 
+            expand: true,
             cwd: 'src/images',
-            src: ['**/*.{png,jpg,svg}'], 
-            dest: 'surge/images'
+            src: ['**/*.{png,jpg,svg}'],
+            dest: 'build/images'
         }]
     }
 }

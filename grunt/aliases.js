@@ -1,12 +1,12 @@
 module.exports = {
 	'default': [
 		'preflight',
-		'copy:images',
 		'connect',
 		'watch'
 	],
 	'preflight': [
 		'clean:surge',
+		'copy:images',
 		'concat:css',
 		'concat:js',
 		'concat:html',

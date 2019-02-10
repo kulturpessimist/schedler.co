@@ -1,7 +1,7 @@
 module.exports = {
     'schedler.co': {
         options: {
-            project: 'surge/',
+            project: 'build/',
             domain: 'www.schedler.pro'
         }
     }

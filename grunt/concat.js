@@ -1,28 +1,26 @@
 module.exports = {
-	css:{
+	css: {
 		options: {
 			separator: '',
 		},
 		src: [
 			'src/css/webslides.css',
 			'src/css/colors.css',
-			'src/css/svg-icons.css',
 			'src/css/schedler.co.css'
 		],
 		dest: 'src/main.css',
 	},
-	js:{
+	js: {
 		options: {
 			separator: ';',
 		},
 		src: [
-			'src/js/svg-icons.js',
 			'src/js/webslides.js',
 			'src/js/main.js'
 		],
 		dest: 'src/main.js',
 	},
-	html:{
+	html: {
 		options: {
 			separator: '\n',
 		},
@@ -43,7 +41,7 @@ module.exports = {
 			'src/partials/4-Education.html',
 			'src/partials/5-Personal.html',
 			'src/partials/6-Technology.html',
-			
+
 			'src/partials/_footer.html'
 		],
 		dest: 'src/index.html',

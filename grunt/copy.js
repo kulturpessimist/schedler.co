@@ -8,7 +8,7 @@ module.exports = {
             'robots.txt',
             'google7f311b514ca2b68b.html'
         ],
-        dest: 'surge/'
+        dest: 'build/'
     },
     images: {
         expand: true,
@@ -16,6 +16,6 @@ module.exports = {
         src: [
             'images/*'
         ],
-        dest: 'surge/'
+        dest: 'build/'
     }
 };

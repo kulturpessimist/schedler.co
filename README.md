@@ -1,12 +1,26 @@
 schedler.co
-===========
+============
 
 website and contents of schedler.co / schedler.pro
 
-Last update 22.02.2017
+Last update 10.02.2019 
 
 Changelog
 =========
+
+10.02.2019 
+
+* Version 2.1 
+* Removed svg-icons.(js|css) added font awesome (cdn)
+* some content updates
+* updated all the npm packages
+* preperation for v3
+
+30.08.2018
+
+* Version 2.0.1
+* moved from couchapp to surge
+* some content updates (MAN)
 
 22.02.2017 
 
