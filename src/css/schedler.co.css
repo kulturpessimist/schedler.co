@@ -1,3 +1,14 @@
+:root {
+    --highlight: #1BF9D8;
+    --lilac: #5900B0;
+    --purple: #3D0078;
+    --dark: #25064C;
+    --black: #15032B;
+    /**/
+    --blue: #5F44F5;
+    --react: #7C4FF6;
+}
+
 body {
     background-color: #F9F8F4;
     zoom: 100%;
