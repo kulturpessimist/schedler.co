@@ -6,7 +6,8 @@ module.exports = {
 		src: [
 			'src/css/webslides.css',
 			'src/css/colors.css',
-			'src/css/schedler.co.css'
+			'src/css/schedler.co.css',
+			'src/css/custom.css-slides.css'
 		],
 		dest: 'src/main.css',
 	},

@@ -1,0 +1,53 @@
+/*
+Based on code by Ondřej Žára
+*/
+section {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: antiquewhite;
+}
+
+/**
+ * Navigation 
+ */
+nav {
+    --width: 300px;
+    position: absolute;
+    width: var(--width);
+    left: calc(100vw / 2 - var(--width) / 2);
+    bottom: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 16px;
+
+    padding: 20px;
+    z-index: 999;
+
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.2;
+
+    transition: 0.5s ease-in-out all;
+
+}
+
+nav:hover {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav:hover a {
+    color: white;
+    transform: scale(1.33);
+
+    padding: 10px;
+}
+
+nav a {
+    font-size: 2.5rem;
+    color: black;
+    transition: 0.5s ease-in-out all;
+
+}
