@@ -3,20 +3,20 @@
   "description": "Personal website",
   "version": "2.1.0",
   "devDependencies": {
-    "grunt": "^1.0.3",
+    "grunt": "^1.0.4",
     "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-concat": "^1.0.1",
-    "grunt-contrib-connect": "^2.0.0",
+    "grunt-contrib-connect": "^2.1.0",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-cssmin": "^3.0.0",
     "grunt-contrib-imagemin": "^3.1.0",
-    "grunt-contrib-jshint": "~2.0.0",
-    "grunt-contrib-uglify": "~4.0.0",
+    "grunt-contrib-jshint": "~2.1.0",
+    "grunt-contrib-uglify": "~4.0.1",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-surge": "^0.7.0",
     "grunt-unused": "^0.2.3",
     "jit-grunt": "^0.10.0",
-    "load-grunt-config": "^1.0.1",
+    "load-grunt-config": "^3.0.1",
     "time-grunt": "^2.0.0"
   }
 }
