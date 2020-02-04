@@ -1,25 +1,42 @@
+:root {
+    --main-color: #1BF9D8;
+    --background-color: #15032B;
+    --dark-highlight: #3D0078;
+}
+
+.gallery li figcaption {
+    background-color: var(--dark-highlight);
+}
+
+.flexblock.gallery li figcaption:before {
+    border-color: transparent transparent var(--dark-highlight) var(--dark-highlight);
+}
+
+
 body {
-    background-color: #F9F8F4;
+    background-color: var(--background-color);
     zoom: 100%;
 }
 
 section h1,
 section h2 {
-    font-family: 'Fira Mono';
-    font-weight: 600;
+    font-family: 'CorporativeBlack';
+    font-weight: 900;
     font-style: normal;
-    color: #1BF9D8;
+    color: var(--main-color);
 }
 
 h3,
 h4,
 h5,
 h6 {
-    font-family: 'AbulaOrganicSemLt';
+    font-family: 'CorporativeMedium';
     font-style: normal;
     font-weight: normal;
-    color: #1BF9D8;
+    color: var(--main-color);
 }
+
+
 
 .fa {
     min-width: 24px;
@@ -28,20 +45,20 @@ h6 {
 
 a,
 h6 {
-    color: #333;
+    color: var(--main-color);
 }
 
 a:hover {
-    color: #333;
-    text-decoration: none;
+    color: var(--main-color);
+    text-decoration: underline;
 }
 
 .subline {
     margin-top: -0.4em;
     margin-bottom: 1em;
-    font-family: 'AbulaOrganicLight';
+    font-family: 'CorporativeMedium';
     font-style: normal;
-    font-weight: bold;
+    font-weight: 500;
 
 }
 
@@ -49,11 +66,27 @@ section div,
 section p,
 section span,
 .abula {
-    font-family: 'AbulaOrganicLight';
+    font-family: 'ZillaSlab';
     font-style: normal;
-    font-weight: bold;
+    font-weight: normal;
     line-height: 1.5em !important;
+    color: var(--main-color);
+
 }
+
+section div mark,
+section p mark,
+section span mark {
+    font-family: 'ZillaSlabHighlight';
+    font-style: normal;
+    font-weight: normal;
+    background-color: transparent;
+    letter-spacing: 0px;
+    line-height: 1.5em !important;
+    color: var(--main-color);
+
+}
+
 
 .light {
     opacity: 0.66;
@@ -63,7 +96,9 @@ section span,
     text-align: left;
 }
 
-.flexblock.gallery li {}
+.flexblock.gallery li {
+    /**/
+}
 
 @media (min-width:1024px) {
     .flexblock.gallery li {
@@ -88,25 +123,10 @@ footer {
 
 footer a {
     margin-right: 0px;
-    color: #1BF9D8;
+    color: var(--main-color);
 }
 
-.hamburgler-menu .button,
-.hamburgler-menu .button:hover {
-    background-color: #F9F8F4;
-    border: 1px solid #333;
-    color: #333 !important;
-    text-shadow: none;
 
-    font-family: 'AbulaOrganicSemLt';
-    font-style: normal;
-    font-weight: normal;
-}
-
-.hamburgler-menu a,
-.hamburgler-menu a:hover {
-    color: #333;
-}
 
 .MAN h1,
 .MAN h2,
@@ -121,8 +141,6 @@ footer a {
 .MAN figure img {
     object-position: 100% 100%;
 }
-
-
 
 .IoB h1,
 .IoB h2,
@@ -190,8 +208,16 @@ figcaption {
     background-position: bottom right
 }
 
+.v4 {
+    background-color: var(--background-color);
+    background-image: url(/images/v4.1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center
+}
+
 .contact {
-    background-color: #F9F8F4;
+    background-color: var(--background-color);
     background-image: url(/images/pattern3.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -199,8 +225,8 @@ figcaption {
 }
 
 .freelance {
-    background-color: #F9F8F4;
-    background-image: url(/images/freelance2.svg);
+    background-color: var(--background-color);
+    background-image: url(/images/freelance3.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom right
@@ -223,7 +249,7 @@ figcaption {
 
 .bg-pattern a:hover,
 .bg-pattern a:active {
-    color: #1BF9D8;
+    color: var(--main-color);
 }
 
 .center-court {
@@ -255,148 +281,6 @@ figcaption {
     vertical-align: top;
     float: left;
     margin-right: 10px;
-}
-
-/*
-HAMBURGLAR
-*/
-.hamburgler-icon-wrapper {
-    position: absolute;
-    top: 1em;
-    left: 1em;
-    height: 26px;
-    width: 26px;
-    cursor: pointer;
-    z-index: 9999;
-}
-
-.hamburgler-icon,
-.hamburgler-icon:before,
-.hamburgler-icon:after {
-    content: '';
-    position: absolute;
-    border-radius: 1em;
-    height: 2px;
-    width: 26px;
-    background: #333;
-    transition: all 0.2s ease
-}
-
-.hamburgler-icon {
-    top: 0.75em
-}
-
-.hamburgler-icon:before {
-    top: -0.55em
-}
-
-.hamburgler-icon:after {
-    top: 0.55em
-}
-
-.hamburgler-active .hamburgler-icon {
-    background: transparent;
-    transform: rotate(-135deg)
-}
-
-.hamburgler-active .hamburgler-icon:before,
-.hamburgler-active .hamburgler-icon:after {
-    top: 0
-}
-
-.hamburgler-active .hamburgler-icon:before {
-    transform: rotate(90deg)
-}
-
-.hamburgler-active .hamburgler-icon,
-.hamburgler-active .hamburgler-icon:before,
-.hamburgler-active .hamburgler-icon:after {
-    background: white
-}
-
-.hamburgler-menu {
-    transition: all 0.4s ease;
-    opacity: 0;
-    pointer-events: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(15, 15, 15, 0.9);
-    /*background-color: rgba(27, 249, 216, 0.9);*/
-    text-align: center;
-    z-index: 999;
-}
-
-.hamburgler-active .hamburgler-menu {
-    opacity: 1;
-    pointer-events: initial;
-}
-
-.hamburgler-menu-list {
-    display: block;
-    transition: all 0.4s ease;
-    padding: 0;
-    list-style-type: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1.2)
-}
-
-.hamburgler-active .hamburgler-menu-list {
-    transform: translate(-50%, -50%) scale(1)
-}
-
-.hamburgler-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.hamburgler-menu a {
-    color: white;
-    margin: 5px;
-}
-
-.hamburgler-menu p,
-.hamburgler-menu h4 {
-    text-align: left
-}
-
-.hamburgler-menu h1,
-.hamburgler-menu h2,
-.hamburgler-menu h3,
-.hamburgler-menu h4,
-.hamburgler-menu h5,
-.hamburgler-menu h6 {
-    color: #333;
-}
-
-.hamburgler-menu figure h1,
-.hamburgler-menu figure h2,
-.hamburgler-menu figure h3,
-.hamburgler-menu figure h4,
-.hamburgler-menu figure h5,
-.hamburgler-menu figure h6 {
-    color: white;
-}
-
-.hamburgler-menu figure {
-    padding: 20px;
-    background-color: #1BF9D8 !important;
-    color: white;
-}
-
-.hamburgler-menu figure div {
-    margin: 24px;
-}
-
-.hamburgler-menu .flex-content div {
-    max-height: 50vh;
-    overflow: scroll;
-    text-align: left;
 }
 
 
