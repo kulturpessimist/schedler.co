@@ -2,15 +2,9 @@
     --main-color: #1BF9D8;
     --background-color: #15032B;
     --dark-highlight: #3D0078;
+    --white: #F9F8F4;
 }
 
-.gallery li figcaption {
-    background-color: var(--dark-highlight);
-}
-
-.flexblock.gallery li figcaption:before {
-    border-color: transparent transparent var(--dark-highlight) var(--dark-highlight);
-}
 
 
 body {
@@ -100,6 +94,26 @@ section span mark {
     /**/
 }
 
+.gallery li figcaption {
+    background-color: var(--dark-highlight);
+    background-color: #222;
+    background-color: var(--main-color);
+}
+
+.gallery li figcaption h3 {
+    font-family: 'CorporativeBlack';
+    font-weight: 900;
+    font-style: normal;
+    color: var(--background-color);
+    color: #fff;
+}
+
+.flexblock.gallery li figcaption:before {
+    border-color: transparent transparent var(--dark-highlight) var(--dark-highlight);
+    border-color: transparent transparent var(--main-color) var(--main-color);
+}
+
+
 @media (min-width:1024px) {
     .flexblock.gallery li {
         width: 25%;
@@ -127,6 +141,21 @@ footer a {
 }
 
 
+.jobs .flex-content {
+    background-color: var(--white);
+}
+
+.jobs .flex-content h6,
+.jobs .flex-content ul,
+.jobs .flex-content p {
+    color: #222
+}
+
+.jobs .flex-content h2 {
+    margin-left: -20px;
+
+}
+
 
 .MAN h1,
 .MAN h2,
@@ -141,6 +170,8 @@ footer a {
 .MAN figure img {
     object-position: 100% 100%;
 }
+
+
 
 .IoB h1,
 .IoB h2,
@@ -216,6 +247,10 @@ figcaption {
     background-position: right center
 }
 
+.v4.cover {
+    background-size: cover;
+}
+
 .contact {
     background-color: var(--background-color);
     background-image: url(/images/pattern3.png);
@@ -242,6 +277,27 @@ figcaption {
 .freelance a {
     text-decoration: underline;
 }
+
+.education h2,
+.education h3,
+.education h6,
+.education p,
+.education a {
+    color: var(--white);
+}
+
+.education h3 {
+    font-family: 'CorporativeBlack';
+    font-weight: 900;
+    font-style: normal;
+}
+
+.clients li,
+.features li {
+    background-color: #ffffff11;
+}
+
+
 
 .bg-pattern a {
     color: #333;
@@ -294,4 +350,24 @@ figcaption {
 ::-moz-selection {
     color: white;
     background-color: #1BF9D8;
+}
+
+.animation-delay-03 {
+    animation-delay: 0.3s;
+}
+
+.animation-delay-06 {
+    animation-delay: 0.6s;
+}
+
+.animation-delay-09 {
+    animation-delay: 0.9s;
+}
+
+.animation-delay-12 {
+    animation-delay: 1.2s;
+}
+
+.animation-delay-15 {
+    animation-delay: 1.5s;
 }
