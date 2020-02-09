@@ -201,6 +201,33 @@ figcaption {
     background-position: bottom right
 }
 
+.contact {
+    background-color: #F9F8F4;
+    background-image: url(/images/pattern3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right
+}
+
+.freelance {
+    background-color: #F9F8F4;
+    background-image: url(/images/freelance2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right
+}
+
+.freelance h2,
+.freelance h4,
+.freelance p,
+.freelance a {
+    color: #F9F8F4;
+}
+
+.freelance a {
+    text-decoration: underline;
+}
+
 .bg-pattern a {
     color: #333;
 }
