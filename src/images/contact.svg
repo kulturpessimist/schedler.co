@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="757px" height="593px" viewBox="0 0 757 593" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-1130.000000, -358.000000)" fill="#FFFFFF">
+            <g id="v4.1" transform="translate(0.000000, -429.000000)">
+                <g id="Group-2" transform="translate(1130.000000, 787.000000)">
+                    <g id="Group-3" transform="translate(336.000000, 0.000000)">
+                        <path d="M301.118315,0 L119.539295,0 C53.5201051,0 0,63.4325961 0,141.67924 L0,184.72012 C0,262.966764 53.5201051,326.39936 119.539295,326.39936 L160.302018,326.39936 C181.385823,392.315898 263.474064,420.65971 263.474064,420.65971 C226.172108,391.646378 214.252619,353.48129 210.81915,326.39936 L301.118315,326.39936 C367.137505,326.39936 420.65971,262.966764 420.65971,184.72012 L420.65971,141.67924 C420.65971,63.4325961 367.137505,0 301.118315,0 Z" id="Right" fill-opacity="0.2" fill-rule="nonzero" transform="translate(210.329855, 210.329855) scale(-1, 1) translate(-210.329855, -210.329855) "></path>
+                        <text id="Hi." font-family="Corporative-Black, Corporative" font-size="120" font-weight="700">
+                            <tspan x="126.84" y="210">Hi.</tspan>
+                        </text>
+                    </g>
+                    <g id="Group" transform="translate(0.000000, 192.000000)">
+                        <path d="M301.694341,0 L119.767968,0 C53.6224866,0 0,60.3913029 0,134.88639 L0,175.863664 C0,250.35875 53.6224866,310.750053 119.767968,310.750053 L160.608668,310.750053 C181.732805,373.506204 263.978077,400.491065 263.978077,400.491065 C226.604765,372.868785 214.662474,336.533533 211.222438,310.750053 L301.694341,310.750053 C367.839822,310.750053 421.464413,250.35875 421.464413,175.863664 L421.464413,134.88639 C421.464413,60.3913029 367.839822,0 301.694341,0 Z" id="Left" fill-opacity="0.2" fill-rule="nonzero"></path>
+                        <text id="Hello!" font-family="Corporative-Black, Corporative" font-size="94" font-weight="700">
+                            <tspan x="77.3392117" y="189">Hello!</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

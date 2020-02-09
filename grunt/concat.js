@@ -6,6 +6,8 @@ module.exports = {
     src: [
       "src/css/webslides.css",
       "src/css/colors.css",
+      "src/css/fonts.css",
+      "src/css/hamburger.css",
       "src/css/schedler.co.css"
     ],
     dest: "src/main.css"

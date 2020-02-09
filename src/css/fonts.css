@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'CorporativeMedium';
+    src: url('/fonts/Corporative/Corporative-Black.eot');
+    src: url('/fonts/Corporative/Corporative-Medium.eot') format('embedded-opentype'),
+        url('/fonts/Corporative/Corporative-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CorporativeBlack';
+    src: url('/fonts/Corporative/Corporative-Black.eot');
+    src: url('/fonts/Corporative/Corporative-Black.eot') format('embedded-opentype'),
+        url('/fonts/Corporative/Corporative-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ZillaSlab';
+    src: url('/fonts/ZillaSlab/ZillaSlab-Regular.woff2') format('woff2'),
+        url('/fonts/ZillaSlab/ZillaSlab-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ZillaSlabHighlight';
+    src: url('/fonts/ZillaSlab/ZillaSlabHighlight-Regular.woff2') format('woff2'),
+        url('/fonts/ZillaSlab/ZillaSlabHighlight-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}

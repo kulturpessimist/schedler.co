@@ -11,5 +11,6 @@ module.exports = {
     "copy:default"
   ],
   compile: ["clean:surge", "preflight", "imagemin"],
-  deploy: ["compile", "surge"]
+  deploy: ["compile", "surge:schedler.co"],
+  "deploy:beta": ["compile", "surge:beta"]
 };

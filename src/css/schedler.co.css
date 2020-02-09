@@ -1,186 +1,220 @@
 :root {
-    --highlight: #1BF9D8;
-    --lilac: #5900B0;
-    --purple: #3D0078;
-    --dark: #25064C;
-    --black: #15032B;
-    /**/
-    --blue: #5F44F5;
-    --react: #7C4FF6;
+  --main-color: #1bf9d8;
+  --background-color: #15032b;
+  --dark-highlight: #3d0078;
+  --white: #f9f8f4;
 }
 
 body {
-    background-color: #F9F8F4;
-    zoom: 100%;
+  background-color: var(--background-color);
+  zoom: 100%;
 }
 
 section h1,
 section h2 {
-    font-family: 'Fira Mono';
-    font-weight: 600;
-    font-style: normal;
-    color: #1BF9D8;
+  font-family: "CorporativeBlack";
+  font-weight: 900;
+  font-style: normal;
+  color: var(--main-color);
 }
 
 h3,
 h4,
 h5,
 h6 {
-    font-family: 'AbulaOrganicSemLt';
-    font-style: normal;
-    font-weight: normal;
-    color: #1BF9D8;
-}
-
-.fa {
-    min-width: 24px;
-    text-align: center;
+  font-family: "CorporativeMedium";
+  font-style: normal;
+  font-weight: normal;
+  color: var(--main-color);
 }
 
 a,
 h6 {
-    color: #333;
+  color: var(--main-color);
 }
 
 a:hover {
-    color: #333;
-    text-decoration: none;
+  color: var(--main-color);
+  text-decoration: underline;
 }
 
 .subline {
-    margin-top: -0.4em;
-    margin-bottom: 1em;
-    font-family: 'AbulaOrganicLight';
-    font-style: normal;
-    font-weight: bold;
-
+  margin-top: -0.4em;
+  margin-bottom: 1em;
+  font-family: "CorporativeMedium";
+  font-style: normal;
+  font-weight: 500;
 }
 
 section div,
 section p,
 section span,
 .abula {
-    font-family: 'AbulaOrganicLight';
-    font-style: normal;
-    font-weight: bold;
-    line-height: 1.5em !important;
+  font-family: "ZillaSlab";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5em !important;
+  color: var(--main-color);
+}
+
+section div mark,
+section p mark,
+section span mark {
+  font-family: "ZillaSlabHighlight";
+  font-style: normal;
+  font-weight: normal;
+  background-color: transparent;
+  letter-spacing: 0px;
+  line-height: 1.5em !important;
+  color: var(--main-color);
+}
+
+section div mark::before,
+section div mark::after,
+section p mark::before,
+section p mark::after,
+section span mark::before,
+section span mark::after {
+  content: "\2009";
 }
 
 .light {
-    opacity: 0.66;
+  opacity: 0.66;
 }
 
 .left {
-    text-align: left;
+  text-align: left;
 }
 
-.flexblock.gallery li {}
-
-@media (min-width:1024px) {
-    .flexblock.gallery li {
-        width: 25%;
-        margin-right: 2%;
-        margin-left: 2%;
-    }
+.gallery li figcaption {
+  background-color: var(--dark-highlight);
+  background-color: #222;
+  background-color: var(--white);
 }
 
-.flexblock.gallery li:nth-child(n+4) {
-    -webkit-box-flex: auto;
-    -ms-flex: auto;
-    flex: auto;
+.gallery li figcaption h3 {
+  font-family: "ZillaSlabHighlight";
+  font-style: normal;
+  font-weight: normal;
+  background-color: transparent;
+  letter-spacing: 0px;
+  line-height: 1.5em !important;
+  color: var(--background-color);
+}
+
+.gallery li figcaption h3::before,
+.gallery li figcaption h3::after {
+  content: "\2009"
+}
+
+.flexblock.gallery li figcaption:before {
+  border-color: transparent transparent var(--white) var(--white);
+}
+
+@media (min-width: 1024px) {
+  .flexblock.gallery li {
+    width: 25%;
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+}
+
+.flexblock.gallery li:nth-child(n + 4) {
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
 }
 
 footer {
-    position: fixed;
-    top: auto;
-    bottom: -10px;
-    left: 0;
+  position: fixed;
+  top: auto;
+  bottom: -10px;
+  left: 0;
 }
 
 footer a {
-    margin-right: 0px;
-    color: #1BF9D8;
+  margin-right: 0px;
+  color: var(--main-color);
 }
 
-.hamburgler-menu .button,
-.hamburgler-menu .button:hover {
-    background-color: #F9F8F4;
-    border: 1px solid #333;
-    color: #333 !important;
-    text-shadow: none;
-
-    font-family: 'AbulaOrganicSemLt';
-    font-style: normal;
-    font-weight: normal;
+.jobs .flex-content {
+  background-color: var(--white);
 }
 
-.hamburgler-menu a,
-.hamburgler-menu a:hover {
-    color: #333;
+.jobs .flex-content h6,
+.jobs .flex-content ul,
+.jobs .flex-content p {
+  color: #222;
 }
+
+.jobs .flex-content h2 {
+  margin-left: -20px;
+}
+
+/*
+  JOBS
+*/
 
 .MAN h1,
 .MAN h2,
 .MAN h4 {
-    color: #D91D4B;
+  color: #d91d4b;
 }
 
 .MAN h2 {
-    font-size: 4.2rem;
+  font-size: 4.2rem;
 }
 
 .MAN figure img {
-    object-position: 100% 100%;
+  object-position: 100% 100%;
 }
-
-
 
 .IoB h1,
 .IoB h2,
 .IoB h4 {
-    color: #6653FF;
+  color: #6653ff;
 }
 
 .IoB h2 {
-    font-size: 4.0rem;
+  font-size: 4rem;
 }
 
 .ThinxNet h1,
 .ThinxNet h2,
 .ThinxNet h4 {
-    color: #ff6600;
+  color: #ff6600;
 }
 
 .natureOffice h1,
 .natureOffice h4,
 .natureOffice h2 {
-    color: #5F9E64;
+  color: #5f9e64;
 }
 
 .Dynomedia h1,
 .Dynomedia h4,
 .Dynomedia h2 {
-    color: #00AEEF;
+  color: #00aeef;
 }
 
 .KIGG h1,
 .KIGG h4,
 .KIGG h2 {
-    color: #D00027;
+  color: #d00027;
 }
 
 figcaption {
-    width: 100%;
-    text-align: left;
+  width: 100%;
+  text-align: left;
 }
 
 .flexblock.clients li div {
-    margin: 30px;
-    margin-top: 25px;
+  margin: 30px;
+  margin-top: 25px;
 }
 
 .bg-inverted {
-    background-color: #1BF9D8;
+  background-color: #1bf9d8;
 }
 
 .frontend h1,
@@ -189,236 +223,134 @@ figcaption {
 .bg-inverted h1,
 .bg-inverted h2,
 .bg-inverted h4 {
-    color: #333;
+  color: #333;
 }
 
-.bg-pattern {
-    background-color: #F9F8F4;
-    background-image: url(/images/pattern3.png);
-    background-repeat: repeat-x;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: bottom right
+.v4 {
+  background-color: var(--background-color);
+  background-image: url(/images/v4.1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
 }
 
-.contact {
-    background-color: #F9F8F4;
-    background-image: url(/images/pattern3.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom right
+.contact a {
+  font-family: "ZillaSlabHighlight";
+  font-style: normal;
+  font-weight: normal;
+  background-color: transparent;
+  letter-spacing: 0px;
+  line-height: 1.5em !important;
+  color: var(--main-color);
+}
+
+.contact a::before,
+.contact a::after {
+  content: "\00a0";
 }
 
 .freelance {
-    background-color: #F9F8F4;
-    background-image: url(/images/freelance2.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom right
+  background-color: var(--background-color);
+  background-image: url(/images/freelance3.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
 }
 
 .freelance h2,
 .freelance h4,
 .freelance p,
 .freelance a {
-    color: #F9F8F4;
+  color: #f9f8f4;
 }
 
 .freelance a {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+
+.education h2,
+.education h3,
+.education h6,
+.education p,
+.education a {
+  color: var(--white);
+}
+
+.education h3 {
+  font-family: "CorporativeBlack";
+  font-weight: 900;
+  font-style: normal;
+}
+
+.clients li,
+.features li {
+  background-color: #ffffff11;
 }
 
 .bg-pattern a {
-    color: #333;
+  color: #333;
 }
 
 .bg-pattern a:hover,
 .bg-pattern a:active {
-    color: #1BF9D8;
+  color: var(--main-color);
 }
 
 .center-court {
-    text-align: left;
-    min-width: 66%;
+  text-align: left;
+  min-width: 66%;
 }
 
 .center-court p {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .center-court svg {
-    margin-right: 15px;
+  margin-right: 15px;
 }
-
 
 .text-med {
-    font-size: 100%;
-    line-height: 2.4rem;
+  font-size: 100%;
+  line-height: 2.4rem;
 }
 
-
 .description {
-    margin-top: 3.2rem;
-    margin-bottom: 3.2rem;
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
 }
 
 .features li img {
-    vertical-align: top;
-    float: left;
-    margin-right: 10px;
+  vertical-align: top;
+  float: left;
+  margin-right: 10px;
 }
 
-/*
-HAMBURGLAR
-*/
-.hamburgler-icon-wrapper {
-    position: absolute;
-    top: 1em;
-    left: 1em;
-    height: 26px;
-    width: 26px;
-    cursor: pointer;
-    z-index: 9999;
+.white {
+  color: white !important;
 }
 
-.hamburgler-icon,
-.hamburgler-icon:before,
-.hamburgler-icon:after {
-    content: '';
-    position: absolute;
-    border-radius: 1em;
-    height: 2px;
-    width: 26px;
-    background: #333;
-    transition: all 0.2s ease
+.bg-white {
+  background-color: white !important;
 }
 
-.hamburgler-icon {
-    top: 0.75em
+.bg-white .hamburgler-icon,
+.bg-white .hamburgler-icon:before,
+.bg-white .hamburgler-icon:after {
+  background-color: white !important;
 }
 
-.hamburgler-icon:before {
-    top: -0.55em
+.hamburgler-menu figure#dark {
+  padding: 20px;
+  background-color: var(--background-color);
+  color: #fff;
 }
-
-.hamburgler-icon:after {
-    top: 0.55em
-}
-
-.hamburgler-active .hamburgler-icon {
-    background: transparent;
-    transform: rotate(-135deg)
-}
-
-.hamburgler-active .hamburgler-icon:before,
-.hamburgler-active .hamburgler-icon:after {
-    top: 0
-}
-
-.hamburgler-active .hamburgler-icon:before {
-    transform: rotate(90deg)
-}
-
-.hamburgler-active .hamburgler-icon,
-.hamburgler-active .hamburgler-icon:before,
-.hamburgler-active .hamburgler-icon:after {
-    background: white
-}
-
-.hamburgler-menu {
-    transition: all 0.4s ease;
-    opacity: 0;
-    pointer-events: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(15, 15, 15, 0.9);
-    /*background-color: rgba(27, 249, 216, 0.9);*/
-    text-align: center;
-    z-index: 999;
-}
-
-.hamburgler-active .hamburgler-menu {
-    opacity: 1;
-    pointer-events: initial;
-}
-
-.hamburgler-menu-list {
-    display: block;
-    transition: all 0.4s ease;
-    padding: 0;
-    list-style-type: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1.2)
-}
-
-.hamburgler-active .hamburgler-menu-list {
-    transform: translate(-50%, -50%) scale(1)
-}
-
-.hamburgler-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.hamburgler-menu a {
-    color: white;
-    margin: 5px;
-}
-
-.hamburgler-menu p,
-.hamburgler-menu h4 {
-    text-align: left
-}
-
-.hamburgler-menu h1,
-.hamburgler-menu h2,
-.hamburgler-menu h3,
-.hamburgler-menu h4,
-.hamburgler-menu h5,
-.hamburgler-menu h6 {
-    color: #333;
-}
-
-.hamburgler-menu figure h1,
-.hamburgler-menu figure h2,
-.hamburgler-menu figure h3,
-.hamburgler-menu figure h4,
-.hamburgler-menu figure h5,
-.hamburgler-menu figure h6 {
-    color: white;
-}
-
-.hamburgler-menu figure {
-    padding: 20px;
-    background-color: #1BF9D8 !important;
-    color: white;
-}
-
-.hamburgler-menu figure div {
-    margin: 24px;
-}
-
-.hamburgler-menu .flex-content div {
-    max-height: 50vh;
-    overflow: scroll;
-    text-align: left;
-}
-
-
-
 
 ::selection {
-    color: white !important;
-    background-color: #1BF9D8 !important;
+  color: white !important;
+  background-color: #1bf9d8 !important;
 }
 
 ::-moz-selection {
-    color: white;
-    background-color: #1BF9D8;
+  color: white;
+  background-color: #1bf9d8;
 }
