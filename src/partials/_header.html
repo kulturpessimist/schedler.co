@@ -40,13 +40,13 @@
 				overflow: hidden;
 			}
 
-			body.loading>div {
+			#loader {
 				width: 100vw;
 				height: 100vh; 
 				position: absolute; 
 				top: 0; 
 				left: 0;
-				background-color: #15032B;
+				/* background-color: #15032B; */
 
 				text-align: center;
 				font-size: 120px;
@@ -60,7 +60,7 @@
 				transition: all 0.75s linear;
 			}
 
-			body.loading>div div {
+			#loader>div {
 				width: 0vw;
 				height: 4px;
 				background-color: #15032B;
@@ -143,6 +143,10 @@
 				display: none;
 			}
 
+			body.loading main{
+				display: none !important;
+			}
+
 		</style>
 
 	</head>
@@ -155,7 +159,7 @@
 
 	<body class="loading">
 
-		<div>
+		<div id="loader">
 			<div>Loading...</div>
 			<span>🥺</span>
 		</div>

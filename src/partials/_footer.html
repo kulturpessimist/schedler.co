@@ -77,13 +77,13 @@
 						"👨‍💻", "👔", "🦄", 
 					];
 					window._loader = setInterval(function(){
-						document.querySelector('body > div span').innerText = window._emojis[~~(Math.random() * window._emojis.length)]
+						document.querySelector('#loader span').innerText = window._emojis[~~(Math.random() * window._emojis.length)]
 					}, 750);
 		  			break;
 		    	case "complete":
 		  			console.timeEnd('boot');
 					setTimeout(function(){
-		  				var loader = document.querySelector('body > div')
+		  				var loader = document.querySelector('#loader')
 		  				loader.style.opacity = 0;
 		  				clearInterval(window._loader);
 						setTimeout(function(){

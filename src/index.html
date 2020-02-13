@@ -40,13 +40,13 @@
 				overflow: hidden;
 			}
 
-			body.loading>div {
+			#loader {
 				width: 100vw;
 				height: 100vh; 
 				position: absolute; 
 				top: 0; 
 				left: 0;
-				background-color: #15032B;
+				/* background-color: #15032B; */
 
 				text-align: center;
 				font-size: 120px;
@@ -60,7 +60,7 @@
 				transition: all 0.75s linear;
 			}
 
-			body.loading>div div {
+			#loader>div {
 				width: 0vw;
 				height: 4px;
 				background-color: #15032B;
@@ -143,6 +143,10 @@
 				display: none;
 			}
 
+			body.loading main{
+				display: none !important;
+			}
+
 		</style>
 
 	</head>
@@ -155,7 +159,7 @@
 
 	<body class="loading">
 
-		<div>
+		<div id="loader">
 			<div>Loading...</div>
 			<span>🥺</span>
 		</div>
@@ -183,32 +187,27 @@
 <section class="v4 contact">
   <div class="wrap">    
     <div class="content-center center-court" style="display: flex;min-width: 80%;">
-      <div style="padding-right:10%;">
+      <div style="padding-right:2%;min-width:50%;max-width: 70%;">
         <h2>Alexander Schedler</h2>
         <h4 class="subline">District of Augsburg, Germany</h4>
         <p class="fadeIn">
           Want to get in touch?<br>
-          Just write me an Email
-          <a href="mailto:alex@schedler.co" title="Email">alex@schedler.co </a> or call me 
-          <a href="tel:+491714123929" title="Phone">+49 171 4 123 929 </a> and follow me on twitter
-          <a
+          Just write me an Email<a href="mailto:alex@schedler.co" title="Email"> alex@schedler.co </a> or call me<a href="tel:+491714123929" title="Phone"> +49 171 4 123 929 </a> and follow me on twitter<a
             href="https://www.twitter.com/kulturpessimist"
             title="Twitter" target="_blank"
-          >@kulturpessimist </a> or if you prefer Mastodon
-          <a
+          > @kulturpessimist </a> or if you prefer Mastodon<a
             href="https://mastodon.technology/@kulturpessimist"
             title="Mastodon" target="_blank"         
-          ><!--kulturpessimist-->@mastodon.technology </a> and star my work on Github<a
+          ><!--kulturpessimist--> @mastodon.technology </a> and star my work on Github<a
             href="https://www.github.com/kulturpessimist"
             title="Github" target="_blank"
-          >/kulturpessimist </a> or connect me on LinkedIn
-          <a
+          > /kulturpessimist </a> or connect me on LinkedIn<a
             href="https://www.linkedin.com/in/alexanderschedler"
             title="LinkedIn" target="_blank"
-          >/alexanderschedler </a> or Xing if you are german<a
+          > /alexanderschedler </a> or Xing if you are german<a
             href="https://www.xing.com/profile/Alex_Schedler"
             title="Xing" target="_blank"
-          >/Alex_Schedler </a>
+          > /Alex_Schedler </a>
         </p>
       </div>
       <div class="slideInLeft">
@@ -329,10 +328,10 @@
                     <strong class="text-label">Role:</strong>
                     Software Engineer
                 </li>
-                <li>
+                <!-- <li>
                     <strong class="text-label">Department:</strong>
                     Software Technology, SDC & DevOps South
-                </li>
+                </li> -->
                 <li>
                     <strong class="text-label">Dates:</strong>
                     June 2018 onwards
@@ -546,8 +545,8 @@
 <section class="v4 education">
     <div class="wrap">
         <div class="cta">
-            <p style="display: flex;" class="slideInLeft">
-                <img src="images/education.svg" alt="SAE Institute and Middlesex University" width="300" height="300"/>
+            <p class="slideInLeft">
+                <img src="images/education.svg" alt="SAE Institute and Middlesex University" width="300" height="300" style="margin-top:6rem;"/>
             </p>
 
             <div class="benefit">
@@ -805,13 +804,13 @@
 						"👨‍💻", "👔", "🦄", 
 					];
 					window._loader = setInterval(function(){
-						document.querySelector('body > div span').innerText = window._emojis[~~(Math.random() * window._emojis.length)]
+						document.querySelector('#loader span').innerText = window._emojis[~~(Math.random() * window._emojis.length)]
 					}, 750);
 		  			break;
 		    	case "complete":
 		  			console.timeEnd('boot');
 					setTimeout(function(){
-		  				var loader = document.querySelector('body > div')
+		  				var loader = document.querySelector('#loader')
 		  				loader.style.opacity = 0;
 		  				clearInterval(window._loader);
 						setTimeout(function(){
