@@ -61,11 +61,14 @@ figcaption {
 imprint...
 */
 .left-overlay {
+  width: max(calc((100vh - 50vw) * -1), 50vw);
+  height: min(calc((100vh - 50vw) * -1), 50vw);
+
   width: 100vh;
   height: 100vh;
   position: absolute;
   top: 0px;
-  left: calc((100vh - 50vw) * -1);
+  left: min(calc((100vh - 50vw) * -1), 0);
   opacity: 0;
   transition: all 1s ease-in-out;
   display: none;
@@ -77,32 +80,32 @@ imprint...
 .impress-on-man .left-overlay {
   display: block;
   opacity: 1;
-  background-image: url("images/MAN-ES.jpg");
+  background-image: url("../images/MAN-ES.jpg");
 }
 .impress-on-internet-of-blah .left-overlay {
   display: block;
   opacity: 1;
-  background-image: url("images/Internet-of-Blah.jpg");
+  background-image: url("../images/Internet-of-Blah.jpg");
 }
 .impress-on-thinxnet .left-overlay {
   display: block;
   opacity: 1;
-  background-image: url("images/ThinxNetStreets.jpg");
+  background-image: url("../images/ThinxNetStreets.jpg");
 }
 .impress-on-natureoffice .left-overlay {
   display: block;
   opacity: 1;
-  background-image: url("images/natureOfficeCut.jpg");
+  background-image: url("../images/natureOfficeCut.jpg");
 }
 .impress-on-dynomedia .left-overlay {
   display: block;
   opacity: 1;
-  background-image: url("images/DynomediaDark.png");
+  background-image: url("../images/DynomediaDark.png");
 }
 .impress-on-kigg .left-overlay {
   display: block;
   opacity: 1;
-  background-image: url("images/KiggFlyer.jpg");
+  background-image: url("../images/KiggFlyer.jpg");
 }
 /* 
 imprint...

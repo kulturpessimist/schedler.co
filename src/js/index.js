@@ -11,6 +11,7 @@ import "bulma/css/bulma.css"
 import "../css/bulma.ribbon.css"
 import "../fonts/fonts.css"
 import "animate.css"
+import "../css/style.css"
 //
 const app = {
   data() {
