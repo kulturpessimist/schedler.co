@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "CorporativeMedium";
+  src: url("fa34e4ea6dca98306df78e5e3312c597") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CorporativeSlabBlack";
+  src: url("cf35491e11f14e04b552ed48d9d9cd06") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CorporativeSlabBlack";
+  src: url("94a6ca9f9078002dcb889cd904ce1eb9") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CorporativeSlabBlack";
+  src: url("def0fa19d680af59e263c4d8c78dd35a") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+html,
+body {
+  font-family: "CorporativeMedium", sans-serif !important;
+}

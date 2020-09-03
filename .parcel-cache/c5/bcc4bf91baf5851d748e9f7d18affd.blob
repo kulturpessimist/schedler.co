@@ -1,0 +1,7 @@
+.impress-on-step-5 {
+    background-image: url("images/MAN-ES.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 0vw;
+    background-position-y: 0vh;
+  }

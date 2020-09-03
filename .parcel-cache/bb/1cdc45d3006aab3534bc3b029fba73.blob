@@ -1,0 +1,7 @@
+.impress-on-internet-of-blah {
+    background-image: url("bc9b3022908725555691637a8b1d2f8c");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: calc((100vh - 50vw) * -1);
+    background-position-y: 0;
+  }

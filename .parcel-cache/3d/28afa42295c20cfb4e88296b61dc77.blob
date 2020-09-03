@@ -1,0 +1,7 @@
+.impress-on-kigg {
+    background-image: url("85e8a0b52d9d4ea5f06aabcf8b6c5a77");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: calc((100vh - 50vw) * -1);
+    background-position-y: 0;
+  }

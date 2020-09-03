@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      Schedler.pro | Alexander Schedler: Internet application engineering,
+      development and management.
+    </title>
+    <link rel="stylesheet" type="text/css" href="d0e283b702e2721b37f3cc536a40f192">
+    <link rel="stylesheet" type="text/css" href="09c86f4f4f47d4a80b896afcefac4aaf">
+
+    <meta name="description" content="Curriculum vitae (CV) | Alexander Schedler: Internet application engineering, development and management. Javascript (Frontend and Backend), HTML, CSS, Node, CouchDB">
+<meta name="author" content="Alexander Schedler">
+<link rel="canonical" href="35f7d1002e881d39b740cc8600a88d7d">
+<meta name="referrer" content="no-referrer">
+<meta name="google-site-verification" content="eliPswh-Ta1epaLBfsuMokb33GW8cYHc9k47wi2Hmk8">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#1bf9d8">
+<!-- FACEBOOK et. TWITTER -->
+<meta property="og:url" content="https://www.schedler.pro">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Schedler.pro | Alexander Schedler: Internet application engineering, development and management.">
+<meta property="og:description" content="Curriculum vitae (CV) | Alexander Schedler: Internet application engineering, development and management. Javascript (Frontendand Backend), HTML, CSS, Node, CouchDB">
+<meta property="og:updated_time" content="2019-02-10T12:00:00">
+<meta property="og:image" content="21ab98ef29c5af7dc92caea83e4f46db">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@kulturpessimist">
+<meta name="twitter:creator" content="@kulturpessimist">
+<meta name="twitter:title" content="Schedler.pro | Alexander Schedler: Internet application engineering, development and management.">
+<meta name="twitter:description" content="Curriculum vitae (CV) | Alexander Schedler: Internet application engineering, development and management. Javascript (Frontendand Backend), HTML, CSS, Node, CouchDB">
+<meta name="twitter:image" content="21ab98ef29c5af7dc92caea83e4f46db">
+<!-- FAVICONS -->
+<link rel="shortcut icon" sizes="16x16" href="f38a073fc5315756465233ea88a7f78c">
+<link rel="shortcut icon" sizes="32x32" href="070b4c4d09fb6d985c65d80e5cfcf9f3">
+<link rel="apple-touch-icon icon" sizes="76x76" href="cebfe386287c43dbebc2eeb6e020f61b">
+<link rel="apple-touch-icon icon" sizes="120x120" href="33ab08af0441c8192cd86f68cda26159">
+<link rel="apple-touch-icon icon" sizes="152x152" href="c05bf5164ea4694e15acb8ba93da962c">
+<link rel="apple-touch-icon icon" sizes="180x180" href="ebb45a07f81164cb7c7016526b42dcd0">
+<link rel="apple-touch-icon icon" sizes="192x192" href="2c562c0ac7c9e1a2962b3ca5d78c2247">
+
+  </head>
+
+  <body>
+    <div id="impress" data-transition-duration="1000" data-width="1920" data-height="1200" data-max-scale="3" data-min-scale="0" data-perspective="1000">
+      <section class="step" data-x="-1000" data-y="-1500">
+  <div class="columns is-vcentered">
+    <div class="column">
+      <h1 class="is-slab-black">Alexander Schedler</h1>
+      <h4 class="is-slab-bold">District of Augsburg, Germany</h4>
+      <p class="ml-5 mt-4">
+        Internet application <mark>engineering</mark>,<br>
+        <mark>development</mark> and <mark>management</mark>.
+      </p>
+      <p class="ml-5 mt-3">
+        Javascript (<mark>Frontend</mark> and Backend), <br>
+        HTML, CSS, Node, CouchDB
+      </p>
+    </div>
+  </div>
+</section>
+
+      <section class="step" data-x="3000" data-y="-1500">
+  <div class="columns is-vcentered">
+    <div class="column">
+        <h1 class="is-slab-black">Alexander Schedler</h1>
+        <h4 class="is-slab-bold">District of Augsburg, Germany</h4>
+        <p class="mt-4">
+          Want to get in touch?<br>
+          Just write me an Email <a href="d7de5ac18d971b0499f3f5d62e4c7542" title="Email"> alex@schedler.co </a> or call me<a href="tel:+491714123929" title="Phone"> +49 171 4 123 929 </a> and follow me on twitter <a href="c39a1d68b620164f716700346211fa4b" title="Twitter" target="_blank"> @kulturpessimist </a> or if you prefer Mastodon <a href="c233a1db38b60d905ae94c5aedc1c20c" title="Mastodon" target="_blank"><!--kulturpessimist--> @mastodon.technology </a> and star my work on Github <a href="a864ff5ab9afd90e930549580f03633b" title="Github" target="_blank"> /kulturpessimist </a> or connect me on LinkedIn <a href="1d110bb49495dc3fdc3c2d08dec4ebb0" title="LinkedIn" target="_blank"> /alexanderschedler </a> or Xing if you are german <a href="4f12370f5222dbf6dfb91dd33289d3ef" title="Xing" target="_blank"> /Alex_Schedler </a>
+        </p>
+      </div>
+      <div class="column is-5">
+        <img src="9629925e3b41bfd92be8dbbfea397e35" alt="Hi!" style="margin-top:10rem">
+      </div>
+    </div>
+    
+  
+</section>
+
+      <section class="step" data-x="5000" data-y="-1500">
+  <div class="columns is-vcentered">
+    <div class="column">
+      <h1 class="is-slab-black">Alexander Schedler</h1>
+      <h4 class="is-slab-bold">freelance software developer</h4>
+      <p class="mt-4">
+        Currlently I am working salaried for<br>
+        <a href="#slide=5" target="_self">MAN Energy Solutions</a>. I also do
+        <mark>freelance </mark><br>
+        <mark>work </mark>
+        with a key focus on
+        <mark>enterprize </mark>and<br>
+        <mark>b2b web applications </mark>as well as <br>
+        <mark>Javascript </mark>
+        and <mark>CouchDB </mark>consulting.
+        <br>
+        <br>
+        <a href="d7de5ac18d971b0499f3f5d62e4c7542" title="Email">
+          Need my help? Just write me.
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+      <!-- <Jobs> -->
+      <section class="step" data-x="7000" data-y="-1500">
+  <div class="columns is-vcentered">
+    <div class="column">
+      <h1 class="is-slab-black">Alexander Schedler</h1>
+      <h4 class="is-slab-bold">Curriculum Vitae</h4>
+      <br>
+      <div class="columns">
+        <div class="column is-3 is-offset-1">
+          <a href="" target="_self">
+            <figure class="image is-square">
+              <img alt="MAN Energy Solutions" src="f3857d84acc277902885227ab3666ced">
+            </figure>
+            <figcaption>MAN Energy Solutions</figcaption>
+          </a>
+          <a href="" target="_self">
+            <figure class="image is-square">
+              <img alt="natureOffice" src="a0b373722b3b049a36127ac7967fb43a">
+            </figure>
+            <figcaption>natureOffice</figcaption></a>
+        </div>
+        <div class="column is-3 is-offset-1">
+          <a href="" target="_self">
+            <figure class="image is-square">
+              <img alt="Internet of Blah Logo" src="dd6b6a0e45d5056cab9ab1ff8c29f3eb">
+            </figure>
+            <figcaption>Internet of Blah</figcaption>
+          </a>
+          <a href="" target="_self">
+            <figure class="image is-square">
+              <img alt="DYNOMEDIA Logo" src="8100ed434f139ce8a12ed1eeb84c6d3a">
+            </figure>
+            <figcaption>DYNOMEDIA</figcaption></a>
+        </div>
+
+        <div class="column is-3 is-offset-1">
+          <a href="" target="_self">
+            <figure class="image is-square">
+              <img alt="ThinxNet Logo" src="e85a406d7dcf7a9e29f975f16b6ce9b8">
+            </figure>
+            <figcaption>ThinxNet</figcaption>
+          </a>
+          <a href="" target="_self">
+            <figure class="image is-square">
+              <img alt="KIGG Logo" src="418b51baa890c2f39b24b205ab83b3f5">
+            </figure>
+            <figcaption>KIGG</figcaption></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!--
+      <include src="./src/partials/jobs/6-MAN.html"></include>
+      <include src="./src/partials/jobs/5-IOB.html"></include>
+      <include src="./src/partials/jobs/4-ThinxNet.html"></include>
+      <include src="./src/partials/jobs/3-natureOffice.html"></include>
+      <include src="./src/partials/jobs/2-Dynomedia.html"></include>
+      <include src="./src/partials/jobs/1-KIGG.html"></include>
+      -->
+      <!-- </Jobs> -->
+      <!--
+      <include src="./src/partials/4-Education.html"></include>
+      <include src="./src/partials/5-Personal.html"></include>
+      <include src="./src/partials/6-Technology.html"></include>
+      -->
+    </div>
+    <!-- controll -->
+    <div x-data="alpineScope.dropdown()" x-init="init()">
+      <button x-on:click="open">Open</button>
+
+      <div x-show="isOpen()" x-on:click.away="close">// Dropdown</div>
+    </div>
+    <!-- js -->
+    <script nomodule="" src="17037ec637b4354f76be8aa7a66cd97d"></script>
+    <script type="module" src="17037ec637b4354f76be8aa7a66cd97d"></script>
+  </body>
+</html>

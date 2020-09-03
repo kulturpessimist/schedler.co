@@ -1,0 +1,7 @@
+.impress-on-natureoffice {
+    background-image: url("c7ee35a4c37cf78c37cc6c8924e79fd5");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: calc((100vh - 50vw) * -1);
+    background-position-y: 0;
+  }

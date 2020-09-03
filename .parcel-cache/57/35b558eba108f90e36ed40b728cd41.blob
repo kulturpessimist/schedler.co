@@ -1,0 +1,59 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  home: {
+    x: 0,
+    y: 0,
+    z: 0
+  },
+  contact: {
+    x: 1000,
+    y: 1000,
+    z: 1000
+  },
+  freelance: {
+    x: 2000,
+    y: 2000,
+    z: 2000
+  },
+  overview: {
+    x: 4000,
+    y: 4000,
+    z: 4000
+  },
+  man: {
+    x: 4000,
+    y: 4000,
+    z: 4000
+  },
+  iob: {
+    x: 4000,
+    y: 4000,
+    z: 4000
+  },
+  thinxnet: {
+    x: 4000,
+    y: 4000,
+    z: 4000
+  },
+  natureoffice: {
+    x: 4000,
+    y: 4000,
+    z: 4000
+  },
+  dynomedia: {
+    x: 4000,
+    y: 4000,
+    z: 4000
+  },
+  kigg: {
+    x: 4000,
+    y: 4000,
+    z: 4000
+  }
+};
+exports.default = _default;

@@ -1,0 +1,26 @@
+html,
+body {
+  font-family: "CorporativeMedium", sans-serif !important;
+}
+
+/**/
+
+.step {
+  width: 100vw;
+  height: 100vh;
+}
+
+section.step .columns.is-vcentered {
+  height: 100vh;
+}
+
+/**/
+
+mark {
+  background-color: transparent;
+  color: inherit;
+}
+
+.tile figcaption {
+  position: absolute;
+}

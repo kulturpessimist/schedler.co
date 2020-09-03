@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400px" height="600px" viewBox="0 0 400 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>vue</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="vue" fill-rule="nonzero">
+            <g id="vuejs-seeklogo.com" transform="translate(0.000000, 70.000000)">
+                <g id="Group">
+                    <polygon id="Shape" fill="#41B883" points="320 0 400 0 200 345 0 0 79 0 153 0 200 80 246 0"></polygon>
+                    <polygon id="Shape" fill="#41B883" points="0 0 200 345 400 0 320 0 200 207 79 0"></polygon>
+                    <polygon id="Shape" fill="#35495E" points="79 0 200 208 320 0 246 0 200 80 153 0"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

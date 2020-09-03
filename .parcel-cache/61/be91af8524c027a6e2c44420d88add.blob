@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "CorporativeMedium";
+  src: url("Corporative-Medium.HASH_REF_5e4a19b4784a9aa66b51367038e07235.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CorporativeSlabBlack";
+  src: url("CorporativeSlab-Black.HASH_REF_1361aef59ee3b5b7a3988eb674abad05.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CorporativeSlabBold";
+  src: url("CorporativeSlab-Bold.HASH_REF_9dc9ffa3f0b8dd2d613cb75738915503.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CorporativeSlabMedium";
+  src: url("CorporativeSlab-Medium.HASH_REF_4f13709a44e12ffb514d7c25d75cb49c.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+html,
+body {
+  font-size: 32px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.75rem;
+}
+h4 {
+  font-size: 1 25rem;
+}
+
+body,
+p,
+td,
+div {
+  font-family: "CorporativeMedium";
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.is-slab-black {
+  font-family: "CorporativeSlabBlack";
+  font-weight: 900;
+}
+.is-slab-bold {
+  font-family: "CorporativeSlabBold";
+  font-weight: 600;
+}
+.is-slab-medium {
+  font-family: "CorporativeSlabMedium";
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=fonts.HASH_REF_107d3603ca763e4926f0364e458d3aa7.css.map */

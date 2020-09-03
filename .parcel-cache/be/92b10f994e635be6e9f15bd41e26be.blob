@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      Schedler.pro | Alexander Schedler: Internet application engineering,
+      development and management.
+    </title>
+    <link rel="stylesheet" type="text/css" href="d0e283b702e2721b37f3cc536a40f192">
+    <link rel="stylesheet" type="text/css" href="09c86f4f4f47d4a80b896afcefac4aaf">
+
+    <meta name="description" content="Curriculum vitae (CV) | Alexander Schedler: Internet application engineering, development and management. Javascript (Frontend and Backend), HTML, CSS, Node, CouchDB">
+<meta name="author" content="Alexander Schedler">
+<link rel="canonical" href="35f7d1002e881d39b740cc8600a88d7d">
+<meta name="referrer" content="no-referrer">
+<meta name="google-site-verification" content="eliPswh-Ta1epaLBfsuMokb33GW8cYHc9k47wi2Hmk8">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#1bf9d8">
+<!-- FACEBOOK et. TWITTER -->
+<meta property="og:url" content="https://www.schedler.pro">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Schedler.pro | Alexander Schedler: Internet application engineering, development and management.">
+<meta property="og:description" content="Curriculum vitae (CV) | Alexander Schedler: Internet application engineering, development and management. Javascript (Frontendand Backend), HTML, CSS, Node, CouchDB">
+<meta property="og:updated_time" content="2019-02-10T12:00:00">
+<meta property="og:image" content="21ab98ef29c5af7dc92caea83e4f46db">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@kulturpessimist">
+<meta name="twitter:creator" content="@kulturpessimist">
+<meta name="twitter:title" content="Schedler.pro | Alexander Schedler: Internet application engineering, development and management.">
+<meta name="twitter:description" content="Curriculum vitae (CV) | Alexander Schedler: Internet application engineering, development and management. Javascript (Frontendand Backend), HTML, CSS, Node, CouchDB">
+<meta name="twitter:image" content="21ab98ef29c5af7dc92caea83e4f46db">
+<!-- FAVICONS -->
+<link rel="shortcut icon" sizes="16x16" href="f38a073fc5315756465233ea88a7f78c">
+<link rel="shortcut icon" sizes="32x32" href="070b4c4d09fb6d985c65d80e5cfcf9f3">
+<link rel="apple-touch-icon icon" sizes="76x76" href="cebfe386287c43dbebc2eeb6e020f61b">
+<link rel="apple-touch-icon icon" sizes="120x120" href="33ab08af0441c8192cd86f68cda26159">
+<link rel="apple-touch-icon icon" sizes="152x152" href="c05bf5164ea4694e15acb8ba93da962c">
+<link rel="apple-touch-icon icon" sizes="180x180" href="ebb45a07f81164cb7c7016526b42dcd0">
+<link rel="apple-touch-icon icon" sizes="192x192" href="2c562c0ac7c9e1a2962b3ca5d78c2247">
+
+  </head>
+
+  <body x-data="app.data()" x-init="init()">
+    <div id="impress" data-transition-duration="1000" data-width="1920" data-height="1200" data-max-scale="3" data-min-scale="0" data-perspective="1000">
+      <section class="step" id="home" :data-x="storybook.home.position.x" :data-y="storybook.home.position.y" :data-z="storybook.home.position.z" :data-rotate-x="storybook.home.rotation.x" :data-rotate-y="storybook.home.rotation.y" :data-rotate-z="storybook.home.rotation.z" :data-scale="storybook.home.scale">
+  <div class="columns is-vcentered">
+    <div class="column">
+      <h1 class="is-slab-black">Alexander Schedler</h1>
+      <h4 class="is-slab-bold">District of Augsburg, Germany</h4>
+      <p class="ml-5 mt-4">
+        Internet application <mark>engineering</mark>,<br>
+        <mark>development</mark> and <mark>management</mark>.
+      </p>
+      <p class="ml-5 mt-3">
+        Javascript (<mark>Frontend</mark> and Backend), <br>
+        HTML, CSS, Node, CouchDB
+      </p>
+    </div>
+  </div>
+</section>
+
+      <section class="step" id="contact" :data-x="storybook.contact.position.x" :data-y="storybook.contact.position.y" :data-z="storybook.contact.position.z" :data-rotate-x="storybook.contact.rotation.x" :data-rotate-y="storybook.contact.rotation.y" :data-rotate-z="storybook.contact.rotation.z" :data-scale="storybook.contact.scale">
+  <div class="columns is-vcentered">
+    <div class="column">
+      <h1 class="is-slab-black">Alexander Schedler</h1>
+      <h4 class="is-slab-bold">District of Augsburg, Germany</h4>
+      <p class="mt-4">
+        Want to get in touch?<br>
+        Just write me an Email
+        <a href="d7de5ac18d971b0499f3f5d62e4c7542" title="Email"> alex@schedler.co </a>
+        or call me<a href="tel:+491714123929" title="Phone">
+          +49 171 4 123 929
+        </a>
+        and follow me on twitter
+        <a href="c39a1d68b620164f716700346211fa4b" title="Twitter" target="_blank">
+          @kulturpessimist
+        </a>
+        or if you prefer Mastodon
+        <a href="c233a1db38b60d905ae94c5aedc1c20c" title="Mastodon" target="_blank"><!--kulturpessimist-->
+          @mastodon.technology
+        </a>
+        and star my work on Github
+        <a href="a864ff5ab9afd90e930549580f03633b" title="Github" target="_blank">
+          /kulturpessimist
+        </a>
+        or connect me on LinkedIn
+        <a href="1d110bb49495dc3fdc3c2d08dec4ebb0" title="LinkedIn" target="_blank">
+          /alexanderschedler
+        </a>
+        or Xing if you are german
+        <a href="4f12370f5222dbf6dfb91dd33289d3ef" title="Xing" target="_blank">
+          /Alex_Schedler
+        </a>
+      </p>
+    </div>
+    <div class="column is-5">
+      <img src="9629925e3b41bfd92be8dbbfea397e35" alt="Hi!" style="margin-top: 10rem">
+    </div>
+  </div>
+</section>
+
+      <section class="step" id="freelance" :data-x="storybook.freelance.position.x" :data-y="storybook.freelance.position.y" :data-z="storybook.freelance.position.z" :data-rotate-x="storybook.freelance.rotation.x" :data-rotate-y="storybook.freelance.rotation.y" :data-rotate-z="storybook.freelance.rotation.z" :data-scale="storybook.freelance.scale">
+  <div class="columns is-vcentered">
+    <div class="column">
+      <h1 class="is-slab-black">Alexander Schedler</h1>
+      <h4 class="is-slab-bold">freelance software developer</h4>
+      <p class="mt-4">
+        Currlently I am working salaried for<br>
+        <a href="#slide=5" target="_self">MAN Energy Solutions</a>. I also do
+        <mark>freelance </mark><br>
+        <mark>work </mark>
+        with a key focus on
+        <mark>enterprize </mark>and<br>
+        <mark>b2b web applications </mark>as well as <br>
+        <mark>Javascript </mark>
+        and <mark>CouchDB </mark>consulting.
+        <br>
+        <br>
+        <a href="d7de5ac18d971b0499f3f5d62e4c7542" title="Email">
+          Need my help? Just write me.
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+      <!-- <Jobs> -->
+      <section class="step" id="overview" :data-x="storybook.overview.position.x" :data-y="storybook.overview.position.y" :data-z="storybook.overview.position.z" :data-rotate-x="storybook.overview.rotation.x" :data-rotate-y="storybook.overview.rotation.y" :data-rotate-z="storybook.overview.rotation.z" :data-scale="storybook.overview.scale">
+  <div class="columns is-vcentered">
+    <div class="column">
+      <h1 class="is-slab-black">Alexander Schedler</h1>
+      <h4 class="is-slab-bold">Curriculum Vitae</h4>
+      <br>
+      <div class="columns">
+        <div class="column is-3 is-offset-1">
+          <a href="" target="_self">
+            <figure class="image is-square">
+              <img alt="MAN Energy Solutions" src="f3857d84acc277902885227ab3666ced">
+            </figure>
+            <figcaption>MAN Energy Solutions</figcaption>
+          </a>
+          <a href="" target="_self">
+            <figure class="image is-square">
+              <img alt="natureOffice" src="a0b373722b3b049a36127ac7967fb43a">
+            </figure>
+            <figcaption>natureOffice</figcaption></a>
+        </div>
+        <div class="column is-3 is-offset-1">
+          <a href="" target="_self">
+            <figure class="image is-square">
+              <img alt="Internet of Blah Logo" src="dd6b6a0e45d5056cab9ab1ff8c29f3eb">
+            </figure>
+            <figcaption>Internet of Blah</figcaption>
+          </a>
+          <a href="" target="_self">
+            <figure class="image is-square">
+              <img alt="DYNOMEDIA Logo" src="8100ed434f139ce8a12ed1eeb84c6d3a">
+            </figure>
+            <figcaption>DYNOMEDIA</figcaption></a>
+        </div>
+
+        <div class="column is-3 is-offset-1">
+          <a href="" target="_self">
+            <figure class="image is-square">
+              <img alt="ThinxNet Logo" src="e85a406d7dcf7a9e29f975f16b6ce9b8">
+            </figure>
+            <figcaption>ThinxNet</figcaption>
+          </a>
+          <a href="" target="_self">
+            <figure class="image is-square">
+              <img alt="KIGG Logo" src="418b51baa890c2f39b24b205ab83b3f5">
+            </figure>
+            <figcaption>KIGG</figcaption></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="step" id="man" :data-x="storybook.man.position.x" :data-y="storybook.man.position.y" :data-z="storybook.man.position.z" :data-rotate-x="storybook.man.rotation.x" :data-rotate-y="storybook.man.rotation.y" :data-rotate-z="storybook.man.rotation.z" :data-scale="storybook.man.scale">
+  <div class="columns is-vcentered">
+    <div class="column">
+      <a href="1023c622b248f5c58b4d031d73431e97" title="MAN Energy Solutions SE" target="_blank">
+        <i class="fas fa-external-link-alt"></i>
+        MAN Energy Solutions SE
+      </a>
+    </div>
+    <div class="column">
+      <h3 class="is-slab-black">MAN Energy Solutions SE</h3>
+      <p class="mt-4">
+        <strong class="text-label">Role:</strong>
+        Software Engineer
+        <br>
+        <strong class="text-label">Dates:</strong>
+        June 2018 onwards
+      </p>
+
+      <h5 class="is-slab-bold mt-4">Main activities</h5>
+      <p>
+        Software development and application engineering<br>
+        UI/UX Design and consulting<br>
+        Conceptual design and development of enterprise applications.
+      </p>
+
+      <h5 class="is-slab-bold mt-4">Responsibilities</h5>
+      <p>
+        Working in an agile SCRUM team on different, web based projects in the
+        enterprise sphere. Depending on the actual project the responsibilities
+        are reaching from conceptualizing and architectural devising over
+        frontend and backend development through to the initial operation in the
+        enterprise cloud infrastructure.
+      </p>
+    </div>
+  </div>
+</section>
+<style data-parcel-key="4ff04213c21e7733c81441f35fb2776c">
+  .impress-on-man {
+    background-image: url("images/MAN-ES.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: calc((100vh - 50vw) * -1);
+    background-position-y: 0;
+  }
+</style>
+
+      <section class="step" id="internet-of-blah" :data-x="storybook.iob.position.x" :data-y="storybook.iob.position.y" :data-z="storybook.iob.position.z" :data-rotate-x="storybook.iob.rotation.x" :data-rotate-y="storybook.iob.rotation.y" :data-rotate-z="storybook.iob.rotation.z" :data-scale="storybook.iob.scale">
+  <div class="columns is-vcentered">
+    <div class="column">
+      <a href="18336fc6dc0f318625e0c3986e7f8c10" title="Internet of Blah" target="_blank">
+        <i class="fas fa-external-link-alt"></i>
+        Internet of Blah / PURR
+      </a>
+    </div>
+    <div class="column">
+      <h3 class="is-slab-black">Internet of Blah / PURR</h3>
+      <p class="mt-4">
+        <strong class="text-label">Role:</strong> Frontend / Design / CEO<br>
+        <strong class="text-label">Dates:</strong> June 2016 – December 2019
+      </p>
+
+      <h5 class="is-slab-bold mt-4">Main activities</h5>
+      <p>
+        User Experience and interaction design<br>
+        Cross platform software development and application engineering.<br>
+        Web application and architectural consulting.
+      </p>
+      <h5 class="is-slab-bold mt-4">Responsibilities</h5>
+      <p>
+        Conception, engineering and product development of the company‘s product
+        – an indepentend IoT Configuration Platform.<br>
+        Freelance projects for external clients and IT consulting.<br>
+        Corporate and Business Development of the startup as a co-founder.
+      </p>
+    </div>
+  </div>
+</section>
+<style data-parcel-key="a654870bf401727772d43991cfb85fc8">
+  .impress-on-internet-of-blah {
+    background-image: url("images/Internet-of-Blah.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: calc((100vh - 50vw) * -1);
+    background-position-y: 0;
+  }
+</style>
+
+      <section class="step" id="thinxnet" :data-x="storybook.thinxnet.position.x" :data-y="storybook.thinxnet.position.y" :data-z="storybook.thinxnet.position.z" :data-rotate-x="storybook.thinxnet.rotation.x" :data-rotate-y="storybook.thinxnet.rotation.y" :data-rotate-z="storybook.thinxnet.rotation.z" :data-scale="storybook.thinxnet.scale">
+  <div class="columns is-vcentered">
+    <div class="column">
+      <a href="ebcc9f81f53fbeddd3a3410ee8b046c0" title="ThinxNet GmbH" target="_blank">
+        <i class="fas fa-external-link-alt"></i>
+        ThinxNet GmbH
+      </a>
+    </div>
+    <div class="column">
+      <h3 class="is-slab-black">ThinxNet GmbH</h3>
+      <p class="mt-4">
+        <strong class="text-label">Role:</strong>
+        UI/UX Product Engineer<br>
+        <strong class="text-label">Dates:</strong>
+        June 2014 – June 2016
+      </p>
+      <h5 class="is-slab-bold mt-4">Main activities</h5>
+      <p>
+        User interface design and usability <br>
+        User Experience and interaction design <br>
+        Mobile application prototyping (iOS, Android)<br>
+        Software development and application engineering
+      </p>
+      <h5 class="is-slab-bold mt-4">Responsibilities</h5>
+      <p>
+        Designing the UI and UX for iOS, Android and HTML5.<br>
+        Supervising the different teams of native developers to ensure quality
+        as well as a consistent look and feel over all platforms.<br>
+        Fulfilling the roll of the product owner in our SCRUM workflow.<br>
+        Supporting the management in the domain of brand building
+      </p>
+    </div>
+  </div>
+</section>
+<style data-parcel-key="2cdcec39714e66d52113c3cf7ce64b52">
+  .impress-on-thinxnet {
+    background-image: url("images/ThinxNetStreets.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: calc((100vh - 50vw) * -1);
+    background-position-y: 0;
+  }
+</style>
+
+      <section class="step" id="natureoffice" :data-x="storybook.natureoffice.position.x" :data-y="storybook.natureoffice.position.y" :data-z="storybook.natureoffice.position.z" :data-rotate-x="storybook.natureoffice.rotation.x" :data-rotate-y="storybook.natureoffice.rotation.y" :data-rotate-z="storybook.natureoffice.rotation.z" :data-scale="storybook.natureoffice.scale">
+  <div class="columns is-vcentered">
+    <div class="column">
+      <a href="f16e67b4ad887b99dc8af6dfe46b4529" title="natureOffice GmbH" target="_blank">
+        <i class="fas fa-external-link-alt"></i>
+        natureOffice GmbH
+      </a>
+    </div>
+    <div class="column">
+      <h3 class="is-slab-black">natureOffice GmbH</h3>
+      <p class="mt-4">
+        <strong class="text-label">Role:</strong> Head of Software Development,
+        Co-founder
+        <br>
+        <strong class="text-label">Dates:</strong> August 2008 - April 2014
+      </p>
+      <h5 class="is-slab-bold mt-4">Main activities</h5>
+      <p>
+        Software development and application engineering<br>
+        Requirements engineering<br>
+        User interface design and usability<br>
+        Business strategy development
+      </p>
+      <h5 class="is-slab-bold mt-4">Responsibilities</h5>
+      <p>
+        Corporate Development of the startup as a co-founder, focused on the
+        technical domain. Conception, engineering and development of the
+        company‘s products from the beginning with only a few users to today‘s
+        completely cloud based fourth version used by hundreds of corporate
+        customers. Managing the cooperation with external IT contractors.
+        Business development of our South American branch based in Paraguay.
+      </p>
+    </div>
+  </div>
+</section>
+<style data-parcel-key="5dcee3a4fdb1635dcab30a1f622e14d9">
+  .impress-on-natureoffice {
+    background-image: url("images/natureOfficeCut.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: calc((100vh - 50vw) * -1);
+    background-position-y: 0;
+  }
+</style>
+
+      <section class="step" id="dynomedia" :data-x="storybook.dynomedia.position.x" :data-y="storybook.dynomedia.position.y" :data-z="storybook.dynomedia.position.z" :data-rotate-x="storybook.dynomedia.rotation.x" :data-rotate-y="storybook.dynomedia.rotation.y" :data-rotate-z="storybook.dynomedia.rotation.z" :data-scale="storybook.dynomedia.scale">
+  <div class="columns is-vcentered">
+    <div class="column">
+      <a href="213285a74bcfba559218617c99929343" title="DYNOmedia GmbH" target="_blank">
+        <i class="fas fa-external-link-alt"></i>
+        Dynomedia GmbH
+      </a>
+    </div>
+    <div class="column">
+      <h3 class="is-slab-black">Dynomedia GmbH</h3>
+      <p class="mt-4">
+        <strong class="text-label">Role:</strong> Web Developer
+        <br>
+        <strong class="text-label">Dates:</strong> June 2005 - July 2008
+      </p>
+      <h5 class="is-slab-bold mt-4">Main activities</h5>
+      <p>Web design and development</p>
+      <h5 class="is-slab-bold mt-4">Responsibilities</h5>
+      <p>
+        Worked in an advertising agency for customers in different industries
+        (e.g. Fujitsu Siemens Computers, Sony Computer Entertainment Europe).<br>
+        Developed an online file management system as second mainstay for the
+        agency.
+      </p>
+    </div>
+  </div>
+</section>
+<style data-parcel-key="b962ac796fa2b482adc8b7c3400bbdb0">
+  .impress-on-dynomedia {
+    background-image: url("images/DynomediaDark.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: calc((100vh - 50vw) * -1);
+    background-position-y: 0;
+  }
+</style>
+
+      <section class="step" id="kigg" :data-x="storybook.kigg.position.x" :data-y="storybook.kigg.position.y" :data-z="storybook.kigg.position.z" :data-rotate-x="storybook.kigg.rotation.x" :data-rotate-y="storybook.kigg.rotation.y" :data-rotate-z="storybook.kigg.rotation.z" :data-scale="storybook.kigg.scale">
+  <div class="columns is-vcentered">
+    <div class="column">
+      <a href="4eae758190ff701ff8f7dbdee540d2da" title="KIGG GmbH" target="_blank">
+        <i class="fas fa-external-link-alt"></i>
+        KIGG GmbH
+      </a>
+    </div>
+
+    <div class="column">
+      <h3 class="is-slab-black">KIGG GmbH</h3>
+      <p class="mt-4">
+        <strong class="text-label">Role:</strong> Multimedia Producer, Project
+        Manager <br>
+        <strong class="text-label">Dates:</strong> August 2002 - November 2004
+      </p>
+      <h5 class="is-slab-bold mt-4">Main activities</h5>
+      <p>
+        Project management <br>
+        Web design <br>
+        Multimedia Production (CD-ROM)
+      </p>
+      <h5 class="is-slab-bold mt-4">Responsibilities</h5>
+      <p>
+        Started as a multimedia producer with the campaign documentation of the
+        2002 mayoral election in Augsburg. Worked on web development projects
+        and a candidates state campaign for the elections in 2003. Responsible
+        for municipal content management system projects.
+      </p>
+    </div>
+  </div>
+</section>
+<style data-parcel-key="0a6a3cff9cc2863a160eb412a61b71f6">
+  .impress-on-kigg {
+    background-image: url("images/KiggFlyer2.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: calc((100vh - 50vw) * -1);
+    background-position-y: 0;
+  }
+</style>
+
+      <!-- </Jobs> -->
+      <section class="step" id="education" :data-x="storybook.education.position.x" :data-y="storybook.education.position.y" :data-z="storybook.education.position.z" :data-rotate-x="storybook.education.rotation.x" :data-rotate-y="storybook.education.rotation.y" :data-rotate-z="storybook.education.rotation.z" :data-scale="storybook.education.scale">
+  <div class="columns is-vcentered">
+    <div class="column">
+      <img src="9af269c69781d2a5b5bc3730df08a173" alt="SAE Institute and Middlesex University" width="300" height="300">
+    </div>
+    <div class="column">
+      <p>
+        SAE Institute Munich, Germany and <br>
+        Middlesex University London, UK
+      </p>
+      <h3 class="is-slab-black mt-4">Bachelor of Arts Multimedia</h3>
+      <h6 class="is-slab-bold">August 2001 - May 2004</h6>
+      <p class="mt-4">
+        Contemporary issues and research (M1)<br>
+        Business management, marketing and legal issues (M2)<br>
+        Psychology, team management and storyboarding (M3)<br>
+        Multimedia and education (M4)<br>
+        Multimedia and Online Production<br>
+        Graphic design
+      </p>
+    </div>
+  </div>
+</section>
+
+      <section class="step" id="personal" :data-x="storybook.personal.position.x" :data-y="storybook.personal.position.y" :data-z="storybook.personal.position.z" :data-rotate-x="storybook.personal.rotation.x" :data-rotate-y="storybook.personal.rotation.y" :data-rotate-z="storybook.personal.rotation.z" :data-scale="storybook.personal.scale">
+  <div class="columns">
+    <div class="column">
+      <h3 class="is-slab-black mt-4">Personal Skills</h3>
+      <h6 class="is-slab-bold">and Competences</h6>
+    </div>
+  </div>
+  <div class="columns">
+    <div class="column">
+      <h4 class="is-slab-bold">Languages</h4>
+      German (Mother tongue)<br>
+      English (fluently)
+    </div>
+    <div class="column">
+      <h4 class="is-slab-bold">Social skills</h4>
+      Analytical and creative thinker<br>
+      Empathetic listener and reflective discussant<br>
+      Balanced personality even under pressure
+    </div>
+  </div>
+  <div class="columns">
+    <div class="column">
+      <h4 class="is-slab-bold">Organisational skills</h4>
+      Entrepreneurial mind and decisive planner<br>
+      Eager learner of new technologies<br>
+      Able to work well-structured also upon deadlines
+    </div>
+    <div class="column">
+      <h4 class="is-slab-bold">Interests</h4>
+      Internet culture <br>
+      Politics <br>
+      Movie & Cinema <br>
+      Philosophy
+    </div>
+  </div>
+</section>
+
+      <section class="step" id="technology" :data-x="storybook.technology.position.x" :data-y="storybook.technology.position.y" :data-z="storybook.technology.position.z" :data-rotate-x="storybook.technology.rotation.x" :data-rotate-y="storybook.technology.rotation.y" :data-rotate-z="storybook.technology.rotation.z" :data-scale="storybook.technology.scale">
+  <div class="columns">
+    <div class="column">
+      <h3 class="is-slab-black mt-4">Technologies Overview</h3>
+      <h6 class="is-slab-bold">Experience and Expertise (extract)</h6>
+    </div>
+  </div>
+  <div class="columns is-5 is-multiline">
+    <div class="column is-2">
+      <img src="6934769142a746f0458930c083acb858" alt="Javascript">
+      Javascript Expert with over 15 years of application.
+    </div>
+
+    <div class="column is-2">
+      <img src="8f0c2027e3278a00445ea0ad52108548" alt="HTLM">
+      HTML Expert with over 15 years of application.
+    </div>
+
+    <div class="column is-2">
+      <img src="843673e31c4d44563cd743b1403ac8e9" alt="CSS">
+      CSS Expert with over 15 years of application.
+    </div>
+    <div class="column is-2">
+      <img src="7fb7f7bf1aaedd759c5b204534ff6c93" alt="CouchDB">
+      CouchDB Expert with about 12 years of application.
+    </div>
+    <div class="column is-2">
+      <img src="bcc6efb94fa668b1b4a7db23a264df85" alt="node">
+      NodeJS Expert with about 10 years of application.
+    </div>
+    <div class="column is-2">
+      <img src="402c66ebf483fca683cb69a0436c5465" alt="AWS" style="padding-bottom: 20px; margin-top: 10px">
+      Amazon Web Services Experienced with about 4 years of application.
+    </div>
+    <div class="column is-2">
+      <img src="33b9973b72b0c2723030e0ea002d4b78" alt="Vue">
+      Vue Experienced with about 3 years of application.
+    </div>
+    <div class="column is-2">
+      <img src="3f5b55abbf8d36b510755efc556b6a93" alt="Angular">
+      Angular Experienced with about 6 years of application.
+    </div>
+    <div class="column is-2">
+      <img src="7e010ca1b41106188ca3f6fcec5c92f0" alt="Web Components" style="margin-bottom: 40px">
+      WebComponents (Stencil, Polymer/LIT, etc.) Experienced with about 7 years
+      of application.
+    </div>
+
+    <!-- 
+            <li>
+                <div>
+                    <h2>
+                        <img src="images/ruby.svg" />
+                        Ruby
+                    </h2>
+                    Experienced with about 7 years of application.
+                </div>
+            </li>
+            -->
+  </div>
+</section>
+
+    </div>
+
+    <div style="
+        width: 100vh;
+        height: 100vh;
+        position: absolute;
+        top: 0px;
+        background-position-x: calc((100vh - 50vw) * -1);
+      ">
+      <img src="a99759580076171872cd8802c64974b2">
+    </div>
+    <!-- controll -->
+    <button @click="showImprint=true">Open</button>
+    <div class="imprint modal" :class="{'is-active': isOpen()}">
+  <div class="modal-background" @click="showImprint=false"></div>
+  <div class="modal-content">
+    <div class="box" style="overflow: scroll">
+      <div class="columns">
+        <div class="column">
+          <h4 class="is-slab-black">Stay in touch <br></h4>
+          <p>
+            If you like my CV you can download a copy as PDF by clicking the
+            link below. Perfectly suited to print it out and show it to your
+            friends and colleagues.
+          </p>
+          <p class="has-text-centered mt-4">
+            <a href="#" class="button" target="_self">Download CV as PDF</a>
+          </p>
+          <br>
+          <h4 class="is-slab-black">Impressum / Imprint<br></h4>
+          <h6 class="is-slab-bold">Angaben gemäß § 5 TMG:</h6>
+          <p>
+            Alexander Schedler<br>
+            freie Softwareentwicklung<br>
+            Dillinger Straße 64a<br>
+            86637 Wertingen<br><br>
+            Telefon: +49 171 4123 929<br>
+            E-Mail: alex@schedler.co
+            <br><br>
+            Umsatzsteuer-ID gemäß §27 a Umsatzsteuergesetz: <br>
+            DE 305 762 296
+          </p>
+        </div>
+        <div class="column">
+          <h5 class="is-slab-black">Haftungsausschluss</h5>
+          <h6 class="is-slab-bold">Haftung für Inhalte</h6>
+          <p>
+            Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte
+            auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach
+            §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht
+            verpflichtet, übermittelte oder gespeicherte fremde Informationen zu
+            überwachen oder nach Umständen zu forschen, die auf eine
+            rechtswidrige Tätigkeit hinweisen.<br>
+            Verpflichtungen zur Entfernung oder Sperrung der Nutzung von
+            Informationen nach den allgemeinen Gesetzen bleiben hiervon
+            unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem
+            Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei
+            Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese
+            Inhalte umgehend entfernen.<br><br>
+          </p>
+          <h5 class="is-slab-black">Urheberrecht</h5>
+          <p>
+            Die durch die Seitenbetreiber erstellten Inhalte und Werke auf
+            diesen Seiten unterliegen dem deutschen Urheberrecht. Die
+            Vervielfältigung, Bearbeitung, Verbreitung und jede Art der
+            Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der
+            schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+            Downloads und Kopien dieser Seite sind nur für den privaten, nicht
+            kommerziellen Gebrauch gestattet.<br>
+            Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt
+            wurden, werden die Urheberrechte Dritter beachtet. Insbesondere
+            werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie
+            trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten
+            wir um einen entsprechenden Hinweis. Bei Bekanntwerden von
+            Rechtsverletzungen werden wir derartige Inhalte umgehend
+            entfernen.<br><br>
+          </p>
+          <h5 class="is-slab-black">Datenschutzerklärung</h5>
+          <h6 class="is-slab-bold">SSL-Verschlüsselung</h6>
+          <p>
+            Diese Seite nutzt aus Gründen der Sicherheit und zum Schutz der
+            Übertragung vertraulicher Inhalte, wie zum Beispiel der Anfragen,
+            die Sie an uns als Seitenbetreiber senden, eine SSL-Verschlüsselung.
+            Eine verschlüsselte Verbindung erkennen Sie daran, dass die
+            Adresszeile des Browsers von „http://“ auf „https://“ wechselt und
+            an dem Schloss-Symbol in Ihrer Browserzeile. Wenn die SSL
+            Verschlüsselung aktiviert ist, können die Daten, die Sie an uns
+            übermitteln, nicht von Dritten mitgelesen werden.
+          </p>
+          <h6 class="is-slab-bold">Datenschutz</h6>
+          <p>
+            Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen
+            Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten
+            vertraulich und entsprechend der gesetzlichen
+            Datenschutzvorschriften sowie dieser Datenschutzerklärung.<br>
+            Die Nutzung unserer Webseite ist in der Regel ohne Angabe
+            personenbezogener Daten möglich. Soweit auf unseren Seiten
+            personenbezogene Daten (beispielsweise Name, Anschrift oder
+            E-Mail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets
+            auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche
+            Zustimmung nicht an Dritte weitergegeben.<br>
+            Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B.
+            bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann.
+            Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist
+            nicht möglich.
+          </p>
+          <p>
+            Quelle:
+            <a href="d9ca55fabf1a63e45d00b31cae6ed76b" target="_blank" style="color: black">eRecht24</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="modal-close is-large" aria-label="close" @click="showImprint=false"></button>
+</div>
+<style data-parcel-key="2a8220bf8a86df7c09db5ab722a4b618">
+  .imprint h4 {
+    font-size: 28px;
+    margin-top: 8px;
+    margin-bottom: 14px;
+  }
+  .imprint h5 {
+    font-size: 24px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+  }
+  .imprint h6 {
+    font-size: 18px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+  }
+
+  .imprint p,
+  .imprint a {
+    font-size: 18px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+</style>
+
+    <!-- js -->
+    <script nomodule="" src="17037ec637b4354f76be8aa7a66cd97d"></script>
+    <script type="module" src="17037ec637b4354f76be8aa7a66cd97d"></script>
+  </body>
+</html>

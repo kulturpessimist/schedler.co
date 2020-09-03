@@ -1,22 +1,25 @@
 {
   "name": "website-schedler-co",
-  "description": "Personal website",
-  "version": "2.1.0",
+  "description": "Curriculum vitae (CV) | Alexander Schedler: Internet application engineering, development and management. Javascript (Frontend and Backend), HTML, CSS, Node, CouchDB",
+  "version": "5.0.0",
+  "browserslist": "> 0.2%",
+  "scripts": {
+    "dev": "npm run start",
+    "start": "parcel serve ./src/index.html --open  --no-cache --log-level info",
+    "build": "rm -rf dist/; parcel build ./src/index.html",
+    "serve": "serve dist/"
+  },
+  "dependencies": {
+    "alpinejs": "2.6.0",
+    "animate.css": "^4.1.0",
+    "bulma": "^0.9.0",
+    "impress.js": "1.1.0",
+    "rough-notation": "0.4.0"
+  },
   "devDependencies": {
-    "grunt": "^1.1.0",
-    "grunt-contrib-clean": "^2.0.0",
-    "grunt-contrib-concat": "^1.0.1",
-    "grunt-contrib-connect": "^2.1.0",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-cssmin": "^3.0.0",
-    "grunt-contrib-imagemin": "^4.0.0",
-    "grunt-contrib-jshint": "~2.1.0",
-    "grunt-contrib-uglify": "~4.0.1",
-    "grunt-contrib-watch": "^1.1.0",
-    "grunt-surge": "^0.7.0",
-    "grunt-unused": "^0.2.3",
-    "jit-grunt": "^0.10.0",
-    "load-grunt-config": "^3.0.1",
-    "time-grunt": "^2.0.0"
+    "parcel": "next",
+    "posthtml-include": "^1.4.3",
+    "prettier": "2.1.1",
+    "serve": "11.3.2"
   }
 }

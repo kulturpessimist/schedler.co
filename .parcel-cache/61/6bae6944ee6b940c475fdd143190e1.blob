@@ -1,0 +1,67 @@
+"use strict";
+
+var _roughNotation = require("rough-notation");
+
+require("alpinejs");
+
+require("impress.js");
+
+require("bulma/css/bulma.css");
+
+require("animate.css");
+
+//
+const app = {
+  data() {
+    return {
+      show: false,
+
+      //
+      init() {
+        console.log("mounted");
+        impress().init();
+        document.body.addEventListener("impress:init", this.stepInit);
+        document.body.addEventListener("impress:stepenter", this.stepEnter);
+        document.body.addEventListener("impress:stepleave", this.stepLeave);
+        document.body.addEventListener("impress:steprefresh", this.stepRefresh);
+      },
+
+      stepInit(event) {
+        console.log("impress:stepinit", event);
+      },
+
+      stepLeave(event) {
+        console.log("impress:stepleave", event);
+      },
+
+      stepEnter(event) {
+        console.log("impress:stepenter", event);
+      },
+
+      stepRefresh(event) {
+        console.log("impress:steprefresh", event);
+      },
+
+      open() {
+        this.show = true;
+        const e = document.querySelector(" mark");
+        const annotation = (0, _roughNotation.annotate)(e, {
+          type: "highlight",
+          color: "#00990099"
+        });
+        annotation.show();
+      },
+
+      close() {
+        this.show = false;
+      },
+
+      isOpen() {
+        return this.show === true;
+      }
+
+    };
+  }
+
+};
+window.app = app;

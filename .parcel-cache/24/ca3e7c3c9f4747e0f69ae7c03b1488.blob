@@ -1,0 +1,7 @@
+.impress-on-step-5 {
+    background-image: url("3d6d70ca11f90dcdb3944549863b7350");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: calc((100vh - 50vw) * -1);
+    background-position-y: 0;
+  }

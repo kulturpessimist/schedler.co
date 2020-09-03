@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head><link rel="stylesheet" href="/schedler.co.1334da09.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      Schedler.pro | Alexander Schedler: Internet application engineering,
+      development and management.
+    </title>
+    <link rel="stylesheet" type="text/css" media="all" href="/fonts.107d3603.css">
+    <link rel="stylesheet" type="text/css" media="all" href="/style.dcdd5a86.css">
+
+    <meta name="description" content="Curriculum vitae (CV) | Alexander Schedler: Internet application engineering, development and management. Javascript (Frontend and Backend), HTML, CSS, Node, CouchDB">
+<meta name="author" content="Alexander Schedler">
+<link rel="canonical" href="https://www.schedler.pro/">
+<meta name="referrer" content="no-referrer">
+<meta name="google-site-verification" content="eliPswh-Ta1epaLBfsuMokb33GW8cYHc9k47wi2Hmk8">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#1bf9d8">
+<!-- FACEBOOK et. TWITTER -->
+<meta property="og:url" content="https://www.schedler.pro">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Schedler.pro | Alexander Schedler: Internet application engineering, development and management.">
+<meta property="og:description" content="Curriculum vitae (CV) | Alexander Schedler: Internet application engineering, development and management. Javascript (Frontendand Backend), HTML, CSS, Node, CouchDB">
+<meta property="og:updated_time" content="2019-02-10T12:00:00">
+<meta property="og:image" content="https://www.schedler.pro/images/social-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@kulturpessimist">
+<meta name="twitter:creator" content="@kulturpessimist">
+<meta name="twitter:title" content="Schedler.pro | Alexander Schedler: Internet application engineering, development and management.">
+<meta name="twitter:description" content="Curriculum vitae (CV) | Alexander Schedler: Internet application engineering, development and management. Javascript (Frontendand Backend), HTML, CSS, Node, CouchDB">
+<meta name="twitter:image" content="https://www.schedler.pro/images/social-card.png">
+<!-- FAVICONS -->
+<link rel="shortcut icon" sizes="16x16" href="/icon.16.adf7197f.png">
+<link rel="shortcut icon" sizes="32x32" href="/icon.32.f4b909dc.png">
+<link rel="apple-touch-icon icon" sizes="76x76" href="/icon.76.6d56f455.png">
+<link rel="apple-touch-icon icon" sizes="120x120" href="/icon.120.d37e8b9a.png">
+<link rel="apple-touch-icon icon" sizes="152x152" href="/icon.152.a11e6219.png">
+<link rel="apple-touch-icon icon" sizes="180x180" href="/icon.180.80be77dc.png">
+<link rel="apple-touch-icon icon" sizes="192x192" href="/icon.192.355e036b.png">
+
+  </head>
+
+  <body>
+    <div id="impress" data-transition-duration="1000" data-width="1024" data-height="768" data-max-scale="3" data-min-scale="0" data-perspective="1000" data-autoplay="7">
+      <div x-data="alpineScope.dropdown()" x-init="init()">
+        <button x-on:click="open">Open</button>
+
+        <div x-show="isOpen()" x-on:click.away="close">// Dropdown</div>
+      </div>
+      <section class="v4 cover">
+  <div class="wrap">
+    <div class="content-center center-court">
+      <h1>Alexander Schedler</h1>
+      <h4 class="subline">District of Augsburg, Germany</h4>
+      <p class="text-intro fadeInUp">
+        Internet application <mark>engineering</mark>,<br>
+        <mark>development</mark> and <mark>management</mark>.
+      </p>
+      <p class="text-intro fadeInUp">
+        Javascript (<mark>Frontend</mark>and Backend), <br>
+        HTML, CSS, Node, CouchDB
+      </p>
+    </div>
+  </div>
+</section>
+
+      <section class="v4 contact">
+  <div class="wrap">    
+    <div class="content-center center-court" style="display: flex;min-width: 80%;">
+      <div style="padding-right:2%;min-width:50%;max-width: 70%;">
+        <h2>Alexander Schedler</h2>
+        <h4 class="subline">District of Augsburg, Germany</h4>
+        <p class="fadeIn">
+          Want to get in touch?<br>
+          Just write me an Email<a href="mailto:alex@schedler.co" title="Email"> alex@schedler.co </a> or call me<a href="tel:+491714123929" title="Phone"> +49 171 4 123 929 </a> and follow me on twitter<a href="https://www.twitter.com/kulturpessimist" title="Twitter" target="_blank"> @kulturpessimist </a> or if you prefer Mastodon<a href="https://mastodon.technology/@kulturpessimist" title="Mastodon" target="_blank"><!--kulturpessimist--> @mastodon.technology </a> and star my work on Github<a href="https://www.github.com/kulturpessimist" title="Github" target="_blank"> /kulturpessimist </a> or connect me on LinkedIn<a href="https://www.linkedin.com/in/alexanderschedler" title="LinkedIn" target="_blank"> /alexanderschedler </a> or Xing if you are german<a href="https://www.xing.com/profile/Alex_Schedler" title="Xing" target="_blank"> /Alex_Schedler </a>
+        </p>
+      </div>
+      <div class="slideInLeft">
+        <img src="/contact2.492a14bb.svg" alt="Hi!" style="margin-top:10rem">
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+      <section class="freelance slideInRight">
+  <div class="wrap">
+    <div class="content-center center-court fadeIn">
+      <h2>Alexander Schedler</h2>
+      <h4 class="subline">freelance software developer</h4>
+      <p class="">
+        Currlently I am working salaried for<br>
+        <a href="#slide=5" target="_self">MAN Energy Solutions</a>. I also do <mark class="white">&nbsp;freelance </mark>&nbsp;<br>
+        <mark class="white">&nbsp;work </mark>
+        with a key focus on <mark class="white">&nbsp;enterprize </mark>and<br>
+        <mark class="white">&nbsp;b2b web applications </mark>as well as <br>
+        <mark class="white">&nbsp;Javascript </mark>
+        and <mark class="white">&nbsp;CouchDB </mark>consulting.
+        <br>
+        <br>
+        <a href="mailto:alex@schedler.co" title="Email">
+          Need my help? Just write me.
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+      <!-- <Jobs> -->
+      <section class="v4 cover">
+	<div class="wrap">
+		<h2>Alexander Schedler</h2>
+		<h4 class="subline">Curriculum Vitae</h4>
+		<ul class="flexblock gallery">
+			<li class="fadeInUp ">
+				<a href="#slide=4" title="MAN">
+					<figure>
+						<img alt="MAN" src="/MAN.e2b01fdb.png?v=3">
+						<figcaption>
+							<h3>MAN Energy Solutions</h3>
+						</figcaption>
+					</figure>
+				</a>
+			</li>
+			<li class="fadeInUp animation-delay-03">
+				<a href="#slide=5" title="Internet of Blah">
+					<figure>
+						<img alt="Internet of Blah Logo" src="/IOB.ac6648d7.png">
+						<figcaption>
+							<h3>Internet of Blah</h3>
+						</figcaption>
+					</figure>
+				</a>
+			</li>
+			<li class="fadeInUp animation-delay-06">
+				<a href="#slide=6" title="ThinxNet">
+					<figure>
+						<img alt="ThinxNet Logo" src="/ThinxNet.f2d72325.png">
+						<figcaption>
+							<h3>ThinxNet</h3>
+						</figcaption>
+					</figure>
+				</a>
+			</li>
+			<li class="fadeInUp ">
+				<a href="#slide=7" title="natureOffice">
+					<figure>
+						<img alt="natureOffice Logo" src="/natureOffice.753da3ee.png">
+						<figcaption>
+							<h3>natureOffice</h3>
+						</figcaption>
+					</figure>
+				</a>
+			</li>
+			<li class="fadeInUp animation-delay-03">
+				<a href="#slide=8" title="DYNOMEDIA">
+					<figure>
+						<img alt="DYNOMEDIA Logo" src="/Dynomedia.0f12fba9.png">
+						<figcaption>
+							<h3>DYNOMEDIA</h3>
+						</figcaption>
+					</figure>
+				</a>
+			</li>
+			<li class="fadeInUp animation-delay-06">
+				<a href="#slide=9" title="KIGG">
+					<figure>
+						<img alt="KIGG Logo" src="/KIGG.8e5832a3.png">
+						<figcaption>
+							<h3> KIGG </h3>
+						</figcaption>
+					</figure>
+				</a>
+			</li>
+		</ul>
+	</div>
+</section>
+
+      <section class="fullscreen jobs MAN">
+    <div class="card-50">
+        <figure>
+            <img src="/MAN-ES.ca11d214.jpg?v2" alt="MAN Energy Solutions SE">
+            <figcaption>
+                <a href="https://www.man-es.com/" title="MAN Energy Solutions SE" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    MAN Energy Solutions SE
+                </a>
+            </figcaption>
+        </figure>
+        <div class="flex-content">
+            <h2>MAN Energy Solutions SE</h2>
+            <ul class="description">
+                <li>
+                    <strong class="text-label">Role:</strong>
+                    Software Engineer
+                </li>
+                <!-- <li>
+                    <strong class="text-label">Department:</strong>
+                    Software Technology, SDC & DevOps South
+                </li> -->
+                <li>
+                    <strong class="text-label">Dates:</strong>
+                    June 2018 onwards
+                </li>
+            </ul>
+
+            <h6>Main activities</h6>
+            <p>
+                Software development and application engineering<br>
+                UI/UX Design and consulting<br>
+                Conceptual design and development of enterprise applications.
+            </p>
+
+            <h6>Responsibilities</h6>
+            <p>
+                Working in an agile SCRUM team on different, web based projects in the enterprise sphere. Depending on the actual project the responsibilities are reaching from conceptualizing and architectural devising over frontend and backend development through to the initial operation in the enterprise cloud infrastructure.
+            </p>
+
+        </div>
+    </div>
+</section>
+
+      <section class="fullscreen jobs IoB">
+    <div class="card-50">
+        <figure>
+            <img src="/Internet-of-Blah.9fc69e06.jpg" alt="Internet of Blah">
+            <figcaption>
+                <a href="https://www.internet-of-blah.com/" title="Internet of Blah" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Internet of Blah / PURR
+                </a>
+            </figcaption>
+        </figure>
+        <div class="flex-content">
+            <h2>Internet of Blah / PURR</h2>
+            <ul class="description">
+                <li>
+                    <strong class="text-label">Role:</strong> Frontend / Design / CEO
+                </li>
+                <li><strong class="text-label">Dates:</strong> June 2016  – December 2019</li>
+            </ul>
+            <h6>Main activities</h6>
+            <p>
+                User Experience and interaction design<br>
+                Cross platform software development and application engineering.<br>
+                Web application and architectural consulting.
+            </p>
+            <h6>Responsibilities</h6>
+            <p>
+                Conception, engineering and product development of the company‘s product – an indepentend IoT
+                Configuration Platform.<br>
+                Freelance projects for external clients and IT consulting.<br>
+                Corporate and Business Development of the startup as a co-founder.
+            </p>
+
+        </div>
+    </div>
+</section>
+
+      <section class="fullscreen jobs ThinxNet">
+    <div class="card-50">
+        <figure>
+            <img src="/ThinxNetStreets.b7310f6a.jpg" alt="ThinxNet GmbH">
+            <figcaption>
+                <a href="https://www.thinxnet.com" title="ThinxNet GmbH" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    ThinxNet GmbH
+                </a>
+            </figcaption>
+        </figure>
+        <div class="flex-content">
+            <h2>ThinxNet GmbH</h2>
+            <ul class="description">
+                <li>
+                    <strong class="text-label">Role:</strong>
+                    UI/UX Product Engineer
+                </li>
+                <li>
+                    <strong class="text-label">Dates:</strong>
+                    June 2014 – June 2016
+                </li>
+            </ul>
+            <h6>Main activities</h6>
+            <p>
+                User interface design and usability <br>
+                User Experience and interaction design <br>
+                Mobile application prototyping (iOS, Android)<br>
+                Software development and application engineering
+            </p>
+            <h6>Responsibilities</h6>
+            <p>
+                Designing the UI and UX for iOS, Android and HTML5.<br>
+                Supervising the different teams of native developers
+                to ensure quality as well as a consistent look and feel over all platforms.<br>
+                Fulfilling the roll of the
+                product owner in our SCRUM workflow.<br>
+                Supporting the management in the domain of brand building
+            </p>
+        </div>
+    </div>
+</section>
+
+      <section class="fullscreen jobs natureOffice">
+    <div class="card-50">
+        <figure>
+            <img src="/natureOfficeCut.13dcea94.jpg" alt="natureOffice GmbH">
+            <figcaption>
+                <a href="https://www.natureOffice.com" title="natureOffice GmbH" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    natureOffice GmbH
+                </a>
+            </figcaption>
+        </figure>
+        <div class="flex-content">
+            <h2>natureOffice GmbH</h2>
+            <ul class="description">
+                <li>
+                    <strong class="text-label">Role:</strong> Head of Software Development, Co-founder
+                </li>
+                <li><strong class="text-label">Dates:</strong> August 2008 - April 2014</li>
+            </ul>
+            <h6>Main activities</h6>
+            <p>
+                Software development and application engineering<br>
+                Requirements engineering<br>
+                User interface design and usability<br>
+                Business strategy development
+            </p>
+            <h6>Responsibilities</h6>
+            <p>
+                Corporate Development of the startup as a co-founder, focused on the technical domain.
+                Conception, engineering and development of the company‘s products from the beginning with only a few
+                users to today‘s completely cloud based fourth version used by hundreds of corporate customers.
+                Managing the cooperation with external IT contractors.
+                Business development of our South American branch based in Paraguay.
+            </p>
+        </div>
+    </div>
+</section>
+
+      <section class="fullscreen jobs Dynomedia">
+    <div class="card-50">
+        <figure>
+            <img src="/DynomediaDark.2064cbf0.png" alt="Dynomedia GmbH">
+            <figcaption>
+                <a href="http://web.archive.org/web/20070424015302/http://www.dynomedia.com/de/index.php" title="DYNOmedia GmbH" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Dynomedia GmbH
+                </a>
+            </figcaption>
+        </figure>
+        <div class="flex-content">
+            <h2>Dynomedia GmbH</h2>
+            <ul class="description">
+                <li>
+                    <strong class="text-label">Role:</strong> Web Developer
+                </li>
+                <li><strong class="text-label">Dates:</strong> June 2005 - July 2008</li>
+            </ul>
+            <h6>Main activities</h6>
+            <p>
+                Web design and development
+            </p>
+            <h6>Responsibilities</h6>
+            <p>
+                Worked in an advertising agency for customers in different industries (e.g. Fujitsu Siemens Computers,
+                Sony Computer Entertainment Europe).<br>
+                Developed an online file management system as second mainstay for the agency.
+            </p>
+        </div>
+    </div>
+</section>
+
+      <section class="fullscreen jobs KIGG">
+    <div class="card-50">
+        <figure>
+            <img src="/KiggFlyer2.1b582f61.jpg" alt="KIGG GmbH">
+            <figcaption>
+                <a href="http://www.kigg.de" title="KIGG GmbH" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    KIGG GmbH
+                </a>
+            </figcaption>
+        </figure>
+        <div class="flex-content">
+            <h2>KIGG GmbH</h2>
+            <ul class="description">
+                <li>
+                    <strong class="text-label">Role:</strong> Multimedia Producer, Project Manager
+                </li>
+                <li><strong class="text-label">Dates:</strong> August 2002 - November 2004</li>
+            </ul>
+            <h6>Main activities</h6>
+            <p>
+                Project management <br>
+                Web design <br>
+                Multimedia Production (CD-ROM)
+            </p>
+            <h6>Responsibilities</h6>
+            <p>
+                Started as a multimedia producer with the campaign documentation of the 2002 mayoral election in
+                Augsburg.
+                Worked on web development projects and a candidates state campaign for the elections in 2003.
+                Responsible for municipal content management system projects.
+            </p>
+        </div>
+    </div>
+</section>
+
+      <!-- </Jobs> -->
+      <section class="v4 education">
+    <div class="wrap">
+        <div class="cta">
+            <p class="slideInLeft">
+                <img src="/education.fb7dca24.svg" alt="SAE Institute and Middlesex University" width="300" height="300" style="margin-top:6rem;">
+            </p>
+
+            <div class="benefit">
+                <p class="text-subtitle">
+                    SAE Institute Munich, Germany and <br>
+                    Middlesex University London, UK
+                </p>
+                <h3>Bachelor of Arts Multimedia</h3>
+                <h6 class="subline">August 2001 - May 2004</h6>
+                <p>
+                    Contemporary issues and research (M1)<br>
+                    Business management, marketing and legal issues (M2)<br>
+                    Psychology, team management and storyboarding (M3)<br>
+                    Multimedia and education (M4)<br>
+                    Multimedia and Online Production<br>
+                    Graphic design
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+      <section class="v4">
+    <div class="wrap">
+        <h2>Personal Skills</h2>
+        <h4 class="subline">
+            and Competences
+        </h4>
+        <ul class="flexblock clients border">
+            <li class="fadeInUp ">
+                <div>
+                    <h2>
+                        Languages
+                    </h2>
+                    German (Mother tongue)<br>
+                    English (fluently)
+                </div>
+            </li>
+            <li class="fadeInUp animation-delay-03">
+                <div>
+                    <h2>
+                        Social skills
+                    </h2>
+                    Analytical and creative thinker<br>
+                    Empathetic listener and reflective discussant<br>
+                    Balanced personality even under pressure
+                </div>
+            </li>
+            <li class="fadeInUp animation-delay-06">
+                <div>
+                    <h2>
+                        Organisational skills 
+                    </h2>
+                    Entrepreneurial mind and decisive planner<br>
+                    Eager learner of new technologies<br>
+                    Able to work well-structured also upon deadlines
+                </div>
+            </li>
+            <li class="fadeInUp animation-delay-09">
+                <div>
+                    <h2>
+                        Interests
+                    </h2>
+                    Internet culture <br>
+                    Politics <br>
+                    Movie & Cinema <br>
+                    Philosophy
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+      <section class="v4 cover">
+  <div class="wrap">
+    <h2>Technologies Overview</h2>
+    <h4 class="subline">Experience and Expertise (extract)</h4>
+    <ul class="flexblock features">
+      <li>
+        <div>
+          <h2>
+            <img src="/js.7ebaf126.svg" alt="Javascript">
+            Javascript
+          </h2>
+          Expert with over 15 years of application.
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>
+            <img src="/html.inverse.3a99ae46.svg" alt="HTLM">
+            HTML
+          </h2>
+          Expert with over 15 years of application.
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>
+            <img src="/css.inverse.6998833c.svg" alt="CSS">
+            CSS
+          </h2>
+          Expert with over 15 years of application.
+        </div>
+      </li>
+      
+
+      <li>
+        <div>
+          <h2>
+            <img src="/couchdb.inverse.755da006.svg" alt="CouchDB">
+            CouchDB
+          </h2>
+          Expert with about 12 years of application.
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>
+            <img src="/node.inverse.ae4865ef.svg" alt="node">
+            NodeJS
+          </h2>
+          Expert with about 10 years of application.
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>
+            <img src="/aws.inverse.5a810b12.svg" alt="AWS" style="padding-bottom:20px; margin-top:10px;">
+            Amazon Web Services
+          </h2>
+          Experienced with about 4 years of application.
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>
+            <img src="/vue.27d27355.svg" alt="Vue">
+            Vue
+          </h2>
+          Experienced with about 3 years of application.
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>
+            <img src="/angular.f37b1313.svg" alt="Angular">
+            Angular
+          </h2>
+          Experienced with about 6 years of application.
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>
+            <img src="/webcomponents2.inverse.2b2870c4.svg" alt="Web Components" style="margin-bottom:40px;">
+            WebComponents (Stencil, Polymer/LIT, etc.)
+          </h2>
+          Experienced with about 7 years of application.
+        </div>
+      </li>
+
+      <!-- 
+            <li>
+                <div>
+                    <h2>
+                        <img src="images/ruby.svg" />
+                        Ruby
+                    </h2>
+                    Experienced with about 7 years of application.
+                </div>
+            </li>
+            -->
+    </ul>
+  </div>
+</section>
+
+    </div>
+    <!-- js -->
+    <script nomodule="" src="/schedler.co.06c78227.js"></script>
+    <script type="module" src="/schedler.co.06c78227.js"></script>
+  </body>
+</html>

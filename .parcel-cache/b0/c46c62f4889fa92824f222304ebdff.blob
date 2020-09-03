@@ -1,0 +1,7 @@
+.impress-on-thinxnet {
+    background-image: url("1ca8cbb621ad49733a0e8001daac0d61");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: calc((100vh - 50vw) * -1);
+    background-position-y: 0;
+  }

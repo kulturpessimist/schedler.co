@@ -1,0 +1,9 @@
+.box .media::after {
+    content: attr(title);
+    position: absolute;
+    top: 0px;
+  }
+
+  .box p {
+    font-size: 0.75rem;
+  }

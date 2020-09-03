@@ -1,0 +1,7 @@
+/* .impress-on-man {
+    background-image: url("images/MAN-ES.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: calc((100vh - 50vw) * -1);
+    background-position-y: 0;
+  } */

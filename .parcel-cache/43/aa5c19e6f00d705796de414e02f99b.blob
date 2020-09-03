@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "CorporativeMedium";
+  src: url("Corporative-Medium.5e4a19b4.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CorporativeSlabBlack";
+  src: url("CorporativeSlab-Black.1361aef5.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CorporativeSlabBold";
+  src: url("CorporativeSlab-Bold.9dc9ffa3.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CorporativeSlabBlack";
+  src: url("CorporativeSlab-Medium.4f13709a.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.is-slab-black {
+  font-family: "CorporativeSlabBlack";
+  font-weight: 900;
+}
+
+/*# sourceMappingURL=fonts.107d3603.css.map */
