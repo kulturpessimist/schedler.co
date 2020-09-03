@@ -1,7 +1,0 @@
-.step {
-    width: 100vw;
-    height: 100vh;
-  }
-  .is-vcentered {
-    height: 100vh;
-  }

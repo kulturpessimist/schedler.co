@@ -1,7 +1,0 @@
-.impress-on-dynomedia {
-    background-image: url("88cf3c352dadde0b24c0b2b043dc5c3e");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: calc((100vh - 50vw) * -1);
-    background-position-y: 0;
-  }
