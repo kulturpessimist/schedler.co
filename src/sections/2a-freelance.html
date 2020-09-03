@@ -30,16 +30,94 @@
         </a>
       </p>
     </div>
-    <div class="column is-4">
-      <img
-        src="images/freelance/star.svg"
-        class="animate__animated animate__fadeInDown animate__fadeOutDown"
-      />
-      <img
-        src="images/freelance/heart.svg"
-        class="animate__animated animate__fadeInDown animate__fadeOutDown"
-      />
+    <div class="column is-3 is-offset-1">
+      <img src="images/freelance/laptop.svg" class="animation" />
+      <!-- <img src="images/freelance/heart.svg" class="animation" /> -->
+      <img src="images/freelance/coffee.svg" class="animation" />
+      <img src="images/freelance/unicorn.svg" class="animation" />
+      <img src="images/freelance/docker.svg" class="animation" />
+      <img src="images/freelance/coin2.svg" class="animation" />
     </div>
     <div class="column is-2"></div>
   </div>
 </section>
+<style>
+  :root {
+    --duration: 20s;
+    --image-count: 5;
+    --factor: 1 / 5;
+  }
+
+  @keyframes all {
+    0% {
+      height: 0;
+      width: 0;
+      opacity: 0;
+      transform: translateY(-200px);
+    }
+    0.1% {
+      height: auto;
+      width: auto;
+      opacity: 0;
+      transform: translateY(-200px);
+    }
+    2.5% {
+      height: auto;
+      width: auto;
+      opacity: 1;
+      transform: translateY(0px);
+    }
+    17.5% {
+      height: auto;
+      width: auto;
+      opacity: 1;
+      transform: translateY(0px);
+    }
+    /*
+        the total relative "duration" must suite the total count of images. 
+        In our example with 5 images the cycle must be defined to 20% => 1/5=0.2
+        with 6 images it should be 16.67%
+        */
+    20% {
+      height: auto;
+      width: auto;
+      opacity: 0;
+      transform: translateY(200px);
+    }
+    20.1% {
+      height: 0;
+      width: 0;
+      opacity: 0;
+      transform: translateY(200px);
+    }
+    100% {
+      height: 0;
+      width: 0;
+      opacity: 0;
+      transform: translateY(200px);
+    }
+  }
+  .animation {
+    height: 0;
+    width: 0;
+    opacity: 0;
+    animation-name: all;
+    animation-duration: var(--duration);
+    animation-iteration-count: infinite;
+  }
+  .animation:nth-of-type(1) {
+    animation-delay: 0s;
+  }
+  .animation:nth-of-type(2) {
+    animation-delay: calc(var(--duration) * var(--factor));
+  }
+  .animation:nth-of-type(3) {
+    animation-delay: calc(var(--duration) * var(--factor) * 2);
+  }
+  .animation:nth-of-type(4) {
+    animation-delay: calc(var(--duration) * var(--factor) * 3);
+  }
+  .animation:nth-of-type(5) {
+    animation-delay: calc(var(--duration) * var(--factor) * 4);
+  }
+</style>
