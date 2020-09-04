@@ -5,11 +5,12 @@
   "browserslist": "> 0.2%",
   "scripts": {
     "dev": "npm run start",
-    "start": "parcel serve ./src/index.html --open  --no-cache --log-level info",
+    "start": "parcel serve ./src/index.html --open --no-cache --log-level debug",
     "build": "rm -rf dist/; parcel build ./src/index.html",
     "serve": "serve dist/"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
     "alpinejs": "2.6.0",
     "animate.css": "^4.1.0",
     "bulma": "^0.9.0",

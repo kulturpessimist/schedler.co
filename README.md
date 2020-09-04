@@ -1,61 +1,64 @@
-schedler.co
-============
+# schedler.co
 
 website and contents of schedler.co / schedler.pro
 
-Last update 10.02.2019 
+Last update 03.09.2020
 
-Changelog
-=========
+# Changelog
 
-10.02.2019 
+03.09.2020
 
-* Version 2.1 
-* Removed svg-icons.(js|css) added font awesome (cdn)
-* some content updates
-* updated all the npm packages
-* preperation for v3
+- preperation for v5
+- v3 was release after 2.1 and work on v4 began but was canceled after the concept for v5 was born
 
-30.08.2018
+  10.02.2019
 
-* Version 2.0.1
-* moved from couchapp to surge
-* some content updates (MAN)
+- Version 2.1
+- Removed svg-icons.(js|css) added font awesome (cdn)
+- some content updates
+- updated all the npm packages
+- preperation for v3
 
-22.02.2017 
+  30.08.2018
 
-* Version 2.0 
-* Relaunch with webslides
+- Version 2.0.1
+- moved from couchapp to surge
+- some content updates (MAN)
 
-05.07.2016 
+  22.02.2017
 
-* PURR is open for business
-* PURR sections added to CV
+- Version 2.0
+- Relaunch with webslides
 
-30.04.2016 
+  05.07.2016
 
-* first teaser for PURR
-* some minor updates 
+- PURR is open for business
+- PURR sections added to CV
 
-18.11.2014 
+  30.04.2016
 
-* Minor improvements for code quality.
-* using `<em>` instead of `<i>`
-* using `<strong>` instead of `<b>`
-* removed broken `<i>` tags
+- first teaser for PURR
+- some minor updates
 
-15.06.2014
+  18.11.2014
 
-* Minor updates
-* Migration from kanso to Grunt
+- Minor improvements for code quality.
+- using `<em>` instead of `<i>`
+- using `<strong>` instead of `<b>`
+- removed broken `<i>` tags
 
-23.04.2014
+  15.06.2014
 
-* added local assets (not in git)
+- Minor updates
+- Migration from kanso to Grunt
 
-14.04.2014
+  23.04.2014
 
-* removed forth station 
-* add mobile again
-* add links again
-* add button again 
+- added local assets (not in git)
+
+  14.04.2014
+
+- removed forth station
+- add mobile again
+- add links again
+- add button again

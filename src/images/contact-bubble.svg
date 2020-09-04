@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="556px" height="530px" viewBox="0 0 556 530" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="V4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.5">
+        <g id="Artboard" transform="translate(0.000000, -362.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="contact2" transform="translate(0.000000, 108.000000)">
+                <g id="Group" transform="translate(0.000000, 254.985836)">
+                    <path d="M397.676445,0 L157.871372,0 C70.682134,0 0,79.6683273 0,177.942394 L0,231.999696 C0,330.273763 70.682134,409.94209 157.871372,409.94209 L211.705277,409.94209 C239.549923,492.73013 347.960996,528.328612 347.960996,528.328612 C298.697606,491.889246 282.955953,443.955708 278.421491,409.94209 L397.676445,409.94209 C484.865683,409.94209 555.550591,330.273763 555.550591,231.999696 L555.550591,177.942394 C555.550591,79.6683273 484.865683,0 397.676445,0 Z" id="Left"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

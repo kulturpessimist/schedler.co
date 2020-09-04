@@ -1,10 +1,17 @@
-import { annotate } from "rough-notation"
 import storybook from "./storybook"
+// frameworks and libs
+import { annotate } from "rough-notation"
 import "alpinejs"
 import "impress.js"
+// styles and css
+import "@fortawesome/fontawesome-free/css/brands.css"
+import "@fortawesome/fontawesome-free/css/solid.css"
+import "@fortawesome/fontawesome-free/css/fontawesome.css"
 import "bulma/css/bulma.css"
 import "../css/bulma.ribbon.css"
+import "../fonts/fonts.css"
 import "animate.css"
+import "../css/style.css"
 //
 const app = {
   data() {
