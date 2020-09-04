@@ -1,3 +1,5 @@
+import { annotate, annotationGroup } from "rough-notation"
+
 export default {
   home: {
     position: {
@@ -5,12 +7,24 @@ export default {
       y: 0,
       z: 0,
     },
-    rotation: {
-      x: 0,
-      y: 0,
-      z: 0,
-    },
+    rotation: { x: 0, y: 0, z: 0 },
     scale: 1,
+    init() {
+      /* setTimeout(() => {
+        const marks = []
+        document.querySelectorAll("#home mark").forEach((elem) => {
+          marks.push(
+            annotate(elem, {
+              type: "highlight",
+              color: "#ff000033",
+              multiline: true,
+            })
+          )
+        })
+
+        annotationGroup(marks).show()
+      }, 1000) */
+    },
   },
   contact: {
     position: {
@@ -20,6 +34,23 @@ export default {
     },
     rotation: { x: 0, y: 0, z: 0 },
     scale: 1,
+    init() {
+      console.log("Welcome!")
+      document
+        .querySelector(".bubble-left")
+        .classList.add("animate__fadeInLeft")
+      document
+        .querySelector(".bubble-right")
+        .classList.add("animate__fadeInRight")
+    },
+    destroy() {
+      document
+        .querySelector(".bubble-left")
+        .classList.remove("animate__fadeInLeft")
+      document
+        .querySelector(".bubble-right")
+        .classList.remove("animate__fadeInRight")
+    },
   },
   freelance: {
     position: {
@@ -29,6 +60,7 @@ export default {
     },
     rotation: { x: 0, y: 0, z: 0 },
     scale: 1,
+    init() {},
   },
   overview: {
     position: {
@@ -38,6 +70,7 @@ export default {
     },
     rotation: { x: 0, y: 0, z: 0 },
     scale: 1,
+    init() {},
   },
   // jobs
   man: {
@@ -48,6 +81,7 @@ export default {
     },
     rotation: { x: 0, y: 0, z: 0 },
     scale: 1,
+    init() {},
   },
   iob: {
     position: {
@@ -57,6 +91,7 @@ export default {
     },
     rotation: { x: 0, y: 0, z: 0 },
     scale: 1,
+    init() {},
   },
   thinxnet: {
     position: {
@@ -66,6 +101,7 @@ export default {
     },
     rotation: { x: 0, y: 0, z: 0 },
     scale: 1,
+    init() {},
   },
   natureoffice: {
     position: {
@@ -75,6 +111,7 @@ export default {
     },
     rotation: { x: 0, y: 0, z: 0 },
     scale: 1,
+    init() {},
   },
   dynomedia: {
     position: {
@@ -84,6 +121,7 @@ export default {
     },
     rotation: { x: 0, y: 0, z: 0 },
     scale: 1,
+    init() {},
   },
   kigg: {
     position: {
@@ -93,6 +131,7 @@ export default {
     },
     rotation: { x: 0, y: 0, z: 0 },
     scale: 1,
+    init() {},
   },
   // soft
   education: {
@@ -103,6 +142,7 @@ export default {
     },
     rotation: { x: 0, y: 0, z: 0 },
     scale: 1,
+    init() {},
   },
   personal: {
     position: {
@@ -112,6 +152,7 @@ export default {
     },
     rotation: { x: 0, y: 0, z: 0 },
     scale: 1,
+    init() {},
   },
   technology: {
     position: {
@@ -121,5 +162,16 @@ export default {
     },
     rotation: { x: 0, y: 0, z: 0 },
     scale: 1,
+    init() {},
+  },
+  fin: {
+    position: {
+      x: 12000 / 2,
+      y: 12000 / 2,
+      z: 12000 / 2,
+    },
+    rotation: { x: 360, y: 0, z: 30 },
+    scale: 5,
+    init() {},
   },
 }

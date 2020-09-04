@@ -16,9 +16,7 @@
       data-transition-duration="1000"
       data-width="1920"
       data-height="1200"
-      data-max-scale="3"
-      data-min-scale="0"
-      data-perspective="1000"
+      data-perspective="0"
     >
       <include src="./src/sections/1-home.html"></include>
       <include src="./src/sections/2-contact.html"></include>
@@ -35,11 +33,31 @@
       <include src="./src/sections/4-Education.html"></include>
       <include src="./src/sections/5-Personal.html"></include>
       <include src="./src/sections/6-Technology.html"></include>
+      <section
+        class="step"
+        id="fin"
+        :data-x="storybook.fin.position.x"
+        :data-y="storybook.fin.position.y"
+        :data-z="storybook.fin.position.z"
+        :data-rotate-x="storybook.fin.rotation.x"
+        :data-rotate-y="storybook.fin.rotation.y"
+        :data-rotate-z="storybook.fin.rotation.z"
+        :data-scale="storybook.fin.scale"
+      ></section>
     </div>
 
     <div class="left-overlay"></div>
     <!-- controll -->
-    <button @click="showImprint=true">Open</button>
+    <button
+      class="button is-text"
+      style="text-decoration: none; background-color: transparent !important"
+      @click="showImprint=true"
+    >
+      <template x-if="!showImprint">
+        <!-- <i class="fas fa-bars"></i> -->
+        <i class="fas fa-ellipsis-h"></i>
+      </template>
+    </button>
     <include src="./src/sections/0-imprint.html"></include>
     <!-- js -->
     <script nomodule src="./js/index.js"></script>

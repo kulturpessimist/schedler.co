@@ -18,6 +18,9 @@ body {
   display: none;
 }
 
+.impress-disabled * {
+  opacity: 0;
+}
 /**/
 
 .step {
@@ -29,11 +32,22 @@ section.step .columns.is-vcentered {
   /* height: 100%; */
 }
 
+h3 a {
+  color: #4a4a4a;
+  position: relative;
+  bottom: 0.3rem;
+}
 /**/
 
 mark {
   background-color: transparent;
   color: inherit;
+
+  padding-left: 4px;
+  padding-right: 4px;
+
+  background-image: url(../images/mark1.svg), url(../images/mark2.svg);
+  background-size: cover, cover;
 }
 
 .is-256x256 {
@@ -61,51 +75,63 @@ figcaption {
 imprint...
 */
 .left-overlay {
-  width: max(calc((100vh - 50vw) * -1), 50vw);
-  height: min(calc((100vh - 50vw) * -1), 50vw);
-
   width: 100vh;
+  width: max(calc((100vh - 50vw)), 50vw);
+  /* height: min(calc((100vh - 50vw) * -1), 50vw); */
+
   height: 100vh;
   position: absolute;
   top: 0px;
-  left: min(calc((100vh - 50vw) * -1), 0);
+  left: -1rem;
+  left: min(calc((100vh - 50vw) * -1), -20);
   opacity: 0;
   transition: all 1s ease-in-out;
-  display: none;
+
+  transform: translateX(-100vw);
 
   background-image: none;
-  background-size: contain;
+  background-color: blanchedalmond;
+  background-size: cover;
   background-position: center center;
+  background-repeat: no-repeat;
 }
 .impress-on-man .left-overlay {
-  display: block;
   opacity: 1;
+  transform: translateX(0);
+
   background-image: url("../images/MAN-ES.jpg");
+  background-position: bottom right;
 }
 .impress-on-internet-of-blah .left-overlay {
-  display: block;
   opacity: 1;
+  transform: translateX(0);
+
   background-image: url("../images/Internet-of-Blah.jpg");
 }
 .impress-on-thinxnet .left-overlay {
-  display: block;
   opacity: 1;
+  transform: translateX(0);
+
   background-image: url("../images/ThinxNetStreets.jpg");
 }
 .impress-on-natureoffice .left-overlay {
-  display: block;
   opacity: 1;
+  transform: translateX(0);
+
   background-image: url("../images/natureOfficeCut.jpg");
 }
 .impress-on-dynomedia .left-overlay {
-  display: block;
   opacity: 1;
+  transform: translateX(0);
+
   background-image: url("../images/DynomediaDark.png");
 }
 .impress-on-kigg .left-overlay {
-  display: block;
   opacity: 1;
-  background-image: url("../images/KiggFlyer.jpg");
+  transform: translateX(0);
+
+  background-image: url("../images/KiggFlyer2.jpg");
+  background-position: bottom left;
 }
 /* 
 imprint...

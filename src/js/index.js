@@ -1,6 +1,6 @@
 import storybook from "./storybook"
 // frameworks and libs
-import { annotate } from "rough-notation"
+import { annotate, annotationGroup } from "rough-notation"
 import "alpinejs"
 import "impress.js"
 // styles and css
@@ -34,20 +34,28 @@ const app = {
         this.window.width = window.innerWidth
         this.window.height = window.innerHeight
         // let alpine run and after that init impress
-        setTimeout(this.api.init, 10)
+        setTimeout(this.api.init, 1)
       },
 
       stepInit(event) {
         console.log("impress:stepinit", event)
       },
       stepLeave(event) {
-        console.log("impress:stepleave", event)
+        /* console.log("impress:stepleave", event) */
+        const chapter = event.target.id
+        if (chapter in storybook && "destroy" in storybook[chapter]) {
+          storybook[chapter].destroy()
+        }
       },
       stepEnter(event) {
-        console.log("impress:stepenter", event)
+        /* console.log("impress:stepenter", event) */
+        const chapter = event.target.id
+        if (chapter in storybook && "init" in storybook[chapter]) {
+          storybook[chapter].init()
+        }
       },
       stepRefresh(event) {
-        console.log("impress:steprefresh", event)
+        /* console.log("impress:steprefresh", event) */
       },
 
       open() {

@@ -15,11 +15,11 @@
       <h4 class="is-slab-bold">freelance software developer</h4>
     </div>
   </div>
-  <div class="columns is-vcentered">
+  <div class="columns">
     <div class="column">
       <p class="ml-5 mt-0">
         Currlently I am working salaried for
-        <a href="#MAN" target="_self">MAN Energy Solutions</a>. I also do
+        <a href="#man" target="_self">MAN Energy Solutions</a>. I also do
         <mark>freelance </mark>
         <mark>work </mark>
         with a key focus on
@@ -33,13 +33,18 @@
         </a>
       </p>
     </div>
-    <div class="column is-3 is-offset-1">
+    <div
+      class="column is-3 is-offset-1"
+      style="line-height: 1px; font-size: 1px"
+    >
+      <!-- prettier-ignore -->
       <img src="images/freelance/laptop.svg" class="animation" />
-      <!-- <img src="images/freelance/heart.svg" class="animation" /> -->
       <img src="images/freelance/coffee.svg" class="animation" />
       <img src="images/freelance/unicorn.svg" class="animation" />
-      <img src="images/freelance/docker.svg" class="animation" />
+      <img src="images/freelance/magicwand.svg" class="animation" />
+      <img src="images/freelance/heart.svg" class="animation" />
       <img src="images/freelance/coin2.svg" class="animation" />
+      <!-- prettier-ignore-end -->
     </div>
     <div class="column is-2"></div>
   </div>
@@ -47,8 +52,8 @@
 <style>
   :root {
     --duration: 20s;
-    --image-count: 5;
-    --factor: 1 / 5;
+    --image-count: 6;
+    --factor: 1 / 6;
   }
 
   @keyframes all {
@@ -70,7 +75,7 @@
       opacity: 1;
       transform: translateY(0px);
     }
-    17.5% {
+    14.17% {
       height: auto;
       width: auto;
       opacity: 1;
@@ -81,13 +86,13 @@
         In our example with 5 images the cycle must be defined to 20% => 1/5=0.2
         with 6 images it should be 16.67%
         */
-    20% {
+    16.67% {
       height: auto;
       width: auto;
       opacity: 0;
       transform: translateY(200px);
     }
-    20.1% {
+    16.68% {
       height: 0;
       width: 0;
       opacity: 0;
@@ -122,5 +127,8 @@
   }
   .animation:nth-of-type(5) {
     animation-delay: calc(var(--duration) * var(--factor) * 4);
+  }
+  .animation:nth-of-type(6) {
+    animation-delay: calc(var(--duration) * var(--factor) * 5);
   }
 </style>
