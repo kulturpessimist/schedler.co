@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Artboard</title>
-    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Magic-Wand">
+<svg width="1000px" height="1000px" viewBox="0 0 1000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Square</title>
+    <g id="Square" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Magic-Wand" transform="translate(244.000000, 244.000000)">
             <polyline id="Fill-1" fill="#9A502C" points="174.917288 282.539396 40.4188262 417.037858 53.867943 430.486974 188.366405 295.988513 174.917288 282.539396"></polyline>
             <polyline id="Fill-2" fill="#A95F3D" points="295.965174 161.490051 174.917288 282.539396 188.366405 295.988513 309.415749 174.940627 295.965174 161.490051"></polyline>
             <polyline id="Fill-3" fill="#F8D1A4" points="417.059738 174.985846 349.764558 107.690667 322.864866 134.590359 336.315442 148.040934 349.764558 134.590359 417.059738 201.885538 430.510313 188.436422 417.059738 174.985846"></polyline>
