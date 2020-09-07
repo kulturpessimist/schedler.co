@@ -58,6 +58,13 @@ const app = {
         /* console.log("impress:steprefresh", event) */
       },
 
+      previous() {
+        this.api.prev()
+      },
+      next() {
+        this.api.next()
+      },
+
       open() {
         this.showImprint = true
         const e = document.querySelector(" mark")
