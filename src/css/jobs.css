@@ -1,0 +1,147 @@
+:root {
+  --man: #e40045;
+  --internet-of-blah: #6653ff;
+  --thinxnet: #ff6600;
+  --natureoffice: #5f9e64;
+  --dynomedia: #00aeef;
+  --kigg: #d00027;
+}
+/*
+Jobs pictures...
+*/
+.left-overlay {
+  width: 100vh;
+  width: max(calc((100vh - 50vw)), 50vw);
+  /* height: min(calc((100vh - 50vw) * -1), 50vw); */
+
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  left: -1rem;
+  left: min(calc((100vh - 50vw) * -1), -20);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+
+  transform: translateX(-100vw);
+
+  background-image: none;
+  background-color: var(--background-light);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.impress-on-man .left-overlay {
+  opacity: 1;
+  transform: translateX(0);
+
+  background-image: url("../images/MAN-ES.jpg");
+  background-position: bottom right;
+}
+.impress-on-internet-of-blah .left-overlay {
+  opacity: 1;
+  transform: translateX(0);
+
+  background-image: url("../images/Internet-of-Blah.jpg");
+}
+.impress-on-thinxnet .left-overlay {
+  opacity: 1;
+  transform: translateX(0);
+
+  background-image: url("../images/ThinxNetStreets.jpg");
+}
+.impress-on-natureoffice .left-overlay {
+  opacity: 1;
+  transform: translateX(0);
+
+  background-image: url("../images/natureOfficeCut.jpg");
+}
+.impress-on-dynomedia .left-overlay {
+  opacity: 1;
+  transform: translateX(0);
+
+  background-image: url("../images/DynomediaDark.png");
+}
+.impress-on-kigg .left-overlay {
+  opacity: 1;
+  transform: translateX(0);
+
+  background-image: url("../images/KiggFlyer2.jpg");
+  background-position: bottom left;
+}
+
+/**/
+body.impress-on-man,
+body.impress-on-internet-of-blah,
+body.impress-on-thinxnet,
+body.impress-on-natureoffice,
+body.impress-on-dynomedia,
+body.impress-on-kigg {
+  background-color: var(--background-light);
+  border: 0px solid var(--background-light);
+}
+
+body.impress-on-man .interaction,
+body.impress-on-internet-of-blah .interaction,
+body.impress-on-thinxnet .interaction,
+body.impress-on-natureoffice .interaction,
+body.impress-on-dynomedia .interaction,
+body.impress-on-kigg .interaction {
+  left: calc(75% - 100px);
+}
+
+body.impress-on-man h3 {
+  color: var(--man);
+}
+body.impress-on-internet-of-blah h3 {
+  color: var(--internet-of-blah);
+}
+body.impress-on-thinxnet h3 {
+  color: var(--thinxnet);
+}
+body.impress-on-natureoffice h3 {
+  color: var(--natureoffice);
+}
+body.impress-on-dynomedia h3 {
+  color: var(--dynomedia);
+}
+body.impress-on-kigg h3 {
+  color: var(--kigg);
+}
+
+body.impress-on-man h5,
+body.impress-on-man div,
+body.impress-on-man p,
+body.impress-on-man strong {
+  color: var(--text);
+}
+body.impress-on-internet-of-blah h5,
+body.impress-on-internet-of-blah div,
+body.impress-on-internet-of-blah p,
+body.impress-on-internet-of-blah strong {
+  color: var(--text);
+}
+body.impress-on-thinxnet h5,
+body.impress-on-thinxnet div,
+body.impress-on-thinxnet p,
+body.impress-on-thinxnet strong {
+  color: var(--text);
+}
+body.impress-on-natureoffice h5,
+body.impress-on-natureoffice div,
+body.impress-on-natureoffice p,
+body.impress-on-natureoffice strong {
+  color: var(--text);
+}
+body.impress-on-dynomedia h5,
+body.impress-on-dynomedia div,
+body.impress-on-dynomedia p,
+body.impress-on-dynomedia strong {
+  color: var(--text);
+}
+body.impress-on-kigg h5,
+body.impress-on-kigg div,
+body.impress-on-kigg p,
+body.impress-on-kigg strong {
+  color: var(--text);
+}

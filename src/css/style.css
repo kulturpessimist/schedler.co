@@ -2,25 +2,51 @@
   --main: #1bf9d8;
   -contrast: #5900b0;
 
-  --text: #4a4a4a;
-  --text-light: #e9e9e9;
+  --brand: #0000ff;
+  --brand-50: #f3f7f9;
+  --brand-100: #e8f6fa;
+  --brand-200: #b9e1fa;
+  --brand-300: #90cafa;
+  --brand-400: #56a3f8;
+  --brand-500: #3076f6;
+  --brand-600: #2a54f3;
+  --brand-700: #2845e9;
+  --brand-800: #2736c2;
+  --brand-900: #202f99;
 
-  --background: #0100f8;
-  --background: #0000ff;
+  --text: var(--brand-900);
+  --text-light: var(--brand-100);
 
-  --h1: #bae1fa;
-  --h2: #91cafa;
-  --p: #58a2f8;
+  --background: var(--brand);
+  --background-light: var(--brand-100);
+
+  --h1: var(--brand-200);
+  --h2: var(--brand-300);
+  --p: var(--brand-400);
+
+  /* jobs */
+  --man: #e40045;
+  --internet-of-blah: #6653ff;
+  --thinxnet: #ff6600;
+  --natureoffice: #5f9e64;
+  --dynomedia: #00aeef;
+  --kigg: #d00027;
+  /* timings */
+  --duration: 0.33s;
+  --delay: 1s;
 }
 
 h1 {
   color: var(--h1);
+  transition: color 0.33s linear 1s;
 }
 h2 {
   color: var(--h2);
+  transition: color 0.33s linear 1s;
 }
 h3 {
   color: var(--h2);
+  transition: color 0.33s linear 1s;
 }
 h4,
 h5,
@@ -28,7 +54,8 @@ h6,
 p,
 td,
 div,
-button {
+button,
+strong {
   color: var(--p);
 }
 
@@ -46,6 +73,7 @@ body {
 
 body {
   border: 10px solid #f3f8f9;
+  transition: all 0.33s linear 1s;
 }
 
 .hidden {
@@ -74,14 +102,33 @@ h3 a {
 /**/
 .interaction {
   position: fixed;
-  bottom: 1rem;
+  bottom: 0.5rem;
   left: calc(50% - 100px);
   width: 200px;
+
+  transition: left 0.33s linear;
 }
-button.button.is-text {
+.button.is-text {
   text-decoration: none;
   background-color: transparent !important;
   color: var(--p);
+}
+.button.is-text:hover,
+.button.is-text.is-hovered,
+.button.is-text:focus,
+.button.is-text.is-focused {
+  color: var(--brand-500);
+}
+
+a,
+a:visited {
+  color: var(--brand-300);
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  color: var(--brand-400);
+  text-decoration: none;
 }
 
 mark {
@@ -116,67 +163,13 @@ figcaption {
   padding-right: 0.75rem;
 }
 
-/*
-Jobs pictures...
-*/
-.left-overlay {
-  width: 100vh;
-  width: max(calc((100vh - 50vw)), 50vw);
-  /* height: min(calc((100vh - 50vw) * -1), 50vw); */
-
-  height: 100vh;
-  position: absolute;
-  top: 0px;
-  left: -1rem;
-  left: min(calc((100vh - 50vw) * -1), -20);
-  opacity: 0;
-  transition: all 1s ease-in-out;
-
-  transform: translateX(-100vw);
-
-  background-image: none;
-  background-color: blanchedalmond;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+.ribbon.is-dark:not(.is-outlined) {
+  background-color: var(--brand);
+  border-color: transparent;
+  color: var(--text-light) !important;
 }
-.impress-on-man .left-overlay {
-  opacity: 1;
-  transform: translateX(0);
-
-  background-image: url("../images/MAN-ES.jpg");
-  background-position: bottom right;
-}
-.impress-on-internet-of-blah .left-overlay {
-  opacity: 1;
-  transform: translateX(0);
-
-  background-image: url("../images/Internet-of-Blah.jpg");
-}
-.impress-on-thinxnet .left-overlay {
-  opacity: 1;
-  transform: translateX(0);
-
-  background-image: url("../images/ThinxNetStreets.jpg");
-}
-.impress-on-natureoffice .left-overlay {
-  opacity: 1;
-  transform: translateX(0);
-
-  background-image: url("../images/natureOfficeCut.jpg");
-}
-.impress-on-dynomedia .left-overlay {
-  opacity: 1;
-  transform: translateX(0);
-
-  background-image: url("../images/DynomediaDark.png");
-}
-.impress-on-kigg .left-overlay {
-  opacity: 1;
-  transform: translateX(0);
-
-  background-image: url("../images/KiggFlyer2.jpg");
-  background-position: bottom left;
+.ribbon {
+  border-radius: 4px 0px 0px 4px;
 }
 /* 
 imprint...

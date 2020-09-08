@@ -7,11 +7,12 @@ import "impress.js"
 import "@fortawesome/fontawesome-free/css/brands.css"
 import "@fortawesome/fontawesome-free/css/solid.css"
 import "@fortawesome/fontawesome-free/css/fontawesome.css"
+import "animate.css"
 import "bulma/css/bulma.css"
 import "../css/bulma.ribbon.css"
 import "../fonts/fonts.css"
-import "animate.css"
 import "../css/style.css"
+import "../css/jobs.css"
 //
 const app = {
   data() {

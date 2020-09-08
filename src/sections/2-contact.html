@@ -69,48 +69,63 @@
       <div
         class="bubble-left has-text-centered is-slab-black animate__animated"
       >
-        Hello.
+        <include src="./src/images/contact-bubble.svg"></include>
+        <!-- <div>Hello.</div> -->
       </div>
       <div
         class="bubble-right has-text-centered is-slab-black animate__animated animate__delay-1s"
       >
-        Hi!
+        <include src="./src/images/contact-bubble2.svg"></include>
       </div>
     </div>
   </div>
 </section>
 <style>
   .bubble-left {
-    background-image: url("images/contact-bubble.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
     text-align: center;
 
     font-size: 2.5rem;
     line-height: 230px;
-    min-width: 300px;
-    min-height: 300px;
 
     position: absolute;
 
     margin-top: -100px;
+    color: var(--brand-50);
+
+    opacity: 0;
   }
+  .bubble-left::after {
+    content: "Hello.";
+    color: var(--brand);
+    position: absolute;
+    left: 15%;
+  }
+
+  .bubble-left svg,
+  .bubble-right svg {
+    width: 300px;
+    height: 300px;
+  }
+
+  .bubble-right::after {
+    content: "Hi!";
+    color: var(--brand);
+    position: absolute;
+    left: 30%;
+  }
+
   .bubble-right {
-    background-image: url("images/contact-bubble2.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
     text-align: center;
 
     font-size: 2.5rem;
     line-height: 230px;
-    min-width: 300px;
-    min-height: 300px;
 
     position: absolute;
 
     margin-left: 200px;
     margin-top: -250px;
+    color: var(--brand-50);
+
+    opacity: 0;
   }
 </style>
