@@ -57,6 +57,7 @@ div,
 button,
 strong {
   color: var(--p);
+  transition: color 0.33s linear 1s;
 }
 
 html {
