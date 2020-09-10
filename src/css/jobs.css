@@ -151,3 +151,104 @@ body.impress-on-kigg p,
 body.impress-on-kigg strong {
   color: var(--kigg-text);
 }
+
+body.impress-on-man .button.is-text.control {
+  color: var(--man);
+}
+body.impress-on-man .button.is-text.control:hover,
+body.impress-on-man .button.is-text.control.is-hovered,
+body.impress-on-man .button.is-text.control:focus,
+body.impress-on-man .button.is-text.control.is-focused {
+  color: var(--man-text);
+}
+
+body.impress-on-internet-of-blah .button.is-text.control {
+  color: var(--internet-of-blah);
+}
+body.impress-on-internet-of-blah .button.is-text.control:hover,
+body.impress-on-internet-of-blah .button.is-text.control.is-hovered,
+body.impress-on-internet-of-blah .button.is-text.control:focus,
+body.impress-on-internet-of-blah .button.is-text.control.is-focused {
+  color: var(--internet-of-blah-text);
+}
+
+body.impress-on-thinxnet .button.is-text.control {
+  color: var(--thinxnet);
+}
+body.impress-on-thinxnet .button.is-text.control:hover,
+body.impress-on-thinxnet .button.is-text.control.is-hovered,
+body.impress-on-thinxnet .button.is-text.control:focus,
+body.impress-on-thinxnet .button.is-text.control.is-focused {
+  color: var(--thinxnet-text);
+}
+
+body.impress-on-natureoffice .button.is-text.control.imprint,
+body.impress-on-natureoffice .button.is-text.control {
+  color: var(--natureoffice);
+}
+body.impress-on-natureoffice .button.is-text.control:hover,
+body.impress-on-natureoffice .button.is-text.control.is-hovered,
+body.impress-on-natureoffice .button.is-text.control:focus,
+body.impress-on-natureoffice .button.is-text.control.is-focused {
+  color: var(--natureoffice-text);
+}
+body.impress-on-natureoffice .button.is-text.control.imprint {
+  margin: 10px;
+}
+body.impress-on-natureoffice .button.is-text.control.imprint:hover,
+body.impress-on-natureoffice .button.is-text.control.imprint.is-hovered,
+body.impress-on-natureoffice .button.is-text.control.imprint:focus,
+body.impress-on-natureoffice .button.is-text.control.imprint.is-focused {
+  color: var(--natureoffice-text);
+}
+
+body.impress-on-dynomedia .button.is-text.control {
+  color: var(--dynomedia);
+}
+body.impress-on-dynomedia .button.is-text.control:hover,
+body.impress-on-dynomedia .button.is-text.control.is-hovered,
+body.impress-on-dynomedia .button.is-text.control:focus,
+body.impress-on-dynomedia .button.is-text.control.is-focused {
+  color: var(--dynomedia-text);
+}
+
+body.impress-on-kigg .button.is-text.control {
+  color: var(--kigg);
+}
+body.impress-on-kigg .button.is-text.control:hover,
+body.impress-on-kigg .button.is-text.control.is-hovered,
+body.impress-on-kigg .button.is-text.control:focus,
+body.impress-on-kigg .button.is-text.control.is-focused {
+  color: var(--kigg-text);
+}
+
+body.impress-on-man .button.is-text.control.imprint,
+body.impress-on-internet-of-blah .button.is-text.control.imprint,
+body.impress-on-thinxnet .button.is-text.control.imprint,
+body.impress-on-dynomedia .button.is-text.control.imprint,
+body.impress-on-kigg .button.is-text.control.imprint {
+  margin: 10px;
+  color: #fff;
+}
+body.impres-on-man .button.is-text.control.imprint:hover,
+body.impress-on-man .button.is-text.control.imprint.is-hovered,
+body.impress-on-man .button.is-text.control.imprint:focus,
+body.impress-on-man .button.is-text.control.imprint.is-focused,
+body.impress-on-internet-of-blah .button.is-text.control.imprint:hover,
+body.impress-on-internet-of-blah .button.is-text.control.imprint.is-hovered,
+body.impress-on-internet-of-blah .button.is-text.control.imprint:focus,
+body.impress-on-internet-of-blah .button.is-text.control.imprint.is-focused,
+body.impress-on-thinxnet .button.is-text.control.imprint:hover,
+body.impress-on-thinxnet .button.is-text.control.imprint.is-hovered,
+body.impress-on-thinxnet .button.is-text.control.imprint:focus,
+body.impress-on-thinxnet .button.is-text.control.imprint.is-focused,
+body.impress-on-dynomedia .button.is-text.control.imprint:hover,
+body.impress-on-dynomedia .button.is-text.control.imprint.is-hovered,
+body.impress-on-dynomedia .button.is-text.control.imprint:focus,
+body.impress-on-dynomedia .button.is-text.control.imprint.is-focused,
+body.impress-on-kigg .button.is-text.control.imprint:hover,
+body.impress-on-kigg .button.is-text.control.imprint.is-hovered,
+body.impress-on-kigg .button.is-text.control.imprint:focus,
+body.impress-on-kigg .button.is-text.control.imprint.is-focused {
+  color: #ccc;
+}

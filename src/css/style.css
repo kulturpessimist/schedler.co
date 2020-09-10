@@ -121,6 +121,10 @@ h3 a {
   color: var(--brand-500);
 }
 
+.button.is-text.control.imprint {
+  transition: margin 0.33s linear 1s;
+}
+
 a,
 a:visited {
   color: var(--brand-300);
@@ -133,14 +137,16 @@ a:active {
 }
 
 mark {
-  background-color: transparent;
-  color: inherit;
+  background-color: var(--brand-200);
+  color: var(--brand);
 
-  /* padding-left: 4px;
+  padding-left: 4px;
   padding-right: 4px;
+  padding-bottom: 2px;
 
-  background-image: url(../images/mark1.svg), url(../images/mark2.svg);
-  background-size: cover, cover; */
+  /* background-image: url(../images/mark0.svg);
+  background-size: cover;
+  background-repeat: no-repeat; */
 }
 
 .is-256x256 {
