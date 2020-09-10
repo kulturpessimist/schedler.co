@@ -1,10 +1,16 @@
 :root {
   --man: #e40045;
+  --man-text: #91173e;
   --internet-of-blah: #6653ff;
+  --internet-of-blah-text: #2c2b90;
   --thinxnet: #ff6600;
+  --thinxnet-text: #852811;
   --natureoffice: #5f9e64;
+  --natureoffice-text: #234625;
   --dynomedia: #00aeef;
+  --dynomedia-text: #123f7d;
   --kigg: #d00027;
+  --kigg-text: #8d1a2f;
 }
 /*
 Jobs pictures...
@@ -113,35 +119,35 @@ body.impress-on-man h5,
 body.impress-on-man div,
 body.impress-on-man p,
 body.impress-on-man strong {
-  color: var(--text);
+  color: var(--man-text);
 }
 body.impress-on-internet-of-blah h5,
 body.impress-on-internet-of-blah div,
 body.impress-on-internet-of-blah p,
 body.impress-on-internet-of-blah strong {
-  color: var(--text);
+  color: var(--internet-of-blah-text);
 }
 body.impress-on-thinxnet h5,
 body.impress-on-thinxnet div,
 body.impress-on-thinxnet p,
 body.impress-on-thinxnet strong {
-  color: var(--text);
+  color: var(--thinxnet-text);
 }
 body.impress-on-natureoffice h5,
 body.impress-on-natureoffice div,
 body.impress-on-natureoffice p,
 body.impress-on-natureoffice strong {
-  color: var(--text);
+  color: var(--natureoffice-text);
 }
 body.impress-on-dynomedia h5,
 body.impress-on-dynomedia div,
 body.impress-on-dynomedia p,
 body.impress-on-dynomedia strong {
-  color: var(--text);
+  color: var(--dynomedia-text);
 }
 body.impress-on-kigg h5,
 body.impress-on-kigg div,
 body.impress-on-kigg p,
 body.impress-on-kigg strong {
-  color: var(--text);
+  color: var(--kigg-text);
 }
