@@ -49,17 +49,21 @@
 
     <div class="left-overlay"></div>
     <!-- controll -->
-    <button class="button is-text" @click="showImprint=true">
+    <button class="control button is-text" @click="showImprint=true">
       <template x-if="!showImprint">
         <i class="fas fa-ellipsis-h"></i>
       </template>
     </button>
 
     <div class="interaction has-text-centered">
-      <button title="Previous" class="button is-text" @click="previous()">
+      <button
+        title="Previous"
+        class="control button is-text"
+        @click="previous()"
+      >
         <i class="fas fa-angle-left"></i>
       </button>
-      <button title="Next" class="button is-text" @click="next()">
+      <button title="Next" class="control button is-text" @click="next()">
         <i class="fas fa-angle-right"></i>
       </button>
     </div>
