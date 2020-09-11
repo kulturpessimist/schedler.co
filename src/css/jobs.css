@@ -252,3 +252,20 @@ body.impress-on-kigg .button.is-text.control.imprint:focus,
 body.impress-on-kigg .button.is-text.control.imprint.is-focused {
   color: #ccc;
 }
+
+/*resets*/
+body.impress-on-education h1 {
+  transition: color 0.33s linear 0s;
+}
+body.impress-on-education h2 {
+  transition: color 0.33s linear 0s;
+}
+body.impress-on-education h3 {
+  transition: color 0.33s linear 0s;
+}
+body.impress-on-education h5,
+body.impress-on-education div,
+body.impress-on-education p,
+body.impress-on-education strong {
+  transition: color 0.33s linear 0s;
+}
