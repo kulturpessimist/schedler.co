@@ -76,13 +76,13 @@
     </r-cell>
     <r-cell span="5" class="ml-5">
       <div
-        class="bubble-left has-text-centered is-slab-black animate__animated"
+        class="bubble-left is-size-3 has-text-centered is-slab-black animate__animated"
       >
         <include src="./src/images/contact-bubble.svg"></include>
         <div style="position: absolute; top: 0; left: 25%">Hello.</div>
       </div>
       <div
-        class="bubble-right has-text-centered is-slab-black animate__animated animate__delay-1s"
+        class="bubble-right is-size-3 has-text-centered is-slab-black animate__animated animate__delay-1s"
       >
         <include src="./src/images/contact-bubble2.svg"></include>
         <div style="position: absolute; top: 0; left: 25%">Hi!</div>
@@ -98,7 +98,6 @@
   .bubble-left {
     text-align: center;
 
-    font-size: 2.5rem;
     line-height: 230px;
 
     position: absolute;
@@ -112,7 +111,7 @@
     content: "Hello.";
     color: var(--brand);
     position: absolute;
-    left: 15%;
+    left: 25%;
   }
 
   .bubble-left svg,
@@ -125,13 +124,12 @@
     content: "Hi!";
     color: var(--brand);
     position: absolute;
-    left: 30%;
+    left: 35%;
   }
 
   .bubble-right {
     text-align: center;
 
-    font-size: 2.5rem;
     line-height: 230px;
 
     position: absolute;
