@@ -101,7 +101,7 @@ h3 a {
   transition: left 0.33s linear;
 }
 .button.is-text {
-  text-decoration: none;
+  text-decoration: none !important;
   background-color: transparent !important;
   color: var(--p);
 }
@@ -215,3 +215,10 @@ section.step {
     min-width: 100vw;
   }
 } */
+
+r-grid[vcenter] {
+  align-items: center;
+}
+r-grid[hcenter] {
+  justify-items: center;
+}

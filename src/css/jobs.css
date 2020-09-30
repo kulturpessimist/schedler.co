@@ -87,14 +87,14 @@ body.impress-on-kigg {
   border: 0px solid var(--background-light);
 }
 
-body.impress-on-man .interaction,
+/* body.impress-on-man .interaction,
 body.impress-on-internet-of-blah .interaction,
 body.impress-on-thinxnet .interaction,
 body.impress-on-natureoffice .interaction,
 body.impress-on-dynomedia .interaction,
 body.impress-on-kigg .interaction {
   left: calc(75% - 100px);
-}
+} */
 
 body.impress-on-man h3 {
   color: var(--man);

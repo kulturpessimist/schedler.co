@@ -3,13 +3,14 @@ import storybook from "./storybook"
 import { annotate, annotationGroup } from "rough-notation"
 import "alpinejs"
 import "impress.js"
-// styles and css
+// styles...
+// ...sass
+import "../css/bulma.scss"
+// ...css
 import "@fortawesome/fontawesome-free/css/brands.css"
 import "@fortawesome/fontawesome-free/css/solid.css"
 import "@fortawesome/fontawesome-free/css/fontawesome.css"
 import "animate.css"
-import "bulma/css/bulma.css"
-import "../css/bulma.ribbon.css"
 import "../fonts/fonts.css"
 import "../css/style.css"
 import "../css/jobs.css"

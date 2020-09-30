@@ -9,14 +9,15 @@
   :data-rotate-z="storybook.contact.rotation.z"
   :data-scale="storybook.contact.scale"
 >
-  <div class="columns is-mobilex">
-    <div class="column is-offset-0">
-      <h1 class="is-slab-black">Alexander Schedler</h1>
-      <h4 class="is-slab-bold">District of Augsburg, Germany</h4>
-    </div>
-  </div>
-  <div class="columns is-mobile is-vcentered">
-    <div class="column is-offset-0">
+  <r-grid columns="10">
+    <r-cell span="10">
+      <h1 class="is-size-3 is-slab-black">Alexander Schedler</h1>
+      <h4 class="is-size-5 is-slab-bold">District of Augsburg, Germany</h4>
+    </r-cell>
+  </r-grid>
+
+  <r-grid columns="10" vcenter class="mt-5">
+    <r-cell span="5">
       <p class="ml-5 mt-0">
         Want to get in touch?<br />
         Just write me an Email
@@ -72,20 +73,25 @@
           /Alex_Schedler
         </a>
       </p>
-    </div>
-    <div class="column is-5 is-offset-1">
+    </r-cell>
+    <r-cell span="5" class="ml-5">
       <div
         class="bubble-left has-text-centered is-slab-black animate__animated"
       >
         <include src="./src/images/contact-bubble.svg"></include>
-        <!-- <div>Hello.</div> -->
+        <div style="position: absolute; top: 0; left: 25%">Hello.</div>
       </div>
       <div
         class="bubble-right has-text-centered is-slab-black animate__animated animate__delay-1s"
       >
         <include src="./src/images/contact-bubble2.svg"></include>
+        <div style="position: absolute; top: 0; left: 25%">Hi!</div>
       </div>
-    </div>
+    </r-cell>
+  </r-grid>
+  <div class="columns is-mobile is-vcentered">
+    <div class="column is-offset-0"></div>
+    <div class="column is-5 is-offset-1"></div>
   </div>
 </section>
 <style>
