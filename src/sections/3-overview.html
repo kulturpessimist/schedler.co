@@ -9,64 +9,72 @@
   :data-rotate-z="storybook.overview.rotation.z"
   :data-scale="storybook.overview.scale"
 >
-  <div class="columns is-vcentered">
-    <div class="column">
-      <h1 class="is-slab-black">Alexander Schedler</h1>
-      <h4 class="is-slab-bold">Curriculum Vitae</h4>
-      <br />
-      <div class="columns">
-        <div class="column is-3 is-offset-1">
-          <a href="#man" target="_self">
-            <div
-              class="box man has-ribbon has-ribbon-bottom animate__animated animate__fadeInDown animate__fast"
-            >
-              <div class="ribbon is-small is-dark">MAN Energy Solutions</div>
-            </div>
-          </a>
-          <a href="#natureoffice" target="_self">
-            <div
-              class="box natureoffice has-ribbon has-ribbon-bottom animate__animated animate__fadeInDown"
-            >
-              <div class="ribbon is-small is-dark">natureOffice</div>
-            </div>
-          </a>
-        </div>
-        <div class="column is-3">
-          <a href="#internet-of-blah" target="_self">
-            <div
-              class="box iob has-ribbon has-ribbon-bottom animate__animated animate__fadeInDown"
-            >
-              <div class="ribbon is-small is-dark">Internet of Blah</div>
-            </div>
-          </a>
-          <a href="#dynomedia" target="_self">
-            <div
-              class="box dynomedia has-ribbon has-ribbon-bottom animate__animated animate__fadeInDown"
-            >
-              <div class="ribbon is-small is-dark">DYNOMEDIA</div>
-            </div>
-          </a>
-        </div>
+  <r-grid columns="10">
+    <r-cell span="10">
+      <h1 class="is-size-3-5 is-slab-black">Alexander Schedler</h1>
+      <h4 class="is-size-6 is-slab-bold">Curriculum Vitae</h4>
+    </r-cell>
+  </r-grid>
 
-        <div class="column is-3">
-          <a href="#thinxnet" target="_self">
-            <div
-              class="box thinxnet has-ribbon has-ribbon-bottom animate__animated animate__fadeInDown"
-            >
-              <div class="ribbon is-small is-dark">ThinxNet</div>
-            </div>
-          </a>
-          <a href="#kigg" target="_self">
-            <div
-              class="box kigg has-ribbon has-ribbon-bottom animate__animated animate__fadeInDown"
-            >
-              <div class="ribbon is-small is-dark">KIGG</div>
-            </div>
-          </a>
+  <r-grid columns="11" class="mt-5">
+    <r-cell span="1+3">
+      <a href="#man" target="_self">
+        <div
+          class="box man has-ribbon has-ribbon-bottom animate__animated animate__fadeInDown animate__fast"
+        >
+          <div class="ribbon is-small is-dark">MAN Energy Solutions</div>
         </div>
-      </div>
-    </div>
-  </div>
+      </a>
+    </r-cell>
+    <r-cell span="5+3">
+      <a href="#internet-of-blah" target="_self">
+        <div
+          class="box iob has-ribbon has-ribbon-bottom animate__animated animate__fadeInDown"
+        >
+          <div class="ribbon is-small is-dark">Internet of Blah</div>
+        </div>
+      </a>
+    </r-cell>
+    <r-cell span="9+3">
+      <a href="#thinxnet" target="_self">
+        <div
+          class="box thinxnet has-ribbon has-ribbon-bottom animate__animated animate__fadeInDown"
+        >
+          <div class="ribbon is-small is-dark">ThinxNet</div>
+        </div>
+      </a>
+    </r-cell>
+  </r-grid>
+
+  <r-grid columns="11">
+    <r-cell span="1+3">
+      <a href="#natureoffice" target="_self">
+        <div
+          class="box natureoffice has-ribbon has-ribbon-bottom animate__animated animate__fadeInDown"
+        >
+          <div class="ribbon is-small is-dark">natureOffice</div>
+        </div>
+      </a>
+    </r-cell>
+    <r-cell span="5+3">
+      <a href="#dynomedia" target="_self">
+        <div
+          class="box dynomedia has-ribbon has-ribbon-bottom animate__animated animate__fadeInDown"
+        >
+          <div class="ribbon is-small is-dark">DYNOMEDIA</div>
+        </div>
+      </a>
+    </r-cell>
+    <r-cell span="9+3">
+      <a href="#kigg" target="_self">
+        <div
+          class="box kigg has-ribbon has-ribbon-bottom animate__animated animate__fadeInDown"
+        >
+          <div class="ribbon is-small is-dark">KIGG</div>
+        </div>
+      </a>
+    </r-cell>
+  </r-grid>
 </section>
 <style>
   #overview .box {

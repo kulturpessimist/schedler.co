@@ -9,9 +9,8 @@
   :data-rotate-z="storybook.man.rotation.z"
   :data-scale="storybook.man.scale"
 >
-  <div class="columns is-vcentered">
-    <div class="column"></div>
-    <div class="column">
+  <r-grid columns="2" vcenter>
+    <r-cell span="2...">
       <h3 class="is-slab-black is-size-5">
         MAN Energy Solutions SE
         <a
@@ -45,6 +44,11 @@
         frontend and backend development through to the initial operation in the
         enterprise cloud infrastructure.
       </p>
-    </div>
+    </r-cell>
+  </r-grid>
+
+  <div class="columns is-vcentered">
+    <div class="column"></div>
+    <div class="column"></div>
   </div>
 </section>

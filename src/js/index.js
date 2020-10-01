@@ -19,6 +19,9 @@ const app = {
   data() {
     return {
       showImprint: false,
+      showImprint1: false,
+      showImprint2: false,
+      showImprint3: false,
       api: undefined,
       storybook,
       window: {

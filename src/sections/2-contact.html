@@ -11,14 +11,14 @@
 >
   <r-grid columns="10">
     <r-cell span="10">
-      <h1 class="is-size-3 is-slab-black">Alexander Schedler</h1>
-      <h4 class="is-size-5 is-slab-bold">District of Augsburg, Germany</h4>
+      <h1 class="is-size-3-5 is-slab-black">Alexander Schedler</h1>
+      <h4 class="is-size-6 is-slab-bold">District of Augsburg, Germany</h4>
     </r-cell>
   </r-grid>
 
   <r-grid columns="10" vcenter class="mt-5">
     <r-cell span="5">
-      <p class="ml-5 mt-0">
+      <p class="is-size-7 ml-5 mt-0">
         Want to get in touch?<br />
         Just write me an Email
         <!-- <i class="fas fa-envelope"></i> -->
@@ -79,13 +79,11 @@
         class="bubble-left is-size-3 has-text-centered is-slab-black animate__animated"
       >
         <include src="./src/images/contact-bubble.svg"></include>
-        <div style="position: absolute; top: 0; left: 25%">Hello.</div>
       </div>
       <div
         class="bubble-right is-size-3 has-text-centered is-slab-black animate__animated animate__delay-1s"
       >
         <include src="./src/images/contact-bubble2.svg"></include>
-        <div style="position: absolute; top: 0; left: 25%">Hi!</div>
       </div>
     </r-cell>
   </r-grid>
@@ -109,6 +107,7 @@
   }
   .bubble-left::after {
     content: "Hello.";
+    font-family: "CorporativeSlabBlack";
     color: var(--brand);
     position: absolute;
     left: 25%;
@@ -122,6 +121,7 @@
 
   .bubble-right::after {
     content: "Hi!";
+    font-family: "CorporativeSlabBlack";
     color: var(--brand);
     position: absolute;
     left: 35%;

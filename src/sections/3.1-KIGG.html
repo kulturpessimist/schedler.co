@@ -9,10 +9,8 @@
   :data-rotate-z="storybook.kigg.rotation.z"
   :data-scale="storybook.kigg.scale"
 >
-  <div class="columns is-vcentered">
-    <div class="column"></div>
-
-    <div class="column">
+  <r-grid columns="2" vcenter>
+    <r-cell span="2...">
       <h3 class="is-slab-black is-size-5">
         KIGG GmbH
         <a
@@ -41,8 +39,8 @@
         and a candidates state campaign for the elections in 2003. Responsible
         for municipal content management system projects.
       </p>
-    </div>
-  </div>
+    </r-cell>
+  </r-grid>
 </section>
 <style>
   /* .impress-on-kigg {

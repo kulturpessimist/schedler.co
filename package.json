@@ -16,7 +16,7 @@
     "bulma": "^0.9.1",
     "bulma-ribbon": "github:Wikiki/bulma-ribbon",
     "impress.js": "1.1.0",
-    "raster-sass": "^20.1.1",
+    "raster-sass": "github:kulturpessimist/raster-sass",
     "rough-notation": "0.4.0"
   },
   "devDependencies": {
