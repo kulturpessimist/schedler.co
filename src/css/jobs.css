@@ -12,6 +12,24 @@
   --kigg: #d00027;
   --kigg-text: #8d1a2f;
 }
+#man,
+#internet-of-blah,
+#thinxnet,
+#natureoffice,
+#dynomedia,
+#kigg {
+  transition: opacity 1s linear;
+  opacity: 1;
+}
+.impress-on-overview #man,
+.impress-on-overview #internet-of-blah,
+.impress-on-overview #thinxnet,
+.impress-on-overview #natureoffice,
+.impress-on-overview #dynomedia,
+.impress-on-overview #kigg {
+  opacity: 0.1;
+}
+
 /*
 Jobs pictures...
 */

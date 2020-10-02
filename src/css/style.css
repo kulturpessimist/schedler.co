@@ -95,8 +95,8 @@ h3 a {
 .interaction {
   position: fixed;
   bottom: 0.5rem;
-  left: calc(50% - 100px);
-  width: 200px;
+  left: calc(50vw - 86px);
+  width: 172px;
 }
 .button.is-text {
   text-decoration: none !important;
