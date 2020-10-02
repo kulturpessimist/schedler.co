@@ -14,8 +14,8 @@
     <div
       id="impress"
       data-transition-duration="1000"
-      data-width="1200"
-      data-height="1000"
+      :data-width="window.width"
+      :data-height="window.height"
       data-perspective="0"
     >
       <include src="./src/sections/1-home.html"></include>
@@ -48,7 +48,7 @@
     </div>
 
     <div class="left-overlay"></div>
-    <!-- controll -->
+    <!-- control -->
     <button class="control imprint button is-text" @click="showImprint=true">
       <template x-if="!showImprint">
         <i class="fas fa-ellipsis-h"></i>

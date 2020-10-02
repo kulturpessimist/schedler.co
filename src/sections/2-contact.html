@@ -17,8 +17,8 @@
   </r-grid>
 
   <r-grid columns="10" vcenter class="mt-5">
-    <r-cell span="5">
-      <p class="is-size-7 ml-5 mt-0">
+    <r-cell span="5" span-s="row">
+      <p class="is-size-7 is-size-6-mobile ml-5 mt-0">
         Want to get in touch?<br />
         Just write me an Email
         <!-- <i class="fas fa-envelope"></i> -->
@@ -74,7 +74,7 @@
         </a>
       </p>
     </r-cell>
-    <r-cell span="5" class="ml-5">
+    <r-cell span="5" span-s="row" class="ml-5">
       <div
         class="bubble-left is-size-3 has-text-centered is-slab-black animate__animated"
       >
@@ -87,20 +87,16 @@
       </div>
     </r-cell>
   </r-grid>
-  <div class="columns is-mobile is-vcentered">
-    <div class="column is-offset-0"></div>
-    <div class="column is-5 is-offset-1"></div>
-  </div>
 </section>
 <style>
   .bubble-left {
     text-align: center;
 
-    line-height: 230px;
+    line-height: 130px;
 
     position: absolute;
 
-    margin-top: -100px;
+    margin-top: 50px;
     color: var(--brand-50);
 
     opacity: 0;
@@ -115,10 +111,9 @@
 
   .bubble-left svg,
   .bubble-right svg {
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
   }
-
   .bubble-right::after {
     content: "Hi!";
     font-family: "CorporativeSlabBlack";
@@ -130,14 +125,30 @@
   .bubble-right {
     text-align: center;
 
-    line-height: 230px;
+    line-height: 130px;
 
     position: absolute;
 
-    margin-left: 200px;
-    margin-top: -250px;
+    margin-left: 120px;
+    margin-top: 20px;
     color: var(--brand-50);
 
     opacity: 0;
+  }
+  @media screen and (min-width: 769px) {
+    .bubble-left svg,
+    .bubble-right svg {
+      width: 300px;
+      height: 300px;
+    }
+    .bubble-left {
+      line-height: 230px;
+      margin-top: -100px;
+    }
+    .bubble-right {
+      line-height: 230px;
+      margin-left: 200px;
+      margin-top: -250px;
+    }
   }
 </style>

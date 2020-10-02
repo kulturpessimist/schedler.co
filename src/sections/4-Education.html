@@ -10,10 +10,10 @@
   :data-scale="storybook.education.scale"
 >
   <r-grid columns="10" vcenter>
-    <r-cell span="4">
+    <r-cell span="4" span-s="row" class="is-hidden-mobile">
       <include src="./src/images/education.svg"></include>
     </r-cell>
-    <r-cell span="6" class="ml-5">
+    <r-cell span="6" class="ml-5" span-s="row">
       <p class="is-size-7">
         SAE Institute Munich, Germany and <br />
         Middlesex University London, UK
@@ -32,6 +32,9 @@
         Multimedia and Online Production<br />
         Graphic design
       </p>
+    </r-cell>
+    <r-cell span="4" span-s="row" class="is-hidden-tablet">
+      <include src="./src/images/education.svg"></include>
     </r-cell>
   </r-grid>
 </section>
