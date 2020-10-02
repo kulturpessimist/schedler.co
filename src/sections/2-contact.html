@@ -76,32 +76,35 @@
     </r-cell>
     <r-cell span="5" span-s="row" class="ml-5">
       <div
-        class="bubble-left is-size-3 has-text-centered is-slab-black animate__animated"
+        class="bubble left is-size-3 has-text-centered is-slab-black animate__animated"
       >
         <include src="./src/images/contact-bubble.svg"></include>
       </div>
       <div
-        class="bubble-right is-size-3 has-text-centered is-slab-black animate__animated animate__delay-1s"
+        class="bubble right is-size-3 has-text-centered is-slab-black animate__animated animate__delay-1s"
       >
         <include src="./src/images/contact-bubble2.svg"></include>
       </div>
+      <br /><br /><br /><br />
     </r-cell>
   </r-grid>
 </section>
 <style>
-  .bubble-left {
+  .bubble {
     text-align: center;
-
-    line-height: 130px;
-
+    line-height: 120px;
     position: absolute;
-
-    margin-top: 50px;
     color: var(--brand-50);
-
     opacity: 0;
   }
-  .bubble-left::after {
+  .bubble.left {
+    margin-top: 50px;
+  }
+  .bubble.right {
+    margin-left: 120px;
+    margin-top: 20px;
+  }
+  .bubble.left::after {
     content: "Hello.";
     font-family: "CorporativeSlabBlack";
     color: var(--brand);
@@ -109,12 +112,11 @@
     left: 25%;
   }
 
-  .bubble-left svg,
-  .bubble-right svg {
+  .bubble svg {
     width: 150px;
     height: 150px;
   }
-  .bubble-right::after {
+  .bubble.right::after {
     content: "Hi!";
     font-family: "CorporativeSlabBlack";
     color: var(--brand);
@@ -122,31 +124,18 @@
     left: 35%;
   }
 
-  .bubble-right {
-    text-align: center;
-
-    line-height: 130px;
-
-    position: absolute;
-
-    margin-left: 120px;
-    margin-top: 20px;
-    color: var(--brand-50);
-
-    opacity: 0;
-  }
   @media screen and (min-width: 769px) {
-    .bubble-left svg,
-    .bubble-right svg {
+    .bubble {
+      line-height: 230px;
+    }
+    .bubble svg {
       width: 300px;
       height: 300px;
     }
-    .bubble-left {
-      line-height: 230px;
+    .bubble.left {
       margin-top: -100px;
     }
-    .bubble-right {
-      line-height: 230px;
+    .bubble.right {
       margin-left: 200px;
       margin-top: -250px;
     }

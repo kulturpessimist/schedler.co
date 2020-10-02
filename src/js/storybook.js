@@ -37,18 +37,18 @@ export default {
     init() {
       console.log("Welcome!")
       document
-        .querySelector(".bubble-left")
+        .querySelector(".bubble.left")
         .classList.add("animate__fadeInLeft")
       document
-        .querySelector(".bubble-right")
+        .querySelector(".bubble.right")
         .classList.add("animate__fadeInRight")
     },
     destroy() {
       document
-        .querySelector(".bubble-left")
+        .querySelector(".bubble.left")
         .classList.remove("animate__fadeInLeft")
       document
-        .querySelector(".bubble-right")
+        .querySelector(".bubble.right")
         .classList.remove("animate__fadeInRight")
     },
   },
