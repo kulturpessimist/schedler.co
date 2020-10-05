@@ -1,22 +1,33 @@
 {
   "name": "website-schedler-co",
-  "description": "Personal website",
-  "version": "2.1.0",
+  "description": "Curriculum vitae (CV) | Alexander Schedler: Internet application engineering, development and management. Javascript (Frontend and Backend), HTML, CSS, Node, CouchDB",
+  "version": "5.0.0",
+  "license": "CC-BY-NC-ND",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kulturpessimist/schedler.co.git"
+  },
+  "browserslist": "> 0.2%",
+  "scripts": {
+    "dev": "npm run start",
+    "start": "parcel serve ./src/index.html --open --no-cache",
+    "clean:build": "rm -rf dist/",
+    "build": "parcel build ./src/index.html"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.0",
+    "alpinejs": "2.7.0",
+    "animate.css": "^4.1.1",
+    "bulma": "^0.9.1",
+    "bulma-ribbon": "github:Wikiki/bulma-ribbon",
+    "impress.js": "1.1.0",
+    "raster-sass": "20.2.0",
+    "rough-notation": "0.4.0"
+  },
   "devDependencies": {
-    "grunt": "^1.1.0",
-    "grunt-contrib-clean": "^2.0.0",
-    "grunt-contrib-concat": "^1.0.1",
-    "grunt-contrib-connect": "^2.1.0",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-cssmin": "^3.0.0",
-    "grunt-contrib-imagemin": "^4.0.0",
-    "grunt-contrib-jshint": "~2.1.0",
-    "grunt-contrib-uglify": "~4.0.1",
-    "grunt-contrib-watch": "^1.1.0",
-    "grunt-surge": "^0.7.0",
-    "grunt-unused": "^0.2.3",
-    "jit-grunt": "^0.10.0",
-    "load-grunt-config": "^3.0.1",
-    "time-grunt": "^2.0.0"
+    "parcel": "^2.0.0-beta.1",
+    "posthtml-include": "^1.4.3",
+    "prettier": "2.1.2",
+    "sass": "1.26.11"
   }
 }

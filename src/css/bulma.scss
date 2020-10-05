@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+// Set your brand colors
+$--brand: #0000ff;
+$--brand-50: #f3f7f9;
+$--brand-100: #e8f6fa;
+$--brand-200: #b9e1fa;
+$--brand-300: #90cafa;
+$--brand-400: #56a3f8;
+$--brand-500: #3076f6;
+$--brand-600: #2a54f3;
+$--brand-700: #2845e9;
+$--brand-800: #2736c2;
+$--brand-900: #202f99;
+
+// Update Bulma's global variables
+// Colors
+
+// $orange: $--man-secondary-orange !default;
+// $yellow: $--man-secondary-yellow !default;
+// $green: $--man-secondary-green !default;
+// $turquoise: $--man-cyan !default;
+$cyan: $--brand !default;
+$blue: $--brand-800 !default;
+// $purple: $--man-red !default;
+// $red: $--man-red !default;
+
+$primary: $--brand !default;
+$info: $--brand-500 !default;
+// $success: $green !default;
+// $warning: $yellow !default;
+// $danger: $red !default;
+
+$background: $--brand-50 !default;
+
+// Typography
+
+$family-sans-serif: "CorporativeMedium", sans-serif;
+$family-monospace: monospace !default;
+$render-mode: optimizeLegibility !default;
+
+// Import Bulma's core
+@import "../../node_modules/bulma/sass/utilities/_all";
+
+// Set your colors
+$primary-invert: findColorInvert($primary);
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: (
+  "white": (
+    $white,
+    $black,
+  ),
+  "black": (
+    $black,
+    $white,
+  ),
+  "light": (
+    $light,
+    $light-invert,
+  ),
+  "dark": (
+    $dark,
+    $dark-invert,
+  ),
+  "primary": (
+    $primary,
+    $primary-invert,
+  ),
+  "info": (
+    $info,
+    $info-invert,
+  ),
+  "success": (
+    $success,
+    $success-invert,
+  ),
+  "warning": (
+    $warning,
+    $warning-invert,
+  ),
+  "danger": (
+    $danger,
+    $danger-invert,
+  ),
+);
+
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+// Import only what you need from Bulma
+// @import "../../node_modules/bulma/sass/utilities/_all";
+@import "../../node_modules/bulma/sass/base/_all";
+@import "../../node_modules/bulma/sass/elements/box";
+@import "../../node_modules/bulma/sass/elements/button";
+@import "../../node_modules/bulma/sass/elements/icon";
+@import "../../node_modules/bulma/sass/elements/image";
+@import "../../node_modules/bulma/sass/elements/tag";
+@import "../../node_modules/bulma/sass/components/card";
+@import "../../node_modules/bulma/sass/components/modal";
+// @import "../../node_modules/bulma/sass/components/media";
+@import "../../node_modules/bulma/sass/helpers/_all";
+// @import "../../node_modules/bulma/sass/form/_all";
+// @import "../../node_modules/bulma/sass/grid/_all";
+// @import "../../node_modules/bulma/sass/layout/section";
+// extension...
+@import "../../node_modules/bulma-ribbon/dist/css/bulma-ribbon.sass";
+// grid
+@import "../../node_modules/raster-sass/raster-grid";

@@ -4,6 +4,7 @@ build
 _Material
 _mat
 .DS_Store
-src/_attachments/dist/**/*
-src/_attachments/dist/*
+/.parcel-cache
 /surge
+/dist
+/AdditionalPixelArts.sketch

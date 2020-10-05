@@ -1,16 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 250 250" style="enable-background:new 0 0 250 250;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#DD0031;}
-	.st1{fill:#C3002F;}
-	.st2{fill:#FFFFFF;}
-</style>
-<g>
-	<polygon class="st0" points="125,30 125,30 125,30 31.9,63.2 46.1,186.3 125,230 125,230 125,230 203.9,186.3 218.1,63.2 	"/>
-	<polygon class="st1" points="125,30 125,52.2 125,52.1 125,153.4 125,153.4 125,230 125,230 203.9,186.3 218.1,63.2 125,30 	"/>
-	<path class="st2" d="M125,52.1L66.8,182.6h0h21.7h0l11.7-29.2h49.4l11.7,29.2h0h21.7h0L125,52.1L125,52.1L125,52.1L125,52.1
-		L125,52.1z M142,135.4H108l17-40.9L142,135.4z"/>
-</g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="940px" height="1000px" viewBox="0 0 940 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>angular</title>
+    <g id="V4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Square" transform="translate(-30.000000, 0.000000)" fill-rule="nonzero">
+            <g id="angular" transform="translate(30.000000, 0.000000)">
+                <polygon id="Path" fill="#DD0031" points="470 0 470 0 470 0 4.5 166 75.5 781.5 470 1000 470 1000 470 1000 864.5 781.5 935.5 166"></polygon>
+                <polygon id="Path" fill="#C3002F" points="470 0 470 111 470 110.5 470 617 470 617 470 1000 470 1000 864.5 781.5 935.5 166"></polygon>
+                <path d="M470,110.5 L179,763 L179,763 L287.5,763 L287.5,763 L346,617 L593,617 L651.5,763 L651.5,763 L760,763 L760,763 L470,110.5 L470,110.5 L470,110.5 L470,110.5 L470,110.5 Z M555,527 L385,527 L470,322.5 L555,527 Z" id="Shape" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
 </svg>

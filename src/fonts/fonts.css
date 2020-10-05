@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "CorporativeMedium";
+  src: url("./Corporative/Corporative-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CorporativeSlabBlack";
+  src: url("./Corporative/CorporativeSlab-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CorporativeSlabBold";
+  src: url("./Corporative/CorporativeSlab-Bold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CorporativeSlabMedium";
+  src: url("./Corporative/CorporativeSlab-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+html,
+body {
+  font-size: 16px;
+}
+@media screen and (min-width: 769px) {
+  html,
+  body {
+    font-size: 28px;
+  }
+}
+
+body,
+p,
+td,
+div {
+  font-family: "CorporativeMedium";
+  font-weight: 500;
+}
+
+.is-slab-black {
+  font-family: "CorporativeSlabBlack";
+  font-weight: 900;
+}
+.is-slab-bold {
+  font-family: "CorporativeSlabBold";
+  font-weight: 600;
+}
+.is-slab-medium {
+  font-family: "CorporativeSlabMedium";
+  font-weight: 500;
+}
