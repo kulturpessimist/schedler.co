@@ -2,12 +2,17 @@
   "name": "website-schedler-co",
   "description": "Curriculum vitae (CV) | Alexander Schedler: Internet application engineering, development and management. Javascript (Frontend and Backend), HTML, CSS, Node, CouchDB",
   "version": "5.0.0",
+  "license": "CC-BY-NC-ND",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kulturpessimist/schedler.co.git"
+  },
   "browserslist": "> 0.2%",
   "scripts": {
     "dev": "npm run start",
     "start": "parcel serve ./src/index.html --open --no-cache",
-    "build": "rm -rf dist/; parcel build ./src/index.html",
-    "serve": "serve dist/"
+    "clean:build": "rm -rf dist/",
+    "build": "parcel build ./src/index.html"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.0",
@@ -20,10 +25,9 @@
     "rough-notation": "0.4.0"
   },
   "devDependencies": {
-    "parcel": "next",
-    "sass": "1.26.11",
+    "parcel": "^2.0.0-beta.1",
     "posthtml-include": "^1.4.3",
     "prettier": "2.1.2",
-    "serve": "11.3.2"
+    "sass": "1.26.11"
   }
 }
