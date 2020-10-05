@@ -12,7 +12,8 @@
   publish = "dist/"
 
   # Default build command.
-  command = "npm run build"
+  #command = "npm run build"
+  command = "echo 'Using static artifacts for now...'"
 
   # Directory with the serverless Lambda functions to deploy to AWS.
   # functions = "functions/"
