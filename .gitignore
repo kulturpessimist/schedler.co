@@ -6,5 +6,5 @@ _mat
 .DS_Store
 /.parcel-cache
 /surge
-#/dist
+/dist
 /AdditionalPixelArts.sketch
