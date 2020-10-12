@@ -10,8 +10,8 @@
   :data-scale="storybook.education.scale"
 >
   <r-grid columns="10" vcenter>
-    <r-cell span="4" span-s="row" class="is-hidden-mobile">
-      <include src="./src/images/education.svg"></include>
+    <r-cell span="4" span-s="row" class="is-hidden-mobile has-text-centered">
+      &nbsp;
     </r-cell>
     <r-cell span="6" class="ml-5" span-s="row">
       <p class="is-size-7 is-size-6-mobile">
@@ -33,22 +33,31 @@
         Graphic design
       </p>
     </r-cell>
-    <r-cell span="4" span-s="row" class="is-hidden-tablet">
-      <include src="./src/images/education.svg"></include>
-    </r-cell>
+    <r-cell span="4" span-s="row" class="is-hidden-tablet"> &nbsp; </r-cell>
   </r-grid>
 </section>
 <style>
-  #education svg {
+  #education .is-hidden-tablet {
+    background-image: url(images/education.svg);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    margin-top: 40px;
     width: 100%;
-    height: 100%;
+    height: 150px;
     max-width: 350px;
     max-height: 350px;
   }
-  #education .is-hidden-tablet svg {
-    margin-left: 17%;
-    margin-top: 40px;
-    width: 66%;
-    height: 66%;
+  #education .is-hidden-mobile {
+    background-image: url(images/education.svg);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 350px;
+    margin: auto;
+    max-width: 350px;
+    max-height: 350px;
   }
 </style>

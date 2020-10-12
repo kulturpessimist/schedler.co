@@ -111,32 +111,64 @@ body.impress-on-kigg {
   border: 0px solid var(--background-light);
 }
 
-/* body.impress-on-man .interaction,
-body.impress-on-internet-of-blah .interaction,
-body.impress-on-thinxnet .interaction,
-body.impress-on-natureoffice .interaction,
-body.impress-on-dynomedia .interaction,
-body.impress-on-kigg .interaction {
-  left: calc(75% - 100px);
-} */
-
-body.impress-on-man h3 {
+body.impress-on-man h3,
+body.impress-on-man a,
+body.impress-on-man a:visited {
   color: var(--man);
 }
-body.impress-on-internet-of-blah h3 {
+body.impress-on-man a:hover,
+body.impress-on-man a:active {
+  color: var(--man-text);
+}
+
+body.impress-on-internet-of-blah h3,
+body.impress-on-internet-of-blah a,
+body.impress-on-internet-of-blah a:visited {
   color: var(--internet-of-blah);
 }
-body.impress-on-thinxnet h3 {
+body.impress-on-internet-of-blah a:hover,
+body.impress-on-internet-of-blah a:active {
+  color: var(--internet-of-blah-text);
+}
+
+body.impress-on-thinxnet h3,
+body.impress-on-thinxnet a,
+body.impress-on-thinxnet a:visited {
   color: var(--thinxnet);
 }
-body.impress-on-natureoffice h3 {
+body.impress-on-thinxnet a:hover,
+body.impress-on-thinxnet a:active {
+  color: var(--thinxnet-text);
+}
+
+body.impress-on-natureoffice h3,
+body.impress-on-natureoffice a,
+body.impress-on-natureoffice a:visited {
   color: var(--natureoffice);
 }
-body.impress-on-dynomedia h3 {
+body.impress-on-natureoffice a:hover,
+body.impress-on-natureoffice a:active {
+  color: var(--natureoffice-text);
+}
+
+body.impress-on-dynomedia h3,
+body.impress-on-dynomedia a,
+body.impress-on-dynomedia a:visited {
   color: var(--dynomedia);
 }
-body.impress-on-kigg h3 {
+body.impress-on-dynomedia a:hover,
+body.impress-on-dynomedia a:active {
+  color: var(--dynomedia-text);
+}
+
+body.impress-on-kigg h3,
+body.impress-on-kigg a,
+body.impress-on-kigg a:visited {
   color: var(--kigg);
+}
+body.impress-on-kigg a:hover,
+body.impress-on-kigg a:active {
+  color: var(--kigg-text);
 }
 
 body.impress-on-man h5,

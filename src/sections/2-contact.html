@@ -78,12 +78,12 @@
       <div
         class="bubble left is-size-3 has-text-centered is-slab-black animate__animated"
       >
-        <include src="./src/images/contact-bubble.svg"></include>
+        <!-- <include src="./src/images/contact-bubble.svg"></include> -->
       </div>
       <div
         class="bubble right is-size-3 has-text-centered is-slab-black animate__animated animate__delay-1s"
       >
-        <include src="./src/images/contact-bubble2.svg"></include>
+        <!-- <include src="./src/images/contact-bubble2.svg"></include> -->
       </div>
       <br /><br /><br /><br />
     </r-cell>
@@ -96,11 +96,19 @@
     position: absolute;
     color: var(--brand-50);
     opacity: 0;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
   }
   .bubble.left {
+    background-image: url(images/contact-bubble.svg);
     margin-top: 50px;
   }
   .bubble.right {
+    background-image: url(images/contact-bubble2.svg);
+
     margin-left: 120px;
     margin-top: 20px;
   }
@@ -127,6 +135,8 @@
   @media screen and (min-width: 769px) {
     .bubble {
       line-height: 230px;
+      width: 300px;
+      height: 300px;
     }
     .bubble svg {
       width: 300px;
