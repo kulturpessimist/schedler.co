@@ -2,11 +2,16 @@
 
 website and contents of schedler.co / schedler.pro
 
-Last update 03.09.2020
+Last update 10.06.2021
 
 # Changelog
 
-03.09.2020
+10.06.2021
+
+- parcel update to beta 3
+- added srcum mastery
+
+  03.09.2020
 
 - preperation for v5
 - v3 was release after 2.1 and work on v4 began but was canceled after the concept for v5 was born

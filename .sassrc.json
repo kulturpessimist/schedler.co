@@ -2,5 +2,5 @@
   "includePaths": [
     "node_modules"
   ],
-  "outputStyle": "compact"
+  "outputStyle": "compressed"
 }
