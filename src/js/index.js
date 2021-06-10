@@ -3,6 +3,7 @@ import storybook from "./storybook"
 import { annotate, annotationGroup } from "rough-notation"
 import "alpinejs"
 import "impress.js"
+import version from "../version.json"
 // styles...
 // ...sass
 import "../css/bulma.scss"
@@ -28,6 +29,7 @@ const app = {
         width: 0,
         height: 0,
       },
+      version,
       //
       init() {
         console.log("mounted")

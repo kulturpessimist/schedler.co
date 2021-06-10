@@ -1,7 +1,7 @@
 {
   "name": "website-schedler-co",
   "description": "Curriculum vitae (CV) | Alexander Schedler: Internet application engineering, development and management. Javascript (Frontend and Backend), HTML, CSS, Node, CouchDB",
-  "version": "5.0.0",
+  "version": "5.0.3",
   "license": "CC-BY-NC-ND",
   "repository": {
     "type": "git",
@@ -9,28 +9,30 @@
   },
   "browserslist": "> 0.2%",
   "scripts": {
+    "rev": "node rev.js",
     "dev": "npm run start",
-    "start": "parcel serve src/index.html --open --no-cache",
+    "start": "npm run rev -- ./src/version.json; parcel serve src/index.html --open --no-cache",
     "clean:build": "rm -rf dist/",
-    "build": "parcel build src/index.html --no-scope-hoist",
+    "build": "npm run rev -- ./src/version.json; parcel build src/index.html --no-scope-hoist",
     "build:detailed": "npm run build -- --public-url ./ --no-cache --log-level 4 --detailed-report 10",
     "serve": "serve dist/"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
-    "alpinejs": "2.7.0",
+    "alpinejs": "2.7.3",
     "animate.css": "^4.1.1",
     "bulma": "^0.9.1",
     "bulma-ribbon": "github:Wikiki/bulma-ribbon",
     "impress.js": "1.1.0",
     "raster-sass": "20.2.0",
-    "rough-notation": "0.4.0"
+    "rough-notation": "0.5.1"
   },
   "devDependencies": {
+    "isomorphic-git": "^1.8.0",
     "parcel": "^2.0.0-beta.1",
-    "posthtml-include": "^1.4.3",
+    "posthtml-include": "^1.6.0",
     "prettier": "2.1.2",
-    "sass": "1.26.11",
+    "sass": "1.29.0",
     "serve": "^11.3.2"
   }
 }

@@ -35,10 +35,31 @@
             Umsatzsteuer-ID gemäß §27 a Umsatzsteuergesetz: <br />
             DE 305 762 296
             <br /><br />
-            <!-- 
+          </p>
+
+          <r-grid columns="3">
+            <r-cell>
+              <div class="tags is-small has-addons">
+                <span class="tag is-info">Version</span>
+                <span class="tag" x-html="version.semver"></span>
+              </div>
+            </r-cell>
+            <r-cell>
+              <div class="tags is-small has-addons">
+                <span class="tag is-info">Update</span>
+                <span class="tag" x-html="version.update.split('T')[0]"></span>
+              </div>
+            </r-cell>
+            <r-cell>
+              <div class="tags is-small has-addons">
+                <span class="tag is-info">Commit</span>
+                <span class="tag" x-html="version.count"></span>
+              </div>
+            </r-cell>
+          </r-grid>
+          <!-- 
             https://github.com/kulturpessimist/schedler.co
             -->
-          </p>
         </r-cell>
       </r-grid>
 
@@ -188,5 +209,9 @@
     font-size: 18px;
     margin-top: 6px;
     margin-bottom: 6px;
+  }
+
+  .imprint .tags.is-small .tag {
+    font-size: 0.5rem;
   }
 </style>
