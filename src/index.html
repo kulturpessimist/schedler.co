@@ -49,7 +49,11 @@
 
     <div class="left-overlay"></div>
     <!-- control -->
-    <button class="control imprint button is-text" @click="showImprint=true">
+    <button
+      class="control imprint button is-text"
+      @click="showImprint=true"
+      type="button"
+    >
       <template x-if="!showImprint">
         <i class="fas fa-ellipsis-h"></i>
       </template>
@@ -60,9 +64,15 @@
         title="Previous"
         class="control button is-text"
         @click="previous()"
+        type="button"
       >
         <i class="fas fa-chevron-circle-left"></i></button
-      ><button title="Next" class="control button is-text" @click="next()">
+      ><button
+        title="Next"
+        class="control button is-text"
+        @click="next()"
+        type="button"
+      >
         <i class="fas fa-chevron-circle-right"></i>
       </button>
     </div>
