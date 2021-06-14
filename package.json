@@ -1,7 +1,7 @@
 {
   "name": "website-schedler-co",
   "description": "Curriculum vitae (CV) | Alexander Schedler: Internet application engineering, development and management. Javascript (Frontend and Backend), HTML, CSS, Node, CouchDB",
-  "version": "5.0.4",
+  "version": "5.0.5",
   "license": "CC-BY-NC-ND",
   "repository": {
     "type": "git",
@@ -13,7 +13,8 @@
     "dev": "npm run start",
     "start": "npm run rev -- ./src/version.json; parcel serve src/index.html --open --no-cache",
     "clean:build": "rm -rf dist/",
-    "build": "npm run rev -- ./src/version.json; parcel build src/index.html ",
+    "optimize:images": "imagemin dist/*.jpg --out-dir ./dist; imagemin dist/*.png --out-dir ./dist; imagemin dist/*.svg --out-dir ./dist",
+    "build": "npm run rev -- ./src/version.json; parcel build src/index.html; npm run optimize:images",
     "build:detailed": "npm run build -- --public-url ./ --no-cache --log-level 4 --detailed-report 10",
     "serve": "serve dist/"
   },
@@ -29,6 +30,7 @@
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.0-nightly.716",
+    "imagemin-cli": "^6.0.0",
     "isomorphic-git": "^1.8.2",
     "parcel": "^2.0.0-beta.3.1",
     "posthtml-include": "^1.7.1",
