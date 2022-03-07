@@ -7,79 +7,91 @@
       Schedler.pro | Alexander Schedler: Internet application engineering,
       development and management.
     </title>
-    <include src="sections/0-meta.html"></include>
+    <!--  <include src="sections/0-meta.html"></include> -->
+    <link rel="stylesheet"
+ href="fonts/VictorMono/fonts.css" ></link>
+
+  
   </head>
 
-  <body x-data="app.data()" x-init="init()">
-    <div
-      id="impress"
-      data-transition-duration="1000"
-      :data-width="window.width"
-      :data-height="window.height"
-      data-perspective="0"
+  <body>
+    <main>
+
+      <pre>╔══════════════════════════════════════════════════════════════╗  
+║                                                              ║░░
+║                                                              ║░░
+║                                                              ║░░
+║                                                              ║░░
+║                                                              ║░░
+║    <strong style="">Alexander Schedler</strong>                                        ║░░
+║    District of Augsburg, Germany                             ║░░
+║                                                              ║░░
+║        Internet application <i>engineering</i>,                     ║░░
+║        <i>development</i> and <i>management</i>.                           ║░░
+║                                                              ║░░
+║        Javascript (Frontend and Backend),                    ║░░
+║        HTML, CSS, Node, GraphQL, CouchDB                     ║░░
+║                                                              ║░░
+║                                                              ║░░
+║                                                              ║░░
+║                                                              ║░░
+║                                                              ║░░
+╚══════════════════════════════════════════════════════════════╝░░
+  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░</pre>
+
+    <pre style="display: none;">
+╔═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                                                                                   ║
+║                                                                                                                                                   ║
+║                                                                                                                                                   ║
+║                                                                                                                                                   ║
+║        <strong style="">Alexander Schedler</strong>                                                                                                                         ║
+║        <i>Curriculum Vitae</i>                                                                                                                           ║
+║                                                                                                                                                   ║
+║                                                                                                                                                   ║
+║                                                                                                                                                   ║
+║        ┌─────────────────────────┐    ┌─────────────────────────┐    ┌─────────────────────────┐                                                  ║
+║        │                         │░░  │                         │░░  │                         │░░                                                ║
+║        │                         │░░  │                         │░░  │                         │░░                                                ║
+║        │                         │░░  │                         │░░  │                         │░░                                                ║
+║        │                         │░░  │                         │░░  │                         │░░                                                ║
+║        │    MAN                  │░░  │    Internet of          │░░  │    ThinxNet             │░░                                                ║
+║        │    Energy Solutions     │░░  │    Blah                 │░░  │                         │░░                                                ║
+║        │                         │░░  │                         │░░  │                         │░░                                                ║
+║        │                         │░░  │                         │░░  │                         │░░                                                ║
+║        │                         │░░  │                         │░░  │                         │░░                                                ║
+║        │                         │░░  │                         │░░  │                         │░░                                                ║
+║        └─────────────────────────┘░░  └─────────────────────────┘░░  └─────────────────────────┘░░                                                ║
+║          ░░░░░░░░░░░░░░░░░░░░░░░░░░░    ░░░░░░░░░░░░░░░░░░░░░░░░░░░    ░░░░░░░░░░░░░░░░░░░░░░░░░░░                                                ║
+║                                                                                                                                                   ║
+║                                                                                                                                                   ║
+║                                                                                                                                                   ║
+║                 ┌─────────────────────────┐    ┌─────────────────────────┐    ┌─────────────────────────┐                                         ║
+║                 │                         │░░  │                         │░░  │                         │░░                                       ║
+║                 │                         │░░  │                         │░░  │                         │░░                                       ║
+║                 │                         │░░  │                         │░░  │                         │░░                                       ║
+║                 │                         │░░  │                         │░░  │                         │░░                                       ║
+║                 │    natureOffice         │░░  │    Dynomedia            │░░  │    KIGG                 │░░                                       ║
+║                 │                         │░░  │                         │░░  │                         │░░                                       ║
+║                 │                         │░░  │                         │░░  │                         │░░                                       ║
+║                 │                         │░░  │                         │░░  │                         │░░                                       ║
+║                 │                         │░░  │                         │░░  │                         │░░                                       ║
+║                 │                         │░░  │                         │░░  │                         │░░                                       ║
+║                 └─────────────────────────┘░░  └─────────────────────────┘░░  └─────────────────────────┘░░                                       ║
+║                   ░░░░░░░░░░░░░░░░░░░░░░░░░░░    ░░░░░░░░░░░░░░░░░░░░░░░░░░░    ░░░░░░░░░░░░░░░░░░░░░░░░░░░                                       ║
+║                                                                                                                                                   ║
+╚═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
+
+</pre
     >
-      <include src="sections/1-home.html"></include>
-      <include src="sections/2-contact.html"></include>
-      <include src="sections/2a-freelance.html"></include>
-      <!-- <Jobs> -->
-      <include src="sections/3-overview.html"></include>
-      <include src="sections/3.6-MAN.html"></include>
-      <include src="sections/3.5-IOB.html"></include>
-      <include src="sections/3.4-ThinxNet.html"></include>
-      <include src="sections/3.3-natureOffice.html"></include>
-      <include src="sections/3.2-Dynomedia.html"></include>
-      <include src="sections/3.1-KIGG.html"></include>
-      <!-- </Jobs> -->
-      <include src="sections/4-Education.html"></include>
-      <include src="sections/5-Personal.html"></include>
-      <include src="sections/6-Technology.html"></include>
-      <!-- debug? -->
-      <!-- <section
-        class="step"
-        id="fin"
-        :data-x="storybook.fin.position.x"
-        :data-y="storybook.fin.position.y"
-        :data-z="storybook.fin.position.z"
-        :data-rotate-x="storybook.fin.rotation.x"
-        :data-rotate-y="storybook.fin.rotation.y"
-        :data-rotate-z="storybook.fin.rotation.z"
-        :data-scale="storybook.fin.scale"
-      ></section> -->
-    </div>
+</main>
 
-    <div class="left-overlay"></div>
-    <!-- control -->
-    <button
-      class="control imprint button is-text"
-      @click="showImprint=true"
-      type="button"
-    >
-      <template x-if="!showImprint">
-        <i class="fas fa-ellipsis-h"></i>
-      </template>
-    </button>
+    <pre id="options" style="font-size:12px;font-weight: 600; line-height:8px; position:absolute; top: 20px; left: 0px; cursor:pointer; margin: 0">
+      ___
+      ___
+      ___
+    </pre>
 
-    <div class="interaction has-text-centered">
-      <button
-        title="Previous"
-        class="control button is-text"
-        @click="previous()"
-        type="button"
-      >
-        <i class="fas fa-chevron-circle-left"></i></button
-      ><button
-        title="Next"
-        class="control button is-text"
-        @click="next()"
-        type="button"
-      >
-        <i class="fas fa-chevron-circle-right"></i>
-      </button>
-    </div>
-
-    <include src="sections/0-imprint.html"></include>
-    <!-- js -->
-    <script nomodule src="./js/index.js"></script>
-    <script type="module" src="./js/index.js"></script>
+    <script src="index.js" type="module"></script>
   </body>
 </html>

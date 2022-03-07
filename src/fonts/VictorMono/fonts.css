@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Victor Mono";
+  src: url("woff2/VictorMono-Regular.woff2") format("woff2"),
+    url("woff/VictorMono-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Victor Mono";
+  src: url("woff2/VictorMono-Italic.woff2") format("woff2"),
+    url("woff/VictorMono-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Victor Mono";
+  src: url("woff2/VictorMono-Bold.woff2") format("woff2"),
+    url("woff/VictorMono-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Victor Mono";
+  src: url("woff2/VictorMono-BoldItalic.woff2") format("woff2"),
+    url("woff/VictorMono-BoldItalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --size: calc(4px + 1vh);
+}
+
+html,
+body {
+  background-color: #0000ff;
+  color: #eee;
+  font-size: var(--size);
+  font-family: "Victor Mono";
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+pre {
+  margin: auto;
+  font-family: "Victor Mono";
+  display: inline-block;
+}
