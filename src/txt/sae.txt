@@ -1,25 +1,3 @@
-<!DOCTYPE html>
-<html lang="en" prefix="og: http://ogp.me/ns#">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>
-      Schedler.pro | Alexander Schedler: Internet application engineering,
-      development and management.
-    </title>
-    <!--  <include src="sections/0-meta.html"></include> -->
-    <link rel="stylesheet" href="fonts/VictorMono/fonts.css" />
-  </head>
-
-  <body>
-    <main>
-      <!--
-        <em> = deemphasized
-        <i> = emphasized
-        <strong> = strong
-        <mark> = highlight with rough notation maybe
-      -->
-      <pre>
 ╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
 ║                                                                                                                                          ║
 ║                                                                                                                                          ║
@@ -32,11 +10,11 @@
 ║                                                                                                                                          ║
 ║                                                                                                                                          ║
 ║                                                                                                                                          ║
-║                                                                          <em>SAE Institute Munich, Germany and</em>                               ║
+║                                                                          SAE Institute Munich, Germany and                               ║
 ║                                                                          Middlesex University London, UK                                 ║
 ║                                                                                                                                          ║
 ║                                                                                                                                          ║
-║                                                                           <strong>Bachelor of Arts Multimedia</strong>                                    ║
+║                                                                           Bachelor of Arts Multimedia                                    ║
 ║                                                                          -----------------------------                                   ║
 ║                                                                             August 2001 - May 2004                                       ║
 ║                                                                                                                                          ║
@@ -60,42 +38,3 @@
 ║                                                                                                                                          ║
 ║                                                                                                                                          ║
 ╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
-</pre>
-    </main>
-
-    <pre
-      id="options"
-      style="
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 8px;
-        position: absolute;
-        top: 20px;
-        left: 0px;
-        cursor: pointer;
-        margin: 0;
-      "
-    >
-      ___
-      ___
-      ___
-    </pre>
-
-    <pre
-      id="options"
-      style="
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 8px;
-        position: absolute;
-        bottom: 20px;
-        left: 0px;
-        margin: 0;
-      "
-    >
-      <a id="back" href="">&lt;--</a>  <a id="forward" href="">--&gt;</a>
-    </pre>
-
-    <script src="index.js" type="module"></script>
-  </body>
-</html>

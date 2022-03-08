@@ -21,6 +21,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "animate.css": "^4.1.1",
+    "animejs": "^3.2.1",
     "petite-vue": "^0.4.1",
     "rough-notation": "0.5.1"
   },
