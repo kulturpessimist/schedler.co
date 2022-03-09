@@ -18,7 +18,7 @@ async function main() {
   // bring all together...
   const version = {
     version: `${process.env.npm_package_version}-${commits.length}`,
-    drone: `${process.env.DRONE_BUILD_NUMBER || "local"}`,
+    ci: `${process.env.DRONE_BUILD_NUMBER || "local"}`,
     name: `${
       process.env.npm_package_config_sprintname || process.env.npm_package_name
     }`,

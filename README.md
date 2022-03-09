@@ -2,11 +2,18 @@
 
 website and contents of schedler.co / schedler.pro
 
-Last update 10.06.2021
+Last update 09.03.2022
 
 # Changelog
 
-10.06.2021
+09.03.2022
+
+After impress.js was somewhat broken, it was time for a rewrite, or at least a rework.
+
+- complete new ascii art style
+- parcel update to 2
+
+  10.06.2021
 
 - parcel update to beta 3
 - added srcum mastery

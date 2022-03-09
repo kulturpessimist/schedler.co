@@ -27,8 +27,17 @@ a:hover,
 a:any-link {
   font-size: 1rem;
   color: #eee;
+  text-decoration: underline;
+}
+
+#back,
+#forward {
   text-decoration: none;
 }
+#iLoader {
+  /* display: none; */
+}
+
 mark {
   background-color: transparent;
   color: inherit;
