@@ -9,7 +9,7 @@ var options = {
 }
 
 asciify(
-  "../images/Icon.png", // Middlesex_University_Logo
+  "../images/Icon Copy 8.png", // Middlesex_University_Logo
   options
 )
   .then(function (asciified) {

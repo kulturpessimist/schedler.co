@@ -19,11 +19,13 @@
     "serve": "serve dist/"
   },
   "dependencies": {
+    "navigo": "^8.11.1",
     "petite-vue": "^0.4.1",
     "rlite-router": "^2.0.3",
     "rough-notation": "0.5.1"
   },
   "devDependencies": {
+    "asciify-image": "^0.1.8",
     "isomorphic-git": "^1.13.1",
     "parcel": "^2.3.2",
     "prettier": "2.5.1",

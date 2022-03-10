@@ -1,13 +1,23 @@
+import { createApp } from "petite-vue"
+// import { annotate, annotationGroup } from "rough-notation"
 import version from "../version.json"
 window.__version = version
 // styles...
 import "../fonts/VictorMono/fonts.css"
 import "../css/style.css"
-import "../fonts/VictorMono/fonts.css"
 // contents
 import pages from "./pages"
+import Navigo from "navigo"
+
+/*
+  <em> = deemphasized
+  <i> = emphasized
+  <strong> = strong
+  <mark> = highlight with rough notation maybe
+*/
+
 //
-import rlite from "rlite-router"
+/* import rlite from "rlite-router"
 
 const route = rlite(notFound, {
   // #users/chris -> r.params.name will equal 'chris'
@@ -27,164 +37,175 @@ function processHash() {
 }
 
 window.addEventListener("hashchange", processHash)
-processHash()
+processHash() */
 
-// import { createApp } from "petite-vue"
-// createApp({}).mount("body")
+const app = {
+  _router: null,
+  // data
+  _glitchMemoize: "",
+  currentPage: 0,
+  current: "",
+  loader: " ",
+  // getters
+  get prevPage() {
+    return this.currentPage > 0 ? this.currentPage - 1 : pages.length - 1
+  },
+  get nextPage() {
+    return this.currentPage < pages.length - 1 ? this.currentPage + 1 : 0
+  },
 
-// import { annotate, annotationGroup } from "rough-notation"
-const annotateAllTheThings = () => {
-  const e = document.querySelectorAll("mark")
-  const annotations = []
-  for (let m of e) {
-    console.log(m)
-    annotations.push(annotate(m, { type: "highlight", color: "#000066" }))
-  }
-  const ag = annotationGroup(annotations)
-  ag.show()
-}
-
-//
-let currentPage = 0
-document.querySelector("pre").innerHTML = pages[currentPage]
-// setTimeout(annotateAllTheThings, 500)
-
-const combine = (from, to, take) => {
-  from = from.split("\n").slice(take)
-  to = to.split("\n").slice(0, take)
-
-  return [...to, ...from].join("\n")
-}
-
-const glitch = (text, count = 25, memoize = false) => {
-  if (memoize) {
-    if (window.glitchMemo) {
-      return window.glitchMemo
+  get currentGetter() {
+    return pages[this.currentPage]
+  },
+  // methods
+  init() {
+    this.current = pages[this.currentPage]
+    this._router = new Navigo("/")
+    this._router.on("/page/:page", (match) => {
+      this.navigate(Number(match.data.page))
+    })
+    this._router.resolve()
+  },
+  annotateAllTheThings() {
+    const e = document.querySelectorAll("mark")
+    const annotations = []
+    for (let m of e) {
+      console.log(m)
+      annotations.push(annotate(m, { type: "highlight", color: "#000066" }))
     }
-  }
+    const ag = annotationGroup(annotations)
+    ag.show()
+  },
 
-  let possible = [...new Set(text.replace(/\s/g, "").split(""))]
-  possible = "-*+/|}{[]?/.+-_)(*&^%$#@!)}~".split("")
+  combine(from, to, take) {
+    from = from.split("\n").slice(take)
+    to = to.split("\n").slice(0, take)
 
-  // "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789".split("")
-  // "-+*/|}{[]?/.+-_)(*&^%$#@!)}~".split("")
-  // '-+*/|}{[]~\\":;?/.><=+-_)(*&^%$#@!)}'.split("")
-  let p = []
-  let t = text.split("")
-  t.forEach((v, i, a) => {
-    if (v.match(/\S/)) {
-      p.push(i)
+    return [...to, ...from].join("\n")
+  },
+
+  glitch(text, count = 25, memoize = false) {
+    if (memoize) {
+      if (this._glitchMemoize) {
+        return this._glitchMemoize
+      }
     }
-  })
 
-  for (let c = 0; c <= count; c++) {
-    const item = p[Math.floor(Math.random() * p.length)]
-    // const item = Math.floor(Math.random() * t.length)
-    t[item] = possible[Math.floor(Math.random() * possible.length)]
-  }
-  if (memoize) {
-    window.glitchMemo = t.join("")
-  } else {
-    window.glitchMemo = ""
-  }
+    // let possible = [...new Set(text.replace(/\s/g, "").split(""))]
+    // let possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789".split("")
+    // let possible = "-+*/|}{[]?/.+-_)(*&^%$#@!)}~".split("")
+    // let possible = '-+*/|}{[]~\\":;?/.><=+-_)(*&^%$#@!)}'.split("")
+    let possible = "-*+/|}{[]?/.+-_)(*&^%$#@!)}~".split("")
+    let p = []
+    let t = text.split("")
+    t.forEach((v, i, a) => {
+      if (v.match(/\S/)) {
+        p.push(i)
+      }
+    })
 
-  return t.join("")
-}
-
-const navigate = (direction = "next") => {
-  const speed = 20
-  let iv
-  let ivc = 0
-  let ivt = ["▓", "▒", "░"] //"–/|\\".split("")
-
-  let nextPage
-
-  /* document.querySelector("#iLoader").style.display = "inline" */
-  iv = setInterval(() => {
-    document.querySelector("#iLoader").innerText = ivt[ivc++ % ivt.length]
-  }, 100)
-
-  if (direction === "next") {
-    if (currentPage < pages.length - 1) {
-      nextPage = currentPage + 1
+    for (let c = 0; c <= count; c++) {
+      const item = p[Math.floor(Math.random() * p.length)]
+      // const item = Math.floor(Math.random() * t.length)
+      t[item] = possible[Math.floor(Math.random() * possible.length)]
+    }
+    if (memoize) {
+      this._glitchMemoize = t.join("")
     } else {
-      nextPage = 0
+      this._glitchMemoize = ""
     }
-  } else {
-    if (currentPage === 0) {
-      nextPage = pages.length - 1
-    } else {
-      nextPage = currentPage - 1
-    }
-  }
 
-  const lines = pages[currentPage].split("\n").length
-  for (let i = 0; i <= lines; i++) {
-    setTimeout(() => {
-      document.querySelector("pre").innerHTML = combine(
-        glitch(pages[currentPage], 50, Math.random() < 0.9),
-        pages[nextPage],
+    return t.join("")
+  },
+
+  navigate(direction = "next") {
+    const speed = 20
+    let nextPage
+    let iv
+    let ivc = 0
+    let ivt = ["▓", "▒", "░"] //"–/|\\".split("")
+
+    iv = setInterval(() => {
+      this.loader = ivt[ivc++ % ivt.length]
+    }, 100)
+    if (typeof direction === "number") {
+      nextPage = direction
+    } else {
+      nextPage = direction === "next" ? this.nextPage : this.prevPage
+    }
+    const lines = pages[this.currentPage].split("\n").length
+    console.log(this.currentPage, nextPage)
+    for (let i = 0; i <= lines; i++) {
+      setTimeout(
+        (i) => {
+          this.current = this.combine(
+            this.glitch(pages[this.currentPage], 50, Math.random() < 0.9),
+            pages[nextPage],
+            i
+          )
+        },
+        i * speed,
         i
       )
-    }, i * speed)
-    if (i === lines - 1) {
-      window.glitchMemo = ""
-      setTimeout(() => {
-        //if (currentPage < pages.length - 1) {
-        currentPage = nextPage
-        //} else {
-        // currentPage = 0
-        //}
-        // document.querySelector("#iLoader").style.display = "none"
 
-        document.querySelector("#iLoader").innerText = " "
-        clearInterval(iv)
-      }, i * speed)
+      if (i === lines) {
+        this._glitchMemoize = ""
+        setTimeout(() => {
+          this.currentPage = nextPage
+          this.loader = " "
+          clearInterval(iv)
+        }, i * speed)
+      }
     }
-  }
-  //setTimeout
+  },
+  options() {},
 }
 
-document.querySelector("#forward").addEventListener("click", (event) => {
-  /* anime({
+createApp(app).mount("body")
+
+//
+// document.querySelector("pre").innerHTML = pages[currentPage]
+// setTimeout(annotateAllTheThings, 500)
+
+//document.querySelector("#forward").addEventListener("click", (event) => {
+/* anime({
     targets: "main",
     keyframes: [{ translateY: -1000 }, { translateX: -800 }],
     duration: 4000,
     easing: "easeOutElastic(1, .8)",
   }) */
-  navigate("next")
+/* navigate("next")
 
   event.stopImmediatePropagation()
   event.preventDefault()
   return false
-})
+}) */
 
-document.querySelector("#back").addEventListener("click", (event) => {
-  /* if (currentPage < pages.length - 1) {
+//document.querySelector("#back").addEventListener("click", (event) => {
+/* if (currentPage < pages.length - 1) {
     currentPage++
   } else {
     currentPage = 0
   }
   document.querySelector("pre").innerHTML = pages[currentPage]
  */
-  navigate("back")
+/*   navigate("back")
 
   event.stopImmediatePropagation()
   event.preventDefault()
-  return false
-})
+  r eturn false
+})*/
 
-document.querySelector("#options").addEventListener("click", () => {
-  console.log("clicked")
+//  console.log("clicked")
 
-  /*   anime({
+/*   anime({
     targets: "main",
     keyframes: [{ translateY: 0, rotate: -16 }],
     duration: 4000,
     easing: "easeInOutElastic(1, .8)",
   }) */
 
-  /*
+/*
 
   /* let tx = document.querySelector("pre").innerText
   let t = tx.split("")
@@ -209,4 +230,3 @@ document.querySelector("#options").addEventListener("click", () => {
   console.log(t)
   document.querySelector("pre").innerHTML = t
   */
-})
