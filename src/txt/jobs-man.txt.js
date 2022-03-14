@@ -8,7 +8,7 @@ export default `
                                                                            =========================                                        
                                                                                                                                             
                                                                            Role: Software Engineer                                          
-           ┌────────────────────────────────────────────────┐              Dates: June 2018 onwards                                         
+           ┌────────────────────────────────────────────────┐              Dates: <i>June 2018 onwards</i>                                         
            │                                                │░                                                                              
            │                                                │░                                                                              
            │                  ............                  │░             Main activities                                                  

@@ -21,7 +21,7 @@
                                       ║        <i>development</i> and <i>management</i>.                           ║░░                                    
                                       ║                                                              ║░░                                    
                                       ║        Javascript (<i>Frontend</i> and Backend),                    ║░░                                    
-                                      ║        HTML, CSS, Node, GraphQL, CouchDB                     ║░░                                    
+                                      ║        HTML, CSS, Node, GraphQL, <i>CouchDB</i>                     ║░░                                    
                                       ║                                                              ║░░                                    
                                       ║                                                              ║░░                                    
                                       ║                                                              ║░░                                    

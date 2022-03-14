@@ -14,7 +14,7 @@
              ║                                                              ║░░       │ ┌───────────┼│       Backend       │                
              ║                                                              ║░░       │ │            │                     │                
              ║    <strong>Alexander Schedler</strong>                                        ║░░       │ │            │                     │                
-             ║    freelance software developer                              ║░░       │ │            └─────────────────────┘                
+             ║    <i>freelance software developer</i>                              ║░░       │ │            └─────────────────────┘                
              ║                                                              ║░░       │ │                ┌─────────────────────┐            
              ║        Currlently I am working salaried for <i>MAN</i>              ║░░       │ │                │                     │            
              ║        <i>Energy Solutions</i>. I also do freelance work with a     ║░░       │ │                │                     │            
@@ -22,7 +22,7 @@
              ║        development and management as well as <i>JavaScript</i>      ║░░       │ │                │                     │            
              ║        and <i>CouchDB</i> consulting.                               ║░░       │ │                │                     │            
              ║                                                              ║░░       │ │                └─────────────────────┘            
-             ║        Need my help? <a href="#">Just write me</a>.                          ║░░       │ │            ┌─────────────────────┐                
+             ║        Need my help? <a href="mailto:alex@schedler.co">Just write me</a>.                          ║░░       │ │            ┌─────────────────────┐                
              ║                                                              ║░░       │ │            │                     │                
              ║                                                              ║░░       │ │            │                     │                
              ║                                                              ║░░       │ └───────────┼│        Cloud        │                

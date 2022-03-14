@@ -3,7 +3,7 @@ export default `
                                                                                                             ┌──────────────────────┐        
                                                                                                             │                      │░░      
                                                                                                             │                      │░░      
-         Technologies Overview                                                                              │  HTML                │░░      
+         <strong>Technologies Overview</strong>                                                                              │  HTML                │░░      
          <i>Experience and Expertise (extract)</i>                                                                 │  ----                │░░      
                                                                                      ┌─────────────────────┼│  *Expert*            │░░      
        ┌──────────────────────┐                                                      │                      │  15+ years           │░░      

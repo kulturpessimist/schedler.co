@@ -19,6 +19,7 @@
     "serve": "serve dist/"
   },
   "dependencies": {
+    "lodash": "^4.17.21",
     "navigo": "^8.11.1",
     "petite-vue": "^0.4.1",
     "rlite-router": "^2.0.3",

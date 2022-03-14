@@ -10,7 +10,7 @@ export default `
                                                                            ===========                                                      
            ┌────────────────────────────────────────────────┐                                                                               
            │                                                │░             Role: Multimedia Producer, Project Manager                       
-           │                                                │░             Dates: August 2002 - November 2004                               
+           │                                                │░             Dates: <i>August 2002 - November 2004</i>                               
            │                                                │░                                                                              
            │                                                │░                                                                              
            │                                                │░             Main activities                                                  

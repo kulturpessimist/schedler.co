@@ -6,7 +6,7 @@ window.__version = version
 import "../fonts/VictorMono/fonts.css"
 import "../css/style.css"
 // contents
-import pages from "./pages"
+import { pages, contactFrames, impressumFrames } from "./pages"
 import Navigo from "navigo"
 
 /*
@@ -41,6 +41,7 @@ processHash() */
 
 const app = {
   _router: null,
+  _slideshows: [],
   // data
   _glitchMemoize: "",
   currentPage: 0,
@@ -61,7 +62,53 @@ const app = {
   init() {
     this.current = pages[this.currentPage]
     this._router = new Navigo("/")
+
+    this._router.notFound(() => {
+      this._router.navigate("/page/0")
+    })
+
+    this._router.on("/impressum/:frame", (match) => {
+      this.current = this.navigateFromTo(
+        this.current,
+        impressumFrames[parseInt(match.data.frame, 10)]
+      )
+    })
+
+    this._router.on("/job/:company", (match) => {
+      console.log(match)
+      let target
+      switch (match.data.company) {
+        case "man-es":
+          target = "/page/4"
+          break
+        case "iob":
+          target = "/page/5"
+          break
+        case "thinxnet":
+          target = "/page/6"
+          break
+        case "natureoffice":
+          target = "/page/7"
+          break
+        case "dynomedia":
+          target = "/page/8"
+          break
+        case "kigg":
+          target = "/page/9"
+          break
+        default:
+          target = "/page/0"
+      }
+      this._router.navigate(target)
+    })
     this._router.on("/page/:page", (match) => {
+      if (match.data.page === "1") {
+        setTimeout(() => {
+          this.playSlideshow(contactFrames, 0)
+        }, 500)
+      } else {
+        this.stopSlideshow()
+      }
       this.navigate(Number(match.data.page))
     })
     this._router.resolve()
@@ -77,11 +124,66 @@ const app = {
     ag.show()
   },
 
+  /**
+   *
+   */
   combine(from, to, take) {
     from = from.split("\n").slice(take)
     to = to.split("\n").slice(0, take)
 
     return [...to, ...from].join("\n")
+  },
+
+  difference(from, to, duration = 800) {
+    from = from.split("")
+    to = to.split("")
+
+    indices = []
+    to.forEach((v, i, a) => {
+      if (v.match(/\S/)) {
+        indices.push(i)
+      }
+    })
+
+    const speed = Math.floor(800 / indices.length)
+    indices
+      .sort(() => Math.random())
+      .forEach((v, i, a) => {
+        console.log(v, from[v], "=>", to[v])
+        setTimeout(
+          (v) => {
+            from[v] = to[v]
+            this.current = from.join("")
+          },
+          i * speed,
+          v
+        )
+      })
+    console.log(indices)
+    return [...to, ...from].join("\n")
+  },
+
+  columns(from, to, takeRows, takeColumns = 50) {
+    xfrom = this.combine(from, to, 0)
+    // console.log(xfrom)
+    from = from
+      .split("\n")
+      .map((line) => line.slice(0, line.length - takeColumns))
+    to = to
+      .split("\n")
+      .slice(0, takeRows + 1)
+      .map((line) => line.slice(-1 * takeColumns))
+    console.log(from.length, to.length)
+    let tfix = []
+    let tfrom = []
+    let tto = []
+    for (let i = 0; i < from.length; i++) {
+      // tfix.push(from[i].slice(from[i].length - takeColumns))
+
+      tfrom.push(from[i] + (to[i] || Array(from[i].length).fill(" ").join("")))
+    }
+
+    return [...tfrom].join("\n")
   },
 
   glitch(text, count = 25, memoize = false) {
@@ -118,9 +220,8 @@ const app = {
     return t.join("")
   },
 
-  navigate(direction = "next") {
+  navigateFromTo(from, to, nextPage) {
     const speed = 20
-    let nextPage
     let iv
     let ivc = 0
     let ivt = ["▓", "▒", "░"] //"–/|\\".split("")
@@ -128,19 +229,14 @@ const app = {
     iv = setInterval(() => {
       this.loader = ivt[ivc++ % ivt.length]
     }, 100)
-    if (typeof direction === "number") {
-      nextPage = direction
-    } else {
-      nextPage = direction === "next" ? this.nextPage : this.prevPage
-    }
-    const lines = pages[this.currentPage].split("\n").length
-    console.log(this.currentPage, nextPage)
+
+    const lines = this.current.split("\n").length
     for (let i = 0; i <= lines; i++) {
       setTimeout(
         (i) => {
           this.current = this.combine(
-            this.glitch(pages[this.currentPage], 50, Math.random() < 0.9),
-            pages[nextPage],
+            this.glitch(from, 50, Math.random() < 0.9),
+            to,
             i
           )
         },
@@ -154,11 +250,64 @@ const app = {
           this.currentPage = nextPage
           this.loader = " "
           clearInterval(iv)
+          this._router.updatePageLinks()
         }, i * speed)
       }
     }
   },
-  options() {},
+
+  navigate(direction = "next") {
+    let nextPage
+
+    if (typeof direction === "number") {
+      nextPage = direction
+    } else {
+      nextPage = direction === "next" ? this.nextPage : this.prevPage
+    }
+
+    this.navigateFromTo(this.current, pages[nextPage], nextPage)
+  },
+  options() {
+    console.log("options", this._router.getCurrentLocation())
+    // this.playSlideshow(contactFrames, 0)
+    if (this._router.getCurrentLocation().url.indexOf("impressum") === 0) {
+      this._router.navigate("/")
+    } else {
+      this._router.navigate("/impressum/0")
+    }
+  },
+
+  playSlideshow(animation = contactFrames, currentFrame = 0) {
+    //console.log("playSlideshow", currentFrame, "of", animation.length - 1)
+    const speed = 60
+    const pause = 200
+    const lines = animation[currentFrame].split("\n").length
+    const nextFrame = (currentFrame + 1) % animation.length
+
+    for (let i = 0; i <= lines; i++) {
+      this._slideshows[i] = setTimeout(
+        (i) => {
+          this.current = this.combine(
+            animation[currentFrame], //this.glitch(pages[this.currentPage], 50, Math.random() < 0.9),
+            animation[nextFrame],
+            i
+          )
+        },
+        i * speed,
+        i
+      )
+      if (i === lines) {
+        this._slideshows[i + 1] = setTimeout(() => {
+          this.playSlideshow(animation, nextFrame)
+        }, i * speed + pause)
+      }
+    }
+  },
+  stopSlideshow() {
+    console.log(this._slideshows.length)
+    this._slideshows.forEach((sl) => clearTimeout(sl))
+    //clearTimeout(this._slideshows)
+  },
 }
 
 createApp(app).mount("body")

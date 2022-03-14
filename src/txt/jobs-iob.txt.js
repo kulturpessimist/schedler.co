@@ -9,7 +9,7 @@ export default `
                                                                            =========================                                        
                                                                                                                                             
            ┌────────────────────────────────────────────────┐              Role: Frontend / Design / CEO                                    
-           │                                                │░             Dates: June 2016 – December 2019                                 
+           │                                                │░             Dates: <i>June 2016 – December 2019</i>                                 
            │                                                │░                                                                              
            │                                                │░                                                                              
            │                                                │░             Main activities                                                  
