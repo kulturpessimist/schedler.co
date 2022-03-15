@@ -14,14 +14,14 @@ export default `
                                       ║                                                              ║░░                                    
                                       ║                                                              ║░░                                    
                                       ║                                                              ║░░                                    
-                                      ║    <strong>Alexander Schedler</strong>                                        ║░░                                    
-                                      ║    <i>District of Augsburg, Germany</i>                             ║░░                                    
+                                      ║    Alexander Schedler                                        ║░░                                    
+                                      ║    District of Augsburg, Germany                             ║░░                                    
                                       ║                                                              ║░░                                    
-                                      ║        Internet application <mark>engineering</mark>,                     ║░░                                    
-                                      ║        <mark>development</mark> and <mark>management</mark>.                           ║░░                                    
+                                      ║        Internet application engineering,                     ║░░                                    
+                                      ║        development and management.                           ║░░                                    
                                       ║                                                              ║░░                                    
-                                      ║        Javascript (<mark>Frontend</mark> and Backend),                    ║░░                                    
-                                      ║        HTML, CSS, Node, GraphQL, <mark>CouchDB</mark>                     ║░░                                    
+                                      ║        Javascript (Frontend and Backend),                    ║░░                                    
+                                      ║        HTML, CSS, Node, GraphQL, CouchDB                     ║░░                                    
                                       ║                                                              ║░░                                    
                                       ║                                                              ║░░                                    
                                       ║                                                              ║░░                                    

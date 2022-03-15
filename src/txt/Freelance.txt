@@ -16,7 +16,7 @@
              ║    Alexander Schedler                                        ║░░       │ │            │                     │                
              ║    freelance software developer                              ║░░       │ │            └─────────────────────┘                
              ║                                                              ║░░       │ │                ┌─────────────────────┐            
-             ║        Currlently I am working salaried for MAN              ║░░       │ │                │                     │            
+             ║        Currently I am working salaried for MAN               ║░░       │ │                │                     │            
              ║        Energy Solutions. I also do freelance work with a     ║░░       │ │                │                     │            
              ║        key focus on enterprize or b2b web application        ●─────────┼─┼───────────────▶│      Frontend       │            
              ║        development and management as well as JavaScript      ║░░       │ │                │                     │            

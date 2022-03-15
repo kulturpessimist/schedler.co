@@ -13,16 +13,16 @@ export default `
              ║                                                              ║░░       │              │                     │                
              ║                                                              ║░░       │ ┌───────────▶│       Backend       │                
              ║                                                              ║░░       │ │            │                     │                
-             ║    <strong>Alexander Schedler</strong>                                        ║░░       │ │            │                     │                
-             ║    <i>freelance software developer</i>                              ║░░       │ │            └─────────────────────┘                
+             ║    Alexander Schedler                                        ║░░       │ │            │                     │                
+             ║    freelance software developer                              ║░░       │ │            └─────────────────────┘                
              ║                                                              ║░░       │ │                ┌─────────────────────┐            
              ║        Currlently I am working salaried for MAN              ║░░       │ │                │                     │            
-             ║        Energy Solutions. I also do <mark>freelance work</mark> with a     ║░░       │ │                │                     │            
-             ║        key focus on enterprize or b2b <mark>web application</mark>        ●─────────┼─┼───────────────▶│      Frontend       │            
-             ║        development and management as well as <mark>JavaScript</mark>      ║░░       │ │                │                     │            
-             ║        and <mark>CouchDB</mark> consulting.                               ║░░       │ │                │                     │            
+             ║        Energy Solutions. I also do freelance work with a     ║░░       │ │                │                     │            
+             ║        key focus on enterprize or b2b web application        ●─────────┼─┼───────────────▶│      Frontend       │            
+             ║        development and management as well as JavaScript      ║░░       │ │                │                     │            
+             ║        and CouchDB consulting.                               ║░░       │ │                │                     │            
              ║                                                              ║░░       │ │                └─────────────────────┘            
-             ║        Need my help? <a href="mailto:alex@schedler.co">Just write me</a>.                          ║░░       │ │            ┌─────────────────────┐                
+             ║        Need my help? Just write me.                          ║░░       │ │            ┌─────────────────────┐                
              ║                                                              ║░░       │ │            │                     │                
              ║                                                              ║░░       │ │            │                     │                
              ║                                                              ║░░       │ └───────────▶│        Cloud        │                
