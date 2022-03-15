@@ -1,8 +1,5 @@
 import { createApp } from "petite-vue"
 import { annotate, annotationGroup } from "rough-notation"
-// styles...
-// import "../fonts/JetBrainsMono/fonts.css"
-// import "../css/style.css"
 // contents
 import { pages, contactFrames, impressumFrames } from "./pages"
 import Navigo from "navigo"
