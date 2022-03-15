@@ -16,8 +16,9 @@
     "build:pages": "node src/scripts/build-pages.js",
     "build": "npm run clean:build; npm run build:rev -- ./src/version.json; npm run build:pages; parcel build src/index.html",
     "build:detailed": "npm run build -- --public-url ./ --no-cache --log-level 4 --detailed-report 10",
+    "build:copy": "cp dist/index.html dist/200.html; cp src/cv-alexander-schedler-en-2022-03-14.pdf dist/cv-alexander-schedler-en-2022-03-14.pdf; cp src/google7f311b514ca2b68b.html dist/google7f311b514ca2b68b.html;",
     "serve": "serve dist/",
-    "surge": "npm run build; cp dist/index.html dist/200.html; surge --domain schedler-co-7.surge.sh dist/"
+    "surge": "npm run build; npm run build:copy; surge --domain schedler-co-7.surge.sh dist/"
   },
   "dependencies": {
     "navigo": "^8.11.1",
@@ -25,6 +26,8 @@
     "rough-notation": "0.5.1"
   },
   "devDependencies": {
+    "@parcel/packager-raw-url": "^2.3.2",
+    "@parcel/transformer-webmanifest": "^2.3.2",
     "asciify-image": "^0.1.8",
     "eslint": "^8.11.0",
     "eslint-plugin-vue": "^8.5.0",

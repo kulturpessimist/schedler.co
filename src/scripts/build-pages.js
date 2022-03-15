@@ -100,7 +100,7 @@ const enrichContent = (content, page) => {
       "copyright statements...":
         '<a href="/impressum/1">copyright statements...</a>',
       "Download CV as PDF":
-        '<a href="#" download="cv-alexander-schedler.pdf">Download CV as PDF</a>',
+        '<a href="https://literally.download/2IiXLQ" target="_blank">Download CV as PDF</a>',
 
       "{{version-------------}}": String(version.version).padEnd(24, " "),
       "{{update--------------}}": String(version.update).padEnd(24, " "),

@@ -6,9 +6,9 @@ Last update 09.03.2022
 
 # TODO
 
-- update CV
-- update social card
-- update favicon
+- [x] update CV
+- [x] update social card
+- [x] update favicon
 
 # Changelog
 
