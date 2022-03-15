@@ -5,11 +5,11 @@
                                                                                                                                             
                                                                                                                                             
                                                                                                                                             
-                                                                            <strong>ThinxNet GmbH</strong>                                                   
+                                                                            ThinxNet GmbH                                                   
                                                                            ===============                                                  
                                                                                                                                             
            ┌────────────────────────────────────────────────┐              Role: UI/UX Product Engineer                                     
-           │                   **oooo**                     │░             Dates: <i>June 2014 – June 2016</i>                                     
+           │                   **oooo**                     │░             Dates: June 2014 – June 2016                                     
            │               **oo########oo**                 │░                                                                              
            │           oo####################oo             │░                                                                              
            │         oo######****##############oo           │░             Main activities                                                  

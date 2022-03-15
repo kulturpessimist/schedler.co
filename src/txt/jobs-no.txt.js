@@ -28,7 +28,7 @@ export default `
            │                          ..--..                │░             Conception, engineering and development of the company‘s         
            │                                                │░             products from the beginning with only a few users to the         
            └────────────────────────────────────────────────┘░             operative state with hundreds of concurrent users on the         
-            ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░             platform.                                                        
+            ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░             platforms.                                                       
                                                                                                                                             
                                                                                                                                             
                                                                                                                                             

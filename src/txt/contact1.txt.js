@@ -14,7 +14,7 @@ export default `
              ║                                                              ║░░                     **########**                            
              ║                                                              ║░░                 **################                          
              ║    <strong>Alexander Schedler</strong>                                        ║░░                 ####################                        
-             ║    District of Augsburg, Germany                             ║░░               **####################**                      
+             ║    <i>District of Augsburg, Germany</i>                             ║░░               **####################**                      
              ║                                                              ║░░               ######################**  ****                
              ║        Want to get in touch?                                 ║░░               ######################****######              
              ║        Just write me an Email <a href="mailto:alex@schedler.co">alex@schedler.co</a>               ║░░               **####################  **########            

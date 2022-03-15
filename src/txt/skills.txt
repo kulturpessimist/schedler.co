@@ -3,8 +3,8 @@
                                                                                                                                             
                                                                                                                                             
                                                                                                                                             
-         <strong>Personal Skills</strong>                                                                                                                    
-         <i>and Competences</i>                                                                                                                    
+         Personal Skills                                                                                                                    
+         and Competences                                                                                                                    
                                                                                                                                             
                                                                                                                                             
          ┌─────────────────────────────────────────────────┐        ┌─────────────────────────────────────────────────┐                     
@@ -12,8 +12,8 @@
          │                                                 │░░      │                                                 │░░                   
          │    Organisational skills                        │░░      │    Social skills                                │░░                   
          │    ---------------------                        │░░      │    -------------                                │░░                   
-         │    Entrepreneurial mind and decisive planner    │░░      │    Analytical and <i>creative thinker</i>              │░░                   
-         │    Eager learner of <i>new technologies</i>            │░░      │    Empathetic listener and reflective           │░░                   
+         │    Entrepreneurial mind and decisive planner    │░░      │    Analytical and creative thinker              │░░                   
+         │    Eager learner of new technologies            │░░      │    Empathetic listener and reflective           │░░                   
          │    Able to work well-structured also upon       │░░      │    discussant                                   │░░                   
          │    deadlines                                    │░░      │    Balanced personality even under pressure     │░░                   
          │                                                 │░░      │                                                 │░░                   
@@ -27,8 +27,8 @@
                     │                                                 │░░       │                                                 │░░       
                     │                                                 │░░       │    Interests                                    │░░       
                     │    Languages                                    │░░       │    ---------                                    │░░       
-                    │    ---------                                    │░░       │    Internet <i>culture</i>                             │░░       
-                    │    <i>German</i> (Mother tongue)                       │░░       │    Politics                                     │░░       
+                    │    ---------                                    │░░       │    Internet culture                             │░░       
+                    │    German (Mother tongue)                       │░░       │    Politics                                     │░░       
                     │    English (fluently)                           │░░       │    Movie & Cinema                               │░░       
                     │                                                 │░░       │    Philosophy                                   │░░       
                     │                                                 │░░       │                                                 │░░       

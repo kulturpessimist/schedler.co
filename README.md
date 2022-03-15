@@ -4,6 +4,12 @@ website and contents of schedler.co / schedler.pro
 
 Last update 09.03.2022
 
+# TODO
+
+- update CV
+- update social card
+- update favicon
+
 # Changelog
 
 09.03.2022
@@ -16,7 +22,7 @@ After impress.js was somewhat broken, it was time for a rewrite, or at least a r
   10.06.2021
 
 - parcel update to beta 3
-- added srcum mastery
+- added scrum mastery
 
   03.09.2020
 

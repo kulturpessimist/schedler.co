@@ -26,8 +26,8 @@
                  └──────────────────────────────────────────────────┘   │ Version: {{version-------------}}               │                 
                                                                         │ Last update: {{update--------------}}           │                 
                  ┌──────────────────────────────────────────────────┐   │ Commit: {{short---------------}}                │                 
-                 │        <a href="/impressum/1">-> Disclaimer, data protection and</a>        │   │ Commit count: {{count---------------}}          │                 
-                 │             <a href="/impressum/1">copyright statements...</a>              │   │                                                 │                 
+                 │        -> Disclaimer, data protection and        │   │ Commit count: {{count---------------}}          │                 
+                 │             copyright statements...              │   │ SemVer: {{semver--------------}}                │                 
                  └──────────────────────────────────────────────────┘   └─────────────────────────────────────────────────┘                 
                                                                                                                                             
                                                                                                                                             
@@ -37,6 +37,4 @@
                                                                                                                                             
                                                                                                                                             
                                                                                                                                             
-                                                                                                                                            
-
                                                                                                                                             

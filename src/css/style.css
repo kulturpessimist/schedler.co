@@ -1,5 +1,5 @@
 :root {
-  --size: calc(5pt + 1vh);
+  --size: calc(4pt + 1vh);
 }
 
 html,
@@ -7,7 +7,7 @@ body {
   background-color: #0000ff;
   color: #eee;
   font-size: var(--size);
-  font-family: "Victor Mono";
+  font-family: "JetBrains Mono", monospace;
   font-weight: 400;
 
   display: flex;
@@ -32,13 +32,34 @@ a:any-link {
   cursor: pointer;
 }
 
+pre {
+  margin: auto;
+  font-family: "JetBrains Mono";
+  font-weight: 400;
+
+  display: inline-block;
+}
+
+mark {
+  background-color: transparent;
+  color: inherit;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/*
+
+  Special styles
+
+*/
+
 #back,
 #forward {
   text-decoration: none;
 }
-#iLoader {
-  /* display: none; */
-}
+
 #options {
   font-size: 16px;
   font-weight: 600;
@@ -58,27 +79,7 @@ a:any-link {
   left: 0px;
   margin: 0;
 }
-
-mark {
-  background-color: transparent;
-  color: inherit;
-}
-
-strong {
-  font-weight: 700;
-}
-
-em {
-  font-weight: 300;
-}
-
-pre {
-  margin: auto;
-  font-family: "Victor Mono";
-  font-weight: 500;
-
-  display: inline-block;
-}
-main > pre {
-  /* outline: 1px solid yellow; */
+#options,
+#navigation {
+  left: 28px;
 }

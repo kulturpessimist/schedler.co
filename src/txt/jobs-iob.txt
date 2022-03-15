@@ -5,11 +5,11 @@
                                                                                                                                             
                                                                                                                                             
                                                                                                                                             
-                                                                            <strong>Internet of Blah / PURR</strong>                                         
+                                                                            Internet of Blah / PURR                                         
                                                                            =========================                                        
                                                                                                                                             
            ┌────────────────────────────────────────────────┐              Role: Frontend / Design / CEO                                    
-           │                                                │░             Dates: <i>June 2016 – December 2019</i>                                 
+           │                                                │░             Dates: June 2016 – December 2019                                 
            │                                                │░                                                                              
            │                                                │░                                                                              
            │                                                │░             Main activities                                                  

@@ -1,10 +1,8 @@
 import { createApp } from "petite-vue"
-// import { annotate, annotationGroup } from "rough-notation"
-import version from "../version.json"
-window.__version = version
+import { annotate, annotationGroup } from "rough-notation"
 // styles...
-import "../fonts/VictorMono/fonts.css"
-import "../css/style.css"
+// import "../fonts/JetBrainsMono/fonts.css"
+// import "../css/style.css"
 // contents
 import { pages, contactFrames, impressumFrames } from "./pages"
 import Navigo from "navigo"
@@ -15,29 +13,6 @@ import Navigo from "navigo"
   <strong> = strong
   <mark> = highlight with rough notation maybe
 */
-
-//
-/* import rlite from "rlite-router"
-
-const route = rlite(notFound, {
-  // #users/chris -> r.params.name will equal 'chris'
-  "page/:number": function ({ number }) {
-    return pages[number]
-  },
-})
-
-function notFound() {
-  return "<h1>404 Not found :/</h1>"
-}
-
-// Hash-based routing
-function processHash() {
-  const hash = location.hash || "#"
-  route(hash.slice(1))
-}
-
-window.addEventListener("hashchange", processHash)
-processHash() */
 
 const app = {
   _router: null,
@@ -60,6 +35,8 @@ const app = {
   },
   // methods
   init() {
+    this.initKeyboardListener()
+
     this.current = pages[this.currentPage]
     this._router = new Navigo("/")
 
@@ -75,7 +52,6 @@ const app = {
     })
 
     this._router.on("/job/:company", (match) => {
-      console.log(match)
       let target
       switch (match.data.company) {
         case "man-es":
@@ -110,6 +86,7 @@ const app = {
         this.stopSlideshow()
       }
       this.navigate(Number(match.data.page))
+      //
     })
     this._router.resolve()
   },
@@ -117,15 +94,14 @@ const app = {
     const e = document.querySelectorAll("mark")
     const annotations = []
     for (let m of e) {
-      console.log(m)
-      annotations.push(annotate(m, { type: "highlight", color: "#000066" }))
+      annotations.push(annotate(m, { type: "highlight", color: "#000080" }))
     }
     const ag = annotationGroup(annotations)
     ag.show()
   },
 
   /**
-   *
+   * Effects
    */
   combine(from, to, take) {
     from = from.split("\n").slice(take)
@@ -138,8 +114,8 @@ const app = {
     from = from.split("")
     to = to.split("")
 
-    indices = []
-    to.forEach((v, i, a) => {
+    const indices = []
+    to.forEach((v, i) => {
       if (v.match(/\S/)) {
         indices.push(i)
       }
@@ -148,14 +124,14 @@ const app = {
     const speed = Math.floor(800 / indices.length)
     indices
       .sort(() => Math.random())
-      .forEach((v, i, a) => {
-        console.log(v, from[v], "=>", to[v])
+      .forEach((v, i) => {
+        // console.log(v, from[v], "=>", to[v])
         setTimeout(
           (v) => {
             from[v] = to[v]
             this.current = from.join("")
           },
-          i * speed,
+          i * speed + duration,
           v
         )
       })
@@ -164,7 +140,7 @@ const app = {
   },
 
   columns(from, to, takeRows, takeColumns = 50) {
-    xfrom = this.combine(from, to, 0)
+    // const xfrom = this.combine(from, to, 0)
     // console.log(xfrom)
     from = from
       .split("\n")
@@ -174,9 +150,9 @@ const app = {
       .slice(0, takeRows + 1)
       .map((line) => line.slice(-1 * takeColumns))
     console.log(from.length, to.length)
-    let tfix = []
+    // let tfix = []
     let tfrom = []
-    let tto = []
+    // let tto = []
     for (let i = 0; i < from.length; i++) {
       // tfix.push(from[i].slice(from[i].length - takeColumns))
 
@@ -200,7 +176,7 @@ const app = {
     let possible = "-*+/|}{[]?/.+-_)(*&^%$#@!)}~".split("")
     let p = []
     let t = text.split("")
-    t.forEach((v, i, a) => {
+    t.forEach((v, i) => {
       if (v.match(/\S/)) {
         p.push(i)
       }
@@ -218,63 +194,6 @@ const app = {
     }
 
     return t.join("")
-  },
-
-  navigateFromTo(from, to, nextPage) {
-    const speed = 20
-    let iv
-    let ivc = 0
-    let ivt = ["▓", "▒", "░"] //"–/|\\".split("")
-
-    iv = setInterval(() => {
-      this.loader = ivt[ivc++ % ivt.length]
-    }, 100)
-
-    const lines = this.current.split("\n").length
-    for (let i = 0; i <= lines; i++) {
-      setTimeout(
-        (i) => {
-          this.current = this.combine(
-            this.glitch(from, 50, Math.random() < 0.9),
-            to,
-            i
-          )
-        },
-        i * speed,
-        i
-      )
-
-      if (i === lines) {
-        this._glitchMemoize = ""
-        setTimeout(() => {
-          this.currentPage = nextPage
-          this.loader = " "
-          clearInterval(iv)
-          this._router.updatePageLinks()
-        }, i * speed)
-      }
-    }
-  },
-
-  navigate(direction = "next") {
-    let nextPage
-
-    if (typeof direction === "number") {
-      nextPage = direction
-    } else {
-      nextPage = direction === "next" ? this.nextPage : this.prevPage
-    }
-
-    this.navigateFromTo(this.current, pages[nextPage], nextPage)
-  },
-  options() {
-    console.log("options", this._router.getCurrentLocation())
-    // this.playSlideshow(contactFrames, 0)
-    if (this._router.getCurrentLocation().url.indexOf("impressum") === 0) {
-      this._router.navigate("/")
-    } else {
-      this._router.navigate("/impressum/0")
-    }
   },
 
   playSlideshow(animation = contactFrames, currentFrame = 0) {
@@ -308,74 +227,90 @@ const app = {
     this._slideshows.forEach((sl) => clearTimeout(sl))
     //clearTimeout(this._slideshows)
   },
+  /**
+   * Navigation
+   */
+  initKeyboardListener() {
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowRight") {
+        this.navigate("next")
+      }
+      if (event.key === "ArrowLeft") {
+        this.navigate("back")
+      }
+      if (event.key === "i") {
+        this._router.navigate("/impressum/0")
+      }
+      /*
+      if (event.key === "Dead") {
+        
+      } 
+      */
+    })
+  },
+
+  afterNavigation() {
+    this._router.updatePageLinks()
+    setTimeout(() => {
+      this.annotateAllTheThings()
+    }, 250)
+  },
+  navigateFromTo(from, to, nextPage) {
+    const speed = 20
+    let iv
+    let ivc = 0
+    let ivt = ["▓", "▒", "░"] //"–/|\\".split("")
+
+    iv = setInterval(() => {
+      this.loader = ivt[ivc++ % ivt.length]
+    }, 100)
+
+    const lines = this.current.split("\n").length
+    for (let i = 0; i <= lines; i++) {
+      setTimeout(
+        (i) => {
+          this.current = this.combine(
+            this.glitch(from, 50, Math.random() < 0.9),
+            to,
+            i
+          )
+        },
+        i * speed,
+        i
+      )
+
+      if (i === lines) {
+        this._glitchMemoize = ""
+        setTimeout(() => {
+          this.currentPage = nextPage
+          this.loader = " "
+          clearInterval(iv)
+
+          this.afterNavigation()
+        }, i * speed)
+      }
+    }
+  },
+
+  navigate(direction = "next") {
+    let nextPage
+
+    if (typeof direction === "number") {
+      nextPage = direction
+    } else {
+      nextPage = direction === "next" ? this.nextPage : this.prevPage
+    }
+
+    this.navigateFromTo(this.current, pages[nextPage], nextPage)
+  },
+  options() {
+    // this.playSlideshow(contactFrames, 0)
+    if (this._router.getCurrentLocation().url.indexOf("impressum") === 0) {
+      this._router.navigate("/")
+    } else {
+      this._router.navigate("/impressum/0")
+    }
+  },
 }
 
 createApp(app).mount("body")
-
-//
-// document.querySelector("pre").innerHTML = pages[currentPage]
-// setTimeout(annotateAllTheThings, 500)
-
-//document.querySelector("#forward").addEventListener("click", (event) => {
-/* anime({
-    targets: "main",
-    keyframes: [{ translateY: -1000 }, { translateX: -800 }],
-    duration: 4000,
-    easing: "easeOutElastic(1, .8)",
-  }) */
-/* navigate("next")
-
-  event.stopImmediatePropagation()
-  event.preventDefault()
-  return false
-}) */
-
-//document.querySelector("#back").addEventListener("click", (event) => {
-/* if (currentPage < pages.length - 1) {
-    currentPage++
-  } else {
-    currentPage = 0
-  }
-  document.querySelector("pre").innerHTML = pages[currentPage]
- */
-/*   navigate("back")
-
-  event.stopImmediatePropagation()
-  event.preventDefault()
-  r eturn false
-})*/
-
-//  console.log("clicked")
-
-/*   anime({
-    targets: "main",
-    keyframes: [{ translateY: 0, rotate: -16 }],
-    duration: 4000,
-    easing: "easeInOutElastic(1, .8)",
-  }) */
-
-/*
-
-  /* let tx = document.querySelector("pre").innerText
-  let t = tx.split("")
-  let p = []
-  t.forEach((v, i, a) => {
-    if (v.match(/\S/)) {
-      p.push(i)
-    }
-  })
-  for (let c = 0; c < 25; c++) {
-    const item = p[Math.floor(Math.random() * p.length)]
-    t[item] = possible[Math.floor(Math.random() * possible.length)]
-    window.requestAnimationFrame(() => {
-      document.querySelector("pre").innerText = t.join("")
-    })
-  } 
-  
-  const regex = RegExp(/\S/, "g")
-  const x = regex.test(t)
-  console.log(x)
-  t = t.replace(/\S/, "*")
-  console.log(t)
-  document.querySelector("pre").innerHTML = t
-  */

@@ -1,7 +1,4 @@
-import version from "../version.json"
-
 import Start from "../txt/start.txt.js"
-import Contact from "../txt/contact0.txt.js"
 //
 import Contact1 from "../txt/contact1.txt.js"
 import Contact2 from "../txt/contact2.txt.js"
@@ -25,17 +22,9 @@ import Education from "../txt/education.txt.js"
 import Skills from "../txt/skills.txt.js"
 import Technologies from "../txt/technologies.txt.js"
 
-import ImpressumRaw from "../txt/impressum.txt.js"
+import Impressum from "../txt/impressum.txt.js"
 import Impressum2 from "../txt/impressum2.txt.js"
 
-let Impressum = ImpressumRaw.replace(
-  "{{version-------------}}",
-  String(version.semver).padEnd(24, " ")
-)
-  .replace("{{update--------------}}", String(version.update).padEnd(24, " "))
-  .replace("{{short---------------}}", String(version.short).padEnd(24, " "))
-  .replace("{{count---------------}}", String(version.count).padEnd(24, " "))
-console.log(version, Impressum)
 const pages = [
   Start,
   Contact1,

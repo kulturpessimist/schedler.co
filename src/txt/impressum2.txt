@@ -34,7 +34,7 @@
     │ dem Zugriff durch Dritte ist nicht möglich.          │   │ unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem        │     
     └──────────────────────────────────────────────────────┘   │ Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei │     
     ┌──────────────┐                                           │ Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese │     
-    │  <a href="/impressum/0"><- Back...</a>  │                                           │ Inhalte umgehend entfernen.                                          │     
+    │  <- Back...  │                                           │ Inhalte umgehend entfernen.                                          │     
     └──────────────┘                                           └──────────────────────────────────────────────────────────────────────┘     
                                                                                                                                             
                                                                                                                                             

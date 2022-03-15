@@ -15,13 +15,13 @@ export default `
                                       ║                                                              ║░░                                    
                                       ║                                                              ║░░                                    
                                       ║    <strong>Alexander Schedler</strong>                                        ║░░                                    
-                                      ║    District of Augsburg, Germany                             ║░░                                    
+                                      ║    <i>District of Augsburg, Germany</i>                             ║░░                                    
                                       ║                                                              ║░░                                    
-                                      ║        Internet application <i>engineering</i>,                     ║░░                                    
-                                      ║        <i>development</i> and <i>management</i>.                           ║░░                                    
+                                      ║        Internet application <mark>engineering</mark>,                     ║░░                                    
+                                      ║        <mark>development</mark> and <mark>management</mark>.                           ║░░                                    
                                       ║                                                              ║░░                                    
-                                      ║        Javascript (<i>Frontend</i> and Backend),                    ║░░                                    
-                                      ║        HTML, CSS, Node, GraphQL, <i>CouchDB</i>                     ║░░                                    
+                                      ║        Javascript (<mark>Frontend</mark> and Backend),                    ║░░                                    
+                                      ║        HTML, CSS, Node, GraphQL, <mark>CouchDB</mark>                     ║░░                                    
                                       ║                                                              ║░░                                    
                                       ║                                                              ║░░                                    
                                       ║                                                              ║░░                                    

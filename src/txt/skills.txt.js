@@ -12,8 +12,8 @@ export default `
          │                                                 │░░      │                                                 │░░                   
          │    Organisational skills                        │░░      │    Social skills                                │░░                   
          │    ---------------------                        │░░      │    -------------                                │░░                   
-         │    Entrepreneurial mind and decisive planner    │░░      │    Analytical and <i>creative thinker</i>              │░░                   
-         │    Eager learner of <i>new technologies</i>            │░░      │    Empathetic listener and reflective           │░░                   
+         │    Entrepreneurial mind and decisive planner    │░░      │    Analytical and <mark>creative thinker</mark>              │░░                   
+         │    Eager learner of <mark>new technologies</mark>            │░░      │    Empathetic listener and reflective           │░░                   
          │    Able to work well-structured also upon       │░░      │    discussant                                   │░░                   
          │    deadlines                                    │░░      │    Balanced personality even under pressure     │░░                   
          │                                                 │░░      │                                                 │░░                   
@@ -27,8 +27,8 @@ export default `
                     │                                                 │░░       │                                                 │░░       
                     │                                                 │░░       │    Interests                                    │░░       
                     │    Languages                                    │░░       │    ---------                                    │░░       
-                    │    ---------                                    │░░       │    Internet <i>culture</i>                             │░░       
-                    │    <i>German</i> (Mother tongue)                       │░░       │    Politics                                     │░░       
+                    │    ---------                                    │░░       │    Internet <mark>culture</mark>                             │░░       
+                    │    <mark>German</mark> (Mother tongue)                       │░░       │    Politics                                     │░░       
                     │    English (fluently)                           │░░       │    Movie & Cinema                               │░░       
                     │                                                 │░░       │    Philosophy                                   │░░       
                     │                                                 │░░       │                                                 │░░       

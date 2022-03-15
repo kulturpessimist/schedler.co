@@ -16,18 +16,18 @@ export default `
                  │ Alexander Schedler                               │   │ suited to print it out and show it to your      │                 
                  │ freie Softwareentwicklung                        │   │ friends and colleagues.                         │                 
                  │ Dillinger Straße 64a                             │   │                                                 │                 
-                 │ 86637 Wertingen                                  │   │ Download CV as PDF                              │                 
+                 │ 86637 Wertingen                                  │   │ <a href="#" download="cv-alexander-schedler.pdf">Download CV as PDF</a>                              │                 
                  │                                                  │   └─────────────────────────────────────────────────┘                 
                  │ Telefon: +49 171 4123 929                        │                                                                       
                  │ E-Mail: alex@schedler.co                         │   ┌─────────────────────────────────────────────────┐                 
                  │                                                  │   │  Semantic information                           │                 
                  │ Umsatzsteuer-ID gemäß §27 a Umsatzsteuergesetz:  │   │ ======================                          │                 
                  │ DE 305 762 296                                   │   │                                                 │                 
-                 └──────────────────────────────────────────────────┘   │ Version: {{version-------------}}               │                 
-                                                                        │ Last update: {{update--------------}}           │                 
-                 ┌──────────────────────────────────────────────────┐   │ Commit: {{short---------------}}                │                 
-                 │        <a href="/impressum/1">-> Disclaimer, data protection and</a>        │   │ Commit count: {{count---------------}}          │                 
-                 │             <a href="/impressum/1">copyright statements...</a>              │   │                                                 │                 
+                 └──────────────────────────────────────────────────┘   │ Version: 7.0.0-131                              │                 
+                                                                        │ Last update: 2022-03-15T10:51:00.659Z           │                 
+                 ┌──────────────────────────────────────────────────┐   │ Commit: 9b127c6                                 │                 
+                 │        <a href="/impressum/1">-> Disclaimer, data protection and</a>        │   │ Commit count: 131                               │                 
+                 │             <a href="/impressum/1">copyright statements...</a>              │   │ SemVer: 7.0.0                                   │                 
                  └──────────────────────────────────────────────────┘   └─────────────────────────────────────────────────┘                 
                                                                                                                                             
                                                                                                                                             
@@ -37,6 +37,4 @@ export default `
                                                                                                                                             
                                                                                                                                             
                                                                                                                                             
-                                                                                                                                            
-
                                                                                                                                             `

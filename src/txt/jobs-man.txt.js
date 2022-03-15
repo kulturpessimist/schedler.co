@@ -4,10 +4,10 @@ export default `
                                                                                                                                             
                                                                                                                                             
                                                                                                                                             
-                                                                            <strong>MAN Energy Solutions SE</strong>                                         
+                                                                            <strong>MAN Energy Solutions</strong> SE                                         
                                                                            =========================                                        
                                                                                                                                             
-                                                                           Role: Software Engineer                                          
+                                                                           Role: Senior Software Engineer                                   
            ┌────────────────────────────────────────────────┐              Dates: <i>June 2018 onwards</i>                                         
            │                                                │░                                                                              
            │                                                │░                                                                              
@@ -22,7 +22,7 @@ export default `
            │..**                                        **..│░             Agile Mentor / SCRUM Master                                      
            │....                                        ....│░                                                                              
            │**...MM*.. MMMM*    .AAAA*..   NNNN*.. NN*....**│░                                                                              
-           │**  .MMMMMMMMMM*   AAAA.AAA*   NNNNNN*.NN*..  **│░             Responsibilities                                                 
+           │**  .MMMMMMMMMM*   AAAAAAAA*   NNNNNN*.NN*..  **│░             Responsibilities                                                 
            │**  .MM*.MM*.MM*  .AAAAAAAA*.. NN*...NNNN*..  **│░             ----------------                                                 
            │..  .MM.    .MM.  AAA.   AAA.. NN...  .NN...  ..│░             Working in an agile SCRUM team on different, web based           
            │                                                │░             projects in the enterprise sphere. Depending on the              

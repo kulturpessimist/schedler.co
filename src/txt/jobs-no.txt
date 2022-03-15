@@ -6,11 +6,11 @@
                                                                                                                                             
                                                                                                                                             
                                                                                                                                             
-                                                                            <strong>natureOffice GmbH</strong>                                               
+                                                                            natureOffice GmbH                                               
                                                                            ===================                                              
            ┌────────────────────────────────────────────────┐                                                                               
            │                                                │░             Role: Head of Software Development, Co-founder                   
-           │                    ..                          │░             Dates: <i>August 2008 - April 2014</i>                                  
+           │                    ..                          │░             Dates: August 2008 - April 2014                                  
            │                  ~~oo..                        │░                                                                              
            │                  oooo**..                      │░                                                                              
            │                --oooooooo..                    │░             Main activities                                                  
@@ -28,7 +28,7 @@
            │                          ..--..                │░             Conception, engineering and development of the company‘s         
            │                                                │░             products from the beginning with only a few users to the         
            └────────────────────────────────────────────────┘░             operative state with hundreds of concurrent users on the         
-            ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░             platform.                                                        
+            ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░             platforms.                                                       
                                                                                                                                             
                                                                                                                                             
                                                                                                                                             

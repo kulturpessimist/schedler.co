@@ -14,14 +14,14 @@
                                       ║                                                              ║░░                                    
                                       ║                                                              ║░░                                    
                                       ║                                                              ║░░                                    
-                                      ║    <strong>Alexander Schedler</strong>                                        ║░░                                    
+                                      ║    Alexander Schedler                                        ║░░                                    
                                       ║    District of Augsburg, Germany                             ║░░                                    
                                       ║                                                              ║░░                                    
-                                      ║        Internet application <i>engineering</i>,                     ║░░                                    
-                                      ║        <i>development</i> and <i>management</i>.                           ║░░                                    
+                                      ║        Internet application engineering,                     ║░░                                    
+                                      ║        development and management.                           ║░░                                    
                                       ║                                                              ║░░                                    
-                                      ║        Javascript (<i>Frontend</i> and Backend),                    ║░░                                    
-                                      ║        HTML, CSS, Node, GraphQL, <i>CouchDB</i>                     ║░░                                    
+                                      ║        Javascript (Frontend and Backend),                    ║░░                                    
+                                      ║        HTML, CSS, Node, GraphQL, CouchDB                     ║░░                                    
                                       ║                                                              ║░░                                    
                                       ║                                                              ║░░                                    
                                       ║                                                              ║░░                                    
