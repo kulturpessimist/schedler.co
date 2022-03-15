@@ -7,79 +7,79 @@
       Schedler.pro | Alexander Schedler: Internet application engineering,
       development and management.
     </title>
-    <include src="sections/0-meta.html"></include>
+    <meta
+      name="description"
+      content="Curriculum vitae (CV) | Alexander Schedler: Internet application engineering, development and management. Javascript (Frontend and Backend), HTML, CSS, Node, CouchDB"
+    />
+    <meta name="author" content="Alexander Schedler" />
+    <link rel="canonical" href="https://www.schedler.pro/" />
+    <meta name="referrer" content="no-referrer" />
+    <meta
+      name="google-site-verification"
+      content="eliPswh-Ta1epaLBfsuMokb33GW8cYHc9k47wi2Hmk8"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#0000ff" />
+    <!-- FACEBOOK et. TWITTER -->
+    <meta property="og:url" content="https://www.schedler.pro" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Schedler.pro | Alexander Schedler: Internet application engineering, development and management."
+    />
+    <meta
+      property="og:description"
+      content="Curriculum vitae (CV) | Alexander Schedler: Internet application engineering, development and management. Javascript (Frontendand Backend), HTML, CSS, Node, CouchDB"
+    />
+    <meta property="og:updated_time" content="2019-02-10T12:00:00" />
+    <meta
+      property="og:image"
+      content="https://www.schedler.pro/images/social-card.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@kulturpessimist" />
+    <meta name="twitter:creator" content="@kulturpessimist" />
+    <meta
+      name="twitter:title"
+      content="Schedler.pro | Alexander Schedler: Internet application engineering, development and management."
+    />
+    <meta
+      name="twitter:description"
+      content="Curriculum vitae (CV) | Alexander Schedler: Internet application engineering, development and management. Javascript (Frontendand Backend), HTML, CSS, Node, CouchDB"
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.schedler.pro/images/social-card.png"
+    />
+    <base href="/" />
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="./images/icon-32.png" sizes="any" />
+    <link rel="icon" href="./images/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/icon-180.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <!-- STYLES -->
+    <style>
+      @import "./fonts/JetBrainsMono/fonts.css";
+      @import "./css/style.css";
+    </style>
   </head>
 
-  <body x-data="app.data()" x-init="init()">
-    <div
-      id="impress"
-      data-transition-duration="1000"
-      :data-width="window.width"
-      :data-height="window.height"
-      data-perspective="0"
-    >
-      <include src="sections/1-home.html"></include>
-      <include src="sections/2-contact.html"></include>
-      <include src="sections/2a-freelance.html"></include>
-      <!-- <Jobs> -->
-      <include src="sections/3-overview.html"></include>
-      <include src="sections/3.6-MAN.html"></include>
-      <include src="sections/3.5-IOB.html"></include>
-      <include src="sections/3.4-ThinxNet.html"></include>
-      <include src="sections/3.3-natureOffice.html"></include>
-      <include src="sections/3.2-Dynomedia.html"></include>
-      <include src="sections/3.1-KIGG.html"></include>
-      <!-- </Jobs> -->
-      <include src="sections/4-Education.html"></include>
-      <include src="sections/5-Personal.html"></include>
-      <include src="sections/6-Technology.html"></include>
-      <!-- debug? -->
-      <!-- <section
-        class="step"
-        id="fin"
-        :data-x="storybook.fin.position.x"
-        :data-y="storybook.fin.position.y"
-        :data-z="storybook.fin.position.z"
-        :data-rotate-x="storybook.fin.rotation.x"
-        :data-rotate-y="storybook.fin.rotation.y"
-        :data-rotate-z="storybook.fin.rotation.z"
-        :data-scale="storybook.fin.scale"
-      ></section> -->
-    </div>
+  <body @vue:mounted="init()">
+    <main>
+      <pre v-html="current"></pre>
+    </main>
 
-    <div class="left-overlay"></div>
-    <!-- control -->
-    <button
-      class="control imprint button is-text"
-      @click="showImprint=true"
-      type="button"
-    >
-      <template x-if="!showImprint">
-        <i class="fas fa-ellipsis-h"></i>
-      </template>
-    </button>
+    <pre id="options" @click="options">
+__
+__
+__
+    </pre>
 
-    <div class="interaction has-text-centered">
-      <button
-        title="Previous"
-        class="control button is-text"
-        @click="previous()"
-        type="button"
-      >
-        <i class="fas fa-chevron-circle-left"></i></button
-      ><button
-        title="Next"
-        class="control button is-text"
-        @click="next()"
-        type="button"
-      >
-        <i class="fas fa-chevron-circle-right"></i>
-      </button>
-    </div>
+    <pre id="navigation">
+<a id="back" :href="`/page/${prevPage}`" data-navigo>&lt;--</a> <span id="iLoader">{{loader}}</span> <a id="forward" :href="`/page/${nextPage}`" data-navigo>--&gt;</a>
+    </pre>
 
-    <include src="sections/0-imprint.html"></include>
-    <!-- js -->
-    <script nomodule src="./js/index.js"></script>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>

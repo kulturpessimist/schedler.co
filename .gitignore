@@ -1,4 +1,6 @@
 .couchapprc
+.cache
+.parcel-cache
 node_modules
 build
 _Material
