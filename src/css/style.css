@@ -1,5 +1,12 @@
 :root {
   --size: calc(4pt + 1vh);
+  --main-color: #f86b2e;
+  --accent-color: #d2f56f;
+  --text-color: #262523;
+}
+
+:root.dark {
+  --size: calc(4pt + 1vh);
   --main-color: #0000ff;
   --accent-color: #000066;
   --text-color: #eeeeee;
@@ -65,8 +72,8 @@ strong {
 #back,
 #forward {
   text-decoration: none;
-  cursor: pointer;
   line-height: 1.6rem;
+  cursor: pointer;
 }
 
 #options {
@@ -75,20 +82,42 @@ strong {
   line-height: 8px;
   position: absolute;
   top: 20px;
-  left: 0px;
+  left: 28px;
   margin: 0;
+  cursor: pointer;
 }
+.toggleDarkMode {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 16px;
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  margin: 0;
+  cursor: pointer;
+}
+.toggleDarkMode.darkActive {
+  font-size: 38px;
+  top: 24px;
+  right: 0px;
+}
+.dark .darkActive {
+  display: none;
+}
+.dark .lightActive {
+  display: block;
+}
+.lightActive {
+  display: none;
+}
+
 #navigation {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.6rem;
   position: absolute;
   bottom: 20px;
-  left: 0px;
-  margin: 0;
-}
-#options,
-#navigation {
   left: 28px;
+  margin: 0;
   cursor: pointer;
 }

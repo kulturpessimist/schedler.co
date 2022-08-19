@@ -118,6 +118,8 @@ const enrichContent = (content, page) => {
   rules["contact4.txt"] = rules["contact0.txt"]
   rules["contact5.txt"] = rules["contact0.txt"]
   rules["contact6.txt"] = rules["contact0.txt"]
+  rules["Freelance.txt"] = rules["freelance.txt"]
+  rules["Start.txt"] = rules["start.txt"]
   //
   console.log(page, "was", content.length)
   if (rules[page]) {

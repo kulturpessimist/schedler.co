@@ -30,8 +30,16 @@ const app = {
   get currentGetter() {
     return pages[this.currentPage]
   },
+
   // methods
   init() {
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      this.toggleDarkMode()
+    }
+
     this.initKeyboardListener()
 
     this.current = pages[this.currentPage]
@@ -87,13 +95,28 @@ const app = {
     })
     this._router.resolve()
   },
+
+  toggleDarkMode() {
+    document.querySelector("html").classList.toggle("dark")
+  },
+
   annotateAllTheThings() {
     const e = document.querySelectorAll("mark")
+    const color =
+      window
+        .getComputedStyle(document.documentElement)
+        .getPropertyValue("--accent-color") || "#000066"
     const annotations = []
     for (let m of e) {
-      annotations.push(annotate(m, { type: "highlight", color: "#000080" }))
+      annotations.push(
+        annotate(m, {
+          type: "highlight",
+          color,
+        })
+      )
     }
     const ag = annotationGroup(annotations)
+    window.ag = ag
     ag.show()
   },
 
@@ -132,7 +155,6 @@ const app = {
           v
         )
       })
-    console.log(indices)
     return [...to, ...from].join("\n")
   },
 
@@ -146,7 +168,7 @@ const app = {
       .split("\n")
       .slice(0, takeRows + 1)
       .map((line) => line.slice(-1 * takeColumns))
-    console.log(from.length, to.length)
+    //console.log(from.length, to.length)
     // let tfix = []
     let tfrom = []
     // let tto = []
@@ -220,7 +242,7 @@ const app = {
     }
   },
   stopSlideshow() {
-    console.log(this._slideshows.length)
+    //console.log(this._slideshows.length)
     this._slideshows.forEach((sl) => clearTimeout(sl))
     //clearTimeout(this._slideshows)
   },
@@ -311,3 +333,4 @@ const app = {
 }
 
 createApp(app).mount("body")
+window.app = app
