@@ -21,7 +21,7 @@ export default `
                                       ║        <mark>development</mark> and <mark>management</mark>.                           ║░░                                    
                                       ║                                                              ║░░                                    
                                       ║        Javascript (<mark>Frontend</mark> and Backend),                    ║░░                                    
-                                      ║        HTML, CSS, Node, GraphQL, <mark>CouchDB</mark>                     ║░░                                    
+                                      ║        HTML, CSS, <mark>Node, GraphQL</mark>, CouchDB                     ║░░                                    
                                       ║                                                              ║░░                                    
                                       ║                                                              ║░░                                    
                                       ║                                                              ║░░                                    

@@ -12,7 +12,7 @@ const enrichContent = (content, page) => {
       development: "<mark>development</mark>",
       management: "<mark>management</mark>",
       Frontend: "<mark>Frontend</mark>",
-      CouchDB: "<mark>CouchDB</mark>",
+      "Node, GraphQL": "<mark>Node, GraphQL</mark>",
     },
     "contact0.txt": {
       "Alexander Schedler": "<strong>Alexander Schedler</strong>",
@@ -95,6 +95,9 @@ const enrichContent = (content, page) => {
     },
 
     "impressum.txt": {
+      "+49 171 4123 929": '<a href="tel:+491714123929">+49 171 4123 929</a>',
+      "alex@schedler.co":
+        '<a href="mailto:alex@schedler.co">alex@schedler.co</a>',
       "-> Disclaimer, data protection and":
         '<a href="/impressum/1">-> Disclaimer, data protection and</a>',
       "copyright statements...":
