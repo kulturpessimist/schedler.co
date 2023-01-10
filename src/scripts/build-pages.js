@@ -53,12 +53,12 @@ const enrichContent = (content, page) => {
     },
     "jobs-jd.txt": {
       "Johner Digital GmbH":
-        '<strong>Johner Digital GmbH</strong> <a class="external-employer-link" href="https://www.johner-institute.com" target="_blank"> ↖︎ </a>',
+        '<strong>Johner Digital GmbH</strong> <a class="external-employer-link" href="https://www.johner-institute.com" target="_blank"> ↗ </a>',
       "February 2023 onwards": "<i>February 2023 onwards</i>",
     },
     "jobs-man.txt": {
       "MAN Energy Solutions SE":
-        '<strong>MAN Energy Solutions SE</strong> <a class="external-employer-link" href="https://www.man-es.com" target="_blank"> ↖︎ </a>',
+        '<strong>MAN Energy Solutions SE</strong> <a class="external-employer-link" href="https://www.man-es.com" target="_blank"> ↗ </a>',
       "June 2018 – January 2023": "<i>June 2018 – January 2023</i>",
     },
     "jobs-iob.txt": {
@@ -68,22 +68,22 @@ const enrichContent = (content, page) => {
 
     "jobs-txn.txt": {
       "ThinxNet GmbH":
-        '<strong>ThinxNet GmbH</strong> <a class="external-employer-link" href="https://thinxnet.com" target="_blank"> ↖︎ </a>',
+        '<strong>ThinxNet GmbH</strong> <a class="external-employer-link" href="https://thinxnet.com" target="_blank"> ↗ </a>',
       "June 2014 – June 2016": "<i>June 2014 – June 2016</i>",
     },
     "jobs-no.txt": {
       "natureOffice GmbH":
-        '<strong>natureOffice GmbH</strong> <a class="external-employer-link" href="https://www.natureoffice.com" target="_blank"> ↖︎ </a>',
+        '<strong>natureOffice GmbH</strong> <a class="external-employer-link" href="https://www.natureoffice.com" target="_blank"> ↗ </a>',
       "August 2008 - April 2014": "<i>August 2008 - April 2014</i>",
     },
     "jobs-dyno.txt": {
       "Dynomedia GmbH":
-        '<strong>Dynomedia GmbH</strong> <a class="external-employer-link" href="https://web.archive.org/web/20070208042813/http://www.dynomedia.com:80/de/" target="_blank"> ↖︎ </a>',
+        '<strong>Dynomedia GmbH</strong> <a class="external-employer-link" href="https://web.archive.org/web/20070208042813/http://www.dynomedia.com:80/de/" target="_blank"> ↗ </a>',
       "June 2005 - July 2008": "<i>June 2005 - July 2008</i>",
     },
     "jobs-kigg.txt": {
       "KIGG GmbH":
-        '<strong>KIGG GmbH</strong> <a class="external-employer-link" href="https://www.kigg.de" target="_blank"> ↖︎ </a>',
+        '<strong>KIGG GmbH</strong> <a class="external-employer-link" href="https://www.kigg.de" target="_blank"> ↗ </a>',
       "August 2002 - November 2004": "<i>August 2002 - November 2004</i>",
     },
 
