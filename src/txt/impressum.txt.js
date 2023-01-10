@@ -23,10 +23,10 @@ export default `
                  │                                                  │   │  Semantic information                           │                 
                  │ Umsatzsteuer-ID gemäß §27 a Umsatzsteuergesetz:  │   │ ======================                          │                 
                  │ DE 305 762 296                                   │   │                                                 │                 
-                 └──────────────────────────────────────────────────┘   │ Version: 7.3.0-144                              │                 
-                                                                        │ Last update: 2023-01-10T09:21:18.580Z           │                 
-                 ┌──────────────────────────────────────────────────┐   │ Commit: 2a9c42f                                 │                 
-                 │        <a href="/impressum/1">-> Disclaimer, data protection and</a>        │   │ Commit count: 144                               │                 
+                 └──────────────────────────────────────────────────┘   │ Version: 7.3.0-145                              │                 
+                                                                        │ Last update: 2023-01-10T09:22:45.592Z           │                 
+                 ┌──────────────────────────────────────────────────┐   │ Commit: d21ef19                                 │                 
+                 │        <a href="/impressum/1">-> Disclaimer, data protection and</a>        │   │ Commit count: 145                               │                 
                  │             <a href="/impressum/1">copyright statements...</a>              │   │ SemVer: 7.3.0                                   │                 
                  └──────────────────────────────────────────────────┘   └─────────────────────────────────────────────────┘                 
                                                                                                                                             
