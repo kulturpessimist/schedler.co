@@ -7,7 +7,7 @@ export default `
                                                                            =========================                                        
                                                                                                                                             
                                                                            Role: Senior Software Engineer                                   
-                                                                           Dates: <i>June 2018 onwards</i>                                         
+                                                                           Dates: <i>June 2018 – January 2023</i>                                  
            ┌────────────────────────────────────────────────┐                                                                               
            │                                                │░                                                                              
            │                                                │░             Main activities                                                  

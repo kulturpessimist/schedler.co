@@ -42,6 +42,7 @@ const enrichContent = (content, page) => {
     "jobs.txt": {
       "Alexander Schedler": "<strong>Alexander Schedler</strong>",
       "Curriculum Vitae": "<i>Curriculum Vitae</i>",
+      "Johner Digital": '<a href="/job/jd" data-navigo>Johner Digital</a>',
       "MAN Energy Solutions":
         '<a href="/job/man-es" data-navigo>MAN Energy Solutions</a>',
       "Internet of Blah": '<a href="/job/iob" data-navigo>Internet of Blah</a>',
@@ -50,9 +51,13 @@ const enrichContent = (content, page) => {
       Dynomedia: '<a href="/job/dynomedia" data-navigo>Dynomedia</a>',
       KIGG: '<a href="/job/kigg" data-navigo>KIGG</a>',
     },
+    "jobs-jd.txt": {
+      "Johner Digital GmbH": "<strong>Johner Digital GmbH</strong>",
+      "February 2023 onwards": "<i>February 2023 onwards</i>",
+    },
     "jobs-man.txt": {
       "MAN Energy Solutions": "<strong>MAN Energy Solutions</strong>",
-      "June 2018 onwards": "<i>June 2018 onwards</i>",
+      "June 2018 – January 2023": "<i>June 2018 – January 2023</i>",
     },
     "jobs-iob.txt": {
       "Internet of Blah / PURR": "<strong>Internet of Blah / PURR</strong>",
@@ -103,7 +108,7 @@ const enrichContent = (content, page) => {
       "copyright statements...":
         '<a href="/impressum/1">copyright statements...</a>',
       "Download CV as PDF":
-        '<a href="https://literally.download/2IiXLQ" target="_blank">Download CV as PDF</a>',
+        '<a href="https://literally.download/f/TpLZBL" target="_blank">Download CV as PDF</a>',
 
       "{{version-------------}}": String(version.version).padEnd(24, " "),
       "{{update--------------}}": String(version.update).padEnd(24, " "),

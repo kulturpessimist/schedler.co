@@ -5,11 +5,11 @@ var options = {
   color: false,
   width: 20,
   height: 20,
-  chars: "  *#",
+  chars: "    ●■",
 }
 
 asciify(
-  "../images/Icon Copy 8.png", // Middlesex_University_Logo
+  "../../materials/johner.png", // Middlesex_University_Logo
   options
 )
   .then(function (asciified) {

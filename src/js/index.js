@@ -59,23 +59,26 @@ const app = {
     this._router.on("/job/:company", (match) => {
       let target
       switch (match.data.company) {
-        case "man-es":
+        case "jd":
           target = "/page/4"
           break
-        case "iob":
+        case "man-es":
           target = "/page/5"
           break
-        case "thinxnet":
+        case "iob":
           target = "/page/6"
           break
-        case "natureoffice":
+        case "thinxnet":
           target = "/page/7"
           break
-        case "dynomedia":
+        case "natureoffice":
           target = "/page/8"
           break
-        case "kigg":
+        case "dynomedia":
           target = "/page/9"
+          break
+        case "kigg":
+          target = "/page/10"
           break
         default:
           target = "/page/0"

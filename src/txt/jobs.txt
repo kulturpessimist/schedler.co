@@ -13,7 +13,7 @@
 │                        │                        │░░   │                        │░░   │                        │░░                        │
 │                        │                        │░░   │                        │░░   │                        │░░                        │
 │                        │                        │░░   │                        │░░   │                        │░░                        │
-│                        │           ?            │◀────│  MAN Energy Solutions  │◀────│  Internet of Blah      │◀─┐                       │
+│                        │     Johner Digital     │◀────│  MAN Energy Solutions  │◀────│  Internet of Blah      │◀─┐                       │
 │                        │                        │░░   │                        │░░   │                        │░░│                       │
 │                        │                        │░░   │                        │░░   │                        │░░│                       │
 │                        │                        │░░   │                        │░░   │                        │░░│                       │

@@ -11,6 +11,7 @@ import Contact6 from "../txt/contact6.txt.js"
 import Freelance from "../txt/freelance.txt.js"
 import Jobs from "../txt/jobs.txt.js"
 
+import jd from "../txt/jobs-jd.txt.js"
 import Man from "../txt/jobs-man.txt.js"
 import IoB from "../txt/jobs-iob.txt.js"
 import Txn from "../txt/jobs-txn.txt.js"
@@ -31,6 +32,7 @@ const pages = [
   Freelance,
   Jobs,
 
+  jd,
   Man,
   IoB,
   Txn,

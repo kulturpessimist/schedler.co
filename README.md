@@ -2,7 +2,7 @@
 
 website and contents of schedler.co / schedler.pro
 
-Last update 09.03.2022
+Last update 10.01.2023
 
 # TODO
 
@@ -11,6 +11,11 @@ Last update 09.03.2022
 - [x] update favicon
 
 # Changelog
+
+10.01.2023
+
+Some content updates about my new job at johner digital.
+Minor dependency updates and update to current node lts.
 
 09.03.2022
 
