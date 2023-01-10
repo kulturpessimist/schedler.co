@@ -6,7 +6,7 @@ export default `
                                                                                                                                             
                                                                                                                                             
                                                                                                                                             
-                                                                            <strong>KIGG GmbH</strong>                                                       
+                                                                            <strong>KIGG GmbH</strong> <a class="external-employer-link" href="https://www.kigg.de" target="_blank"> ↖︎ </a>                                                       
                                                                            ===========                                                      
            ┌────────────────────────────────────────────────┐                                                                               
            │                                                │░             Role: Multimedia Producer, Project Manager                       

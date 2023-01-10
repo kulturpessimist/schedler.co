@@ -5,7 +5,7 @@ export default `
                                                                                                                                             
                                                                                                                                             
                                                                                                                                             
-                                                                            <strong>ThinxNet GmbH</strong>                                                   
+                                                                            <strong>ThinxNet GmbH</strong> <a class="external-employer-link" href="https://thinxnet.com" target="_blank"> ↖︎ </a>                                                   
                                                                            ===============                                                  
                                                                                                                                             
            ┌────────────────────────────────────────────────┐              Role: UI/UX Product Engineer                                     

@@ -3,7 +3,7 @@ export default `
                                                                                                                                             
                                                                                                                                             
                                                                                                                                             
-                                                                            <strong>MAN Energy Solutions</strong> SE                                         
+                                                                            <strong>MAN Energy Solutions SE</strong> <a class="external-employer-link" href="https://www.man-es.com" target="_blank"> ↖︎ </a>                                         
                                                                            =========================                                        
                                                                                                                                             
                                                                            Role: Senior Software Engineer                                   

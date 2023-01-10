@@ -121,3 +121,10 @@ strong {
   margin: 0;
   cursor: pointer;
 }
+
+.external-employer-link {
+  display: inline-block;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  text-decoration: none !important;
+  /* display: none; */
+}

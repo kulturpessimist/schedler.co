@@ -5,7 +5,7 @@ export default `
                                                                                                                                             
                                                                                                                                             
                                                                                                                                             
-                                                                            <strong>Internet of Blah / PURR</strong>                                         
+                                                                            <strong>Internet of Blah / PURR</strong>                                          
                                                                            =========================                                        
                                                                                                                                             
            ┌────────────────────────────────────────────────┐              Role: Frontend / Design / CEO                                    
