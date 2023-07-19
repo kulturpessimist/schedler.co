@@ -13,7 +13,7 @@
 │                        │                        │░░   │                        │░░   │                        │░░                        │
 │                        │                        │░░   │                        │░░   │                        │░░                        │
 │                        │                        │░░   │                        │░░   │                        │░░                        │
-│                        │     Johner Digital     │◀────│  MAN Energy Solutions  │◀────│  Internet of Blah      │◀─┐                       │
+│                        │    Johner Institute    │◀────│  MAN Energy Solutions  │◀────│  Internet of Blah      │◀─┐                       │
 │                        │                        │░░   │                        │░░   │                        │░░│                       │
 │                        │                        │░░   │                        │░░   │                        │░░│                       │
 │                        │                        │░░   │                        │░░   │                        │░░│                       │

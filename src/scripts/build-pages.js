@@ -42,7 +42,7 @@ const enrichContent = (content, page) => {
     "jobs.txt": {
       "Alexander Schedler": "<strong>Alexander Schedler</strong>",
       "Curriculum Vitae": "<i>Curriculum Vitae</i>",
-      "Johner Digital": '<a href="/job/jd" data-navigo>Johner Digital</a>',
+      "Johner Institute": '<a href="/job/jd" data-navigo>Johner Institute</a>',
       "MAN Energy Solutions":
         '<a href="/job/man-es" data-navigo>MAN Energy Solutions</a>',
       "Internet of Blah": '<a href="/job/iob" data-navigo>Internet of Blah</a>',
@@ -52,8 +52,8 @@ const enrichContent = (content, page) => {
       KIGG: '<a href="/job/kigg" data-navigo>KIGG</a>',
     },
     "jobs-jd.txt": {
-      "Johner Digital GmbH":
-        '<strong>Johner Digital GmbH</strong> <a class="external-employer-link" href="https://www.johner-institute.com" target="_blank"> ↗ </a>',
+      "Johner Institut GmbH":
+        '<strong>Johner Institut GmbH</strong> <a class="external-employer-link" href="https://www.johner-institute.com" target="_blank"> ↗ </a>',
       "February 2023 onwards": "<i>February 2023 onwards</i>",
     },
     "jobs-man.txt": {
@@ -156,7 +156,7 @@ const main = async () => {
       content = enrichContent(content, filename)
       await fs.writeFile(
         path + filename + ".js",
-        `export default \`${content}\``
+        `export default \`${content}\``,
       )
       //console.log(path + filename, content.length)
     }

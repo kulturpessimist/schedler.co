@@ -23,11 +23,11 @@ export default `
                  │                                                  │   │  Semantic information                           │                 
                  │ Umsatzsteuer-ID gemäß §27 a Umsatzsteuergesetz:  │   │ ======================                          │                 
                  │ DE 305 762 296                                   │   │                                                 │                 
-                 └──────────────────────────────────────────────────┘   │ Version: 7.3.0-146                              │                 
-                                                                        │ Last update: 2023-01-10T09:31:03.246Z           │                 
-                 ┌──────────────────────────────────────────────────┐   │ Commit: ec13d9d                                 │                 
-                 │        <a href="/impressum/1">-> Disclaimer, data protection and</a>        │   │ Commit count: 146                               │                 
-                 │             <a href="/impressum/1">copyright statements...</a>              │   │ SemVer: 7.3.0                                   │                 
+                 └──────────────────────────────────────────────────┘   │ Version: 7.3.1-148                              │                 
+                                                                        │ Last update: 2023-07-19T09:48:11.013Z           │                 
+                 ┌──────────────────────────────────────────────────┐   │ Commit: cd8179b                                 │                 
+                 │        <a href="/impressum/1">-> Disclaimer, data protection and</a>        │   │ Commit count: 148                               │                 
+                 │             <a href="/impressum/1">copyright statements...</a>              │   │ SemVer: 7.3.1                                   │                 
                  └──────────────────────────────────────────────────┘   └─────────────────────────────────────────────────┘                 
                                                                                                                                             
                                                                                                                                             

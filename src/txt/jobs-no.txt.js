@@ -6,7 +6,7 @@ export default `
                                                                                                                                             
                                                                                                                                             
                                                                                                                                             
-                                                                            <strong>natureOffice GmbH</strong> <a class="external-employer-link" href="https://www.natureoffice.com" target="_blank"> ↖︎ </a>                                               
+                                                                            <strong>natureOffice GmbH</strong> <a class="external-employer-link" href="https://www.natureoffice.com" target="_blank"> ↗ </a>                                               
                                                                            ===================                                              
            ┌────────────────────────────────────────────────┐                                                                               
            │                                                │░             Role: Head of Software Development, Co-founder                   

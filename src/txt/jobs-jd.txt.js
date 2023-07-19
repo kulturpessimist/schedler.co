@@ -3,7 +3,7 @@ export default `
                                                                                                                                             
                                                                                                                                             
                                                                                                                                             
-                                                                            <strong>Johner Digital GmbH</strong> <a class="external-employer-link" href="https://www.johner-institute.com" target="_blank"> ↖︎ </a>                                             
+                                                                            <strong>Johner Institut GmbH</strong> <a class="external-employer-link" href="https://www.johner-institute.com" target="_blank"> ↗ </a>                                            
                                                                            =====================                                            
                                                                                                                                             
                                                                            Role: Senior Software Engineer                                   
@@ -24,8 +24,8 @@ export default `
            │                                                │░             Responsibilities                                                 
            │                          ●●●●                  │░             ----------------                                                 
            │                          ●●●●                  │░                                                                              
-           │                          ●●●●                  │░             Working in an agile team to get the first "Digital               
-           │                                                │░             Approval Platform" up and running to disrupt the working         
+           │                          ●●●●                  │░             Working in an agile team to get the first "Realtime              
+           │                                                │░             Compliance System" up and running to disrupt the working         
            │                                                │░             routines of medical device manufacturers.                        
            └────────────────────────────────────────────────┘░                                                                              
             ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░             With the platform we help to overcome regulatory                 

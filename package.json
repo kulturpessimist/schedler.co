@@ -1,13 +1,17 @@
 {
   "name": "website-schedler-co",
   "description": "Curriculum vitae (CV) | Alexander Schedler: Internet application engineering, development and management. Javascript (Frontend and Backend), HTML, CSS, Node, CouchDB",
-  "version": "7.3.0",
+  "version": "7.3.1",
   "license": "CC-BY-NC-ND",
   "repository": {
     "type": "git",
     "url": "https://github.com/kulturpessimist/schedler.co.git"
   },
   "browserslist": "> 0.2%",
+  "engines": {
+    "node": "18",
+    "npm": "9"
+  },
   "scripts": {
     "dev": "npm run start",
     "start": "npm run build:rev -- ./src/version.json; parcel src/index.html --open",
@@ -27,17 +31,14 @@
     "rough-notation": "0.5.1"
   },
   "devDependencies": {
-    "@parcel/packager-raw-url": "2.8.2",
-    "@parcel/transformer-webmanifest": "2.8.2",
-    "asciify-image": "^0.1.9",
-    "eslint": "^8.31.0",
-    "eslint-plugin-vue": "^9.8.0",
-    "isomorphic-git": "^1.21.0",
-    "parcel": "2.8.2",
-    "prettier": "2.8.2",
-    "serve": "^14.1.2"
-  },
-  "volta": {
-    "node": "18.13.0"
+    "@parcel/packager-raw-url": "2.9.3",
+    "@parcel/transformer-webmanifest": "2.9.3",
+    "asciify-image": "^0.1.10",
+    "eslint": "^8.45.0",
+    "eslint-plugin-vue": "^9.15.1",
+    "isomorphic-git": "^1.24.5",
+    "parcel": "2.9.3",
+    "prettier": "3.0.0",
+    "serve": "^14.2.0"
   }
 }

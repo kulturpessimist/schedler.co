@@ -8,7 +8,7 @@ export default `
                                                                                                                                             
                                                                                                                                             
                                                                                                                                             
-           ┌────────────────────────────────────────────────┐               <strong>Dynomedia GmbH</strong> <a class="external-employer-link" href="https://web.archive.org/web/20070208042813/http://www.dynomedia.com:80/de/" target="_blank"> ↖︎ </a>                                                  
+           ┌────────────────────────────────────────────────┐               <strong>Dynomedia GmbH</strong> <a class="external-employer-link" href="https://web.archive.org/web/20070208042813/http://www.dynomedia.com:80/de/" target="_blank"> ↗ </a>                                                  
            │                                                │░             ================                                                 
            │                              **                │░                                                                              
            │                          **####**              │░             Role: Web Developer                                              
