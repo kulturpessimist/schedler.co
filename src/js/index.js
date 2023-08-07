@@ -52,7 +52,7 @@ const app = {
     this._router.on("/impressum/:frame", (match) => {
       this.current = this.navigateFromTo(
         this.current,
-        impressumFrames[parseInt(match.data.frame, 10)]
+        impressumFrames[parseInt(match.data.frame, 10)],
       )
     })
 
@@ -115,7 +115,7 @@ const app = {
         annotate(m, {
           type: "highlight",
           color,
-        })
+        }),
       )
     }
     const ag = annotationGroup(annotations)
@@ -155,7 +155,7 @@ const app = {
             this.current = from.join("")
           },
           i * speed + duration,
-          v
+          v,
         )
       })
     return [...to, ...from].join("\n")
@@ -231,16 +231,19 @@ const app = {
           this.current = this.combine(
             animation[currentFrame], //this.glitch(pages[this.currentPage], 50, Math.random() < 0.9),
             animation[nextFrame],
-            i
+            i,
           )
         },
         i * speed,
-        i
+        i,
       )
       if (i === lines) {
-        this._slideshows[i + 1] = setTimeout(() => {
-          this.playSlideshow(animation, nextFrame)
-        }, i * speed + pause)
+        this._slideshows[i + 1] = setTimeout(
+          () => {
+            this.playSlideshow(animation, nextFrame)
+          },
+          i * speed + pause,
+        )
       }
     }
   },
@@ -255,13 +258,19 @@ const app = {
   initKeyboardListener() {
     document.addEventListener("keydown", (event) => {
       if (event.key === "ArrowRight") {
-        this.navigate("next")
+        this._router.navigate("/page/" + this.nextPage)
       }
       if (event.key === "ArrowLeft") {
-        this.navigate("back")
+        this._router.navigate("/page/" + this.prevPage)
       }
       if (event.key === "i") {
         this._router.navigate("/impressum/0")
+      }
+      if (event.key === "f") {
+        this._router.navigate("/page/2")
+      }
+      if (event.key === "@" || event.key === "c") {
+        this._router.navigate("/page/1")
       }
       /*
       if (event.key === "Dead") {
@@ -294,11 +303,11 @@ const app = {
           this.current = this.combine(
             this.glitch(from, 50, Math.random() < 0.9),
             to,
-            i
+            i,
           )
         },
         i * speed,
-        i
+        i,
       )
 
       if (i === lines) {
