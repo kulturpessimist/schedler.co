@@ -42,9 +42,11 @@ const enrichContent = (content, page) => {
     "jobs.txt": {
       "Alexander Schedler": "<strong>Alexander Schedler</strong>",
       "Curriculum Vitae": "<i>Curriculum Vitae</i>",
-      "Johner Institute": '<a href="/job/jd" data-navigo>Johner Institute</a>',
+      "Johner Institut": '<a href="/job/jd" data-navigo>Johner Institute</a>',
       "MAN Energy Solutions":
         '<a href="/job/man-es" data-navigo>MAN Energy Solutions</a>',
+      "MAN Energy Sol.":
+        '<a href="/job/man-es" data-navigo>MAN Energy Sol.</a>',
       "Internet of Blah": '<a href="/job/iob" data-navigo>Internet of Blah</a>',
       ThinxNet: '<a href="/job/thinxnet" data-navigo>ThinxNet</a>',
       natureOffice: '<a href="/job/natureoffice" data-navigo>natureOffice</a>',
@@ -95,8 +97,10 @@ const enrichContent = (content, page) => {
     "skills.txt": {
       "Personal Skills": "<strong>Personal Skills</strong>",
       "and Competences": "<i>and Competences</i>",
-      "new technologies": "<mark>new technologies</mark>",
-      "creative thinker": "<mark>creative thinker</mark>",
+      new: "<mark>new</mark>",
+      technologies: "<mark>technologies</mark>",
+      creative: "<mark>creative</mark>",
+      thinker: "<mark>thinker</mark>",
       German: "<mark>German</mark>",
       culture: "<mark>culture</mark>",
     },
@@ -126,6 +130,25 @@ const enrichContent = (content, page) => {
     "impressum2.txt": {
       "<- Back...": '<a href="/impressum/0"><- Back...</a>',
     },
+
+    "impressum.mobile.txt": {
+      "+49 171 4123 929": '<a href="tel:+491714123929">+49 171 4123 929</a>',
+      "alex@schedler.co":
+        '<a href="mailto:alex@schedler.co">alex@schedler.co</a>',
+      "Download CV as PDF":
+        '<a href="https://literally.download/f/Nw07wu" target="_blank">Download CV as PDF</a>',
+
+      "{{version}}": String(version.version).padEnd(24, " "),
+      "{{update--------------}}": String(version.update).padEnd(24, " "),
+      "{{short---------------}}": String(version.short).padEnd(24, " "),
+      "{{count---------------}}": String(version.count).padEnd(24, " "),
+      "{{semver--------------}}": String(version.semver).padEnd(24, " "),
+
+      "-> Imprint": '-> <a href="/impressum/0">Imprint</a>',
+      "-> Privacy": '-> <a href="/impressum/1">Privacy</a>',
+      "-> Copyright": '-> <a href="/impressum/2">Copyright</a>',
+      "-> Disclaimer": '-> <a href="/impressum/3">Disclaimer</a>',
+    },
   }
   rules["contact1.txt"] = rules["contact0.txt"]
   rules["contact2.txt"] = rules["contact0.txt"]
@@ -135,6 +158,25 @@ const enrichContent = (content, page) => {
   rules["contact6.txt"] = rules["contact0.txt"]
   rules["Freelance.txt"] = rules["freelance.txt"]
   rules["Start.txt"] = rules["start.txt"]
+
+  rules["Start.mobile.txt"] = rules["start.txt"]
+  rules["contact1.mobile.txt"] = rules["contact0.txt"]
+  rules["freelance.mobile.txt"] = rules["freelance.txt"]
+  rules["jobs.mobile.txt"] = rules["jobs.txt"]
+  rules["jobs-jd.mobile.txt"] = rules["jobs-jd.txt"]
+  rules["jobs-man.mobile.txt"] = rules["jobs-man.txt"]
+  rules["jobs-iob.mobile.txt"] = rules["jobs-iob.txt"]
+  rules["jobs-txn.mobile.txt"] = rules["jobs-txn.txt"]
+  rules["jobs-no.mobile.txt"] = rules["jobs-no.txt"]
+  rules["jobs-dyno.mobile.txt"] = rules["jobs-dyno.txt"]
+  rules["jobs-kigg.mobile.txt"] = rules["jobs-kigg.txt"]
+
+  rules["education.mobile.txt"] = rules["education.txt"]
+  rules["skills.mobile.txt"] = rules["skills.txt"]
+  rules["technologies.mobile.txt"] = rules["technologies.txt"]
+  rules["impressum2.mobile.txt"] = rules["impressum.mobile.txt"]
+  rules["impressum3.mobile.txt"] = rules["impressum.mobile.txt"]
+  rules["impressum4.mobile.txt"] = rules["impressum.mobile.txt"]
   //
   console.log(page, "was", content.length)
   if (rules[page]) {

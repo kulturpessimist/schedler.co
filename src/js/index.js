@@ -1,7 +1,14 @@
 import { createApp } from "petite-vue"
 import { annotate, annotationGroup } from "rough-notation"
 // contents
-import { pages, contactFrames, impressumFrames } from "./pages"
+import {
+  pages,
+  contactFrames,
+  impressumFrames,
+  pagesMobile,
+  contactFramesMobile,
+  impressumFramesMobile,
+} from "./pages"
 import Navigo from "navigo"
 
 /*
@@ -12,6 +19,9 @@ import Navigo from "navigo"
 */
 
 const app = {
+  pages: [],
+  contactFrames: [],
+  impressumFrames: [],
   _router: null,
   _slideshows: [],
   // data
@@ -21,28 +31,42 @@ const app = {
   loader: " ",
   // getters
   get prevPage() {
-    return this.currentPage > 0 ? this.currentPage - 1 : pages.length - 1
+    return this.currentPage > 0 ? this.currentPage - 1 : this.pages.length - 1
   },
   get nextPage() {
-    return this.currentPage < pages.length - 1 ? this.currentPage + 1 : 0
+    return this.currentPage < this.pages.length - 1 ? this.currentPage + 1 : 0
   },
 
   get currentGetter() {
-    return pages[this.currentPage]
+    return app.pages[this.currentPage]
   },
 
   // methods
   init() {
+    // darkmode
     if (
       window.matchMedia &&
       window.matchMedia("(prefers-color-scheme: dark)").matches
     ) {
       this.toggleDarkMode()
     }
+    // portrait mode
+    if (window.innerWidth > window.innerHeight) {
+      console.log("+++ landscape +++")
+      this.pages = pages
+      this.contactFrames = contactFrames
+      this.impressumFrames = impressumFrames
+    } else {
+      console.log("+++ portrait +++")
+      this.pages = pagesMobile
+      this.contactFrames = contactFramesMobile
+      this.impressumFrames = impressumFramesMobile
+    }
+    //
 
     this.initKeyboardListener()
 
-    this.current = pages[this.currentPage]
+    this.current = app.pages[this.currentPage]
     this._router = new Navigo("/")
 
     this._router.notFound(() => {
@@ -52,7 +76,7 @@ const app = {
     this._router.on("/impressum/:frame", (match) => {
       this.current = this.navigateFromTo(
         this.current,
-        impressumFrames[parseInt(match.data.frame, 10)],
+        this.impressumFrames[parseInt(match.data.frame, 10)],
       )
     })
 
@@ -88,7 +112,7 @@ const app = {
     this._router.on("/page/:page", (match) => {
       if (match.data.page === "1") {
         setTimeout(() => {
-          this.playSlideshow(contactFrames, 0)
+          this.playSlideshow(this.contactFrames, 0)
         }, 500)
       } else {
         this.stopSlideshow()
@@ -101,6 +125,8 @@ const app = {
 
   toggleDarkMode() {
     document.querySelector("html").classList.toggle("dark")
+    window.ag ? window.ag.hide() : void 0
+    this.annotateAllTheThings()
   },
 
   annotateAllTheThings() {
@@ -218,7 +244,7 @@ const app = {
     return t.join("")
   },
 
-  playSlideshow(animation = contactFrames, currentFrame = 0) {
+  playSlideshow(animation = this.contactFrames, currentFrame = 0) {
     //console.log("playSlideshow", currentFrame, "of", animation.length - 1)
     const speed = 60
     const pause = 200
@@ -229,7 +255,7 @@ const app = {
       this._slideshows[i] = setTimeout(
         (i) => {
           this.current = this.combine(
-            animation[currentFrame], //this.glitch(pages[this.currentPage], 50, Math.random() < 0.9),
+            animation[currentFrame], //this.glitch(app.pages[this.currentPage], 50, Math.random() < 0.9),
             animation[nextFrame],
             i,
           )
@@ -332,7 +358,7 @@ const app = {
       nextPage = direction === "next" ? this.nextPage : this.prevPage
     }
 
-    this.navigateFromTo(this.current, pages[nextPage], nextPage)
+    this.navigateFromTo(this.current, app.pages[nextPage], nextPage)
   },
   options() {
     // this.playSlideshow(contactFrames, 0)

@@ -6,9 +6,9 @@ import Contact3 from "../txt/contact3.txt.js"
 import Contact4 from "../txt/contact4.txt.js"
 import Contact5 from "../txt/contact5.txt.js"
 import Contact6 from "../txt/contact6.txt.js"
-
 //
 import Freelance from "../txt/freelance.txt.js"
+
 import Jobs from "../txt/jobs.txt.js"
 
 import jd from "../txt/jobs-jd.txt.js"
@@ -25,6 +25,29 @@ import Technologies from "../txt/technologies.txt.js"
 
 import Impressum from "../txt/impressum.txt.js"
 import Impressum2 from "../txt/impressum2.txt.js"
+
+// mobile versions
+import StartMobile from "../txt/start.mobile.txt.js"
+import Contact1Mobile from "../txt/contact1.mobile.txt.js"
+import FreelanceMobile from "../txt/freelance.mobile.txt.js"
+import JobsMobile from "../txt/jobs.mobile.txt.js"
+
+import jdMobile from "../txt/jobs-jd.mobile.txt.js"
+import ManMobile from "../txt/jobs-man.mobile.txt.js"
+import IoBMobile from "../txt/jobs-iob.mobile.txt.js"
+import TxnMobile from "../txt/jobs-txn.mobile.txt.js"
+import nOMobile from "../txt/jobs-no.mobile.txt.js"
+import dynoMobile from "../txt/jobs-dyno.mobile.txt.js"
+import KiggMobile from "../txt/jobs-kigg.mobile.txt.js"
+
+import EducationMobile from "../txt/education.mobile.txt.js"
+import SkillsMobile from "../txt/skills.mobile.txt.js"
+import TechnologiesMobile from "../txt/technologies.mobile.txt.js"
+
+import ImpressumMobile from "../txt/impressum.mobile.txt.js"
+import Impressum2Mobile from "../txt/impressum2.mobile.txt.js"
+import Impressum3Mobile from "../txt/impressum3.mobile.txt.js"
+import Impressum4Mobile from "../txt/impressum4.mobile.txt.js"
 
 const pages = [
   Start,
@@ -44,6 +67,29 @@ const pages = [
   Skills,
   Technologies,
 ]
+const pagesMobile = [
+  StartMobile,
+  Contact1Mobile,
+  FreelanceMobile,
+  JobsMobile,
+  //
+  jdMobile,
+  ManMobile,
+  IoBMobile,
+  TxnMobile,
+  nOMobile,
+  dynoMobile,
+  KiggMobile,
+  //
+  EducationMobile,
+  SkillsMobile,
+  TechnologiesMobile,
+
+  ImpressumMobile,
+  Impressum2Mobile,
+  Impressum3Mobile,
+  Impressum4Mobile,
+]
 const contactFrames = [
   // Contact,
   Contact1,
@@ -53,5 +99,15 @@ const contactFrames = [
   Contact5,
   Contact6,
 ]
+const contactFramesMobile = [Contact1Mobile]
+
 const impressumFrames = [Impressum, Impressum2]
+const impressumFramesMobile = [
+  ImpressumMobile,
+  Impressum2Mobile,
+  Impressum3Mobile,
+  Impressum4Mobile,
+]
+
 export { pages, contactFrames, impressumFrames }
+export { pagesMobile, contactFramesMobile, impressumFramesMobile }

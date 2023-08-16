@@ -1,0 +1,44 @@
+                                                        
+                                                        
+                                                        
+   ┌────────────────────────────────────────────────┐   
+   │         Impressum / Imprint                    │   
+   │        =====================                   │   
+   │ Angaben gemäß § 5 TMG:                         │   
+   │                                                │   
+   │ Alexander Schedler                             │   
+   │ freie Softwareentwicklung                      │   
+   │ Dillinger Straße 64a                           │   
+   │ 86637 Wertingen                                │   
+   │                                                │   
+   │ Telefon: +49 171 4123 929                      │   
+   │ E-Mail: alex@schedler.co                       │   
+   │                                                │   
+   │ Umsatzsteuer-ID gemäß §27 a UStG:              │   
+   │ DE 305 762 296                                 │   
+   └────────────────────────────────────────────────┘   
+   ┌────────────────────────────────────────────────┐   
+   │  Download CV                                   │   
+   │ =============                                  │   
+   │ If you like my CV you can download a copy as   │   
+   │ PDF by clicking the link below. Perfectly      │   
+   │ suited to print it out and show it to your     │   
+   │ friends and colleagues.                        │   
+   │                                                │   
+   │ Download CV as PDF                             │   
+   └────────────────────────────────────────────────┘   
+   ┌────────────────────────────────────────────────┐   
+   │  Semantic information                          │   
+   │ ======================                         │   
+   │ Version: {{version-------------}}              │   
+   │ Last update: {{update--------------}}          │   
+   │ Commit: {{short---------------}}               │   
+   └────────────────────────────────────────────────┘   
+   ┌───────────────┐┌──────────────┐┌───────────────┐   
+   │  -> Privacy   ││ -> Copyright ││ -> Disclaimer │   
+   └───────────────┘└──────────────┘└───────────────┘   
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        

@@ -24,7 +24,7 @@ export default `
            │                                                │░             Responsibilities                                                 
            │                                                │░             ----------------                                                 
            │                                                │░             Conception, engineering and product development of the           
-           │                                                │░             company‘s product – an indepentend IoT Configuration             
+           │                                                │░             company‘s product – an independent IoT Configuration             
            │                                                │░             Platform.                                                        
            │                                                │░                                                                              
            └────────────────────────────────────────────────┘░             Freelance projects for external clients and IT                   

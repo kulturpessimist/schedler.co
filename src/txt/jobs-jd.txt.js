@@ -4,9 +4,9 @@ export default `
                                                                                                                                             
                                                                                                                                             
                                                                             <strong>Johner Institut GmbH</strong> <a class="external-employer-link" href="https://www.johner-institute.com" target="_blank"> ↗ </a>                                            
-                                                                           =====================                                            
+                                                                           ======================                                           
                                                                                                                                             
-                                                                           Role: Senior Software Engineer                                   
+                                                                           Role: Senior Software Engineering Lead                           
                                                                            Dates: <i>February 2023 onwards</i>                                     
            ┌────────────────────────────────────────────────┐                                                                               
            │                                                │░                                                                              

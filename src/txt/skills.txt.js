@@ -12,8 +12,8 @@ export default `
          │                                                 │░░      │                                                 │░░                   
          │    Organisational skills                        │░░      │    Social skills                                │░░                   
          │    ---------------------                        │░░      │    -------------                                │░░                   
-         │    Entrepreneurial mind and decisive planner    │░░      │    Analytical and <mark>creative thinker</mark>              │░░                   
-         │    Eager learner of <mark>new technologies</mark>            │░░      │    Empathetic listener and reflective           │░░                   
+         │    Entrepreneurial mind and decisive planner    │░░      │    Analytical and <mark>creative</mark> <mark>thinker</mark>              │░░                   
+         │    Eager learner of <mark>new</mark> <mark>technologies</mark>            │░░      │    Empathetic listener and reflective           │░░                   
          │    Able to work well-structured also upon       │░░      │    discussant                                   │░░                   
          │    deadlines                                    │░░      │    Balanced personality even under pressure     │░░                   
          │                                                 │░░      │                                                 │░░                   

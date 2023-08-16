@@ -3,14 +3,17 @@ var asciify = require("./ascii.js")
 var options = {
   fit: "width",
   color: false,
-  width: 20,
-  height: 20,
-  chars: "    ●■",
+  width: 14,
+  height: 16,
+  //chars: "  .*##",
+  //chars: "    ●●",
+  //chars: "   .:~o*",
+  chars: "   .*#",
 }
 
 asciify(
-  "../../materials/johner.png", // Middlesex_University_Logo
-  options
+  "../../materials/Pictures/kigg.png", // Middlesex_University_Logo
+  options,
 )
   .then(function (asciified) {
     // Print asciified image to console
