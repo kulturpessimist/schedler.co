@@ -157,9 +157,9 @@ const enrichContent = (content, page) => {
   rules["contact5.txt"] = rules["contact0.txt"]
   rules["contact6.txt"] = rules["contact0.txt"]
   rules["Freelance.txt"] = rules["freelance.txt"]
-  rules["Start.txt"] = rules["start.txt"]
+  //rules["Start.txt"] = rules["start.txt"]
 
-  rules["Start.mobile.txt"] = rules["start.txt"]
+  rules["start.mobile.txt"] = rules["start.txt"]
   rules["contact1.mobile.txt"] = rules["contact0.txt"]
   rules["freelance.mobile.txt"] = rules["freelance.txt"]
   rules["jobs.mobile.txt"] = rules["jobs.txt"]
