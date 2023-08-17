@@ -23,7 +23,7 @@ export default `┌────────────────────�
 │       ║      <mark>management</mark>.                     ║░░     │
 │       ║                                      ║░░     │
 │       ║      Javascript (<mark>Frontend</mark> and        ║░░     │
-│       ║      Backend), HTML, CSS, Node,      ║░░     │
+│       ║      <mark>Backend</mark>), HTML, CSS, Node,      ║░░     │
 │       ║      GraphQL, CouchDB                ║░░     │
 │       ║                                      ║░░     │
 │       ║                                      ║░░     │

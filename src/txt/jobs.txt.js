@@ -13,7 +13,7 @@ export default `┌────────────────────�
 │                        │                        │░░   │                        │░░   │                        │░░                        │
 │                        │                        │░░   │                        │░░   │                        │░░                        │
 │                        │                        │░░   │                        │░░   │                        │░░                        │
-│                        │    <a href="/job/jd" data-navigo>Johner Institute</a>e    │◀────│  <a href="/job/man-es" data-navigo>MAN Energy Solutions</a>  │◀────│  <a href="/job/iob" data-navigo>Internet of Blah</a>      │◀─┐                       │
+│                        │    <a href="/job/jd" data-navigo>Johner Institut</a>     │◀────│  <a href="/job/man-es" data-navigo>MAN Energy Solutions</a>  │◀────│  <a href="/job/iob" data-navigo>Internet of Blah</a>      │◀─┐                       │
 │                        │                        │░░   │                        │░░   │                        │░░│                       │
 │                        │                        │░░   │                        │░░   │                        │░░│                       │
 │                        │                        │░░   │                        │░░   │                        │░░│                       │

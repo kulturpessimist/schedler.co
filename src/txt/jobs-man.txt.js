@@ -28,12 +28,12 @@ export default `
            │                                                │░             enterprise wide supergraph as foundation for multiple            
            │                                                │░             inter department applications with internal and external         
            └────────────────────────────────────────────────┘░             users.                                                           
-            ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░             Depending on the actual project, the responsibilities            
+            ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░                                                                              
+                                                                           Depending on the actual project, the responsibilities            
                                                                            are reaching from conceptualizing and architectural              
                                                                            devising, over frontend and backend development, through         
                                                                            to the initial operation in the enterprise cloud                 
                                                                            infrastructure.                                                  
-                                                                                                                                            
                                                                                                                                             
                                                                                                                                             
                                                                                                                                             

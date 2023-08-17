@@ -20,8 +20,8 @@ export default `
                                       ║        Internet application <mark>engineering</mark>,                     ║░░                                    
                                       ║        <mark>development</mark> and <mark>management</mark>.                           ║░░                                    
                                       ║                                                              ║░░                                    
-                                      ║        Javascript (<mark>Frontend</mark> and Backend),                    ║░░                                    
-                                      ║        HTML, CSS, <mark>Node, GraphQL</mark>, CouchDB                     ║░░                                    
+                                      ║        Javascript (<mark>Frontend</mark> and <mark>Backend</mark>),                    ║░░                                    
+                                      ║        HTML, CSS, Node, GraphQL, CouchDB                     ║░░                                    
                                       ║                                                              ║░░                                    
                                       ║                                                              ║░░                                    
                                       ║                                                              ║░░                                    

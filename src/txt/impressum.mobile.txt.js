@@ -31,8 +31,8 @@ export default `
    │  Semantic information                          │   
    │ ======================                         │   
    │ Version: {{version-------------}}              │   
-   │ Last update: 2023-08-16T11:33:36.777Z          │   
-   │ Commit: 4b53528                                │   
+   │ Last update: 2023-08-16T15:47:09.167Z          │   
+   │ Commit: 1417d63                                │   
    └────────────────────────────────────────────────┘   
    ┌───────────────┐┌──────────────┐┌───────────────┐   
    │  -> <a href="/impressum/1">Privacy</a>   ││ -> <a href="/impressum/2">Copyright</a> ││ -> <a href="/impressum/3">Disclaimer</a> │   

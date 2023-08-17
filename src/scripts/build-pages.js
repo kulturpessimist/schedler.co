@@ -12,7 +12,9 @@ const enrichContent = (content, page) => {
       development: "<mark>development</mark>",
       management: "<mark>management</mark>",
       Frontend: "<mark>Frontend</mark>",
-      "Node, GraphQL": "<mark>Node, GraphQL</mark>",
+      Backend: "<mark>Backend</mark>",
+      //Node: "<mark>Node</mark>",
+      //GraphQL: "<mark>GraphQL</mark>",
     },
     "contact0.txt": {
       "Alexander Schedler": "<strong>Alexander Schedler</strong>",
@@ -42,7 +44,7 @@ const enrichContent = (content, page) => {
     "jobs.txt": {
       "Alexander Schedler": "<strong>Alexander Schedler</strong>",
       "Curriculum Vitae": "<i>Curriculum Vitae</i>",
-      "Johner Institut": '<a href="/job/jd" data-navigo>Johner Institute</a>',
+      "Johner Institut": '<a href="/job/jd" data-navigo>Johner Institut</a>',
       "MAN Energy Solutions":
         '<a href="/job/man-es" data-navigo>MAN Energy Solutions</a>',
       "MAN Energy Sol.":
@@ -180,6 +182,7 @@ const enrichContent = (content, page) => {
   //
   console.log(page, "was", content.length)
   if (rules[page]) {
+    //content = content.replace(/(\w+)/gi, "<u>$1</u>")
     for (const key in rules[page]) {
       content = content.replace(key, rules[page][key])
     }

@@ -6,7 +6,7 @@ export default `
                                                         
          ┌────────────────┐                             
          │                │░░                           
-         │ <a href="/job/jd" data-navigo>Johner Institute</a>│◀────────────────────────┐   
+         │ <a href="/job/jd" data-navigo>Johner Institut</a>│◀────────────────────────┐   
          │                │░░                       │   
          └────────────────┘░░   ┌────────────────┐  │   
            ░░░░░░░░░░░░░░░░░░   │                │░░│   
