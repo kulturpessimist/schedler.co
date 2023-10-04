@@ -11,6 +11,7 @@ import Freelance from "../txt/freelance.txt.js"
 
 import Jobs from "../txt/jobs.txt.js"
 
+import certania from "../txt/jobs-certania.txt.js"
 import jd from "../txt/jobs-jd.txt.js"
 import Man from "../txt/jobs-man.txt.js"
 import IoB from "../txt/jobs-iob.txt.js"
@@ -32,6 +33,7 @@ import Contact1Mobile from "../txt/contact1.mobile.txt.js"
 import FreelanceMobile from "../txt/freelance.mobile.txt.js"
 import JobsMobile from "../txt/jobs.mobile.txt.js"
 
+import certaniaMobile from "../txt/jobs-certania.mobile.txt.js"
 import jdMobile from "../txt/jobs-jd.mobile.txt.js"
 import ManMobile from "../txt/jobs-man.mobile.txt.js"
 import IoBMobile from "../txt/jobs-iob.mobile.txt.js"
@@ -55,6 +57,7 @@ const pages = [
   Freelance,
   Jobs,
 
+  certania,
   jd,
   Man,
   IoB,
@@ -73,6 +76,7 @@ const pagesMobile = [
   FreelanceMobile,
   JobsMobile,
   //
+  certaniaMobile,
   jdMobile,
   ManMobile,
   IoBMobile,

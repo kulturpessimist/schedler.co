@@ -1,12 +1,14 @@
 export default `                                                        
                                                         
                                                         
-                                                        
-                                                        
-                                                        
-         ┌────────────────┐                             
-         │                │░░                           
-         │ <a href="/job/jd" data-navigo>Johner Institut</a>│◀────────────────────────┐   
+                                ┌────────────────┐      
+                                │                │░░    
+      ┌────────────────────────▶│ <a href="/job/certania" data-navigo>Certania</a>       │░░    
+      │                         │                │░░    
+      │                         └────────────────┘░░    
+      │  ┌────────────────┐       ░░░░░░░░░░░░░░░░░░    
+      │  │                │░░                           
+      └──│ <a href="/job/jd" data-navigo>Johner Institut</a>│◀────────────────────────┐   
          │                │░░                       │   
          └────────────────┘░░   ┌────────────────┐  │   
            ░░░░░░░░░░░░░░░░░░   │                │░░│   
@@ -34,8 +36,6 @@ export default `
          │                │░░                           
          └────────────────┘░░                           
            ░░░░░░░░░░░░░░░░░░                           
-                                                        
-                                                        
                                   <strong>Alexander Schedler</strong>    
                                     <i>Curriculum Vitae</i>    
                                                         

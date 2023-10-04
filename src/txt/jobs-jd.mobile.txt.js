@@ -15,7 +15,7 @@ export default `┌────────────────────�
 │   ======================                             │
 │                                                      │
 │   Role: Senior Software Engineering Lead             │
-│   Dates: <i>February 2023 onwards</i>                       │
+│   Dates: February 2023 – December 2023               │
 │                                                      │
 │   Main activities                                    │
 │   ---------------                                    │

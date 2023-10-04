@@ -1,7 +1,7 @@
 {
   "name": "website-schedler-co",
   "description": "Curriculum vitae (CV) | Alexander Schedler: Internet application engineering, development and management. Javascript (Frontend and Backend), HTML, CSS, Node, CouchDB",
-  "version": "7.4.1",
+  "version": "7.5.0",
   "license": "CC-BY-NC-ND",
   "repository": {
     "type": "git",
@@ -9,7 +9,7 @@
   },
   "browserslist": "> 0.2%",
   "engines": {
-    "node": "18",
+    "node": "18.18.0",
     "npm": "9"
   },
   "scripts": {
@@ -34,11 +34,11 @@
     "@parcel/packager-raw-url": "2.9.3",
     "@parcel/transformer-webmanifest": "2.9.3",
     "asciify-image": "^0.1.10",
-    "eslint": "^8.47.0",
+    "eslint": "^8.50.0",
     "eslint-plugin-vue": "^9.17.0",
     "isomorphic-git": "^1.24.5",
     "parcel": "2.9.3",
-    "prettier": "3.0.2",
-    "serve": "^14.2.0"
+    "prettier": "3.0.3",
+    "serve": "^14.2.1"
   }
 }

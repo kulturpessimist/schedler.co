@@ -25,14 +25,14 @@ export default `
    │ suited to print it out and show it to your     │   
    │ friends and colleagues.                        │   
    │                                                │   
-   │ <a href="https://literally.download/f/Nw07wu" target="_blank">Download CV as PDF</a>                             │   
+   │ <a href="https://literally.download/f/dm21ED" target="_blank">Download CV as PDF</a>                             │   
    └────────────────────────────────────────────────┘   
    ┌────────────────────────────────────────────────┐   
    │  Semantic information                          │   
    │ ======================                         │   
    │ Version: {{version-------------}}              │   
-   │ Last update: 2023-08-16T15:47:09.167Z          │   
-   │ Commit: 1417d63                                │   
+   │ Last update: 2023-10-04T12:19:59.124Z          │   
+   │ Commit: 0e9f15b                                │   
    └────────────────────────────────────────────────┘   
    ┌───────────────┐┌──────────────┐┌───────────────┐   
    │  -> <a href="/impressum/1">Privacy</a>   ││ -> <a href="/impressum/2">Copyright</a> ││ -> <a href="/impressum/3">Disclaimer</a> │   
