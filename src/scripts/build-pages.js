@@ -18,8 +18,8 @@ const enrichContent = (content, page) => {
       engineering: "<mark>engineering</mark>",
       development: "<mark>development</mark>",
       management: "<mark>management</mark>",
-      Frontend: "<mark>Frontend</mark>",
-      Backend: "<mark>Backend</mark>",
+      //Frontend: "<mark>Frontend</mark>",
+      //Backend: "<mark>Backend</mark>",
       //Node: "<mark>Node</mark>",
       //GraphQL: "<mark>GraphQL</mark>",
     },
@@ -38,7 +38,7 @@ const enrichContent = (content, page) => {
       "/Alex_Schedler":
         '<a href="https://www.xing.com/profile/Alex_Schedler" target="_blank">/Alex_Schedler</a>',
     },
-    "freelance.txt": {
+    /* "freelance.txt": {
       "Alexander Schedler": "<strong>Alexander Schedler</strong>",
       "freelance software developer": "<i>freelance software developer</i>",
       "freelance work": "<mark>freelance work</mark>",
@@ -46,7 +46,7 @@ const enrichContent = (content, page) => {
       JavaScript: "<mark>JavaScript</mark>",
       CouchDB: "<mark>CouchDB</mark>",
       "Just write me": '<a href="mailto:alex@schedler.co">Just write me</a>',
-    },
+    }, */
 
     "jobs.txt": {
       "Alexander Schedler": "<strong>Alexander Schedler</strong>",
@@ -119,11 +119,11 @@ const enrichContent = (content, page) => {
       German: "<mark>German</mark>",
       culture: "<mark>culture</mark>",
     },
-    "technologies.txt": {
+    /* "technologies.txt": {
       "Technologies Overview": "<strong>Technologies Overview</strong>",
       "Experience and Expertise (extract)":
         "<i>Experience and Expertise (extract)</i>",
-    },
+    }, */
 
     "impressum.txt": {
       "+49 171 4123 929": '<a href="tel:+491714123929">+49 171 4123 929</a>',

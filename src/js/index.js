@@ -319,11 +319,11 @@ const app = {
     const speed = 20
     let iv
     let ivc = 0
-    let ivt = ["▓", "▒", "░"] //"–/|\\".split("")
+    let ivt = ["", "", "", "", "", ""] //"–/|\\".split("")
 
     iv = setInterval(() => {
       this.loader = ivt[ivc++ % ivt.length]
-    }, 100)
+    }, 75)
 
     const lines = this.current.split("\n").length
     for (let i = 0; i <= lines; i++) {

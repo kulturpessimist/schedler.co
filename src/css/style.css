@@ -6,16 +6,15 @@
 
 @media (orientation: portrait) {
   :root {
-    --size: calc(2pt + 1.25vw);
+    --size: calc(4pt + 1.5vw);
   }
 }
 
 :root {
-  --size: calc(4pt + 1vh);
+  /* --size: calc(4pt + 1vh); */
+  --buttonSize: 18px;
   /*   
-  --main-color: #f86b2e;
   --accent-color: #d2f56f;
-  --text-color: #262523; 
   */
   --main-color: #0000ff;
   --accent-color: #000066;
@@ -23,7 +22,7 @@
 }
 
 :root.dark {
-  --size: calc(4pt + 1vh);
+  /* --size: calc(4pt + 1vh); */
   --main-color: #000000;
   --accent-color: #f86b2e;
   --text-color: #eeeeee;
@@ -39,7 +38,7 @@ body {
   background-color: var(--main-color);
   color: var(--text-color);
   font-size: var(--size);
-  font-family: "JetBrains Mono", monospace;
+  font-family: ml, monospace;
   font-weight: 400;
 
   display: flex;
@@ -65,24 +64,12 @@ a:any-link {
 
 pre {
   margin: auto;
-  font-family: "JetBrains Mono";
+  font-family: ml, monospace;
   font-weight: 400;
   display: inline-block;
   cursor: default;
 }
 
-/* @font-face {
-  font-family: "Cartograph CF Regular Italic";
-  src: url("https://db.onlinewebfonts.com/t/7882dcf2d5328b35adef2f801f192ace.woff2")
-    format("woff2");
-  font-feature-settings: "ss04" on;
-}
-
-i {
-  font-feature-settings: "ss04" on;
-  font-family: "Cartograph CF Regular Italic";
-}
- */
 mark {
   background-color: transparent;
   color: inherit;
@@ -100,36 +87,38 @@ strong {
 
 #back,
 #forward {
+  font-size: 1.5rem;
+  font-weight: 600;
+
   text-decoration: none;
-  line-height: 1.6rem;
   cursor: pointer;
 }
 
 #options {
-  font-size: 16px;
+  font-size: 1.5rem;
   font-weight: 600;
-  line-height: 8px;
   position: absolute;
-  top: 20px;
-  left: 28px;
+  text-align: left;
+
+  top: 24px;
+  left: 24px;
   margin: 0;
   cursor: pointer;
 }
 .toggleDarkMode {
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 16px;
+  font-size: 1.5rem;
+  font-weight: 600;
   position: absolute;
   text-align: right;
-  top: 28px;
-  right: 28px;
+  top: 24px;
+  right: 24px;
   margin: 0;
   cursor: pointer;
 }
 .toggleDarkMode.darkActive {
-  font-size: 38px;
-  top: 24px;
-  right: 0px;
+  /* font-size: 38px; */
+  /* top: 24px;
+  right: 0px; */
 }
 .dark .darkActive {
   display: none;
@@ -142,20 +131,18 @@ strong {
 }
 
 #navigation {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.6rem;
+  font-size: 1.5rem;
+  line-height: 1rem;
   position: absolute;
-  bottom: 20px;
-  left: 0px;
+  bottom: 24px;
+  left: 24px;
   margin: 0;
 }
 
 @media (orientation: portrait) {
   #navigation {
     font-size: 16px;
-    font-weight: 700;
-    line-height: 1.6rem;
+    font-weight: 600;
     position: absolute;
     bottom: 20px;
     margin-left: 50vw;
@@ -165,7 +152,7 @@ strong {
 
 #options,
 #navigation {
-  left: 28px;
+  left: 24px;
   margin: 0;
   cursor: pointer;
 }

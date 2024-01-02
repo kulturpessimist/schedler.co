@@ -1,70 +1,44 @@
-                                                                                
-                                                                                
-                                                                                
-                                                                                
-                                                                                
-                                                                                
-                                                                                
-                                                                                
-                                                                                
-               ┌────────────────────────────────────────────────┐               
-               │                                                │░              
-               │                                                │░              
-               │                                                │░              
-               │                                                │░              
-               │                                                │░              
-               │                                                │░              
-               │        KK    KK  II    GGGG~.    GGGG~.        │░              
-               │        KK  KK    II  GGGG  ~.  GGG.  ~.        │░              
-               │        KKKKK.    II  GGGG      GGG.            │░              
-               │        KK  KK    II  GGGG..GG  GGGG..GG        │░              
-               │        KK  KKKK  II  GGGG  GG  GGG.  GG        │░              
-               │        KK    KK  II    GGGGG.    GGGGG.        │░              
-               │                                                │░              
-               │                                                │░              
-               │                                                │░              
-               │                                                │░              
-               │                                                │░              
-               │                                                │░              
-               └────────────────────────────────────────────────┘░              
-                ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░              
-                                                                                
-                                                                                
-                                                                                
-                                                                                
-                                                                                
-           KIGG GmbH                                                            
-          ===========                                                           
-                                                                                
-          Role: Multimedia Producer, Project Manager                            
-          Dates: August 2002 - November 2004                                    
-                                                                                
-                                                                                
-          Main activities                                                       
-          ---------------                                                       
-          Project management.                                                   
-                                                                                
-          Web design.                                                           
-                                                                                
-          Multimedia Production (CD-ROM).                                       
-                                                                                
-                                                                                
-          Responsibilities                                                      
-          ----------------                                                      
-          Started as a multimedia producer with the campaign                    
-          documentation of the 2002 mayoral election in Augsburg.               
-                                                                                
-          Worked on web development projects and a candidates state             
-          campaign for the elections in 2003.                                   
-                                                                                
-          Responsible for municipal content management system                   
-          projects.                                                             
-                                                                                
-                                                                                
-                                                                                
-                                                                                
-                                                                                
-                                                                                
-                                                                                
-                                                                                
-                                                                                
+┌──────────────────────────────────────────────────────┐
+│                                                      │
+│                                                      │
+│                                                      │
+│                                                      │
+│                                                      │
+│                                                      │
+│             kk  kk  ii   gggg  gggg                  │
+│             kk**    ii gg      **                    │
+│             kk  kk  ii gg  **  **  gg                │
+│             kk  kk  ii   gggg  gggggg                │
+│                                                      │
+│                                                      │
+│                                                      │
+│                                                      │
+│                                                      │
+│    KIGG GmbH                                         │
+│   ===========                                        │
+│                                                      │
+│   Role: Multimedia Producer, Project Manager         │
+│   Dates: August 2002 - November 2004                 │
+│                                                      │
+│   Main activities                                    │
+│   ---------------                                    │
+│   * Project management                               │
+│   * Web design                                       │
+│   * Multimedia Production (CD-ROM)                   │
+│                                                      │
+│   Responsibilities                                   │
+│   ----------------                                   │
+│   Started as a multimedia producer with the          │
+│   campaign documentation of the 2002 mayoral         │
+│   election in Augsburg.                              │
+│                                                      │
+│   Worked on web development projects and a           │
+│   candidates state campaign for the elections in     │
+│   2003.                                              │
+│                                                      │
+│   Responsible for municipal content management       │
+│   system projects.                                   │
+│                                                      │
+│                                                      │
+│                                                      │
+└──────────────────────────────────────────────────────┘

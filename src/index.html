@@ -9,7 +9,7 @@
     </title>
     <meta
       name="description"
-      content="Curriculum vitae (CV) | Alexander Schedler: Internet application engineering, development and management. Javascript (Frontend and Backend), HTML, CSS, Node, GraphQL, CouchDB"
+      content="Curriculum vitae (CV) | Alexander Schedler: Internet application engineering, development and management."
     />
     <meta name="author" content="Alexander Schedler" />
     <link rel="canonical" href="https://www.schedler.pro/" />
@@ -29,7 +29,7 @@
     />
     <meta
       property="og:description"
-      content="Curriculum vitae (CV) | Alexander Schedler: Internet application engineering, development and management. Javascript (Frontendand Backend), HTML, CSS, Node, CouchDB"
+      content="Curriculum vitae (CV) | Alexander Schedler: Internet application engineering, development and management."
     />
     <meta property="og:updated_time" content="2023-08-16T08:00:00" />
     <meta property="og:image" content="./images/social-card.png" />
@@ -42,7 +42,7 @@
     />
     <meta
       name="twitter:description"
-      content="Curriculum vitae (CV) | Alexander Schedler: Internet application engineering, development and management. Javascript (Frontend and Backend), HTML, CSS, Node, GraphQL, CouchDB"
+      content="Curriculum vitae (CV) | Alexander Schedler: Internet application engineering, development and management."
     />
     <meta name="twitter:image" content="./images/social-card.png" />
     <base href="/" />
@@ -54,7 +54,8 @@
     <link rel="manifest" href="./manifest.webmanifest" />
     <!-- STYLES -->
     <style>
-      @import "./fonts/JetBrainsMono/fonts.css";
+      /* @import "./fonts/JetBrainsMono/fonts.css"; */
+      @import "fonts/Monolisa/monolisa.css";
       @import "./css/style.css";
     </style>
   </head>
@@ -65,22 +66,20 @@
     </main>
 
     <pre id="options" @click="options">
-__
-__
-__
+[=]
     </pre>
 
     <pre class="toggleDarkMode lightActive" @click="toggleDarkMode">
-☀︎
+[☼]
     </pre>
     <pre class="toggleDarkMode darkActive" @click="toggleDarkMode">
-☁︎
+[☾]
     </pre>
 
     <pre id="navigation">
-<a id="back" :href="`/page/${prevPage}`" data-navigo>&lt;--</a> <span id="iLoader">{{loader}}</span> <a id="forward" :href="`/page/${nextPage}`" data-navigo>--&gt;</a>
+<a id="back" :href="`/page/${prevPage}`" data-navigo>[←]</a> <span id="iLoader">{{loader}}</span> <a id="forward" :href="`/page/${nextPage}`" data-navigo>[→]</a>
     </pre>
-
+  
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
