@@ -1,8 +1,15 @@
 const fs = require("fs/promises")
 const version = require("../version.json")
 
-const path = "./src/txt/" /* process.argv[2] ||  */
+const path = "./src/txt/"
 
+const slug = (str) => {
+  return str
+    .split(".")[0]
+    .toLowerCase()
+    .replace(/[^a-zA-Z0-9]/g, " ")
+    .replace(/[^\w-]+/g, "_")
+}
 const enrichContent = (content, page) => {
   const rules = {
     "start.txt": {
@@ -187,31 +194,39 @@ const enrichContent = (content, page) => {
   rules["impressum3.mobile.txt"] = rules["impressum.mobile.txt"]
   rules["impressum4.mobile.txt"] = rules["impressum.mobile.txt"]
   //
-  console.log(page, "was", content.length)
+  // console.log(page, "was", content.length)
   if (rules[page]) {
     //content = content.replace(/(\w+)/gi, "<u>$1</u>")
     for (const key in rules[page]) {
       content = content.replace(key, rules[page][key])
     }
   }
-  console.log("is", content.length)
+  // console.log("is", content.length)
   return content
 }
 
 const main = async () => {
-  const filenames = await fs.readdir(path)
+  for (let f of ["mobile", "desktop"]) {
+    const filenames = await fs.readdir(path + "/" + f)
 
-  for (const filename of filenames) {
-    // console.log(path + filename)
-    if (filename.endsWith(".txt")) {
-      let content = await fs.readFile(path + filename, "utf-8")
-      content = enrichContent(content, filename)
-      await fs.writeFile(
-        path + filename + ".js",
-        `export default \`${content}\``,
-      )
-      //console.log(path + filename, content.length)
+    let pages = []
+    let exports = []
+    for (const filename of filenames) {
+      // console.log(path + filename)
+      if (filename.endsWith(".txt")) {
+        let content = await fs.readFile([path, f, filename].join("/"), "utf-8")
+        content = enrichContent(content, filename)
+        //console.log(path + filename, content.length)
+        pages.push(`export const ${f[0]}_${slug(filename)} = \n\`${content}\``)
+        exports.push(`${f[0]}_${slug(filename)}`)
+      }
     }
+    console.log([path, f + ".js"].join(""))
+    //console.log("export default [\n" + exports.join(",\n") + "\n]")
+    await fs.writeFile(
+      [path, f + ".js"].join("/"),
+      `${pages.join("; \n\n")}; \n\nexport default [\n${exports.join(",\n")}\n]`
+    )
   }
 }
 
