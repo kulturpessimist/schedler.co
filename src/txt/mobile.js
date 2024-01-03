@@ -241,9 +241,9 @@ export const m_impressum =
    ┌────────────────────────────────────────────────┐   
    │  Semantic information                          │   
    │ ======================                         │   
-   │ Version: 7.6.0-163                             │   
-   │ Last update: 2024-01-02T15:00:19.825Z          │   
-   │ Commit: 4ff8b40                                │   
+   │ Version: 7.6.1-165                             │   
+   │ Last update: 2024-01-03T19:17:56.228Z          │   
+   │ Commit: c5e4d77                                │   
    └────────────────────────────────────────────────┘   
    ┌───────────────┐┌──────────────┐┌───────────────┐   
    │  -> Privacy   ││ -> Copyright ││ -> Disclaimer │   
@@ -393,372 +393,372 @@ export const m_impressum4 =
                                                         `; 
 
 export const m_jobs_certania = 
-`┌──────────────────────────────────────────────────────┐
-│                                                      │
-│                                                      │
-│                      ....CC....                      │
-│                    ..CCCCCCCCCC..                    │
-│                    CCCCCCCCCCCCCC                    │
-│                    CCCCCCCCCCCCCC                    │
-│                    CCCCCCCCCCCCCC                    │
-│                    ..CCCCCCCCCC..                    │
-│                    ..CCCCCCCCCC..                    │
-│                  ..CCCCCCCCCCCCCC..                  │
-│                ..CCCCCCCCCCCCCCCCCC..                │
-│                  ..CCCCCCCCCCCCCC..                  │
-│                    ......CC......                    │
-│                                                      │
-│    <strong>Certania GmbH</strong> <a class="external-employer-link" href="https://certania.com/" target="_blank"> ↗ </a>                                     │
-│   ===============                                    │
-│                                                      │
-│   Role: Director of Technology                       │
-│   Dates: <i>January 2024 onwards</i>                        │
-│                                                      │
-│   Main activities                                    │
-│   ---------------                                    │
-│   * Establishing and observing of an IT strategy     │
-│   for the company and affiliated firms               │
-│   * Measuring the impact of technology use           │
-│   * Technology consulting                            │
-│                                                      │
-│   Responsibilities                                   │
-│   ----------------                                   │
-│   Establishment of a technological service offering  │
-│   (tools, assistance) for affiliated companies as    │
-│   well as identification and implementation of       │
-│   value creation potential through technology at     │
-│   affiliated companies.                              │
-│                                                      │
-│                                                      │
-│                                                      │
-│                                                      │
-│                                                      │
-│                                                      │
-│                                                      │
-│                                                      │
-└──────────────────────────────────────────────────────┘`; 
+`                                                        
+                                                        
+                                                        
+                       ....CC....                       
+                     ..CCCCCCCCCC..                     
+                     CCCCCCCCCCCCCC                     
+                     CCCCCCCCCCCCCC                     
+                     CCCCCCCCCCCCCC                     
+                     ..CCCCCCCCCC..                     
+                     ..CCCCCCCCCC..                     
+                   ..CCCCCCCCCCCCCC..                   
+                 ..CCCCCCCCCCCCCCCCCC..                 
+                   ..CCCCCCCCCCCCCC..                   
+                     ......CC......                     
+                                                        
+                                                        
+      <strong>Certania GmbH</strong> <a class="external-employer-link" href="https://certania.com/" target="_blank"> ↗ </a>                                     
+     ===============                                    
+                                                        
+     Role: Director of Technology                       
+     Dates: <i>January 2024 onwards</i>                        
+                                                        
+     Main activities                                    
+     ---------------                                    
+     * Establishing and observing of an IT strategy     
+     for the company and affiliated firms               
+     * Measuring the impact of technology use           
+     * Technology consulting                            
+                                                        
+     Responsibilities                                   
+     ----------------                                   
+     Establishment of a technological service           
+     offering (tools, assistance) for affiliated        
+     companies as well as identification and            
+     implementation of value creation potential         
+     through technology at affiliated companies.        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        `; 
 
 export const m_jobs_dyno = 
-`┌──────────────────────────────────────────────────────┐
-│                                                      │
-│                                                      │
-│                                                      │
-│                           **##**                     │
-│                     **####****##                     │
-│                   ####**      ##**                   │
-│               ****####****    **##                   │
-│               **  **##    **    ##                   │
-│               **    ##    **    ##**                 │
-│               **    ****  **####**                   │
-│               **      ######**                       │
-│               **      ******                         │
-│               ************                           │
-│                                                      │
-│                                                      │
-│    <strong>Dynomedia GmbH</strong> <a class="external-employer-link" href="https://web.archive.org/web/20070208042813/http://www.dynomedia.com:80/de/" target="_blank"> ↗ </a>                                    │
-│   ================                                   │
-│                                                      │
-│   Role: Web Developer                                │
-│   Dates: <i>June 2005 - July 2008</i>                       │
-│                                                      │
-│   Main activities                                    │
-│   ---------------                                    │
-│   * Web design and development                       │
-│                                                      │
-│   Responsibilities                                   │
-│   ----------------                                   │
-│   Worked in an advertising agency for customers in   │
-│   different industries (e.g. Fujitsu Siemens         │
-│   Computers, Sony Computer Entertainment Europe)     │
-│                                                      │
-│   Developed an online file management system as      │
-│   second mainstay for the agency.                    │
-│                                                      │
-│                                                      │
-│                                                      │
-│                                                      │
-│                                                      │
-│                                                      │
-│                                                      │
-│                                                      │
-│                                                      │
-└──────────────────────────────────────────────────────┘`; 
+`                                                        
+                                                        
+                                                        
+                                                        
+                            **##**                      
+                      **####****##                      
+                    ####**      ##**                    
+                ****####****    **##                    
+                **  **##    **    ##                    
+                **    ##    **    ##**                  
+                **    ****  **####**                    
+                **      ######**                        
+                **      ******                          
+                ************                            
+                                                        
+                                                        
+                                                        
+      <strong>Dynomedia GmbH</strong> <a class="external-employer-link" href="https://web.archive.org/web/20070208042813/http://www.dynomedia.com:80/de/" target="_blank"> ↗ </a>                                    
+     ================                                   
+                                                        
+     Role: Web Developer                                
+     Dates: <i>June 2005 - July 2008</i>                       
+                                                        
+     Main activities                                    
+     ---------------                                    
+     * Web design and development                       
+                                                        
+     Responsibilities                                   
+     ----------------                                   
+     Worked in an advertising agency for customers in   
+     different industries (e.g. Fujitsu Siemens         
+     Computers, Sony Computer Entertainment Europe)     
+                                                        
+     Developed an online file management system as      
+     second mainstay for the agency.                    
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        `; 
 
 export const m_jobs_iob = 
-`┌──────────────────────────────────────────────────────┐
-│                                                      │
-│                                                      │
-│                                                      │
-│                                                      │
-│                                                      │
-│              ^^^^^^            ^^^^^^                │
-│             ^^^^^^^^          ^^^^^^^^               │
-│           ^^^^^^^^^^^       ^^^^^^^^^^^              │
-│         ^^^^^^^^^^^^^^    ^^^^^^  ^^^^^^             │
-│        ^^^^^^  ^^^^^^^^  ^^^^^^  ^^^^^^^^            │
-│                                                      │
-│                                                      │
-│                                                      │
-│                                                      │
-│    <strong>Internet of Blah / PURR</strong>                            │
-│   =========================                          │
-│                                                      │
-│   Role: Frontend / Design / CEO                      │
-│   Dates: <i>June 2016 – December 2019</i>                   │
-│                                                      │
-│   Main activities                                    │
-│   ---------------                                    │
-│   * User Experience and interaction design           │
-│   * Cross platform software development and          │
-│     application engineering.                         │
-│   * Web application and architectural consulting     │
-│                                                      │
-│   Responsibilities                                   │
-│   ----------------                                   │
-│   Conception, engineering and product development    │
-│   of the company‘s product – an independent IoT      │
-│   Configuration Platform.                            │
-│                                                      │
-│   Freelance projects for external clients and IT     │
-│   consulting. Corporate and Business Development of  │
-│   the startup as a co-founder.                       │
-│                                                      │
-│                                                      │
-│                                                      │
-│                                                      │
-│                                                      │
-│                                                      │
-└──────────────────────────────────────────────────────┘`; 
+`                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+               ^^^^^^            ^^^^^^                 
+              ^^^^^^^^          ^^^^^^^^                
+            ^^^^^^^^^^^       ^^^^^^^^^^^               
+          ^^^^^^^^^^^^^^    ^^^^^^  ^^^^^^              
+         ^^^^^^  ^^^^^^^^  ^^^^^^  ^^^^^^^^             
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+      <strong>Internet of Blah / PURR</strong>                            
+     =========================                          
+                                                        
+     Role: Frontend / Design / CEO                      
+     Dates: <i>June 2016 – December 2019</i>                   
+                                                        
+     Main activities                                    
+     ---------------                                    
+     * User Experience and interaction design           
+     * Cross platform software development and          
+       application engineering.                         
+     * Web application and architectural consulting     
+                                                        
+     Responsibilities                                   
+     ----------------                                   
+     Conception, engineering and product development    
+     of the company‘s product – an independent IoT      
+     Configuration Platform.                            
+                                                        
+     Freelance projects for external clients and IT     
+     consulting. Corporate and Business Development of  
+     the startup as a co-founder.                       
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        `; 
 
 export const m_jobs_jd = 
-`┌──────────────────────────────────────────────────────┐
-│                                                      │
-│                                                      │
-│                      ●●                              │
-│                      ●●                              │
-│                      ●●  ●●                          │
-│                      ●●  ●●                          │
-│                                                      │
-│                      ●●  ●●                          │
-│                      ●●  ●●                          │
-│                          ●●                          │
-│                          ●●                          │
-│                                                      │
-│    <strong>Johner Institut GmbH</strong> <a class="external-employer-link" href="https://www.johner-institute.com" target="_blank"> ↗ </a>                              │
-│   ======================                             │
-│                                                      │
-│   Role: Senior Software Engineering Lead             │
-│   Dates: February 2023 – December 2023               │
-│                                                      │
-│   Main activities                                    │
-│   ---------------                                    │
-│   * Technology consulting                            │
-│   * Software development and application             │
-│   engineering                                        │
-│   * Conceptual design, architecture and development  │
-│     of B2B applications                              │
-│                                                      │
-│   Responsibilities                                   │
-│   ----------------                                   │
-│   Working in an agile team to get the first          │
-│   "Realtime Compliance System" up and running to     │
-│   disrupt the working routines of medical device     │
-│   manufacturers.                                     │
-│                                                      │
-│   With the platform we help to overcome regulatory   │
-│   challenges and bring safe products to market       │
-│   faster.                                            │
-│                                                      │
-│                                                      │
-│                                                      │
-│                                                      │
-│                                                      │
-│                                                      │
-└──────────────────────────────────────────────────────┘`; 
+`                                                        
+                                                        
+                                                        
+                       ●●                               
+                       ●●                               
+                       ●●  ●●                           
+                       ●●  ●●                           
+                                                        
+                       ●●  ●●                           
+                       ●●  ●●                           
+                           ●●                           
+                           ●●                           
+                                                        
+      <strong>Johner Institut GmbH</strong> <a class="external-employer-link" href="https://www.johner-institute.com" target="_blank"> ↗ </a>                              
+     ======================                             
+                                                        
+     Role: Senior Software Engineering Lead             
+     Dates: <i>February 2023 - December 2023</i>               
+                                                        
+     Main activities                                    
+     ---------------                                    
+     * Technology consulting                            
+     * Software development and application             
+     engineering                                        
+     * Conceptual design, architecture and              
+     development                                        
+       of B2B applications                              
+                                                        
+     Responsibilities                                   
+     ----------------                                   
+     Working in an agile team to get the first          
+     "Realtime Compliance System" up and running to     
+     disrupt the working routines of medical device     
+     manufacturers.                                     
+                                                        
+     With the platform we help to overcome              
+     regulatory challenges and bring safe products      
+     to market faster.                                  
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        `; 
 
 export const m_jobs_kigg = 
-`┌──────────────────────────────────────────────────────┐
-│                                                      │
-│                                                      │
-│                                                      │
-│                                                      │
-│                                                      │
-│                                                      │
-│             kk  kk  ii   gggg  gggg                  │
-│             kk**    ii gg      **                    │
-│             kk  kk  ii gg  **  **  gg                │
-│             kk  kk  ii   gggg  gggggg                │
-│                                                      │
-│                                                      │
-│                                                      │
-│                                                      │
-│                                                      │
-│    <strong>KIGG GmbH</strong> <a class="external-employer-link" href="https://www.kigg.de" target="_blank"> ↗ </a>                                         │
-│   ===========                                        │
-│                                                      │
-│   Role: Multimedia Producer, Project Manager         │
-│   Dates: <i>August 2002 - November 2004</i>                 │
-│                                                      │
-│   Main activities                                    │
-│   ---------------                                    │
-│   * Project management                               │
-│   * Web design                                       │
-│   * Multimedia Production (CD-ROM)                   │
-│                                                      │
-│   Responsibilities                                   │
-│   ----------------                                   │
-│   Started as a multimedia producer with the          │
-│   campaign documentation of the 2002 mayoral         │
-│   election in Augsburg.                              │
-│                                                      │
-│   Worked on web development projects and a           │
-│   candidates state campaign for the elections in     │
-│   2003.                                              │
-│                                                      │
-│   Responsible for municipal content management       │
-│   system projects.                                   │
-│                                                      │
-│                                                      │
-│                                                      │
-└──────────────────────────────────────────────────────┘`; 
+`                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+              kk  kk  ii   gggg  gggg                   
+              kk**    ii gg      **                     
+              kk  kk  ii gg  **  **  gg                 
+              kk  kk  ii   gggg  gggggg                 
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+      <strong>KIGG GmbH</strong> <a class="external-employer-link" href="https://www.kigg.de" target="_blank"> ↗ </a>                                         
+     ===========                                        
+                                                        
+     Role: Multimedia Producer, Project Manager         
+     Dates: <i>August 2002 - November 2004</i>                 
+                                                        
+     Main activities                                    
+     ---------------                                    
+     * Project management                               
+     * Web design                                       
+     * Multimedia Production (CD-ROM)                   
+                                                        
+     Responsibilities                                   
+     ----------------                                   
+     Started as a multimedia producer with the          
+     campaign documentation of the 2002 mayoral         
+     election in Augsburg.                              
+                                                        
+     Worked on web development projects and a           
+     candidates state campaign for the elections in     
+     2003.                                              
+                                                        
+     Responsible for municipal content management       
+     system projects.                                   
+                                                        
+                                                        
+                                                        `; 
 
 export const m_jobs_man = 
-`┌──────────────────────────────────────────────────────┐
-│                                                      │
-│                                                      │
-│                   ..****##****..                     │
-│                 **##**......**##**                   │
-│               ##**              **##                 │
-│             ##**                  **##               │
-│           ..##                      ##..             │
-│           ##..                      ..##             │
-│           ##**MM..MM....AA....NN..NN**##             │
-│           ####MMMMMM..AA##AA..NNN*NN**##             │
-│           ****MM..MM**AA**AA**NN.NNN****             │
-│                                                      │
-│    <strong>MAN Energy Solutions SE</strong> <a class="external-employer-link" href="https://www.man-es.com" target="_blank"> ↗ </a>                           │
-│   =========================                          │
-│                                                      │
-│   Role: Senior Software Engineer                     │
-│   Dates: <i>June 2018 – January 2023</i>                    │
-│                                                      │
-│   Main activities                                    │
-│   ---------------                                    │
-│   * Software development and application             │
-│   engineering                                        │
-│   * UI/UX Design and consulting                      │
-│   * Conceptual design and development of enterprise  │
-│     applications                                     │
-│   * Agile Mentor / SCRUM Master                      │
-│                                                      │
-│   Responsibilities                                   │
-│   ----------------                                   │
-│   Working in an agile SCRUM team on different, web   │
-│   based projects in the enterprise sphere. Creation  │
-│   of an enterprise wide supergraph as foundation     │
-│   for multiple inter department applications with    │
-│   internal and external users.                       │
-│   From conceptualizing and architectural devising,   │
-│   over frontend and backend development, through to  │
-│   the initial operation in the enterprise cloud      │
-│   infrastructure.                                    │
-│   Also acting as Agile Mentor / SCRUM Master.        │
-│                                                      │
-│                                                      │
-│                                                      │
-└──────────────────────────────────────────────────────┘`; 
+`                                                        
+                                                        
+                                                        
+                    ..****##****..                      
+                  **##**......**##**                    
+                ##**              **##                  
+              ##**                  **##                
+            ..##                      ##..              
+            ##..                      ..##              
+            ##**MM..MM....AA....NN..NN**##              
+            ####MMMMMM..AA##AA..NNN*NN**##              
+            ****MM..MM**AA**AA**NN.NNN****              
+                                                        
+      <strong>MAN Energy Solutions SE</strong> <a class="external-employer-link" href="https://www.man-es.com" target="_blank"> ↗ </a>                           
+     =========================                          
+                                                        
+     Role: Senior Software Engineer                     
+     Dates: <i>June 2018 – January 2023</i>                    
+                                                        
+     Main activities                                    
+     ---------------                                    
+     * Software development and application             
+     engineering                                        
+     * UI/UX Design and consulting                      
+     * Conceptual design and development of             
+     enterprise                                         
+       applications                                     
+     * Agile Mentor / SCRUM Master                      
+                                                        
+     Responsibilities                                   
+     ----------------                                   
+     Working in an agile SCRUM team on different,       
+     web based projects in the enterprise sphere.       
+     Creation of an enterprise wide supergraph as       
+     foundation for multiple inter department           
+     applications with internal and external users.     
+     From conceptualizing and architectural             
+     devising, over frontend and backend                
+     development, through to the initial operation      
+     in the enterprise cloud infrastructure.            
+     Also acting as Agile Mentor / SCRUM Master.        
+                                                        
+                                                        
+                                                        `; 
 
 export const m_jobs_no = 
-`┌──────────────────────────────────────────────────────┐
-│                                                      │
-│                                                      │
-│                                                      │
-│                       ..oo                           │
-│                       ~~**oo..                       │
-│                       ~~****~~                       │
-│                       ::oo**oo                       │
-│                   ::oo~~~~**::                       │
-│                   ..******oo                         │
-│                     ~~oo**::                         │
-│                       ~~oo~~                         │
-│                           ::..                       │
-│                               ..                     │
-│                                                      │
-│    <strong>natureOffice GmbH</strong> <a class="external-employer-link" href="https://www.natureoffice.com" target="_blank"> ↗ </a>                                 │
-│   ===================                                │
-│                                                      │
-│   Role: Head of Software Development, Co-founder     │
-│   Dates: <i>August 2008 - April 2014</i>                    │
-│                                                      │
-│   Main activities                                    │
-│   ---------------                                    │
-│   * Software development and application             │
-│   engineering                                        │
-│   * Business strategy development                    │
-│                                                      │
-│   Responsibilities                                   │
-│   ----------------                                   │
-│   Corporate Development of the startup as a          │
-│   co-founder, focused on the technical domain.       │
-│                                                      │
-│   Conception, engineering and development of the     │
-│   company‘s products from the beginning with only a  │
-│   few users to the operative state with hundreds of  │
-│   concurrent users on the platforms.                 │
-│                                                      │
-│                                                      │
-│                                                      │
-│                                                      │
-│                                                      │
-│                                                      │
-│                                                      │
-└──────────────────────────────────────────────────────┘`; 
+`                                                        
+                                                        
+                                                        
+                                                        
+                        ..oo                            
+                        ~~**oo..                        
+                        ~~****~~                        
+                        ::oo**oo                        
+                    ::oo~~~~**::                        
+                    ..******oo                          
+                      ~~oo**::                          
+                        ~~oo~~                          
+                            ::..                        
+                                ..                      
+                                                        
+                                                        
+      <strong>natureOffice GmbH</strong> <a class="external-employer-link" href="https://www.natureoffice.com" target="_blank"> ↗ </a>                                 
+     ===================                                
+                                                        
+     Role: Head of Software Development, Co-founder     
+     Dates: <i>August 2008 - April 2014</i>                    
+                                                        
+     Main activities                                    
+     ---------------                                    
+     * Software development and application             
+     engineering                                        
+     * Business strategy development                    
+                                                        
+     Responsibilities                                   
+     ----------------                                   
+     Corporate Development of the startup as a          
+     co-founder, focused on the technical domain.       
+                                                        
+     Conception, engineering and development of the     
+     company‘s products from the beginning with only a  
+     few users to the operative state with hundreds of  
+     concurrent users on the platforms.                 
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        `; 
 
 export const m_jobs_txn = 
-`┌──────────────────────────────────────────────────────┐
-│                                                      │
-│                                                      │
-│                                                      │
-│                          ..                          │
-│                      ::######::                      │
-│                    ::##  ****..::                    │
-│                    ****::..  **##                    │
-│                  ..**..      ::##..                  │
-│                    ####::    ::**                    │
-│                    ::**  ##..::::                    │
-│                      ::**##**::                      │
-│                          ..                          │
-│                                                      │
-│                                                      │
-│    <strong>ThinxNet GmbH</strong> <a class="external-employer-link" href="https://thinxnet.com" target="_blank"> ↗ </a>                                     │
-│   ===============                                    │
-│                                                      │
-│   Role: UI/UX Product Engineer                       │
-│   Dates: <i>June 2014 – June 2016</i>                       │
-│                                                      │
-│   Main activities                                    │
-│   ---------------                                    │
-│   * UI/UX Design and interaction design              │
-│   * Mobile application prototyping (iOS, Android)    │
-│   * Software development and application             │
-│   engineering                                        │
-│                                                      │
-│   Responsibilities                                   │
-│   ----------------                                   │
-│   Designing the UI and UX for iOS, Android and       │
-│   HTML5. Supervising the different teams of native   │
-│   developers to ensure quality as well as a          │
-│   consistent look and feel over all platforms.       │
-│                                                      │
-│   Fulfilling the roll of the product owner in our    │
-│   SCRUM workflow.                                    │
-│                                                      │
-│   Supporting the management in the domain of brand   │
-│   building.                                          │
-│                                                      │
-│                                                      │
-│                                                      │
-└──────────────────────────────────────────────────────┘`; 
+`                                                        
+                                                        
+                                                        
+                                                        
+                           ..                           
+                       ::######::                       
+                     ::##  ****..::                     
+                     ****::..  **##                     
+                   ..**..      ::##..                   
+                     ####::    ::**                     
+                     ::**  ##..::::                     
+                       ::**##**::                       
+                           ..                           
+                                                        
+                                                        
+      <strong>ThinxNet GmbH</strong> <a class="external-employer-link" href="https://thinxnet.com" target="_blank"> ↗ </a>                                     
+     ===============                                    
+                                                        
+     Role: UI/UX Product Engineer                       
+     Dates: <i>June 2014 – June 2016</i>                       
+                                                        
+     Main activities                                    
+     ---------------                                    
+     * UI/UX Design and interaction design              
+     * Mobile application prototyping (iOS,             
+     Android)                                           
+     * Software development and application             
+     engineering                                        
+                                                        
+     Responsibilities                                   
+     ----------------                                   
+     Designing the UI and UX for iOS, Android and       
+     HTML5. Supervising the different teams of          
+     native developers to ensure quality as well as     
+     a consistent look and feel over all platforms.     
+                                                        
+     Fulfilling the roll of the product owner in        
+     our SCRUM workflow.                                
+                                                        
+     Supporting the management in the domain of         
+     brand building.                                    
+                                                        
+                                                        
+                                                        `; 
 
 export const m_jobs = 
 `                                                        

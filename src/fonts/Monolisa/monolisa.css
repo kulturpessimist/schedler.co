@@ -9,6 +9,8 @@
 @font-face {
   src: url(woff2/0-normal.woff2) format("woff2");
   font-family: ml;
+
+  font-display: swap;
   font-weight: 100 900;
   font-style: normal;
   unicode-range: U+0020-007F;
@@ -17,6 +19,8 @@
 @font-face {
   src: url(woff2/1-italic.woff2) format("woff2");
   font-family: ml;
+  font-display: swap;
+
   font-weight: 100 900;
   font-style: italic;
   unicode-range: U+0020-007F;
@@ -25,6 +29,8 @@
 @font-face {
   src: url(woff2/2-normal.woff2) format("woff2");
   font-family: ml;
+  font-display: swap;
+
   font-weight: 100 900;
   font-style: normal;
   unicode-range: U+0080-00FF;
@@ -33,6 +39,8 @@
 @font-face {
   src: url(woff2/3-italic.woff2) format("woff2");
   font-family: ml;
+  font-display: swap;
+
   font-weight: 100 900;
   font-style: italic;
   unicode-range: U+0080-00FF;
@@ -41,6 +49,8 @@
 @font-face {
   src: url(woff2/4-normal.woff2) format("woff2");
   font-family: ml;
+  font-display: swap;
+
   font-weight: 100 900;
   font-style: normal;
   unicode-range: U+0100-017F;
@@ -49,6 +59,8 @@
 @font-face {
   src: url(woff2/5-italic.woff2) format("woff2");
   font-family: ml;
+  font-display: swap;
+
   font-weight: 100 900;
   font-style: italic;
   unicode-range: U+0100-017F;
@@ -57,6 +69,8 @@
 @font-face {
   src: url(woff2/6-normal.woff2) format("woff2");
   font-family: ml;
+  font-display: swap;
+
   font-weight: 100 900;
   font-style: normal;
   unicode-range: U+2600-26FF;
@@ -65,6 +79,8 @@
 @font-face {
   src: url(woff2/7-italic.woff2) format("woff2");
   font-family: ml;
+  font-display: swap;
+
   font-weight: 100 900;
   font-style: italic;
   unicode-range: U+2600-26FF;
@@ -73,6 +89,8 @@
 @font-face {
   src: url(woff2/8-normal.woff2) format("woff2");
   font-family: ml;
+  font-display: swap;
+
   font-weight: 100 900;
   font-style: normal;
   unicode-range: U+2700-27BF;
@@ -81,6 +99,8 @@
 @font-face {
   src: url(woff2/9-italic.woff2) format("woff2");
   font-family: ml;
+  font-display: swap;
+
   font-weight: 100 900;
   font-style: italic;
   unicode-range: U+2700-27BF;
@@ -89,6 +109,8 @@
 @font-face {
   src: url(woff2/10-normal.woff2) format("woff2");
   font-family: ml;
+  font-display: swap;
+
   font-weight: 100 900;
   font-style: normal;
   unicode-range: U+2300-23FF;
@@ -97,6 +119,8 @@
 @font-face {
   src: url(woff2/11-italic.woff2) format("woff2");
   font-family: ml;
+  font-display: swap;
+
   font-weight: 100 900;
   font-style: italic;
   unicode-range: U+2300-23FF;
@@ -105,6 +129,8 @@
 @font-face {
   src: url(woff2/12-normal.woff2) format("woff2");
   font-family: ml;
+  font-display: swap;
+
   font-weight: 100 900;
   font-style: normal;
   unicode-range: U+2190-21FF;
@@ -113,6 +139,8 @@
 @font-face {
   src: url(woff2/13-italic.woff2) format("woff2");
   font-family: ml;
+  font-display: swap;
+
   font-weight: 100 900;
   font-style: italic;
   unicode-range: U+2190-21FF;
@@ -121,6 +149,8 @@
 @font-face {
   src: url(woff2/14-normal.woff2) format("woff2");
   font-family: ml;
+  font-display: swap;
+
   font-weight: 100 900;
   font-style: normal;
   unicode-range: U+2B00-2BFF;
@@ -129,6 +159,8 @@
 @font-face {
   src: url(woff2/15-italic.woff2) format("woff2");
   font-family: ml;
+  font-display: swap;
+
   font-weight: 100 900;
   font-style: italic;
   unicode-range: U+2B00-2BFF;
@@ -137,6 +169,8 @@
 @font-face {
   src: url(woff2/16-normal.woff2) format("woff2");
   font-family: ml;
+  font-display: swap;
+
   font-weight: 100 900;
   font-style: normal;
   unicode-range: U+20A0-20CF;
@@ -145,6 +179,8 @@
 @font-face {
   src: url(woff2/17-italic.woff2) format("woff2");
   font-family: ml;
+  font-display: swap;
+
   font-weight: 100 900;
   font-style: italic;
   unicode-range: U+20A0-20CF;
@@ -153,6 +189,8 @@
 @font-face {
   src: url(woff2/18-normal.woff2) format("woff2");
   font-family: ml;
+  font-display: swap;
+
   font-weight: 100 900;
   font-style: normal;
   unicode-range: U+2200-22FF;
@@ -161,6 +199,8 @@
 @font-face {
   src: url(woff2/19-italic.woff2) format("woff2");
   font-family: ml;
+  font-display: swap;
+
   font-weight: 100 900;
   font-style: italic;
   unicode-range: U+2200-22FF;
@@ -169,6 +209,8 @@
 @font-face {
   src: url(woff2/20-normal.woff2) format("woff2");
   font-family: ml;
+  font-display: swap;
+
   font-weight: 100 900;
   font-style: normal;
   unicode-range: U+2580-259F;
@@ -177,6 +219,8 @@
 @font-face {
   src: url(woff2/21-italic.woff2) format("woff2");
   font-family: ml;
+  font-display: swap;
+
   font-weight: 100 900;
   font-style: italic;
   unicode-range: U+2580-259F;
@@ -185,6 +229,8 @@
 @font-face {
   src: url(woff2/22-normal.woff2) format("woff2");
   font-family: ml;
+  font-display: swap;
+
   font-weight: 100 900;
   font-style: normal;
   unicode-range: U+25A0-25FF;
@@ -193,6 +239,8 @@
 @font-face {
   src: url(woff2/23-italic.woff2) format("woff2");
   font-family: ml;
+  font-display: swap;
+
   font-weight: 100 900;
   font-style: italic;
   unicode-range: U+25A0-25FF;
@@ -201,6 +249,8 @@
 @font-face {
   src: url(woff2/24-normal.woff2) format("woff2");
   font-family: ml;
+  font-display: swap;
+
   font-weight: 100 900;
   font-style: normal;
   unicode-range: U+2500-257F;
@@ -209,6 +259,8 @@
 @font-face {
   src: url(woff2/25-italic.woff2) format("woff2");
   font-family: ml;
+  font-display: swap;
+
   font-weight: 100 900;
   font-style: italic;
   unicode-range: U+2500-257F;
@@ -217,6 +269,8 @@
 @font-face {
   src: url(woff2/26-normal.woff2) format("woff2");
   font-family: ml;
+  font-display: swap;
+
   font-weight: 100 900;
   font-style: normal;
   unicode-range: U+02B0-02FF;
@@ -225,6 +279,8 @@
 @font-face {
   src: url(woff2/27-italic.woff2) format("woff2");
   font-family: ml;
+  font-display: swap;
+
   font-weight: 100 900;
   font-style: italic;
   unicode-range: U+02B0-02FF;
@@ -233,6 +289,8 @@
 @font-face {
   src: url(woff2/28-normal.woff2) format("woff2");
   font-family: ml;
+  font-display: swap;
+
   font-weight: 100 900;
   font-style: normal;
   unicode-range: U+E000-F8FF;
@@ -241,6 +299,8 @@
 @font-face {
   src: url(woff2/29-italic.woff2) format("woff2");
   font-family: ml;
+  font-display: swap;
+
   font-weight: 100 900;
   font-style: italic;
   unicode-range: U+E000-F8FF;

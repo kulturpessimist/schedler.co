@@ -102,6 +102,10 @@ command = "npm run build"
 # The following redirect is intended for use with most SPAs that handle
 # routing internally.
 [[redirects]]
+from = "/robots.txt"
+to = "/robots.txt"
+
+[[redirects]]
 from = "/images/*"
 to = "/images/:splat"
 

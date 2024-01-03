@@ -360,11 +360,11 @@ export const d_impressum =
                  │                                                  │   │  Semantic information                           │                 
                  │ Umsatzsteuer-ID gemäß §27 a Umsatzsteuergesetz:  │   │ ======================                          │                 
                  │ DE 305 762 296                                   │   │                                                 │                 
-                 └──────────────────────────────────────────────────┘   │ Version: 7.6.0-163                              │                 
-                                                                        │ Last update: 2024-01-02T15:00:19.825Z           │                 
-                 ┌──────────────────────────────────────────────────┐   │ Commit: 4ff8b40                                 │                 
-                 │        <a href="/impressum/1">-> Disclaimer, data protection and</a>        │   │ Commit count: 163                               │                 
-                 │             <a href="/impressum/1">copyright statements...</a>              │   │ SemVer: 7.6.0                                   │                 
+                 └──────────────────────────────────────────────────┘   │ Version: 7.6.1-165                              │                 
+                                                                        │ Last update: 2024-01-03T19:17:56.228Z           │                 
+                 ┌──────────────────────────────────────────────────┐   │ Commit: c5e4d77                                 │                 
+                 │        <a href="/impressum/1">-> Disclaimer, data protection and</a>        │   │ Commit count: 165                               │                 
+                 │             <a href="/impressum/1">copyright statements...</a>              │   │ SemVer: 7.6.1                                   │                 
                  └──────────────────────────────────────────────────┘   └─────────────────────────────────────────────────┘                 
                                                                                                                                             
                                                                                                                                             
@@ -556,7 +556,7 @@ export const d_jobs_jd =
                                                                            ======================                                           
                                                                                                                                             
            ┌────────────────────────────────────────────────┐              Role: Senior Software Engineering Lead                           
-           │                                                │░             Dates: February 2023 – December 2023                             
+           │                                                │░             Dates: <i>February 2023 - December 2023</i>                             
            │                  ●●●●                          │░                                                                              
            │                  ●●●●                          │░                                                                              
            │                  ●●●●                          │░             Main activities                                                  

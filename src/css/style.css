@@ -6,7 +6,7 @@
 
 @media (orientation: portrait) {
   :root {
-    --size: calc(4pt + 1.5vw);
+    --size: calc(4pt + 1.5dvw);
   }
 }
 
