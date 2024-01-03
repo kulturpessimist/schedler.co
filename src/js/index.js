@@ -84,28 +84,28 @@ const app = {
       let target
       switch (match.data.company) {
         case "certania":
-          target = "/page/4"
+          target = "/page/3"
           break
         case "jd":
-          target = "/page/5"
+          target = "/page/4"
           break
         case "man-es":
-          target = "/page/6"
+          target = "/page/5"
           break
         case "iob":
-          target = "/page/7"
+          target = "/page/6"
           break
         case "thinxnet":
-          target = "/page/8"
+          target = "/page/7"
           break
         case "natureoffice":
-          target = "/page/9"
+          target = "/page/8"
           break
         case "dynomedia":
-          target = "/page/10"
+          target = "/page/9"
           break
         case "kigg":
-          target = "/page/11"
+          target = "/page/10"
           break
         default:
           target = "/page/0"

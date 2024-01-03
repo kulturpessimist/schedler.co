@@ -71,7 +71,7 @@ const enrichContent = (content, page) => {
     "jobs-jd.txt": {
       "Johner Institut GmbH":
         '<strong>Johner Institut GmbH</strong> <a class="external-employer-link" href="https://www.johner-institute.com" target="_blank"> ↗ </a>',
-      "February 2023 - December 2023": "<i>February 2023 - December 2023</i>",
+      "February 2023 – December 2023": "<i>February 2023 - December 2023</i>",
     },
     "jobs-man.txt": {
       "MAN Energy Solutions SE":
@@ -151,7 +151,7 @@ const enrichContent = (content, page) => {
       "alex@schedler.co":
         '<a href="mailto:alex@schedler.co">alex@schedler.co</a>',
       "Download CV as PDF":
-        '<a href="https://literally.download/f/dm21ED" target="_blank">Download CV as PDF</a>',
+        '<a href="https://literally.download/f/E9wnVt" target="_blank">Download CV as PDF</a>',
 
       "{{version}}": String(version.version).padEnd(24, " "),
       "{{update--------------}}": String(version.update).padEnd(24, " "),
@@ -171,8 +171,6 @@ const enrichContent = (content, page) => {
   rules["contact4.txt"] = rules["contact0.txt"]
   rules["contact5.txt"] = rules["contact0.txt"]
   rules["contact6.txt"] = rules["contact0.txt"]
-  rules["Freelance.txt"] = rules["freelance.txt"]
-  //rules["Start.txt"] = rules["start.txt"]
 
   rules["start.mobile.txt"] = rules["start.txt"]
   rules["contact1.mobile.txt"] = rules["contact0.txt"]
