@@ -33,10 +33,10 @@ import {
   m_contact5,
   m_contact6, */
   m_education,
-  m_impressum,
-  m_impressum2,
-  m_impressum3,
-  m_impressum4,
+  m_impressum_m,
+  m_impressum_m2,
+  m_impressum_m3,
+  m_impressum_m4,
   m_jobs_dyno,
   m_jobs_iob,
   m_jobs_kigg,
@@ -107,10 +107,10 @@ const m_contactFrames = [
   m_contact6, */
 ]
 const m_impressumFrames = [
-  m_impressum,
-  m_impressum2,
-  m_impressum3,
-  m_impressum4,
+  m_impressum_m,
+  m_impressum_m2,
+  m_impressum_m3,
+  m_impressum_m4,
 ]
 //
 let pages, contactFrames, impressumFrames

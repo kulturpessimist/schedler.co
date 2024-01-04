@@ -146,19 +146,37 @@ const enrichContent = (content, page) => {
       "<- Back...": '<a href="/impressum/0"><- Back...</a>',
     },
 
-    "impressum.mobile.txt": {
+    "impressum_m.txt": {
       "+49 171 4123 929": '<a href="tel:+491714123929">+49 171 4123 929</a>',
       "alex@schedler.co":
         '<a href="mailto:alex@schedler.co">alex@schedler.co</a>',
       "Download CV as PDF":
-        '<a href="https://literally.download/f/E9wnVt" target="_blank">Download CV as PDF</a>',
+        '<a href="https://literally.download/f/dm21ED" target="_blank">Download CV as PDF</a>',
 
-      "{{version}}": String(version.version).padEnd(24, " "),
+      "{{version-------------}}": String(version.version).padEnd(24, " "),
       "{{update--------------}}": String(version.update).padEnd(24, " "),
       "{{short---------------}}": String(version.short).padEnd(24, " "),
       "{{count---------------}}": String(version.count).padEnd(24, " "),
       "{{semver--------------}}": String(version.semver).padEnd(24, " "),
 
+      "-> Imprint": '-> <a href="/impressum/0">Imprint</a>',
+      "-> Privacy": '-> <a href="/impressum/1">Privacy</a>',
+      "-> Copyright": '-> <a href="/impressum/2">Copyright</a>',
+      "-> Disclaimer": '-> <a href="/impressum/3">Disclaimer</a>',
+    },
+    "impressum_m2.txt": {
+      "-> Imprint": '-> <a href="/impressum/0">Imprint</a>',
+      "-> Privacy": '-> <a href="/impressum/1">Privacy</a>',
+      "-> Copyright": '-> <a href="/impressum/2">Copyright</a>',
+      "-> Disclaimer": '-> <a href="/impressum/3">Disclaimer</a>',
+    },
+    "impressum_m3.txt": {
+      "-> Imprint": '-> <a href="/impressum/0">Imprint</a>',
+      "-> Privacy": '-> <a href="/impressum/1">Privacy</a>',
+      "-> Copyright": '-> <a href="/impressum/2">Copyright</a>',
+      "-> Disclaimer": '-> <a href="/impressum/3">Disclaimer</a>',
+    },
+    "impressum_m4.txt": {
       "-> Imprint": '-> <a href="/impressum/0">Imprint</a>',
       "-> Privacy": '-> <a href="/impressum/1">Privacy</a>',
       "-> Copyright": '-> <a href="/impressum/2">Copyright</a>',
@@ -188,9 +206,6 @@ const enrichContent = (content, page) => {
   rules["education.mobile.txt"] = rules["education.txt"]
   rules["skills.mobile.txt"] = rules["skills.txt"]
   rules["technologies.mobile.txt"] = rules["technologies.txt"]
-  rules["impressum2.mobile.txt"] = rules["impressum.mobile.txt"]
-  rules["impressum3.mobile.txt"] = rules["impressum.mobile.txt"]
-  rules["impressum4.mobile.txt"] = rules["impressum.mobile.txt"]
   //
   // console.log(page, "was", content.length)
   if (rules[page]) {
@@ -223,7 +238,9 @@ const main = async () => {
     //console.log("export default [\n" + exports.join(",\n") + "\n]")
     await fs.writeFile(
       [path, f + ".js"].join("/"),
-      `${pages.join("; \n\n")}; \n\nexport default [\n${exports.join(",\n")}\n]`
+      `${pages.join("; \n\n")}; \n\nexport default [\n${exports.join(
+        ",\n",
+      )}\n]`,
     )
   }
 }

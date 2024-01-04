@@ -208,7 +208,7 @@ export const m_freelance =
                                                         
                                                         `; 
 
-export const m_impressum = 
+export const m_impressum_m = 
 `                                                        
                                                         
                                                         
@@ -241,12 +241,12 @@ export const m_impressum =
    ┌────────────────────────────────────────────────┐   
    │  Semantic information                          │   
    │ ======================                         │   
-   │ Version: 7.6.1-165                             │   
-   │ Last update: 2024-01-03T19:17:56.228Z          │   
-   │ Commit: c5e4d77                                │   
+   │ Version: 7.6.2-166                             │   
+   │ Last update: 2024-01-04T15:20:23.568Z          │   
+   │ Commit: efa6e67                                │   
    └────────────────────────────────────────────────┘   
    ┌───────────────┐┌──────────────┐┌───────────────┐   
-   │  -> Privacy   ││ -> Copyright ││ -> Disclaimer │   
+   │  -> <a href="/impressum/1">Privacy</a>   ││ -> <a href="/impressum/2">Copyright</a> ││ -> <a href="/impressum/3">Disclaimer</a> │   
    └───────────────┘└──────────────┘└───────────────┘   
                                                         
                                                         
@@ -254,7 +254,7 @@ export const m_impressum =
                                                         
                                                         `; 
 
-export const m_impressum2 = 
+export const m_impressum_m2 = 
 `                                                        
                                                         
                                                         
@@ -294,13 +294,13 @@ export const m_impressum2 =
    │ durch Dritte ist nicht möglich.                │   
    └────────────────────────────────────────────────┘   
    ┌───────────────┐┌──────────────┐┌───────────────┐   
-   │  -> Imprint   ││ -> Copyright ││ -> Disclaimer │   
+   │  -> <a href="/impressum/0">Imprint</a>   ││ -> <a href="/impressum/2">Copyright</a> ││ -> <a href="/impressum/3">Disclaimer</a> │   
    └───────────────┘└──────────────┘└───────────────┘   
                                                         
                                                         
                                                         `; 
 
-export const m_impressum3 = 
+export const m_impressum_m3 = 
 `                                                        
                                                         
                                                         
@@ -331,7 +331,7 @@ export const m_impressum3 =
    │ Inhalte umgehend entfernen.                    │   
    └────────────────────────────────────────────────┘   
    ┌───────────────┐┌──────────────┐┌───────────────┐   
-   │  -> Imprint   ││  -> Privacy  ││ -> Disclaimer │   
+   │  -> <a href="/impressum/0">Imprint</a>   ││  -> <a href="/impressum/1">Privacy</a>  ││ -> <a href="/impressum/3">Disclaimer</a> │   
    └───────────────┘└──────────────┘└───────────────┘   
                                                         
                                                         
@@ -346,7 +346,7 @@ export const m_impressum3 =
                                                         
                                                         `; 
 
-export const m_impressum4 = 
+export const m_impressum_m4 = 
 `                                                        
                                                         
                                                         
@@ -377,7 +377,7 @@ export const m_impressum4 =
    │ umgehend entfernen.                            │   
    └────────────────────────────────────────────────┘   
    ┌───────────────┐┌──────────────┐┌───────────────┐   
-   │  -> Imprint   ││  -> Privacy  ││ -> Copyright  │   
+   │  -> <a href="/impressum/0">Imprint</a>   ││  -> <a href="/impressum/1">Privacy</a>  ││ -> <a href="/impressum/2">Copyright</a>  │   
    └───────────────┘└──────────────┘└───────────────┘   
                                                         
                                                         
@@ -949,10 +949,10 @@ m__,
 m_contact1,
 m_education,
 m_freelance,
-m_impressum,
-m_impressum2,
-m_impressum3,
-m_impressum4,
+m_impressum_m,
+m_impressum_m2,
+m_impressum_m3,
+m_impressum_m4,
 m_jobs_certania,
 m_jobs_dyno,
 m_jobs_iob,
