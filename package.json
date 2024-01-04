@@ -1,7 +1,7 @@
 {
   "name": "website-schedler-co",
   "description": "Curriculum vitae (CV) | Alexander Schedler: Internet application engineering, development and management.",
-  "version": "7.6.2",
+  "version": "7.6.3",
   "license": "CC-BY-NC-ND",
   "repository": {
     "type": "git",
@@ -19,9 +19,10 @@
     "clean:build": "rm -rf dist/",
     "build:rev": "node ./src/scripts/rev.js",
     "build:pages": "node src/scripts/build-pages.js",
-    "build": "npm run clean:build; npm run build:rev -- ./src/version.json; npm run build:pages; parcel build src/index.html --no-cache",
+    "build:parcel": "parcel build src/index.html --no-cache",
+    "build": "npm run clean:build; npm run build:rev -- ./src/version.json; npm run build:pages; npm run build:parcel; npm run build:copy;",
     "build:detailed": "npm run build -- --public-url ./ --no-cache --log-level verbose --detailed-report 10",
-    "build:copy": "cp dist/index.html dist/200.html; cp src/cv-alexander-schedler-en-2022-03-14.pdf dist/cv-alexander-schedler-en-2022-03-14.pdf; cp src/google7f311b514ca2b68b.html dist/google7f311b514ca2b68b.html;",
+    "build:copy": "cp src/robots.txt dist/robots.txt; cp src/google7f311b514ca2b68b.html dist/google7f311b514ca2b68b.html;",
     "serve": "serve dist/",
     "surge": "npm run build; npm run build:copy; surge --domain schedler-co-7.surge.sh dist/"
   },
@@ -31,13 +32,13 @@
     "rough-notation": "0.5.1"
   },
   "devDependencies": {
-    "@parcel/packager-raw-url": "2.10.3",
-    "@parcel/transformer-webmanifest": "2.10.3",
+    "@parcel/packager-raw-url": "2.11.0",
+    "@parcel/transformer-webmanifest": "2.11.0",
     "asciify-image": "^0.1.10",
     "eslint": "^8.56.0",
     "eslint-plugin-vue": "^9.19.2",
     "isomorphic-git": "^1.25.2",
-    "parcel": "2.10.3",
+    "parcel": "2.11.0",
     "prettier": "3.1.1",
     "serve": "^14.2.1"
   }

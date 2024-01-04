@@ -241,9 +241,9 @@ export const m_impressum_m =
    ┌────────────────────────────────────────────────┐   
    │  Semantic information                          │   
    │ ======================                         │   
-   │ Version: 7.6.2-166                             │   
-   │ Last update: 2024-01-04T15:20:23.568Z          │   
-   │ Commit: efa6e67                                │   
+   │ Version: 7.6.2-167                             │   
+   │ Last update: 2024-01-04T17:24:08.521Z          │   
+   │ Commit: 5010cdc                                │   
    └────────────────────────────────────────────────┘   
    ┌───────────────┐┌──────────────┐┌───────────────┐   
    │  -> <a href="/impressum/1">Privacy</a>   ││ -> <a href="/impressum/2">Copyright</a> ││ -> <a href="/impressum/3">Disclaimer</a> │   
