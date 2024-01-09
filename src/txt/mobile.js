@@ -241,9 +241,9 @@ export const m_impressum_m =
    ┌────────────────────────────────────────────────┐   
    │  Semantic information                          │   
    │ ======================                         │   
-   │ Version: 7.6.2-167                             │   
-   │ Last update: 2024-01-04T17:24:08.521Z          │   
-   │ Commit: 5010cdc                                │   
+   │ Version: 7.6.3-168                             │   
+   │ Last update: 2024-01-09T08:10:57.563Z          │   
+   │ Commit: 7dd940d                                │   
    └────────────────────────────────────────────────┘   
    ┌───────────────┐┌──────────────┐┌───────────────┐   
    │  -> <a href="/impressum/1">Privacy</a>   ││ -> <a href="/impressum/2">Copyright</a> ││ -> <a href="/impressum/3">Disclaimer</a> │   
@@ -412,14 +412,14 @@ export const m_jobs_certania =
       <strong>Certania GmbH</strong> <a class="external-employer-link" href="https://certania.com/" target="_blank"> ↗ </a>                                     
      ===============                                    
                                                         
-     Role: Director of Technology                       
+     Role: <mark data-rough-notation='{"type":"underline","padding":[1,0],"color":"#13aada"}'>Director of Technology</mark>                       
      Dates: <i>January 2024 onwards</i>                        
                                                         
      Main activities                                    
      ---------------                                    
-     * Establishing and observing of an IT strategy     
+     * Establishing and observing of an <mark data-rough-notation='{"type":"underline","padding":[1,0],"color":"#13aada"}'>IT strategy</mark>     
      for the company and affiliated firms               
-     * Measuring the impact of technology use           
+     * Measuring <mark data-rough-notation='{"type":"underline","padding":[1,0],"color":"#13aada"}'>the impact</mark> of technology use           
      * Technology consulting                            
                                                         
      Responsibilities                                   
@@ -876,8 +876,8 @@ export const m_start =
         ║   <i>District of Augsburg, Germany</i>      ║░░      
         ║                                      ║░░      
         ║      Internet application            ║░░      
-        ║      <mark>engineering</mark>, <mark>development</mark> and    ║░░      
-        ║      <mark>management</mark>.                     ║░░      
+        ║      <mark data-type='highlight'>engineering</mark>, <mark data-type='highlight'>development</mark> and    ║░░      
+        ║      <mark data-type='highlight'>management</mark>.                     ║░░      
         ║                                      ║░░      
         ║                                      ║░░      
         ║                                      ║░░      

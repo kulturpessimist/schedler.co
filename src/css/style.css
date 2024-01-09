@@ -31,6 +31,35 @@
   background: var(--text-color);
 }
 
+body.page\/3 /* certania */ {
+  --main-color: #0a2f41;
+  --accent-color: #13aada;
+}
+body.page\/4 /* johner */ {
+  --main-color: #dc1a22;
+}
+body.page\/5 /* MAN */ {
+  --text-color: #333333;
+  --main-color: #eeeeee;
+}
+body.page\/6 /* purr */ {
+  --text-color: #fdf3e2;
+  --main-color: #6653ff;
+}
+body.page\/7 /* thinxnet */ {
+  --text-color: #000;
+  --main-color: #ff6600;
+}
+body.page\/8 /* natureoffice */ {
+  --main-color: #149b5a;
+}
+body.page\/9 /* dynomedia */ {
+  --main-color: #00aeef;
+}
+body.page\/10 /* kigg */ {
+  --main-color: #d00027;
+}
+
 html,
 body {
   background-color: var(--main-color);
@@ -47,7 +76,12 @@ body {
   height: 100vh;
 
   overflow: hidden;
+
+  transition:
+    background-color 250ms,
+    color 250ms;
 }
+
 a,
 a:link,
 a:visited,

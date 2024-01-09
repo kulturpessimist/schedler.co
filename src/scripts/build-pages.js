@@ -15,9 +15,9 @@ const enrichContent = (content, page) => {
     "start.txt": {
       "Alexander Schedler": "<strong>Alexander Schedler</strong>",
       "District of Augsburg, Germany": "<i>District of Augsburg, Germany</i>",
-      engineering: "<mark>engineering</mark>",
-      development: "<mark>development</mark>",
-      management: "<mark>management</mark>",
+      engineering: "<mark data-type='highlight'>engineering</mark>",
+      development: "<mark data-type='highlight'>development</mark>",
+      management: "<mark data-type='highlight'>management</mark>",
       //Frontend: "<mark>Frontend</mark>",
       //Backend: "<mark>Backend</mark>",
       //Node: "<mark>Node</mark>",
@@ -26,6 +26,8 @@ const enrichContent = (content, page) => {
     "contact0.txt": {
       "Alexander Schedler": "<strong>Alexander Schedler</strong>",
       "District of Augsburg, Germany": "<i>District of Augsburg, Germany</i>",
+      //touch: "<mark data-type='circle'>touch</mark>",
+      //"write me": "<mark data-type='underline'>write me</mark>",
       "alex@schedler.co":
         '<a href="mailto:alex@schedler.co">alex@schedler.co</a>',
       "+49 171 4 123 929": '<a href="tel:+491714123929">+49 171 4 123 929</a>',
@@ -67,11 +69,33 @@ const enrichContent = (content, page) => {
       "Certania GmbH":
         '<strong>Certania GmbH</strong> <a class="external-employer-link" href="https://certania.com/" target="_blank"> ↗ </a>',
       "January 2024 onwards": "<i>January 2024 onwards</i>",
+      "Director of Technology": `<mark data-rough-notation='${JSON.stringify({
+        type: "underline",
+        padding: [1, 0],
+        color: "#13aada",
+      })}'>Director of Technology</mark>`,
+      "IT strategy": `<mark data-rough-notation='${JSON.stringify({
+        type: "underline",
+        padding: [1, 0],
+        color: "#13aada",
+      })}'>IT strategy</mark>`,
+      "the impact": `<mark data-rough-notation='${JSON.stringify({
+        type: "underline",
+        padding: [1, 0],
+        color: "#13aada",
+      })}'>the impact</mark>`,
     },
     "jobs-jd.txt": {
       "Johner Institut GmbH":
         '<strong>Johner Institut GmbH</strong> <a class="external-employer-link" href="https://www.johner-institute.com" target="_blank"> ↗ </a>',
       "February 2023 – December 2023": "<i>February 2023 - December 2023</i>",
+      "Senior Software Engineering Lead": `<mark data-rough-notation='${JSON.stringify(
+        {
+          type: "underline",
+          padding: [1, 0],
+          color: "#eeeeee",
+        },
+      )}'>Senior Software Engineering Lead</mark>`,
     },
     "jobs-man.txt": {
       "MAN Energy Solutions SE":

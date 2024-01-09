@@ -360,11 +360,11 @@ export const d_impressum =
                  │                                                  │   │  Semantic information                           │                 
                  │ Umsatzsteuer-ID gemäß §27 a Umsatzsteuergesetz:  │   │ ======================                          │                 
                  │ DE 305 762 296                                   │   │                                                 │                 
-                 └──────────────────────────────────────────────────┘   │ Version: 7.6.2-167                              │                 
-                                                                        │ Last update: 2024-01-04T17:24:08.521Z           │                 
-                 ┌──────────────────────────────────────────────────┐   │ Commit: 5010cdc                                 │                 
-                 │        <a href="/impressum/1">-> Disclaimer, data protection and</a>        │   │ Commit count: 167                               │                 
-                 │             <a href="/impressum/1">copyright statements...</a>              │   │ SemVer: 7.6.2                                   │                 
+                 └──────────────────────────────────────────────────┘   │ Version: 7.6.3-168                              │                 
+                                                                        │ Last update: 2024-01-09T08:10:57.563Z           │                 
+                 ┌──────────────────────────────────────────────────┐   │ Commit: 7dd940d                                 │                 
+                 │        <a href="/impressum/1">-> Disclaimer, data protection and</a>        │   │ Commit count: 168                               │                 
+                 │             <a href="/impressum/1">copyright statements...</a>              │   │ SemVer: 7.6.3                                   │                 
                  └──────────────────────────────────────────────────┘   └─────────────────────────────────────────────────┘                 
                                                                                                                                             
                                                                                                                                             
@@ -430,17 +430,17 @@ export const d_jobs_certania =
                                                                             <strong>Certania GmbH</strong> <a class="external-employer-link" href="https://certania.com/" target="_blank"> ↗ </a>                                                   
                                                                            ===============                                                  
            ┌────────────────────────────────────────────────┐                                                                               
-           │                                                │░             Role: Director of Technology                                     
+           │                                                │░             Role: <mark data-rough-notation='{"type":"underline","padding":[1,0],"color":"#13aada"}'>Director of Technology</mark>                                     
            │                  ..certania..                  │░             Dates: <i>January 2024 onwards</i>                                      
            │                certaniacertania                │░                                                                              
            │              certaniacertaniacert              │░                                                                              
            │              aniacertaniacertania              │░             Main activities                                                  
            │            ..certaniacertaniacert..            │░             ---------------                                                  
            │            ..aniacertaniacertania..            │░                                                                              
-           │            ..certaniacertaniacert..            │░             Establishing and observing of an IT strategy for the             
+           │            ..certaniacertaniacert..            │░             Establishing and observing of an <mark data-rough-notation='{"type":"underline","padding":[1,0],"color":"#13aada"}'>IT strategy</mark> for the             
            │              aniacertaniacertania              │░             company and affiliated firms                                     
            │              ..certaniacertania..              │░                                                                              
-           │              ..certaniacertania..              │░             Measuring the impact of technology use                           
+           │              ..certaniacertania..              │░             Measuring <mark data-rough-notation='{"type":"underline","padding":[1,0],"color":"#13aada"}'>the impact</mark> of technology use                           
            │            ..certaniacertaniacert..            │░                                                                              
            │          ..aniacertaniacertaniacert..          │░             Technology consulting                                            
            │        ..aniacertaniacertaniacertania..        │░                                                                              
@@ -860,8 +860,8 @@ export const d_start =
                                       ║    <i>District of Augsburg, Germany</i>                             ║░░                                    
                                       ║                                                              ║░░                                    
                                       ║                                                              ║░░                                    
-                                      ║         Internet application <mark>engineering</mark>,                    ║░░                                    
-                                      ║         <mark>development</mark> and <mark>management</mark>.                          ║░░                                    
+                                      ║         Internet application <mark data-type='highlight'>engineering</mark>,                    ║░░                                    
+                                      ║         <mark data-type='highlight'>development</mark> and <mark data-type='highlight'>management</mark>.                          ║░░                                    
                                       ║                                                              ║░░                                    
                                       ║                                                              ║░░                                    
                                       ║                                                              ║░░                                    

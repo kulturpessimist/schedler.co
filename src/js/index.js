@@ -69,6 +69,13 @@ const app = {
     this.current = app.pages[this.currentPage]
     this._router = new Navigo("/")
 
+    this._router.hooks({
+      before(done, match) {
+        document.body.className = match.url
+        done()
+      },
+    })
+
     this._router.notFound(() => {
       this._router.navigate("/page/0")
     })
@@ -140,10 +147,12 @@ const app = {
         .getPropertyValue("--accent-color") || "#000066"
     const annotations = []
     for (let m of e) {
+      const custom = JSON.parse(m.dataset.roughNotation) || {}
       annotations.push(
         annotate(m, {
-          type: "highlight",
+          type: m.dataset.type || "highlight",
           color,
+          ...custom,
         }),
       )
     }
