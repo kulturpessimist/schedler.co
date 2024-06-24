@@ -1,7 +1,7 @@
 {
   "name": "website-schedler-co",
   "description": "Curriculum vitae (CV) | Alexander Schedler: Internet application engineering, development and management.",
-  "version": "7.6.3",
+  "version": "7.6.4",
   "license": "CC-BY-NC-ND",
   "repository": {
     "type": "git",
@@ -32,14 +32,14 @@
     "rough-notation": "0.5.1"
   },
   "devDependencies": {
-    "@parcel/packager-raw-url": "2.11.0",
-    "@parcel/transformer-webmanifest": "2.11.0",
+    "@parcel/packager-raw-url": "2.12.0",
+    "@parcel/transformer-webmanifest": "2.12.0",
     "asciify-image": "^0.1.10",
-    "eslint": "^8.56.0",
-    "eslint-plugin-vue": "^9.19.2",
-    "isomorphic-git": "^1.25.2",
-    "parcel": "2.11.0",
-    "prettier": "3.1.1",
-    "serve": "^14.2.1"
+    "eslint": "^9.5.0",
+    "eslint-plugin-vue": "^9.26.0",
+    "isomorphic-git": "^1.26.2",
+    "parcel": "2.12.0",
+    "prettier": "3.3.2",
+    "serve": "^14.2.3"
   }
 }

@@ -1,3 +1,45 @@
+export const d_freelance = 
+`                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                ┌─────────────────────┐                     
+                                                                                                │                     │                     
+                                                                                                │                     │                     
+                                                                                      ┌────────▶│       Storage       │                     
+                                                                                      │         │                     │                     
+                                                                                      │         │                     │                     
+                                                                                      │         └─────────────────────┘                     
+             ╔══════════════════════════════════════════════════════════════╗         │              ┌─────────────────────┐                
+             ║                                                              ║░░       │              │                     │                
+             ║                                                              ║░░       │              │                     │                
+             ║                                                              ║░░       │ ┌───────────▶│       Backend       │                
+             ║                                                              ║░░       │ │            │                     │                
+             ║                                                              ║░░       │ │            │                     │                
+             ║    <strong>Alexander Schedler</strong>                                        ║░░       │ │            └─────────────────────┘                
+             ║    <i>freelance software developer</i>                              ║░░       │ │                ┌─────────────────────┐            
+             ║                                                              ║░░       │ │                │                     │            
+             ║        I am <mark>currently not</mark> taking on                          ║░░       │ │                │                     │            
+             ║        any new freelance projects.                           ╠─────────┼─┼───────────────▶│      Frontend       │            
+             ║                                                              ║░░       │ │                │                     │            
+             ║        Want to get in touch? <a href="mailto:alex@schedler.co">Just write me</a>.                  ║░░       │ │                │                     │            
+             ║                                                              ║░░       │ │                └─────────────────────┘            
+             ║                                                              ║░░       │ │            ┌─────────────────────┐                
+             ║                                                              ║░░       │ │            │                     │                
+             ║                                                              ║░░       │ │            │                     │                
+             ║                                                              ║░░       │ └───────────▶│        Cloud        │                
+             ║                                                              ║░░       │              │                     │                
+             ╚══════════════════════════════════════════════════════════════╝░░       │              │                     │                
+               ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░       │              └─────────────────────┘                
+                                                                                      │          ┌─────────────────────┐                    
+                                                                                      │          │                     │                    
+                                                                                      │          │                     │                    
+                                                                                      └─────────▶│     Consulting      │                    
+                                                                                                 │                     │                    
+                                                                                                 │                     │                    
+                                                                                                 └─────────────────────┘                    
+                                                                                                                                            
+                                                                                                                                            `; 
+
 export const d_contact1 = 
 `                                                                                                                                            
                                                                                                                                             
@@ -292,48 +334,6 @@ export const d_education =
 ║                                                                                                                                          ║
 ╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝`; 
 
-export const d_freelance = 
-`                                                                                                                                            
-                                                                                                                                            
-                                                                                                                                            
-                                                                                                ┌─────────────────────┐                     
-                                                                                                │                     │                     
-                                                                                                │                     │                     
-                                                                                      ┌────────▶│       Storage       │                     
-                                                                                      │         │                     │                     
-                                                                                      │         │                     │                     
-                                                                                      │         └─────────────────────┘                     
-             ╔══════════════════════════════════════════════════════════════╗         │              ┌─────────────────────┐                
-             ║                                                              ║░░       │              │                     │                
-             ║                                                              ║░░       │              │                     │                
-             ║                                                              ║░░       │ ┌───────────▶│       Backend       │                
-             ║                                                              ║░░       │ │            │                     │                
-             ║    Alexander Schedler                                        ║░░       │ │            │                     │                
-             ║    freelance software developer                              ║░░       │ │            └─────────────────────┘                
-             ║                                                              ║░░       │ │                ┌─────────────────────┐            
-             ║        Currlently I am working salaried for Johner           ║░░       │ │                │                     │            
-             ║        Institute. I also do freelance work with a            ║░░       │ │                │                     │            
-             ║        key focus on enterprize or b2b web application        ╠─────────┼─┼───────────────▶│      Frontend       │            
-             ║        development and management as well as JavaScript      ║░░       │ │                │                     │            
-             ║        and CouchDB consulting.                               ║░░       │ │                │                     │            
-             ║                                                              ║░░       │ │                └─────────────────────┘            
-             ║        Need my help? Just write me.                          ║░░       │ │            ┌─────────────────────┐                
-             ║                                                              ║░░       │ │            │                     │                
-             ║                                                              ║░░       │ │            │                     │                
-             ║                                                              ║░░       │ └───────────▶│        Cloud        │                
-             ║                                                              ║░░       │              │                     │                
-             ╚══════════════════════════════════════════════════════════════╝░░       │              │                     │                
-               ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░       │              └─────────────────────┘                
-                                                                                      │          ┌─────────────────────┐                    
-                                                                                      │          │                     │                    
-                                                                                      │          │                     │                    
-                                                                                      └─────────▶│     Consulting      │                    
-                                                                                                 │                     │                    
-                                                                                                 │                     │                    
-                                                                                                 └─────────────────────┘                    
-                                                                                                                                            
-                                                                                                                                            `; 
-
 export const d_impressum = 
 `                                                                                                                                            
                                                                                                                                             
@@ -360,11 +360,11 @@ export const d_impressum =
                  │                                                  │   │  Semantic information                           │                 
                  │ Umsatzsteuer-ID gemäß §27 a Umsatzsteuergesetz:  │   │ ======================                          │                 
                  │ DE 305 762 296                                   │   │                                                 │                 
-                 └──────────────────────────────────────────────────┘   │ Version: 7.6.2-167                              │                 
-                                                                        │ Last update: 2024-01-04T17:24:08.521Z           │                 
-                 ┌──────────────────────────────────────────────────┐   │ Commit: 5010cdc                                 │                 
-                 │        <a href="/impressum/1">-> Disclaimer, data protection and</a>        │   │ Commit count: 167                               │                 
-                 │             <a href="/impressum/1">copyright statements...</a>              │   │ SemVer: 7.6.2                                   │                 
+                 └──────────────────────────────────────────────────┘   │ Version: 7.6.3-168                              │                 
+                                                                        │ Last update: 2024-06-24T10:56:47.293Z           │                 
+                 ┌──────────────────────────────────────────────────┐   │ Commit: 7dd940d                                 │                 
+                 │        <a href="/impressum/1">-> Disclaimer, data protection and</a>        │   │ Commit count: 168                               │                 
+                 │             <a href="/impressum/1">copyright statements...</a>              │   │ SemVer: 7.6.3                                   │                 
                  └──────────────────────────────────────────────────┘   └─────────────────────────────────────────────────┘                 
                                                                                                                                             
                                                                                                                                             
@@ -923,6 +923,7 @@ export const d_technologies =
                                                                                                                                             `; 
 
 export default [
+d_freelance,
 d_contact1,
 d_contact2,
 d_contact3,
@@ -930,7 +931,6 @@ d_contact4,
 d_contact5,
 d_contact6,
 d_education,
-d_freelance,
 d_impressum,
 d_impressum2,
 d_jobs_certania,

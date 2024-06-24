@@ -11,6 +11,7 @@ const slug = (str) => {
     .replace(/[^\w-]+/g, "_")
 }
 const enrichContent = (content, page) => {
+  page = page.toLowerCase()
   const rules = {
     "start.txt": {
       "Alexander Schedler": "<strong>Alexander Schedler</strong>",
@@ -38,15 +39,15 @@ const enrichContent = (content, page) => {
       "/Alex_Schedler":
         '<a href="https://www.xing.com/profile/Alex_Schedler" target="_blank">/Alex_Schedler</a>',
     },
-    /* "freelance.txt": {
+    "freelance.txt": {
       "Alexander Schedler": "<strong>Alexander Schedler</strong>",
       "freelance software developer": "<i>freelance software developer</i>",
-      "freelance work": "<mark>freelance work</mark>",
-      "web application": "<mark>web application</mark>",
-      JavaScript: "<mark>JavaScript</mark>",
-      CouchDB: "<mark>CouchDB</mark>",
+      //"freelance work": "<mark>freelance work</mark>",
+      "currently not": "<mark>currently not</mark>",
+      //"web application": "<mark>web application</mark>",
+      //JavaScript: "<mark>JavaScript</mark>",
       "Just write me": '<a href="mailto:alex@schedler.co">Just write me</a>',
-    }, */
+    },
 
     "jobs.txt": {
       "Alexander Schedler": "<strong>Alexander Schedler</strong>",

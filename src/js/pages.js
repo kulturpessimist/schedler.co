@@ -1,5 +1,5 @@
 import {
-  // d_freelance,
+  d_freelance,
   d_start,
   d_contact1,
   d_contact2,
@@ -24,7 +24,7 @@ import {
 } from "../txt/desktop"
 
 import {
-  // m_freelance,
+   m_freelance,
   m_start,
   m_contact1,
   /* m_contact2,
@@ -53,7 +53,7 @@ import {
 const d_pages = [
   d_start,
   d_contact1,
-  // d_freelance,
+  d_freelance,
   d_jobs,
 
   d_jobs_certania,
@@ -82,7 +82,7 @@ const d_impressumFrames = [d_impressum, d_impressum2]
 const m_pages = [
   m_start,
   m_contact1,
-  // m_freelance,
+  m_freelance,
   m_jobs,
 
   m_jobs_certania,

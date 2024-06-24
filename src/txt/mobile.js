@@ -175,19 +175,19 @@ export const m_freelance =
         ║                                      ║░░      
         ║                                      ║░░      
         ║                                      ║░░      
-        ║   Alexander Schedler                 ║░░      
-        ║   freelance software developer       ║░░      
+        ║   <strong>Alexander Schedler</strong>                 ║░░      
+        ║   <i>freelance software developer</i>       ║░░      
         ║                                      ║░░      
-        ║     Currlently I am working          ║░░      
-        ║     salaried for Johner Institute.   ║░░      
-        ║     I also do freelance work with    ║░░      
-        ║     a key focus on enterprize and    ║░░      
-        ║     b2b web application              ║░░      
-        ║     development and management as    ║░░      
-        ║     well as JavaScript and CouchDB   ║░░      
-        ║     consulting.                      ║░░      
+        ║       Currently I am not working     ║░░      
+        ║       in any freelance projects.     ║░░      
+        ║       My key focus lays on           ║░░      
+        ║       enterprize or B2B web          ║░░      
+        ║       applications, development      ║░░      
+        ║       and management as well         ║░░      
+        ║       as JavaScript consulting.      ║░░      
         ║                                      ║░░      
-        ║     Need my help? Just write me.     ║░░      
+        ║       Want to get in touch?          ║░░      
+        ║       <a href="mailto:alex@schedler.co">Just write me</a>.                 ║░░      
         ║                                      ║░░      
         ║                                      ║░░      
         ║                                      ║░░      
@@ -241,9 +241,9 @@ export const m_impressum_m =
    ┌────────────────────────────────────────────────┐   
    │  Semantic information                          │   
    │ ======================                         │   
-   │ Version: 7.6.2-167                             │   
-   │ Last update: 2024-01-04T17:24:08.521Z          │   
-   │ Commit: 5010cdc                                │   
+   │ Version: 7.6.3-168                             │   
+   │ Last update: 2024-06-24T10:56:47.293Z          │   
+   │ Commit: 7dd940d                                │   
    └────────────────────────────────────────────────┘   
    ┌───────────────┐┌──────────────┐┌───────────────┐   
    │  -> <a href="/impressum/1">Privacy</a>   ││ -> <a href="/impressum/2">Copyright</a> ││ -> <a href="/impressum/3">Disclaimer</a> │   

@@ -13,16 +13,16 @@
              ║                                                              ║░░       │              │                     │                
              ║                                                              ║░░       │ ┌───────────▶│       Backend       │                
              ║                                                              ║░░       │ │            │                     │                
-             ║    Alexander Schedler                                        ║░░       │ │            │                     │                
-             ║    freelance software developer                              ║░░       │ │            └─────────────────────┘                
-             ║                                                              ║░░       │ │                ┌─────────────────────┐            
-             ║        Currlently I am working salaried for Johner           ║░░       │ │                │                     │            
-             ║        Institute. I also do freelance work with a            ║░░       │ │                │                     │            
-             ║        key focus on enterprize or b2b web application        ╠─────────┼─┼───────────────▶│      Frontend       │            
-             ║        development and management as well as JavaScript      ║░░       │ │                │                     │            
-             ║        and CouchDB consulting.                               ║░░       │ │                │                     │            
+             ║                                                              ║░░       │ │            │                     │                
+             ║    Alexander Schedler                                        ║░░       │ │            └─────────────────────┘                
+             ║    freelance software developer                              ║░░       │ │                ┌─────────────────────┐            
+             ║                                                              ║░░       │ │                │                     │            
+             ║        I am currently not taking on                          ║░░       │ │                │                     │            
+             ║        any new freelance projects.                           ╠─────────┼─┼───────────────▶│      Frontend       │            
+             ║                                                              ║░░       │ │                │                     │            
+             ║        Want to get in touch? Just write me.                  ║░░       │ │                │                     │            
              ║                                                              ║░░       │ │                └─────────────────────┘            
-             ║        Need my help? Just write me.                          ║░░       │ │            ┌─────────────────────┐                
+             ║                                                              ║░░       │ │            ┌─────────────────────┐                
              ║                                                              ║░░       │ │            │                     │                
              ║                                                              ║░░       │ │            │                     │                
              ║                                                              ║░░       │ └───────────▶│        Cloud        │                
