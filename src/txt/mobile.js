@@ -241,9 +241,9 @@ export const m_impressum_m =
    ┌────────────────────────────────────────────────┐   
    │  Semantic information                          │   
    │ ======================                         │   
-   │ Version: 7.6.3-168                             │   
-   │ Last update: 2024-01-09T08:10:57.563Z          │   
-   │ Commit: 7dd940d                                │   
+   │ Version: 7.6.3-169                             │   
+   │ Last update: 2024-01-09T18:49:47.366Z          │   
+   │ Commit: 6358399                                │   
    └────────────────────────────────────────────────┘   
    ┌───────────────┐┌──────────────┐┌───────────────┐   
    │  -> <a href="/impressum/1">Privacy</a>   ││ -> <a href="/impressum/2">Copyright</a> ││ -> <a href="/impressum/3">Disclaimer</a> │   
@@ -412,14 +412,14 @@ export const m_jobs_certania =
       <strong>Certania GmbH</strong> <a class="external-employer-link" href="https://certania.com/" target="_blank"> ↗ </a>                                     
      ===============                                    
                                                         
-     Role: <mark data-rough-notation='{"type":"underline","padding":[1,0],"color":"#13aada"}'>Director of Technology</mark>                       
+     Role: <mark data-rough-notation='{"type":"underline","padding":[0,0],"color":"#13aada"}'>Director of Technology</mark>                       
      Dates: <i>January 2024 onwards</i>                        
                                                         
      Main activities                                    
      ---------------                                    
-     * Establishing and observing of an <mark data-rough-notation='{"type":"underline","padding":[1,0],"color":"#13aada"}'>IT strategy</mark>     
+     * Establishing and observing of an <mark data-rough-notation='{"type":"underline","padding":[0,0],"color":"#13aada"}'>IT strategy</mark>     
      for the company and affiliated firms               
-     * Measuring <mark data-rough-notation='{"type":"underline","padding":[1,0],"color":"#13aada"}'>the impact</mark> of technology use           
+     * Measuring <mark data-rough-notation='{"type":"underline","padding":[0,0],"color":"#13aada"}'>the impact</mark> of technology use           
      * Technology consulting                            
                                                         
      Responsibilities                                   
@@ -459,7 +459,7 @@ export const m_jobs_dyno =
       <strong>Dynomedia GmbH</strong> <a class="external-employer-link" href="https://web.archive.org/web/20070208042813/http://www.dynomedia.com:80/de/" target="_blank"> ↗ </a>                                    
      ================                                   
                                                         
-     Role: Web Developer                                
+     Role: <mark data-rough-notation='{"type":"underline","padding":[1,0]}'>Web Developer</mark>                                
      Dates: <i>June 2005 - July 2008</i>                       
                                                         
      Main activities                                    
@@ -504,7 +504,7 @@ export const m_jobs_iob =
       <strong>Internet of Blah / PURR</strong>                            
      =========================                          
                                                         
-     Role: Frontend / Design / CEO                      
+     Role: <mark data-rough-notation='{"type":"underline","padding":[1,0]}'>Frontend / Design / CEO</mark>                      
      Dates: <i>June 2016 – December 2019</i>                   
                                                         
      Main activities                                    
@@ -547,7 +547,7 @@ export const m_jobs_jd =
       <strong>Johner Institut GmbH</strong> <a class="external-employer-link" href="https://www.johner-institute.com" target="_blank"> ↗ </a>                              
      ======================                             
                                                         
-     Role: Senior Software Engineering Lead             
+     Role: <mark data-rough-notation='{"type":"underline","padding":[0,0],"color":"#eeeeee"}'>Senior Software Engineering Lead</mark>             
      Dates: <i>February 2023 - December 2023</i>               
                                                         
      Main activities                                    
@@ -597,7 +597,7 @@ export const m_jobs_kigg =
       <strong>KIGG GmbH</strong> <a class="external-employer-link" href="https://www.kigg.de" target="_blank"> ↗ </a>                                         
      ===========                                        
                                                         
-     Role: Multimedia Producer, Project Manager         
+     Role: <mark data-rough-notation='{"type":"underline","padding":[1,0]}'>Multimedia Producer</mark>, Project Manager         
      Dates: <i>August 2002 - November 2004</i>                 
                                                         
      Main activities                                    
@@ -639,7 +639,7 @@ export const m_jobs_man =
       <strong>MAN Energy Solutions SE</strong> <a class="external-employer-link" href="https://www.man-es.com" target="_blank"> ↗ </a>                           
      =========================                          
                                                         
-     Role: Senior Software Engineer                     
+     Role: <mark data-rough-notation='{"type":"underline","padding":[0,0],"color":"#d91d4b"}'>Senior Software Engineer</mark>                     
      Dates: <i>June 2018 – January 2023</i>                    
                                                         
      Main activities                                    
@@ -650,7 +650,7 @@ export const m_jobs_man =
      * Conceptual design and development of             
      enterprise                                         
        applications                                     
-     * Agile Mentor / SCRUM Master                      
+     * <mark data-rough-notation='{"type":"underline","padding":[0,0],"color":"#d91d4b"}'>Agile Mentor / SCRUM Master</mark>                      
                                                         
      Responsibilities                                   
      ----------------                                   
@@ -688,7 +688,7 @@ export const m_jobs_no =
       <strong>natureOffice GmbH</strong> <a class="external-employer-link" href="https://www.natureoffice.com" target="_blank"> ↗ </a>                                 
      ===================                                
                                                         
-     Role: Head of Software Development, Co-founder     
+     Role: <mark data-rough-notation='{"type":"underline","padding":[1,0]}'>Head of Software Development, Co-founder</mark>     
      Dates: <i>August 2008 - April 2014</i>                    
                                                         
      Main activities                                    
@@ -733,7 +733,7 @@ export const m_jobs_txn =
       <strong>ThinxNet GmbH</strong> <a class="external-employer-link" href="https://thinxnet.com" target="_blank"> ↗ </a>                                     
      ===============                                    
                                                         
-     Role: UI/UX Product Engineer                       
+     Role: <mark data-rough-notation='{"type":"underline","padding":[1,0]}'>UI/UX Product Engineer</mark>                       
      Dates: <i>June 2014 – June 2016</i>                       
                                                         
      Main activities                                    

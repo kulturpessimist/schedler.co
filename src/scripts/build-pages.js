@@ -71,17 +71,17 @@ const enrichContent = (content, page) => {
       "January 2024 onwards": "<i>January 2024 onwards</i>",
       "Director of Technology": `<mark data-rough-notation='${JSON.stringify({
         type: "underline",
-        padding: [1, 0],
+        padding: [0, 0],
         color: "#13aada",
       })}'>Director of Technology</mark>`,
       "IT strategy": `<mark data-rough-notation='${JSON.stringify({
         type: "underline",
-        padding: [1, 0],
+        padding: [0, 0],
         color: "#13aada",
       })}'>IT strategy</mark>`,
       "the impact": `<mark data-rough-notation='${JSON.stringify({
         type: "underline",
-        padding: [1, 0],
+        padding: [0, 0],
         color: "#13aada",
       })}'>the impact</mark>`,
     },
@@ -92,40 +92,91 @@ const enrichContent = (content, page) => {
       "Senior Software Engineering Lead": `<mark data-rough-notation='${JSON.stringify(
         {
           type: "underline",
-          padding: [1, 0],
+          padding: [0, 0],
           color: "#eeeeee",
         },
       )}'>Senior Software Engineering Lead</mark>`,
+      "application engineering": `<mark data-rough-notation='${JSON.stringify({
+        type: "underline",
+        padding: [0, 0],
+        color: "#eeeeee",
+      })}'>Senior Software Engineer</mark>`,
+      "design, architecture and development": `<mark data-rough-notation='${JSON.stringify(
+        {
+          type: "underline",
+          padding: [0, 0],
+          color: "#eeeeee",
+        },
+      )}'>design, architecture and development</mark>`,
     },
     "jobs-man.txt": {
       "MAN Energy Solutions SE":
         '<strong>MAN Energy Solutions SE</strong> <a class="external-employer-link" href="https://www.man-es.com" target="_blank"> ↗ </a>',
       "June 2018 – January 2023": "<i>June 2018 – January 2023</i>",
+      "Senior Software Engineer": `<mark data-rough-notation='${JSON.stringify({
+        type: "underline",
+        padding: [0, 0],
+        color: "#d91d4b",
+      })}'>Senior Software Engineer</mark>`,
+      "application engineering": `<mark data-rough-notation='${JSON.stringify({
+        type: "underline",
+        padding: [0, 0],
+        color: "#d91d4b",
+      })}'>Senior Software Engineer</mark>`,
+      "Agile Mentor / SCRUM Master": `<mark data-rough-notation='${JSON.stringify(
+        {
+          type: "underline",
+          padding: [0, 0],
+          color: "#d91d4b",
+        },
+      )}'>Agile Mentor / SCRUM Master</mark>`,
     },
     "jobs-iob.txt": {
       "Internet of Blah / PURR": "<strong>Internet of Blah / PURR</strong> ",
       "June 2016 – December 2019": "<i>June 2016 – December 2019</i>",
+      "Frontend / Design / CEO": `<mark data-rough-notation='${JSON.stringify({
+        type: "underline",
+        padding: [1, 0],
+      })}'>Frontend / Design / CEO</mark>`,
     },
 
     "jobs-txn.txt": {
       "ThinxNet GmbH":
         '<strong>ThinxNet GmbH</strong> <a class="external-employer-link" href="https://thinxnet.com" target="_blank"> ↗ </a>',
       "June 2014 – June 2016": "<i>June 2014 – June 2016</i>",
+      "UI/UX Product Engineer": `<mark data-rough-notation='${JSON.stringify({
+        type: "underline",
+        padding: [1, 0],
+      })}'>UI/UX Product Engineer</mark>`,
     },
     "jobs-no.txt": {
       "natureOffice GmbH":
         '<strong>natureOffice GmbH</strong> <a class="external-employer-link" href="https://www.natureoffice.com" target="_blank"> ↗ </a>',
       "August 2008 - April 2014": "<i>August 2008 - April 2014</i>",
+      "Head of Software Development, Co-founder": `<mark data-rough-notation='${JSON.stringify(
+        {
+          type: "underline",
+          padding: [1, 0],
+        },
+      )}'>Head of Software Development, Co-founder</mark>`,
     },
     "jobs-dyno.txt": {
       "Dynomedia GmbH":
         '<strong>Dynomedia GmbH</strong> <a class="external-employer-link" href="https://web.archive.org/web/20070208042813/http://www.dynomedia.com:80/de/" target="_blank"> ↗ </a>',
       "June 2005 - July 2008": "<i>June 2005 - July 2008</i>",
+      "Web Developer": `<mark data-rough-notation='${JSON.stringify({
+        type: "underline",
+        padding: [1, 0],
+      })}'>Web Developer</mark>`,
     },
     "jobs-kigg.txt": {
       "KIGG GmbH":
         '<strong>KIGG GmbH</strong> <a class="external-employer-link" href="https://www.kigg.de" target="_blank"> ↗ </a>',
       "August 2002 - November 2004": "<i>August 2002 - November 2004</i>",
+      "Multimedia Producer": `<mark data-rough-notation='${JSON.stringify({
+        type: "underline",
+        padding: [1, 0],
+      })}'>Multimedia Producer</mark>`,
     },
 
     "education.txt": {

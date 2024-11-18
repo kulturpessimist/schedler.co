@@ -147,7 +147,12 @@ const app = {
         .getPropertyValue("--accent-color") || "#000066"
     const annotations = []
     for (let m of e) {
-      const custom = JSON.parse(m.dataset.roughNotation) || {}
+      let custom
+      try {
+        custom = JSON.parse(m.dataset.roughNotation) || {}
+      } catch {
+        custom = {}
+      }
       annotations.push(
         annotate(m, {
           type: m.dataset.type || "highlight",
