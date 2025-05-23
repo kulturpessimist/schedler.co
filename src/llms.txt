@@ -1,0 +1,7 @@
+# Schedler.pro | Alexander Schedler: Internet application engineering, development and management.
+
+## Overview
+[Schedler.pro](https://schedler.pro/): This site serves as a professional portfolio for Alexander Schedler, showcasing expertise in internet application engineering, development, and management. It provides insights into his skills, projects, and professional background.
+
+## Curriculum Vitae (CV)
+[Curriculum vitae (CV)](https://schedler.pro/): This section contains the detailed professional history of Alexander Schedler, outlining his qualifications, work experience, and contributions to the field of internet application engineering. It serves as a comprehensive resource for understanding his career trajectory and technical proficiencies.
