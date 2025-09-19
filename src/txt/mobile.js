@@ -94,7 +94,7 @@ export const m_contact1 =
         ║     Just write me an Email           ║░░      
         ║     <a href="mailto:alex@schedler.co">alex@schedler.co</a> or call me      ║░░      
         ║     <a href="tel:+491714123929">+49 171 4 123 929</a> and follow     ║░░      
-        ║     me on twitter <a href="https://twitter.com/kulturpessimist" target="_blank">@kulturpessimist</a>   ║░░      
+        ║     on bluesky <a href="https://bsky.app/profile/alex.schedler.co" target="_blank">@alex.schedler.co</a>     ║░░      
         ║     and star my work on Github       ║░░      
         ║     /kulturpessimist or connect me   ║░░      
         ║     on LinkedIn <a href="https://www.linkedin.com/in/alexanderschedler" target="_blank">/alexanderschedler</a>   ║░░      
@@ -175,19 +175,19 @@ export const m_freelance =
         ║                                      ║░░      
         ║                                      ║░░      
         ║                                      ║░░      
+        ║                                      ║░░      
+        ║                                      ║░░      
         ║   <strong>Alexander Schedler</strong>                 ║░░      
         ║   <i>freelance software developer</i>       ║░░      
         ║                                      ║░░      
-        ║       Currently I am not working     ║░░      
-        ║       in any freelance projects.     ║░░      
-        ║       My key focus lays on           ║░░      
-        ║       enterprize or B2B web          ║░░      
-        ║       applications, development      ║░░      
-        ║       and management as well         ║░░      
-        ║       as JavaScript consulting.      ║░░      
+        ║       I am <mark>currently not</mark> taking      ║░░      
+        ║       on any new freelance           ║░░      
+        ║       projects.                      ║░░      
         ║                                      ║░░      
         ║       Want to get in touch?          ║░░      
         ║       <a href="mailto:alex@schedler.co">Just write me</a>.                 ║░░      
+        ║                                      ║░░      
+        ║                                      ║░░      
         ║                                      ║░░      
         ║                                      ║░░      
         ║                                      ║░░      
@@ -225,8 +225,8 @@ export const m_impressum_m =
    │ Telefon: <a href="tel:+491714123929">+49 171 4123 929</a>                      │   
    │ E-Mail: <a href="mailto:alex@schedler.co">alex@schedler.co</a>                       │   
    │                                                │   
-   │ Umsatzsteuer-ID gemäß §27 a UStG:              │   
-   │ DE 305 762 296                                 │   
+   │                                                │   
+   │                                                │   
    └────────────────────────────────────────────────┘   
    ┌────────────────────────────────────────────────┐   
    │  Download CV                                   │   
@@ -241,9 +241,9 @@ export const m_impressum_m =
    ┌────────────────────────────────────────────────┐   
    │  Semantic information                          │   
    │ ======================                         │   
-   │ Version: 7.6.3-168                             │   
-   │ Last update: 2024-06-24T10:56:47.293Z          │   
-   │ Commit: 7dd940d                                │   
+   │ Version: 7.7.0-176                             │   
+   │ Last update: 2025-09-19T15:17:11.077Z          │   
+   │ Commit: 283a6a5                                │   
    └────────────────────────────────────────────────┘   
    ┌───────────────┐┌──────────────┐┌───────────────┐   
    │  -> <a href="/impressum/1">Privacy</a>   ││ -> <a href="/impressum/2">Copyright</a> ││ -> <a href="/impressum/3">Disclaimer</a> │   

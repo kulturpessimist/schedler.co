@@ -21,13 +21,13 @@
                  │ Telefon: +49 171 4123 929                        │                                                                       
                  │ E-Mail: alex@schedler.co                         │   ┌─────────────────────────────────────────────────┐                 
                  │                                                  │   │  Semantic information                           │                 
-                 │ Umsatzsteuer-ID gemäß §27 a Umsatzsteuergesetz:  │   │ ======================                          │                 
-                 │ DE 305 762 296                                   │   │                                                 │                 
-                 └──────────────────────────────────────────────────┘   │ Version: {{version-------------}}               │                 
-                                                                        │ Last update: {{update--------------}}           │                 
-                 ┌──────────────────────────────────────────────────┐   │ Commit: {{short---------------}}                │                 
-                 │        -> Disclaimer, data protection and        │   │ Commit count: {{count---------------}}          │                 
-                 │             copyright statements...              │   │ SemVer: {{semver--------------}}                │                 
+                 │                                                  │   │ ======================                          │                 
+                 │                                                  │   │                                                 │                 
+                 └──────────────────────────────────────────────────┘   │ Version: {{version}}                            │                 
+                                                                        │ Last update: {{update}}                         │                 
+                 ┌──────────────────────────────────────────────────┐   │ Commit: {{short}}                               │                 
+                 │        -> Disclaimer, data protection and        │   │ Commit count: {{count}}                         │                 
+                 │             copyright statements...              │   │                                                 │                 
                  └──────────────────────────────────────────────────┘   └─────────────────────────────────────────────────┘                 
                                                                                                                                             
                                                                                                                                             

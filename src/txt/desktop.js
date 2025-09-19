@@ -62,9 +62,9 @@ export const d_contact1 =
              ║        Want to get in touch?                                 ║░░               ######################****######              
              ║        Just write me an Email <a href="mailto:alex@schedler.co">alex@schedler.co</a>               ║░░               **####################  **########            
              ║        or call me <a href="tel:+491714123929">+49 171 4 123 929</a> and follow me on         ║░░                 ##################**  ##########**          
-             ║        twitter <a href="https://twitter.com/kulturpessimist" target="_blank">@kulturpessimist</a> and star my work on          ║░░                 ################**  ##############          
-             ║        Github <a href="https://www.github.com/kulturpessimist" target="_blank">/kulturpessimist</a> or connect me on LinkedIn     ║░░               ****    ********  **################          
-             ║        <a href="https://www.linkedin.com/in/alexanderschedler" target="_blank">/alexanderschedler</a> or Xing <a href="https://www.xing.com/profile/Alex_Schedler" target="_blank">/Alex_Schedler</a>             ║░░                             **##################**          
+             ║        bluesky <a href="https://bsky.app/profile/alex.schedler.co" target="_blank">@alex.schedler.co</a> and star my work on         ║░░                 ################**  ##############          
+             ║        Github /kulturpessimist or connect with me            ║░░               ****    ********  **################          
+             ║        on LinkedIn <a href="https://www.linkedin.com/in/alexanderschedler" target="_blank">/alexanderschedler</a>                        ║░░                             **##################**          
              ║                                                              ║░░                               ##################            
              ║                                                              ║░░                               **################            
              ║                                                              ║░░                                   **########**##**          
@@ -104,9 +104,9 @@ export const d_contact2 =
              ║        Want to get in touch?                                 ║░░               ##**  **####################**  **##          
              ║        Just write me an Email <a href="mailto:alex@schedler.co">alex@schedler.co</a>               ║░░               ######    ################    ######          
              ║        or call me <a href="tel:+491714123929">+49 171 4 123 929</a> and follow me on         ║░░               ########**  **########**  **########          
-             ║        twitter <a href="https://twitter.com/kulturpessimist" target="_blank">@kulturpessimist</a> and star my work on          ║░░               ##########**  **####**  **##########          
-             ║        Github <a href="https://www.github.com/kulturpessimist" target="_blank">/kulturpessimist</a> or connect me on LinkedIn     ║░░               ##############        ##############          
-             ║        <a href="https://www.linkedin.com/in/alexanderschedler" target="_blank">/alexanderschedler</a> or Xing <a href="https://www.xing.com/profile/Alex_Schedler" target="_blank">/Alex_Schedler</a>             ║░░               ################****################          
+             ║        bluesky <a href="https://bsky.app/profile/alex.schedler.co" target="_blank">@alex.schedler.co</a> and star my work on         ║░░               ##########**  **####**  **##########          
+             ║        Github /kulturpessimist or connect with me            ║░░               ##############        ##############          
+             ║        on LinkedIn <a href="https://www.linkedin.com/in/alexanderschedler" target="_blank">/alexanderschedler</a>                        ║░░               ################****################          
              ║                                                              ║░░               ####################################          
              ║                                                              ║░░               ####################################          
              ║                                                              ║░░                 ********************************            
@@ -146,9 +146,9 @@ export const d_contact3 =
              ║        Want to get in touch?                                 ║░░                                       **######**            
              ║        Just write me an Email <a href="mailto:alex@schedler.co">alex@schedler.co</a>               ║░░                                     **########              
              ║        or call me <a href="tel:+491714123929">+49 171 4 123 929</a> and follow me on         ║░░                                   **########**              
-             ║        twitter <a href="https://twitter.com/kulturpessimist" target="_blank">@kulturpessimist</a> and star my work on          ║░░                   **######      **########**                
-             ║        Github <a href="https://www.github.com/kulturpessimist" target="_blank">/kulturpessimist</a> or connect me on LinkedIn     ║░░               **############  ############                  
-             ║        <a href="https://www.linkedin.com/in/alexanderschedler" target="_blank">/alexanderschedler</a> or Xing <a href="https://www.xing.com/profile/Alex_Schedler" target="_blank">/Alex_Schedler</a>             ║░░               ##########################                    
+             ║        bluesky <a href="https://bsky.app/profile/alex.schedler.co" target="_blank">@alex.schedler.co</a> and star my work on         ║░░                   **######      **########**                
+             ║        Github /kulturpessimist or connect with me            ║░░               **############  ############                  
+             ║        on LinkedIn <a href="https://www.linkedin.com/in/alexanderschedler" target="_blank">/alexanderschedler</a>                        ║░░               ##########################                    
              ║                                                              ║░░               **####################**                      
              ║                                                              ║░░               **##################**                        
              ║                                                              ║░░                 ##############**                            
@@ -178,24 +178,24 @@ export const d_contact4 =
                                                                                                                                             
                                                                                                                                             
              ╔══════════════════════════════════════════════════════════════╗                                                               
-             ║                                                              ║░░                                                             
-             ║                                                              ║░░                                                             
-             ║                                                              ║░░                                   **######**  **            
-             ║                                                              ║░░                 ##**            **############**            
-             ║    <strong>Alexander Schedler</strong>                                        ║░░                 ####**          ################            
-             ║    <i>District of Augsburg, Germany</i>                             ║░░                 ########**      ##############              
-             ║                                                              ║░░                 **############################              
-             ║        Want to get in touch?                                 ║░░                 ##############################              
-             ║        Just write me an Email <a href="mailto:alex@schedler.co">alex@schedler.co</a>               ║░░                 ############################**              
-             ║        or call me <a href="tel:+491714123929">+49 171 4 123 929</a> and follow me on         ║░░                   ##########################**              
-             ║        twitter <a href="https://twitter.com/kulturpessimist" target="_blank">@kulturpessimist</a> and star my work on          ║░░                   **########################                
-             ║        Github <a href="https://www.github.com/kulturpessimist" target="_blank">/kulturpessimist</a> or connect me on LinkedIn     ║░░                   **######################**                
-             ║        <a href="https://www.linkedin.com/in/alexanderschedler" target="_blank">/alexanderschedler</a> or Xing <a href="https://www.xing.com/profile/Alex_Schedler" target="_blank">/Alex_Schedler</a>             ║░░                     **##################**                  
-             ║                                                              ║░░                         ##############**                    
-             ║                                                              ║░░                 ****################**                      
-             ║                                                              ║░░                 ****############**                          
-             ║                                                              ║░░                                                             
-             ║                                                              ║░░                                                             
+             ║                                                              ║░░                           ************                      
+             ║                                                              ║░░                       **################**                  
+             ║                                                              ║░░                     ########################                
+             ║                                                              ║░░                   ############################              
+             ║    <strong>Alexander Schedler</strong>                                        ║░░                 **####    ####****####    ####**            
+             ║    <i>District of Augsburg, Germany</i>                             ║░░                 ######                    ######            
+             ║                                                              ║░░               **######                    ######**          
+             ║        Want to get in touch?                                 ║░░               **####**                    **######          
+             ║        Just write me an Email <a href="mailto:alex@schedler.co">alex@schedler.co</a>               ║░░               ######**                      ######          
+             ║        or call me <a href="tel:+491714123929">+49 171 4 123 929</a> and follow me on         ║░░               ######**                      ######          
+             ║        bluesky <a href="https://bsky.app/profile/alex.schedler.co" target="_blank">@alex.schedler.co</a> and star my work on         ║░░               ######**                    **######          
+             ║        Github /kulturpessimist or connect with me            ║░░               **######**                  ######**          
+             ║        on LinkedIn <a href="https://www.linkedin.com/in/alexanderschedler" target="_blank">/alexanderschedler</a>                        ║░░                 ##****####**        ****########            
+             ║                                                              ║░░                 **##****####        ############            
+             ║                                                              ║░░                   ####              **########              
+             ║                                                              ║░░                     ######**        **######**              
+             ║                                                              ║░░                       ######        **####                  
+             ║                                                              ║░░                         ****        ****                    
              ╚══════════════════════════════════════════════════════════════╝░░                                                             
                ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░                                                             
                                                                                                                                             
@@ -220,48 +220,6 @@ export const d_contact5 =
                                                                                                                                             
                                                                                                                                             
              ╔══════════════════════════════════════════════════════════════╗                                                               
-             ║                                                              ║░░                           ************                      
-             ║                                                              ║░░                       **################**                  
-             ║                                                              ║░░                     ########################                
-             ║                                                              ║░░                   ############################              
-             ║    <strong>Alexander Schedler</strong>                                        ║░░                 **####    ####****####    ####**            
-             ║    <i>District of Augsburg, Germany</i>                             ║░░                 ######                    ######            
-             ║                                                              ║░░               **######                    ######**          
-             ║        Want to get in touch?                                 ║░░               **####**                    **######          
-             ║        Just write me an Email <a href="mailto:alex@schedler.co">alex@schedler.co</a>               ║░░               ######**                      ######          
-             ║        or call me <a href="tel:+491714123929">+49 171 4 123 929</a> and follow me on         ║░░               ######**                      ######          
-             ║        twitter <a href="https://twitter.com/kulturpessimist" target="_blank">@kulturpessimist</a> and star my work on          ║░░               ######**                    **######          
-             ║        Github <a href="https://www.github.com/kulturpessimist" target="_blank">/kulturpessimist</a> or connect me on LinkedIn     ║░░               **######**                  ######**          
-             ║        <a href="https://www.linkedin.com/in/alexanderschedler" target="_blank">/alexanderschedler</a> or Xing <a href="https://www.xing.com/profile/Alex_Schedler" target="_blank">/Alex_Schedler</a>             ║░░                 ##****####**        ****########            
-             ║                                                              ║░░                 **##****####        ############            
-             ║                                                              ║░░                   ####              **########              
-             ║                                                              ║░░                     ######**        **######**              
-             ║                                                              ║░░                       ######        **####                  
-             ║                                                              ║░░                         ****        ****                    
-             ╚══════════════════════════════════════════════════════════════╝░░                                                             
-               ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░                                                             
-                                                                                                                                            
-                                                                                                                                            
-                                                                                                                                            
-                                                                                                                                            
-                                                                                                                                            
-                                                                                                                                            
-                                                                                                                                            
-                                                                                                                                            
-                                                                                                                                            `; 
-
-export const d_contact6 = 
-`                                                                                                                                            
-                                                                                                                                            
-                                                                                                                                            
-                                                                                                                                            
-                                                                                                                                            
-                                                                                                                                            
-                                                                                                                                            
-                                                                                                                                            
-                                                                                                                                            
-                                                                                                                                            
-             ╔══════════════════════════════════════════════════════════════╗                                                               
              ║                                                              ║░░                 ********************************            
              ║                                                              ║░░               **################################**          
              ║                                                              ║░░               **################################**          
@@ -272,9 +230,9 @@ export const d_contact6 =
              ║        Want to get in touch?                                 ║░░               **####    **##              **####**          
              ║        Just write me an Email <a href="mailto:alex@schedler.co">alex@schedler.co</a>               ║░░               **####    **##                ####**          
              ║        or call me <a href="tel:+491714123929">+49 171 4 123 929</a> and follow me on         ║░░               **####    **##      ####**    ####**          
-             ║        twitter <a href="https://twitter.com/kulturpessimist" target="_blank">@kulturpessimist</a> and star my work on          ║░░               **####    **##      ####**    **##**          
-             ║        Github <a href="https://www.github.com/kulturpessimist" target="_blank">/kulturpessimist</a> or connect me on LinkedIn     ║░░               **####    **##      ####**    **##**          
-             ║        <a href="https://www.linkedin.com/in/alexanderschedler" target="_blank">/alexanderschedler</a> or Xing <a href="https://www.xing.com/profile/Alex_Schedler" target="_blank">/Alex_Schedler</a>             ║░░               **####    **##      ####**    **##**          
+             ║        bluesky <a href="https://bsky.app/profile/alex.schedler.co" target="_blank">@alex.schedler.co</a> and star my work on         ║░░               **####    **##      ####**    **##**          
+             ║        Github /kulturpessimist or connect with me            ║░░               **####    **##      ####**    **##**          
+             ║        on LinkedIn <a href="https://www.linkedin.com/in/alexanderschedler" target="_blank">/alexanderschedler</a>                        ║░░               **####    **##      ####**    **##**          
              ║                                                              ║░░               **####    **##      ####**    **##**          
              ║                                                              ║░░               **####    **##      ####**    **##**          
              ║                                                              ║░░               **####****######**########****####**          
@@ -358,13 +316,13 @@ export const d_impressum =
                  │ Telefon: <a href="tel:+491714123929">+49 171 4123 929</a>                        │                                                                       
                  │ E-Mail: <a href="mailto:alex@schedler.co">alex@schedler.co</a>                         │   ┌─────────────────────────────────────────────────┐                 
                  │                                                  │   │  Semantic information                           │                 
-                 │ Umsatzsteuer-ID gemäß §27 a Umsatzsteuergesetz:  │   │ ======================                          │                 
-                 │ DE 305 762 296                                   │   │                                                 │                 
-                 └──────────────────────────────────────────────────┘   │ Version: 7.6.3-168                              │                 
-                                                                        │ Last update: 2024-06-24T10:56:47.293Z           │                 
-                 ┌──────────────────────────────────────────────────┐   │ Commit: 7dd940d                                 │                 
-                 │        <a href="/impressum/1">-> Disclaimer, data protection and</a>        │   │ Commit count: 168                               │                 
-                 │             <a href="/impressum/1">copyright statements...</a>              │   │ SemVer: 7.6.3                                   │                 
+                 │                                                  │   │ ======================                          │                 
+                 │                                                  │   │                                                 │                 
+                 └──────────────────────────────────────────────────┘   │ Version: {{version}}                            │                 
+                                                                        │ Last update: {{update}}                         │                 
+                 ┌──────────────────────────────────────────────────┐   │ Commit: {{short}}                               │                 
+                 │        <a href="/impressum/1">-> Disclaimer, data protection and</a>        │   │ Commit count: {{count}}                         │                 
+                 │             <a href="/impressum/1">copyright statements...</a>              │   │                                                 │                 
                  └──────────────────────────────────────────────────┘   └─────────────────────────────────────────────────┘                 
                                                                                                                                             
                                                                                                                                             
@@ -929,7 +887,6 @@ d_contact2,
 d_contact3,
 d_contact4,
 d_contact5,
-d_contact6,
 d_education,
 d_impressum,
 d_impressum2,

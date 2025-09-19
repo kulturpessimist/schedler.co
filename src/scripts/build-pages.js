@@ -30,8 +30,8 @@ const enrichContent = (content, page) => {
       "alex@schedler.co":
         '<a href="mailto:alex@schedler.co">alex@schedler.co</a>',
       "+49 171 4 123 929": '<a href="tel:+491714123929">+49 171 4 123 929</a>',
-      "@kulturpessimist":
-        '<a href="https://twitter.com/kulturpessimist" target="_blank">@kulturpessimist</a>',
+      "@alex.schedler.co":
+        '<a href="https://bsky.app/profile/alex.schedler.co" target="_blank">@alex.schedler.co</a>',
       "~kulturpessimist":
         '<a href="https://www.github.com/kulturpessimist" target="_blank">/kulturpessimist</a>',
       "/alexanderschedler":
