@@ -2,7 +2,7 @@
 
 website and contents of schedler.co / schedler.pro
 
-Last update 10.01.2023
+Last update 22.09.2025
 
 # TODO
 
@@ -11,6 +11,17 @@ Last update 10.01.2023
 - [x] update favicon
 
 # Changelog
+
+22.09.2025
+
+Removed Ust.ID from imprint as no longer required.
+Removed twitter from social links as no longer used. Added bluesky as alternative.
+
+xx.12.2024
+
+New role at CERTANIA.
+Stop of further freelancing work
+
 
 10.01.2023
 
