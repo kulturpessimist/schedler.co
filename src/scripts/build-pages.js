@@ -1,17 +1,17 @@
-const fs = require("fs/promises")
-const version = require("../version.json")
+const fs = require("fs/promises");
+const version = require("../version.json");
 
-const path = "./src/txt/"
+const path = "./src/txt/";
 
 const slug = (str) => {
   return str
     .split(".")[0]
     .toLowerCase()
     .replace(/[^a-zA-Z0-9]/g, " ")
-    .replace(/[^\w-]+/g, "_")
-}
+    .replace(/[^\w-]+/g, "_");
+};
 const enrichContent = (content, page) => {
-  page = page.toLowerCase()
+  page = page.toLowerCase();
   const rules = {
     "start.txt": {
       "Alexander Schedler": "<strong>Alexander Schedler</strong>",
@@ -32,7 +32,7 @@ const enrichContent = (content, page) => {
       "+49 171 4 123 929": '<a href="tel:+491714123929">+49 171 4 123 929</a>',
       "@alex.schedler.co":
         '<a href="https://bsky.app/profile/alex.schedler.co" target="_blank">@alex.schedler.co</a>',
-      "~kulturpessimist":
+      "/kulturpessimist":
         '<a href="https://www.github.com/kulturpessimist" target="_blank">/kulturpessimist</a>',
       "/alexanderschedler":
         '<a href="https://www.linkedin.com/in/alexanderschedler" target="_blank">/alexanderschedler</a>',
@@ -183,67 +183,69 @@ const enrichContent = (content, page) => {
       "-> Copyright": '-> <a href="/impressum/2">Copyright</a>',
       "-> Disclaimer": '-> <a href="/impressum/3">Disclaimer</a>',
     },
-  }
-  rules["contact1.txt"] = rules["contact0.txt"]
-  rules["contact2.txt"] = rules["contact0.txt"]
-  rules["contact3.txt"] = rules["contact0.txt"]
-  rules["contact4.txt"] = rules["contact0.txt"]
-  rules["contact5.txt"] = rules["contact0.txt"]
-  rules["contact6.txt"] = rules["contact0.txt"]
+  };
+  rules["contact1.txt"] = rules["contact0.txt"];
+  rules["contact2.txt"] = rules["contact0.txt"];
+  rules["contact3.txt"] = rules["contact0.txt"];
+  rules["contact4.txt"] = rules["contact0.txt"];
+  rules["contact5.txt"] = rules["contact0.txt"];
+  rules["contact6.txt"] = rules["contact0.txt"];
 
-  rules["start.mobile.txt"] = rules["start.txt"]
-  rules["contact1.mobile.txt"] = rules["contact0.txt"]
-  rules["freelance.mobile.txt"] = rules["freelance.txt"]
-  rules["jobs.mobile.txt"] = rules["jobs.txt"]
-  rules["jobs-certania.mobile.txt"] = rules["jobs-certania.txt"]
-  rules["jobs-jd.mobile.txt"] = rules["jobs-jd.txt"]
-  rules["jobs-man.mobile.txt"] = rules["jobs-man.txt"]
-  rules["jobs-iob.mobile.txt"] = rules["jobs-iob.txt"]
-  rules["jobs-txn.mobile.txt"] = rules["jobs-txn.txt"]
-  rules["jobs-no.mobile.txt"] = rules["jobs-no.txt"]
-  rules["jobs-dyno.mobile.txt"] = rules["jobs-dyno.txt"]
-  rules["jobs-kigg.mobile.txt"] = rules["jobs-kigg.txt"]
+  rules["start.mobile.txt"] = rules["start.txt"];
+  rules["contact1.mobile.txt"] = rules["contact0.txt"];
+  rules["freelance.mobile.txt"] = rules["freelance.txt"];
+  rules["jobs.mobile.txt"] = rules["jobs.txt"];
+  rules["jobs-certania.mobile.txt"] = rules["jobs-certania.txt"];
+  rules["jobs-jd.mobile.txt"] = rules["jobs-jd.txt"];
+  rules["jobs-man.mobile.txt"] = rules["jobs-man.txt"];
+  rules["jobs-iob.mobile.txt"] = rules["jobs-iob.txt"];
+  rules["jobs-txn.mobile.txt"] = rules["jobs-txn.txt"];
+  rules["jobs-no.mobile.txt"] = rules["jobs-no.txt"];
+  rules["jobs-dyno.mobile.txt"] = rules["jobs-dyno.txt"];
+  rules["jobs-kigg.mobile.txt"] = rules["jobs-kigg.txt"];
 
-  rules["education.mobile.txt"] = rules["education.txt"]
-  rules["skills.mobile.txt"] = rules["skills.txt"]
-  rules["technologies.mobile.txt"] = rules["technologies.txt"]
+  rules["education.mobile.txt"] = rules["education.txt"];
+  rules["skills.mobile.txt"] = rules["skills.txt"];
+  rules["technologies.mobile.txt"] = rules["technologies.txt"];
   //
   // console.log(page, "was", content.length)
   if (rules[page]) {
     //content = content.replace(/(\w+)/gi, "<u>$1</u>")
     for (const key in rules[page]) {
-      content = content.replace(key, rules[page][key])
+      content = content.replace(key, rules[page][key]);
     }
   }
   // console.log("is", content.length)
-  return content
-}
+  return content;
+};
 
 const main = async () => {
   for (let f of ["mobile", "desktop"]) {
-    const filenames = await fs.readdir(path + "/" + f)
+    const filenames = await fs.readdir(path + "/" + f);
 
-    let pages = []
-    let exports = []
+    let pages = [];
+    let exports = [];
     for (const filename of filenames) {
       // console.log(path + filename)
       if (filename.endsWith(".txt")) {
-        let content = await fs.readFile([path, f, filename].join("/"), "utf-8")
-        content = enrichContent(content, filename)
+        let content = await fs.readFile([path, f, filename].join("/"), "utf-8");
+        content = enrichContent(content, filename);
         //console.log(path + filename, content.length)
-        pages.push(`export const ${f[0]}_${slug(filename)} = \n\`${content}\``)
-        exports.push(`${f[0]}_${slug(filename)}`)
+        pages.push(`export const ${f[0]}_${slug(filename)} = \n\`${content}\``);
+        exports.push(`${f[0]}_${slug(filename)}`);
       }
     }
-    console.log([path, f + ".js"].join(""))
+    console.log([path, f + ".js"].join(""));
     //console.log("export default [\n" + exports.join(",\n") + "\n]")
     await fs.writeFile(
       [path, f + ".js"].join("/"),
-      `${pages.join("; \n\n")}; \n\nexport default [\n${exports.join(
-        ",\n",
-      )}\n]`,
-    )
+      `${pages.join("; \n\n")}; \n\nexport default [\n${
+        exports.join(
+          ",\n",
+        )
+      }\n]`,
+    );
   }
-}
+};
 
-main()
+main();
