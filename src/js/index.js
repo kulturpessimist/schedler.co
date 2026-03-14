@@ -1,8 +1,9 @@
+// @ts-check
+
 import "../fonts/Monolisa/monolisa.css";
 import "../css/style.css";
 import { createApp } from "petite-vue";
 import { annotate, annotationGroup } from "rough-notation";
-// contents
 import Navigo from "navigo";
 import {
   contactFrames,
@@ -13,46 +14,111 @@ import {
   pagesMobile,
 } from "./pages";
 
-/*
-  <em> = deemphasized
-  <i> = emphasized
-  <strong> = strong
-  <mark> = highlight with rough notation maybe
-*/
+/**
+ * @typedef {{ data: Record<string, string> }} RouteMatch
+ */
 
+/**
+ * @typedef {{ url: string }} RouterLocation
+ */
+
+/**
+ * @typedef {{
+ *   navigate: (path: string) => void;
+ *   on: (path: string, handler: (match: RouteMatch) => void) => void;
+ *   notFound: (handler: () => void) => void;
+ *   resolve: () => void;
+ *   updatePageLinks: () => void;
+ *   getCurrentLocation: () => RouterLocation;
+ * }} AppRouter
+ */
+
+/**
+ * @typedef {{
+ *   pages: string[];
+ *   contactFrames: string[];
+ *   impressumFrames: string[];
+ *   _router: AppRouter | null;
+ *   _slideshows: ReturnType<typeof setTimeout>[];
+ *   _glitchMemoize: string;
+ *   currentPage: number;
+ *   current: string;
+ *   loader: string;
+ *   readonly prevPage: number;
+ *   readonly nextPage: number;
+ *   readonly currentGetter: string | undefined;
+ *   init: () => void;
+ *   toggleDarkMode: () => void;
+ *   annotateAllTheThings: () => void;
+ *   combine: (from: string, to: string, take: number) => string;
+ *   difference: (from: string, to: string, duration?: number) => string;
+ *   columns: (from: string, to: string, takeRows: number, takeColumns?: number) => string;
+ *   glitch: (text: string, count?: number, memoize?: boolean) => string;
+ *   playSlideshow: (animation?: string[], currentFrame?: number) => void;
+ *   stopSlideshow: () => void;
+ *   initKeyboardListener: () => void;
+ *   afterNavigation: () => void;
+ *   navigateFromTo: (from: string, to: string, nextPage: number) => void;
+ *   navigate: (direction?: "next" | "prev" | number) => void;
+ *   options: () => void;
+ * }} AppState
+ */
+
+/** @type {Window & { ag?: ReturnType<typeof annotationGroup>; app?: AppState }} */
+const typedWindow = window;
+
+/** @type {AppState} */
 const app = {
   pages: [],
   contactFrames: [],
   impressumFrames: [],
   _router: null,
   _slideshows: [],
-  // data
   _glitchMemoize: "",
   currentPage: 0,
   current: "",
   loader: " ",
-  // getters
+
+  /**
+   * Current index for previous page navigation.
+   *
+   * @returns {number}
+   */
   get prevPage() {
     return this.currentPage > 0 ? this.currentPage - 1 : this.pages.length - 1;
   },
+
+  /**
+   * Current index for next page navigation.
+   *
+   * @returns {number}
+   */
   get nextPage() {
     return this.currentPage < this.pages.length - 1 ? this.currentPage + 1 : 0;
   },
 
+  /**
+   * Currently visible page content.
+   *
+   * @returns {string | undefined}
+   */
   get currentGetter() {
     return app.pages[this.currentPage];
   },
 
-  // methods
+  /**
+   * Initialize app data sources, keyboard shortcuts and routes.
+   *
+   * @returns {void}
+   */
   init() {
-    // darkmode
     if (
       window.matchMedia &&
       window.matchMedia("(prefers-color-scheme: dark)").matches
     ) {
       this.toggleDarkMode();
     }
-    // portrait mode
+
     if (window.innerWidth > window.innerHeight) {
       console.log("+++ landscape +++");
       this.pages = pages;
@@ -64,26 +130,27 @@ const app = {
       this.contactFrames = contactFramesMobile;
       this.impressumFrames = impressumFramesMobile;
     }
-    //
 
     this.initKeyboardListener();
+    this.current = app.pages[this.currentPage] || "";
 
-    this.current = app.pages[this.currentPage];
-    this._router = new Navigo("/");
+    const router = /** @type {AppRouter} */ (new Navigo("/"));
+    this._router = router;
 
-    this._router.notFound(() => {
-      this._router.navigate("/page/0");
+    router.notFound(() => {
+      router.navigate("/page/0");
     });
 
-    this._router.on("/impressum/:frame", (match) => {
-      this.current = this.navigateFromTo(
-        this.current,
-        this.impressumFrames[parseInt(match.data.frame, 10)],
-      );
+    router.on("/impressum/:frame", (match) => {
+      const frame = Number.parseInt(match.data.frame, 10);
+      const nextFrame = this.impressumFrames[frame] || this.impressumFrames[0];
+      this.navigateFromTo(this.current, nextFrame, this.currentPage);
     });
 
-    this._router.on("/job/:company", (match) => {
+    router.on("/job/:company", (match) => {
+      /** @type {string} */
       let target;
+
       switch (match.data.company) {
         case "certania":
           target = "/page/4";
@@ -112,9 +179,11 @@ const app = {
         default:
           target = "/page/0";
       }
-      this._router.navigate(target);
+
+      router.navigate(target);
     });
-    this._router.on("/page/:page", (match) => {
+
+    router.on("/page/:page", (match) => {
       if (match.data.page === "1") {
         setTimeout(() => {
           this.playSlideshow(this.contactFrames, 0);
@@ -122,219 +191,289 @@ const app = {
       } else {
         this.stopSlideshow();
       }
+
       this.navigate(Number(match.data.page));
-      //
     });
-    this._router.resolve();
+
+    router.resolve();
   },
 
+  /**
+   * Toggle dark mode class and rebuild rough-notation highlights.
+   *
+   * @returns {void}
+   */
   toggleDarkMode() {
-    document.querySelector("html").classList.toggle("dark");
-    window.ag ? window.ag.hide() : void 0;
+    const html = document.querySelector("html");
+    if (html) {
+      html.classList.toggle("dark");
+    }
+
+    typedWindow.ag ? typedWindow.ag.hide() : void 0;
     this.annotateAllTheThings();
   },
 
+  /**
+   * Highlight all `<mark>` nodes using rough-notation.
+   *
+   * @returns {void}
+   */
   annotateAllTheThings() {
-    const e = document.querySelectorAll("mark");
-    const color = window
-      .getComputedStyle(document.documentElement)
-      .getPropertyValue("--accent-color") || "#000066";
+    /** @type {NodeListOf<HTMLElement>} */
+    const elements = document.querySelectorAll("mark");
+    const color =
+      window
+        .getComputedStyle(document.documentElement)
+        .getPropertyValue("--accent-color") || "#000066";
+
+    /** @type {ReturnType<typeof annotate>[]} */
     const annotations = [];
-    for (let m of e) {
+
+    for (const mark of elements) {
       annotations.push(
-        annotate(m, {
+        annotate(mark, {
           type: "highlight",
           color,
         }),
       );
     }
+
     const ag = annotationGroup(annotations);
-    window.ag = ag;
+    typedWindow.ag = ag;
     ag.show();
   },
 
   /**
-   * Effects
+   * Replace top lines of one page with lines from another page.
+   *
+   * @param {string} from
+   * @param {string} to
+   * @param {number} take
+   * @returns {string}
    */
   combine(from, to, take) {
-    from = from.split("\n").slice(take);
-    to = to.split("\n").slice(0, take);
+    const fromLines = from.split("\n").slice(take);
+    const toLines = to.split("\n").slice(0, take);
 
-    return [...to, ...from].join("\n");
+    return [...toLines, ...fromLines].join("\n");
   },
 
+  /**
+   * Build a randomized difference animation payload.
+   *
+   * @param {string} from
+   * @param {string} to
+   * @param {number} [duration=800]
+   * @returns {string}
+   */
   difference(from, to, duration = 800) {
-    from = from.split("");
-    to = to.split("");
+    const fromChars = from.split("");
+    const toChars = to.split("");
 
+    /** @type {number[]} */
     const indices = [];
-    to.forEach((v, i) => {
-      if (v.match(/\S/)) {
-        indices.push(i);
+    toChars.forEach((value, index) => {
+      if (value.match(/\S/)) {
+        indices.push(index);
       }
     });
 
     const speed = Math.floor(800 / indices.length);
     indices
       .sort(() => Math.random())
-      .forEach((v, i) => {
-        // console.log(v, from[v], "=>", to[v])
+      .forEach((value, index) => {
         setTimeout(
-          (v) => {
-            from[v] = to[v];
-            this.current = from.join("");
+          (charIndex) => {
+            fromChars[charIndex] = toChars[charIndex] || " ";
+            this.current = fromChars.join("");
           },
-          i * speed + duration,
-          v,
+          index * speed + duration,
+          value,
         );
       });
-    return [...to, ...from].join("\n");
+
+    return [...toChars, ...fromChars].join("\n");
   },
 
+  /**
+   * Build a column-transition output by slicing trailing/leading columns.
+   *
+   * @param {string} from
+   * @param {string} to
+   * @param {number} takeRows
+   * @param {number} [takeColumns=50]
+   * @returns {string}
+   */
   columns(from, to, takeRows, takeColumns = 50) {
-    // const xfrom = this.combine(from, to, 0)
-    // console.log(xfrom)
-    from = from
+    const fromLines = from
       .split("\n")
       .map((line) => line.slice(0, line.length - takeColumns));
-    to = to
+    const toLines = to
       .split("\n")
       .slice(0, takeRows + 1)
       .map((line) => line.slice(-1 * takeColumns));
-    //console.log(from.length, to.length)
-    // let tfix = []
-    let tfrom = [];
-    // let tto = []
-    for (let i = 0; i < from.length; i++) {
-      // tfix.push(from[i].slice(from[i].length - takeColumns))
 
-      tfrom.push(from[i] + (to[i] || Array(from[i].length).fill(" ").join("")));
+    /** @type {string[]} */
+    const mergedFrom = [];
+    for (let i = 0; i < fromLines.length; i++) {
+      mergedFrom.push(
+        fromLines[i] + (toLines[i] || Array(fromLines[i].length).fill(" ").join("")),
+      );
     }
 
-    return [...tfrom].join("\n");
+    return [...mergedFrom].join("\n");
   },
 
+  /**
+   * Corrupt random non-whitespace characters for transition effects.
+   *
+   * @param {string} text
+   * @param {number} [count=25]
+   * @param {boolean} [memoize=false]
+   * @returns {string}
+   */
   glitch(text, count = 25, memoize = false) {
-    if (memoize) {
-      if (this._glitchMemoize) {
-        return this._glitchMemoize;
-      }
+    if (memoize && this._glitchMemoize) {
+      return this._glitchMemoize;
     }
 
-    // let possible = [...new Set(text.replace(/\s/g, "").split(""))]
-    // let possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789".split("")
-    // let possible = "-+*/|}{[]?/.+-_)(*&^%$#@!)}~".split("")
-    // let possible = '-+*/|}{[]~\\":;?/.><=+-_)(*&^%$#@!)}'.split("")
-    let possible = "-*+/|}{[]?/.+-_)(*&^%$#@!)}~".split("");
-    let p = [];
-    let t = text.split("");
-    t.forEach((v, i) => {
-      if (v.match(/\S/)) {
-        p.push(i);
+    const possible = "-*+/|}{[]?/.+-_)(*&^%$#@!)}~".split("");
+    /** @type {number[]} */
+    const positions = [];
+    const chars = text.split("");
+
+    chars.forEach((value, index) => {
+      if (value.match(/\S/)) {
+        positions.push(index);
       }
     });
 
     for (let c = 0; c <= count; c++) {
-      const item = p[Math.floor(Math.random() * p.length)];
-      // const item = Math.floor(Math.random() * t.length)
-      t[item] = possible[Math.floor(Math.random() * possible.length)];
+      const item = positions[Math.floor(Math.random() * positions.length)];
+      chars[item] = possible[Math.floor(Math.random() * possible.length)] || " ";
     }
+
     if (memoize) {
-      this._glitchMemoize = t.join("");
+      this._glitchMemoize = chars.join("");
     } else {
       this._glitchMemoize = "";
     }
 
-    return t.join("");
+    return chars.join("");
   },
 
-  playSlideshow(animation = this.contactFrames, currentFrame = 0) {
-    //console.log("playSlideshow", currentFrame, "of", animation.length - 1)
+  /**
+   * Play contact animation frames in a loop.
+   *
+   * @param {string[]} [animation=this.contactFrames]
+   * @param {number} [currentFrame=0]
+   * @returns {void}
+   */
+  playSlideshow(animation, currentFrame = 0) {
+    const animationFrames = animation || this.contactFrames;
     const speed = 60;
     const pause = 200;
-    const lines = animation[currentFrame].split("\n").length;
-    const nextFrame = (currentFrame + 1) % animation.length;
+    const lines = animationFrames[currentFrame].split("\n").length;
+    const nextFrame = (currentFrame + 1) % animationFrames.length;
 
     for (let i = 0; i <= lines; i++) {
       this._slideshows[i] = setTimeout(
-        (i) => {
+        (lineIndex) => {
           this.current = this.combine(
-            animation[currentFrame], //this.glitch(app.pages[this.currentPage], 50, Math.random() < 0.9),
-            animation[nextFrame],
-            i,
+            animationFrames[currentFrame],
+            animationFrames[nextFrame],
+            lineIndex,
           );
         },
         i * speed,
         i,
       );
+
       if (i === lines) {
-        this._slideshows[i + 1] = setTimeout(
-          () => {
-            this.playSlideshow(animation, nextFrame);
-          },
-          i * speed + pause,
-        );
+        this._slideshows[i + 1] = setTimeout(() => {
+          this.playSlideshow(animationFrames, nextFrame);
+        }, i * speed + pause);
       }
     }
   },
-  stopSlideshow() {
-    //console.log(this._slideshows.length)
-    this._slideshows.forEach((sl) => clearTimeout(sl));
-    //clearTimeout(this._slideshows)
-  },
+
   /**
-   * Navigation
+   * Stop all pending slideshow timeouts.
+   *
+   * @returns {void}
+   */
+  stopSlideshow() {
+    this._slideshows.forEach((slideshowTimeout) => clearTimeout(slideshowTimeout));
+  },
+
+  /**
+   * Register keyboard shortcuts for page navigation.
+   *
+   * @returns {void}
    */
   initKeyboardListener() {
     document.addEventListener("keydown", (event) => {
+      const router = this._router;
+      if (!router) {
+        return;
+      }
+
       if (event.key === "ArrowRight") {
-        this._router.navigate("/page/" + this.nextPage);
+        router.navigate("/page/" + this.nextPage);
       }
       if (event.key === "ArrowLeft") {
-        this._router.navigate("/page/" + this.prevPage);
+        router.navigate("/page/" + this.prevPage);
       }
       if (event.key === "i") {
-        this._router.navigate("/impressum/0");
+        router.navigate("/impressum/0");
       }
       if (event.key === "f") {
-        this._router.navigate("/page/2");
+        router.navigate("/page/2");
       }
       if (event.key === "@" || event.key === "c") {
-        this._router.navigate("/page/1");
+        router.navigate("/page/1");
       }
-      /*
-      if (event.key === "Dead") {
-
-      }
-      */
     });
   },
 
+  /**
+   * Re-bind page links and refresh annotations after route updates.
+   *
+   * @returns {void}
+   */
   afterNavigation() {
+    if (!this._router) {
+      return;
+    }
+
     this._router.updatePageLinks();
     setTimeout(() => {
       this.annotateAllTheThings();
     }, 250);
   },
+
+  /**
+   * Animate transition from one page string to another.
+   *
+   * @param {string} from
+   * @param {string} to
+   * @param {number} nextPage
+   * @returns {void}
+   */
   navigateFromTo(from, to, nextPage) {
     const speed = 20;
-    let iv;
     let ivc = 0;
-    let ivt = ["", "", "", "", "", ""]; //"–/|\\".split("")
+    const ivt = ["", "", "", "", "", ""];
 
-    iv = setInterval(() => {
+    const interval = setInterval(() => {
       this.loader = ivt[ivc++ % ivt.length];
     }, 75);
 
     const lines = this.current.split("\n").length;
     for (let i = 0; i <= lines; i++) {
       setTimeout(
-        (i) => {
-          this.current = this.combine(
-            this.glitch(from, 50, Math.random() < 0.9),
-            to,
-            i,
-          );
+        (lineIndex) => {
+          this.current = this.combine(this.glitch(from, 50, Math.random() < 0.9), to, lineIndex);
         },
         i * speed,
         i,
@@ -345,15 +484,21 @@ const app = {
         setTimeout(() => {
           this.currentPage = nextPage;
           this.loader = " ";
-          clearInterval(iv);
-
+          clearInterval(interval);
           this.afterNavigation();
         }, i * speed);
       }
     }
   },
 
+  /**
+   * Navigate by explicit index or symbolic direction.
+   *
+   * @param {"next" | "prev" | number} [direction="next"]
+   * @returns {void}
+   */
   navigate(direction = "next") {
+    /** @type {number} */
     let nextPage;
 
     if (typeof direction === "number") {
@@ -364,8 +509,17 @@ const app = {
 
     this.navigateFromTo(this.current, app.pages[nextPage], nextPage);
   },
+
+  /**
+   * Toggle impressum route state.
+   *
+   * @returns {void}
+   */
   options() {
-    // this.playSlideshow(contactFrames, 0)
+    if (!this._router) {
+      return;
+    }
+
     if (this._router.getCurrentLocation().url.indexOf("impressum") === 0) {
       this._router.navigate("/");
     } else {
@@ -375,4 +529,4 @@ const app = {
 };
 
 createApp(app).mount("body");
-window.app = app;
+typedWindow.app = app;

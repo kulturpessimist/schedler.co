@@ -1,3 +1,6 @@
+// @ts-check
+
+/** @type {string} */
 export const d_freelance = 
 `                                                                                                                                            
                                                                                                                                             
@@ -40,6 +43,7 @@ export const d_freelance =
                                                                                                                                             
                                                                                                                                             `; 
 
+/** @type {string} */
 export const d_contact1 = 
 `                                                                                                                                            
                                                                                                                                             
@@ -82,6 +86,7 @@ export const d_contact1 =
                                                                                                                                             
                                                                                                                                             `; 
 
+/** @type {string} */
 export const d_contact2 = 
 `                                                                                                                                            
                                                                                                                                             
@@ -124,6 +129,7 @@ export const d_contact2 =
                                                                                                                                             
                                                                                                                                             `; 
 
+/** @type {string} */
 export const d_contact3 = 
 `                                                                                                                                            
                                                                                                                                             
@@ -166,6 +172,7 @@ export const d_contact3 =
                                                                                                                                             
                                                                                                                                             `; 
 
+/** @type {string} */
 export const d_contact4 = 
 `                                                                                                                                            
                                                                                                                                             
@@ -208,6 +215,7 @@ export const d_contact4 =
                                                                                                                                             
                                                                                                                                             `; 
 
+/** @type {string} */
 export const d_contact5 = 
 `                                                                                                                                            
                                                                                                                                             
@@ -250,6 +258,7 @@ export const d_contact5 =
                                                                                                                                             
                                                                                                                                             `; 
 
+/** @type {string} */
 export const d_education = 
 `╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
 ║                                                                                                                                          ║
@@ -292,6 +301,7 @@ export const d_education =
 ║                                                                                                                                          ║
 ╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝`; 
 
+/** @type {string} */
 export const d_impressum = 
 `                                                                                                                                            
                                                                                                                                             
@@ -334,6 +344,7 @@ export const d_impressum =
                                                                                                                                             
                                                                                                                                             `; 
 
+/** @type {string} */
 export const d_impressum2 = 
 `                                                                                                                                            
                                                                                                                                             
@@ -376,6 +387,7 @@ export const d_impressum2 =
                                                                                                                                             
                                                                                                                                             `; 
 
+/** @type {string} */
 export const d_jobs_certania = 
 `                                                                                                                                            
                                                                                                                                             
@@ -418,6 +430,7 @@ export const d_jobs_certania =
                                                                                                                                             
                                                                                                                                             `; 
 
+/** @type {string} */
 export const d_jobs_dyno = 
 `                                                                                                                                            
                                                                                                                                             
@@ -460,6 +473,7 @@ export const d_jobs_dyno =
                                                                                                                                             
                                                                                                                                             `; 
 
+/** @type {string} */
 export const d_jobs_iob = 
 `                                                                                                                                            
                                                                                                                                             
@@ -502,6 +516,7 @@ export const d_jobs_iob =
                                                                                                                                             
                                                                                                                                             `; 
 
+/** @type {string} */
 export const d_jobs_jd = 
 `                                                                                                                                            
                                                                                                                                             
@@ -544,6 +559,7 @@ export const d_jobs_jd =
                                                                                                                                             
                                                                                                                                             `; 
 
+/** @type {string} */
 export const d_jobs_kigg = 
 `                                                                                                                                            
                                                                                                                                             
@@ -586,6 +602,7 @@ export const d_jobs_kigg =
                                                                                                                                             
                                                                                                                                             `; 
 
+/** @type {string} */
 export const d_jobs_man = 
 `                                                                                                                                            
                                                                                                                                             
@@ -628,6 +645,7 @@ export const d_jobs_man =
                                                                                                                                             
                                                                                                                                             `; 
 
+/** @type {string} */
 export const d_jobs_no = 
 `                                                                                                                                            
                                                                                                                                             
@@ -670,6 +688,7 @@ export const d_jobs_no =
                                                                                                                                             
                                                                                                                                             `; 
 
+/** @type {string} */
 export const d_jobs_txn = 
 `                                                                                                                                            
                                                                                                                                             
@@ -712,6 +731,7 @@ export const d_jobs_txn =
                                                                                                                                             
                                                                                                                                             `; 
 
+/** @type {string} */
 export const d_jobs = 
 `┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
 │                                                                                                                                          │
@@ -728,7 +748,7 @@ export const d_jobs =
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░              │
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░              │
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░              │
-│        │       CERTANIA       │◀─────│   <a href="/job/jd" data-navigo>Johner Institut</a>    │◀─────│ <a href="/job/man-es" data-navigo>MAN Energy Solutions</a> │◀─────│ <a href="/job/iob" data-navigo>Internet of Blah</a>     │◀─┐             │
+│        │       <a href="/job/certania" data-navigo>CERTANIA</a>       │◀─────│   <a href="/job/jd" data-navigo>Johner Institut</a>    │◀─────│ <a href="/job/man-es" data-navigo>MAN Energy Solutions</a> │◀─────│ <a href="/job/iob" data-navigo>Internet of Blah</a>     │◀─┐             │
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░│             │
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░│             │
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░│             │
@@ -754,6 +774,7 @@ export const d_jobs =
 │                                                                                                                                          │
 └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘`; 
 
+/** @type {string} */
 export const d_skills = 
 `                                                                                                                                            
                                                                                                                                             
@@ -796,6 +817,7 @@ export const d_skills =
                                                                                                                                             
                                                                                                                                             `; 
 
+/** @type {string} */
 export const d_start = 
 `                                                                                                                                            
                                                                                                                                             
@@ -838,6 +860,7 @@ export const d_start =
                                                                                                                                             
                                                                                                                                             `; 
 
+/** @type {string} */
 export const d_technologies = 
 `                                                                                                                                            
                                                                                                                                             
@@ -880,7 +903,8 @@ export const d_technologies =
          ░░░░░░░░░░░░░░░░░░░░  ░░░░░░░░░░░░░░░░░░░░                                                                                         
                                                                                                                                             `; 
 
-export default [
+/** @type {string[]} */
+const generatedPages = [
 d_freelance,
 d_contact1,
 d_contact2,
@@ -902,4 +926,6 @@ d_jobs,
 d_skills,
 d_start,
 d_technologies
-]
+];
+
+export default generatedPages;

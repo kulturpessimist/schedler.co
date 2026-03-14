@@ -1,3 +1,6 @@
+// @ts-check
+
+/** @type {string} */
 export const m__ = 
 `                                                                                
                                                                                 
@@ -70,6 +73,7 @@ export const m__ =
                                                                                 
                                                                                 `; 
 
+/** @type {string} */
 export const m_contact1 = 
 `                                                        
                                                         
@@ -116,6 +120,7 @@ export const m_contact1 =
                                                         
                                                         `; 
 
+/** @type {string} */
 export const m_education = 
 `                                                        
                                                         
@@ -162,6 +167,7 @@ export const m_education =
                                                         
                                                         `; 
 
+/** @type {string} */
 export const m_freelance = 
 `                                                        
                                                         
@@ -208,6 +214,7 @@ export const m_freelance =
                                                         
                                                         `; 
 
+/** @type {string} */
 export const m_impressum_m = 
 `                                                        
                                                         
@@ -254,6 +261,7 @@ export const m_impressum_m =
                                                         
                                                         `; 
 
+/** @type {string} */
 export const m_impressum_m2 = 
 `                                                        
                                                         
@@ -300,6 +308,7 @@ export const m_impressum_m2 =
                                                         
                                                         `; 
 
+/** @type {string} */
 export const m_impressum_m3 = 
 `                                                        
                                                         
@@ -346,6 +355,7 @@ export const m_impressum_m3 =
                                                         
                                                         `; 
 
+/** @type {string} */
 export const m_impressum_m4 = 
 `                                                        
                                                         
@@ -392,6 +402,7 @@ export const m_impressum_m4 =
                                                         
                                                         `; 
 
+/** @type {string} */
 export const m_jobs_certania = 
 `                                                        
                                                         
@@ -438,6 +449,7 @@ export const m_jobs_certania =
                                                         
                                                         `; 
 
+/** @type {string} */
 export const m_jobs_dyno = 
 `                                                        
                                                         
@@ -484,6 +496,7 @@ export const m_jobs_dyno =
                                                         
                                                         `; 
 
+/** @type {string} */
 export const m_jobs_iob = 
 `                                                        
                                                         
@@ -530,6 +543,7 @@ export const m_jobs_iob =
                                                         
                                                         `; 
 
+/** @type {string} */
 export const m_jobs_jd = 
 `                                                        
                                                         
@@ -576,6 +590,7 @@ export const m_jobs_jd =
                                                         
                                                         `; 
 
+/** @type {string} */
 export const m_jobs_kigg = 
 `                                                        
                                                         
@@ -622,6 +637,7 @@ export const m_jobs_kigg =
                                                         
                                                         `; 
 
+/** @type {string} */
 export const m_jobs_man = 
 `                                                        
                                                         
@@ -668,6 +684,7 @@ export const m_jobs_man =
                                                         
                                                         `; 
 
+/** @type {string} */
 export const m_jobs_no = 
 `                                                        
                                                         
@@ -714,6 +731,7 @@ export const m_jobs_no =
                                                         
                                                         `; 
 
+/** @type {string} */
 export const m_jobs_txn = 
 `                                                        
                                                         
@@ -760,13 +778,14 @@ export const m_jobs_txn =
                                                         
                                                         `; 
 
+/** @type {string} */
 export const m_jobs = 
 `                                                        
                                                         
                                                         
                                 ┌────────────────┐      
                                 │                │░░    
-      ┌────────────────────────▶│ <a href="/job/certania" data-navigo>Certania</a>       │░░    
+      ┌────────────────────────▶│ Certania       │░░    
       │                         │                │░░    
       │                         └────────────────┘░░    
       │  ┌────────────────┐       ░░░░░░░░░░░░░░░░░░    
@@ -806,6 +825,7 @@ export const m_jobs =
                                                         
                                                         `; 
 
+/** @type {string} */
 export const m_skills = 
 `                                                        
                                                         
@@ -852,6 +872,7 @@ export const m_skills =
                                                         
                                                         `; 
 
+/** @type {string} */
 export const m_start = 
 `                                                        
                                                         
@@ -898,6 +919,7 @@ export const m_start =
                                                         
                                                         `; 
 
+/** @type {string} */
 export const m_technologies = 
 `                                                        
                                                         
@@ -944,7 +966,8 @@ export const m_technologies =
                                                         
                                                         `; 
 
-export default [
+/** @type {string[]} */
+const generatedPages = [
 m__,
 m_contact1,
 m_education,
@@ -965,4 +988,6 @@ m_jobs,
 m_skills,
 m_start,
 m_technologies
-]
+];
+
+export default generatedPages;

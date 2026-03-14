@@ -1,8 +1,30 @@
+// @ts-check
+
+/** @type {typeof import("node:fs/promises")} */
 const fs = require("fs/promises");
+
+/**
+ * @typedef {{
+ *   version: string;
+ *   update: string;
+ *   short: string;
+ *   count: string;
+ *   semver: string;
+ * }} VersionInfo
+ */
+
+/** @type {VersionInfo} */
 const version = require("../version.json");
 
-const path = "./src/txt/";
+/** @type {string} */
+const txtRoot = "./src/txt";
 
+/**
+ * Convert source filename to a valid export identifier suffix.
+ *
+ * @param {string} str
+ * @returns {string}
+ */
 const slug = (str) => {
   return str
     .split(".")[0]
@@ -10,8 +32,22 @@ const slug = (str) => {
     .replace(/[^a-zA-Z0-9]/g, " ")
     .replace(/[^\w-]+/g, "_");
 };
+
+/**
+ * @typedef {Record<string, string>} ReplacementMap
+ * @typedef {Record<string, ReplacementMap>} ReplacementRules
+ */
+
+/**
+ * Apply file-specific text replacements.
+ *
+ * @param {string} content
+ * @param {string} page
+ * @returns {string}
+ */
 const enrichContent = (content, page) => {
   page = page.toLowerCase();
+  /** @type {ReplacementRules} */
   const rules = {
     "start.txt": {
       "Alexander Schedler": "<strong>Alexander Schedler</strong>",
@@ -207,42 +243,63 @@ const enrichContent = (content, page) => {
   rules["education.mobile.txt"] = rules["education.txt"];
   rules["skills.mobile.txt"] = rules["skills.txt"];
   rules["technologies.mobile.txt"] = rules["technologies.txt"];
-  //
-  // console.log(page, "was", content.length)
-  if (rules[page]) {
-    //content = content.replace(/(\w+)/gi, "<u>$1</u>")
-    for (const key in rules[page]) {
-      content = content.replace(key, rules[page][key]);
+  const pageRules = rules[page];
+
+  if (pageRules) {
+    for (const key in pageRules) {
+      content = content.replace(key, pageRules[key]);
     }
   }
-  // console.log("is", content.length)
+
   return content;
 };
 
+/**
+ * Generate typed desktop/mobile page modules from TXT source files.
+ *
+ * @returns {Promise<void>}
+ */
 const main = async () => {
-  for (let f of ["mobile", "desktop"]) {
-    const filenames = (await fs.readdir(path + "/" + f)).sort();
+  for (const folder of ["mobile", "desktop"]) {
+    const filenames = (await fs.readdir([txtRoot, folder].join("/"))).sort();
 
-    let pages = [];
-    let exports = [];
+    /** @type {string[]} */
+    const pages = [];
+    /** @type {string[]} */
+    const exports = [];
+
     for (const filename of filenames) {
-      // console.log(path + filename)
       if (filename.endsWith(".txt")) {
-        let content = await fs.readFile([path, f, filename].join("/"), "utf-8");
+        let content = await fs.readFile(
+          [txtRoot, folder, filename].join("/"),
+          "utf-8",
+        );
         content = enrichContent(content, filename);
-        //console.log(path + filename, content.length)
-        pages.push(`export const ${f[0]}_${slug(filename)} = \n\`${content}\``);
-        exports.push(`${f[0]}_${slug(filename)}`);
+        pages.push(
+          `/** @type {string} */\nexport const ${folder[0]}_${slug(filename)} = \n\`${content}\``,
+        );
+        exports.push(`${folder[0]}_${slug(filename)}`);
       }
     }
-    console.log([path, f + ".js"].join(""));
-    //console.log("export default [\n" + exports.join(",\n") + "\n]")
+
+    const outputPath = [txtRoot, `${folder}.js`].join("/");
+    /** @type {string} */
+    const output = `// @ts-check
+
+${pages.join("; \n\n")}; 
+
+/** @type {string[]} */
+const generatedPages = [
+${exports.join(",\n")}
+];
+
+export default generatedPages;
+`;
+
+    console.log(outputPath);
     await fs.writeFile(
-      [path, f + ".js"].join("/"),
-      `${pages.join("; \n\n")}; \n\nexport default [\n${exports.join(
-        ",\n",
-      )
-      }\n]`,
+      outputPath,
+      output,
     );
   }
 };

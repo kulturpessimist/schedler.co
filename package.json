@@ -26,7 +26,8 @@
     "build:public": "bun ./src/scripts/build-public.js",
     "build": "bun run clean:build && bun run build:rev -- ./src/version.json && bun run build:pages && bun run build:bundle && bun run build:public",
     "preview": "bun ./src/scripts/preview.js",
-    "surge": "bun run build && bunx surge --domain schedler-co-7.surge.sh dist/"
+    "surge": "bun run build && bunx surge --domain schedler-co-7.surge.sh dist/",
+    "typecheck": "bunx tsc -p tsconfig.json"
   },
   "dependencies": {
     "navigo": "^8.11.1",

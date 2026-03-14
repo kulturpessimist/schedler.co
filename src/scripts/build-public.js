@@ -1,10 +1,32 @@
+// @ts-check
+
+/** @type {typeof import("node:fs/promises")} */
 const fs = require("fs/promises");
+/** @type {typeof import("node:path")} */
 const path = require("path");
 
+/** @type {string} */
 const root = process.cwd();
+/** @type {string} */
 const publicDir = path.join(root, "public");
+/** @type {string} */
 const distDir = path.join(root, "dist");
 
+/**
+ * @typedef {{ src?: string, [key: string]: unknown }} WebManifestIcon
+ */
+
+/**
+ * @typedef {{ icons?: WebManifestIcon[], [key: string]: unknown }} WebManifest
+ */
+
+/**
+ * Copy all files and subdirectories recursively.
+ *
+ * @param {string} source
+ * @param {string} target
+ * @returns {Promise<void>}
+ */
 const copyDir = async (source, target) => {
   await fs.mkdir(target, { recursive: true });
   const entries = await fs.readdir(source, { withFileTypes: true });
@@ -22,8 +44,14 @@ const copyDir = async (source, target) => {
   }
 };
 
+/**
+ * Normalize icon paths in the generated web manifest to absolute paths.
+ *
+ * @returns {Promise<void>}
+ */
 const patchManifest = async () => {
   const manifestPath = path.join(distDir, "manifest.webmanifest");
+  /** @type {WebManifest} */
   const manifest = JSON.parse(await fs.readFile(manifestPath, "utf8"));
 
   manifest.icons = (manifest.icons || []).map((icon) => ({
@@ -34,6 +62,11 @@ const patchManifest = async () => {
   await fs.writeFile(manifestPath, JSON.stringify(manifest, null, 2));
 };
 
+/**
+ * Patch generated HTML references to public asset URLs.
+ *
+ * @returns {Promise<void>}
+ */
 const patchIndex = async () => {
   const indexPath = path.join(distDir, "index.html");
   let html = await fs.readFile(indexPath, "utf8");
@@ -66,6 +99,11 @@ const patchIndex = async () => {
   await fs.writeFile(indexPath, html);
 };
 
+/**
+ * Build step entrypoint.
+ *
+ * @returns {Promise<void>}
+ */
 async function main() {
   await copyDir(publicDir, distDir);
   await patchManifest();
