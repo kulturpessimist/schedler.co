@@ -464,6 +464,7 @@ const app = {
     const toSlots = this.getVisibleTextSlots(to)
     const charset = this.getTransitionCharset(from, to)
     const fromChars = from.split("")
+    const progress = totalSteps > 1 ? step / (totalSteps - 1) : 1
     const isFinalStep = step >= totalSteps - 1
 
     if (step <= 0) {
@@ -476,18 +477,38 @@ const app = {
 
     const frame = [...fromChars]
 
-    fromSlots.forEach(({ index: sourceIndex, character: sourceCharacter }, order) => {
-      const targetCharacter = toSlots[order]?.character || " "
+    for (let order = 0; order < Math.max(fromSlots.length, toSlots.length); order++) {
+      const sourceSlot = fromSlots[order]
+      const targetSlot = toSlots[order]
+      const sourceIndex = sourceSlot?.index
+      const sourceCharacter = sourceSlot?.character || " "
+      const targetCharacter = targetSlot?.character || " "
+      const outputIndex = sourceIndex ?? targetSlot?.index
 
-      if (sourceCharacter === " " && targetCharacter === " ") {
-        return
+      if (outputIndex === undefined) {
+        continue
       }
 
-      frame[sourceIndex] = this.getRandomTransitionCharacter(charset, [
+      if (sourceCharacter === " " && targetCharacter === " ") {
+        continue
+      }
+
+      const shouldAnimate =
+        progress < 1 / 3
+          ? sourceCharacter !== " "
+          : progress < 2 / 3
+            ? sourceCharacter !== " " || targetCharacter !== " "
+            : targetCharacter !== " "
+
+      if (!shouldAnimate) {
+        continue
+      }
+
+      frame[outputIndex] = this.getRandomTransitionCharacter(charset, [
         sourceCharacter,
         targetCharacter,
       ])
-    })
+    }
 
     return frame.join("")
   },
@@ -596,8 +617,8 @@ const app = {
    * @returns {void}
    */
   flipModeTransition(from, to, nextPage) {
-    const speed = 150
-    const totalSteps = 6
+    const speed = 100
+    const totalSteps = 8
     let ivc = 0
     const ivt = ["", "", "", "", "", ""]
 
