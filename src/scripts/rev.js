@@ -1,7 +1,8 @@
 // @ts-check
 
-/** @type {typeof import("node:fs")} */
-const fs = require("fs");
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
 /**
  * @typedef {{
@@ -10,16 +11,24 @@ const fs = require("fs");
  * }} PackageInfo
  */
 
+/** @type {string} */
+const scriptDir = path.dirname(fileURLToPath(import.meta.url));
+/** @type {string} */
+const packageJsonPath = path.resolve(scriptDir, "../../package.json");
 /** @type {PackageInfo} */
-const pkg = require("../../package.json");
+const pkg = JSON.parse(fs.readFileSync(packageJsonPath, "utf8"));
 
 /**
  * Normalize Bun spawn output chunks to `Buffer`.
  *
- * @param {ArrayBufferLike | Uint8Array<ArrayBufferLike>} value
+ * @param {Buffer | Uint8Array | ArrayBufferLike} value
  * @returns {Buffer}
  */
 const toBuffer = (value) => {
+  if (Buffer.isBuffer(value)) {
+    return value;
+  }
+
   return value instanceof Uint8Array
     ? Buffer.from(value)
     : Buffer.from(new Uint8Array(value));
@@ -95,4 +104,4 @@ async function main() {
   }
 }
 
-main();
+await main();

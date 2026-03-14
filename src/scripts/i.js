@@ -15,10 +15,10 @@
 /**
  * @type {(path: string, options?: AsciifyOptions, callback?: ((err: string | null, result?: string | string[][]) => void)) => Promise<string | string[][]> | void}
  */
-var asciify = require("./ascii.js")
+import asciify from "./ascii.js"
 
 /** @type {AsciifyOptions} */
-var options = {
+const options = {
   fit: "width",
   color: false,
   width: 11,

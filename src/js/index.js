@@ -1,10 +1,10 @@
 // @ts-check
 
-import "../fonts/Monolisa/monolisa.css";
-import "../css/style.css";
-import { createApp } from "petite-vue";
-import { annotate, annotationGroup } from "rough-notation";
-import Navigo from "navigo";
+import Navigo from "navigo"
+import { createApp } from "petite-vue"
+import { annotate, annotationGroup } from "rough-notation"
+import "../css/style.css"
+import "../fonts/Monolisa/monolisa.css"
 import {
   contactFrames,
   contactFramesMobile,
@@ -12,7 +12,7 @@ import {
   impressumFramesMobile,
   pages,
   pagesMobile,
-} from "./pages";
+} from "./pages"
 
 /**
  * @typedef {{ data: Record<string, string> }} RouteMatch
@@ -41,6 +41,7 @@ import {
  *   _router: AppRouter | null;
  *   _slideshows: ReturnType<typeof setTimeout>[];
  *   _glitchMemoize: string;
+ *   transitionMode: "glitch" | "flip";
  *   currentPage: number;
  *   current: string;
  *   loader: string;
@@ -54,10 +55,15 @@ import {
  *   difference: (from: string, to: string, duration?: number) => string;
  *   columns: (from: string, to: string, takeRows: number, takeColumns?: number) => string;
  *   glitch: (text: string, count?: number, memoize?: boolean) => string;
+ *   getTextCharacterIndices: (text: string) => number[];
+ *   getTransitionCharset: (from: string, to: string) => string[];
+ *   getRandomTransitionCharacter: (possible: string[], exclude?: string[]) => string;
+ *   buildFlipFrame: (from: string, to: string, step?: number, totalSteps?: number) => string;
  *   playSlideshow: (animation?: string[], currentFrame?: number) => void;
  *   stopSlideshow: () => void;
  *   initKeyboardListener: () => void;
  *   afterNavigation: () => void;
+ *   flipModeTransition: (from: string, to: string, nextPage: number) => void;
  *   navigateFromTo: (from: string, to: string, nextPage: number) => void;
  *   navigate: (direction?: "next" | "prev" | number) => void;
  *   options: () => void;
@@ -65,7 +71,7 @@ import {
  */
 
 /** @type {Window & { ag?: ReturnType<typeof annotationGroup>; app?: AppState }} */
-const typedWindow = window;
+const typedWindow = window
 
 /** @type {AppState} */
 const app = {
@@ -75,6 +81,7 @@ const app = {
   _router: null,
   _slideshows: [],
   _glitchMemoize: "",
+  transitionMode: "flip",//"glitch",
   currentPage: 0,
   current: "",
   loader: " ",
@@ -85,7 +92,7 @@ const app = {
    * @returns {number}
    */
   get prevPage() {
-    return this.currentPage > 0 ? this.currentPage - 1 : this.pages.length - 1;
+    return this.currentPage > 0 ? this.currentPage - 1 : this.pages.length - 1
   },
 
   /**
@@ -94,7 +101,7 @@ const app = {
    * @returns {number}
    */
   get nextPage() {
-    return this.currentPage < this.pages.length - 1 ? this.currentPage + 1 : 0;
+    return this.currentPage < this.pages.length - 1 ? this.currentPage + 1 : 0
   },
 
   /**
@@ -103,7 +110,7 @@ const app = {
    * @returns {string | undefined}
    */
   get currentGetter() {
-    return app.pages[this.currentPage];
+    return app.pages[this.currentPage]
   },
 
   /**
@@ -116,86 +123,86 @@ const app = {
       window.matchMedia &&
       window.matchMedia("(prefers-color-scheme: dark)").matches
     ) {
-      this.toggleDarkMode();
+      this.toggleDarkMode()
     }
 
     if (window.innerWidth > window.innerHeight) {
-      console.log("+++ landscape +++");
-      this.pages = pages;
-      this.contactFrames = contactFrames;
-      this.impressumFrames = impressumFrames;
+      console.log("+++ landscape +++")
+      this.pages = pages
+      this.contactFrames = contactFrames
+      this.impressumFrames = impressumFrames
     } else {
-      console.log("+++ portrait +++");
-      this.pages = pagesMobile;
-      this.contactFrames = contactFramesMobile;
-      this.impressumFrames = impressumFramesMobile;
+      console.log("+++ portrait +++")
+      this.pages = pagesMobile
+      this.contactFrames = contactFramesMobile
+      this.impressumFrames = impressumFramesMobile
     }
 
-    this.initKeyboardListener();
-    this.current = app.pages[this.currentPage] || "";
+    this.initKeyboardListener()
+    this.current = app.pages[this.currentPage] || ""
 
-    const router = /** @type {AppRouter} */ (new Navigo("/"));
-    this._router = router;
+    const router = /** @type {AppRouter} */ (new Navigo("/"))
+    this._router = router
 
     router.notFound(() => {
-      router.navigate("/page/0");
-    });
+      router.navigate("/page/0")
+    })
 
     router.on("/impressum/:frame", (match) => {
-      const frame = Number.parseInt(match.data.frame, 10);
-      const nextFrame = this.impressumFrames[frame] || this.impressumFrames[0];
-      this.navigateFromTo(this.current, nextFrame, this.currentPage);
-    });
+      const frame = Number.parseInt(match.data.frame, 10)
+      const nextFrame = this.impressumFrames[frame] || this.impressumFrames[0]
+      this.navigateFromTo(this.current, nextFrame, this.currentPage)
+    })
 
     router.on("/job/:company", (match) => {
       /** @type {string} */
-      let target;
+      let target
 
       switch (match.data.company) {
         case "certania":
-          target = "/page/4";
-          break;
+          target = "/page/4"
+          break
         case "jd":
-          target = "/page/5";
-          break;
+          target = "/page/5"
+          break
         case "man-es":
-          target = "/page/6";
-          break;
+          target = "/page/6"
+          break
         case "iob":
-          target = "/page/7";
-          break;
+          target = "/page/7"
+          break
         case "thinxnet":
-          target = "/page/8";
-          break;
+          target = "/page/8"
+          break
         case "natureoffice":
-          target = "/page/9";
-          break;
+          target = "/page/9"
+          break
         case "dynomedia":
-          target = "/page/10";
-          break;
+          target = "/page/10"
+          break
         case "kigg":
-          target = "/page/11";
-          break;
+          target = "/page/11"
+          break
         default:
-          target = "/page/0";
+          target = "/page/0"
       }
 
-      router.navigate(target);
-    });
+      router.navigate(target)
+    })
 
     router.on("/page/:page", (match) => {
       if (match.data.page === "1") {
         setTimeout(() => {
-          this.playSlideshow(this.contactFrames, 0);
-        }, 500);
+          this.playSlideshow(this.contactFrames, 0)
+        }, 500)
       } else {
-        this.stopSlideshow();
+        this.stopSlideshow()
       }
 
-      this.navigate(Number(match.data.page));
-    });
+      this.navigate(Number(match.data.page))
+    })
 
-    router.resolve();
+    router.resolve()
   },
 
   /**
@@ -204,13 +211,13 @@ const app = {
    * @returns {void}
    */
   toggleDarkMode() {
-    const html = document.querySelector("html");
+    const html = document.querySelector("html")
     if (html) {
-      html.classList.toggle("dark");
+      html.classList.toggle("dark")
     }
 
-    typedWindow.ag ? typedWindow.ag.hide() : void 0;
-    this.annotateAllTheThings();
+    typedWindow.ag ? typedWindow.ag.hide() : void 0
+    this.annotateAllTheThings()
   },
 
   /**
@@ -220,14 +227,14 @@ const app = {
    */
   annotateAllTheThings() {
     /** @type {NodeListOf<HTMLElement>} */
-    const elements = document.querySelectorAll("mark");
+    const elements = document.querySelectorAll("mark")
     const color =
       window
         .getComputedStyle(document.documentElement)
-        .getPropertyValue("--accent-color") || "#000066";
+        .getPropertyValue("--accent-color") || "#000066"
 
     /** @type {ReturnType<typeof annotate>[]} */
-    const annotations = [];
+    const annotations = []
 
     for (const mark of elements) {
       annotations.push(
@@ -235,12 +242,12 @@ const app = {
           type: "highlight",
           color,
         }),
-      );
+      )
     }
 
-    const ag = annotationGroup(annotations);
-    typedWindow.ag = ag;
-    ag.show();
+    const ag = annotationGroup(annotations)
+    typedWindow.ag = ag
+    ag.show()
   },
 
   /**
@@ -252,10 +259,10 @@ const app = {
    * @returns {string}
    */
   combine(from, to, take) {
-    const fromLines = from.split("\n").slice(take);
-    const toLines = to.split("\n").slice(0, take);
+    const fromLines = from.split("\n").slice(take)
+    const toLines = to.split("\n").slice(0, take)
 
-    return [...toLines, ...fromLines].join("\n");
+    return [...toLines, ...fromLines].join("\n")
   },
 
   /**
@@ -267,32 +274,32 @@ const app = {
    * @returns {string}
    */
   difference(from, to, duration = 800) {
-    const fromChars = from.split("");
-    const toChars = to.split("");
+    const fromChars = from.split("")
+    const toChars = to.split("")
 
     /** @type {number[]} */
-    const indices = [];
+    const indices = []
     toChars.forEach((value, index) => {
       if (value.match(/\S/)) {
-        indices.push(index);
+        indices.push(index)
       }
-    });
+    })
 
-    const speed = Math.floor(800 / indices.length);
+    const speed = Math.floor(800 / indices.length)
     indices
       .sort(() => Math.random())
       .forEach((value, index) => {
         setTimeout(
           (charIndex) => {
-            fromChars[charIndex] = toChars[charIndex] || " ";
-            this.current = fromChars.join("");
+            fromChars[charIndex] = toChars[charIndex] || " "
+            this.current = fromChars.join("")
           },
           index * speed + duration,
           value,
-        );
-      });
+        )
+      })
 
-    return [...toChars, ...fromChars].join("\n");
+    return [...toChars, ...fromChars].join("\n")
   },
 
   /**
@@ -307,21 +314,22 @@ const app = {
   columns(from, to, takeRows, takeColumns = 50) {
     const fromLines = from
       .split("\n")
-      .map((line) => line.slice(0, line.length - takeColumns));
+      .map((line) => line.slice(0, line.length - takeColumns))
     const toLines = to
       .split("\n")
       .slice(0, takeRows + 1)
-      .map((line) => line.slice(-1 * takeColumns));
+      .map((line) => line.slice(-1 * takeColumns))
 
     /** @type {string[]} */
-    const mergedFrom = [];
+    const mergedFrom = []
     for (let i = 0; i < fromLines.length; i++) {
       mergedFrom.push(
-        fromLines[i] + (toLines[i] || Array(fromLines[i].length).fill(" ").join("")),
-      );
+        fromLines[i] +
+        (toLines[i] || Array(fromLines[i].length).fill(" ").join("")),
+      )
     }
 
-    return [...mergedFrom].join("\n");
+    return [...mergedFrom].join("\n")
   },
 
   /**
@@ -334,32 +342,144 @@ const app = {
    */
   glitch(text, count = 25, memoize = false) {
     if (memoize && this._glitchMemoize) {
-      return this._glitchMemoize;
+      return this._glitchMemoize
     }
 
-    const possible = "-*+/|}{[]?/.+-_)(*&^%$#@!)}~".split("");
+    const possible = "-*+/|}{[]?/.+-_)(*&^%$#@!)}~".split("")
     /** @type {number[]} */
-    const positions = [];
-    const chars = text.split("");
+    const positions = []
+    const chars = text.split("")
 
     chars.forEach((value, index) => {
       if (value.match(/\S/)) {
-        positions.push(index);
+        positions.push(index)
       }
-    });
+    })
 
     for (let c = 0; c <= count; c++) {
-      const item = positions[Math.floor(Math.random() * positions.length)];
-      chars[item] = possible[Math.floor(Math.random() * possible.length)] || " ";
+      const item = positions[Math.floor(Math.random() * positions.length)]
+      chars[item] = possible[Math.floor(Math.random() * possible.length)] || " "
     }
 
     if (memoize) {
-      this._glitchMemoize = chars.join("");
+      this._glitchMemoize = chars.join("")
     } else {
-      this._glitchMemoize = "";
+      this._glitchMemoize = ""
     }
 
-    return chars.join("");
+    return chars.join("")
+  },
+
+  /**
+   * Collect visible, non-whitespace character indices while skipping HTML tags.
+   *
+   * @param {string} text
+   * @returns {number[]}
+   */
+  getTextCharacterIndices(text) {
+    /** @type {number[]} */
+    const indices = []
+    let insideTag = false
+
+    for (let index = 0; index < text.length; index++) {
+      const character = text[index]
+
+      if (character === "<") {
+        insideTag = true
+        continue
+      }
+
+      if (character === ">") {
+        insideTag = false
+        continue
+      }
+
+      if (!insideTag && character?.match(/\S/)) {
+        indices.push(index)
+      }
+    }
+
+    return indices
+  },
+
+  /**
+   * Build the random-character pool for flip transitions from visible content.
+   *
+   * @param {string} from
+   * @param {string} to
+   * @returns {string[]}
+   */
+  getTransitionCharset(from, to) {
+    const fallback =
+      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!?#$%&*+-=/\\|[]{}()@~".split(
+        "",
+      )
+    const seen = new Set(fallback)
+
+    for (const sourceText of [from, to]) {
+      for (const index of this.getTextCharacterIndices(sourceText)) {
+        const source = sourceText[index]
+        if (source?.match(/\S/)) {
+          seen.add(source)
+        }
+      }
+    }
+
+    return [...seen]
+  },
+
+  /**
+   * Pick a randomized transition character that differs from excluded values.
+   *
+   * @param {string[]} possible
+   * @param {string[]} [exclude=[]]
+   * @returns {string}
+   */
+  getRandomTransitionCharacter(possible, exclude = []) {
+    const filtered = possible.filter(
+      (character) => !exclude.includes(character),
+    )
+    const charset = filtered.length > 0 ? filtered : possible
+
+    return charset[Math.floor(Math.random() * charset.length)] || " "
+  },
+
+  /**
+   * Build one frame of the flip-mode transition using target markup.
+   *
+   * @param {string} from
+   * @param {string} to
+   * @param {number} [step=0]
+   * @param {number} [totalSteps=6]
+   * @returns {string}
+   */
+  buildFlipFrame(from, to, step = 0, totalSteps = 6) {
+    const fromIndices = this.getTextCharacterIndices(from)
+    const toIndices = this.getTextCharacterIndices(to)
+    const charset = this.getTransitionCharset(from, to)
+    const fromChars = from.split("")
+    const toChars = to.split("")
+    const frame = [...toChars]
+    const isFinalStep = step >= totalSteps - 1
+
+    toIndices.forEach((targetIndex, order) => {
+      const sourceIndex = fromIndices[order]
+      const sourceCharacter =
+        sourceIndex === undefined ? " " : fromChars[sourceIndex] || " "
+      const targetCharacter = toChars[targetIndex] || " "
+
+      if (isFinalStep) {
+        frame[targetIndex] = targetCharacter
+        return
+      }
+
+      frame[targetIndex] = this.getRandomTransitionCharacter(charset, [
+        sourceCharacter,
+        targetCharacter,
+      ])
+    })
+
+    return frame.join("")
   },
 
   /**
@@ -370,11 +490,11 @@ const app = {
    * @returns {void}
    */
   playSlideshow(animation, currentFrame = 0) {
-    const animationFrames = animation || this.contactFrames;
-    const speed = 60;
-    const pause = 200;
-    const lines = animationFrames[currentFrame].split("\n").length;
-    const nextFrame = (currentFrame + 1) % animationFrames.length;
+    const animationFrames = animation || this.contactFrames
+    const speed = 60
+    const pause = 200
+    const lines = animationFrames[currentFrame].split("\n").length
+    const nextFrame = (currentFrame + 1) % animationFrames.length
 
     for (let i = 0; i <= lines; i++) {
       this._slideshows[i] = setTimeout(
@@ -383,16 +503,19 @@ const app = {
             animationFrames[currentFrame],
             animationFrames[nextFrame],
             lineIndex,
-          );
+          )
         },
         i * speed,
         i,
-      );
+      )
 
       if (i === lines) {
-        this._slideshows[i + 1] = setTimeout(() => {
-          this.playSlideshow(animationFrames, nextFrame);
-        }, i * speed + pause);
+        this._slideshows[i + 1] = setTimeout(
+          () => {
+            this.playSlideshow(animationFrames, nextFrame)
+          },
+          i * speed + pause,
+        )
       }
     }
   },
@@ -403,7 +526,9 @@ const app = {
    * @returns {void}
    */
   stopSlideshow() {
-    this._slideshows.forEach((slideshowTimeout) => clearTimeout(slideshowTimeout));
+    this._slideshows.forEach((slideshowTimeout) =>
+      clearTimeout(slideshowTimeout),
+    )
   },
 
   /**
@@ -413,27 +538,27 @@ const app = {
    */
   initKeyboardListener() {
     document.addEventListener("keydown", (event) => {
-      const router = this._router;
+      const router = this._router
       if (!router) {
-        return;
+        return
       }
 
       if (event.key === "ArrowRight") {
-        router.navigate("/page/" + this.nextPage);
+        router.navigate("/page/" + this.nextPage)
       }
       if (event.key === "ArrowLeft") {
-        router.navigate("/page/" + this.prevPage);
+        router.navigate("/page/" + this.prevPage)
       }
       if (event.key === "i") {
-        router.navigate("/impressum/0");
+        router.navigate("/impressum/0")
       }
       if (event.key === "f") {
-        router.navigate("/page/2");
+        router.navigate("/page/2")
       }
       if (event.key === "@" || event.key === "c") {
-        router.navigate("/page/1");
+        router.navigate("/page/1")
       }
-    });
+    })
   },
 
   /**
@@ -443,13 +568,51 @@ const app = {
    */
   afterNavigation() {
     if (!this._router) {
-      return;
+      return
     }
 
-    this._router.updatePageLinks();
+    this._router.updatePageLinks()
     setTimeout(() => {
-      this.annotateAllTheThings();
-    }, 250);
+      this.annotateAllTheThings()
+    }, 250)
+  },
+
+  /**
+   * Animate visible text characters through five random passes into the target page.
+   *
+   * @param {string} from
+   * @param {string} to
+   * @param {number} nextPage
+   * @returns {void}
+   */
+  flipModeTransition(from, to, nextPage) {
+    const speed = 150
+    const totalSteps = 6
+    let ivc = 0
+    const ivt = ["", "", "", "", "", ""]
+
+    const interval = setInterval(() => {
+      this.loader = ivt[ivc++ % ivt.length]
+    }, 75)
+
+    for (let step = 0; step < totalSteps; step++) {
+      setTimeout(
+        (currentStep) => {
+          this.current = this.buildFlipFrame(from, to, currentStep, totalSteps)
+        },
+        step * speed,
+        step,
+      )
+
+      if (step === totalSteps - 1) {
+        setTimeout(() => {
+          this.currentPage = nextPage
+          this.loader = " "
+          clearInterval(interval)
+          this.afterNavigation()
+        }, step * speed)
+      }
+    }
   },
 
   /**
@@ -461,32 +624,41 @@ const app = {
    * @returns {void}
    */
   navigateFromTo(from, to, nextPage) {
-    const speed = 20;
-    let ivc = 0;
-    const ivt = ["", "", "", "", "", ""];
+    if (this.transitionMode === "flip") {
+      this.flipModeTransition(from, to, nextPage)
+      return
+    }
+
+    const speed = 20
+    let ivc = 0
+    const ivt = ["", "", "", "", "", ""]
 
     const interval = setInterval(() => {
-      this.loader = ivt[ivc++ % ivt.length];
-    }, 75);
+      this.loader = ivt[ivc++ % ivt.length]
+    }, 75)
 
-    const lines = this.current.split("\n").length;
+    const lines = this.current.split("\n").length
     for (let i = 0; i <= lines; i++) {
       setTimeout(
         (lineIndex) => {
-          this.current = this.combine(this.glitch(from, 50, Math.random() < 0.9), to, lineIndex);
+          this.current = this.combine(
+            this.glitch(from, 50, Math.random() < 0.9),
+            to,
+            lineIndex,
+          )
         },
         i * speed,
         i,
-      );
+      )
 
       if (i === lines) {
-        this._glitchMemoize = "";
+        this._glitchMemoize = ""
         setTimeout(() => {
-          this.currentPage = nextPage;
-          this.loader = " ";
-          clearInterval(interval);
-          this.afterNavigation();
-        }, i * speed);
+          this.currentPage = nextPage
+          this.loader = " "
+          clearInterval(interval)
+          this.afterNavigation()
+        }, i * speed)
       }
     }
   },
@@ -499,15 +671,15 @@ const app = {
    */
   navigate(direction = "next") {
     /** @type {number} */
-    let nextPage;
+    let nextPage
 
     if (typeof direction === "number") {
-      nextPage = direction;
+      nextPage = direction
     } else {
-      nextPage = direction === "next" ? this.nextPage : this.prevPage;
+      nextPage = direction === "next" ? this.nextPage : this.prevPage
     }
 
-    this.navigateFromTo(this.current, app.pages[nextPage], nextPage);
+    this.navigateFromTo(this.current, app.pages[nextPage], nextPage)
   },
 
   /**
@@ -517,16 +689,16 @@ const app = {
    */
   options() {
     if (!this._router) {
-      return;
+      return
     }
 
     if (this._router.getCurrentLocation().url.indexOf("impressum") === 0) {
-      this._router.navigate("/");
+      this._router.navigate("/")
     } else {
-      this._router.navigate("/impressum/0");
+      this._router.navigate("/impressum/0")
     }
   },
-};
+}
 
-createApp(app).mount("body");
-typedWindow.app = app;
+createApp(app).mount("body")
+typedWindow.app = app

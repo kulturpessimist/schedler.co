@@ -1,7 +1,6 @@
 // @ts-check
 
-/** @type {typeof import("node:path")} */
-const path = require("path");
+import path from "node:path";
 
 /** @type {string} */
 const distDir = path.join(process.cwd(), "dist");

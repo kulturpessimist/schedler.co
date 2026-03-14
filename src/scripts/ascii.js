@@ -1,5 +1,4 @@
 // @ts-check
-"use strict"
 
 /**
  * @typedef {"width" | "height" | "none" | "box" | "original"} AsciifyFitMode
@@ -35,14 +34,10 @@
  * @typedef {(err: string | null, success?: AsciifyResult) => void} AsciifyCallback
  */
 
-/** @type {any} */
-var Jimp = require("jimp")
-/** @type {{ fg: (text: string, r: number, g: number, b: number) => string }} */
-var Couleurs = require("couleurs")
-/** @type {number} */
-var terminalCharWidth = require("terminal-char-width")
-/** @type {{ width: number; height: number }} */
-var windowSize = require("window-size")
+import Jimp from "jimp"
+import Couleurs from "couleurs"
+import terminalCharWidth from "terminal-char-width"
+import windowSize from "window-size"
 
 /**
  * Convert an image into ASCII output.
@@ -52,7 +47,7 @@ var windowSize = require("window-size")
  * @param {AsciifyCallback} [third] - Optional callback when options are provided.
  * @returns {Promise<AsciifyResult> | void}
  */
-module.exports = function (path, second, third) {
+export default function asciify(path, second, third) {
   /** @type {AsciifyOptions} */
   var opts = {}
   /** @type {AsciifyCallback | undefined} */
@@ -70,7 +65,7 @@ module.exports = function (path, second, third) {
   // If no callback is specified, prepare a promise to return.
   if (!callback) {
     return new Promise(function (resolve, reject) {
-      asciify_core(path, opts, function (err, success) {
+      asciifyCore(path, opts, function (err, success) {
         if (err) return reject(err)
         if (success !== undefined) return resolve(success)
       })
@@ -78,7 +73,7 @@ module.exports = function (path, second, third) {
   }
 
   // Otherwise proceed using callback style.
-  asciify_core(path, opts, callback || console.log)
+  asciifyCore(path, opts, callback || console.log)
 }
 
 /**
@@ -89,7 +84,7 @@ module.exports = function (path, second, third) {
  * @param {AsciifyCallback} callback - Callback invoked with result.
  * @returns {void}
  */
-var asciify_core = function (path, opts, callback) {
+var asciifyCore = function (path, opts, callback) {
   // First open image to get initial properties.
   Jimp.read(
     path,

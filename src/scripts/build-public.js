@@ -1,9 +1,7 @@
 // @ts-check
 
-/** @type {typeof import("node:fs/promises")} */
-const fs = require("fs/promises");
-/** @type {typeof import("node:path")} */
-const path = require("path");
+import fs from "node:fs/promises";
+import path from "node:path";
 
 /** @type {string} */
 const root = process.cwd();
@@ -111,4 +109,4 @@ async function main() {
   console.log("✅ Copied public assets");
 }
 
-main();
+await main();

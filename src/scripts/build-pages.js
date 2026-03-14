@@ -1,7 +1,8 @@
 // @ts-check
 
-/** @type {typeof import("node:fs/promises")} */
-const fs = require("fs/promises");
+import fs from "node:fs/promises";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
 /**
  * @typedef {{
@@ -13,8 +14,21 @@ const fs = require("fs/promises");
  * }} VersionInfo
  */
 
+/**
+ * Load generated version metadata from disk.
+ *
+ * @returns {Promise<VersionInfo>}
+ */
+const loadVersion = async () => {
+  const scriptDir = path.dirname(fileURLToPath(import.meta.url));
+  const versionPath = path.resolve(scriptDir, "../version.json");
+  return JSON.parse(
+    await fs.readFile(versionPath, "utf8"),
+  );
+};
+
 /** @type {VersionInfo} */
-const version = require("../version.json");
+const version = await loadVersion();
 
 /** @type {string} */
 const txtRoot = "./src/txt";
@@ -304,4 +318,4 @@ export default generatedPages;
   }
 };
 
-main();
+await main();
