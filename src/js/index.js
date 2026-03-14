@@ -1,3 +1,5 @@
+import "../fonts/Monolisa/monolisa.css";
+import "../css/style.css";
 import { createApp } from "petite-vue";
 import { annotate, annotationGroup } from "rough-notation";
 // contents

@@ -1,45 +1,52 @@
-const { currentBranch, log } = require("isomorphic-git")
-const fs = require("fs")
+const fs = require("fs");
+const pkg = require("../../package.json");
+
+const runGit = (args) => {
+  const result = Bun.spawnSync({
+    cmd: ["git", ...args],
+    stdout: "pipe",
+    stderr: "pipe",
+  });
+
+  if (result.exitCode !== 0) {
+    const message = Buffer.from(result.stderr).toString("utf8").trim();
+    throw new Error(message || `git ${args.join(" ")} failed`);
+  }
+
+  return Buffer.from(result.stdout).toString("utf8").trim();
+};
 
 async function main() {
-  console.log("⏳ Version/JSON...")
-  console.log("")
-  // get HEAD name...
-  let branch = await currentBranch({
-    fs,
-    dir: "./",
-  })
-  // get history...
-  let commits = await log({
-    fs,
-    dir: "./",
-    ref: "HEAD",
-  })
-  // bring all together...
+  console.log("⏳ Version/JSON...");
+  console.log("");
+
+  const branch = runGit(["rev-parse", "--abbrev-ref", "HEAD"]);
+  const count = runGit(["rev-list", "--count", "HEAD"]);
+  const short = runGit(["rev-parse", "--short=7", "HEAD"]);
+  const long = runGit(["rev-parse", "HEAD"]);
+
   const version = {
-    version: `${process.env.npm_package_version}-${commits.length}`,
+    version: `${pkg.version}-${count}`,
     ci: `${process.env.DRONE_BUILD_NUMBER || "local"}`,
-    name: `${
-      process.env.npm_package_config_sprintname || process.env.npm_package_name
-    }`,
-    semver: `${process.env.npm_package_version}`,
-    count: `${commits.length}`,
-    short: `${commits[0].oid.substr(0, 7)}`,
-    long: `${commits[0].oid}`,
-    branch: `${branch}`,
+    name: `${pkg.name}`,
+    semver: `${pkg.version}`,
+    count: `${count}`,
+    short,
+    long,
+    branch,
     update: `${new Date().toISOString()}`,
-  }
-  // do something with the data...
+  };
+
   if (process.argv[2]) {
-    console.log("🖋  Writing", process.argv[2])
-    const path = process.argv[2]
-    fs.writeFileSync(path, JSON.stringify(version, null, 2))
-    console.log("")
-    console.log("✅ Created Version/JSON")
+    console.log("🖋  Writing", process.argv[2]);
+    fs.writeFileSync(process.argv[2], JSON.stringify(version, null, 2));
+    console.log("");
+    console.log("✅ Created Version/JSON");
   } else {
-    console.log(version)
-    console.log("")
-    console.log("✅ Shown Version/JSON")
+    console.log(version);
+    console.log("");
+    console.log("✅ Shown Version/JSON");
   }
 }
-main()
+
+main();

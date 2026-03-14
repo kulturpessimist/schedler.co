@@ -63,7 +63,7 @@ export const d_contact1 =
              ║        Just write me an Email <a href="mailto:alex@schedler.co">alex@schedler.co</a>               ║░░               **####################  **########            
              ║        or call me <a href="tel:+491714123929">+49 171 4 123 929</a> and follow me on         ║░░                 ##################**  ##########**          
              ║        bluesky <a href="https://bsky.app/profile/alex.schedler.co" target="_blank">@alex.schedler.co</a> and star my work on         ║░░                 ################**  ##############          
-             ║        Github /kulturpessimist or connect with me            ║░░               ****    ********  **################          
+             ║        Github <a href="https://www.github.com/kulturpessimist" target="_blank">/kulturpessimist</a> or connect with me            ║░░               ****    ********  **################          
              ║        on LinkedIn <a href="https://www.linkedin.com/in/alexanderschedler" target="_blank">/alexanderschedler</a>                        ║░░                             **##################**          
              ║                                                              ║░░                               ##################            
              ║                                                              ║░░                               **################            
@@ -105,7 +105,7 @@ export const d_contact2 =
              ║        Just write me an Email <a href="mailto:alex@schedler.co">alex@schedler.co</a>               ║░░               ######    ################    ######          
              ║        or call me <a href="tel:+491714123929">+49 171 4 123 929</a> and follow me on         ║░░               ########**  **########**  **########          
              ║        bluesky <a href="https://bsky.app/profile/alex.schedler.co" target="_blank">@alex.schedler.co</a> and star my work on         ║░░               ##########**  **####**  **##########          
-             ║        Github /kulturpessimist or connect with me            ║░░               ##############        ##############          
+             ║        Github <a href="https://www.github.com/kulturpessimist" target="_blank">/kulturpessimist</a> or connect with me            ║░░               ##############        ##############          
              ║        on LinkedIn <a href="https://www.linkedin.com/in/alexanderschedler" target="_blank">/alexanderschedler</a>                        ║░░               ################****################          
              ║                                                              ║░░               ####################################          
              ║                                                              ║░░               ####################################          
@@ -147,7 +147,7 @@ export const d_contact3 =
              ║        Just write me an Email <a href="mailto:alex@schedler.co">alex@schedler.co</a>               ║░░                                     **########              
              ║        or call me <a href="tel:+491714123929">+49 171 4 123 929</a> and follow me on         ║░░                                   **########**              
              ║        bluesky <a href="https://bsky.app/profile/alex.schedler.co" target="_blank">@alex.schedler.co</a> and star my work on         ║░░                   **######      **########**                
-             ║        Github /kulturpessimist or connect with me            ║░░               **############  ############                  
+             ║        Github <a href="https://www.github.com/kulturpessimist" target="_blank">/kulturpessimist</a> or connect with me            ║░░               **############  ############                  
              ║        on LinkedIn <a href="https://www.linkedin.com/in/alexanderschedler" target="_blank">/alexanderschedler</a>                        ║░░               ##########################                    
              ║                                                              ║░░               **####################**                      
              ║                                                              ║░░               **##################**                        
@@ -189,7 +189,7 @@ export const d_contact4 =
              ║        Just write me an Email <a href="mailto:alex@schedler.co">alex@schedler.co</a>               ║░░               ######**                      ######          
              ║        or call me <a href="tel:+491714123929">+49 171 4 123 929</a> and follow me on         ║░░               ######**                      ######          
              ║        bluesky <a href="https://bsky.app/profile/alex.schedler.co" target="_blank">@alex.schedler.co</a> and star my work on         ║░░               ######**                    **######          
-             ║        Github /kulturpessimist or connect with me            ║░░               **######**                  ######**          
+             ║        Github <a href="https://www.github.com/kulturpessimist" target="_blank">/kulturpessimist</a> or connect with me            ║░░               **######**                  ######**          
              ║        on LinkedIn <a href="https://www.linkedin.com/in/alexanderschedler" target="_blank">/alexanderschedler</a>                        ║░░                 ##****####**        ****########            
              ║                                                              ║░░                 **##****####        ############            
              ║                                                              ║░░                   ####              **########              
@@ -231,7 +231,7 @@ export const d_contact5 =
              ║        Just write me an Email <a href="mailto:alex@schedler.co">alex@schedler.co</a>               ║░░               **####    **##                ####**          
              ║        or call me <a href="tel:+491714123929">+49 171 4 123 929</a> and follow me on         ║░░               **####    **##      ####**    ####**          
              ║        bluesky <a href="https://bsky.app/profile/alex.schedler.co" target="_blank">@alex.schedler.co</a> and star my work on         ║░░               **####    **##      ####**    **##**          
-             ║        Github /kulturpessimist or connect with me            ║░░               **####    **##      ####**    **##**          
+             ║        Github <a href="https://www.github.com/kulturpessimist" target="_blank">/kulturpessimist</a> or connect with me            ║░░               **####    **##      ####**    **##**          
              ║        on LinkedIn <a href="https://www.linkedin.com/in/alexanderschedler" target="_blank">/alexanderschedler</a>                        ║░░               **####    **##      ####**    **##**          
              ║                                                              ║░░               **####    **##      ####**    **##**          
              ║                                                              ║░░               **####    **##      ####**    **##**          
@@ -385,8 +385,8 @@ export const d_jobs_certania =
                                                                                                                                             
                                                                                                                                             
                                                                                                                                             
-                                                                            <strong>Certania GmbH</strong> <a class="external-employer-link" href="https://certania.com/" target="_blank"> ↗ </a>                                                   
-                                                                           ===============                                                  
+                                                                            CERTANIA Holding GmbH                                                   
+                                                                           =======================                                          
            ┌────────────────────────────────────────────────┐                                                                               
            │                                                │░             Role: Director of Technology                                     
            │                  ..certania..                  │░             Dates: <i>January 2024 onwards</i>                                      
@@ -728,7 +728,7 @@ export const d_jobs =
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░              │
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░              │
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░              │
-│        │      <a href="/job/certania" data-navigo>Certania</a>        │◀─────│   <a href="/job/jd" data-navigo>Johner Institut</a>    │◀─────│ <a href="/job/man-es" data-navigo>MAN Energy Solutions</a> │◀─────│ <a href="/job/iob" data-navigo>Internet of Blah</a>     │◀─┐             │
+│        │       CERTANIA       │◀─────│   <a href="/job/jd" data-navigo>Johner Institut</a>    │◀─────│ <a href="/job/man-es" data-navigo>MAN Energy Solutions</a> │◀─────│ <a href="/job/iob" data-navigo>Internet of Blah</a>     │◀─┐             │
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░│             │
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░│             │
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░│             │

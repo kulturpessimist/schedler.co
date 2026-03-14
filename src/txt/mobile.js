@@ -96,9 +96,9 @@ export const m_contact1 =
         ║     <a href="tel:+491714123929">+49 171 4 123 929</a> and follow     ║░░      
         ║     on bluesky <a href="https://bsky.app/profile/alex.schedler.co" target="_blank">@alex.schedler.co</a>     ║░░      
         ║     and star my work on Github       ║░░      
-        ║     /kulturpessimist or connect me   ║░░      
+        ║     <a href="https://www.github.com/kulturpessimist" target="_blank">/kulturpessimist</a> or connect me   ║░░      
         ║     on LinkedIn <a href="https://www.linkedin.com/in/alexanderschedler" target="_blank">/alexanderschedler</a>   ║░░      
-        ║     or Xing <a href="https://www.xing.com/profile/Alex_Schedler" target="_blank">/Alex_Schedler</a>           ║░░      
+        ║                                      ║░░      
         ║                                      ║░░      
         ║                                      ║░░      
         ║                                      ║░░      
@@ -241,9 +241,9 @@ export const m_impressum_m =
    ┌────────────────────────────────────────────────┐   
    │  Semantic information                          │   
    │ ======================                         │   
-   │ Version: 7.7.0-176                             │   
-   │ Last update: 2025-09-19T15:17:11.077Z          │   
-   │ Commit: 283a6a5                                │   
+   │ Version: 7.7.0-179                             │   
+   │ Last update: 2026-03-14T11:57:44.286Z          │   
+   │ Commit: cabbf48                                │   
    └────────────────────────────────────────────────┘   
    ┌───────────────┐┌──────────────┐┌───────────────┐   
    │  -> <a href="/impressum/1">Privacy</a>   ││ -> <a href="/impressum/2">Copyright</a> ││ -> <a href="/impressum/3">Disclaimer</a> │   

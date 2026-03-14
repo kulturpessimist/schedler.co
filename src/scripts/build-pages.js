@@ -52,7 +52,7 @@ const enrichContent = (content, page) => {
     "jobs.txt": {
       "Alexander Schedler": "<strong>Alexander Schedler</strong>",
       "Curriculum Vitae": "<i>Curriculum Vitae</i>",
-      Certania: '<a href="/job/certania" data-navigo>Certania</a>',
+      CERTANIA: '<a href="/job/certania" data-navigo>CERTANIA</a>',
       "Johner Institut": '<a href="/job/jd" data-navigo>Johner Institut</a>',
       "MAN Energy Solutions":
         '<a href="/job/man-es" data-navigo>MAN Energy Solutions</a>',
@@ -221,7 +221,7 @@ const enrichContent = (content, page) => {
 
 const main = async () => {
   for (let f of ["mobile", "desktop"]) {
-    const filenames = await fs.readdir(path + "/" + f);
+    const filenames = (await fs.readdir(path + "/" + f)).sort();
 
     let pages = [];
     let exports = [];
@@ -239,10 +239,9 @@ const main = async () => {
     //console.log("export default [\n" + exports.join(",\n") + "\n]")
     await fs.writeFile(
       [path, f + ".js"].join("/"),
-      `${pages.join("; \n\n")}; \n\nexport default [\n${
-        exports.join(
-          ",\n",
-        )
+      `${pages.join("; \n\n")}; \n\nexport default [\n${exports.join(
+        ",\n",
+      )
       }\n]`,
     );
   }

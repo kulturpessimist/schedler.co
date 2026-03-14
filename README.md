@@ -2,6 +2,22 @@
 
 website and contents of schedler.co / schedler.pro
 
+## Development
+
+This project is Bun-only.
+
+```sh
+bun install
+bun run dev
+```
+
+Static production output is written to `dist/`.
+
+```sh
+bun run build
+bun run preview
+```
+
 Last update 22.09.2025
 
 # TODO
