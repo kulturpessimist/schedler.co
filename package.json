@@ -13,7 +13,7 @@
     "bun": "1.3.6"
   },
   "scripts": {
-    "dev": "bun run build:rev -- ./src/version.json && bun run build:pages && bun ./src/index.html --watch ",
+    "dev": "bun ./src/scripts/dev.js",
     "lint": "biome lint .",
     "lint:fix": "biome lint --write .",
     "format": "biome format --write .",

@@ -55,7 +55,7 @@ import {
  *   difference: (from: string, to: string, duration?: number) => string;
  *   columns: (from: string, to: string, takeRows: number, takeColumns?: number) => string;
  *   glitch: (text: string, count?: number, memoize?: boolean) => string;
- *   getTextCharacterIndices: (text: string) => number[];
+ *   getVisibleTextSlots: (text: string) => { index: number; character: string }[];
  *   getTransitionCharset: (from: string, to: string) => string[];
  *   getRandomTransitionCharacter: (possible: string[], exclude?: string[]) => string;
  *   buildFlipFrame: (from: string, to: string, step?: number, totalSteps?: number) => string;
@@ -81,7 +81,7 @@ const app = {
   _router: null,
   _slideshows: [],
   _glitchMemoize: "",
-  transitionMode: "flip",//"glitch",
+  transitionMode: "flip", // "glitch",
   currentPage: 0,
   current: "",
   loader: " ",
@@ -371,14 +371,14 @@ const app = {
   },
 
   /**
-   * Collect visible, non-whitespace character indices while skipping HTML tags.
+   * Collect visible text slots while skipping HTML tags.
    *
    * @param {string} text
-   * @returns {number[]}
+   * @returns {{ index: number; character: string }[]}
    */
-  getTextCharacterIndices(text) {
-    /** @type {number[]} */
-    const indices = []
+  getVisibleTextSlots(text) {
+    /** @type {{ index: number; character: string }[]} */
+    const slots = []
     let insideTag = false
 
     for (let index = 0; index < text.length; index++) {
@@ -394,12 +394,19 @@ const app = {
         continue
       }
 
-      if (!insideTag && character?.match(/\S/)) {
-        indices.push(index)
+      if (
+        !insideTag &&
+        character &&
+        character !== "\n"
+      ) {
+        slots.push({
+          index,
+          character,
+        })
       }
     }
 
-    return indices
+    return slots
   },
 
   /**
@@ -417,8 +424,7 @@ const app = {
     const seen = new Set(fallback)
 
     for (const sourceText of [from, to]) {
-      for (const index of this.getTextCharacterIndices(sourceText)) {
-        const source = sourceText[index]
+      for (const { character: source } of this.getVisibleTextSlots(sourceText)) {
         if (source?.match(/\S/)) {
           seen.add(source)
         }
@@ -454,26 +460,30 @@ const app = {
    * @returns {string}
    */
   buildFlipFrame(from, to, step = 0, totalSteps = 6) {
-    const fromIndices = this.getTextCharacterIndices(from)
-    const toIndices = this.getTextCharacterIndices(to)
+    const fromSlots = this.getVisibleTextSlots(from)
+    const toSlots = this.getVisibleTextSlots(to)
     const charset = this.getTransitionCharset(from, to)
     const fromChars = from.split("")
-    const toChars = to.split("")
-    const frame = [...toChars]
     const isFinalStep = step >= totalSteps - 1
 
-    toIndices.forEach((targetIndex, order) => {
-      const sourceIndex = fromIndices[order]
-      const sourceCharacter =
-        sourceIndex === undefined ? " " : fromChars[sourceIndex] || " "
-      const targetCharacter = toChars[targetIndex] || " "
+    if (step <= 0) {
+      return from
+    }
 
-      if (isFinalStep) {
-        frame[targetIndex] = targetCharacter
+    if (isFinalStep) {
+      return to
+    }
+
+    const frame = [...fromChars]
+
+    fromSlots.forEach(({ index: sourceIndex, character: sourceCharacter }, order) => {
+      const targetCharacter = toSlots[order]?.character || " "
+
+      if (sourceCharacter === " " && targetCharacter === " ") {
         return
       }
 
-      frame[targetIndex] = this.getRandomTransitionCharacter(charset, [
+      frame[sourceIndex] = this.getRandomTransitionCharacter(charset, [
         sourceCharacter,
         targetCharacter,
       ])
@@ -591,6 +601,8 @@ const app = {
     let ivc = 0
     const ivt = ["", "", "", "", "", ""]
 
+    this.current = from
+
     const interval = setInterval(() => {
       this.loader = ivt[ivc++ % ivt.length]
     }, 75)
@@ -600,7 +612,7 @@ const app = {
         (currentStep) => {
           this.current = this.buildFlipFrame(from, to, currentStep, totalSteps)
         },
-        step * speed,
+        (step + 1) * speed,
         step,
       )
 
@@ -610,7 +622,7 @@ const app = {
           this.loader = " "
           clearInterval(interval)
           this.afterNavigation()
-        }, step * speed)
+        }, (step + 1) * speed)
       }
     }
   },
@@ -624,6 +636,14 @@ const app = {
    * @returns {void}
    */
   navigateFromTo(from, to, nextPage) {
+    if (from === to || nextPage === this.currentPage) {
+      this.current = to
+      this.currentPage = nextPage
+      this.loader = " "
+      this.afterNavigation()
+      return
+    }
+
     if (this.transitionMode === "flip") {
       this.flipModeTransition(from, to, nextPage)
       return
