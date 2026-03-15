@@ -417,8 +417,11 @@ const app = {
    * @returns {string[]}
    */
   getTransitionCharset(from, to) {
+    const ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!?#$%&* +-=/\\|[]{}()@~";
+    /* const ALPHABET = "0123456789!?#$%&* +-=/\\|[]{}()@~"; */
+    /* const ALPHABET = "-*+/|}{[]?/.+-_)(*&^%$#@!)}~" */
     const fallback =
-      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!?#$%&*+-=/\\|[]{}()@~".split(
+      ALPHABET.split(
         "",
       )
     const seen = new Set(fallback)
