@@ -66,6 +66,7 @@ import {
  *   flipModeTransition: (from: string, to: string, nextPage: number) => void;
  *   navigateFromTo: (from: string, to: string, nextPage: number) => void;
  *   navigate: (direction?: "next" | "prev" | number) => void;
+ *   cycleColors: () => void;
  *   options: () => void;
  * }} AppState
  */
@@ -742,6 +743,21 @@ const app = {
       this._router.navigate("/impressum/0")
     }
   },
+  cycleColors() {
+    const tailWindColors = ["red", "orange", "amber", "yellow", "lime", "green", "emerald", "teal", "cyan", "sky", "blue", "indigo", "violet", "purple", "fuchsia", "pink", "rose", "taupe", "mist", "sand", "stone", "neutral", "zinc", "gray", "olive", "slate"
+    ]
+    const randomColor = tailWindColors[Math.floor(Math.random() * tailWindColors.length)]
+    const darkMode = document.querySelector("html.dark") ? true : false
+    const lightVars = [100, 300, 950]
+    const darkVars = [950, 500, 50]
+    const currentVars = darkMode ? darkVars : lightVars
+    const root = document.querySelector(':root')
+    if (root && root.style) {
+      root.style.setProperty('--main-color', `var(--color-${randomColor}-${currentVars[0]})`)
+      root.style.setProperty('--accent-color', `var(--color-${randomColor}-${currentVars[1]})`)
+      root.style.setProperty('--text-color', `var(--color-${randomColor}-${currentVars[2]})`)
+    }
+  }
 }
 
 createApp(app).mount("body")
