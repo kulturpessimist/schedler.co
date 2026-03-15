@@ -309,6 +309,7 @@
   /* --main-color: #0000ff;
   --accent-color: #000066;
   --text-color: #eeeeee; */
+
   --main-color: var(--color-yellow-100);
   --accent-color: var(--color-yellow-300);
   --text-color: var(--color-yellow-950);

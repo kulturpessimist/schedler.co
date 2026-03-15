@@ -21,19 +21,19 @@ import asciify from "./ascii.js"
 const options = {
   fit: "width",
   color: false,
-  width: 11,
+  width: 20,
   height: 10,
   //chars: "  .*##",
-  //chars: "    ●●",
-  //chars: "   .:~o*",
-  //chars: "   .*#",
-  chars: "   ...C",
+  //chars: "   ●●",
+  //chars: "  .:o*",
+  chars: "  .*●#",
+  //chars: "   ...C",
 }
 
 /** @type {Promise<string | string[][]>} */
 const run = /** @type {Promise<string | string[][]>} */ (
   asciify(
-    "../../materials/Pictures/certania.png", // Middlesex_University_Logo
+    "../../materials/Pictures/Bluesky_Logo.svg.png", // Middlesex_University_Logo
     options,
   )
 )
