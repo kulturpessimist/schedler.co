@@ -146,7 +146,6 @@ const match = window.matchMedia("(orientation: portrait)")
  */
 const matchHandler = () => {
   if (match.matches) {
-    console.log("mobile")
     pages = m_pages
     contactFrames = m_contactFrames
     impressumFrames = m_impressumFrames
@@ -154,7 +153,6 @@ const matchHandler = () => {
     contactFramesMobile = m_contactFrames
     impressumFramesMobile = m_impressumFrames
   } else {
-    console.log("desktop")
     pages = d_pages
     contactFrames = d_contactFrames
     impressumFrames = d_impressumFrames
@@ -173,5 +171,6 @@ export {
   impressumFrames,
   impressumFramesMobile,
   pages,
-  pagesMobile,
+  pagesMobile
 }
+

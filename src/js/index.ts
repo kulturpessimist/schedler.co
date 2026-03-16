@@ -1,5 +1,3 @@
-// @ts-check
-
 import Navigo from "navigo"
 import { createApp } from "petite-vue"
 import { annotate, annotationGroup } from "rough-notation"
@@ -14,112 +12,106 @@ import {
   pagesMobile,
 } from "./pages"
 
-/**
- * @typedef {{ data: Record<string, string> }} RouteMatch
- */
+interface RouteMatch {
+  data: Record<string, string>
+}
 
-/**
- * @typedef {{ url: string }} RouterLocation
- */
+interface RouterLocation {
+  url: string
+}
 
-/**
- * @typedef {{
- *   navigate: (path: string) => void;
- *   on: (path: string, handler: (match: RouteMatch) => void) => void;
- *   notFound: (handler: () => void) => void;
- *   resolve: () => void;
- *   updatePageLinks: () => void;
- *   getCurrentLocation: () => RouterLocation;
- * }} AppRouter
- */
+interface AppRouter {
+  navigate: (path: string) => void
+  on: (path: string, handler: (match: RouteMatch) => void) => void
+  notFound: (handler: () => void) => void
+  resolve: () => void
+  updatePageLinks: () => void
+  getCurrentLocation: () => RouterLocation
+}
 
-/**
- * @typedef {{
- *   pages: string[];
- *   contactFrames: string[];
- *   impressumFrames: string[];
- *   _router: AppRouter | null;
- *   _slideshows: ReturnType<typeof setTimeout>[];
- *   _glitchMemoize: string;
- *   transitionMode: "glitch" | "flip";
- *   currentPage: number;
- *   current: string;
- *   loader: string;
- *   readonly prevPage: number;
- *   readonly nextPage: number;
- *   readonly currentGetter: string | undefined;
- *   init: () => void;
- *   toggleDarkMode: () => void;
- *   annotateAllTheThings: () => void;
- *   combine: (from: string, to: string, take: number) => string;
- *   difference: (from: string, to: string, duration?: number) => string;
- *   columns: (from: string, to: string, takeRows: number, takeColumns?: number) => string;
- *   glitch: (text: string, count?: number, memoize?: boolean) => string;
- *   getVisibleTextSlots: (text: string) => { index: number; character: string }[];
- *   getTransitionCharset: (from: string, to: string) => string[];
- *   getRandomTransitionCharacter: (possible: string[], exclude?: string[]) => string;
- *   buildFlipFrame: (from: string, to: string, step?: number, totalSteps?: number) => string;
- *   playSlideshow: (animation?: string[], currentFrame?: number) => void;
- *   stopSlideshow: () => void;
- *   initKeyboardListener: () => void;
- *   afterNavigation: () => void;
- *   flipModeTransition: (from: string, to: string, nextPage: number) => void;
- *   navigateFromTo: (from: string, to: string, nextPage: number) => void;
- *   navigate: (direction?: "next" | "prev" | number) => void;
- *   cycleColors: () => void;
- *   options: () => void;
- * }} AppState
- */
+interface TextSlot {
+  index: number
+  character: string
+}
 
-/** @type {Window & { ag?: ReturnType<typeof annotationGroup>; app?: AppState }} */
-const typedWindow = window
+interface AppState {
+  pages: string[]
+  contactFrames: string[]
+  impressumFrames: string[]
+  _router: AppRouter | null
+  _slideshows: ReturnType<typeof setTimeout>[]
+  _glitchMemoize: string
+  transitionMode: "glitch" | "flip"
+  currentPage: number
+  current: string
+  loader: string
+  readonly prevPage: number
+  readonly nextPage: number
+  readonly currentGetter: string | undefined
+  init: () => void
+  toggleDarkMode: () => void
+  annotateAllTheThings: () => void
+  combine: (from: string, to: string, take: number) => string
+  difference: (from: string, to: string, duration?: number) => string
+  columns: (from: string, to: string, takeRows: number, takeColumns?: number) => string
+  glitch: (text: string, count?: number, memoize?: boolean) => string
+  getVisibleTextSlots: (text: string) => TextSlot[]
+  getTransitionCharset: (from: string, to: string) => string[]
+  getRandomTransitionCharacter: (possible: string[], exclude?: string[]) => string
+  buildFlipFrame: (from: string, to: string, step?: number, totalSteps?: number) => string
+  playSlideshow: (animation?: string[], currentFrame?: number) => void
+  stopSlideshow: () => void
+  initKeyboardListener: () => void
+  afterNavigation: () => void
+  flipModeTransition: (from: string, to: string, nextPage: number) => void
+  navigateFromTo: (from: string, to: string, nextPage: number) => void
+  navigate: (direction?: "next" | "prev" | number) => void
+  cycleColors: () => void
+  options: () => void
+}
 
-/** @type {AppState} */
-const app = {
+const typedWindow = window as Window & {
+  ag?: ReturnType<typeof annotationGroup>
+  app?: AppState
+}
+
+const app: AppState = {
   pages: [],
   contactFrames: [],
   impressumFrames: [],
   _router: null,
   _slideshows: [],
   _glitchMemoize: "",
-  transitionMode: "flip", // "glitch",
+  transitionMode: "flip",
   currentPage: 0,
   current: "",
   loader: " ",
 
   /**
    * Current index for previous page navigation.
-   *
-   * @returns {number}
    */
-  get prevPage() {
+  get prevPage(): number {
     return this.currentPage > 0 ? this.currentPage - 1 : this.pages.length - 1
   },
 
   /**
    * Current index for next page navigation.
-   *
-   * @returns {number}
    */
-  get nextPage() {
+  get nextPage(): number {
     return this.currentPage < this.pages.length - 1 ? this.currentPage + 1 : 0
   },
 
   /**
    * Currently visible page content.
-   *
-   * @returns {string | undefined}
    */
-  get currentGetter() {
+  get currentGetter(): string | undefined {
     return app.pages[this.currentPage]
   },
 
   /**
    * Initialize app data sources, keyboard shortcuts and routes.
-   *
-   * @returns {void}
    */
-  init() {
+  init(): void {
     if (
       window.matchMedia &&
       window.matchMedia("(prefers-color-scheme: dark)").matches
@@ -142,22 +134,21 @@ const app = {
     this.initKeyboardListener()
     this.current = app.pages[this.currentPage] || ""
 
-    const router = /** @type {AppRouter} */ (new Navigo("/"))
+    const router = new Navigo("/") as unknown as AppRouter
     this._router = router
 
     router.notFound(() => {
       router.navigate("/page/0")
     })
 
-    router.on("/impressum/:frame", (match) => {
+    router.on("/impressum/:frame", (match: RouteMatch) => {
       const frame = Number.parseInt(match.data.frame, 10)
       const nextFrame = this.impressumFrames[frame] || this.impressumFrames[0]
       this.navigateFromTo(this.current, nextFrame, this.currentPage)
     })
 
-    router.on("/job/:company", (match) => {
-      /** @type {string} */
-      let target
+    router.on("/job/:company", (match: RouteMatch) => {
+      let target: string
 
       switch (match.data.company) {
         case "certania":
@@ -191,7 +182,7 @@ const app = {
       router.navigate(target)
     })
 
-    router.on("/page/:page", (match) => {
+    router.on("/page/:page", (match: RouteMatch) => {
       if (match.data.page === "1") {
         setTimeout(() => {
           this.playSlideshow(this.contactFrames, 0)
@@ -208,10 +199,8 @@ const app = {
 
   /**
    * Toggle dark mode class and rebuild rough-notation highlights.
-   *
-   * @returns {void}
    */
-  toggleDarkMode() {
+  toggleDarkMode(): void {
     const html = document.querySelector("html")
     if (html) {
       html.classList.toggle("dark")
@@ -223,19 +212,15 @@ const app = {
 
   /**
    * Highlight all `<mark>` nodes using rough-notation.
-   *
-   * @returns {void}
    */
-  annotateAllTheThings() {
-    /** @type {NodeListOf<HTMLElement>} */
-    const elements = document.querySelectorAll("mark")
+  annotateAllTheThings(): void {
+    const elements: NodeListOf<HTMLElement> = document.querySelectorAll("mark")
     const color =
       window
         .getComputedStyle(document.documentElement)
         .getPropertyValue("--accent-color") || "#000066"
 
-    /** @type {ReturnType<typeof annotate>[]} */
-    const annotations = []
+    const annotations: ReturnType<typeof annotate>[] = []
 
     for (const mark of elements) {
       annotations.push(
@@ -253,13 +238,8 @@ const app = {
 
   /**
    * Replace top lines of one page with lines from another page.
-   *
-   * @param {string} from
-   * @param {string} to
-   * @param {number} take
-   * @returns {string}
    */
-  combine(from, to, take) {
+  combine(from: string, to: string, take: number): string {
     const fromLines = from.split("\n").slice(take)
     const toLines = to.split("\n").slice(0, take)
 
@@ -268,18 +248,12 @@ const app = {
 
   /**
    * Build a randomized difference animation payload.
-   *
-   * @param {string} from
-   * @param {string} to
-   * @param {number} [duration=800]
-   * @returns {string}
    */
-  difference(from, to, duration = 800) {
+  difference(from: string, to: string, duration = 800): string {
     const fromChars = from.split("")
     const toChars = to.split("")
 
-    /** @type {number[]} */
-    const indices = []
+    const indices: number[] = []
     toChars.forEach((value, index) => {
       if (value.match(/\S/)) {
         indices.push(index)
@@ -291,7 +265,7 @@ const app = {
       .sort(() => Math.random())
       .forEach((value, index) => {
         setTimeout(
-          (charIndex) => {
+          (charIndex: number) => {
             fromChars[charIndex] = toChars[charIndex] || " "
             this.current = fromChars.join("")
           },
@@ -305,14 +279,8 @@ const app = {
 
   /**
    * Build a column-transition output by slicing trailing/leading columns.
-   *
-   * @param {string} from
-   * @param {string} to
-   * @param {number} takeRows
-   * @param {number} [takeColumns=50]
-   * @returns {string}
    */
-  columns(from, to, takeRows, takeColumns = 50) {
+  columns(from: string, to: string, takeRows: number, takeColumns = 50): string {
     const fromLines = from
       .split("\n")
       .map((line) => line.slice(0, line.length - takeColumns))
@@ -321,8 +289,7 @@ const app = {
       .slice(0, takeRows + 1)
       .map((line) => line.slice(-1 * takeColumns))
 
-    /** @type {string[]} */
-    const mergedFrom = []
+    const mergedFrom: string[] = []
     for (let i = 0; i < fromLines.length; i++) {
       mergedFrom.push(
         fromLines[i] +
@@ -335,20 +302,14 @@ const app = {
 
   /**
    * Corrupt random non-whitespace characters for transition effects.
-   *
-   * @param {string} text
-   * @param {number} [count=25]
-   * @param {boolean} [memoize=false]
-   * @returns {string}
    */
-  glitch(text, count = 25, memoize = false) {
+  glitch(text: string, count = 25, memoize = false): string {
     if (memoize && this._glitchMemoize) {
       return this._glitchMemoize
     }
 
     const possible = "-*+/|}{[]?/.+-_)(*&^%$#@!)}~".split("")
-    /** @type {number[]} */
-    const positions = []
+    const positions: number[] = []
     const chars = text.split("")
 
     chars.forEach((value, index) => {
@@ -373,13 +334,9 @@ const app = {
 
   /**
    * Collect visible text slots while skipping HTML tags.
-   *
-   * @param {string} text
-   * @returns {{ index: number; character: string }[]}
    */
-  getVisibleTextSlots(text) {
-    /** @type {{ index: number; character: string }[]} */
-    const slots = []
+  getVisibleTextSlots(text: string): TextSlot[] {
+    const slots: TextSlot[] = []
     let insideTag = false
 
     for (let index = 0; index < text.length; index++) {
@@ -412,19 +369,10 @@ const app = {
 
   /**
    * Build the random-character pool for flip transitions from visible content.
-   *
-   * @param {string} from
-   * @param {string} to
-   * @returns {string[]}
    */
-  getTransitionCharset(from, to) {
-    const ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!?#$%&* +-=/\\|[]{}()@~";
-    /* const ALPHABET = "0123456789!?#$%&* +-=/\\|[]{}()@~"; */
-    /* const ALPHABET = "-*+/|}{[]?/.+-_)(*&^%$#@!)}~" */
-    const fallback =
-      ALPHABET.split(
-        "",
-      )
+  getTransitionCharset(from: string, to: string): string[] {
+    const ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!?#$%&* +-=/\\|[]{}()@~"
+    const fallback = ALPHABET.split("")
     const seen = new Set(fallback)
 
     for (const sourceText of [from, to]) {
@@ -440,12 +388,8 @@ const app = {
 
   /**
    * Pick a randomized transition character that differs from excluded values.
-   *
-   * @param {string[]} possible
-   * @param {string[]} [exclude=[]]
-   * @returns {string}
    */
-  getRandomTransitionCharacter(possible, exclude = []) {
+  getRandomTransitionCharacter(possible: string[], exclude: string[] = []): string {
     const filtered = possible.filter(
       (character) => !exclude.includes(character),
     )
@@ -456,14 +400,8 @@ const app = {
 
   /**
    * Build one frame of the flip-mode transition using target markup.
-   *
-   * @param {string} from
-   * @param {string} to
-   * @param {number} [step=0]
-   * @param {number} [totalSteps=6]
-   * @returns {string}
    */
-  buildFlipFrame(from, to, step = 0, totalSteps = 6) {
+  buildFlipFrame(from: string, to: string, step = 0, totalSteps = 6): string {
     const fromSlots = this.getVisibleTextSlots(from)
     const toSlots = this.getVisibleTextSlots(to)
     const charset = this.getTransitionCharset(from, to)
@@ -519,12 +457,8 @@ const app = {
 
   /**
    * Play contact animation frames in a loop.
-   *
-   * @param {string[]} [animation=this.contactFrames]
-   * @param {number} [currentFrame=0]
-   * @returns {void}
    */
-  playSlideshow(animation, currentFrame = 0) {
+  playSlideshow(animation?: string[], currentFrame = 0): void {
     const animationFrames = animation || this.contactFrames
     const speed = 60
     const pause = 200
@@ -533,7 +467,7 @@ const app = {
 
     for (let i = 0; i <= lines; i++) {
       this._slideshows[i] = setTimeout(
-        (lineIndex) => {
+        (lineIndex: number) => {
           this.current = this.combine(
             animationFrames[currentFrame],
             animationFrames[nextFrame],
@@ -557,10 +491,8 @@ const app = {
 
   /**
    * Stop all pending slideshow timeouts.
-   *
-   * @returns {void}
    */
-  stopSlideshow() {
+  stopSlideshow(): void {
     this._slideshows.forEach((slideshowTimeout) =>
       clearTimeout(slideshowTimeout),
     )
@@ -568,11 +500,9 @@ const app = {
 
   /**
    * Register keyboard shortcuts for page navigation.
-   *
-   * @returns {void}
    */
-  initKeyboardListener() {
-    document.addEventListener("keydown", (event) => {
+  initKeyboardListener(): void {
+    document.addEventListener("keydown", (event: KeyboardEvent) => {
       const router = this._router
       if (!router) {
         return
@@ -596,16 +526,13 @@ const app = {
       if (event.key === "x") {
         this.cycleColors()
       }
-
     })
   },
 
   /**
    * Re-bind page links and refresh annotations after route updates.
-   *
-   * @returns {void}
    */
-  afterNavigation() {
+  afterNavigation(): void {
     if (!this._router) {
       return
     }
@@ -617,18 +544,13 @@ const app = {
   },
 
   /**
-   * Animate visible text characters through five random passes into the target page.
-   *
-   * @param {string} from
-   * @param {string} to
-   * @param {number} nextPage
-   * @returns {void}
+   * Animate visible text characters through random passes into the target page.
    */
-  flipModeTransition(from, to, nextPage) {
+  flipModeTransition(from: string, to: string, nextPage: number): void {
     const speed = 100
     const totalSteps = 8
     let ivc = 0
-    const ivt = ["", "", "", "", "", ""]
+    const ivt = ["", "", "", "", "", ""]
 
     this.current = from
 
@@ -638,7 +560,7 @@ const app = {
 
     for (let step = 0; step < totalSteps; step++) {
       setTimeout(
-        (currentStep) => {
+        (currentStep: number) => {
           this.current = this.buildFlipFrame(from, to, currentStep, totalSteps)
         },
         (step + 1) * speed,
@@ -658,13 +580,8 @@ const app = {
 
   /**
    * Animate transition from one page string to another.
-   *
-   * @param {string} from
-   * @param {string} to
-   * @param {number} nextPage
-   * @returns {void}
    */
-  navigateFromTo(from, to, nextPage) {
+  navigateFromTo(from: string, to: string, nextPage: number): void {
     if (from === to || nextPage === this.currentPage) {
       this.current = to
       this.currentPage = nextPage
@@ -680,7 +597,7 @@ const app = {
 
     const speed = 20
     let ivc = 0
-    const ivt = ["", "", "", "", "", ""]
+    const ivt = ["", "", "", "", "", ""]
 
     const interval = setInterval(() => {
       this.loader = ivt[ivc++ % ivt.length]
@@ -689,7 +606,7 @@ const app = {
     const lines = this.current.split("\n").length
     for (let i = 0; i <= lines; i++) {
       setTimeout(
-        (lineIndex) => {
+        (lineIndex: number) => {
           this.current = this.combine(
             this.glitch(from, 50, Math.random() < 0.9),
             to,
@@ -714,13 +631,9 @@ const app = {
 
   /**
    * Navigate by explicit index or symbolic direction.
-   *
-   * @param {"next" | "prev" | number} [direction="next"]
-   * @returns {void}
    */
-  navigate(direction = "next") {
-    /** @type {number} */
-    let nextPage
+  navigate(direction: "next" | "prev" | number = "next"): void {
+    let nextPage: number
 
     if (typeof direction === "number") {
       nextPage = direction
@@ -733,10 +646,8 @@ const app = {
 
   /**
    * Toggle impressum route state.
-   *
-   * @returns {void}
    */
-  options() {
+  options(): void {
     if (!this._router) {
       return
     }
@@ -747,29 +658,35 @@ const app = {
       this._router.navigate("/impressum/0")
     }
   },
-  cycleColors() {
-    const tailWindColors = ["red", "orange", "amber", "yellow", "lime", "green", "emerald", "teal", "cyan", "sky", "blue", "indigo", "violet", "purple", "fuchsia", "pink", "rose", "taupe", "mist", "sand", "stone", "neutral", "zinc", "gray", "olive", "slate"
+
+  /**
+   * Cycle accent colors randomly from Tailwind palette.
+   */
+  cycleColors(): void {
+    const tailWindColors = [
+      "red", "orange", "amber", "yellow", "lime", "green", "emerald", "teal",
+      "cyan", "sky", "blue", "indigo", "violet", "purple", "fuchsia", "pink",
+      "rose", "taupe", "mist", "sand", "stone", "neutral", "zinc", "gray",
+      "olive", "slate",
     ]
     const randomColor = tailWindColors[Math.floor(Math.random() * tailWindColors.length)]
-    const darkMode = document.querySelector("html.dark") ? true : false
+    const darkMode = !!document.querySelector("html.dark")
     const lightVars = [100, 400, 950]
     const darkVars = [950, 500, 200]
     const currentVars = darkMode ? darkVars : lightVars
-    const root = document.querySelector(':root')
-    if (root && root.style) {
-      root.style.setProperty('--main-color', `var(--color-${randomColor}-${currentVars[0]})`)
-      root.style.setProperty('--accent-color', `var(--color-${randomColor}-${currentVars[1]})`)
-      root.style.setProperty('--text-color', `var(--color-${randomColor}-${currentVars[2]})`)
+    const root = document.querySelector(":root") as HTMLElement | null
+    if (root?.style) {
+      root.style.setProperty("--main-color", `var(--color-${randomColor}-${currentVars[0]})`)
+      root.style.setProperty("--accent-color", `var(--color-${randomColor}-${currentVars[1]})`)
+      root.style.setProperty("--text-color", `var(--color-${randomColor}-${currentVars[2]})`)
 
       setTimeout(() => {
         typedWindow.ag ? typedWindow.ag.hide() : void 0
         this.annotateAllTheThings()
       }, 300)
     }
-  }
+  },
 }
-
-
 
 createApp(app).mount("body")
 typedWindow.app = app

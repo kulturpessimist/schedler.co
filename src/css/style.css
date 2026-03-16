@@ -289,17 +289,23 @@
   --color-white: #fff;
 }
 
-/* @media (orientation: landscape) {
-  :root {
-    --size: calc(4pt + 1vmin);
-  }
+@property --main-color {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: oklch(97.3% 0.071 103.193);
 }
 
-@media (orientation: portrait) {
-  :root {
-    --size: calc(4pt + 1vmin);
-  }
-} */
+@property --accent-color {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: oklch(85.2% 0.199 91.936);
+}
+
+@property --text-color {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: oklch(28.6% 0.066 53.813);
+}
 
 :root {
   --size: calc(4px + 1vmin);
@@ -310,8 +316,10 @@
   --accent-color: #000066;
   --text-color: #eeeeee; */
 
+  transition: --main-color 0.3s ease, --accent-color 0.3s ease, --text-color 0.3s ease;
+
   --main-color: var(--color-yellow-100);
-  --accent-color: var(--color-yellow-300);
+  --accent-color: var(--color-yellow-400);
   --text-color: var(--color-yellow-950);
 }
 
@@ -322,7 +330,7 @@
 
   --main-color: var(--color-violet-950);
   --accent-color: var(--color-violet-500);
-  --text-color: var(--color-violet-50);
+  --text-color: var(--color-violet-200);
 }
 
 ::selection {
@@ -388,7 +396,7 @@ strong {
 #back,
 #forward {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 400;
 
   text-decoration: none;
   cursor: pointer;
@@ -396,7 +404,7 @@ strong {
 
 #options {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 400;
   position: absolute;
   text-align: left;
 
@@ -408,7 +416,7 @@ strong {
 
 .toggleDarkMode {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 400;
   position: absolute;
   text-align: right;
   top: 24px;
