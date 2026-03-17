@@ -1,7 +1,273 @@
-# Schedler.pro | Alexander Schedler: Internet application engineering, development and management.
+# Schedler.co | Alexander Schedler: Internet application engineering, development and management.
+
+> Source: [schedler.co](https://schedler.co/)
+> This file is auto-generated from site content to provide LLM-accessible information.
 
 ## Overview
-[Schedler.pro](https://schedler.pro/): This site serves as a professional portfolio for Alexander Schedler, showcasing expertise in internet application engineering, development, and management. It provides insights into his skills, projects, and professional background.
+This site serves as a professional portfolio and curriculum vitae for Alexander Schedler, showcasing expertise in internet application engineering, development, and management. Below you will find detailed information about his professional background, skills, and experience.
 
-## Curriculum Vitae (CV)
-[Curriculum vitae (CV)](https://schedler.pro/): This section contains the detailed professional history of Alexander Schedler, outlining his qualifications, work experience, and contributions to the field of internet application engineering. It serves as a comprehensive resource for understanding his career trajectory and technical proficiencies.
+## About
+
+Alexander Schedler
+District of Augsburg, Germany
+Internet application engineering,
+development and management.
+
+## Contact Information
+
+Alexander Schedler
+District of Augsburg, Germany
+Want to get in touch?
+Just write me an Email alex@schedler.co
+or call me +49 171 4 123 929 and follow me on
+bluesky @alex.schedler.co and star my work on
+Github /kulturpessimist or connect with me
+on LinkedIn /alexanderschedler
+
+## Freelance Work
+
+Storage
+Backend
+Alexander Schedler
+freelance software developer
+I am currently not taking on
+any new freelance projects. | Frontend
+Want to get in touch? Just write me.
+Cloud
+Consulting
+
+## Career Overview
+
+Alexander Schedler
+Curriculum Vitae
+CERTANIA | Johner Institut | MAN Energy Solutions | Internet of Blah
+ThinxNet | natureOffice | Dynomedia | KIGG
+
+## Employment History
+
+### CERTANIA Holding GmbH
+
+Role: Director of Technology
+Dates: January 2024 onwards
+Main activities
+Establishing and observing of an IT strategy for the
+company and affiliated firms
+Measuring the impact of technology use
+Technology consulting
+Responsibilities
+Establishment of a technological service offering
+(tools, assistance) for affiliated companies as well as
+identification and implementation of value creation
+potential through technology at affiliated companies.
+
+### Johner Institut GmbH
+
+Role: Senior Software Engineering Lead
+Dates: February 2023 – December 2023
+Main activities
+Technology consulting
+Software development and application engineering
+Conceptual design, architecture and development of B2B
+applications
+Responsibilities
+Working in an agile team to get the first "Realtime
+Compliance System" up and running to disrupt the working
+routines of medical device manufacturers.
+With the platform we help to overcome regulatory
+challenges and bring safe products to market faster.
+
+### MAN Energy Solutions SE
+
+Role: Senior Software Engineer
+Dates: June 2018 – January 2023
+Main activities
+Software development and application engineering
+UI/UX Design and consulting
+Conceptual design and development of enterprise
+applications
+Agile Mentor / SCRUM Master
+Responsibilities
+Working in an agile SCRUM team on different, web based
+projects in the enterprise sphere. Creation of an
+enterprise wide supergraph as foundation for multiple
+inter department applications with internal and external
+users.
+Depending on the actual project, the responsibilities
+are reaching from conceptualizing and architectural
+devising, over frontend and backend development, through
+to the initial operation in the enterprise cloud
+infrastructure.
+
+### Internet of Blah / PURR
+
+Role: Frontend / Design / CEO
+Dates: June 2016 – December 2019
+Main activities
+User Experience and interaction design
+Cross platform software development and application
+engineering.
+Web application and architectural consulting
+Responsibilities
+Conception, engineering and product development of the
+company‘s product – an indepentend IoT Configuration
+Platform.
+Freelance projects for external clients and IT
+consulting. Corporate and Business Development of the
+startup as a co-founder.
+
+### ThinxNet GmbH
+
+Role: UI/UX Product Engineer
+Dates: June 2014 – June 2016
+Main activities
+UI/UX Design and interaction design
+Mobile application prototyping (iOS, Android)
+Software development and application engineering
+Responsibilities
+Designing the UI and UX for iOS, Android and HTML5.
+Supervising the different teams of native developers to
+ensure quality as well as a consistent look and feel
+over all platforms.
+Fulfilling the roll of the product owner in our SCRUM
+workflow.
+Supporting the management in the domain of brand
+building.
+
+### natureOffice GmbH
+
+Role: Head of Software Development, Co-founder
+Dates: August 2008 - April 2014
+Main activities
+Software development and application engineering
+Business strategy development
+Responsibilities
+Corporate Development of the startup as a co-founder,
+focused on the technical domain.
+Conception, engineering and development of the company‘s
+products from the beginning with only a few users to the
+operative state with hundreds of concurrent users on the
+platforms.
+
+### Dynomedia GmbH
+
+Role: Web Developer
+Dates: June 2005 - July 2008
+Main activities
+Web design and development
+Responsibilities
+Worked in an advertising agency for customers in
+different industries (e.g. Fujitsu Siemens Computers,
+Sony Computer Entertainment Europe)
+Developed an online file management system as second
+mainstay for the agency.
+
+### KIGG GmbH
+
+Role: Multimedia Producer, Project Manager
+Dates: August 2002 - November 2004
+Main activities
+Project management
+Web design
+Multimedia Production (CD-ROM)
+Responsibilities
+Started as a multimedia producer with the campaign
+documentation of the 2002 mayoral election in Augsburg.
+Worked on web development projects and a candidates
+state campaign for the elections in 2003.
+Responsible for municipal content management system
+projects.
+
+## Education
+
+SAE Institute Munich, Germany and
+Middlesex University London, UK
+Bachelor of Arts Multimedia
+August 2001 - May 2004
+Contemporary issues and research
+Business management, marketing and legal issues
+Psychology, team management and storyboarding
+Multimedia and education
+Multimedia and Online Production
+Graphic design
+
+## Personal Skills and Competences
+
+Personal Skills
+and Competences
+Organisational skills | Social skills
+Entrepreneurial mind and decisive planner | Analytical and creative thinker
+Eager learner of new technologies | Empathetic listener and reflective
+Able to work well-structured also upon | discussant
+deadlines | Balanced personality even under pressure
+Interests
+Languages
+Internet culture
+German (Mother tongue) | Politics
+English (fluently) | Movie & Cinema
+Philosophy
+
+## Technologies
+
+Technologies Overview
+Experience and Expertise (extract)
+JavaScript | Agile & SCRUM | HTML
+Expert | Experienced | Expert
+18+ years | 8+ years | 18+ years
+Vue | node | Typescript | Web Components | Graphic Design | CSS
+Expert | Expert | Experienced | Experienced | Experienced | Expert
+6+ years | 10+ years | 4+ years | 7+ years | 15+ years | 15+ years
+CouchDB | GraphQL
+Expert | Experienced
+12+ years | 4+ years
+
+## Imprint
+
+Impressum / Imprint | Download CV
+Angaben gemäß § 5 TMG: | If you like my CV you can download a copy as
+PDF by clicking the link below. Perfectly
+Alexander Schedler | suited to print it out and show it to your
+freie Softwareentwicklung | friends and colleagues.
+Dillinger Straße 64a
+86637 Wertingen | Download CV as PDF
+Telefon: +49 171 4123 929
+E-Mail: alex@schedler.co
+Semantic information
+Version: 8.0.0-188
+Last update: 2026-03-17T07:57:26.857Z
+Commit: b335c3a
+-> Disclaimer, data protection and | Commit count: 188
+copyright statements
+
+## Legal Notices
+
+Datenschutzerklärung | Urheberrecht
+SSL-Verschlüsselung: Diese Seite nutzt aus Gründen | Die durch die Seitenbetreiber erstellten Inhalte und Werke auf
+der Sicherheit und zum Schutz der Übertragung | diesen Seiten unterliegen dem deutschen Urheberrecht. Die
+vertraulicher Inhalte, wie zum Beispiel der | Vervielfältigung, Bearbeitung, Verbreitung und jede Art der
+Anfragen, die Sie an uns als Seitenbetreiber senden, | Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der
+eine SSL-Verschlüsselung. Eine verschlüsselte | schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+Verbindung erkennen Sie daran, dass die Adresszeile | Downloads und Kopien dieser Seite sind nur für den privaten, nicht
+des Browsers und/oder an dem Schloss-Symbol in Ihrer | kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser
+Browserzeile. Wenn die SSL Verschlüsselung aktiviert | Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte
+ist, können die Daten, die Sie an uns übermitteln, | Dritter beachtet. Insbesondere werden Inhalte Dritter als solche
+nicht von Dritten mitgelesen werden. | gekennzeichnet. Sollten Sie trotzdem auf eine
+Urheberrechtsverletzung aufmerksam werden, bitten wir um einen
+Datenschutz: Die Betreiber dieser Seiten nehmen den | entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen
+Schutz Ihrer persönlichen Daten sehr ernst. Wir | werden wir derartige Inhalte umgehend entfernen.
+behandeln Ihre personenbezogenen Daten vertraulich
+und entsprechend der gesetzlichen
+Datenschutzvorschriften sowie dieser
+Datenschutzerklärung. Die Nutzung unserer Webseite | Haftungsausschluss
+ist in der Regel ohne Angabe personenbezogener Daten
+möglich. Soweit auf unseren Seiten personenbezogene
+Daten (beispielsweise Name, Anschrift oder | Haftung für Inhalte: Als Diensteanbieter sind wir gemäß § 7 Abs.1
+E-Mail-Adressen) erhoben werden, erfolgt dies, | TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen
+soweit möglich, stets auf freiwilliger Basis. Diese | Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als
+Daten werden ohne Ihre ausdrückliche Zustimmung | Diensteanbieter jedoch nicht verpflichtet, übermittelte oder
+nicht an Dritte weitergegeben. Wir weisen darauf | gespeicherte fremde Informationen zu überwachen oder nach Umständen
+hin, dass die Datenübertragung im Internet (z.B. bei | zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+der Kommunikation per E-Mail) Sicherheitslücken | Verpflichtungen zur Entfernung oder Sperrung der Nutzung von
+aufweisen kann. Ein lückenloser Schutz der Daten vor | Informationen nach den allgemeinen Gesetzen bleiben hiervon
+dem Zugriff durch Dritte ist nicht möglich. | unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem
+Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei
+Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese
