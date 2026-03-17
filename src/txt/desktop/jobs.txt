@@ -13,7 +13,7 @@
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░              │
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░              │
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░              │
-│        │      Certania        │◀─────│   Johner Institut    │◀─────│ MAN Energy Solutions │◀─────│ Internet of Blah     │◀─┐             │
+│        │       CERTANIA       │◀─────│   Johner Institut    │◀─────│ MAN Energy Solutions │◀─────│ Internet of Blah     │◀─┐             │
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░│             │
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░│             │
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░│             │

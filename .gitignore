@@ -1,12 +1,10 @@
 .couchapprc
 .cache
-.parcel-cache
 node_modules
 build
 _Material
 _mat
 .DS_Store
-/.parcel-cache
 /surge
 /dist
 /AdditionalPixelArts.sketch

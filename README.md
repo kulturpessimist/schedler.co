@@ -2,7 +2,23 @@
 
 website and contents of schedler.co / schedler.pro
 
-Last update 22.09.2025
+## Development
+
+This project is Bun-only.
+
+```sh
+bun install
+bun run dev
+```
+
+Static production output is written to `dist/`.
+
+```sh
+bun run build
+bun run preview
+```
+
+Last update 17.03.2026
 
 # TODO
 
@@ -12,25 +28,28 @@ Last update 22.09.2025
 
 # Changelog
 
+17.03.2026
+
+Migration to bun. New transition. New colors. New content. New everything.
+
 22.09.2025
 
-Removed Ust.ID from imprint as no longer required.
-Removed twitter from social links as no longer used. Added bluesky as alternative.
+Removed Ust.ID from imprint as no longer required. Removed twitter from social
+links as no longer used. Added bluesky as alternative.
 
 xx.12.2024
 
-New role at CERTANIA.
-Stop of further freelancing work
-
+New role at CERTANIA. Stop of further freelancing work
 
 10.01.2023
 
-Some content updates about my new job at johner digital.
-Minor dependency updates and update to current node lts.
+Some content updates about my new job at johner digital. Minor dependency
+updates and update to current node lts.
 
 09.03.2022
 
-After impress.js was somewhat broken, it was time for a rewrite, or at least a rework.
+After impress.js was somewhat broken, it was time for a rewrite, or at least a
+rework.
 
 - complete new ascii art style
 - parcel update to 2
@@ -43,7 +62,8 @@ After impress.js was somewhat broken, it was time for a rewrite, or at least a r
   03.09.2020
 
 - preperation for v5
-- v3 was release after 2.1 and work on v4 began but was canceled after the concept for v5 was born
+- v3 was release after 2.1 and work on v4 began but was canceled after the
+  concept for v5 was born
 
   10.02.2019
 

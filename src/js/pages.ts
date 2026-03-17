@@ -1,3 +1,5 @@
+// @ts-check
+
 import {
   d_contact1,
   d_contact2,
@@ -48,6 +50,7 @@ import {
   m_start,
 } from "../txt/mobile"
 
+/** @type {string[]} */
 const d_pages = [
   d_start,
   d_contact1,
@@ -67,6 +70,8 @@ const d_pages = [
   d_skills,
   // d_technologies,
 ]
+
+/** @type {string[]} */
 const d_contactFrames = [
   d_contact1,
   d_contact2,
@@ -75,8 +80,11 @@ const d_contactFrames = [
   d_contact5,
   //d_contact6,
 ]
+
+/** @type {string[]} */
 const d_impressumFrames = [d_impressum, d_impressum2]
 
+/** @type {string[]} */
 const m_pages = [
   m_start,
   m_contact1,
@@ -96,6 +104,8 @@ const m_pages = [
   m_skills,
   // m_technologies,
 ]
+
+/** @type {string[]} */
 const m_contactFrames = [
   m_contact1,
   /* m_contact2,
@@ -104,20 +114,32 @@ const m_contactFrames = [
   m_contact5,
   m_contact6, */
 ]
+
+/** @type {string[]} */
 const m_impressumFrames = [
   m_impressum_m,
   m_impressum_m2,
   m_impressum_m3,
   m_impressum_m4,
 ]
-//
-let pages, contactFrames, impressumFrames
-let pagesMobile, contactFramesMobile, impressumFramesMobile
 
+let pages: string[] = []
+let contactFrames: string[] = []
+let impressumFrames: string[] = []
+let pagesMobile: string[] = []
+let contactFramesMobile: string[] = []
+let impressumFramesMobile: string[] = []
+
+/** @type {MediaQueryList} */
 const match = window.matchMedia("(orientation: portrait)")
+
+/**
+ * Keep exported page collections in sync with current orientation.
+ *
+ * @returns {void}
+ */
 const matchHandler = () => {
   if (match.matches) {
-    console.log("mobile")
     pages = m_pages
     contactFrames = m_contactFrames
     impressumFrames = m_impressumFrames
@@ -125,7 +147,6 @@ const matchHandler = () => {
     contactFramesMobile = m_contactFrames
     impressumFramesMobile = m_impressumFrames
   } else {
-    console.log("desktop")
     pages = d_pages
     contactFrames = d_contactFrames
     impressumFrames = d_impressumFrames
@@ -134,10 +155,16 @@ const matchHandler = () => {
     impressumFramesMobile = m_impressumFrames
   }
 }
+
 match.addEventListener("change", matchHandler)
 matchHandler()
 
 export {
-  contactFrames, contactFramesMobile, impressumFrames, impressumFramesMobile, pages, pagesMobile
+  contactFrames,
+  contactFramesMobile,
+  impressumFrames,
+  impressumFramesMobile,
+  pages,
+  pagesMobile
 }
 

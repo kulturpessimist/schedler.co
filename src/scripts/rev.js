@@ -1,45 +1,107 @@
-const { currentBranch, log } = require("isomorphic-git")
-const fs = require("fs")
+// @ts-check
 
-async function main() {
-  console.log("⏳ Version/JSON...")
-  console.log("")
-  // get HEAD name...
-  let branch = await currentBranch({
-    fs,
-    dir: "./",
-  })
-  // get history...
-  let commits = await log({
-    fs,
-    dir: "./",
-    ref: "HEAD",
-  })
-  // bring all together...
-  const version = {
-    version: `${process.env.npm_package_version}-${commits.length}`,
-    ci: `${process.env.DRONE_BUILD_NUMBER || "local"}`,
-    name: `${
-      process.env.npm_package_config_sprintname || process.env.npm_package_name
-    }`,
-    semver: `${process.env.npm_package_version}`,
-    count: `${commits.length}`,
-    short: `${commits[0].oid.substr(0, 7)}`,
-    long: `${commits[0].oid}`,
-    branch: `${branch}`,
-    update: `${new Date().toISOString()}`,
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+/**
+ * @typedef {{
+ *   name: string;
+ *   version: string;
+ * }} PackageInfo
+ */
+
+/** @type {string} */
+const scriptDir = path.dirname(fileURLToPath(import.meta.url));
+/** @type {string} */
+const packageJsonPath = path.resolve(scriptDir, "../../package.json");
+/** @type {PackageInfo} */
+const pkg = JSON.parse(fs.readFileSync(packageJsonPath, "utf8"));
+
+/**
+ * Normalize Bun spawn output chunks to `Buffer`.
+ *
+ * @param {Buffer | Uint8Array | ArrayBufferLike} value
+ * @returns {Buffer}
+ */
+const toBuffer = (value) => {
+  if (Buffer.isBuffer(value)) {
+    return value;
   }
-  // do something with the data...
+
+  return value instanceof Uint8Array
+    ? Buffer.from(value)
+    : Buffer.from(new Uint8Array(value));
+};
+
+/**
+ * Run a git command and return trimmed stdout.
+ *
+ * @param {string[]} args
+ * @returns {string}
+ */
+const runGit = (args) => {
+  const result = Bun.spawnSync({
+    cmd: ["git", ...args],
+    stdout: "pipe",
+    stderr: "pipe",
+  });
+
+  if (result.exitCode !== 0) {
+    const message = toBuffer(result.stderr).toString("utf8").trim();
+    throw new Error(message || `git ${args.join(" ")} failed`);
+  }
+
+  return toBuffer(result.stdout).toString("utf8").trim();
+};
+
+/**
+ * Create and optionally write version metadata JSON.
+ *
+ * @returns {Promise<void>}
+ */
+async function main() {
+  console.log("⏳ Version/JSON...");
+  console.log("");
+
+  const branch = runGit(["rev-parse", "--abbrev-ref", "HEAD"]);
+  const count = runGit(["rev-list", "--count", "HEAD"]);
+  const short = runGit(["rev-parse", "--short=7", "HEAD"]);
+  const long = runGit(["rev-parse", "HEAD"]);
+
+  /** @type {{
+   * version: string;
+   * ci: string;
+   * name: string;
+   * semver: string;
+   * count: string;
+   * short: string;
+   * long: string;
+   * branch: string;
+   * update: string;
+   * }} */
+  const version = {
+    version: `${pkg.version}-${count}`,
+    ci: `${process.env.DRONE_BUILD_NUMBER || "local"}`,
+    name: `${pkg.name}`,
+    semver: `${pkg.version}`,
+    count: `${count}`,
+    short,
+    long,
+    branch,
+    update: `${new Date().toISOString()}`,
+  };
+
   if (process.argv[2]) {
-    console.log("🖋  Writing", process.argv[2])
-    const path = process.argv[2]
-    fs.writeFileSync(path, JSON.stringify(version, null, 2))
-    console.log("")
-    console.log("✅ Created Version/JSON")
+    console.log("🖋  Writing", process.argv[2]);
+    fs.writeFileSync(process.argv[2], JSON.stringify(version, null, 2));
+    console.log("");
+    console.log("✅ Created Version/JSON");
   } else {
-    console.log(version)
-    console.log("")
-    console.log("✅ Shown Version/JSON")
+    console.log(version);
+    console.log("");
+    console.log("✅ Shown Version/JSON");
   }
 }
-main()
+
+await main();
