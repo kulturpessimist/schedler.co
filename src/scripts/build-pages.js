@@ -296,7 +296,7 @@ const main = async () => {
       }
     }
 
-    const outputPath = [txtRoot, `${folder}.js`].join("/");
+    const outputPath = [txtRoot, `${folder}.ts`].join("/");
     /** @type {string} */
     const output = `// @ts-check
 

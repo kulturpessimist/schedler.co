@@ -550,7 +550,7 @@ const app: AppState = {
     const speed = 100
     const totalSteps = 8
     let ivc = 0
-    const ivt = ["", "", "", "", "", ""]
+    let ivt = ["", "", "", "", "", ""];
 
     this.current = from
 
@@ -597,7 +597,7 @@ const app: AppState = {
 
     const speed = 20
     let ivc = 0
-    const ivt = ["", "", "", "", "", ""]
+    let ivt = ["", "", "", "", "", ""];
 
     const interval = setInterval(() => {
       this.loader = ivt[ivc++ % ivt.length]

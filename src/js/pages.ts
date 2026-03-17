@@ -123,18 +123,12 @@ const m_impressumFrames = [
   m_impressum_m4,
 ]
 
-/** @type {string[]} */
-let pages = []
-/** @type {string[]} */
-let contactFrames = []
-/** @type {string[]} */
-let impressumFrames = []
-/** @type {string[]} */
-let pagesMobile = []
-/** @type {string[]} */
-let contactFramesMobile = []
-/** @type {string[]} */
-let impressumFramesMobile = []
+let pages: string[] = []
+let contactFrames: string[] = []
+let impressumFrames: string[] = []
+let pagesMobile: string[] = []
+let contactFramesMobile: string[] = []
+let impressumFramesMobile: string[] = []
 
 /** @type {MediaQueryList} */
 const match = window.matchMedia("(orientation: portrait)")
