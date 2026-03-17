@@ -20,7 +20,7 @@
     "build:bundle": "bun build ./src/index.html --outdir dist --minify",
     "build:public": "bun ./src/scripts/build-public.js",
     "build:llms": "bun ./src/scripts/build-llms.js",
-    "build": "bun run cleanup && bun run build:rev -- ./src/version.json && bun run build:llms && bun run build:pages && bun run build:bundle && bun run build:public",
+    "build": "bun run build:rev -- ./src/version.json && bun run build:llms && bun run build:pages && bun run build:bundle && bun run build:public",
     "preview": "bun ./src/scripts/preview.js",
     "surge": "bun run build && bunx surge --domain schedler-co-7.surge.sh dist/",
     "typecheck": "bunx tsc -p tsconfig.json"
