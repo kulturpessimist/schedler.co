@@ -232,10 +232,10 @@ Dillinger Straße 64a
 Telefon: +49 171 4123 929
 E-Mail: alex@schedler.co
 Semantic information
-Version: 8.0.0-188
-Last update: 2026-03-17T07:57:26.857Z
-Commit: b335c3a
--> Disclaimer, data protection and | Commit count: 188
+Version: 8.0.0-193
+Last update: 2026-04-20T13:53:33.459Z
+Commit: 5a984bc
+-> Disclaimer, data protection and | Commit count: 193
 copyright statements
 
 ## Legal Notices

@@ -11,6 +11,7 @@ import {
   pages,
   pagesMobile,
 } from "./pages"
+import { SITE_URL, canonicalPageRoutes, canonicalPathForPage } from "./routes.js"
 
 interface RouteMatch {
   data: Record<string, string>
@@ -63,6 +64,9 @@ interface AppState {
   stopSlideshow: () => void
   initKeyboardListener: () => void
   afterNavigation: () => void
+  pathForPage: (page: number) => string
+  showPage: (page: number) => void
+  syncMetadata: () => void
   flipModeTransition: (from: string, to: string, nextPage: number) => void
   navigateFromTo: (from: string, to: string, nextPage: number) => void
   navigate: (direction?: "next" | "prev" | number) => void
@@ -138,7 +142,18 @@ const app: AppState = {
     this._router = router
 
     router.notFound(() => {
-      router.navigate("/page/0")
+      router.navigate("/")
+    })
+
+    for (const route of canonicalPageRoutes) {
+      router.on(route.path, () => {
+        this.showPage(route.page)
+      })
+    }
+
+    router.on("/impressum", () => {
+      const nextFrame = this.impressumFrames[0] || this.current
+      this.navigateFromTo(this.current, nextFrame, this.currentPage)
     })
 
     router.on("/impressum/:frame", (match: RouteMatch) => {
@@ -147,51 +162,9 @@ const app: AppState = {
       this.navigateFromTo(this.current, nextFrame, this.currentPage)
     })
 
-    router.on("/job/:company", (match: RouteMatch) => {
-      let target: string
-
-      switch (match.data.company) {
-        case "certania":
-          target = "/page/4"
-          break
-        case "jd":
-          target = "/page/5"
-          break
-        case "man-es":
-          target = "/page/6"
-          break
-        case "iob":
-          target = "/page/7"
-          break
-        case "thinxnet":
-          target = "/page/8"
-          break
-        case "natureoffice":
-          target = "/page/9"
-          break
-        case "dynomedia":
-          target = "/page/10"
-          break
-        case "kigg":
-          target = "/page/11"
-          break
-        default:
-          target = "/page/0"
-      }
-
-      router.navigate(target)
-    })
-
     router.on("/page/:page", (match: RouteMatch) => {
-      if (match.data.page === "1") {
-        setTimeout(() => {
-          this.playSlideshow(this.contactFrames, 0)
-        }, 500)
-      } else {
-        this.stopSlideshow()
-      }
-
-      this.navigate(Number(match.data.page))
+      const page = Number(match.data.page)
+      router.navigate(this.pathForPage(page))
     })
 
     router.resolve()
@@ -509,19 +482,19 @@ const app: AppState = {
       }
 
       if (event.key === "ArrowRight") {
-        router.navigate("/page/" + this.nextPage)
+        router.navigate(this.pathForPage(this.nextPage))
       }
       if (event.key === "ArrowLeft") {
-        router.navigate("/page/" + this.prevPage)
+        router.navigate(this.pathForPage(this.prevPage))
       }
       if (event.key === "i") {
-        router.navigate("/impressum/0")
+        router.navigate("/impressum")
       }
       if (event.key === "f") {
-        router.navigate("/page/2")
+        router.navigate(this.pathForPage(2))
       }
       if (event.key === "@" || event.key === "c") {
-        router.navigate("/page/1")
+        router.navigate(this.pathForPage(1))
       }
       if (event.key === "x") {
         this.cycleColors()
@@ -537,10 +510,50 @@ const app: AppState = {
       return
     }
 
+    this.syncMetadata()
     this._router.updatePageLinks()
     setTimeout(() => {
       this.annotateAllTheThings()
     }, 250)
+  },
+
+  /**
+   * Convert a page index into the matching canonical pathname.
+   */
+  pathForPage(page: number): string {
+    return canonicalPathForPage(page)
+  },
+
+  /**
+   * Route to a page and keep contact slideshow behavior in one place.
+   */
+  showPage(page: number): void {
+    if (page === 1) {
+      setTimeout(() => {
+        this.playSlideshow(this.contactFrames, 0)
+      }, 500)
+    } else {
+      this.stopSlideshow()
+    }
+
+    this.navigate(page)
+  },
+
+  /**
+   * Keep canonical and Open Graph URLs aligned with the active SPA route.
+   */
+  syncMetadata(): void {
+    const pathname = window.location.pathname || "/"
+    const absolutePath = new URL(pathname, SITE_URL).toString()
+    const canonical = document.querySelector(
+      'link[rel="canonical"]',
+    ) as HTMLLinkElement | null
+    const ogUrl = document.querySelector(
+      'meta[property="og:url"]',
+    ) as HTMLMetaElement | null
+
+    canonical?.setAttribute("href", absolutePath)
+    ogUrl?.setAttribute("content", absolutePath)
   },
 
   /**
@@ -655,7 +668,7 @@ const app: AppState = {
     if (this._router.getCurrentLocation().url.indexOf("impressum") === 0) {
       this._router.navigate("/")
     } else {
-      this._router.navigate("/impressum/0")
+      this._router.navigate("/impressum")
     }
   },
 

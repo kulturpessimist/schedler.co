@@ -2,6 +2,7 @@
 
 import fs from "node:fs/promises";
 import path from "node:path";
+import { SITE_URL, absoluteUrl, sitemapPaths } from "../js/routes.js";
 
 /** @type {string} */
 const root = process.cwd();
@@ -93,8 +94,73 @@ const patchIndex = async () => {
     /(<link rel="manifest" href=")[^"]+(")/,
     '$1/manifest.webmanifest$2',
   );
+  html = html.replace(
+    /(<link rel="canonical" href=")[^"]+(")/,
+    `$1${absoluteUrl("/")}$2`,
+  );
+  html = html.replace(
+    /(<meta property="og:url" content=")[^"]+(")/,
+    `$1${absoluteUrl("/")}$2`,
+  );
 
   await fs.writeFile(indexPath, html);
+};
+
+/**
+ * Escape XML special characters in sitemap output.
+ *
+ * @param {string} value
+ * @returns {string}
+ */
+const escapeXml = (value) => {
+  return value
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&apos;");
+};
+
+/**
+ * Write the XML sitemap for the site's canonical routes.
+ *
+ * @returns {Promise<void>}
+ */
+const writeSitemap = async () => {
+  const sitemapPath = path.join(distDir, "sitemap.xml");
+  const urls = sitemapPaths
+    .map((pathname) => {
+      return [
+        "  <url>",
+        `    <loc>${escapeXml(absoluteUrl(pathname))}</loc>`,
+        "  </url>",
+      ].join("\n");
+    })
+    .join("\n");
+
+  const sitemap = [
+    '<?xml version="1.0" encoding="UTF-8"?>',
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+    urls,
+    "</urlset>",
+    "",
+  ].join("\n");
+
+  await fs.writeFile(sitemapPath, sitemap);
+};
+
+/**
+ * Inject the canonical host into the published robots.txt file.
+ *
+ * @returns {Promise<void>}
+ */
+const patchRobots = async () => {
+  const robotsPath = path.join(distDir, "robots.txt");
+  let robots = await fs.readFile(robotsPath, "utf8");
+
+  robots = robots.replaceAll("{{SITE_URL}}", SITE_URL);
+
+  await fs.writeFile(robotsPath, robots);
 };
 
 /**
@@ -104,8 +170,10 @@ const patchIndex = async () => {
  */
 async function main() {
   await copyDir(publicDir, distDir);
+  await writeSitemap();
   await patchManifest();
   await patchIndex();
+  await patchRobots();
   console.log("✅ Copied public assets");
 }
 

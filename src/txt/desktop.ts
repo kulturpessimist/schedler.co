@@ -328,10 +328,10 @@ export const d_impressum =
                  │                                                  │   │  Semantic information                           │                 
                  │                                                  │   │ ======================                          │                 
                  │                                                  │   │                                                 │                 
-                 └──────────────────────────────────────────────────┘   │ Version: 8.0.0-190                              │                 
-                                                                        │ Last update: 2026-03-17T09:31:47.432Z           │                 
-                 ┌──────────────────────────────────────────────────┐   │ Commit: b9a4e13                                 │                 
-                 │        <a href="/impressum/1">-> Disclaimer, data protection and</a>        │   │ Commit count: 190                               │                 
+                 └──────────────────────────────────────────────────┘   │ Version: 8.0.0-193                              │                 
+                                                                        │ Last update: 2026-04-20T13:53:33.459Z           │                 
+                 ┌──────────────────────────────────────────────────┐   │ Commit: 5a984bc                                 │                 
+                 │        <a href="/impressum/1">-> Disclaimer, data protection and</a>        │   │ Commit count: 193                               │                 
                  │             <a href="/impressum/1">copyright statements...</a>              │   │                                                 │                 
                  └──────────────────────────────────────────────────┘   └─────────────────────────────────────────────────┘                 
                                                                                                                                             
