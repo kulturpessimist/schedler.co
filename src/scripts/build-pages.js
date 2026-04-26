@@ -116,7 +116,7 @@ const enrichContent = (content, page) => {
     },
     "jobs-certania.txt": {
       "Certania Holding GmbH":
-        '<strong>Certania GmbH</strong> <a class="external-employer-link" href="https://certania.com/" target="_blank"> ↗ </a>',
+        '<strong>Certania Holding GmbH</strong> <a class="external-employer-link" href="https://certania.com/" target="_blank"> ↗ </a>',
       "January 2024 onwards": "<i>January 2024 onwards</i>",
     },
     "jobs-jd.txt": {
