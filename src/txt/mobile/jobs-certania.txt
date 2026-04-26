@@ -13,32 +13,32 @@
                    ..CCCCCCCCCCCCCC..                   
                      ......CC......                     
                                                         
+      Certania Holding GmbH                             
+     =======================                            
                                                         
-      Certania GmbH                                     
-     ===============                                    
-                                                        
-     Role: Director of Technology                       
+     Role: Director Technology                          
      Dates: January 2024 onwards                        
                                                         
      Main activities                                    
      ---------------                                    
-     * Establishing and observing of an IT strategy     
-     for the company and affiliated firms               
-     * Measuring the impact of technology use           
-     * Technology consulting                            
+     * Introduction of new technologies and             
+       ensuring scalable, secure implementation.        
+                                                        
+     * Strategic development of the technology          
+       landscape.                                       
+                                                        
+     * Prioritization of resilience, compliance,        
+       and secure use of AI solutions.                  
                                                         
      Responsibilities                                   
      ----------------                                   
-     Establishment of a technological service           
-     offering (tools, assistance) for affiliated        
-     companies as well as identification and            
-     implementation of value creation potential         
-     through technology at affiliated companies.        
-                                                        
-                                                        
-                                                        
-                                                        
-                                                        
+     Strategic development and operational              
+     governance of CERTANIA’s technology landscape.     
+     This includes defining infrastructure and          
+     security priorities, ensuring resilience and       
+     compliance, and enabling partner organizations     
+     to adopt and use AI solutions effectively and      
+     securely.                                          
                                                         
                                                         
                                                         
