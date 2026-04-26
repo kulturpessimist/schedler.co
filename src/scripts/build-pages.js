@@ -115,7 +115,7 @@ const enrichContent = (content, page) => {
       KIGG: '<a href="/job/kigg" data-navigo>KIGG</a>',
     },
     "jobs-certania.txt": {
-      "Certania GmbH":
+      "Certania Holding GmbH":
         '<strong>Certania GmbH</strong> <a class="external-employer-link" href="https://certania.com/" target="_blank"> ↗ </a>',
       "January 2024 onwards": "<i>January 2024 onwards</i>",
     },
