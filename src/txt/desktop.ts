@@ -328,10 +328,10 @@ export const d_impressum =
                  │                                                  │   │  Semantic information                           │                 
                  │                                                  │   │ ======================                          │                 
                  │                                                  │   │                                                 │                 
-                 └──────────────────────────────────────────────────┘   │ Version: 8.0.0-197                              │                 
-                                                                        │ Last update: 2026-04-27T13:32:08.217Z           │                 
-                 ┌──────────────────────────────────────────────────┐   │ Commit: 2d3c0e6                                 │                 
-                 │        <a href="/impressum/1">-> Disclaimer, data protection and</a>        │   │ Commit count: 197                               │                 
+                 └──────────────────────────────────────────────────┘   │ Version: 8.1.0-201                              │                 
+                                                                        │ Last update: 2026-04-27T15:29:56.526Z           │                 
+                 ┌──────────────────────────────────────────────────┐   │ Commit: a4d7dbc                                 │                 
+                 │        <a href="/impressum/1">-> Disclaimer, data protection and</a>        │   │ Commit count: 201                               │                 
                  │             <a href="/impressum/1">copyright statements...</a>              │   │                                                 │                 
                  └──────────────────────────────────────────────────┘   └─────────────────────────────────────────────────┘                 
                                                                                                                                             
@@ -795,22 +795,22 @@ export const d_skills =
          │    coordinating stakeholders, prioritizing      │░░      │    translate complex technical topics into      │░░                   
          │    complex requirements, and delivering         │░░      │    clear business language and align diverse    │░░                   
          │    scalable digital solutions in                │░░      │    stakeholders around practical outcomes.      │░░                   
-         │                                                 │░░      │                                                 │░░                   
+         │    international business environments.         │░░      │                                                 │░░                   
          │                                                 │░░      │                                                 │░░                   
          └─────────────────────────────────────────────────┘░░      └─────────────────────────────────────────────────┘░░                   
            ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░        ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░                   
                                                                                                                                             
                     ┌─────────────────────────────────────────────────┐         ┌─────────────────────────────────────────────────┐         
                     │                                                 │░░       │                                                 │░░       
-                    │                                                 │░░       │                                                 │░░       
                     │                                                 │░░       │    <i>Technology Interests</i>                         │░░       
-                    │    <i>Languages</i>                                    │░░       │    --------------------                         │░░       
-                    │    ---------                                    │░░       │    Focused on applied AI, digital platforms,    │░░       
-                    │    German (Mother tongue)                       │░░       │    and digital business models that unlock      │░░       
-                    │    English (Fluent)                             │░░       │    new opportunities and measurable business    │░░       
-                    │                                                 │░░       │    value. Strong interest in                    │░░       
-                    │                                                 │░░       │    technology-driven sustainability and the     │░░       
-                    │                                                 │░░       │                                                 │░░       
+                    │                                                 │░░       │    --------------------                         │░░       
+                    │    <i>Languages</i>                                    │░░       │    Focused on applied AI, digital platforms,    │░░       
+                    │    ---------                                    │░░       │    and digital business models that unlock      │░░       
+                    │    German (Mother tongue)                       │░░       │    new opportunities and measurable value.      │░░       
+                    │    English (Fluent)                             │░░       │    Strong interest in technology-driven         │░░       
+                    │                                                 │░░       │    sustainability and the role of digital       │░░       
+                    │                                                 │░░       │    innovation in building more resilient        │░░       
+                    │                                                 │░░       │    organizations.                               │░░       
                     │                                                 │░░       │                                                 │░░       
                     └─────────────────────────────────────────────────┘░░       └─────────────────────────────────────────────────┘░░       
                       ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░         ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░       

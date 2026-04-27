@@ -10,8 +10,12 @@ This site serves as a professional portfolio and curriculum vitae for Alexander 
 
 Alexander Schedler
 District of Augsburg, Germany
-Internet application engineering,
-development and management.
+Technology leader with 20+ years of experience
+in scalable platforms, AI adoption, automation,
+and digital transformation.
+Combines hands-on software architecture
+expertise with executive-level technology
+strategy and stakeholder management.
 
 ## Contact Information
 
@@ -26,15 +30,22 @@ on LinkedIn /alexanderschedler
 
 ## Freelance Work
 
-Storage
-Backend
-Alexander Schedler
-freelance software developer
-I am currently not taking on
-any new freelance projects. | Frontend
-Want to get in touch? Just write me.
-Cloud
-Consulting
+AI Strategy &
+Implementation
+Technology
+Alexander Schedler | Leadership
+Advisory & Digital Expertise
+My focus today is on technology leadership,
+applied AI, digital platforms, and business
+transformation. While I am not offering | Digital Product
+traditional freelance development, I remain open | Engineering
+to selected advisory and strategic technology
+engagements with practical impact.
+For selected projects, sparring sessions, or
+advisory conversations, feel free to get in touch. | Data & Automation
+Platforms
+Modern Web
+Architecture
 
 ## Career Overview
 
@@ -47,27 +58,30 @@ ThinxNet | natureOffice | Dynomedia | KIGG
 
 ### CERTANIA Holding GmbH
 
-Role: Director of Technology
+Role: Director Technology
 Dates: January 2024 onwards
 Main activities
-Establishing and observing of an IT strategy for the
-company and affiliated firms
-Measuring the impact of technology use
-Technology consulting
+⬗ Introduction of new technologies and ensuring
+scalable, secure implementation
+⬗ Strategic development of the technology landscape
+⬗ Prioritization of resilience, compliance, and secure
+use of AI solutions
 Responsibilities
-Establishment of a technological service offering
-(tools, assistance) for affiliated companies as well as
-identification and implementation of value creation
-potential through technology at affiliated companies.
+Strategic development and operational governance of
+CERTANIA’s technology landscape. This includes defining
+infrastructure and security priorities, ensuring
+resilience and compliance, and enabling partner
+organizations to adopt and use AI solutions effectively
+and securely.
 
 ### Johner Institut GmbH
 
 Role: Senior Software Engineering Lead
 Dates: February 2023 – December 2023
 Main activities
-Technology consulting
-Software development and application engineering
-Conceptual design, architecture and development of B2B
+⬗ Technology consulting
+⬗ Software development and application engineering
+⬗ Conceptual design, architecture and development of B2B
 applications
 Responsibilities
 Working in an agile team to get the first "Realtime
@@ -81,11 +95,11 @@ challenges and bring safe products to market faster.
 Role: Senior Software Engineer
 Dates: June 2018 – January 2023
 Main activities
-Software development and application engineering
-UI/UX Design and consulting
-Conceptual design and development of enterprise
-applications
-Agile Mentor / SCRUM Master
+⬗ Software development and application engineering
+⬗ UI/UX Design and consulting
+Conceptual design and development of
+enterprise applications
+⬗ Agile Mentor / SCRUM Master
 Responsibilities
 Working in an agile SCRUM team on different, web based
 projects in the enterprise sphere. Creation of an
@@ -103,10 +117,10 @@ infrastructure.
 Role: Frontend / Design / CEO
 Dates: June 2016 – December 2019
 Main activities
-User Experience and interaction design
+⬗ User Experience and interaction design
 Cross platform software development and application
-engineering.
-Web application and architectural consulting
+engineering
+⬗ Web application and architectural consulting
 Responsibilities
 Conception, engineering and product development of the
 company‘s product – an indepentend IoT Configuration
@@ -120,9 +134,9 @@ startup as a co-founder.
 Role: UI/UX Product Engineer
 Dates: June 2014 – June 2016
 Main activities
-UI/UX Design and interaction design
-Mobile application prototyping (iOS, Android)
-Software development and application engineering
+⬗ UI/UX Design and interaction design
+⬗ Mobile application prototyping (iOS, Android)
+⬗ Software development and application engineering
 Responsibilities
 Designing the UI and UX for iOS, Android and HTML5.
 Supervising the different teams of native developers to
@@ -138,8 +152,8 @@ building.
 Role: Head of Software Development, Co-founder
 Dates: August 2008 - April 2014
 Main activities
-Software development and application engineering
-Business strategy development
+⬗ Software development and application engineering
+⬗ Business strategy development
 Responsibilities
 Corporate Development of the startup as a co-founder,
 focused on the technical domain.
@@ -153,7 +167,7 @@ platforms.
 Role: Web Developer
 Dates: June 2005 - July 2008
 Main activities
-Web design and development
+⬗ Web design and development
 Responsibilities
 Worked in an advertising agency for customers in
 different industries (e.g. Fujitsu Siemens Computers,
@@ -166,9 +180,9 @@ mainstay for the agency.
 Role: Multimedia Producer, Project Manager
 Dates: August 2002 - November 2004
 Main activities
-Project management
-Web design
-Multimedia Production (CD-ROM)
+⬗ Project management
+⬗ Web design
+⬗ Multimedia Production (CD-ROM)
 Responsibilities
 Started as a multimedia producer with the campaign
 documentation of the 2002 mayoral election in Augsburg.
@@ -183,28 +197,32 @@ SAE Institute Munich, Germany and
 Middlesex University London, UK
 Bachelor of Arts Multimedia
 August 2001 - May 2004
-Contemporary issues and research
-Business management, marketing and legal issues
-Psychology, team management and storyboarding
-Multimedia and education
-Multimedia and Online Production
-Graphic design
+⬗ Contemporary issues and research
+⬗ Business management, marketing and legal issues
+⬗ Psychology, team management and storyboarding
+⬗ Multimedia and education
+⬗ Multimedia and Online Production
+⬗ Graphic design
 
 ## Personal Skills and Competences
 
-Personal Skills
-and Competences
-Organisational skills | Social skills
-Entrepreneurial mind and decisive planner | Analytical and creative thinker
-Eager learner of new technologies | Empathetic listener and reflective
-Able to work well-structured also upon | discussant
-deadlines | Balanced personality even under pressure
-Interests
-Languages
-Internet culture
-German (Mother tongue) | Politics
-English (fluently) | Movie & Cinema
-Philosophy
+Leadership &
+Core Strengths
+Leadership & Execution | Stakeholder Communication
+Experienced in leading technology | Strong communicator between business,
+initiatives from strategy to execution, | technology, and leadership teams. Able to
+coordinating stakeholders, prioritizing | translate complex technical topics into
+complex requirements, and delivering | clear business language and align diverse
+scalable digital solutions in | stakeholders around practical outcomes.
+international business environments.
+Technology Interests
+Languages | Focused on applied AI, digital platforms,
+and digital business models that unlock
+German (Mother tongue) | new opportunities and measurable value.
+English (Fluent) | Strong interest in technology-driven
+sustainability and the role of digital
+innovation in building more resilient
+organizations.
 
 ## Technologies
 
@@ -232,10 +250,10 @@ Dillinger Straße 64a
 Telefon: +49 171 4123 929
 E-Mail: alex@schedler.co
 Semantic information
-Version: 8.0.0-193
-Last update: 2026-04-20T13:53:33.459Z
-Commit: 5a984bc
--> Disclaimer, data protection and | Commit count: 193
+Version: 8.1.0-201
+Last update: 2026-04-27T15:29:56.526Z
+Commit: a4d7dbc
+-> Disclaimer, data protection and | Commit count: 201
 copyright statements
 
 ## Legal Notices
