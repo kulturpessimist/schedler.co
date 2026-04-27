@@ -21,14 +21,14 @@
                                                         
      Main activities                                    
      ---------------                                    
-     * Introduction of new technologies and             
-       ensuring scalable, secure implementation.        
+     ⬗ Introduction of new technologies and             
+       ensuring scalable, secure implementation         
                                                         
-     * Strategic development of the technology          
-       landscape.                                       
+     ⬗ Strategic development of the technology          
+       landscape                                        
                                                         
-     * Prioritization of resilience, compliance,        
-       and secure use of AI solutions.                  
+     ⬗ Prioritization of resilience, compliance,        
+       and secure use of AI solutions                   
                                                         
      Responsibilities                                   
      ----------------                                   

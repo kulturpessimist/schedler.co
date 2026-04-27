@@ -1,14 +1,14 @@
 {
   "name": "website-schedler-co",
   "description": "Curriculum vitae (CV) | Alexander Schedler: Internet application engineering, development and management.",
-  "version": "8.0.0",
+  "version": "8.1.0",
   "type": "module",
   "license": "CC-BY-NC-ND",
   "repository": {
     "type": "git",
     "url": "https://github.com/kulturpessimist/schedler.co.git"
   },
-  "packageManager": "bun@1.3.10",
+  "packageManager": "bun@1.3.13",
   "engines": {
     "bun": "1.3.10"
   },
@@ -31,8 +31,8 @@
     "rough-notation": "0.5.1"
   },
   "devDependencies": {
-    "@types/bun": "^1.3.10",
-    "@biomejs/biome": "^2.4.7",
+    "@types/bun": "^1.3.13",
+    "@biomejs/biome": "^2.4.13",
     "asciify-image": "^0.1.10"
   }
 }

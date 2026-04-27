@@ -11,6 +11,7 @@
                            ●●                           
                            ●●                           
                                                         
+                                                        
       Johner Institut GmbH                              
      ======================                             
                                                         
@@ -19,12 +20,11 @@
                                                         
      Main activities                                    
      ---------------                                    
-     * Technology consulting                            
-     * Software development and application             
-     engineering                                        
-     * Conceptual design, architecture and              
-     development                                        
-       of B2B applications                              
+     ⬗ Technology consulting                            
+     ⬗ Software development and application             
+       engineering                                      
+     ⬗ Conceptual design, architecture and              
+       development of B2B applications                  
                                                         
      Responsibilities                                   
      ----------------                                   

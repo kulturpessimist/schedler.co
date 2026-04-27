@@ -11,6 +11,7 @@
             ####MMMMMM..AA##AA..NNN*NN**##              
             ****MM..MM**AA**AA**NN.NNN****              
                                                         
+                                                        
       MAN Energy Solutions SE                           
      =========================                          
                                                         
@@ -19,13 +20,12 @@
                                                         
      Main activities                                    
      ---------------                                    
-     * Software development and application             
-     engineering                                        
-     * UI/UX Design and consulting                      
-     * Conceptual design and development of             
-     enterprise                                         
-       applications                                     
-     * Agile Mentor / SCRUM Master                      
+     ⬗ Software development and application             
+       engineering                                      
+     ⬗ UI/UX Design and consulting                      
+     ⬗ Conceptual design and development of             
+       enterprise applications                          
+     ⬗ Agile Mentor / SCRUM Master                      
                                                         
      Responsibilities                                   
      ----------------                                   

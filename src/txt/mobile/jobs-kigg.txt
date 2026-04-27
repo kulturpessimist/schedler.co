@@ -23,9 +23,9 @@
                                                         
      Main activities                                    
      ---------------                                    
-     * Project management                               
-     * Web design                                       
-     * Multimedia Production (CD-ROM)                   
+     ⬗ Project management                               
+     ⬗ Web design                                       
+     ⬗ Multimedia Production (CD-ROM)                   
                                                         
      Responsibilities                                   
      ----------------                                   

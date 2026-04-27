@@ -1,40 +1,40 @@
                                                                                                                                             
                                                                                                                                             
                                                                                                                                             
-                                                                                                ┌─────────────────────┐                     
-                                                                                                │                     │                     
-                                                                                                │                     │                     
-                                                                                      ┌────────▶│       Storage       │                     
-                                                                                      │         │                     │                     
-                                                                                      │         │                     │                     
-                                                                                      │         └─────────────────────┘                     
-             ╔══════════════════════════════════════════════════════════════╗         │              ┌─────────────────────┐                
-             ║                                                              ║░░       │              │                     │                
-             ║                                                              ║░░       │              │                     │                
-             ║                                                              ║░░       │ ┌───────────▶│       Backend       │                
-             ║                                                              ║░░       │ │            │                     │                
-             ║                                                              ║░░       │ │            │                     │                
-             ║    Alexander Schedler                                        ║░░       │ │            └─────────────────────┘                
-             ║    freelance software developer                              ║░░       │ │                ┌─────────────────────┐            
-             ║                                                              ║░░       │ │                │                     │            
-             ║        I am currently not taking on                          ║░░       │ │                │                     │            
-             ║        any new freelance projects.                           ╠─────────┼─┼───────────────▶│      Frontend       │            
-             ║                                                              ║░░       │ │                │                     │            
-             ║        Want to get in touch? Just write me.                  ║░░       │ │                │                     │            
-             ║                                                              ║░░       │ │                └─────────────────────┘            
-             ║                                                              ║░░       │ │            ┌─────────────────────┐                
-             ║                                                              ║░░       │ │            │                     │                
-             ║                                                              ║░░       │ │            │                     │                
-             ║                                                              ║░░       │ └───────────▶│        Cloud        │                
-             ║                                                              ║░░       │              │                     │                
-             ╚══════════════════════════════════════════════════════════════╝░░       │              │                     │                
-               ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░       │              └─────────────────────┘                
-                                                                                      │          ┌─────────────────────┐                    
-                                                                                      │          │                     │                    
-                                                                                      │          │                     │                    
-                                                                                      └─────────▶│     Consulting      │                    
-                                                                                                 │                     │                    
-                                                                                                 │                     │                    
-                                                                                                 └─────────────────────┘                    
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                ┌────────────────────┐                      
+                                                                                                │                    │                      
+                                                                                                │   AI Strategy &    │                      
+                                                                                      ┌────────▶│   Implementation   │                      
+                                                                                      │         │                    │                      
+             ╔══════════════════════════════════════════════════════════════╗         │         └────────────────────┘                      
+             ║                                                              ║░░       │                  ┌────────────────────┐             
+             ║                                                              ║░░       │                  │                    │             
+             ║                                                              ║░░       │                  │     Technology     │             
+             ║    Alexander Schedler                                        ║░░       │   ┌─────────────▶│     Leadership     │             
+             ║    Advisory & Digital Expertise                              ║░░       │   │              │                    │             
+             ║                                                              ║░░       │   │              └────────────────────┘             
+             ║        My focus today is on technology leadership,           ║░░       │   │                    ┌────────────────────┐       
+             ║        applied AI, digital platforms, and business           ║░░       │   │                    │                    │       
+             ║        transformation. While I am not offering               ║░░       │   │                    │  Digital Product   │       
+             ║        traditional freelance development, I remain open      ╠────────┬┴──┬┴───────────────────▶│    Engineering     │       
+             ║        to selected advisory and strategic technology         ║░░      │   │                     │                    │       
+             ║        engagements with practical impact.                    ║░░      │   │                     └────────────────────┘       
+             ║                                                              ║░░      │   │              ┌────────────────────┐              
+             ║        For selected projects, sparring sessions, or          ║░░      │   │              │                    │              
+             ║        advisory conversations, feel free to get in touch.    ║░░      │   │              │ Data & Automation  │              
+             ║                                                              ║░░      │   └─────────────▶│     Platforms      │              
+             ║                                                              ║░░      │                  │                    │              
+             ║                                                              ║░░      │                  └────────────────────┘              
+             ╚══════════════════════════════════════════════════════════════╝░░      │          ┌────────────────────┐                      
+               ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░      │          │                    │                      
+                                                                                     │          │     Modern Web     │                      
+                                                                                     └─────────▶│    Architecture    │                      
+                                                                                                │                    │                      
+                                                                                                └────────────────────┘                      
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
                                                                                                                                             
                                                                                                                                             

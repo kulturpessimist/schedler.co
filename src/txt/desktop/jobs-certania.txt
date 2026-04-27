@@ -5,34 +5,34 @@
                                                                                                                                             
                                                                                                                                             
                                                                                                                                             
+                                                                                                                                            
                                                                             Certania Holding GmbH                                           
                                                                            =======================                                          
-                                                                                                                                            
-          ┌────────────────────────────────────────────────┐               Role: Director Technology                                        
-          │                                                │░              Dates: January 2024 onwards                                      
-          │                  ..certania..                  │░                                                                               
+          ┌────────────────────────────────────────────────┐                                                                                
+          │                                                │░              Role: Director Technology                                        
+          │                  ..certania..                  │░              Dates: January 2024 onwards                                      
           │                certaniacertania                │░                                                                               
-          │              certaniacertaniacert              │░              Main activities                                                  
-          │              aniacertaniacertania              │░              ---------------                                                  
-          │            ..certaniacertaniacert..            │░                                                                               
-          │            ..aniacertaniacertania..            │░              Introduction of new technologies and ensuring scalable,          
-          │            ..certaniacertaniacert..            │░              secure implementation.                                           
+          │              certaniacertaniacert              │░                                                                               
+          │              aniacertaniacertania              │░              Main activities                                                  
+          │            ..certaniacertaniacert..            │░              ---------------                                                  
+          │            ..aniacertaniacertania..            │░              ⬗ Introduction of new technologies and ensuring                  
+          │            ..certaniacertaniacert..            │░                scalable, secure implementation                                
           │              aniacertaniacertania              │░                                                                               
-          │              ..certaniacertania..              │░              Strategic development of the technology landscape.               
+          │              ..certaniacertania..              │░              ⬗ Strategic development of the technology landscape              
           │              ..certaniacertania..              │░                                                                               
-          │            ..certaniacertaniacert..            │░              Prioritization of resilience, compliance, and secure use         
-          │          ..aniacertaniacertaniacert..          │░              of AI solutions.                                                 
+          │            ..certaniacertaniacert..            │░              ⬗ Prioritization of resilience, compliance, and secure           
+          │          ..aniacertaniacertaniacert..          │░                use of AI solutions                                            
           │        ..aniacertaniacertaniacertania..        │░                                                                               
           │          certaniacertaniacertaniacert          │░                                                                               
           │            ..aniacertaniacertania..            │░              Responsibilities                                                 
           │                ..certaniacert..                │░              ----------------                                                 
-          │                                                │░                                                                               
-          └────────────────────────────────────────────────┘░              Strategic development and operational governance of              
-           ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░              CERTANIA’s technology landscape. This includes defining          
-                                                                           infrastructure and security priorities, ensuring                 
+          │                                                │░              Strategic development and operational governance of              
+          └────────────────────────────────────────────────┘░              CERTANIA’s technology landscape. This includes defining          
+           ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░              infrastructure and security priorities, ensuring                 
                                                                            resilience and compliance, and enabling partner                  
                                                                            organizations to adopt and use AI solutions effectively          
                                                                            and securely.                                                    
+                                                                                                                                            
                                                                                                                                             
                                                                                                                                             
                                                                                                                                             

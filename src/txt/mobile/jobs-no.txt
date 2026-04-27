@@ -22,9 +22,9 @@
                                                         
      Main activities                                    
      ---------------                                    
-     * Software development and application             
-     engineering                                        
-     * Business strategy development                    
+     ⬗ Software development and application             
+       engineering                                      
+     ⬗ Business strategy development                    
                                                         
      Responsibilities                                   
      ----------------                                   

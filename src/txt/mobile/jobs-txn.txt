@@ -21,11 +21,11 @@
                                                         
      Main activities                                    
      ---------------                                    
-     * UI/UX Design and interaction design              
-     * Mobile application prototyping (iOS,             
-     Android)                                           
-     * Software development and application             
-     engineering                                        
+     ⬗ UI/UX Design and interaction design              
+     ⬗ Mobile application prototyping (iOS,             
+       Android)                                         
+     ⬗ Software development and application             
+       engineering                                      
                                                         
      Responsibilities                                   
      ----------------                                   

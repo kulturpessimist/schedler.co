@@ -13,7 +13,7 @@
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░              │
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░              │
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░              │
-│        │       CERTANIA       │◀─────│   Johner Institut    │◀─────│ MAN Energy Solutions │◀─────│ Internet of Blah     │◀─┐             │
+│        │      CERTANIA        │◀─────│   Johner Institut    │◀─────│ MAN Energy Solutions │◀─────│  Internet of Blah    │◀─┐             │
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░│             │
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░│             │
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░│             │
@@ -27,7 +27,7 @@
 │             │  │                      │░░    │                      │░░    │                      │░░    │                      │░░      │
 │             │  │                      │░░    │                      │░░    │                      │░░    │                      │░░      │
 │             │  │                      │░░    │                      │░░    │                      │░░    │                      │░░      │
-│             └──│ ThinxNet             │◀─────│ natureOffice         │◀─────│ Dynomedia            │◀─────│ KIGG                 │░░      │
+│             └──│      ThinxNet        │◀─────│    natureOffice      │◀─────│      Dynomedia       │◀─────│        KIGG          │░░      │
 │                │                      │░░    │                      │░░    │                      │░░    │                      │░░      │
 │                │                      │░░    │                      │░░    │                      │░░    │                      │░░      │
 │                │                      │░░    │                      │░░    │                      │░░    │                      │░░      │

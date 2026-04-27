@@ -182,18 +182,18 @@ export const m_freelance =
         ║                                      ║░░      
         ║                                      ║░░      
         ║                                      ║░░      
-        ║                                      ║░░      
         ║   <strong>Alexander Schedler</strong>                 ║░░      
-        ║   <i>freelance software developer</i>       ║░░      
+        ║   freelance software developer       ║░░      
         ║                                      ║░░      
-        ║       I am <mark>currently not</mark> taking      ║░░      
-        ║       on any new freelance           ║░░      
-        ║       projects.                      ║░░      
+        ║     My focus today is on             ║░░      
+        ║     technology leadership,           ║░░      
+        ║     applied AI, digital platforms,   ║░░      
+        ║     and business transformation.     ║░░      
         ║                                      ║░░      
-        ║       Want to get in touch?          ║░░      
-        ║       <a href="mailto:alex@schedler.co">Just write me</a>.                 ║░░      
-        ║                                      ║░░      
-        ║                                      ║░░      
+        ║     For selected projects,           ║░░      
+        ║     sparring sessions, or advisory   ║░░      
+        ║     conversations, feel free to      ║░░      
+        ║     <a href="mailto:alex@schedler.co">get in touch</a>.                    ║░░      
         ║                                      ║░░      
         ║                                      ║░░      
         ║                                      ║░░      
@@ -248,9 +248,9 @@ export const m_impressum_m =
    ┌────────────────────────────────────────────────┐   
    │  Semantic information                          │   
    │ ======================                         │   
-   │ Version: 8.0.0-193                             │   
-   │ Last update: 2026-04-20T13:53:33.459Z          │   
-   │ Commit: 5a984bc                                │   
+   │ Version: 8.0.0-197                             │   
+   │ Last update: 2026-04-27T13:32:08.217Z          │   
+   │ Commit: 2d3c0e6                                │   
    └────────────────────────────────────────────────┘   
    ┌───────────────┐┌──────────────┐┌───────────────┐   
    │  -> <a href="/impressum/1">Privacy</a>   ││ -> <a href="/impressum/2">Copyright</a> ││ -> <a href="/impressum/3">Disclaimer</a> │   
@@ -419,32 +419,32 @@ export const m_jobs_certania =
                    ..CCCCCCCCCCCCCC..                   
                      ......CC......                     
                                                         
+      <strong>Certania Holding GmbH</strong> <a class="external-employer-link" href="https://certania.com/" target="_blank"> ↗ </a>                             
+     =======================                            
                                                         
-      <strong>Certania GmbH</strong> <a class="external-employer-link" href="https://certania.com/" target="_blank"> ↗ </a>                                     
-     ===============                                    
-                                                        
-     Role: Director of Technology                       
+     Role: Director Technology                          
      Dates: <i>January 2024 onwards</i>                        
                                                         
      Main activities                                    
      ---------------                                    
-     * Establishing and observing of an IT strategy     
-     for the company and affiliated firms               
-     * Measuring the impact of technology use           
-     * Technology consulting                            
+     ⬗ Introduction of new technologies and             
+       ensuring scalable, secure implementation         
+                                                        
+     ⬗ Strategic development of the technology          
+       landscape                                        
+                                                        
+     ⬗ Prioritization of resilience, compliance,        
+       and secure use of AI solutions                   
                                                         
      Responsibilities                                   
      ----------------                                   
-     Establishment of a technological service           
-     offering (tools, assistance) for affiliated        
-     companies as well as identification and            
-     implementation of value creation potential         
-     through technology at affiliated companies.        
-                                                        
-                                                        
-                                                        
-                                                        
-                                                        
+     Strategic development and operational              
+     governance of CERTANIA’s technology landscape.     
+     This includes defining infrastructure and          
+     security priorities, ensuring resilience and       
+     compliance, and enabling partner organizations     
+     to adopt and use AI solutions effectively and      
+     securely.                                          
                                                         
                                                         
                                                         `; 
@@ -476,7 +476,7 @@ export const m_jobs_dyno =
                                                         
      Main activities                                    
      ---------------                                    
-     * Web design and development                       
+     ⬗ Web design and development                       
                                                         
      Responsibilities                                   
      ----------------                                   
@@ -513,7 +513,6 @@ export const m_jobs_iob =
                                                         
                                                         
                                                         
-                                                        
       <strong>Internet of Blah / PURR</strong>                            
      =========================                          
                                                         
@@ -522,10 +521,11 @@ export const m_jobs_iob =
                                                         
      Main activities                                    
      ---------------                                    
-     * User Experience and interaction design           
-     * Cross platform software development and          
+     ⬗ User Experience and interaction design           
+     ⬗ Cross platform software development and          
        application engineering.                         
-     * Web application and architectural consulting     
+     ⬗ Web application and architectural                
+       consulting                                       
                                                         
      Responsibilities                                   
      ----------------                                   
@@ -558,6 +558,7 @@ export const m_jobs_jd =
                            ●●                           
                            ●●                           
                                                         
+                                                        
       <strong>Johner Institut GmbH</strong> <a class="external-employer-link" href="https://www.johner-institute.com" target="_blank"> ↗ </a>                              
      ======================                             
                                                         
@@ -566,12 +567,11 @@ export const m_jobs_jd =
                                                         
      Main activities                                    
      ---------------                                    
-     * Technology consulting                            
-     * Software development and application             
-     engineering                                        
-     * Conceptual design, architecture and              
-     development                                        
-       of B2B applications                              
+     ⬗ Technology consulting                            
+     ⬗ Software development and application             
+       engineering                                      
+     ⬗ Conceptual design, architecture and              
+       development of B2B applications                  
                                                         
      Responsibilities                                   
      ----------------                                   
@@ -617,9 +617,9 @@ export const m_jobs_kigg =
                                                         
      Main activities                                    
      ---------------                                    
-     * Project management                               
-     * Web design                                       
-     * Multimedia Production (CD-ROM)                   
+     ⬗ Project management                               
+     ⬗ Web design                                       
+     ⬗ Multimedia Production (CD-ROM)                   
                                                         
      Responsibilities                                   
      ----------------                                   
@@ -652,6 +652,7 @@ export const m_jobs_man =
             ####MMMMMM..AA##AA..NNN*NN**##              
             ****MM..MM**AA**AA**NN.NNN****              
                                                         
+                                                        
       <strong>MAN Energy Solutions SE</strong> <a class="external-employer-link" href="https://www.man-es.com" target="_blank"> ↗ </a>                           
      =========================                          
                                                         
@@ -660,13 +661,12 @@ export const m_jobs_man =
                                                         
      Main activities                                    
      ---------------                                    
-     * Software development and application             
-     engineering                                        
-     * UI/UX Design and consulting                      
-     * Conceptual design and development of             
-     enterprise                                         
-       applications                                     
-     * Agile Mentor / SCRUM Master                      
+     ⬗ Software development and application             
+       engineering                                      
+     ⬗ UI/UX Design and consulting                      
+     ⬗ Conceptual design and development of             
+       enterprise applications                          
+     ⬗ Agile Mentor / SCRUM Master                      
                                                         
      Responsibilities                                   
      ----------------                                   
@@ -710,9 +710,9 @@ export const m_jobs_no =
                                                         
      Main activities                                    
      ---------------                                    
-     * Software development and application             
-     engineering                                        
-     * Business strategy development                    
+     ⬗ Software development and application             
+       engineering                                      
+     ⬗ Business strategy development                    
                                                         
      Responsibilities                                   
      ----------------                                   
@@ -756,11 +756,11 @@ export const m_jobs_txn =
                                                         
      Main activities                                    
      ---------------                                    
-     * UI/UX Design and interaction design              
-     * Mobile application prototyping (iOS,             
-     Android)                                           
-     * Software development and application             
-     engineering                                        
+     ⬗ UI/UX Design and interaction design              
+     ⬗ Mobile application prototyping (iOS,             
+       Android)                                         
+     ⬗ Software development and application             
+       engineering                                      
                                                         
      Responsibilities                                   
      ----------------                                   
@@ -785,7 +785,7 @@ export const m_jobs =
                                                         
                                 ┌────────────────┐      
                                 │                │░░    
-      ┌────────────────────────▶│ Certania       │░░    
+      ┌────────────────────────▶│    <a href="/job/certania" data-navigo>CERTANIA</a>    │░░    
       │                         │                │░░    
       │                         └────────────────┘░░    
       │  ┌────────────────┐       ░░░░░░░░░░░░░░░░░░    
@@ -802,19 +802,19 @@ export const m_jobs =
          │                │░░                       │   
          └────────────────┘░░   ┌────────────────┐  │   
            ░░░░░░░░░░░░░░░░░░   │                │░░│   
-      ┌────────────────────────▶│ <a href="/job/thinxnet" data-navigo>ThinxNet</a>       │──┘   
+      ┌────────────────────────▶│    <a href="/job/thinxnet" data-navigo>ThinxNet</a>    │──┘   
       │                         │                │░░    
       │  ┌────────────────┐     └────────────────┘░░    
       │  │                │░░     ░░░░░░░░░░░░░░░░░░    
-      └──│ <a href="/job/natureoffice" data-navigo>natureOffice</a>   │◀────────────────────────┐   
+      └──│  <a href="/job/natureoffice" data-navigo>natureOffice</a>  │◀────────────────────────┐   
          │                │░░                       │   
          └────────────────┘░░   ┌────────────────┐  │   
            ░░░░░░░░░░░░░░░░░░   │                │░░│   
-      ┌────────────────────────▶│ <a href="/job/dynomedia" data-navigo>Dynomedia</a>      │──┘   
+      ┌────────────────────────▶│   <a href="/job/dynomedia" data-navigo>Dynomedia</a>    │──┘   
       │                         │                │░░    
       │  ┌────────────────┐     └────────────────┘░░    
       │  │                │░░     ░░░░░░░░░░░░░░░░░░    
-      └──│ <a href="/job/kigg" data-navigo>KIGG</a>           │░░                           
+      └──│      <a href="/job/kigg" data-navigo>KIGG</a>      │░░                           
          │                │░░                           
          └────────────────┘░░                           
            ░░░░░░░░░░░░░░░░░░                           
@@ -830,43 +830,43 @@ export const m_skills =
 `                                                        
                                                         
                                                         
-                                                        
-                                                        
    ┌────────────────────────────┐                       
    │                            │░░                     
-   │  Organisational skills     │░░                     
-   │  ---------------------     │░░                     
-   │  Entrepreneurial mind and  │░░                     
-   │  decisive planner          │░░                     
-   │  Eager learner of <mark>new</mark>      │░░                     
-   │  <mark>technologies</mark>      ┌───────────────────────────┐   
-   │  Able to work well-│  Social skills            │░░ 
-   │  structured also   │  -------------            │░░ 
-   │  upon deadlines    │  Analytical and <mark>creative</mark>  │░░ 
-   │                    │  <mark>thinker</mark>                  │░░ 
-   └────────────────────│  Empathetic listener and  │░░ 
-     ░░░░░░░░░░░░░░░░░░░│  reflective discussant    │░░ 
-                        │  Balanced personality     │░░ 
-   ┌────────────────────│  even under pressure      │░░ 
+   │  <strong>Leadership &</strong> Execution    │░░                     
+   │  ----------------------    │░░                     
+   │  Experienced in leading    │░░                     
+   │  technology initiatives    │░░                     
+   │  from strategy to exe-     │░░                     
+   │  cution, coordinating      │░░                     
+   │  stakeholders, and         │░░                     
+   │  delivering scalable       │░░                     
+   │  digital solutions         │░░                     
+   │  in international  ┌───────────────────────────┐   
+   │  business          │  Communication            │░░ 
+   │                    │  -------------            │░░ 
+   └────────────────────│  Strong communicator      │░░ 
+     ░░░░░░░░░░░░░░░░░░░│  between business,        │░░ 
+                        │  technology, and          │░░ 
+   ┌────────────────────│  leadership teams.        │░░ 
    │                    │                           │░░ 
-   │  Languages         └───────────────────────────┘░░ 
+   │  <i>Languages</i>         └───────────────────────────┘░░ 
    │  ---------           ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 
-   │  <mark>German</mark> (Mother tongue)    │░░                     
-   │  English (fluently)        │░░                     
-   │      ┌────────────────────────────┐                
-   │      │                            │░░              
-   └──────│  Interests                 │░░              
-     ░░░░░│  ---------                 │░░              
-          │  Internet <mark>culture</mark>          │░░              
-          │  Politics                  │░░              
-          │  Movie & Cinema            │░░              
-          │  Philosophy                │░░              
-          │                            │░░              
-          └────────────────────────────┘░░              
-            ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░              
+   │  German (Mother tongue)    │░░                     
+   │  English (Fluent)          │░░                     
+   │      ┌──────────────────────────────────────┐      
+   │      │                                      │░░    
+   └──────│  <i>Technology Interests</i>                │░░    
+     ░░░░░│  --------------------                │░░    
+          │  Focused on applied AI, and digital  │░░    
+          │  business models that unlock new     │░░    
+          │  opportunities. Strong interest in   │░░    
+          │  technology-driven sustainability    │░░    
+          │  and more resilient organizations.   │░░    
+          └──────────────────────────────────────┘░░    
+            ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░    
                                                         
-                                     <strong>Personal Skills</strong>    
-                                     and competences    
+                                        Leadership &    
+                                      <strong>Core Strengths</strong>    
                                                         
                                                         
                                                         
@@ -889,20 +889,20 @@ export const m_start =
         ║                                      ║░░      
         ║                                      ║░░      
         ║                                      ║░░      
-        ║                                      ║░░      
-        ║                                      ║░░      
-        ║                                      ║░░      
-        ║                                      ║░░      
         ║   <strong>Alexander Schedler</strong>                 ║░░      
         ║   <i>District of Augsburg, Germany</i>      ║░░      
         ║                                      ║░░      
-        ║      Internet application            ║░░      
-        ║      <mark>engineering</mark>, <mark>development</mark> and    ║░░      
-        ║      <mark>management</mark>.                     ║░░      
+        ║      Technology leader with 20+      ║░░      
+        ║      years of experience in          ║░░      
+        ║      scalable platforms, AI          ║░░      
+        ║      adoption, automation, and       ║░░      
+        ║      <mark>digital transformation</mark>.         ║░░      
         ║                                      ║░░      
-        ║                                      ║░░      
-        ║                                      ║░░      
-        ║                                      ║░░      
+        ║      Combines hands-on software      ║░░      
+        ║      architecture expertise with     ║░░      
+        ║      executive-level <mark>technology</mark>      ║░░      
+        ║      <mark>strategy</mark> and stakeholder        ║░░      
+        ║      management.                     ║░░      
         ║                                      ║░░      
         ║                                      ║░░      
         ║                                      ║░░      

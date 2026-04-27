@@ -5,41 +5,41 @@ export const d_freelance =
 `                                                                                                                                            
                                                                                                                                             
                                                                                                                                             
-                                                                                                ┌─────────────────────┐                     
-                                                                                                │                     │                     
-                                                                                                │                     │                     
-                                                                                      ┌────────▶│       Storage       │                     
-                                                                                      │         │                     │                     
-                                                                                      │         │                     │                     
-                                                                                      │         └─────────────────────┘                     
-             ╔══════════════════════════════════════════════════════════════╗         │              ┌─────────────────────┐                
-             ║                                                              ║░░       │              │                     │                
-             ║                                                              ║░░       │              │                     │                
-             ║                                                              ║░░       │ ┌───────────▶│       Backend       │                
-             ║                                                              ║░░       │ │            │                     │                
-             ║                                                              ║░░       │ │            │                     │                
-             ║    <strong>Alexander Schedler</strong>                                        ║░░       │ │            └─────────────────────┘                
-             ║    <i>freelance software developer</i>                              ║░░       │ │                ┌─────────────────────┐            
-             ║                                                              ║░░       │ │                │                     │            
-             ║        I am <mark>currently not</mark> taking on                          ║░░       │ │                │                     │            
-             ║        any new freelance projects.                           ╠─────────┼─┼───────────────▶│      Frontend       │            
-             ║                                                              ║░░       │ │                │                     │            
-             ║        Want to get in touch? <a href="mailto:alex@schedler.co">Just write me</a>.                  ║░░       │ │                │                     │            
-             ║                                                              ║░░       │ │                └─────────────────────┘            
-             ║                                                              ║░░       │ │            ┌─────────────────────┐                
-             ║                                                              ║░░       │ │            │                     │                
-             ║                                                              ║░░       │ │            │                     │                
-             ║                                                              ║░░       │ └───────────▶│        Cloud        │                
-             ║                                                              ║░░       │              │                     │                
-             ╚══════════════════════════════════════════════════════════════╝░░       │              │                     │                
-               ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░       │              └─────────────────────┘                
-                                                                                      │          ┌─────────────────────┐                    
-                                                                                      │          │                     │                    
-                                                                                      │          │                     │                    
-                                                                                      └─────────▶│     Consulting      │                    
-                                                                                                 │                     │                    
-                                                                                                 │                     │                    
-                                                                                                 └─────────────────────┘                    
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                ┌────────────────────┐                      
+                                                                                                │                    │                      
+                                                                                                │   AI Strategy &    │                      
+                                                                                      ┌────────▶│   Implementation   │                      
+                                                                                      │         │                    │                      
+             ╔══════════════════════════════════════════════════════════════╗         │         └────────────────────┘                      
+             ║                                                              ║░░       │                  ┌────────────────────┐             
+             ║                                                              ║░░       │                  │                    │             
+             ║                                                              ║░░       │                  │     Technology     │             
+             ║    <strong>Alexander Schedler</strong>                                        ║░░       │   ┌─────────────▶│     Leadership     │             
+             ║    <i>Advisory & Digital Expertise</i>                              ║░░       │   │              │                    │             
+             ║                                                              ║░░       │   │              └────────────────────┘             
+             ║        My focus today is on technology leadership,           ║░░       │   │                    ┌────────────────────┐       
+             ║        applied AI, digital platforms, and business           ║░░       │   │                    │                    │       
+             ║        transformation. While I am not offering               ║░░       │   │                    │  Digital Product   │       
+             ║        traditional freelance development, I remain open      ╠────────┬┴──┬┴───────────────────▶│    Engineering     │       
+             ║        to selected advisory and strategic technology         ║░░      │   │                     │                    │       
+             ║        engagements with practical impact.                    ║░░      │   │                     └────────────────────┘       
+             ║                                                              ║░░      │   │              ┌────────────────────┐              
+             ║        For selected projects, sparring sessions, or          ║░░      │   │              │                    │              
+             ║        advisory conversations, feel free to <a href="mailto:alex@schedler.co">get in touch</a>.    ║░░      │   │              │ Data & Automation  │              
+             ║                                                              ║░░      │   └─────────────▶│     Platforms      │              
+             ║                                                              ║░░      │                  │                    │              
+             ║                                                              ║░░      │                  └────────────────────┘              
+             ╚══════════════════════════════════════════════════════════════╝░░      │          ┌────────────────────┐                      
+               ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░      │          │                    │                      
+                                                                                     │          │     Modern Web     │                      
+                                                                                     └─────────▶│    Architecture    │                      
+                                                                                                │                    │                      
+                                                                                                └────────────────────┘                      
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
                                                                                                                                             
                                                                                                                                             `; 
 
@@ -270,26 +270,26 @@ export const d_education =
 ║                                                                                                                                          ║
 ║                                                                                                                                          ║
 ║                                                                                                                                          ║
-║                                                                                                                                          ║
-║                                                                                                                                          ║
 ║                                                                          SAE Institute Munich, Germany and                               ║
-║                       **********************************                 Middlesex University London, UK                                 ║
-║                     ************************************                                                                                 ║
-║                     **            **********    ********                                                                                 ║
-║                     ****        ************************                  <strong>Bachelor of Arts Multimedia</strong>                                    ║
-║                       ******  ****      ********    ****                 -----------------------------                                   ║
-║                           ********      ******      ****                    <i>August 2001 - May 2004</i>                                       ║
-║                           ********      ********  ****                                                                                   ║
+║                                                                          Middlesex University London, UK                                 ║
+║                                                                                                                                          ║
+║                       **********************************                                                                                 ║
+║                     ************************************                  <strong>Bachelor of Arts Multimedia</strong>                                    ║
+║                     **            **********    ********                 -----------------------------                                   ║
+║                     ****        ************************                    <i>August 2001 - May 2004</i>                                       ║
+║                       ******  ****      ********    ****                                                                                 ║
+║                           ********      ******      ****                                                                                 ║
+║                           ********      ********  ****                    ⬗ Contemporary issues and research                             ║
 ║                     ******************  ****************                                                                                 ║
-║                   **********    ************  **********                 Contemporary issues and research                                ║
-║                                                                          Business management, marketing and legal issues                 ║
-║                             **  **      **        **                     Psychology, team management and storyboarding                   ║
-║                   **  ****  **  **  **  **  ****  **  **                 Multimedia and education                                        ║
-║                                                                          Multimedia and Online Production                                ║
-║                                                                          Graphic design                                                  ║
+║                   **********    ************  **********                  ⬗ Business management, marketing and legal issues              ║
 ║                                                                                                                                          ║
+║                             **  **      **        **                      ⬗ Psychology, team management and storyboarding                ║
+║                   **  ****  **  **  **  **  ****  **  **                                                                                 ║
+║                                                                           ⬗ Multimedia and education                                     ║
 ║                                                                                                                                          ║
+║                                                                           ⬗ Multimedia and Online Production                             ║
 ║                                                                                                                                          ║
+║                                                                           ⬗ Graphic design                                               ║
 ║                                                                                                                                          ║
 ║                                                                                                                                          ║
 ║                                                                                                                                          ║
@@ -328,10 +328,10 @@ export const d_impressum =
                  │                                                  │   │  Semantic information                           │                 
                  │                                                  │   │ ======================                          │                 
                  │                                                  │   │                                                 │                 
-                 └──────────────────────────────────────────────────┘   │ Version: 8.0.0-193                              │                 
-                                                                        │ Last update: 2026-04-20T13:53:33.459Z           │                 
-                 ┌──────────────────────────────────────────────────┐   │ Commit: 5a984bc                                 │                 
-                 │        <a href="/impressum/1">-> Disclaimer, data protection and</a>        │   │ Commit count: 193                               │                 
+                 └──────────────────────────────────────────────────┘   │ Version: 8.0.0-197                              │                 
+                                                                        │ Last update: 2026-04-27T13:32:08.217Z           │                 
+                 ┌──────────────────────────────────────────────────┐   │ Commit: 2d3c0e6                                 │                 
+                 │        <a href="/impressum/1">-> Disclaimer, data protection and</a>        │   │ Commit count: 197                               │                 
                  │             <a href="/impressum/1">copyright statements...</a>              │   │                                                 │                 
                  └──────────────────────────────────────────────────┘   └─────────────────────────────────────────────────┘                 
                                                                                                                                             
@@ -397,32 +397,32 @@ export const d_jobs_certania =
                                                                                                                                             
                                                                                                                                             
                                                                                                                                             
-                                                                            CERTANIA Holding GmbH                                                   
+                                                                            <strong>Certania Holding GmbH</strong> <a class="external-employer-link" href="https://certania.com/" target="_blank"> ↗ </a>                                           
                                                                            =======================                                          
-           ┌────────────────────────────────────────────────┐                                                                               
-           │                                                │░             Role: Director of Technology                                     
-           │                  ..certania..                  │░             Dates: <i>January 2024 onwards</i>                                      
-           │                certaniacertania                │░                                                                              
-           │              certaniacertaniacert              │░                                                                              
-           │              aniacertaniacertania              │░             Main activities                                                  
-           │            ..certaniacertaniacert..            │░             ---------------                                                  
-           │            ..aniacertaniacertania..            │░                                                                              
-           │            ..certaniacertaniacert..            │░             Establishing and observing of an IT strategy for the             
-           │              aniacertaniacertania              │░             company and affiliated firms                                     
-           │              ..certaniacertania..              │░                                                                              
-           │              ..certaniacertania..              │░             Measuring the impact of technology use                           
-           │            ..certaniacertaniacert..            │░                                                                              
-           │          ..aniacertaniacertaniacert..          │░             Technology consulting                                            
-           │        ..aniacertaniacertaniacertania..        │░                                                                              
-           │          certaniacertaniacertaniacert          │░                                                                              
-           │            ..aniacertaniacertania..            │░             Responsibilities                                                 
-           │                ..certaniacert..                │░             ----------------                                                 
-           │                                                │░                                                                              
-           └────────────────────────────────────────────────┘░             Establishment of a technological service offering                
-            ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░             (tools, assistance) for affiliated companies as well as          
-                                                                           identification and implementation of value creation              
-                                                                           potential through technology at affiliated companies.            
-                                                                                                                                            
+          ┌────────────────────────────────────────────────┐                                                                                
+          │                                                │░              Role: Director Technology                                        
+          │                  ..certania..                  │░              Dates: <i>January 2024 onwards</i>                                      
+          │                certaniacertania                │░                                                                               
+          │              certaniacertaniacert              │░                                                                               
+          │              aniacertaniacertania              │░              Main activities                                                  
+          │            ..certaniacertaniacert..            │░              ---------------                                                  
+          │            ..aniacertaniacertania..            │░              ⬗ Introduction of new technologies and ensuring                  
+          │            ..certaniacertaniacert..            │░                scalable, secure implementation                                
+          │              aniacertaniacertania              │░                                                                               
+          │              ..certaniacertania..              │░              ⬗ Strategic development of the technology landscape              
+          │              ..certaniacertania..              │░                                                                               
+          │            ..certaniacertaniacert..            │░              ⬗ Prioritization of resilience, compliance, and secure           
+          │          ..aniacertaniacertaniacert..          │░                use of AI solutions                                            
+          │        ..aniacertaniacertaniacertania..        │░                                                                               
+          │          certaniacertaniacertaniacert          │░                                                                               
+          │            ..aniacertaniacertania..            │░              Responsibilities                                                 
+          │                ..certaniacert..                │░              ----------------                                                 
+          │                                                │░              Strategic development and operational governance of              
+          └────────────────────────────────────────────────┘░              CERTANIA’s technology landscape. This includes defining          
+           ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░              infrastructure and security priorities, ensuring                 
+                                                                           resilience and compliance, and enabling partner                  
+                                                                           organizations to adopt and use AI solutions effectively          
+                                                                           and securely.                                                    
                                                                                                                                             
                                                                                                                                             
                                                                                                                                             
@@ -442,27 +442,27 @@ export const d_jobs_dyno =
                                                                                                                                             
                                                                                                                                             
                                                                                                                                             
-           ┌────────────────────────────────────────────────┐                                                                               
-           │                                                │░              <strong>Dynomedia GmbH</strong> <a class="external-employer-link" href="https://web.archive.org/web/20070208042813/http://www.dynomedia.com:80/de/" target="_blank"> ↗ </a>                                                  
-           │                              **                │░             ================                                                 
-           │                          **####**              │░                                                                              
-           │                    **############              │░             Role: Web Developer                                              
-           │                **######**    **##**            │░             Dates: <i>June 2005 - July 2008</i>                                     
-           │            **######**          ####            │░                                                                              
-           │            ####**              **##**          │░                                                                              
-           │      **##################**      ####          │░             Main activities                                                  
-           │      ****    ####      ****      **##**        │░             ---------------                                                  
-           │      ****    **##**    ****        ####        │░             Web design and development                                       
-           │      ****      ####    ****        ####*       │░                                                                              
-           │      ****      **##**  ****  **########        │░                                                                              
-           │      ****        ####  ****######**            │░             Responsibilities                                                 
-           │      ****        **##**######**                │░             ----------------                                                 
-           │      ****          ######**                    │░             Worked in an advertising agency for customers in                 
-           │      ****          ##******                    │░             different industries (e.g. Fujitsu Siemens Computers,            
-           │      **##################**                    │░             Sony Computer Entertainment Europe)                              
-           │                                                │░                                                                              
-           └────────────────────────────────────────────────┘░             Developed an online file management system as second             
-            ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░             mainstay for the agency.                                         
+          ┌────────────────────────────────────────────────┐                                                                                
+          │                                                │░               <strong>Dynomedia GmbH</strong> <a class="external-employer-link" href="https://web.archive.org/web/20070208042813/http://www.dynomedia.com:80/de/" target="_blank"> ↗ </a>                                                  
+          │                              **                │░              ================                                                 
+          │                          **####**              │░                                                                               
+          │                    **############              │░              Role: Web Developer                                              
+          │                **######**    **##**            │░              Dates: <i>June 2005 - July 2008</i>                                     
+          │            **######**          ####            │░                                                                               
+          │            ####**              **##**          │░                                                                               
+          │      **##################**      ####          │░              Main activities                                                  
+          │      ****    ####      ****      **##**        │░              ---------------                                                  
+          │      ****    **##**    ****        ####        │░              ⬗ Web design and development                                     
+          │      ****      ####    ****        ####*       │░                                                                               
+          │      ****      **##**  ****  **########        │░                                                                               
+          │      ****        ####  ****######**            │░              Responsibilities                                                 
+          │      ****        **##**######**                │░              ----------------                                                 
+          │      ****          ######**                    │░              Worked in an advertising agency for customers in                 
+          │      ****          ##******                    │░              different industries (e.g. Fujitsu Siemens Computers,            
+          │      **##################**                    │░              Sony Computer Entertainment Europe)                              
+          │                                                │░                                                                               
+          └────────────────────────────────────────────────┘░              Developed an online file management system as second             
+           ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░              mainstay for the agency.                                         
                                                                                                                                             
                                                                                                                                             
                                                                                                                                             
@@ -485,27 +485,27 @@ export const d_jobs_iob =
                                                                                                                                             
                                                                             <strong>Internet of Blah / PURR</strong>                                          
                                                                            =========================                                        
-           ┌────────────────────────────────────────────────┐                                                                               
-           │                                                │░             Role: Frontend / Design / CEO                                    
-           │                                                │░             Dates: <i>June 2016 – December 2019</i>                                 
-           │                                                │░                                                                              
-           │                                                │░                                                                              
-           │                                                │░             Main activities                                                  
-           │                                                │░             ---------------                                                  
-           │                                                │░             User Experience and interaction design                           
-           │             ^^^^^^            ^^^^^^           │░             Cross platform software development and application              
-           │            ^^^^^^^^          ^^^^^^^^          │░             engineering.                                                     
-           │          ^^^^^^^^^^^       ^^^^^^^^^^^         │░                                                                              
-           │        ^^^^^^^^^^^^^^    ^^^^^^  ^^^^^^        │░             Web application and architectural consulting                     
-           │       ^^^^^^  ^^^^^^^^  ^^^^^^  ^^^^^^^^       │░                                                                              
-           │                                                │░                                                                              
-           │                                                │░             Responsibilities                                                 
-           │                                                │░             ----------------                                                 
-           │                                                │░             Conception, engineering and product development of the           
-           │                                                │░             company‘s product – an indepentend IoT Configuration             
-           │                                                │░             Platform.                                                        
-           └────────────────────────────────────────────────┘░                                                                              
-            ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░             Freelance projects for external clients and IT                   
+          ┌────────────────────────────────────────────────┐                                                                                
+          │                                                │░              Role: Frontend / Design / CEO                                    
+          │                                                │░              Dates: <i>June 2016 – December 2019</i>                                 
+          │                                                │░                                                                               
+          │                                                │░                                                                               
+          │                                                │░              Main activities                                                  
+          │                                                │░              ---------------                                                  
+          │                                                │░              ⬗ User Experience and interaction design                         
+          │             ^^^^^^            ^^^^^^           │░                Cross platform software development and application            
+          │            ^^^^^^^^          ^^^^^^^^          │░                engineering                                                    
+          │          ^^^^^^^^^^^       ^^^^^^^^^^^         │░                                                                               
+          │        ^^^^^^^^^^^^^^    ^^^^^^  ^^^^^^        │░              ⬗ Web application and architectural consulting                   
+          │       ^^^^^^  ^^^^^^^^  ^^^^^^  ^^^^^^^^       │░                                                                               
+          │                                                │░                                                                               
+          │                                                │░              Responsibilities                                                 
+          │                                                │░              ----------------                                                 
+          │                                                │░              Conception, engineering and product development of the           
+          │                                                │░              company‘s product – an indepentend IoT Configuration             
+          │                                                │░              Platform.                                                        
+          └────────────────────────────────────────────────┘░                                                                               
+           ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░              Freelance projects for external clients and IT                   
                                                                            consulting. Corporate and Business Development of the            
                                                                            startup as a co-founder.                                         
                                                                                                                                             
@@ -525,33 +525,33 @@ export const d_jobs_jd =
                                                                                                                                             
                                                                                                                                             
                                                                                                                                             
+                                                                                                                                            
                                                                             <strong>Johner Institut GmbH</strong> <a class="external-employer-link" href="https://www.johner-institute.com" target="_blank"> ↗ </a>                                            
                                                                            ======================                                           
-                                                                                                                                            
-           ┌────────────────────────────────────────────────┐              Role: Senior Software Engineering Lead                           
-           │                                                │░             Dates: <i>February 2023 - December 2023</i>                             
-           │                  ●●●●                          │░                                                                              
-           │                  ●●●●                          │░                                                                              
-           │                  ●●●●                          │░             Main activities                                                  
-           │                                                │░             ---------------                                                  
-           │                  ●●●●    ●●●●                  │░                                                                              
-           │                  ●●●●    ●●●●                  │░             Technology consulting                                            
-           │                  ●●●●    ●●●●                  │░                                                                              
-           │                                                │░             Software development and application engineering                 
-           │                  ●●●●    ●●●●                  │░                                                                              
-           │                  ●●●●    ●●●●                  │░             Conceptual design, architecture and development of B2B           
-           │                  ●●●●    ●●●●                  │░             applications                                                     
-           │                                                │░                                                                              
-           │                          ●●●●                  │░                                                                              
-           │                          ●●●●                  │░             Responsibilities                                                 
-           │                          ●●●●                  │░             ----------------                                                 
-           │                                                │░                                                                              
-           │                                                │░             Working in an agile team to get the first "Realtime              
-           └────────────────────────────────────────────────┘░             Compliance System" up and running to disrupt the working         
-            ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░             routines of medical device manufacturers.                        
-                                                                                                                                            
+          ┌────────────────────────────────────────────────┐                                                                                
+          │                                                │░              Role: Senior Software Engineering Lead                           
+          │                  ●●●●                          │░              Dates: <i>February 2023 - December 2023</i>                             
+          │                  ●●●●                          │░                                                                               
+          │                  ●●●●                          │░                                                                               
+          │                                                │░              Main activities                                                  
+          │                  ●●●●    ●●●●                  │░              ---------------                                                  
+          │                  ●●●●    ●●●●                  │░              ⬗ Technology consulting                                          
+          │                  ●●●●    ●●●●                  │░                                                                               
+          │                                                │░              ⬗ Software development and application engineering               
+          │                  ●●●●    ●●●●                  │░                                                                               
+          │                  ●●●●    ●●●●                  │░              ⬗ Conceptual design, architecture and development of B2B         
+          │                  ●●●●    ●●●●                  │░                applications                                                   
+          │                                                │░                                                                               
+          │                          ●●●●                  │░                                                                               
+          │                          ●●●●                  │░              Responsibilities                                                 
+          │                          ●●●●                  │░              ----------------                                                 
+          │                                                │░              Working in an agile team to get the first "Realtime              
+          │                                                │░              Compliance System" up and running to disrupt the working         
+          └────────────────────────────────────────────────┘░              routines of medical device manufacturers.                        
+           ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░                                                                               
                                                                            With the platform we help to overcome regulatory                 
                                                                            challenges and bring safe products to market faster.             
+                                                                                                                                            
                                                                                                                                             
                                                                                                                                             
                                                                                                                                             
@@ -569,32 +569,32 @@ export const d_jobs_kigg =
                                                                                                                                             
                                                                                                                                             
                                                                                                                                             
-                                                                                                                                            
                                                                             <strong>KIGG GmbH</strong> <a class="external-employer-link" href="https://www.kigg.de" target="_blank"> ↗ </a>                                                       
-           ┌────────────────────────────────────────────────┐              ===========                                                      
-           │                                                │░                                                                              
-           │                                                │░             Role: Multimedia Producer, Project Manager                       
-           │                                                │░             Dates: <i>August 2002 - November 2004</i>                               
-           │                                                │░                                                                              
-           │                                                │░                                                                              
-           │                                                │░             Main activities                                                  
-           │        KK    KK  II    GGGG~.    GGGG~.        │░             ---------------                                                  
-           │        KK  KK    II  GGGG  ~.  GGG.  ~.        │░             Project management                                               
-           │        KKKKK.    II  GGGG      GGG.            │░             Web design                                                       
-           │        KK  KK    II  GGGG..GG  GGGG..GG        │░             Multimedia Production (CD-ROM)                                   
-           │        KK  KKKK  II  GGGG  GG  GGG.  GG        │░                                                                              
-           │        KK    KK  II    GGGGG.    GGGGG.        │░                                                                              
-           │                                                │░             Responsibilities                                                 
-           │                                                │░             ----------------                                                 
-           │                                                │░             Started as a multimedia producer with the campaign               
-           │                                                │░             documentation of the 2002 mayoral election in Augsburg.          
-           │                                                │░                                                                              
-           │                                                │░             Worked on web development projects and a candidates              
-           └────────────────────────────────────────────────┘░             state campaign for the elections in 2003.                        
-            ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░                                                                              
+                                                                           ===========                                                      
+          ┌────────────────────────────────────────────────┐                                                                                
+          │                                                │░              Role: Multimedia Producer, Project Manager                       
+          │                                                │░              Dates: <i>August 2002 - November 2004</i>                               
+          │                                                │░                                                                               
+          │                                                │░                                                                               
+          │                                                │░              Main activities                                                  
+          │                                                │░              ---------------                                                  
+          │        KK    KK  II    GGGG~.    GGGG~.        │░              ⬗ Project management                                             
+          │        KK  KK    II  GGGG  ~.  GGG.  ~.        │░                                                                               
+          │        KKKKK.    II  GGGG      GGG.            │░              ⬗ Web design                                                     
+          │        KK  KK    II  GGGG..GG  GGGG..GG        │░                                                                               
+          │        KK  KKKK  II  GGGG  GG  GGG.  GG        │░              ⬗ Multimedia Production (CD-ROM)                                 
+          │        KK    KK  II    GGGGG.    GGGGG.        │░                                                                               
+          │                                                │░                                                                               
+          │                                                │░              Responsibilities                                                 
+          │                                                │░              ----------------                                                 
+          │                                                │░              Started as a multimedia producer with the campaign               
+          │                                                │░              documentation of the 2002 mayoral election in Augsburg.          
+          │                                                │░                                                                               
+          └────────────────────────────────────────────────┘░              Worked on web development projects and a candidates              
+           ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░              state campaign for the elections in 2003.                        
+                                                                                                                                            
                                                                            Responsible for municipal content management system              
                                                                            projects.                                                        
-                                                                                                                                            
                                                                                                                                             
                                                                                                                                             
                                                                                                                                             
@@ -614,27 +614,27 @@ export const d_jobs_man =
                                                                                                                                             
                                                                            Role: Senior Software Engineer                                   
                                                                            Dates: <i>June 2018 – January 2023</i>                                  
-           ┌────────────────────────────────────────────────┐                                                                               
-           │                                                │░                                                                              
-           │                                                │░             Main activities                                                  
-           │                  ............                  │░             ---------------                                                  
-           │              ..****........******              │░             Software development and application engineering                 
-           │          ..**..                ..**..          │░                                                                              
-           │        **..                        ..**        │░             UI/UX Design and consulting                                      
-           │      **..                            ..**      │░             Conceptual design and development of enterprise                  
-           │    **..                                ..**    │░             applications                                                     
-           │  ..**                                    **..  │░                                                                              
-           │  **..                                    ..**  │░             Agile Mentor / SCRUM Master                                      
-           │..**                                        **..│░                                                                              
-           │....                                        ....│░                                                                              
-           │**...MM*.. MMMM*    .AAAA*..   NNNN*.. NN*....**│░             Responsibilities                                                 
-           │**  .MMMMMMMMMM*   AAAAAAAA*   NNNNNN*.NN*..  **│░             ----------------                                                 
-           │**  .MM*.MM*.MM*  .AAAAAAAA*.. NN*...NNNN*..  **│░             Working in an agile SCRUM team on different, web based           
-           │..  .MM.    .MM.  AAA.   AAA.. NN...  .NN...  ..│░             projects in the enterprise sphere. Creation of an                
-           │                                                │░             enterprise wide supergraph as foundation for multiple            
-           │                                                │░             inter department applications with internal and external         
-           └────────────────────────────────────────────────┘░             users.                                                           
-            ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░                                                                              
+          ┌────────────────────────────────────────────────┐                                                                                
+          │                                                │░                                                                               
+          │                                                │░              Main activities                                                  
+          │                  ............                  │░              ---------------                                                  
+          │              ..****........******              │░              ⬗ Software development and application engineering               
+          │          ..**..                ..**..          │░                                                                               
+          │        **..                        ..**        │░              ⬗ UI/UX Design and consulting                                    
+          │      **..                            ..**      │░                Conceptual design and development of                           
+          │    **..                                ..**    │░                enterprise applications                                        
+          │  ..**                                    **..  │░                                                                               
+          │  **..                                    ..**  │░              ⬗ Agile Mentor / SCRUM Master                                    
+          │..**                                        **..│░                                                                               
+          │....                                        ....│░                                                                               
+          │**...MM*.. MMMM*    .AAAA*..   NNNN*.. NN*....**│░              Responsibilities                                                 
+          │**  .MMMMMMMMMM*   AAAAAAAA*   NNNNNN*.NN*..  **│░              ----------------                                                 
+          │**  .MM*.MM*.MM*  .AAAAAAAA*.. NN*...NNNN*..  **│░              Working in an agile SCRUM team on different, web based           
+          │..  .MM.    .MM.  AAA.   AAA.. NN...  .NN...  ..│░              projects in the enterprise sphere. Creation of an                
+          │                                                │░              enterprise wide supergraph as foundation for multiple            
+          │                                                │░              inter department applications with internal and external         
+          └────────────────────────────────────────────────┘░              users.                                                           
+           ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░                                                                               
                                                                            Depending on the actual project, the responsibilities            
                                                                            are reaching from conceptualizing and architectural              
                                                                            devising, over frontend and backend development, through         
@@ -657,27 +657,27 @@ export const d_jobs_no =
                                                                                                                                             
                                                                                                                                             
                                                                             <strong>natureOffice GmbH</strong> <a class="external-employer-link" href="https://www.natureoffice.com" target="_blank"> ↗ </a>                                               
-           ┌────────────────────────────────────────────────┐              ===================                                              
-           │                                                │░                                                                              
-           │                    ..                          │░             Role: Head of Software Development, Co-founder                   
-           │                  ~~oo..                        │░             Dates: <i>August 2008 - April 2014</i>                                  
-           │                  oooo**..                      │░                                                                              
-           │                --oooooooo..                    │░                                                                              
-           │                --oooooooo**                    │░             Main activities                                                  
-           │                --oo**oooooo                    │░             ---------------                                                  
-           │          ..    ..oo**oooooo                    │░             Software development and application engineering                 
-           │          --**~~..~~**oooo**                    │░                                                                              
-           │          ..oooooooo--oooo..                    │░             Business strategy development                                    
-           │            **oooooooo~~~~                      │░                                                                              
-           │            --oooooooo~~                        │░                                                                              
-           │              ******oooo                        │░             Responsibilities                                                 
-           │                **~~**oo--                      │░             ----------------                                                 
-           │                  --~~**--..                    │░             Corporate Development of the startup as a co-founder,            
-           │                        ~~..                    │░             focused on the technical domain.                                 
-           │                          ..--..                │░                                                                              
-           │                                                │░             Conception, engineering and development of the company‘s         
-           └────────────────────────────────────────────────┘░             products from the beginning with only a few users to the         
-            ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░             operative state with hundreds of concurrent users on the         
+          ┌────────────────────────────────────────────────┐               ===================                                              
+          │                                                │░                                                                               
+          │                    ..                          │░              Role: Head of Software Development, Co-founder                   
+          │                  ~~oo..                        │░              Dates: <i>August 2008 - April 2014</i>                                  
+          │                  oooo**..                      │░                                                                               
+          │                --oooooooo..                    │░                                                                               
+          │                --oooooooo**                    │░              Main activities                                                  
+          │                --oo**oooooo                    │░              ---------------                                                  
+          │          ..    ..oo**oooooo                    │░              ⬗ Software development and application engineering               
+          │          --**~~..~~**oooo**                    │░                                                                               
+          │          ..oooooooo--oooo..                    │░              ⬗ Business strategy development                                  
+          │            **oooooooo~~~~                      │░                                                                               
+          │            --oooooooo~~                        │░                                                                               
+          │              ******oooo                        │░              Responsibilities                                                 
+          │                **~~**oo--                      │░              ----------------                                                 
+          │                  --~~**--..                    │░              Corporate Development of the startup as a co-founder,            
+          │                        ~~..                    │░              focused on the technical domain.                                 
+          │                          ..--..                │░                                                                               
+          │                                                │░              Conception, engineering and development of the company‘s         
+          └────────────────────────────────────────────────┘░              products from the beginning with only a few users to the         
+           ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░              operative state with hundreds of concurrent users on the         
                                                                            platforms.                                                       
                                                                                                                                             
                                                                                                                                             
@@ -697,34 +697,34 @@ export const d_jobs_txn =
                                                                                                                                             
                                                                                                                                             
                                                                                                                                             
-                                                                                                                                            
                                                                             <strong>ThinxNet GmbH</strong> <a class="external-employer-link" href="https://thinxnet.com" target="_blank"> ↗ </a>                                                   
                                                                            ===============                                                  
-           ┌────────────────────────────────────────────────┐                                                                               
-           │                   **oooo**                     │░             Role: UI/UX Product Engineer                                     
-           │               **oo########oo**                 │░             Dates: <i>June 2014 – June 2016</i>                                     
-           │           oo####################oo             │░                                                                              
-           │         oo######****##############oo           │░                                                                              
-           │         ######oo    oo######****####           │░             Main activities                                                  
-           │       **########**  **####**    ####**         │░             ---------------                                                  
-           │       oo##########    oooo    oo####oo         │░             UI/UX Design and interaction design                              
-           │     **####  ****oo**        oo########         │░             Mobile application prototyping (iOS, Android)                    
-           │     oo##oo                **##########oo       │░             Software development and application engineering                 
-           │     oo####oooo****            ****oo##oo       │░                                                                              
-           │     **############**              oo##**       │░                                                                              
-           │       oo########oo    **    oooo**##oo         │░             Responsibilities                                                 
-           │       **######oo    oo##**  **######**         │░             ----------------                                                 
-           │         ######**  **####oo    oo####           │░             Designing the UI and UX for iOS, Android and HTML5.              
-           │         oo####**  ########**  oo##oo           │░             Supervising the different teams of native developers to          
-           │           oo################oo##oo             │░             ensure quality as well as a consistent look and feel             
-           │               **oo########oo**                 │░             over all platforms.                                              
-           │                   **oooo**                     │░                                                                              
-           └────────────────────────────────────────────────┘░             Fulfilling the roll of the product owner in our SCRUM            
-            ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░             workflow.                                                        
+                                                                                                                                            
+          ┌────────────────────────────────────────────────┐               Role: UI/UX Product Engineer                                     
+          │                   **oooo**                     │░              Dates: <i>June 2014 – June 2016</i>                                     
+          │               **oo########oo**                 │░                                                                               
+          │           oo####################oo             │░                                                                               
+          │         oo######****##############oo           │░              Main activities                                                  
+          │         ######oo    oo######****####           │░              ---------------                                                  
+          │       **########**  **####**    ####**         │░              ⬗ UI/UX Design and interaction design                            
+          │       oo##########    oooo    oo####oo         │░                                                                               
+          │     **####  ****oo**        oo########         │░              ⬗ Mobile application prototyping (iOS, Android)                  
+          │     oo##oo                **##########oo       │░                                                                               
+          │     oo####oooo****            ****oo##oo       │░              ⬗ Software development and application engineering               
+          │     **############**              oo##**       │░                                                                               
+          │       oo########oo    **    oooo**##oo         │░                                                                               
+          │       **######oo    oo##**  **######**         │░              Responsibilities                                                 
+          │         ######**  **####oo    oo####           │░              ----------------                                                 
+          │         oo####**  ########**  oo##oo           │░              Designing the UI and UX for iOS, Android and HTML5.              
+          │           oo################oo##oo             │░              Supervising the different teams of native developers to          
+          │               **oo########oo**                 │░              ensure quality as well as a consistent look and feel             
+          │                   **oooo**                     │░              over all platforms.                                              
+          └────────────────────────────────────────────────┘░                                                                               
+           ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░              Fulfilling the roll of the product owner in our SCRUM            
+                                                                           workflow.                                                        
                                                                                                                                             
                                                                            Supporting the management in the domain of brand                 
                                                                            building.                                                        
-                                                                                                                                            
                                                                                                                                             
                                                                                                                                             
                                                                                                                                             
@@ -748,7 +748,7 @@ export const d_jobs =
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░              │
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░              │
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░              │
-│        │       <a href="/job/certania" data-navigo>CERTANIA</a>       │◀─────│   <a href="/job/jd" data-navigo>Johner Institut</a>    │◀─────│ <a href="/job/man-es" data-navigo>MAN Energy Solutions</a> │◀─────│ <a href="/job/iob" data-navigo>Internet of Blah</a>     │◀─┐             │
+│        │      <a href="/job/certania" data-navigo>CERTANIA</a>        │◀─────│   <a href="/job/jd" data-navigo>Johner Institut</a>    │◀─────│ <a href="/job/man-es" data-navigo>MAN Energy Solutions</a> │◀─────│  <a href="/job/iob" data-navigo>Internet of Blah</a>    │◀─┐             │
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░│             │
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░│             │
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░│             │
@@ -762,7 +762,7 @@ export const d_jobs =
 │             │  │                      │░░    │                      │░░    │                      │░░    │                      │░░      │
 │             │  │                      │░░    │                      │░░    │                      │░░    │                      │░░      │
 │             │  │                      │░░    │                      │░░    │                      │░░    │                      │░░      │
-│             └──│ <a href="/job/thinxnet" data-navigo>ThinxNet</a>             │◀─────│ <a href="/job/natureoffice" data-navigo>natureOffice</a>         │◀─────│ <a href="/job/dynomedia" data-navigo>Dynomedia</a>            │◀─────│ <a href="/job/kigg" data-navigo>KIGG</a>                 │░░      │
+│             └──│      <a href="/job/thinxnet" data-navigo>ThinxNet</a>        │◀─────│    <a href="/job/natureoffice" data-navigo>natureOffice</a>      │◀─────│      <a href="/job/dynomedia" data-navigo>Dynomedia</a>       │◀─────│        <a href="/job/kigg" data-navigo>KIGG</a>          │░░      │
 │                │                      │░░    │                      │░░    │                      │░░    │                      │░░      │
 │                │                      │░░    │                      │░░    │                      │░░    │                      │░░      │
 │                │                      │░░    │                      │░░    │                      │░░    │                      │░░      │
@@ -781,20 +781,20 @@ export const d_skills =
                                                                                                                                             
                                                                                                                                             
                                                                                                                                             
-         <strong>Personal Skills</strong>                                                                                                                    
-         <i>and Competences</i>                                                                                                                    
+         <strong>Leadership &</strong>                                                                                                                       
+         <strong>Core Strengths</strong>                                                                                                                     
                                                                                                                                             
                                                                                                                                             
          ┌─────────────────────────────────────────────────┐        ┌─────────────────────────────────────────────────┐                     
          │                                                 │░░      │                                                 │░░                   
          │                                                 │░░      │                                                 │░░                   
-         │    Organisational skills                        │░░      │    Social skills                                │░░                   
-         │    ---------------------                        │░░      │    -------------                                │░░                   
-         │    Entrepreneurial mind and decisive planner    │░░      │    Analytical and <mark>creative</mark> <mark>thinker</mark>              │░░                   
-         │    Eager learner of <mark>new</mark> <mark>technologies</mark>            │░░      │    Empathetic listener and reflective           │░░                   
-         │    Able to work well-structured also upon       │░░      │    discussant                                   │░░                   
-         │    deadlines                                    │░░      │    Balanced personality even under pressure     │░░                   
-         │                                                 │░░      │                                                 │░░                   
+         │    <i>Leadership & Execution</i>                       │░░      │    <i>Stakeholder Communication</i>                    │░░                   
+         │    ----------------------                       │░░      │    -------------------------                    │░░                   
+         │    Experienced in leading technology            │░░      │    Strong communicator between business,        │░░                   
+         │    initiatives from strategy to execution,      │░░      │    technology, and leadership teams. Able to    │░░                   
+         │    coordinating stakeholders, prioritizing      │░░      │    translate complex technical topics into      │░░                   
+         │    complex requirements, and delivering         │░░      │    clear business language and align diverse    │░░                   
+         │    scalable digital solutions in                │░░      │    stakeholders around practical outcomes.      │░░                   
          │                                                 │░░      │                                                 │░░                   
          │                                                 │░░      │                                                 │░░                   
          └─────────────────────────────────────────────────┘░░      └─────────────────────────────────────────────────┘░░                   
@@ -803,13 +803,13 @@ export const d_skills =
                     ┌─────────────────────────────────────────────────┐         ┌─────────────────────────────────────────────────┐         
                     │                                                 │░░       │                                                 │░░       
                     │                                                 │░░       │                                                 │░░       
-                    │                                                 │░░       │    Interests                                    │░░       
-                    │    Languages                                    │░░       │    ---------                                    │░░       
-                    │    ---------                                    │░░       │    Internet <mark>culture</mark>                             │░░       
-                    │    <mark>German</mark> (Mother tongue)                       │░░       │    Politics                                     │░░       
-                    │    English (fluently)                           │░░       │    Movie & Cinema                               │░░       
-                    │                                                 │░░       │    Philosophy                                   │░░       
-                    │                                                 │░░       │                                                 │░░       
+                    │                                                 │░░       │    <i>Technology Interests</i>                         │░░       
+                    │    <i>Languages</i>                                    │░░       │    --------------------                         │░░       
+                    │    ---------                                    │░░       │    Focused on applied AI, digital platforms,    │░░       
+                    │    German (Mother tongue)                       │░░       │    and digital business models that unlock      │░░       
+                    │    English (Fluent)                             │░░       │    new opportunities and measurable business    │░░       
+                    │                                                 │░░       │    value. Strong interest in                    │░░       
+                    │                                                 │░░       │    technology-driven sustainability and the     │░░       
                     │                                                 │░░       │                                                 │░░       
                     │                                                 │░░       │                                                 │░░       
                     └─────────────────────────────────────────────────┘░░       └─────────────────────────────────────────────────┘░░       
@@ -834,16 +834,16 @@ export const d_start =
                                       ║                                                              ║░░                                    
                                       ║                                                              ║░░                                    
                                       ║                                                              ║░░                                    
-                                      ║                                                              ║░░                                    
-                                      ║                                                              ║░░                                    
                                       ║    <strong>Alexander Schedler</strong>                                        ║░░                                    
                                       ║    <i>District of Augsburg, Germany</i>                             ║░░                                    
                                       ║                                                              ║░░                                    
                                       ║                                                              ║░░                                    
-                                      ║         Internet application <mark>engineering</mark>,                    ║░░                                    
-                                      ║         <mark>development</mark> and <mark>management</mark>.                          ║░░                                    
-                                      ║                                                              ║░░                                    
-                                      ║                                                              ║░░                                    
+                                      ║        Technology leader with 20+ years of experience        ║░░                                    
+                                      ║        in scalable platforms, AI adoption, automation,       ║░░                                    
+                                      ║        and <mark>digital transformation</mark>.                           ║░░                                    
+                                      ║        Combines hands-on <mark>software architecture</mark>               ║░░                                    
+                                      ║        expertise with executive-level <mark>technology</mark>             ║░░                                    
+                                      ║        <mark>strategy</mark> and stakeholder management.                  ║░░                                    
                                       ║                                                              ║░░                                    
                                       ║                                                              ║░░                                    
                                       ║                                                              ║░░                                    
