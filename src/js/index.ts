@@ -11,7 +11,13 @@ import {
   pages,
   pagesMobile,
 } from "./pages"
-import { SITE_URL, canonicalPageRoutes, canonicalPathForPage } from "./routes.js"
+import {
+  absoluteUrl,
+  canonicalPageRoutes,
+  canonicalPathForPage,
+  siteRouteForPath,
+  structuredDataForPath,
+} from "./routes.js"
 
 interface RouteMatch {
   data: Record<string, string>
@@ -540,20 +546,36 @@ const app: AppState = {
   },
 
   /**
-   * Keep canonical and Open Graph URLs aligned with the active SPA route.
+   * Keep document metadata and structured data aligned with the active SPA route.
    */
   syncMetadata(): void {
-    const pathname = window.location.pathname || "/"
-    const absolutePath = new URL(pathname, SITE_URL).toString()
+    const route = siteRouteForPath(window.location.pathname || "/")
+    const absolutePath = absoluteUrl(route.path)
     const canonical = document.querySelector(
       'link[rel="canonical"]',
     ) as HTMLLinkElement | null
-    const ogUrl = document.querySelector(
-      'meta[property="og:url"]',
-    ) as HTMLMetaElement | null
+    const structuredData = document.querySelector(
+      "#structured-data",
+    ) as HTMLScriptElement | null
 
+    const setMetaContent = (selector: string, content: string): void => {
+      document.querySelector(selector)?.setAttribute("content", content)
+    }
+
+    document.title = route.title
     canonical?.setAttribute("href", absolutePath)
-    ogUrl?.setAttribute("content", absolutePath)
+    setMetaContent('meta[name="description"]', route.description)
+    setMetaContent('meta[property="og:url"]', absolutePath)
+    setMetaContent('meta[property="og:title"]', route.title)
+    setMetaContent('meta[property="og:description"]', route.description)
+    setMetaContent('meta[name="twitter:title"]', route.title)
+    setMetaContent('meta[name="twitter:description"]', route.description)
+
+    if (structuredData) {
+      structuredData.textContent = JSON.stringify(
+        structuredDataForPath(route.path),
+      )
+    }
   },
 
   /**

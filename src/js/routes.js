@@ -1,6 +1,23 @@
 // @ts-check
 
-/** @typedef {{ page: number, path: string }} CanonicalPageRoute */
+/**
+ * @typedef {{
+ *   page: number;
+ *   path: string;
+ *   title: string;
+ *   description: string;
+ *   schemaType: "ProfilePage" | "ContactPage" | "CollectionPage" | "WebPage";
+ * }} CanonicalPageRoute
+ */
+
+/**
+ * @typedef {{
+ *   path: string;
+ *   title: string;
+ *   description: string;
+ *   schemaType: "ProfilePage" | "ContactPage" | "CollectionPage" | "WebPage";
+ * }} SiteRoute
+ */
 
 /** @type {string} */
 export const SITE_URL = "https://www.schedler.pro"
@@ -13,27 +30,134 @@ export const CONTENT_SIGNAL_POLICY = "ai-train=no, search=yes, ai-input=yes"
 
 /** @type {CanonicalPageRoute[]} */
 export const canonicalPageRoutes = [
-  { page: 0, path: "/" },
-  { page: 1, path: "/contact" },
-  { page: 2, path: "/freelance" },
-  { page: 3, path: "/jobs" },
-  { page: 4, path: "/job/certania" },
-  { page: 5, path: "/job/jd" },
-  { page: 6, path: "/job/man-es" },
-  { page: 7, path: "/job/iob" },
-  { page: 8, path: "/job/thinxnet" },
-  { page: 9, path: "/job/natureoffice" },
-  { page: 10, path: "/job/dynomedia" },
-  { page: 11, path: "/job/kigg" },
-  { page: 12, path: "/education" },
-  { page: 13, path: "/skills" },
+  {
+    page: 0,
+    path: "/",
+    title: "Alexander Schedler | Technology Leader",
+    description:
+      "Technology leader with 20+ years of experience in scalable platforms, AI adoption, automation, and digital transformation.",
+    schemaType: "ProfilePage",
+  },
+  {
+    page: 1,
+    path: "/contact",
+    title: "Contact | Alexander Schedler",
+    description:
+      "Contact Alexander Schedler via email, phone, Bluesky, GitHub, or LinkedIn.",
+    schemaType: "ContactPage",
+  },
+  {
+    page: 2,
+    path: "/freelance",
+    title: "Advisory & Digital Expertise | Alexander Schedler",
+    description:
+      "Selected advisory and strategic technology engagements focused on applied AI, digital platforms, and business transformation.",
+    schemaType: "WebPage",
+  },
+  {
+    page: 3,
+    path: "/jobs",
+    title: "Curriculum Vitae | Alexander Schedler",
+    description:
+      "Professional experience and curriculum vitae of Alexander Schedler.",
+    schemaType: "CollectionPage",
+  },
+  {
+    page: 4,
+    path: "/job/certania",
+    title: "Director Technology at CERTANIA | Alexander Schedler",
+    description:
+      "Director Technology at CERTANIA Holding GmbH since January 2024.",
+    schemaType: "WebPage",
+  },
+  {
+    page: 5,
+    path: "/job/jd",
+    title: "Software Engineering Lead at Johner Institut | Alexander Schedler",
+    description:
+      "Senior Software Engineering Lead at Johner Institut GmbH from February to December 2023.",
+    schemaType: "WebPage",
+  },
+  {
+    page: 6,
+    path: "/job/man-es",
+    title:
+      "Senior Software Engineer at MAN Energy Solutions | Alexander Schedler",
+    description:
+      "Senior Software Engineer at MAN Energy Solutions SE from June 2018 to January 2023.",
+    schemaType: "WebPage",
+  },
+  {
+    page: 7,
+    path: "/job/iob",
+    title: "Frontend, Design & CEO at Internet of Blah | Alexander Schedler",
+    description:
+      "Frontend, design, and CEO responsibilities at Internet of Blah / PURR from June 2016 to December 2019.",
+    schemaType: "WebPage",
+  },
+  {
+    page: 8,
+    path: "/job/thinxnet",
+    title: "UI/UX Product Engineer at ThinxNet | Alexander Schedler",
+    description:
+      "UI/UX Product Engineer at ThinxNet GmbH from June 2014 to June 2016.",
+    schemaType: "WebPage",
+  },
+  {
+    page: 9,
+    path: "/job/natureoffice",
+    title: "Head of Software Development at natureOffice | Alexander Schedler",
+    description:
+      "Head of Software Development and co-founder of natureOffice GmbH from August 2008 to April 2014.",
+    schemaType: "WebPage",
+  },
+  {
+    page: 10,
+    path: "/job/dynomedia",
+    title: "Web Developer at Dynomedia | Alexander Schedler",
+    description: "Web Developer at Dynomedia GmbH from June 2005 to July 2008.",
+    schemaType: "WebPage",
+  },
+  {
+    page: 11,
+    path: "/job/kigg",
+    title: "Multimedia Producer at KIGG | Alexander Schedler",
+    description:
+      "Multimedia Producer and Project Manager at KIGG GmbH from August 2002 to November 2004.",
+    schemaType: "WebPage",
+  },
+  {
+    page: 12,
+    path: "/education",
+    title: "Education | Alexander Schedler",
+    description:
+      "Bachelor of Arts Multimedia from Middlesex University London and SAE Institute Munich.",
+    schemaType: "WebPage",
+  },
+  {
+    page: 13,
+    path: "/skills",
+    title: "Leadership & Core Strengths | Alexander Schedler",
+    description:
+      "Leadership, execution, stakeholder communication, languages, and technology interests.",
+    schemaType: "WebPage",
+  },
 ]
 
+/** @type {SiteRoute} */
+const impressumRoute = {
+  path: "/impressum",
+  title: "Imprint | Schedler.pro",
+  description:
+    "Imprint, privacy, copyright, and disclaimer information for Schedler.pro.",
+  schemaType: "WebPage",
+}
+
+/** @type {SiteRoute[]} */
+export const siteRoutes = [...canonicalPageRoutes, impressumRoute]
+
 /** @type {string[]} */
-export const sitemapPaths = [
-  ...canonicalPageRoutes.map((route) => route.path),
-  "/impressum",
-]
+export const sitemapPaths = siteRoutes.map((route) => route.path)
 
 /**
  * @param {number} page
@@ -49,6 +173,104 @@ export const canonicalPathForPage = (page) => {
  */
 export const absoluteUrl = (pathname) => {
   return new URL(pathname, SITE_URL).toString()
+}
+
+/**
+ * Resolve browser paths, including impressum slideshow frames, to a canonical route.
+ *
+ * @param {string} pathname
+ * @returns {SiteRoute}
+ */
+export const siteRouteForPath = (pathname) => {
+  const normalized = pathname === "/" ? "/" : pathname.replace(/\/+$/, "")
+
+  if (normalized.startsWith("/impressum/")) {
+    return impressumRoute
+  }
+
+  return siteRoutes.find((route) => route.path === normalized) || siteRoutes[0]
+}
+
+/**
+ * Build the route-specific Schema.org graph embedded in HTML responses.
+ *
+ * @param {string} pathname
+ * @returns {{ "@context": string, "@graph": Record<string, unknown>[] }}
+ */
+export const structuredDataForPath = (pathname) => {
+  const route = siteRouteForPath(pathname)
+  const pageUrl = absoluteUrl(route.path)
+  const websiteId = `${absoluteUrl("/")}#website`
+  const personId = `${absoluteUrl("/")}#person`
+
+  /** @type {Record<string, unknown>} */
+  const person = {
+    "@type": "Person",
+    "@id": personId,
+    url: absoluteUrl("/"),
+    name: "Alexander Schedler",
+  }
+
+  if (route.path === "/") {
+    Object.assign(person, {
+      givenName: "Alexander",
+      familyName: "Schedler",
+      description: route.description,
+      homeLocation: {
+        "@type": "Place",
+        name: "District of Augsburg, Germany",
+      },
+    })
+  }
+
+  if (route.path === "/contact") {
+    person.sameAs = [
+      "https://bsky.app/profile/alex.schedler.co",
+      "https://github.com/kulturpessimist",
+      "https://www.linkedin.com/in/alexanderschedler",
+    ]
+  }
+
+  /** @type {Record<string, unknown>} */
+  const page = {
+    "@type": route.schemaType,
+    "@id": `${pageUrl}#webpage`,
+    url: pageUrl,
+    name: route.title,
+    description: route.description,
+    inLanguage: "en",
+    isPartOf: { "@id": websiteId },
+  }
+
+  if (route.path === "/") {
+    page.mainEntity = { "@id": personId }
+  } else if (route.path !== "/impressum") {
+    page.about = { "@id": personId }
+  }
+
+  /** @type {Record<string, unknown>[]} */
+  const graph = [page]
+
+  if (route.path === "/") {
+    graph.unshift({
+      "@type": "WebSite",
+      "@id": websiteId,
+      url: absoluteUrl("/"),
+      name: "Schedler.pro",
+      alternateName: "Alexander Schedler",
+      inLanguage: "en",
+      publisher: { "@id": personId },
+    })
+  }
+
+  if (route.path !== "/impressum") {
+    graph.push(person)
+  }
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": graph,
+  }
 }
 
 /**

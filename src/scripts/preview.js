@@ -87,6 +87,12 @@ const server = Bun.serve({
     }
 
     const filePath = path.join(distDir, pathname.slice(1));
+    const routeFile = Bun.file(path.join(filePath, "index.html"));
+
+    if (!path.extname(pathname) && await routeFile.exists()) {
+      return withHtmlHeaders(new Response(routeFile), url.pathname);
+    }
+
     const file = Bun.file(filePath);
 
     if (await file.exists()) {

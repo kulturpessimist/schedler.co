@@ -3,6 +3,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { SITE_URL } from "../js/routes.js";
 
 const DESKTOP_DIR = "./src/txt/desktop";
 const OUTPUT_PUBLIC = "./public/llms.txt";
@@ -196,9 +197,9 @@ function extractText(content, heading) {
 async function main() {
   const version = await loadVersion();
 
-  const header = `# Schedler.co | Alexander Schedler: Internet application engineering, development and management.
+  const header = `# Schedler.pro | Alexander Schedler: Internet application engineering, development and management.
 
-> Source: [schedler.co](https://schedler.co/)
+> Source: [schedler.pro](${SITE_URL}/)
 > This file is auto-generated from site content to provide LLM-accessible information.
 
 ## Overview

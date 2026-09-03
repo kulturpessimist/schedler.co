@@ -1,6 +1,6 @@
-# Schedler.co | Alexander Schedler: Internet application engineering, development and management.
+# Schedler.pro | Alexander Schedler: Internet application engineering, development and management.
 
-> Source: [schedler.co](https://schedler.co/)
+> Source: [schedler.pro](https://www.schedler.pro/)
 > This file is auto-generated from site content to provide LLM-accessible information.
 
 ## Overview

@@ -2,7 +2,13 @@
 
 import fs from "node:fs/promises"
 import path from "node:path"
-import { absoluteUrl, SITE_URL, sitemapPaths } from "../js/routes.js"
+import {
+  absoluteUrl,
+  SITE_URL,
+  sitemapPaths,
+  siteRoutes,
+  structuredDataForPath,
+} from "../js/routes.js"
 
 /** @type {string} */
 const root = process.cwd()
@@ -44,32 +50,122 @@ const copyDir = async (source, target) => {
 }
 
 /**
- * Patch generated HTML references to public asset URLs.
+ * Escape text inserted into generated HTML.
+ *
+ * @param {string} value
+ * @returns {string}
+ */
+const escapeHtml = (value) => {
+  return value
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;")
+}
+
+/**
+ * Render metadata and JSON-LD for one canonical SPA entrypoint.
+ *
+ * @param {string} template
+ * @param {(typeof siteRoutes)[number]} route
+ * @returns {string}
+ */
+const renderRouteHtml = (template, route) => {
+  const pageUrl = absoluteUrl(route.path)
+  const title = escapeHtml(route.title)
+  const description = escapeHtml(route.description)
+  const structuredData = JSON.stringify(
+    structuredDataForPath(route.path),
+  ).replaceAll("<", "\\u003c")
+
+  return template
+    .replace(/<title>[\s\S]*?<\/title>/, `<title>${title}</title>`)
+    .replace(
+      /(<meta name="description"\s+content=")[^"]*("\s*\/?>)/,
+      `$1${description}$2`,
+    )
+    .replace(/(<link rel="canonical" href=")[^"]+("\s*\/?>)/, `$1${pageUrl}$2`)
+    .replace(
+      /(<meta property="og:url" content=")[^"]+("\s*\/?>)/,
+      `$1${pageUrl}$2`,
+    )
+    .replace(
+      /(<meta property="og:title"\s+content=")[^"]*("\s*\/?>)/,
+      `$1${title}$2`,
+    )
+    .replace(
+      /(<meta property="og:description"\s+content=")[^"]*("\s*\/?>)/,
+      `$1${description}$2`,
+    )
+    .replace(
+      /(<meta name="twitter:title"\s+content=")[^"]*("\s*\/?>)/,
+      `$1${title}$2`,
+    )
+    .replace(
+      /(<meta name="twitter:description"\s+content=")[^"]*("\s*\/?>)/,
+      `$1${description}$2`,
+    )
+    .replace(
+      /(<script id="structured-data" type="application\/ld\+json">)[\s\S]*?(<\/script>)/,
+      `$1${structuredData}$2`,
+    )
+}
+
+/**
+ * Verify the generated route head before writing it to disk.
+ *
+ * @param {string} html
+ * @param {(typeof siteRoutes)[number]} route
+ * @returns {void}
+ */
+const validateRouteHtml = (html, route) => {
+  const pageUrl = absoluteUrl(route.path)
+  const jsonLd = html.match(
+    /<script id="structured-data" type="application\/ld\+json">([\s\S]*?)<\/script>/,
+  )?.[1]
+
+  if (!html.includes(`<link rel="canonical" href="${pageUrl}"`) || !jsonLd) {
+    throw new Error(`Missing route metadata for ${route.path}`)
+  }
+
+  const graph = /** @type {Record<string, unknown>[]} */ (
+    JSON.parse(jsonLd)["@graph"]
+  )
+  if (!graph.some((node) => node["@id"] === `${pageUrl}#webpage`)) {
+    throw new Error(`Missing WebPage node for ${route.path}`)
+  }
+}
+
+/**
+ * Write one static HTML shell per canonical SPA route.
  *
  * @returns {Promise<void>}
  */
-const patchIndex = async () => {
+const writeRoutePages = async () => {
   const indexPath = path.join(distDir, "index.html")
-  let html = await fs.readFile(indexPath, "utf8")
+  let template = await fs.readFile(indexPath, "utf8")
 
-  html = html.replace(
+  template = template.replace(
     /(<meta property="og:image" content=")[^"]+(")/,
     `$1${absoluteUrl("/images/social-card.png")}$2`,
-  );
-  html = html.replace(
+  )
+  template = template.replace(
     /(<meta name="twitter:image" content=")[^"]+(")/,
     `$1${absoluteUrl("/images/social-card.png")}$2`,
-  );
-  html = html.replace(
-    /(<link rel="canonical" href=")[^"]+(")/,
-    `$1${absoluteUrl("/")}$2`,
-  );
-  html = html.replace(
-    /(<meta property="og:url" content=")[^"]+(")/,
-    `$1${absoluteUrl("/")}$2`,
-  );
+  )
 
-  await fs.writeFile(indexPath, html)
+  for (const route of siteRoutes) {
+    const html = renderRouteHtml(template, route)
+    const outputPath =
+      route.path === "/"
+        ? indexPath
+        : path.join(distDir, route.path.slice(1), "index.html")
+
+    validateRouteHtml(html, route)
+    await fs.mkdir(path.dirname(outputPath), { recursive: true })
+    await fs.writeFile(outputPath, html)
+  }
 }
 
 /**
@@ -137,7 +233,7 @@ const patchRobots = async () => {
 async function main() {
   await copyDir(publicDir, distDir)
   await writeSitemap()
-  await patchIndex()
+  await writeRoutePages()
   await patchRobots()
   console.log("✅ Copied public assets")
 }
