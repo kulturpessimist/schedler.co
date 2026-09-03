@@ -40,3 +40,9 @@
 - For code changes, run the smallest relevant check first.
 - Prefer `bun run typecheck` for TypeScript changes.
 - Use `bun run build` when changes affect bundling, routing, assets, or output generation.
+
+## Browser testing (Safari MCP)
+- The `safari-mcp` MCP server drives Safari Technology Preview via `safaridriver --mcp`: DOM, screenshots, console, network, JS evaluation.
+- omp reads it from `.omp/mcp.json` (project scope); Codex registers it globally via `codex mcp add safari-mcp -- "/Applications/Safari Technology Preview.app/Contents/MacOS/safaridriver" --mcp` (Codex has no project-scope MCP config; see `.codex/README.md`).
+- System Safari (26.x) does not support `--mcp`; use the Safari Technology Preview binary above. Requires Safari Technology Preview > Settings > Developer > "Allow remote automation and external agents".
+- Use it to verify UI/rendering changes against the dev server (`bun run dev`) or `bun run preview`.
