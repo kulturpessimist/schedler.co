@@ -161,7 +161,7 @@ const impressumRoute = {
   schemaType: "WebPage",
 }
 
-/** @type {SiteRoute[]} */
+/** @type {(CanonicalPageRoute | SiteRoute)[]} */
 export const siteRoutes = [...canonicalPageRoutes, impressumRoute]
 
 /** @type {string[]} */

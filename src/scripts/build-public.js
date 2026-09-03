@@ -2,6 +2,7 @@
 
 import fs from "node:fs/promises"
 import path from "node:path"
+import { desktopImpressumFrames, desktopPages } from "../js/content"
 import {
   absoluteUrl,
   SITE_URL,
@@ -65,6 +66,23 @@ const escapeHtml = (value) => {
 }
 
 /**
+ * Resolve the static (desktop) page content for a route, injected into the
+ * HTML shell so crawlers without JavaScript see the page text.
+ *
+ * @param {(typeof siteRoutes)[number]} route
+ * @returns {string}
+ */
+const contentForRoute = (route) => {
+  if (route.path === "/impressum") {
+    return desktopImpressumFrames[0] || ""
+  }
+  if ("page" in route) {
+    return desktopPages[route.page] || ""
+  }
+  return ""
+}
+
+/**
  * Render metadata and JSON-LD for one canonical SPA entrypoint.
  *
  * @param {string} template
@@ -78,8 +96,13 @@ const renderRouteHtml = (template, route) => {
   const structuredData = JSON.stringify(
     structuredDataForPath(route.path),
   ).replaceAll("<", "\\u003c")
+  const content = contentForRoute(route)
 
   return template
+    .replace(
+      /(<pre v-html="current"><\/pre>)/,
+      (match) => `${match}\n      <noscript><pre>${content}</pre></noscript>`,
+    )
     .replace(/<title>[\s\S]*?<\/title>/, `<title>${title}</title>`)
     .replace(
       /(<meta name="description"\s+content=")[^"]*("\s*\/?>)/,
