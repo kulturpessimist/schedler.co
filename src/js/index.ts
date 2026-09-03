@@ -41,6 +41,9 @@ interface TextSlot {
   character: string
 }
 
+const prefersReducedMotion = (): boolean =>
+  window.matchMedia("(prefers-reduced-motion: reduce)").matches
+
 interface AppState {
   pages: string[]
   contactFrames: string[]
@@ -206,6 +209,7 @@ const app: AppState = {
         annotate(mark, {
           type: "highlight",
           color,
+          animate: !prefersReducedMotion(),
         }),
       )
     }
@@ -438,6 +442,10 @@ const app: AppState = {
    * Play contact animation frames in a loop.
    */
   playSlideshow(animation?: string[], currentFrame = 0): void {
+    if (prefersReducedMotion()) {
+      return
+    }
+
     const animationFrames = animation || this.contactFrames
     const speed = 60
     const pause = 200
@@ -516,7 +524,7 @@ const app: AppState = {
       return
     }
 
-    this.syncMetadata()
+    setTimeout(() => this.syncMetadata())
     this._router.updatePageLinks()
     setTimeout(() => {
       this.annotateAllTheThings()
@@ -554,6 +562,7 @@ const app: AppState = {
     const canonical = document.querySelector(
       'link[rel="canonical"]',
     ) as HTMLLinkElement | null
+    const heading = document.querySelector("#page-title")
     const structuredData = document.querySelector(
       "#structured-data",
     ) as HTMLScriptElement | null
@@ -563,6 +572,9 @@ const app: AppState = {
     }
 
     document.title = route.title
+    if (heading) {
+      heading.textContent = route.title
+    }
     canonical?.setAttribute("href", absolutePath)
     setMetaContent('meta[name="description"]', route.description)
     setMetaContent('meta[property="og:url"]', absolutePath)
@@ -617,6 +629,14 @@ const app: AppState = {
    * Animate transition from one page string to another.
    */
   navigateFromTo(from: string, to: string, nextPage: number): void {
+    if (prefersReducedMotion()) {
+      this.current = to
+      this.currentPage = nextPage
+      this.loader = " "
+      this.afterNavigation()
+      return
+    }
+
     if (from === to || nextPage === this.currentPage) {
       this.current = to
       this.currentPage = nextPage

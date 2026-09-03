@@ -45,22 +45,23 @@
 
   <body @vue:mounted="init()">
     <main>
+      <h1 id="page-title" class="visually-hidden" aria-live="polite">Alexander Schedler | Technology Leader</h1>
       <pre v-html="current"></pre>
     </main>
 
-    <pre id="options" @click="options">
-[=]
-    </pre>
+    <button id="options" type="button" @click="options"
+      title="Toggle imprint (I)" aria-label="Toggle imprint"
+      aria-keyshortcuts="i">[=]</button>
 
-    <pre class="toggleDarkMode lightActive" @click="toggleDarkMode">
-[☼]
-    </pre>
-    <pre class="toggleDarkMode darkActive" @click="toggleDarkMode">
-[☾]
-    </pre>
+    <button class="toggleDarkMode lightActive" type="button"
+      @click="toggleDarkMode" title="Switch to light mode"
+      aria-label="Switch to light mode">[☼]</button>
+    <button class="toggleDarkMode darkActive" type="button"
+      @click="toggleDarkMode" title="Switch to dark mode"
+      aria-label="Switch to dark mode">[☾]</button>
 
-    <pre id="navigation">
-<a id="back" :href="pathForPage(prevPage)" data-navigo>[←]</a> <span id="iLoader">{{loader}}</span> <a id="forward" :href="pathForPage(nextPage)" data-navigo>[→]</a>
+    <pre id="navigation" role="navigation" aria-label="CV pages">
+<a id="back" :href="pathForPage(prevPage)" data-navigo title="Previous page (Left Arrow)" aria-label="Previous page" aria-keyshortcuts="ArrowLeft">[←]</a> <span id="iLoader">{{loader}}</span> <a id="forward" :href="pathForPage(nextPage)" data-navigo title="Next page (Right Arrow)" aria-label="Next page" aria-keyshortcuts="ArrowRight">[→]</a>
     </pre>
 
     <script type="module" src="./js/index.ts"></script>

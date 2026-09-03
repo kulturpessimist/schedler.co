@@ -105,6 +105,10 @@ const renderRouteHtml = (template, route) => {
     )
     .replace(/<title>[\s\S]*?<\/title>/, `<title>${title}</title>`)
     .replace(
+      /(<h1 id="page-title"[^>]*>)[\s\S]*?(<\/h1>)/,
+      `$1${title}$2`,
+    )
+    .replace(
       /(<meta name="description"\s+content=")[^"]*("\s*\/?>)/,
       `$1${description}$2`,
     )
