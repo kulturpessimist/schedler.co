@@ -1,5 +1,13 @@
 // @ts-check
 
+import {
+  EDUCATION,
+  EMPLOYMENT,
+  LANGUAGES,
+  PERSON,
+  TECHNOLOGIES,
+} from "./resume.js"
+
 /**
  * @typedef {{
  *   page: number;
@@ -203,33 +211,8 @@ export const structuredDataForPath = (pathname) => {
   const websiteId = `${absoluteUrl("/")}#website`
   const personId = `${absoluteUrl("/")}#person`
 
-  /** @type {Record<string, unknown>} */
-  const person = {
-    "@type": "Person",
-    "@id": personId,
-    url: absoluteUrl("/"),
-    name: "Alexander Schedler",
-  }
-
-  if (route.path === "/") {
-    Object.assign(person, {
-      givenName: "Alexander",
-      familyName: "Schedler",
-      description: route.description,
-      homeLocation: {
-        "@type": "Place",
-        name: "District of Augsburg, Germany",
-      },
-    })
-  }
-
-  if (route.path === "/contact") {
-    person.sameAs = [
-      "https://bsky.app/profile/alex.schedler.co",
-      "https://github.com/kulturpessimist",
-      "https://www.linkedin.com/in/alexanderschedler",
-    ]
-  }
+  /** @type {Record<string, unknown>[]} */
+  const graph = []
 
   /** @type {Record<string, unknown>} */
   const page = {
@@ -248,8 +231,7 @@ export const structuredDataForPath = (pathname) => {
     page.about = { "@id": personId }
   }
 
-  /** @type {Record<string, unknown>[]} */
-  const graph = [page]
+  graph.push(page)
 
   if (route.path === "/") {
     graph.unshift({
@@ -263,8 +245,95 @@ export const structuredDataForPath = (pathname) => {
     })
   }
 
-  if (route.path !== "/impressum") {
-    graph.push(person)
+  if (route.path === "/impressum") {
+    return { "@context": "https://schema.org", "@graph": graph }
+  }
+
+  /** @type {Record<string, unknown>} */
+  const person = {
+    "@type": "Person",
+    "@id": personId,
+    url: absoluteUrl("/"),
+    name: PERSON.name,
+    givenName: PERSON.givenName,
+    familyName: PERSON.familyName,
+    jobTitle: PERSON.jobTitle,
+    description: PERSON.description,
+    homeLocation: PERSON.homeLocation,
+    address: PERSON.address,
+    email: PERSON.email,
+    telephone: PERSON.telephone,
+    sameAs: PERSON.sameAs,
+    alumniOf: EDUCATION.schools.map((school) => ({
+      "@type": "CollegeOrUniversity",
+      name: school,
+    })),
+    knowsAbout: TECHNOLOGIES.map((tech) => tech.name),
+    knowsLanguage: LANGUAGES.map((lang) => lang.name),
+  }
+
+  const currentEmployer = EMPLOYMENT.find((job) => job.endDate === undefined)
+
+  if (currentEmployer) {
+    person.worksFor = {
+      "@id": `${absoluteUrl(currentEmployer.path)}#organization`,
+    }
+  }
+
+  const inScopeJobs =
+    route.path === "/" || route.path === "/jobs"
+      ? EMPLOYMENT
+      : EMPLOYMENT.filter((job) => job.path === route.path)
+
+  if (inScopeJobs.length > 0) {
+    person.hasOccupation = inScopeJobs.map(
+      (job) => `${absoluteUrl(job.path)}#role`,
+    )
+  }
+
+  graph.push(person)
+
+  /** @type {Set<string>} */
+  const orgIds = new Set()
+
+  if (currentEmployer) {
+    const orgId = `${absoluteUrl(currentEmployer.path)}#organization`
+    orgIds.add(orgId)
+    graph.push({
+      "@type": "Organization",
+      "@id": orgId,
+      name: currentEmployer.organization,
+      url: absoluteUrl(currentEmployer.path),
+    })
+  }
+
+  for (const job of inScopeJobs) {
+    const orgId = `${absoluteUrl(job.path)}#organization`
+
+    if (!orgIds.has(orgId)) {
+      orgIds.add(orgId)
+      graph.push({
+        "@type": "Organization",
+        "@id": orgId,
+        name: job.organization,
+        url: absoluteUrl(job.path),
+      })
+    }
+
+    /** @type {Record<string, unknown>} */
+    const role = {
+      "@type": "Role",
+      "@id": `${absoluteUrl(job.path)}#role`,
+      roleName: job.role,
+      startDate: job.startDate,
+      description: job.description,
+    }
+
+    if (job.endDate) {
+      role.endDate = job.endDate
+    }
+
+    graph.push(role)
   }
 
   return {

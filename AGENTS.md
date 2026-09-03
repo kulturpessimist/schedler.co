@@ -10,7 +10,7 @@
 - Keep changes focused and minimal.
 - Match the existing plain, hand-authored style of the project.
 - Prefer updating existing scripts and source files over adding new tooling.
-- Do not introduce Node/npm/yarn-specific workflows unless explicitly requested.
+- Use semantic versioning: bump the version in `src/version.json` after every change (patch for fixes, minor for features, major for breaking changes).
 
 ## Commands
 - Install dependencies: `bun install`
@@ -29,6 +29,12 @@
 - Treat `src/scripts/` as the source of truth for development/build behavior.
 - Reuse existing patterns before introducing new abstractions.
 - Preserve Bun script entry points defined in `package.json`.
+
+## Content sources
+- `src/txt/` is the on-screen source: the hand-authored ASCII-art CV rendered by the site.
+- `src/js/resume.js` is the machine-readable source of the same CV facts (person, employment, education, skills, technologies, contact). It feeds the JSON-LD graph in `src/js/routes.js` and the generated `public/llms.txt` in `src/scripts/build-llms.js`.
+- When CV content changes (roles, dates, skills, contact, education), update both `src/txt/` and `src/js/resume.js` by hand; `resume.js` is not derived from the txt files.
+- `public/llms.txt` and the per-route JSON-LD in `dist/` are generated artifacts — do not edit them directly.
 
 ## Validation
 - For code changes, run the smallest relevant check first.

@@ -4,288 +4,252 @@
 > This file is auto-generated from site content to provide LLM-accessible information.
 
 ## Overview
-This site serves as a professional portfolio and curriculum vitae for Alexander Schedler, showcasing expertise in internet application engineering, development, and management. Below you will find detailed information about his professional background, skills, and experience.
+This site serves as a professional portfolio and curriculum vitae for Alexander Schedler, showcasing expertise in internet application engineering, development, and management.
 
 ## About
 
-Alexander Schedler
-District of Augsburg, Germany
-Technology leader with 20+ years of experience
-in scalable platforms, AI adoption, automation,
-and digital transformation.
-Combines hands-on software architecture
-expertise with executive-level technology
-strategy and stakeholder management.
+- **Name:** Alexander Schedler
+- **Location:** District of Augsburg, Germany
+
+Technology leader with 20+ years of experience in scalable platforms, AI adoption, automation, and digital transformation. Combines hands-on software architecture expertise with executive-level technology strategy and stakeholder management.
 
 ## Contact Information
 
-Alexander Schedler
-District of Augsburg, Germany
-Want to get in touch?
-Just write me an Email alex@schedler.co
-or call me +49 171 4 123 929 and follow me on
-bluesky @alex.schedler.co and star my work on
-Github /kulturpessimist or connect with me
-on LinkedIn /alexanderschedler
+- **Name:** Alexander Schedler
+- **Email:** alex@schedler.co
+- **Phone:** +49 171 4123 929
+- **Bluesky:** https://bsky.app/profile/alex.schedler.co
+- **GitHub:** https://github.com/kulturpessimist
+- **LinkedIn:** https://www.linkedin.com/in/alexanderschedler
 
 ## Freelance Work
 
-AI Strategy &
-Implementation
-Technology
-Alexander Schedler | Leadership
-Advisory & Digital Expertise
-My focus today is on technology leadership,
-applied AI, digital platforms, and business
-transformation. While I am not offering | Digital Product
-traditional freelance development, I remain open | Engineering
-to selected advisory and strategic technology
-engagements with practical impact.
-For selected projects, sparring sessions, or
-advisory conversations, feel free to get in touch. | Data & Automation
-Platforms
-Modern Web
-Architecture
+### Advisory & Digital Expertise
+
+My focus today is on technology leadership, applied AI, digital platforms, and business transformation. While I am not offering traditional freelance development, I remain open to selected advisory and strategic technology engagements with practical impact. For selected projects, sparring sessions, or advisory conversations, feel free to get in touch.
+
+Focus areas:
+
+- AI Strategy & Implementation
+- Technology Leadership
+- Digital Product Engineering
+- Data & Automation Platforms
+- Modern Web Architecture
 
 ## Career Overview
 
-Alexander Schedler
-Curriculum Vitae
-CERTANIA | Johner Institut | MAN Energy Solutions | Internet of Blah
-ThinxNet | natureOffice | Dynomedia | KIGG
+Companies, newest first:
+
+- CERTANIA Holding GmbH — Director Technology
+- Johner Institut GmbH — Senior Software Engineering Lead
+- MAN Energy Solutions SE — Senior Software Engineer
+- Internet of Blah / PURR — Frontend / Design / CEO
+- ThinxNet GmbH — UI/UX Product Engineer
+- natureOffice GmbH — Head of Software Development, Co-founder
+- Dynomedia GmbH — Web Developer
+- KIGG GmbH — Multimedia Producer, Project Manager
 
 ## Employment History
 
 ### CERTANIA Holding GmbH
 
-Role: Director Technology
-Dates: January 2024 onwards
-Main activities
-⬗ Introduction of new technologies and ensuring
-scalable, secure implementation
-⬗ Strategic development of the technology landscape
-⬗ Prioritization of resilience, compliance, and secure
-use of AI solutions
-Responsibilities
-Strategic development and operational governance of
-CERTANIA’s technology landscape. This includes defining
-infrastructure and security priorities, ensuring
-resilience and compliance, and enabling partner
-organizations to adopt and use AI solutions effectively
-and securely.
+- **Role:** Director Technology
+- **Dates:** January 2024 – present
+
+**Main activities**
+
+- Introduction of new technologies and ensuring scalable, secure implementation
+- Strategic development of the technology landscape
+- Prioritization of resilience, compliance, and secure use of AI solutions
+
+**Responsibilities**
+
+Strategic development and operational governance of CERTANIA's technology landscape. This includes defining infrastructure and security priorities, ensuring resilience and compliance, and enabling partner organizations to adopt and use AI solutions effectively and securely.
 
 ### Johner Institut GmbH
 
-Role: Senior Software Engineering Lead
-Dates: February 2023 – December 2023
-Main activities
-⬗ Technology consulting
-⬗ Software development and application engineering
-⬗ Conceptual design, architecture and development of B2B
-applications
-Responsibilities
-Working in an agile team to get the first "Realtime
-Compliance System" up and running to disrupt the working
-routines of medical device manufacturers.
-With the platform we help to overcome regulatory
-challenges and bring safe products to market faster.
+- **Role:** Senior Software Engineering Lead
+- **Dates:** February 2023 – December 2023
+
+**Main activities**
+
+- Technology consulting
+- Software development and application engineering
+- Conceptual design, architecture and development of B2B applications
+
+**Responsibilities**
+
+Worked in an agile team to get the first 'Realtime Compliance System' up and running to disrupt the working routines of medical device manufacturers, helping them overcome regulatory challenges and bring safe products to market faster.
 
 ### MAN Energy Solutions SE
 
-Role: Senior Software Engineer
-Dates: June 2018 – January 2023
-Main activities
-⬗ Software development and application engineering
-⬗ UI/UX Design and consulting
-Conceptual design and development of
-enterprise applications
-⬗ Agile Mentor / SCRUM Master
-Responsibilities
-Working in an agile SCRUM team on different, web based
-projects in the enterprise sphere. Creation of an
-enterprise wide supergraph as foundation for multiple
-inter department applications with internal and external
-users.
-Depending on the actual project, the responsibilities
-are reaching from conceptualizing and architectural
-devising, over frontend and backend development, through
-to the initial operation in the enterprise cloud
-infrastructure.
+- **Role:** Senior Software Engineer
+- **Dates:** June 2018 – January 2023
+
+**Main activities**
+
+- Software development and application engineering
+- UI/UX design and consulting
+- Conceptual design and development of enterprise applications
+- Agile Mentor / SCRUM Master
+
+**Responsibilities**
+
+Worked in an agile SCRUM team on web-based projects in the enterprise sphere, creating an enterprise-wide supergraph as the foundation for multiple inter-department applications with internal and external users.
 
 ### Internet of Blah / PURR
 
-Role: Frontend / Design / CEO
-Dates: June 2016 – December 2019
-Main activities
-⬗ User Experience and interaction design
-Cross platform software development and application
-engineering
-⬗ Web application and architectural consulting
-Responsibilities
-Conception, engineering and product development of the
-company‘s product – an indepentend IoT Configuration
-Platform.
-Freelance projects for external clients and IT
-consulting. Corporate and Business Development of the
-startup as a co-founder.
+- **Role:** Frontend / Design / CEO
+- **Dates:** June 2016 – December 2019
+
+**Main activities**
+
+- User experience and interaction design
+- Cross-platform software development and application engineering
+- Web application and architectural consulting
+
+**Responsibilities**
+
+Conception, engineering and product development of the company's product — an independent IoT Configuration Platform. Freelance projects for external clients and IT consulting, plus corporate and business development of the startup as co-founder.
 
 ### ThinxNet GmbH
 
-Role: UI/UX Product Engineer
-Dates: June 2014 – June 2016
-Main activities
-⬗ UI/UX Design and interaction design
-⬗ Mobile application prototyping (iOS, Android)
-⬗ Software development and application engineering
-Responsibilities
-Designing the UI and UX for iOS, Android and HTML5.
-Supervising the different teams of native developers to
-ensure quality as well as a consistent look and feel
-over all platforms.
-Fulfilling the roll of the product owner in our SCRUM
-workflow.
-Supporting the management in the domain of brand
-building.
+- **Role:** UI/UX Product Engineer
+- **Dates:** June 2014 – June 2016
+
+**Main activities**
+
+- UI/UX design and interaction design
+- Mobile application prototyping (iOS, Android)
+- Software development and application engineering
+
+**Responsibilities**
+
+Designed the UI and UX for iOS, Android and HTML5, supervising native developer teams to ensure quality and a consistent look and feel across all platforms, and fulfilling the role of product owner in the SCRUM workflow.
 
 ### natureOffice GmbH
 
-Role: Head of Software Development, Co-founder
-Dates: August 2008 - April 2014
-Main activities
-⬗ Software development and application engineering
-⬗ Business strategy development
-Responsibilities
-Corporate Development of the startup as a co-founder,
-focused on the technical domain.
-Conception, engineering and development of the company‘s
-products from the beginning with only a few users to the
-operative state with hundreds of concurrent users on the
-platforms.
+- **Role:** Head of Software Development, Co-founder
+- **Dates:** August 2008 – April 2014
+
+**Main activities**
+
+- Software development and application engineering
+- Business strategy development
+
+**Responsibilities**
+
+Corporate development of the startup as co-founder, focused on the technical domain. Conception, engineering and development of the company's products from a few users to hundreds of concurrent users.
 
 ### Dynomedia GmbH
 
-Role: Web Developer
-Dates: June 2005 - July 2008
-Main activities
-⬗ Web design and development
-Responsibilities
-Worked in an advertising agency for customers in
-different industries (e.g. Fujitsu Siemens Computers,
-Sony Computer Entertainment Europe)
-Developed an online file management system as second
-mainstay for the agency.
+- **Role:** Web Developer
+- **Dates:** June 2005 – July 2008
+
+**Main activities**
+
+- Web design and development
+
+**Responsibilities**
+
+Worked in an advertising agency for customers in different industries (e.g. Fujitsu Siemens Computers, Sony Computer Entertainment Europe), developing an online file management system as a second mainstay for the agency.
 
 ### KIGG GmbH
 
-Role: Multimedia Producer, Project Manager
-Dates: August 2002 - November 2004
-Main activities
-⬗ Project management
-⬗ Web design
-⬗ Multimedia Production (CD-ROM)
-Responsibilities
-Started as a multimedia producer with the campaign
-documentation of the 2002 mayoral election in Augsburg.
-Worked on web development projects and a candidates
-state campaign for the elections in 2003.
-Responsible for municipal content management system
-projects.
+- **Role:** Multimedia Producer, Project Manager
+- **Dates:** August 2002 – November 2004
+
+**Main activities**
+
+- Project management
+- Web design
+- Multimedia production (CD-ROM)
+
+**Responsibilities**
+
+Started as a multimedia producer with the campaign documentation of the 2002 mayoral election in Augsburg. Worked on web development projects, a candidates' state campaign for the 2003 elections, and municipal content management system projects.
 
 ## Education
 
-SAE Institute Munich, Germany and
-Middlesex University London, UK
-Bachelor of Arts Multimedia
-August 2001 - May 2004
-⬗ Contemporary issues and research
-⬗ Business management, marketing and legal issues
-⬗ Psychology, team management and storyboarding
-⬗ Multimedia and education
-⬗ Multimedia and Online Production
-⬗ Graphic design
+- **Institution:** SAE Institute Munich and Middlesex University London
+- **Degree:** Bachelor of Arts Multimedia
+- **Dates:** August 2001 – May 2004
+
+**Subjects**
+
+- Contemporary issues and research
+- Business management, marketing and legal issues
+- Psychology, team management and storyboarding
+- Multimedia and education
+- Multimedia and Online Production
+- Graphic design
 
 ## Personal Skills and Competences
 
-Leadership &
-Core Strengths
-Leadership & Execution | Stakeholder Communication
-Experienced in leading technology | Strong communicator between business,
-initiatives from strategy to execution, | technology, and leadership teams. Able to
-coordinating stakeholders, prioritizing | translate complex technical topics into
-complex requirements, and delivering | clear business language and align diverse
-scalable digital solutions in | stakeholders around practical outcomes.
-international business environments.
-Technology Interests
-Languages | Focused on applied AI, digital platforms,
-and digital business models that unlock
-German (Mother tongue) | new opportunities and measurable value.
-English (Fluent) | Strong interest in technology-driven
-sustainability and the role of digital
-innovation in building more resilient
-organizations.
+### Leadership & Execution
+
+Experienced in leading technology initiatives from strategy to execution, coordinating stakeholders, prioritizing complex requirements, and delivering scalable digital solutions in international business environments.
+
+### Stakeholder Communication
+
+Strong communicator between business, technology, and leadership teams. Able to translate complex technical topics into clear business language and align diverse stakeholders around practical outcomes.
+
+### Languages
+
+- German — Mother tongue
+- English — Fluent
+
+### Technology Interests
+
+Focused on applied AI, digital platforms, and digital business models that unlock new opportunities and measurable value. Strong interest in technology-driven sustainability and the role of digital innovation in building more resilient organizations.
 
 ## Technologies
 
-Technologies Overview
-Experience and Expertise (extract)
-JavaScript | Agile & SCRUM | HTML
-Expert | Experienced | Expert
-18+ years | 8+ years | 18+ years
-Vue | node | Typescript | Web Components | Graphic Design | CSS
-Expert | Expert | Experienced | Experienced | Experienced | Expert
-6+ years | 10+ years | 4+ years | 7+ years | 15+ years | 15+ years
-CouchDB | GraphQL
-Expert | Experienced
-12+ years | 4+ years
+- JavaScript — Expert — 18+ years
+- Agile & SCRUM — Experienced — 8+ years
+- HTML — Expert — 18+ years
+- Vue — Expert — 6+ years
+- node — Expert — 10+ years
+- Typescript — Experienced — 4+ years
+- Web Components — Experienced — 7+ years
+- Graphic Design — Experienced — 15+ years
+- CSS — Expert — 15+ years
+- CouchDB — Expert — 12+ years
+- GraphQL — Experienced — 4+ years
 
 ## Imprint
 
-Impressum / Imprint | Download CV
-Angaben gemäß § 5 TMG: | If you like my CV you can download a copy as
-PDF by clicking the link below. Perfectly
-Alexander Schedler | suited to print it out and show it to your
-freie Softwareentwicklung | friends and colleagues.
-Dillinger Straße 64a
-86637 Wertingen | Download CV as PDF
-Telefon: +49 171 4123 929
-E-Mail: alex@schedler.co
-Semantic information
-Version: 8.1.0-201
-Last update: 2026-04-27T15:29:56.526Z
-Commit: a4d7dbc
--> Disclaimer, data protection and | Commit count: 201
-copyright statements
+Impressum / Imprint
+
+Angaben gemäß § 5 TMG:
+
+- **Name:** Alexander Schedler
+- **Business:** freie Softwareentwicklung
+- **Address:** Dillinger Straße 64a, 86637 Wertingen, Germany
+- **Phone:** +49 171 4123 929
+- **Email:** alex@schedler.co
+
+A PDF copy of the CV is available for download from the website.
+
+Semantic information:
+
+- **Version:** 8.1.0-203
+- **Last update:** 2026-09-03T08:58:43.782Z
+- **Commit:** bfcdf0b
+- **Commit count:** 203
 
 ## Legal Notices
 
-Datenschutzerklärung | Urheberrecht
-SSL-Verschlüsselung: Diese Seite nutzt aus Gründen | Die durch die Seitenbetreiber erstellten Inhalte und Werke auf
-der Sicherheit und zum Schutz der Übertragung | diesen Seiten unterliegen dem deutschen Urheberrecht. Die
-vertraulicher Inhalte, wie zum Beispiel der | Vervielfältigung, Bearbeitung, Verbreitung und jede Art der
-Anfragen, die Sie an uns als Seitenbetreiber senden, | Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der
-eine SSL-Verschlüsselung. Eine verschlüsselte | schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
-Verbindung erkennen Sie daran, dass die Adresszeile | Downloads und Kopien dieser Seite sind nur für den privaten, nicht
-des Browsers und/oder an dem Schloss-Symbol in Ihrer | kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser
-Browserzeile. Wenn die SSL Verschlüsselung aktiviert | Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte
-ist, können die Daten, die Sie an uns übermitteln, | Dritter beachtet. Insbesondere werden Inhalte Dritter als solche
-nicht von Dritten mitgelesen werden. | gekennzeichnet. Sollten Sie trotzdem auf eine
-Urheberrechtsverletzung aufmerksam werden, bitten wir um einen
-Datenschutz: Die Betreiber dieser Seiten nehmen den | entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen
-Schutz Ihrer persönlichen Daten sehr ernst. Wir | werden wir derartige Inhalte umgehend entfernen.
-behandeln Ihre personenbezogenen Daten vertraulich
-und entsprechend der gesetzlichen
-Datenschutzvorschriften sowie dieser
-Datenschutzerklärung. Die Nutzung unserer Webseite | Haftungsausschluss
-ist in der Regel ohne Angabe personenbezogener Daten
-möglich. Soweit auf unseren Seiten personenbezogene
-Daten (beispielsweise Name, Anschrift oder | Haftung für Inhalte: Als Diensteanbieter sind wir gemäß § 7 Abs.1
-E-Mail-Adressen) erhoben werden, erfolgt dies, | TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen
-soweit möglich, stets auf freiwilliger Basis. Diese | Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als
-Daten werden ohne Ihre ausdrückliche Zustimmung | Diensteanbieter jedoch nicht verpflichtet, übermittelte oder
-nicht an Dritte weitergegeben. Wir weisen darauf | gespeicherte fremde Informationen zu überwachen oder nach Umständen
-hin, dass die Datenübertragung im Internet (z.B. bei | zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
-der Kommunikation per E-Mail) Sicherheitslücken | Verpflichtungen zur Entfernung oder Sperrung der Nutzung von
-aufweisen kann. Ein lückenloser Schutz der Daten vor | Informationen nach den allgemeinen Gesetzen bleiben hiervon
-dem Zugriff durch Dritte ist nicht möglich. | unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem
-Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei
-Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese
+### Datenschutzerklärung (Privacy)
+
+SSL-Verschlüsselung: Diese Seite nutzt aus Gründen der Sicherheit und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel der Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers und/oder an dem Schloss-Symbol in Ihrer Browserzeile. Wenn die SSL Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.
+
+Datenschutz: Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung. Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder E-Mail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.
+
+### Urheberrecht (Copyright)
+
+Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
+
+### Haftungsausschluss (Disclaimer)
+
+Haftung für Inhalte: Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
