@@ -7,7 +7,6 @@ import {
   d_contact4,
   d_contact5,
   d_education,
-  d_freelance,
   d_impressum,
   d_impressum2,
   d_jobs,
@@ -25,7 +24,6 @@ import {
 import {
   m_contact1,
   m_education,
-  m_freelance,
   m_impressum_m,
   m_impressum_m2,
   m_impressum_m3,
@@ -47,7 +45,6 @@ import {
 export const desktopPages = [
   d_start,
   d_contact1,
-  d_freelance,
   d_jobs,
 
   d_jobs_certania,
@@ -79,7 +76,6 @@ export const desktopImpressumFrames = [d_impressum, d_impressum2]
 export const mobilePages = [
   m_start,
   m_contact1,
-  m_freelance,
   m_jobs,
 
   m_jobs_certania,

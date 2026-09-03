@@ -22,20 +22,6 @@ Technology leader with 20+ years of experience in scalable platforms, AI adoptio
 - **GitHub:** https://github.com/kulturpessimist
 - **LinkedIn:** https://www.linkedin.com/in/alexanderschedler
 
-## Freelance Work
-
-### Advisory & Digital Expertise
-
-My focus today is on technology leadership, applied AI, digital platforms, and business transformation. While I am not offering traditional freelance development, I remain open to selected advisory and strategic technology engagements with practical impact. For selected projects, sparring sessions, or advisory conversations, feel free to get in touch.
-
-Focus areas:
-
-- AI Strategy & Implementation
-- Technology Leadership
-- Digital Product Engineering
-- Data & Automation Platforms
-- Modern Web Architecture
-
 ## Career Overview
 
 Companies, newest first:
@@ -233,10 +219,10 @@ A PDF copy of the CV is available for download from the website.
 
 Semantic information:
 
-- **Version:** 8.1.0-204
-- **Last update:** 2026-09-03T09:33:38.317Z
-- **Commit:** 3f2c1e8
-- **Commit count:** 204
+- **Version:** 8.2.0-205
+- **Last update:** 2026-09-03T15:04:28.451Z
+- **Commit:** be342a9
+- **Commit count:** 205
 
 ## Legal Notices
 

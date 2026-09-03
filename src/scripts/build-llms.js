@@ -7,7 +7,6 @@ import {
   CORE_STRENGTHS,
   EDUCATION,
   EMPLOYMENT,
-  FREELANCE,
   LANGUAGES,
   OVERVIEW,
   PERSON,
@@ -234,17 +233,6 @@ ${OVERVIEW}`
     }),
   ].join("\n")
 
-  const freelance = [
-    "## Freelance Work",
-    "",
-    `### ${FREELANCE.title}`,
-    "",
-    FREELANCE.description,
-    "",
-    "Focus areas:",
-    "",
-    bulletList(FREELANCE.topics),
-  ].join("\n")
   const careerOverview = [
     "## Career Overview",
     "",
@@ -287,7 +275,6 @@ ${OVERVIEW}`
     header,
     about,
     contact,
-    freelance,
     careerOverview,
     employmentSection(),
     education,

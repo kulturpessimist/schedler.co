@@ -217,22 +217,6 @@ export const CORE_STRENGTHS = [
 export const TECHNOLOGY_INTERESTS =
   "Focused on applied AI, digital platforms, and digital business models that unlock new opportunities and measurable value. Strong interest in technology-driven sustainability and the role of digital innovation in building more resilient organizations."
 
-/** @typedef {{ title: string; description: string; topics: string[] }} Freelance */
-
-/** @type {Freelance} */
-export const FREELANCE = {
-  title: "Advisory & Digital Expertise",
-  description:
-    "My focus today is on technology leadership, applied AI, digital platforms, and business transformation. While I am not offering traditional freelance development, I remain open to selected advisory and strategic technology engagements with practical impact. For selected projects, sparring sessions, or advisory conversations, feel free to get in touch.",
-  topics: [
-    "AI Strategy & Implementation",
-    "Technology Leadership",
-    "Digital Product Engineering",
-    "Data & Automation Platforms",
-    "Modern Web Architecture",
-  ],
-}
-
 /** @type {string} */
 export const OVERVIEW =
   "This site serves as a professional portfolio and curriculum vitae for Alexander Schedler, showcasing expertise in internet application engineering, development, and management."

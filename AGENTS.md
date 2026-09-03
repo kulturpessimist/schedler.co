@@ -10,7 +10,7 @@
 - Keep changes focused and minimal.
 - Match the existing plain, hand-authored style of the project.
 - Prefer updating existing scripts and source files over adding new tooling.
-- Use semantic versioning: bump the version in `src/version.json` after every change (patch for fixes, minor for features, major for breaking changes).
+- Use semantic versioning: bump the version in `package.json` after every change (patch for fixes, minor for features, major for breaking changes).
 
 ## Commands
 - Install dependencies: `bun install`

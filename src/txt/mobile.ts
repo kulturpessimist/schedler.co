@@ -1,79 +1,6 @@
 // @ts-check
 
 /** @type {string} */
-export const m__ = 
-`                                                                                
-                                                                                
-                                                                                
-                                                                                
-                                                                                
-                                                                                
-                                                                                
-                                                                                
-                                                                                
-        ╔══════════════════════════════════════════════════════════════╗        
-        ║                                                              ║░░      
-        ║                                                              ║░░      
-        ║                                                              ║░░      
-        ║                                                              ║░░      
-        ║    Alexander Schedler                                        ║░░      
-        ║    freelance software developer                              ║░░      
-        ║                                                              ║░░      
-        ║        Currlently I am working salaried for MAN              ║░░      
-        ║        Energy Solutions. I also do freelance work with a     ║░░      
-        ║        key focus on enterprize or b2b web application        ║░░      
-        ║        development and management as well as JavaScript      ║░░      
-        ║        and CouchDB consulting.                               ║░░      
-        ║                                                              ║░░      
-        ║        Need my help? Just write me.                          ║░░      
-        ║                                                              ║░░      
-        ║                                                              ║░░      
-        ║                                                              ║░░      
-        ║                                                              ║░░      
-        ╚══════════════════════════════════════════════════════════════╝░░      
-          ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░│░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░      
-                                        │                                       
-                                        │                                       
-                                        │                                       
-                                        │                                       
-                                        │                                       
-                                        │                                       
-                                        │                                       
-  ┌─────────────────────┐               │                                       
-  │                     │               │                                       
-  │                     │               │              ┌─────────────────────┐  
-  │     Consulting      │◀──────────────┤              │                     │  
-  │                     │               │              │                     │  
-  │                     │               ├─────────────▶│       Storage       │  
-  └─────────────────────┘               │              │                     │  
-                                        │              │                     │  
-                                        │              └─────────────────────┘  
-          ┌─────────────────────┐       │                                       
-          │                     │       │                                       
-          │                     │       │      ┌─────────────────────┐          
-          │        Cloud        │◀──────┤      │                     │          
-          │                     │       │      │                     │          
-          │                     │       ├─────▶│       Backend       │          
-          └─────────────────────┘       │      │                     │          
-                                        │      │                     │          
-                                        │      └─────────────────────┘          
-                                        │                                       
-                                        ▼                                       
-                             ┌─────────────────────┐                            
-                             │                     │                            
-                             │                     │                            
-                             │      Frontend       │                            
-                             │                     │                            
-                             │                     │                            
-                             └─────────────────────┘                            
-                                                                                
-                                                                                
-                                                                                
-                                                                                
-                                                                                
-                                                                                `; 
-
-/** @type {string} */
 export const m_contact1 = 
 `                                                        
                                                         
@@ -168,53 +95,6 @@ export const m_education =
                                                         `; 
 
 /** @type {string} */
-export const m_freelance = 
-`                                                        
-                                                        
-                                                        
-                                                        
-                                                        
-                                                        
-                                                        
-                                                        
-        ╔══════════════════════════════════════╗        
-        ║                                      ║░░      
-        ║                                      ║░░      
-        ║                                      ║░░      
-        ║                                      ║░░      
-        ║   <strong>Alexander Schedler</strong>                 ║░░      
-        ║   freelance software developer       ║░░      
-        ║                                      ║░░      
-        ║     My focus today is on             ║░░      
-        ║     technology leadership,           ║░░      
-        ║     applied AI, digital platforms,   ║░░      
-        ║     and business transformation.     ║░░      
-        ║                                      ║░░      
-        ║     For selected projects,           ║░░      
-        ║     sparring sessions, or advisory   ║░░      
-        ║     conversations, feel free to      ║░░      
-        ║     <a href="mailto:alex@schedler.co">get in touch</a>.                    ║░░      
-        ║                                      ║░░      
-        ║                                      ║░░      
-        ║                                      ║░░      
-        ║                                      ║░░      
-        ╚══════════════════════════════════════╝░░      
-          ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░      
-                                                        
-      ______               _                            
-     (_) |                | |                           
-        _|_  ,_    _   _  | |  __,   _  _    __   _     
-       / | |/  |  |/  |/  |/  /  |  / |/ |  /    |/     
-      (_/      |_/|__/|__/|__/\_/|_/  |  |_/\___/|__/   
-                                                        
-                                                        
-                                                        
-                                                        
-                                                        
-                                                        
-                                                        `; 
-
-/** @type {string} */
 export const m_impressum_m = 
 `                                                        
                                                         
@@ -248,9 +128,9 @@ export const m_impressum_m =
    ┌────────────────────────────────────────────────┐   
    │  Semantic information                          │   
    │ ======================                         │   
-   │ Version: 8.1.0-204                             │   
-   │ Last update: 2026-09-03T09:33:38.317Z          │   
-   │ Commit: 3f2c1e8                                │   
+   │ Version: 8.2.0-205                             │   
+   │ Last update: 2026-09-03T15:04:28.451Z          │   
+   │ Commit: be342a9                                │   
    └────────────────────────────────────────────────┘   
    ┌───────────────┐┌──────────────┐┌───────────────┐   
    │  -> <a href="/impressum/1">Privacy</a>   ││ -> <a href="/impressum/2">Copyright</a> ││ -> <a href="/impressum/3">Disclaimer</a> │   
@@ -968,10 +848,8 @@ export const m_technologies =
 
 /** @type {string[]} */
 const generatedPages = [
-m__,
 m_contact1,
 m_education,
-m_freelance,
 m_impressum_m,
 m_impressum_m2,
 m_impressum_m3,

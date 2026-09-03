@@ -91,14 +91,6 @@ const enrichContent = (content, page) => {
       "/Alex_Schedler":
         '<a href="https://www.xing.com/profile/Alex_Schedler" target="_blank">/Alex_Schedler</a>',
     },
-    "freelance.txt": {
-      "Alexander Schedler": "<strong>Alexander Schedler</strong>",
-      "Advisory & Digital Expertise": "<i>Advisory & Digital Expertise</i>",
-      //"advisory": "<mark>advisory</mark>",
-      //"strategic": "<mark>strategic</mark>",
-      //"engagements": "<mark>engagements</mark>",
-      "get in touch": '<a href="mailto:alex@schedler.co">get in touch</a>',
-    },
 
     "jobs.txt": {
       "Alexander Schedler": "<strong>Alexander Schedler</strong>",
@@ -248,7 +240,6 @@ const enrichContent = (content, page) => {
 
   rules["start.mobile.txt"] = rules["start.txt"];
   rules["contact1.mobile.txt"] = rules["contact0.txt"];
-  rules["freelance.mobile.txt"] = rules["freelance.txt"];
   rules["jobs.mobile.txt"] = rules["jobs.txt"];
   rules["jobs-certania.mobile.txt"] = rules["jobs-certania.txt"];
   rules["jobs-jd.mobile.txt"] = rules["jobs-jd.txt"];

@@ -1,49 +1,6 @@
 // @ts-check
 
 /** @type {string} */
-export const d_freelance = 
-`                                                                                                                                            
-                                                                                                                                            
-                                                                                                                                            
-                                                                                                                                            
-                                                                                                                                            
-                                                                                                ┌────────────────────┐                      
-                                                                                                │                    │                      
-                                                                                                │   AI Strategy &    │                      
-                                                                                      ┌────────▶│   Implementation   │                      
-                                                                                      │         │                    │                      
-             ╔══════════════════════════════════════════════════════════════╗         │         └────────────────────┘                      
-             ║                                                              ║░░       │                  ┌────────────────────┐             
-             ║                                                              ║░░       │                  │                    │             
-             ║                                                              ║░░       │                  │     Technology     │             
-             ║    <strong>Alexander Schedler</strong>                                        ║░░       │   ┌─────────────▶│     Leadership     │             
-             ║    <i>Advisory & Digital Expertise</i>                              ║░░       │   │              │                    │             
-             ║                                                              ║░░       │   │              └────────────────────┘             
-             ║        My focus today is on technology leadership,           ║░░       │   │                    ┌────────────────────┐       
-             ║        applied AI, digital platforms, and business           ║░░       │   │                    │                    │       
-             ║        transformation. While I am not offering               ║░░       │   │                    │  Digital Product   │       
-             ║        traditional freelance development, I remain open      ╠────────┬┴──┬┴───────────────────▶│    Engineering     │       
-             ║        to selected advisory and strategic technology         ║░░      │   │                     │                    │       
-             ║        engagements with practical impact.                    ║░░      │   │                     └────────────────────┘       
-             ║                                                              ║░░      │   │              ┌────────────────────┐              
-             ║        For selected projects, sparring sessions, or          ║░░      │   │              │                    │              
-             ║        advisory conversations, feel free to <a href="mailto:alex@schedler.co">get in touch</a>.    ║░░      │   │              │ Data & Automation  │              
-             ║                                                              ║░░      │   └─────────────▶│     Platforms      │              
-             ║                                                              ║░░      │                  │                    │              
-             ║                                                              ║░░      │                  └────────────────────┘              
-             ╚══════════════════════════════════════════════════════════════╝░░      │          ┌────────────────────┐                      
-               ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░      │          │                    │                      
-                                                                                     │          │     Modern Web     │                      
-                                                                                     └─────────▶│    Architecture    │                      
-                                                                                                │                    │                      
-                                                                                                └────────────────────┘                      
-                                                                                                                                            
-                                                                                                                                            
-                                                                                                                                            
-                                                                                                                                            
-                                                                                                                                            `; 
-
-/** @type {string} */
 export const d_contact1 = 
 `                                                                                                                                            
                                                                                                                                             
@@ -328,10 +285,10 @@ export const d_impressum =
                  │                                                  │   │  Semantic information                           │                 
                  │                                                  │   │ ======================                          │                 
                  │                                                  │   │                                                 │                 
-                 └──────────────────────────────────────────────────┘   │ Version: 8.1.0-204                              │                 
-                                                                        │ Last update: 2026-09-03T09:33:38.317Z           │                 
-                 ┌──────────────────────────────────────────────────┐   │ Commit: 3f2c1e8                                 │                 
-                 │        <a href="/impressum/1">-> Disclaimer, data protection and</a>        │   │ Commit count: 204                               │                 
+                 └──────────────────────────────────────────────────┘   │ Version: 8.2.0-205                              │                 
+                                                                        │ Last update: 2026-09-03T15:04:28.451Z           │                 
+                 ┌──────────────────────────────────────────────────┐   │ Commit: be342a9                                 │                 
+                 │        <a href="/impressum/1">-> Disclaimer, data protection and</a>        │   │ Commit count: 205                               │                 
                  │             <a href="/impressum/1">copyright statements...</a>              │   │                                                 │                 
                  └──────────────────────────────────────────────────┘   └─────────────────────────────────────────────────┘                 
                                                                                                                                             
@@ -905,7 +862,6 @@ export const d_technologies =
 
 /** @type {string[]} */
 const generatedPages = [
-d_freelance,
 d_contact1,
 d_contact2,
 d_contact3,

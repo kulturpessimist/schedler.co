@@ -56,14 +56,6 @@ export const canonicalPageRoutes = [
   },
   {
     page: 2,
-    path: "/freelance",
-    title: "Advisory & Digital Expertise | Alexander Schedler",
-    description:
-      "Selected advisory and strategic technology engagements focused on applied AI, digital platforms, and business transformation.",
-    schemaType: "WebPage",
-  },
-  {
-    page: 3,
     path: "/jobs",
     title: "Curriculum Vitae | Alexander Schedler",
     description:
@@ -71,7 +63,7 @@ export const canonicalPageRoutes = [
     schemaType: "CollectionPage",
   },
   {
-    page: 4,
+    page: 3,
     path: "/job/certania",
     title: "Director Technology at CERTANIA | Alexander Schedler",
     description:
@@ -79,7 +71,7 @@ export const canonicalPageRoutes = [
     schemaType: "WebPage",
   },
   {
-    page: 5,
+    page: 4,
     path: "/job/jd",
     title: "Software Engineering Lead at Johner Institut | Alexander Schedler",
     description:
@@ -87,7 +79,7 @@ export const canonicalPageRoutes = [
     schemaType: "WebPage",
   },
   {
-    page: 6,
+    page: 5,
     path: "/job/man-es",
     title:
       "Senior Software Engineer at MAN Energy Solutions | Alexander Schedler",
@@ -96,7 +88,7 @@ export const canonicalPageRoutes = [
     schemaType: "WebPage",
   },
   {
-    page: 7,
+    page: 6,
     path: "/job/iob",
     title: "Frontend, Design & CEO at Internet of Blah | Alexander Schedler",
     description:
@@ -104,7 +96,7 @@ export const canonicalPageRoutes = [
     schemaType: "WebPage",
   },
   {
-    page: 8,
+    page: 7,
     path: "/job/thinxnet",
     title: "UI/UX Product Engineer at ThinxNet | Alexander Schedler",
     description:
@@ -112,7 +104,7 @@ export const canonicalPageRoutes = [
     schemaType: "WebPage",
   },
   {
-    page: 9,
+    page: 8,
     path: "/job/natureoffice",
     title: "Head of Software Development at natureOffice | Alexander Schedler",
     description:
@@ -120,14 +112,14 @@ export const canonicalPageRoutes = [
     schemaType: "WebPage",
   },
   {
-    page: 10,
+    page: 9,
     path: "/job/dynomedia",
     title: "Web Developer at Dynomedia | Alexander Schedler",
     description: "Web Developer at Dynomedia GmbH from June 2005 to July 2008.",
     schemaType: "WebPage",
   },
   {
-    page: 11,
+    page: 10,
     path: "/job/kigg",
     title: "Multimedia Producer at KIGG | Alexander Schedler",
     description:
@@ -135,7 +127,7 @@ export const canonicalPageRoutes = [
     schemaType: "WebPage",
   },
   {
-    page: 12,
+    page: 11,
     path: "/education",
     title: "Education | Alexander Schedler",
     description:
@@ -143,7 +135,7 @@ export const canonicalPageRoutes = [
     schemaType: "WebPage",
   },
   {
-    page: 13,
+    page: 12,
     path: "/skills",
     title: "Leadership & Core Strengths | Alexander Schedler",
     description:
