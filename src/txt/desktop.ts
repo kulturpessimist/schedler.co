@@ -278,17 +278,17 @@ export const d_impressum =
                  │ Alexander Schedler                               │   │ suited to print it out and show it to your      │                 
                  │ freie Softwareentwicklung                        │   │ friends and colleagues.                         │                 
                  │ Dillinger Straße 64a                             │   │                                                 │                 
-                 │ 86637 Wertingen                                  │   │ <a href="https://literally.download/f/dm21ED" target="_blank">Download CV as PDF</a>                              │                 
+                 │ 86637 Wertingen                                  │   │ <a href="https://drops.schedler.co/f/E9wnVt" target="_blank">Download CV as PDF</a>                              │                 
                  │                                                  │   └─────────────────────────────────────────────────┘                 
                  │ Telefon: <a href="tel:+491714123929">+49 171 4123 929</a>                        │                                                                       
                  │ E-Mail: <a href="mailto:alex@schedler.co">alex@schedler.co</a>                         │   ┌─────────────────────────────────────────────────┐                 
                  │                                                  │   │  Semantic information                           │                 
                  │                                                  │   │ ======================                          │                 
                  │                                                  │   │                                                 │                 
-                 └──────────────────────────────────────────────────┘   │ Version: 8.2.0-205                              │                 
-                                                                        │ Last update: 2026-09-03T15:04:28.451Z           │                 
-                 ┌──────────────────────────────────────────────────┐   │ Commit: be342a9                                 │                 
-                 │        <a href="/impressum/1">-> Disclaimer, data protection and</a>        │   │ Commit count: 205                               │                 
+                 └──────────────────────────────────────────────────┘   │ Version: 8.2.2-207                              │                 
+                                                                        │ Last update: 2026-09-03T16:08:00.029Z           │                 
+                 ┌──────────────────────────────────────────────────┐   │ Commit: a37a9e0                                 │                 
+                 │        <a href="/impressum/1">-> Disclaimer, data protection and</a>        │   │ Commit count: 207                               │                 
                  │             <a href="/impressum/1">copyright statements...</a>              │   │                                                 │                 
                  └──────────────────────────────────────────────────┘   └─────────────────────────────────────────────────┘                 
                                                                                                                                             

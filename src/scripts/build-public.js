@@ -276,6 +276,11 @@ const patchRobots = async () => {
 async function main() {
   const version = await loadVersion()
   await copyDir(publicDir, distDir)
+  await fs.mkdir(path.join(distDir, "images"), { recursive: true })
+  await Bun.write(
+    path.join(distDir, "images", "social-card.png"),
+    Bun.file(path.join(root, "src", "images", "social-card.png")),
+  )
   await writeSitemap(version.update)
   await writeRoutePages()
   await patchRobots()
