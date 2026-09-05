@@ -51,6 +51,8 @@ interface AppState {
   _router: AppRouter | null
   _slideshows: ReturnType<typeof setTimeout>[]
   _glitchMemoize: string
+  _transitionToken: number
+  _transitionTimers: ReturnType<typeof setTimeout>[]
   transitionMode: "glitch" | "flip"
   currentPage: number
   current: string
@@ -71,6 +73,12 @@ interface AppState {
   buildFlipFrame: (from: string, to: string, step?: number, totalSteps?: number) => string
   playSlideshow: (animation?: string[], currentFrame?: number) => void
   stopSlideshow: () => void
+  beginTransition: () => number
+  scheduleTransitionStep: (
+    token: number,
+    callback: () => void,
+    delay: number,
+  ) => void
   initKeyboardListener: () => void
   afterNavigation: () => void
   pathForPage: (page: number) => string
@@ -95,6 +103,8 @@ const app: AppState = {
   _router: null,
   _slideshows: [],
   _glitchMemoize: "",
+  _transitionToken: 0,
+  _transitionTimers: [],
   transitionMode: "flip",
   currentPage: 0,
   current: "",
@@ -161,11 +171,13 @@ const app: AppState = {
     }
 
     router.on("/impressum", () => {
+      this.stopSlideshow()
       const nextFrame = this.impressumFrames[0] || this.current
       this.navigateFromTo(this.current, nextFrame, this.currentPage)
     })
 
     router.on("/impressum/:frame", (match: RouteMatch) => {
+      this.stopSlideshow()
       const frame = Number.parseInt(match.data.frame, 10)
       const nextFrame = this.impressumFrames[frame] || this.impressumFrames[0]
       this.navigateFromTo(this.current, nextFrame, this.currentPage)
@@ -502,7 +514,7 @@ const app: AppState = {
         router.navigate(this.pathForPage(this.prevPage))
       }
       if (event.key === "i") {
-        router.navigate("/impressum")
+        this.options()
       }
       if (event.key === "f") {
         router.navigate(this.pathForPage(2))
@@ -543,9 +555,11 @@ const app: AppState = {
    */
   showPage(page: number): void {
     if (page === 1) {
-      setTimeout(() => {
-        this.playSlideshow(this.contactFrames, 0)
-      }, 500)
+      this._slideshows.push(
+        setTimeout(() => {
+          this.playSlideshow(this.contactFrames, 0)
+        }, 500),
+      )
     } else {
       this.stopSlideshow()
     }
@@ -591,37 +605,70 @@ const app: AppState = {
   },
 
   /**
+   * Cancel pending transition timers and start a fresh transition token.
+   *
+   * Every navigation calls this first, so superseded transitions can never
+   * write content, page index, or metadata after a newer one has started.
+   */
+  beginTransition(): number {
+    for (const handle of this._transitionTimers) {
+      clearTimeout(handle)
+    }
+    this._transitionTimers = []
+    this.loader = " "
+    this._transitionToken += 1
+    return this._transitionToken
+  },
+
+  /**
+   * Run one transition step unless a newer transition superseded it.
+   */
+  scheduleTransitionStep(
+    token: number,
+    callback: () => void,
+    delay: number,
+  ): void {
+    const handle = setTimeout(() => {
+      if (token !== this._transitionToken) {
+        return
+      }
+      callback()
+    }, delay)
+    this._transitionTimers.push(handle)
+  },
+
+  /**
    * Animate visible text characters through random passes into the target page.
    */
   flipModeTransition(from: string, to: string, nextPage: number): void {
+    const token = this.beginTransition()
     const speed = 100
     const totalSteps = 8
     let ivc = 0
-    let ivt = ["", "", "", "", "", ""];
+    let ivt = ["", "", "", "", "", ""]
 
     this.current = from
 
-    const interval = setInterval(() => {
-      this.loader = ivt[ivc++ % ivt.length]
-    }, 75)
+    this._transitionTimers.push(
+      setInterval(() => {
+        this.loader = ivt[ivc++ % ivt.length]
+      }, 75),
+    )
 
     for (let step = 0; step < totalSteps; step++) {
-      setTimeout(
-        (currentStep: number) => {
-          this.current = this.buildFlipFrame(from, to, currentStep, totalSteps)
+      this.scheduleTransitionStep(
+        token,
+        () => {
+          this.current = this.buildFlipFrame(from, to, step, totalSteps)
+
+          if (step === totalSteps - 1) {
+            this.currentPage = nextPage
+            this.loader = " "
+            this.afterNavigation()
+          }
         },
         (step + 1) * speed,
-        step,
       )
-
-      if (step === totalSteps - 1) {
-        setTimeout(() => {
-          this.currentPage = nextPage
-          this.loader = " "
-          clearInterval(interval)
-          this.afterNavigation()
-        }, (step + 1) * speed)
-      }
     }
   },
 
@@ -629,6 +676,8 @@ const app: AppState = {
    * Animate transition from one page string to another.
    */
   navigateFromTo(from: string, to: string, nextPage: number): void {
+    const token = this.beginTransition()
+
     if (prefersReducedMotion()) {
       this.current = to
       this.currentPage = nextPage
@@ -652,35 +701,34 @@ const app: AppState = {
 
     const speed = 20
     let ivc = 0
-    let ivt = ["", "", "", "", "", ""];
+    let ivt = ["", "", "", "", "", ""]
 
-    const interval = setInterval(() => {
-      this.loader = ivt[ivc++ % ivt.length]
-    }, 75)
+    this._transitionTimers.push(
+      setInterval(() => {
+        this.loader = ivt[ivc++ % ivt.length]
+      }, 75),
+    )
 
     const lines = this.current.split("\n").length
     for (let i = 0; i <= lines; i++) {
-      setTimeout(
-        (lineIndex: number) => {
+      this.scheduleTransitionStep(
+        token,
+        () => {
           this.current = this.combine(
             this.glitch(from, 50, Math.random() < 0.9),
             to,
-            lineIndex,
+            i,
           )
+
+          if (i === lines) {
+            this._glitchMemoize = ""
+            this.currentPage = nextPage
+            this.loader = " "
+            this.afterNavigation()
+          }
         },
         i * speed,
-        i,
       )
-
-      if (i === lines) {
-        this._glitchMemoize = ""
-        setTimeout(() => {
-          this.currentPage = nextPage
-          this.loader = " "
-          clearInterval(interval)
-          this.afterNavigation()
-        }, i * speed)
-      }
     }
   },
 
@@ -701,6 +749,9 @@ const app: AppState = {
 
   /**
    * Toggle impressum route state.
+   *
+   * Shared by the `[=]` button and the `i` key: opens `/impressum` from any
+   * page and closes back to `/` from `/impressum` (and its frames).
    */
   options(): void {
     if (!this._router) {
