@@ -86,6 +86,11 @@ const server = Bun.serve({
       return markdownResponse(url.pathname);
     }
 
+    if (pathname !== "/" && pathname.endsWith("/") && isHtmlRoute(url.pathname)) {
+      const target = new URL(pathname.replace(/\/+$/, "") + url.search, url);
+      return Response.redirect(target.toString(), 301);
+    }
+
     const filePath = path.join(distDir, pathname.slice(1));
     const routeFile = Bun.file(path.join(filePath, "index.html"));
 
@@ -104,7 +109,13 @@ const server = Bun.serve({
     }
 
     if (!path.extname(pathname)) {
-      const response = new Response(Bun.file(path.join(distDir, "index.html")), {
+      const fallbackFile = url.pathname.startsWith("/impressum/")
+        ? path.join(distDir, "impressum", "index.html")
+        : path.join(distDir, "index.html");
+      const fallbackPath = await Bun.file(fallbackFile).exists()
+        ? fallbackFile
+        : path.join(distDir, "index.html");
+      const response = new Response(Bun.file(fallbackPath), {
         headers: {
           "Content-Type": "text/html; charset=utf-8",
         },
