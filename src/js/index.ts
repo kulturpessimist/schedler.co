@@ -3,14 +3,7 @@ import { createApp } from "petite-vue"
 import { annotate, annotationGroup } from "rough-notation"
 import "../css/style.css"
 import "../fonts/Monolisa/monolisa.css"
-import {
-  contactFrames,
-  contactFramesMobile,
-  impressumFrames,
-  impressumFramesMobile,
-  pages,
-  pagesMobile,
-} from "./pages"
+import { currentCollections } from "./pages"
 import {
   absoluteUrl,
   canonicalPageRoutes,
@@ -50,6 +43,7 @@ interface AppState {
   impressumFrames: string[]
   _router: AppRouter | null
   _slideshows: ReturnType<typeof setTimeout>[]
+  _transitions: ReturnType<typeof setTimeout>[]
   _glitchMemoize: string
   transitionMode: "glitch" | "flip"
   currentPage: number
@@ -71,6 +65,9 @@ interface AppState {
   buildFlipFrame: (from: string, to: string, step?: number, totalSteps?: number) => string
   playSlideshow: (animation?: string[], currentFrame?: number) => void
   stopSlideshow: () => void
+  stopTransitions: () => void
+  applyOrientation: () => void
+  handleOrientationChange: () => void
   initKeyboardListener: () => void
   afterNavigation: () => void
   pathForPage: (page: number) => string
@@ -94,6 +91,7 @@ const app: AppState = {
   impressumFrames: [],
   _router: null,
   _slideshows: [],
+  _transitions: [],
   _glitchMemoize: "",
   transitionMode: "flip",
   currentPage: 0,
@@ -132,17 +130,13 @@ const app: AppState = {
       this.toggleDarkMode()
     }
 
-    if (window.innerWidth > window.innerHeight) {
-      console.log("+++ landscape +++")
-      this.pages = pages
-      this.contactFrames = contactFrames
-      this.impressumFrames = impressumFrames
-    } else {
-      console.log("+++ portrait +++")
-      this.pages = pagesMobile
-      this.contactFrames = contactFramesMobile
-      this.impressumFrames = impressumFramesMobile
-    }
+    const orientation = window.matchMedia("(orientation: portrait)")
+    orientation.addEventListener("change", () => {
+      this.handleOrientationChange()
+    })
+
+    this.applyOrientation()
+    console.log(orientation.matches ? "+++ portrait +++" : "+++ landscape +++")
 
     this.initKeyboardListener()
     this.current = app.pages[this.currentPage] || ""
@@ -483,6 +477,63 @@ const app: AppState = {
     this._slideshows.forEach((slideshowTimeout) =>
       clearTimeout(slideshowTimeout),
     )
+    this._slideshows = []
+  },
+
+  /**
+   * Stop all pending transition timeouts and loader intervals.
+   */
+  stopTransitions(): void {
+    this._transitions.forEach((transitionTimer) => {
+      clearTimeout(transitionTimer)
+      clearInterval(transitionTimer)
+    })
+    this._transitions = []
+  },
+
+  /**
+   * Point the app state at the page collections matching the current orientation.
+   */
+  applyOrientation(): void {
+    const collections = currentCollections()
+    this.pages = collections.pages
+    this.contactFrames = collections.contactFrames
+    this.impressumFrames = collections.impressumFrames
+  },
+
+  /**
+   * Re-render the active canonical page after a viewport orientation change.
+   */
+  handleOrientationChange(): void {
+    this.stopSlideshow()
+    this.stopTransitions()
+    this.applyOrientation()
+    this.loader = " "
+
+    const path = window.location.pathname || "/"
+
+    if (path.startsWith("/impressum")) {
+      const frameMatch = /^\/impressum\/(\d+)/.exec(path)
+      const frameIndex = frameMatch ? Number.parseInt(frameMatch[1], 10) : 0
+      this.current =
+        this.impressumFrames[frameIndex] || this.impressumFrames[0] || ""
+    } else {
+      const route = canonicalPageRoutes.find((entry) => entry.path === path)
+      if (route) {
+        this.currentPage = route.page
+      }
+      this.current = this.pages[this.currentPage] || ""
+
+      if (this.currentPage === 1 && this.contactFrames.length > 1) {
+        this._slideshows.push(
+          setTimeout(() => {
+            this.playSlideshow(this.contactFrames, 0)
+          }, 500),
+        )
+      }
+    }
+
+    this.afterNavigation()
   },
 
   /**
@@ -543,9 +594,11 @@ const app: AppState = {
    */
   showPage(page: number): void {
     if (page === 1) {
-      setTimeout(() => {
-        this.playSlideshow(this.contactFrames, 0)
-      }, 500)
+      this._slideshows.push(
+        setTimeout(() => {
+          this.playSlideshow(this.contactFrames, 0)
+        }, 500),
+      )
     } else {
       this.stopSlideshow()
     }
@@ -604,23 +657,29 @@ const app: AppState = {
     const interval = setInterval(() => {
       this.loader = ivt[ivc++ % ivt.length]
     }, 75)
+    this._transitions.push(interval)
 
     for (let step = 0; step < totalSteps; step++) {
-      setTimeout(
-        (currentStep: number) => {
-          this.current = this.buildFlipFrame(from, to, currentStep, totalSteps)
-        },
-        (step + 1) * speed,
-        step,
+      this._transitions.push(
+        setTimeout(
+          (currentStep: number) => {
+            this.current = this.buildFlipFrame(from, to, currentStep, totalSteps)
+          },
+          (step + 1) * speed,
+          step,
+        ),
       )
 
       if (step === totalSteps - 1) {
-        setTimeout(() => {
-          this.currentPage = nextPage
-          this.loader = " "
-          clearInterval(interval)
-          this.afterNavigation()
-        }, (step + 1) * speed)
+        this._transitions.push(
+          setTimeout(() => {
+            this.currentPage = nextPage
+            this.loader = " "
+            clearInterval(interval)
+            this._transitions = []
+            this.afterNavigation()
+          }, (step + 1) * speed),
+        )
       }
     }
   },
@@ -657,29 +716,35 @@ const app: AppState = {
     const interval = setInterval(() => {
       this.loader = ivt[ivc++ % ivt.length]
     }, 75)
+    this._transitions.push(interval)
 
     const lines = this.current.split("\n").length
     for (let i = 0; i <= lines; i++) {
-      setTimeout(
-        (lineIndex: number) => {
-          this.current = this.combine(
-            this.glitch(from, 50, Math.random() < 0.9),
-            to,
-            lineIndex,
-          )
-        },
-        i * speed,
-        i,
+      this._transitions.push(
+        setTimeout(
+          (lineIndex: number) => {
+            this.current = this.combine(
+              this.glitch(from, 50, Math.random() < 0.9),
+              to,
+              lineIndex,
+            )
+          },
+          i * speed,
+          i,
+        ),
       )
 
       if (i === lines) {
         this._glitchMemoize = ""
-        setTimeout(() => {
-          this.currentPage = nextPage
-          this.loader = " "
-          clearInterval(interval)
-          this.afterNavigation()
-        }, i * speed)
+        this._transitions.push(
+          setTimeout(() => {
+            this.currentPage = nextPage
+            this.loader = " "
+            clearInterval(interval)
+            this._transitions = []
+            this.afterNavigation()
+          }, i * speed),
+        )
       }
     }
   },
