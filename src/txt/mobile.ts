@@ -23,12 +23,12 @@ export const m_contact1 =
         ║                                      ║░░      
         ║     Want to get in touch?            ║░░      
         ║     Just write me an Email           ║░░      
-        ║     <a href="mailto:alex@schedler.co">alex@schedler.co</a> or call me      ║░░      
-        ║     <a href="tel:+491714123929">+49 171 4 123 929</a> and follow     ║░░      
-        ║     on bluesky <a href="https://bsky.app/profile/alex.schedler.co" target="_blank">@alex.schedler.co</a>     ║░░      
+        ║     <a class="contact-link" href="mailto:alex@schedler.co">alex@schedler.co</a> or call me      ║░░      
+        ║     <a class="contact-link" href="tel:+491714123929">+49 171 4 123 929</a> and follow     ║░░      
+        ║     on bluesky <a class="contact-link" href="https://bsky.app/profile/alex.schedler.co" target="_blank">@alex.schedler.co</a>     ║░░      
         ║     and star my work on Github       ║░░      
-        ║     <a href="https://www.github.com/kulturpessimist" target="_blank">/kulturpessimist</a> or connect me   ║░░      
-        ║     on LinkedIn <a href="https://www.linkedin.com/in/alexanderschedler" target="_blank">/alexanderschedler</a>   ║░░      
+        ║     <a class="contact-link" href="https://www.github.com/kulturpessimist" target="_blank">/kulturpessimist</a> or connect me   ║░░      
+        ║     on LinkedIn <a class="contact-link" href="https://www.linkedin.com/in/alexanderschedler" target="_blank">/alexanderschedler</a>   ║░░      
         ║                                      ║░░      
         ║                                      ║░░      
         ║                                      ║░░      
@@ -109,8 +109,8 @@ export const m_impressum_m =
    │ Dillinger Straße 64a                           │   
    │ 86637 Wertingen                                │   
    │                                                │   
-   │ Telefon: <a href="tel:+491714123929">+49 171 4123 929</a>                      │   
-   │ E-Mail: <a href="mailto:alex@schedler.co">alex@schedler.co</a>                       │   
+   │ Telefon: <a class="contact-link" href="tel:+491714123929">+49 171 4123 929</a>                      │   
+   │ E-Mail: <a class="contact-link" href="mailto:alex@schedler.co">alex@schedler.co</a>                       │   
    │                                                │   
    │                                                │   
    │                                                │   
@@ -123,17 +123,17 @@ export const m_impressum_m =
    │ suited to print it out and show it to your     │   
    │ friends and colleagues.                        │   
    │                                                │   
-   │ <a href="https://drops.schedler.co/f/p7L4iR" target="_blank">Download CV as PDF</a>                             │   
+   │ <a class="imprint-card-link" href="https://drops.schedler.co/f/p7L4iR" target="_blank">Download CV as PDF</a>                             │   
    └────────────────────────────────────────────────┘   
    ┌────────────────────────────────────────────────┐   
    │  Semantic information                          │   
    │ ======================                         │   
-   │ Version: 8.5.5-219                             │   
-   │ Last update: 2026-09-07T09:26:12.977Z          │   
-   │ Commit: cb735a1                                │   
+   │ Version: 8.5.6-220                             │   
+   │ Last update: 2026-09-07T10:02:07.368Z          │   
+   │ Commit: 62c29bd                                │   
    └────────────────────────────────────────────────┘   
    ┌───────────────┐┌──────────────┐┌───────────────┐   
-   │  -> <a href="/impressum/1">Privacy</a>   ││ -> <a href="/impressum/2">Copyright</a> ││ -> <a href="/impressum/3">Disclaimer</a> │   
+   │  -> <a class="imprint-card-link" href="/impressum/1">Privacy</a>   ││ -> <a class="imprint-card-link" href="/impressum/2">Copyright</a> ││ -> <a class="imprint-card-link" href="/impressum/3">Disclaimer</a> │   
    └───────────────┘└──────────────┘└───────────────┘   
                                                         
                                                         
@@ -182,7 +182,7 @@ export const m_impressum_m2 =
    │ durch Dritte ist nicht möglich.                │   
    └────────────────────────────────────────────────┘   
    ┌───────────────┐┌──────────────┐┌───────────────┐   
-   │  -> <a href="/impressum/0">Imprint</a>   ││ -> <a href="/impressum/2">Copyright</a> ││ -> <a href="/impressum/3">Disclaimer</a> │   
+   │  -> <a class="imprint-card-link" href="/impressum/0">Imprint</a>   ││ -> <a class="imprint-card-link" href="/impressum/2">Copyright</a> ││ -> <a class="imprint-card-link" href="/impressum/3">Disclaimer</a> │   
    └───────────────┘└──────────────┘└───────────────┘   
                                                         
                                                         
@@ -220,7 +220,7 @@ export const m_impressum_m3 =
    │ Inhalte umgehend entfernen.                    │   
    └────────────────────────────────────────────────┘   
    ┌───────────────┐┌──────────────┐┌───────────────┐   
-   │  -> <a href="/impressum/0">Imprint</a>   ││  -> <a href="/impressum/1">Privacy</a>  ││ -> <a href="/impressum/3">Disclaimer</a> │   
+   │  -> <a class="imprint-card-link" href="/impressum/0">Imprint</a>   ││  -> <a class="imprint-card-link" href="/impressum/1">Privacy</a>  ││ -> <a class="imprint-card-link" href="/impressum/3">Disclaimer</a> │   
    └───────────────┘└──────────────┘└───────────────┘   
                                                         
                                                         
@@ -267,7 +267,7 @@ export const m_impressum_m4 =
    │ umgehend entfernen.                            │   
    └────────────────────────────────────────────────┘   
    ┌───────────────┐┌──────────────┐┌───────────────┐   
-   │  -> <a href="/impressum/0">Imprint</a>   ││  -> <a href="/impressum/1">Privacy</a>  ││ -> <a href="/impressum/2">Copyright</a>  │   
+   │  -> <a class="imprint-card-link" href="/impressum/0">Imprint</a>   ││  -> <a class="imprint-card-link" href="/impressum/1">Privacy</a>  ││ -> <a class="imprint-card-link" href="/impressum/2">Copyright</a>  │   
    └───────────────┘└──────────────┘└───────────────┘   
                                                         
                                                         
@@ -665,36 +665,36 @@ export const m_jobs =
                                                         
                                 ┌────────────────┐      
                                 │                │░░    
-      ┌────────────────────────▶│    <a href="/job/certania" data-navigo>CERTANIA</a>    │░░    
+      ┌────────────────────────▶│    <a class="employer-card-link" href="/job/certania" data-navigo>CERTANIA</a>    │░░    
       │                         │                │░░    
       │                         └────────────────┘░░    
       │  ┌────────────────┐       ░░░░░░░░░░░░░░░░░░    
       │  │                │░░                           
-      └──│ <a href="/job/jd" data-navigo>Johner Institut</a>│◀────────────────────────┐   
+      └──│ <a class="employer-card-link" href="/job/jd" data-navigo>Johner Institut</a>│◀────────────────────────┐   
          │                │░░                       │   
          └────────────────┘░░   ┌────────────────┐  │   
            ░░░░░░░░░░░░░░░░░░   │                │░░│   
-      ┌────────────────────────▶│ <a href="/job/man-es" data-navigo>MAN Energy Sol.</a>│──┘   
+      ┌────────────────────────▶│ <a class="employer-card-link" href="/job/man-es" data-navigo>MAN Energy Sol.</a>│──┘   
       │                         │                │░░    
       │  ┌────────────────┐     └────────────────┘░░    
       │  │                │░░     ░░░░░░░░░░░░░░░░░░    
-      └──│<a href="/job/iob" data-navigo>Internet of Blah</a>│◀────────────────────────┐   
+      └──│<a class="employer-card-link" href="/job/iob" data-navigo>Internet of Blah</a>│◀────────────────────────┐   
          │                │░░                       │   
          └────────────────┘░░   ┌────────────────┐  │   
            ░░░░░░░░░░░░░░░░░░   │                │░░│   
-      ┌────────────────────────▶│    <a href="/job/thinxnet" data-navigo>ThinxNet</a>    │──┘   
+      ┌────────────────────────▶│    <a class="employer-card-link" href="/job/thinxnet" data-navigo>ThinxNet</a>    │──┘   
       │                         │                │░░    
       │  ┌────────────────┐     └────────────────┘░░    
       │  │                │░░     ░░░░░░░░░░░░░░░░░░    
-      └──│  <a href="/job/natureoffice" data-navigo>natureOffice</a>  │◀────────────────────────┐   
+      └──│  <a class="employer-card-link" href="/job/natureoffice" data-navigo>natureOffice</a>  │◀────────────────────────┐   
          │                │░░                       │   
          └────────────────┘░░   ┌────────────────┐  │   
            ░░░░░░░░░░░░░░░░░░   │                │░░│   
-      ┌────────────────────────▶│   <a href="/job/dynomedia" data-navigo>Dynomedia</a>    │──┘   
+      ┌────────────────────────▶│   <a class="employer-card-link" href="/job/dynomedia" data-navigo>Dynomedia</a>    │──┘   
       │                         │                │░░    
       │  ┌────────────────┐     └────────────────┘░░    
       │  │                │░░     ░░░░░░░░░░░░░░░░░░    
-      └──│      <a href="/job/kigg" data-navigo>KIGG</a>      │░░                           
+      └──│      <a class="employer-card-link" href="/job/kigg" data-navigo>KIGG</a>      │░░                           
          │                │░░                           
          └────────────────┘░░                           
            ░░░░░░░░░░░░░░░░░░                           

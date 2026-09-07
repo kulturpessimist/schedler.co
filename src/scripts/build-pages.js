@@ -80,14 +80,14 @@ const enrichContent = (content, page) => {
       "Alexander Schedler": "<strong>Alexander Schedler</strong>",
       "District of Augsburg, Germany": "<i>District of Augsburg, Germany</i>",
       "alex@schedler.co":
-        '<a href="mailto:alex@schedler.co">alex@schedler.co</a>',
-      "+49 171 4 123 929": '<a href="tel:+491714123929">+49 171 4 123 929</a>',
+        '<a class="contact-link" href="mailto:alex@schedler.co">alex@schedler.co</a>',
+      "+49 171 4 123 929": '<a class="contact-link" href="tel:+491714123929">+49 171 4 123 929</a>',
       "@alex.schedler.co":
-        '<a href="https://bsky.app/profile/alex.schedler.co" target="_blank">@alex.schedler.co</a>',
+        '<a class="contact-link" href="https://bsky.app/profile/alex.schedler.co" target="_blank">@alex.schedler.co</a>',
       "/kulturpessimist":
-        '<a href="https://www.github.com/kulturpessimist" target="_blank">/kulturpessimist</a>',
+        '<a class="contact-link" href="https://www.github.com/kulturpessimist" target="_blank">/kulturpessimist</a>',
       "/alexanderschedler":
-        '<a href="https://www.linkedin.com/in/alexanderschedler" target="_blank">/alexanderschedler</a>',
+        '<a class="contact-link" href="https://www.linkedin.com/in/alexanderschedler" target="_blank">/alexanderschedler</a>',
       "/Alex_Schedler":
         '<a href="https://www.xing.com/profile/Alex_Schedler" target="_blank">/Alex_Schedler</a>',
     },
@@ -95,17 +95,17 @@ const enrichContent = (content, page) => {
     "jobs.txt": {
       "Alexander Schedler": "<strong>Alexander Schedler</strong>",
       "Curriculum Vitae": "<i>Curriculum Vitae</i>",
-      CERTANIA: '<a href="/job/certania" data-navigo>CERTANIA</a>',
-      "Johner Institut": '<a href="/job/jd" data-navigo>Johner Institut</a>',
+      CERTANIA: '<a class="employer-card-link" href="/job/certania" data-navigo>CERTANIA</a>',
+      "Johner Institut": '<a class="employer-card-link" href="/job/jd" data-navigo>Johner Institut</a>',
       "MAN Energy Solutions":
-        '<a href="/job/man-es" data-navigo>MAN Energy Solutions</a>',
+        '<a class="employer-card-link" href="/job/man-es" data-navigo>MAN Energy Solutions</a>',
       "MAN Energy Sol.":
-        '<a href="/job/man-es" data-navigo>MAN Energy Sol.</a>',
-      "Internet of Blah": '<a href="/job/iob" data-navigo>Internet of Blah</a>',
-      ThinxNet: '<a href="/job/thinxnet" data-navigo>ThinxNet</a>',
-      natureOffice: '<a href="/job/natureoffice" data-navigo>natureOffice</a>',
-      Dynomedia: '<a href="/job/dynomedia" data-navigo>Dynomedia</a>',
-      KIGG: '<a href="/job/kigg" data-navigo>KIGG</a>',
+        '<a class="employer-card-link" href="/job/man-es" data-navigo>MAN Energy Sol.</a>',
+      "Internet of Blah": '<a class="employer-card-link" href="/job/iob" data-navigo>Internet of Blah</a>',
+      ThinxNet: '<a class="employer-card-link" href="/job/thinxnet" data-navigo>ThinxNet</a>',
+      natureOffice: '<a class="employer-card-link" href="/job/natureoffice" data-navigo>natureOffice</a>',
+      Dynomedia: '<a class="employer-card-link" href="/job/dynomedia" data-navigo>Dynomedia</a>',
+      KIGG: '<a class="employer-card-link" href="/job/kigg" data-navigo>KIGG</a>',
     },
     "jobs-certania.txt": {
       "Certania Holding GmbH":
@@ -195,11 +195,11 @@ const enrichContent = (content, page) => {
     },
 
     "impressum_m.txt": {
-      "+49 171 4123 929": '<a href="tel:+491714123929">+49 171 4123 929</a>',
+      "+49 171 4123 929": '<a class="contact-link" href="tel:+491714123929">+49 171 4123 929</a>',
       "alex@schedler.co":
-        '<a href="mailto:alex@schedler.co">alex@schedler.co</a>',
+        '<a class="contact-link" href="mailto:alex@schedler.co">alex@schedler.co</a>',
       "Download CV as PDF":
-        '<a href="https://drops.schedler.co/f/p7L4iR" target="_blank">Download CV as PDF</a>',
+        '<a class="imprint-card-link" href="https://drops.schedler.co/f/p7L4iR" target="_blank">Download CV as PDF</a>',
 
       "{{version-------------}}": String(version.version).padEnd(24, " "),
       "{{update--------------}}": String(version.update).padEnd(24, " "),
@@ -207,28 +207,28 @@ const enrichContent = (content, page) => {
       "{{count---------------}}": String(version.count).padEnd(24, " "),
       "{{semver--------------}}": String(version.semver).padEnd(24, " "),
 
-      "-> Imprint": '-> <a href="/impressum/0">Imprint</a>',
-      "-> Privacy": '-> <a href="/impressum/1">Privacy</a>',
-      "-> Copyright": '-> <a href="/impressum/2">Copyright</a>',
-      "-> Disclaimer": '-> <a href="/impressum/3">Disclaimer</a>',
+      "-> Imprint": '-> <a class="imprint-card-link" href="/impressum/0">Imprint</a>',
+      "-> Privacy": '-> <a class="imprint-card-link" href="/impressum/1">Privacy</a>',
+      "-> Copyright": '-> <a class="imprint-card-link" href="/impressum/2">Copyright</a>',
+      "-> Disclaimer": '-> <a class="imprint-card-link" href="/impressum/3">Disclaimer</a>',
     },
     "impressum_m2.txt": {
-      "-> Imprint": '-> <a href="/impressum/0">Imprint</a>',
-      "-> Privacy": '-> <a href="/impressum/1">Privacy</a>',
-      "-> Copyright": '-> <a href="/impressum/2">Copyright</a>',
-      "-> Disclaimer": '-> <a href="/impressum/3">Disclaimer</a>',
+      "-> Imprint": '-> <a class="imprint-card-link" href="/impressum/0">Imprint</a>',
+      "-> Privacy": '-> <a class="imprint-card-link" href="/impressum/1">Privacy</a>',
+      "-> Copyright": '-> <a class="imprint-card-link" href="/impressum/2">Copyright</a>',
+      "-> Disclaimer": '-> <a class="imprint-card-link" href="/impressum/3">Disclaimer</a>',
     },
     "impressum_m3.txt": {
-      "-> Imprint": '-> <a href="/impressum/0">Imprint</a>',
-      "-> Privacy": '-> <a href="/impressum/1">Privacy</a>',
-      "-> Copyright": '-> <a href="/impressum/2">Copyright</a>',
-      "-> Disclaimer": '-> <a href="/impressum/3">Disclaimer</a>',
+      "-> Imprint": '-> <a class="imprint-card-link" href="/impressum/0">Imprint</a>',
+      "-> Privacy": '-> <a class="imprint-card-link" href="/impressum/1">Privacy</a>',
+      "-> Copyright": '-> <a class="imprint-card-link" href="/impressum/2">Copyright</a>',
+      "-> Disclaimer": '-> <a class="imprint-card-link" href="/impressum/3">Disclaimer</a>',
     },
     "impressum_m4.txt": {
-      "-> Imprint": '-> <a href="/impressum/0">Imprint</a>',
-      "-> Privacy": '-> <a href="/impressum/1">Privacy</a>',
-      "-> Copyright": '-> <a href="/impressum/2">Copyright</a>',
-      "-> Disclaimer": '-> <a href="/impressum/3">Disclaimer</a>',
+      "-> Imprint": '-> <a class="imprint-card-link" href="/impressum/0">Imprint</a>',
+      "-> Privacy": '-> <a class="imprint-card-link" href="/impressum/1">Privacy</a>',
+      "-> Copyright": '-> <a class="imprint-card-link" href="/impressum/2">Copyright</a>',
+      "-> Disclaimer": '-> <a class="imprint-card-link" href="/impressum/3">Disclaimer</a>',
     },
   };
   rules["contact1.txt"] = rules["contact0.txt"];
