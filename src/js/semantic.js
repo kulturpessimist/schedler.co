@@ -11,7 +11,7 @@ import {
   TECHNOLOGY_INTERESTS,
 } from "./resume.js"
 
-const PDF_URL = "https://drops.schedler.co/f/E9wnVt"
+const PDF_URL = "https://drops.schedler.co/f/ZGquwW"
 
 /** @param {boolean} portrait */
 const versionInfo = (portrait) => {
