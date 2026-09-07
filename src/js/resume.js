@@ -36,7 +36,7 @@ export const PERSON = {
   ],
 }
 
-/** @typedef {{ path: string; organization: string; role: string; startDate: string; endDate?: string; description: string; activities: string[] }} Employment */
+/** @typedef {{ path: string; organization: string; organizationUrl?: string; role: string; startDate: string; endDate?: string; description: string; activities: string[] }} Employment */
 
 /**
  * Employment history, newest first. Entries without an `endDate` are the
@@ -48,6 +48,7 @@ export const EMPLOYMENT = [
   {
     path: "/job/certania",
     organization: "CERTANIA Holding GmbH",
+    organizationUrl: "https://certania.com/",
     role: "Director Technology",
     startDate: "2024-01",
     description:
@@ -61,6 +62,7 @@ export const EMPLOYMENT = [
   {
     path: "/job/jd",
     organization: "Johner Institut GmbH",
+    organizationUrl: "https://www.johner-institute.com",
     role: "Senior Software Engineering Lead",
     startDate: "2023-02",
     endDate: "2023-12",
@@ -75,6 +77,7 @@ export const EMPLOYMENT = [
   {
     path: "/job/man-es",
     organization: "MAN Energy Solutions SE",
+    organizationUrl: "https://www.man-es.com",
     role: "Senior Software Engineer",
     startDate: "2018-06",
     endDate: "2023-01",
@@ -104,6 +107,7 @@ export const EMPLOYMENT = [
   {
     path: "/job/thinxnet",
     organization: "ThinxNet GmbH",
+    organizationUrl: "https://thinxnet.com",
     role: "UI/UX Product Engineer",
     startDate: "2014-06",
     endDate: "2016-06",
@@ -118,6 +122,7 @@ export const EMPLOYMENT = [
   {
     path: "/job/natureoffice",
     organization: "natureOffice GmbH",
+    organizationUrl: "https://www.natureoffice.com",
     role: "Head of Software Development, Co-founder",
     startDate: "2008-08",
     endDate: "2014-04",
@@ -131,6 +136,8 @@ export const EMPLOYMENT = [
   {
     path: "/job/dynomedia",
     organization: "Dynomedia GmbH",
+    organizationUrl:
+      "https://web.archive.org/web/20070208042813/http://www.dynomedia.com:80/de/",
     role: "Web Developer",
     startDate: "2005-06",
     endDate: "2008-07",
@@ -141,6 +148,7 @@ export const EMPLOYMENT = [
   {
     path: "/job/kigg",
     organization: "KIGG GmbH",
+    organizationUrl: "https://www.kigg.de",
     role: "Multimedia Producer, Project Manager",
     startDate: "2002-08",
     endDate: "2004-11",

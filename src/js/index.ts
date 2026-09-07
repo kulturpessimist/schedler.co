@@ -4,6 +4,7 @@ import { annotate, annotationGroup } from "rough-notation"
 import "../css/style.css"
 import "../fonts/Monolisa/monolisa.css"
 import { currentCollections } from "./pages"
+import { presentationHtml, semanticHtmlForPath } from "./semantic.js"
 import {
   absoluteUrl,
   canonicalPageRoutes,
@@ -37,6 +38,26 @@ interface TextSlot {
 const prefersReducedMotion = (): boolean =>
   window.matchMedia("(prefers-reduced-motion: reduce)").matches
 
+const pageTitleForPath = (
+  pathname: string,
+  defaultTitle: string,
+  portrait: boolean,
+): string => {
+  if (!pathname.startsWith("/impressum/")) return defaultTitle
+  const frame = Number.parseInt(pathname.split("/")[2] || "0", 10)
+  if (!portrait) {
+    return frame === 1
+      ? "Privacy, Copyright and Disclaimer | Schedler.pro"
+      : defaultTitle
+  }
+  return [
+    defaultTitle,
+    "Privacy | Schedler.pro",
+    "Copyright | Schedler.pro",
+    "Disclaimer | Schedler.pro",
+  ][frame] || defaultTitle
+}
+
 interface AppState {
   pages: string[]
   contactFrames: string[]
@@ -48,11 +69,19 @@ interface AppState {
   _transitionTimers: ReturnType<typeof setTimeout>[]
   transitionMode: "glitch" | "flip"
   currentPage: number
+  currentPath: string
   current: string
+  semantic: string
+  semanticFocus: string
   loader: string
   readonly prevPage: number
   readonly nextPage: number
   readonly currentGetter: string | undefined
+  readonly asciiCurrent: string
+  readonly previousPageLabel: string
+  readonly nextPageLabel: string
+  readonly pagePosition: string
+  readonly imprintLabel: string
   init: () => void
   toggleDarkMode: () => void
   annotateAllTheThings: () => void
@@ -75,6 +104,9 @@ interface AppState {
   applyOrientation: () => void
   handleOrientationChange: () => void
   initKeyboardListener: () => void
+  handleAsciiClick: (event: MouseEvent) => void
+  handleSemanticFocus: (event: FocusEvent) => void
+  handleSemanticBlur: () => void
   afterNavigation: () => void
   pathForPage: (page: number) => string
   showPage: (page: number) => void
@@ -102,7 +134,13 @@ const app: AppState = {
   _transitionTimers: [],
   transitionMode: "flip",
   currentPage: 0,
+  currentPath: window.location.pathname || "/",
   current: "",
+  semantic: semanticHtmlForPath(
+    window.location.pathname || "/",
+    window.matchMedia("(orientation: portrait)").matches,
+  ),
+  semanticFocus: "",
   loader: " ",
 
   /**
@@ -124,6 +162,31 @@ const app: AppState = {
    */
   get currentGetter(): string | undefined {
     return app.pages[this.currentPage]
+  },
+
+  /** Present the ASCII links as mouse-operable, non-focusable text. */
+  get asciiCurrent(): string {
+    return presentationHtml(this.current)
+  },
+
+  get previousPageLabel(): string {
+    const route = canonicalPageRoutes.find((entry) => entry.page === this.prevPage)
+    return `Previous page: ${route?.title || "CV"}`
+  },
+
+  get nextPageLabel(): string {
+    const route = canonicalPageRoutes.find((entry) => entry.page === this.nextPage)
+    return `Next page: ${route?.title || "CV"}`
+  },
+
+  get pagePosition(): string {
+    return `Page ${this.currentPage + 1} of ${this.pages.length}`
+  },
+
+  get imprintLabel(): string {
+    return this.currentPath.startsWith("/impressum")
+      ? "Close imprint (I)"
+      : "Open imprint (I)"
   },
 
   /**
@@ -220,6 +283,9 @@ const app: AppState = {
     const ag = annotationGroup(annotations)
     typedWindow.ag = ag
     ag.show()
+    document.querySelectorAll(".rough-annotation").forEach((annotation) => {
+      annotation.setAttribute("aria-hidden", "true")
+    })
   },
 
   /**
@@ -565,6 +631,32 @@ const app: AppState = {
     })
   },
 
+  /** Follow a presentation-only ASCII link without making it focusable. */
+  handleAsciiClick(event: MouseEvent): void {
+    const target = event.target as Element | null
+    const link = target?.closest<HTMLElement>("[data-ascii-href]")
+    const href = link?.dataset.asciiHref
+    if (!href) return
+
+    if (href.startsWith("/")) {
+      this._router?.navigate(href)
+    } else if (href.startsWith("mailto:") || href.startsWith("tel:")) {
+      window.location.href = href
+    } else {
+      window.open(href, "_blank", "noopener,noreferrer")
+    }
+  },
+
+  /** Show an unobtrusive visible focus indicator for links in the hidden view. */
+  handleSemanticFocus(event: FocusEvent): void {
+    const link = (event.target as Element | null)?.closest("a")
+    this.semanticFocus = link ? `Focused link: ${link.textContent?.trim() || "Link"}` : ""
+  },
+
+  handleSemanticBlur(): void {
+    this.semanticFocus = ""
+  },
+
   /**
    * Re-bind page links and refresh annotations after route updates.
    */
@@ -573,8 +665,10 @@ const app: AppState = {
       return
     }
 
-    setTimeout(() => this.syncMetadata())
-    this._router.updatePageLinks()
+    setTimeout(() => {
+      this.syncMetadata()
+      setTimeout(() => this._router?.updatePageLinks())
+    })
     setTimeout(() => {
       this.annotateAllTheThings()
     }, 250)
@@ -622,16 +716,23 @@ const app: AppState = {
       document.querySelector(selector)?.setAttribute("content", content)
     }
 
-    document.title = route.title
+    this.currentPath = window.location.pathname || "/"
+    const portrait = window.matchMedia("(orientation: portrait)").matches
+    const title = pageTitleForPath(this.currentPath, route.title, portrait)
+    this.semantic = semanticHtmlForPath(
+      this.currentPath,
+      portrait,
+    )
+    document.title = title
     if (heading) {
-      heading.textContent = route.title
+      heading.textContent = title
     }
     canonical?.setAttribute("href", absolutePath)
     setMetaContent('meta[name="description"]', route.description)
     setMetaContent('meta[property="og:url"]', absolutePath)
-    setMetaContent('meta[property="og:title"]', route.title)
+    setMetaContent('meta[property="og:title"]', title)
     setMetaContent('meta[property="og:description"]', route.description)
-    setMetaContent('meta[name="twitter:title"]', route.title)
+    setMetaContent('meta[name="twitter:title"]', title)
     setMetaContent('meta[name="twitter:description"]', route.description)
 
     if (structuredData) {

@@ -8,7 +8,7 @@
 
 ## Working rules
 - Keep changes focused and minimal.
-- Match the existing plain, hand-authored style of the project.
+- Match the existing plain, hand-authored style of the project; do not use CSS frameworks or libraries such as Tailwind CSS or daisyUI.
 - Prefer updating existing scripts and source files over adding new tooling.
 - Use semantic versioning: bump the version in `package.json` after every change (patch for fixes, minor for features, major for breaking changes).
 
@@ -34,6 +34,7 @@
 - `src/txt/` is the on-screen source: the hand-authored ASCII-art CV rendered by the site.
 - `src/js/resume.js` is the machine-readable source of the same CV facts (person, employment, education, skills, technologies, contact). It feeds the JSON-LD graph in `src/js/routes.js` and the generated `public/llms.txt` in `src/scripts/build-llms.js`.
 - When CV content changes (roles, dates, skills, contact, education), update both `src/txt/` and `src/js/resume.js` by hand; `resume.js` is not derived from the txt files.
+- Every content change or addition must update the semantic accessibility representation in `src/js/semantic.js` in the same change. Facts already modeled in `src/js/resume.js` flow into it automatically; keep any explicit semantic-only text synchronized with the matching `src/txt/` content.
 - `public/llms.txt` and the per-route JSON-LD in `dist/` are generated artifacts — do not edit them directly.
 
 ## Validation

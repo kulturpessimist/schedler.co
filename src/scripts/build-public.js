@@ -10,6 +10,7 @@ import {
   siteRoutes,
   structuredDataForPath,
 } from "../js/routes.js"
+import { presentationHtml, semanticHtmlForPath } from "../js/semantic.js"
 
 /** @type {string} */
 const root = process.cwd()
@@ -97,17 +98,20 @@ const renderRouteHtml = (template, route) => {
     structuredDataForPath(route.path),
   ).replaceAll("<", "\\u003c")
   const content = contentForRoute(route)
+  const semanticContent = semanticHtmlForPath(route.path)
 
   return template
     .replace(
-      /(<pre v-html="current"><\/pre>)/,
-      (match) => `${match}\n      <noscript><pre>${content}</pre></noscript>`,
+      /(<pre v-html="asciiCurrent"><\/pre>)/,
+      (match) =>
+        `${match}\n      <noscript><pre>${presentationHtml(content)}</pre></noscript>`,
+    )
+    .replace(
+      /(<article[^>]*data-semantic-view[^>]*>)[\s\S]*?(<\/article>)/,
+      `$1${semanticContent}$2`,
     )
     .replace(/<title>[\s\S]*?<\/title>/, `<title>${title}</title>`)
-    .replace(
-      /(<h1 id="page-title"[^>]*>)[\s\S]*?(<\/h1>)/,
-      `$1${title}$2`,
-    )
+    .replace(/(<h1 id="page-title"[^>]*>)[\s\S]*?(<\/h1>)/, `$1${title}$2`)
     .replace(
       /(<meta name="description"\s+content=")[^"]*("\s*\/?>)/,
       `$1${description}$2`,
@@ -154,6 +158,17 @@ const validateRouteHtml = (html, route) => {
 
   if (!html.includes(`<link rel="canonical" href="${pageUrl}"`) || !jsonLd) {
     throw new Error(`Missing route metadata for ${route.path}`)
+  }
+
+  if (!html.includes("data-semantic-view") || !html.includes("<section")) {
+    throw new Error(`Missing semantic content for ${route.path}`)
+  }
+
+  const asciiTree = html.match(
+    /<div class="ascii-view" aria-hidden="true"[^>]*>([\s\S]*?)<\/div>/,
+  )?.[1]
+  if (!asciiTree || /<a\b/.test(asciiTree)) {
+    throw new Error(`Focusable content found in ASCII view for ${route.path}`)
   }
 
   const graph = /** @type {Record<string, unknown>[]} */ (
