@@ -45,9 +45,21 @@ const matchHandler = () => {
 match.addEventListener("change", matchHandler)
 matchHandler()
 
+/**
+ * Page collections matching the current orientation.
+ *
+ * @returns {{ pages: string[]; contactFrames: string[]; impressumFrames: string[] }}
+ */
+const currentCollections = () => ({
+  pages,
+  contactFrames,
+  impressumFrames,
+})
+
 export {
   contactFrames,
   contactFramesMobile,
+  currentCollections,
   impressumFrames,
   impressumFramesMobile,
   pages,

@@ -3,14 +3,7 @@ import { createApp } from "petite-vue"
 import { annotate, annotationGroup } from "rough-notation"
 import "../css/style.css"
 import "../fonts/Monolisa/monolisa.css"
-import {
-  contactFrames,
-  contactFramesMobile,
-  impressumFrames,
-  impressumFramesMobile,
-  pages,
-  pagesMobile,
-} from "./pages"
+import { currentCollections } from "./pages"
 import {
   absoluteUrl,
   canonicalPageRoutes,
@@ -79,6 +72,8 @@ interface AppState {
     callback: () => void,
     delay: number,
   ) => void
+  applyOrientation: () => void
+  handleOrientationChange: () => void
   initKeyboardListener: () => void
   afterNavigation: () => void
   pathForPage: (page: number) => string
@@ -142,17 +137,13 @@ const app: AppState = {
       this.toggleDarkMode()
     }
 
-    if (window.innerWidth > window.innerHeight) {
-      console.log("+++ landscape +++")
-      this.pages = pages
-      this.contactFrames = contactFrames
-      this.impressumFrames = impressumFrames
-    } else {
-      console.log("+++ portrait +++")
-      this.pages = pagesMobile
-      this.contactFrames = contactFramesMobile
-      this.impressumFrames = impressumFramesMobile
-    }
+    const orientation = window.matchMedia("(orientation: portrait)")
+    orientation.addEventListener("change", () => {
+      this.handleOrientationChange()
+    })
+
+    this.applyOrientation()
+    console.log(orientation.matches ? "+++ portrait +++" : "+++ landscape +++")
 
     this.initKeyboardListener()
     this.current = app.pages[this.currentPage] || ""
@@ -495,6 +486,52 @@ const app: AppState = {
     this._slideshows.forEach((slideshowTimeout) =>
       clearTimeout(slideshowTimeout),
     )
+    this._slideshows = []
+  },
+
+  /**
+   * Point the app state at the page collections matching the current orientation.
+   */
+  applyOrientation(): void {
+    const collections = currentCollections()
+    this.pages = collections.pages
+    this.contactFrames = collections.contactFrames
+    this.impressumFrames = collections.impressumFrames
+  },
+
+  /**
+   * Re-render the active canonical page after a viewport orientation change.
+   */
+  handleOrientationChange(): void {
+    this.stopSlideshow()
+    this.beginTransition()
+    this.applyOrientation()
+    this.loader = " "
+
+    const path = window.location.pathname || "/"
+
+    if (path.startsWith("/impressum")) {
+      const frameMatch = /^\/impressum\/(\d+)/.exec(path)
+      const frameIndex = frameMatch ? Number.parseInt(frameMatch[1], 10) : 0
+      this.current =
+        this.impressumFrames[frameIndex] || this.impressumFrames[0] || ""
+    } else {
+      const route = canonicalPageRoutes.find((entry) => entry.path === path)
+      if (route) {
+        this.currentPage = route.page
+      }
+      this.current = this.pages[this.currentPage] || ""
+
+      if (this.currentPage === 1 && this.contactFrames.length > 1) {
+        this._slideshows.push(
+          setTimeout(() => {
+            this.playSlideshow(this.contactFrames, 0)
+          }, 500),
+        )
+      }
+    }
+
+    this.afterNavigation()
   },
 
   /**
