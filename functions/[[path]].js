@@ -49,7 +49,8 @@ const withHtmlHeaders = (response, pathname) => {
  * @returns {Promise<Response>}
  */
 const fetchAsset = async (request, env, assetPath) => {
-  const assetUrl = new URL(assetPath, request.url);
+  const prettyPath = assetPath.replace(/\/index\.html$/, "/");
+  const assetUrl = new URL(prettyPath, request.url);
   const assetRequest = new Request(assetUrl.toString(), request);
   return env.ASSETS.fetch(assetRequest);
 };
