@@ -123,14 +123,14 @@ export const m_impressum_m =
    │ suited to print it out and show it to your     │   
    │ friends and colleagues.                        │   
    │                                                │   
-   │ <a href="https://drops.schedler.co/f/ZGquwW" target="_blank">Download CV as PDF</a>                             │   
+   │ <a href="https://drops.schedler.co/f/p7L4iR" target="_blank">Download CV as PDF</a>                             │   
    └────────────────────────────────────────────────┘   
    ┌────────────────────────────────────────────────┐   
    │  Semantic information                          │   
    │ ======================                         │   
-   │ Version: 8.5.4-218                             │   
-   │ Last update: 2026-09-07T09:02:01.919Z          │   
-   │ Commit: 9b1d90f                                │   
+   │ Version: 8.5.5-219                             │   
+   │ Last update: 2026-09-07T09:26:12.977Z          │   
+   │ Commit: cb735a1                                │   
    └────────────────────────────────────────────────┘   
    ┌───────────────┐┌──────────────┐┌───────────────┐   
    │  -> <a href="/impressum/1">Privacy</a>   ││ -> <a href="/impressum/2">Copyright</a> ││ -> <a href="/impressum/3">Disclaimer</a> │   
