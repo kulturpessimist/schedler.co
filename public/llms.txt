@@ -219,10 +219,10 @@ A PDF copy of the CV is available for download from the website.
 
 Semantic information:
 
-- **Version:** 8.2.4-209
-- **Last update:** 2026-09-05T22:18:57.526Z
-- **Commit:** 7bdf689
-- **Commit count:** 209
+- **Version:** 8.4.1-210
+- **Last update:** 2026-09-07T07:41:49.326Z
+- **Commit:** f1ddb68
+- **Commit count:** 210
 
 ## Legal Notices
 
