@@ -21,11 +21,11 @@ export const d_contact1 =
              ║    <i>District of Augsburg, Germany</i>                             ║░░               **####################**                      
              ║                                                              ║░░               ######################**  ****                
              ║        Want to get in touch?                                 ║░░               ######################****######              
-             ║        Just write me an Email <a href="mailto:alex@schedler.co">alex@schedler.co</a>               ║░░               **####################  **########            
-             ║        or call me <a href="tel:+491714123929">+49 171 4 123 929</a> and follow me on         ║░░                 ##################**  ##########**          
-             ║        bluesky <a href="https://bsky.app/profile/alex.schedler.co" target="_blank">@alex.schedler.co</a> and star my work on         ║░░                 ################**  ##############          
-             ║        Github <a href="https://www.github.com/kulturpessimist" target="_blank">/kulturpessimist</a> or connect with me            ║░░               ****    ********  **################          
-             ║        on LinkedIn <a href="https://www.linkedin.com/in/alexanderschedler" target="_blank">/alexanderschedler</a>                        ║░░                             **##################**          
+             ║        Just write me an Email <a class="contact-link" href="mailto:alex@schedler.co">alex@schedler.co</a>               ║░░               **####################  **########            
+             ║        or call me <a class="contact-link" href="tel:+491714123929">+49 171 4 123 929</a> and follow me on         ║░░                 ##################**  ##########**          
+             ║        bluesky <a class="contact-link" href="https://bsky.app/profile/alex.schedler.co" target="_blank">@alex.schedler.co</a> and star my work on         ║░░                 ################**  ##############          
+             ║        Github <a class="contact-link" href="https://www.github.com/kulturpessimist" target="_blank">/kulturpessimist</a> or connect with me            ║░░               ****    ********  **################          
+             ║        on LinkedIn <a class="contact-link" href="https://www.linkedin.com/in/alexanderschedler" target="_blank">/alexanderschedler</a>                        ║░░                             **##################**          
              ║                                                              ║░░                               ##################            
              ║                                                              ║░░                               **################            
              ║                                                              ║░░                                   **########**##**          
@@ -64,11 +64,11 @@ export const d_contact2 =
              ║    <i>District of Augsburg, Germany</i>                             ║░░                 ################################            
              ║                                                              ║░░               **  **########################**  **          
              ║        Want to get in touch?                                 ║░░               ##**  **####################**  **##          
-             ║        Just write me an Email <a href="mailto:alex@schedler.co">alex@schedler.co</a>               ║░░               ######    ################    ######          
-             ║        or call me <a href="tel:+491714123929">+49 171 4 123 929</a> and follow me on         ║░░               ########**  **########**  **########          
-             ║        bluesky <a href="https://bsky.app/profile/alex.schedler.co" target="_blank">@alex.schedler.co</a> and star my work on         ║░░               ##########**  **####**  **##########          
-             ║        Github <a href="https://www.github.com/kulturpessimist" target="_blank">/kulturpessimist</a> or connect with me            ║░░               ##############        ##############          
-             ║        on LinkedIn <a href="https://www.linkedin.com/in/alexanderschedler" target="_blank">/alexanderschedler</a>                        ║░░               ################****################          
+             ║        Just write me an Email <a class="contact-link" href="mailto:alex@schedler.co">alex@schedler.co</a>               ║░░               ######    ################    ######          
+             ║        or call me <a class="contact-link" href="tel:+491714123929">+49 171 4 123 929</a> and follow me on         ║░░               ########**  **########**  **########          
+             ║        bluesky <a class="contact-link" href="https://bsky.app/profile/alex.schedler.co" target="_blank">@alex.schedler.co</a> and star my work on         ║░░               ##########**  **####**  **##########          
+             ║        Github <a class="contact-link" href="https://www.github.com/kulturpessimist" target="_blank">/kulturpessimist</a> or connect with me            ║░░               ##############        ##############          
+             ║        on LinkedIn <a class="contact-link" href="https://www.linkedin.com/in/alexanderschedler" target="_blank">/alexanderschedler</a>                        ║░░               ################****################          
              ║                                                              ║░░               ####################################          
              ║                                                              ║░░               ####################################          
              ║                                                              ║░░                 ********************************            
@@ -107,11 +107,11 @@ export const d_contact3 =
              ║    <i>District of Augsburg, Germany</i>                             ║░░                                       ##########            
              ║                                                              ║░░                                         ########            
              ║        Want to get in touch?                                 ║░░                                       **######**            
-             ║        Just write me an Email <a href="mailto:alex@schedler.co">alex@schedler.co</a>               ║░░                                     **########              
-             ║        or call me <a href="tel:+491714123929">+49 171 4 123 929</a> and follow me on         ║░░                                   **########**              
-             ║        bluesky <a href="https://bsky.app/profile/alex.schedler.co" target="_blank">@alex.schedler.co</a> and star my work on         ║░░                   **######      **########**                
-             ║        Github <a href="https://www.github.com/kulturpessimist" target="_blank">/kulturpessimist</a> or connect with me            ║░░               **############  ############                  
-             ║        on LinkedIn <a href="https://www.linkedin.com/in/alexanderschedler" target="_blank">/alexanderschedler</a>                        ║░░               ##########################                    
+             ║        Just write me an Email <a class="contact-link" href="mailto:alex@schedler.co">alex@schedler.co</a>               ║░░                                     **########              
+             ║        or call me <a class="contact-link" href="tel:+491714123929">+49 171 4 123 929</a> and follow me on         ║░░                                   **########**              
+             ║        bluesky <a class="contact-link" href="https://bsky.app/profile/alex.schedler.co" target="_blank">@alex.schedler.co</a> and star my work on         ║░░                   **######      **########**                
+             ║        Github <a class="contact-link" href="https://www.github.com/kulturpessimist" target="_blank">/kulturpessimist</a> or connect with me            ║░░               **############  ############                  
+             ║        on LinkedIn <a class="contact-link" href="https://www.linkedin.com/in/alexanderschedler" target="_blank">/alexanderschedler</a>                        ║░░               ##########################                    
              ║                                                              ║░░               **####################**                      
              ║                                                              ║░░               **##################**                        
              ║                                                              ║░░                 ##############**                            
@@ -150,11 +150,11 @@ export const d_contact4 =
              ║    <i>District of Augsburg, Germany</i>                             ║░░                 ######                    ######            
              ║                                                              ║░░               **######                    ######**          
              ║        Want to get in touch?                                 ║░░               **####**                    **######          
-             ║        Just write me an Email <a href="mailto:alex@schedler.co">alex@schedler.co</a>               ║░░               ######**                      ######          
-             ║        or call me <a href="tel:+491714123929">+49 171 4 123 929</a> and follow me on         ║░░               ######**                      ######          
-             ║        bluesky <a href="https://bsky.app/profile/alex.schedler.co" target="_blank">@alex.schedler.co</a> and star my work on         ║░░               ######**                    **######          
-             ║        Github <a href="https://www.github.com/kulturpessimist" target="_blank">/kulturpessimist</a> or connect with me            ║░░               **######**                  ######**          
-             ║        on LinkedIn <a href="https://www.linkedin.com/in/alexanderschedler" target="_blank">/alexanderschedler</a>                        ║░░                 ##****####**        ****########            
+             ║        Just write me an Email <a class="contact-link" href="mailto:alex@schedler.co">alex@schedler.co</a>               ║░░               ######**                      ######          
+             ║        or call me <a class="contact-link" href="tel:+491714123929">+49 171 4 123 929</a> and follow me on         ║░░               ######**                      ######          
+             ║        bluesky <a class="contact-link" href="https://bsky.app/profile/alex.schedler.co" target="_blank">@alex.schedler.co</a> and star my work on         ║░░               ######**                    **######          
+             ║        Github <a class="contact-link" href="https://www.github.com/kulturpessimist" target="_blank">/kulturpessimist</a> or connect with me            ║░░               **######**                  ######**          
+             ║        on LinkedIn <a class="contact-link" href="https://www.linkedin.com/in/alexanderschedler" target="_blank">/alexanderschedler</a>                        ║░░                 ##****####**        ****########            
              ║                                                              ║░░                 **##****####        ############            
              ║                                                              ║░░                   ####              **########              
              ║                                                              ║░░                     ######**        **######**              
@@ -193,11 +193,11 @@ export const d_contact5 =
              ║    <i>District of Augsburg, Germany</i>                             ║░░               **####**  ########################**          
              ║                                                              ║░░               **####################****########**          
              ║        Want to get in touch?                                 ║░░               **####    **##              **####**          
-             ║        Just write me an Email <a href="mailto:alex@schedler.co">alex@schedler.co</a>               ║░░               **####    **##                ####**          
-             ║        or call me <a href="tel:+491714123929">+49 171 4 123 929</a> and follow me on         ║░░               **####    **##      ####**    ####**          
-             ║        bluesky <a href="https://bsky.app/profile/alex.schedler.co" target="_blank">@alex.schedler.co</a> and star my work on         ║░░               **####    **##      ####**    **##**          
-             ║        Github <a href="https://www.github.com/kulturpessimist" target="_blank">/kulturpessimist</a> or connect with me            ║░░               **####    **##      ####**    **##**          
-             ║        on LinkedIn <a href="https://www.linkedin.com/in/alexanderschedler" target="_blank">/alexanderschedler</a>                        ║░░               **####    **##      ####**    **##**          
+             ║        Just write me an Email <a class="contact-link" href="mailto:alex@schedler.co">alex@schedler.co</a>               ║░░               **####    **##                ####**          
+             ║        or call me <a class="contact-link" href="tel:+491714123929">+49 171 4 123 929</a> and follow me on         ║░░               **####    **##      ####**    ####**          
+             ║        bluesky <a class="contact-link" href="https://bsky.app/profile/alex.schedler.co" target="_blank">@alex.schedler.co</a> and star my work on         ║░░               **####    **##      ####**    **##**          
+             ║        Github <a class="contact-link" href="https://www.github.com/kulturpessimist" target="_blank">/kulturpessimist</a> or connect with me            ║░░               **####    **##      ####**    **##**          
+             ║        on LinkedIn <a class="contact-link" href="https://www.linkedin.com/in/alexanderschedler" target="_blank">/alexanderschedler</a>                        ║░░               **####    **##      ####**    **##**          
              ║                                                              ║░░               **####    **##      ####**    **##**          
              ║                                                              ║░░               **####    **##      ####**    **##**          
              ║                                                              ║░░               **####****######**########****####**          
@@ -285,10 +285,10 @@ export const d_impressum =
                  │                                                  │   │  Semantic information                           │                 
                  │                                                  │   │ ======================                          │                 
                  │                                                  │   │                                                 │                 
-                 └──────────────────────────────────────────────────┘   │ Version: 8.5.5-219                              │                 
-                                                                        │ Last update: 2026-09-07T09:26:12.977Z           │                 
-                 ┌──────────────────────────────────────────────────┐   │ Commit: cb735a1                                 │                 
-                 │        <a href="/impressum/1">-> Disclaimer, data protection and</a>        │   │ Commit count: 219                               │                 
+                 └──────────────────────────────────────────────────┘   │ Version: 8.5.6-220                              │                 
+                                                                        │ Last update: 2026-09-07T10:02:07.368Z           │                 
+                 ┌──────────────────────────────────────────────────┐   │ Commit: 62c29bd                                 │                 
+                 │        <a href="/impressum/1">-> Disclaimer, data protection and</a>        │   │ Commit count: 220                               │                 
                  │             <a href="/impressum/1">copyright statements...</a>              │   │                                                 │                 
                  └──────────────────────────────────────────────────┘   └─────────────────────────────────────────────────┘                 
                                                                                                                                             
@@ -705,7 +705,7 @@ export const d_jobs =
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░              │
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░              │
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░              │
-│        │      <a href="/job/certania" data-navigo>CERTANIA</a>        │◀─────│   <a href="/job/jd" data-navigo>Johner Institut</a>    │◀─────│ <a href="/job/man-es" data-navigo>MAN Energy Solutions</a> │◀─────│  <a href="/job/iob" data-navigo>Internet of Blah</a>    │◀─┐             │
+│        │      <a class="employer-card-link" href="/job/certania" data-navigo>CERTANIA</a>        │◀─────│   <a class="employer-card-link" href="/job/jd" data-navigo>Johner Institut</a>    │◀─────│ <a class="employer-card-link" href="/job/man-es" data-navigo>MAN Energy Solutions</a> │◀─────│  <a class="employer-card-link" href="/job/iob" data-navigo>Internet of Blah</a>    │◀─┐             │
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░│             │
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░│             │
 │        │                      │░░    │                      │░░    │                      │░░    │                      │░░│             │
@@ -719,7 +719,7 @@ export const d_jobs =
 │             │  │                      │░░    │                      │░░    │                      │░░    │                      │░░      │
 │             │  │                      │░░    │                      │░░    │                      │░░    │                      │░░      │
 │             │  │                      │░░    │                      │░░    │                      │░░    │                      │░░      │
-│             └──│      <a href="/job/thinxnet" data-navigo>ThinxNet</a>        │◀─────│    <a href="/job/natureoffice" data-navigo>natureOffice</a>      │◀─────│      <a href="/job/dynomedia" data-navigo>Dynomedia</a>       │◀─────│        <a href="/job/kigg" data-navigo>KIGG</a>          │░░      │
+│             └──│      <a class="employer-card-link" href="/job/thinxnet" data-navigo>ThinxNet</a>        │◀─────│    <a class="employer-card-link" href="/job/natureoffice" data-navigo>natureOffice</a>      │◀─────│      <a class="employer-card-link" href="/job/dynomedia" data-navigo>Dynomedia</a>       │◀─────│        <a class="employer-card-link" href="/job/kigg" data-navigo>KIGG</a>          │░░      │
 │                │                      │░░    │                      │░░    │                      │░░    │                      │░░      │
 │                │                      │░░    │                      │░░    │                      │░░    │                      │░░      │
 │                │                      │░░    │                      │░░    │                      │░░    │                      │░░      │

@@ -447,7 +447,11 @@ strong {
 #back::after,
 #forward::after {
   position: absolute;
-  inset: -13px -9px;
+  width: 44px;
+  height: 44px;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
   content: "";
 }
 
@@ -534,12 +538,80 @@ strong {
 
 @media (orientation: portrait) {
   :root {
-    --size: calc(4px + 1.3vmin);
+    --size: 12px;
+    --mobile-tracking: clamp(-2.5px, calc((100vw - 60ch) / 59), 0px);
+  }
+
+  html {
+    overflow: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  body {
+    min-height: 100svh;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  main {
+    margin-inline: auto;
   }
 
   main pre {
     max-width: 100vw;
-    max-height: 100vh;
+    line-height: 1.25;
+    letter-spacing: var(--mobile-tracking);
+  }
+
+  .ascii-view [data-ascii-href] {
+    position: relative;
+    touch-action: manipulation;
+  }
+
+  .ascii-view [data-ascii-href]::after {
+    position: absolute;
+    height: 1lh;
+    inset-inline: -0.75ch;
+    top: 50%;
+    translate: 0 -50%;
+    content: "";
+  }
+
+  .ascii-view .employer-card-link::after {
+    inset-inline: auto;
+    width: clamp(100px, 30vw, 18ch);
+    height: 5lh;
+    left: 50%;
+    right: auto;
+    translate: -50% -50%;
+  }
+
+  .ascii-view .imprint-card-link::after {
+    inset-inline: auto;
+    width: clamp(84px, 25vw, 15ch);
+    height: 3lh;
+    left: 50%;
+    right: auto;
+    translate: -50% -50%;
+  }
+
+  .ascii-view .external-employer-link::after {
+    inset-inline: auto;
+    width: 44px;
+    height: 44px;
+    left: 50%;
+    right: auto;
+    translate: -50% -50%;
+  }
+}
+
+@media (orientation: portrait) and (min-height: 700px) {
+  body {
+    align-items: center;
   }
 }
 
