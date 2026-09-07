@@ -649,11 +649,10 @@ const app: AppState = {
 
     this.current = from
 
-    this._transitionTimers.push(
-      setInterval(() => {
-        this.loader = ivt[ivc++ % ivt.length]
-      }, 75),
-    )
+    const interval = setInterval(() => {
+      this.loader = ivt[ivc++ % ivt.length]
+    }, 75)
+    this._transitionTimers.push(interval)
 
     for (let step = 0; step < totalSteps; step++) {
       this.scheduleTransitionStep(
@@ -662,6 +661,7 @@ const app: AppState = {
           this.current = this.buildFlipFrame(from, to, step, totalSteps)
 
           if (step === totalSteps - 1) {
+            clearInterval(interval)
             this.currentPage = nextPage
             this.loader = " "
             this.afterNavigation()
@@ -703,11 +703,10 @@ const app: AppState = {
     let ivc = 0
     let ivt = ["", "", "", "", "", ""]
 
-    this._transitionTimers.push(
-      setInterval(() => {
-        this.loader = ivt[ivc++ % ivt.length]
-      }, 75),
-    )
+    const interval = setInterval(() => {
+      this.loader = ivt[ivc++ % ivt.length]
+    }, 75)
+    this._transitionTimers.push(interval)
 
     const lines = this.current.split("\n").length
     for (let i = 0; i <= lines; i++) {
@@ -721,6 +720,7 @@ const app: AppState = {
           )
 
           if (i === lines) {
+            clearInterval(interval)
             this._glitchMemoize = ""
             this.currentPage = nextPage
             this.loader = " "
@@ -751,7 +751,9 @@ const app: AppState = {
    * Toggle impressum route state.
    *
    * Shared by the `[=]` button and the `i` key: opens `/impressum` from any
-   * page and closes back to `/` from `/impressum` (and its frames).
+   * page and closes back to the page the imprint was opened from
+   * (`/` on a direct visit, since `currentPage` is kept while the imprint
+   * is open).
    */
   options(): void {
     if (!this._router) {
@@ -759,7 +761,7 @@ const app: AppState = {
     }
 
     if (this._router.getCurrentLocation().url.indexOf("impressum") === 0) {
-      this._router.navigate("/")
+      this._router.navigate(this.pathForPage(this.currentPage))
     } else {
       this._router.navigate("/impressum")
     }
